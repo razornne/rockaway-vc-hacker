@@ -1,0 +1,181 @@
+{
+ "company": "Delta Green",
+ "slug": "delta-green",
+ "website": "",
+ "country_hq": "Czechia",
+ "legal_entities": [
+  {
+   "name": "Delta Green s.r.o. (formerly Nano Green s.r.o.)",
+   "id_type": "ICO",
+   "id": "02406233",
+   "country": "CZ",
+   "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?typ=UPLNY&subjektId=728808"
+  }
+ ],
+ "sector": "energy (virtual power plant)",
+ "thesis_fit": {
+  "sector_bucket": "energy",
+  "note": "virtual power plant / aggregation of households"
+ },
+ "control_note": "CONTROL GROUP: not a Rockaway investment. The rockaway block is replaced by control_round (same fields).",
+ "control_round": {
+  "round": "Seed II / Series A (labels vary)",
+  "amount": "EUR 2M",
+  "lead": "Credo Ventures (lead not stated explicitly; Tilia Impact Ventures, Purple Ventures participated)",
+  "co_investors": [
+   "Tilia Impact Ventures",
+   "Purple Ventures"
+  ],
+  "announced_date": "2025-10-15",
+  "announced_url": "https://cc.cz/z-prahy-propojuji-evropske-domacnosti-a-tvori-z-nich-obri-elektrarnu-jejich-cena-je-ve-stamilionech/",
+  "deal_date": "",
+  "deal_date_url": "",
+  "t0": "2025-10-15",
+  "t0_basis": "announced"
+ },
+ "prior_investors": [
+  {
+   "name": "Tilia Impact Ventures Fund II",
+   "round": "May 2024 round (lead per search summary)",
+   "date": "2024-05-29",
+   "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?typ=UPLNY&subjektId=728808",
+   "also_coinvested_with_rockaway_elsewhere": null
+  },
+  {
+   "name": "Credo Stage IV L.P. (Credo Ventures)",
+   "round": "May 2024 round",
+   "date": "2024-05-29",
+   "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?typ=UPLNY&subjektId=728808",
+   "also_coinvested_with_rockaway_elsewhere": null
+  },
+  {
+   "name": "Purple Ventures 2 Fund",
+   "round": "May 2024 round",
+   "date": "2024-05-29",
+   "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?typ=UPLNY&subjektId=728808",
+   "also_coinvested_with_rockaway_elsewhere": null
+  }
+ ],
+ "events": [
+  {
+   "date": "2013-12-28",
+   "date_precision": "day",
+   "date_type": "registered",
+   "source_type": "registry_incorporation",
+   "description": "Incorporated (later Delta Green s.r.o.; earlier name Nano Green s.r.o. per contract records)",
+   "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?typ=UPLNY&subjektId=728808",
+   "confidence": "medium",
+   "note": "Name history inferred from supplier name in registr smluv under the same ICO",
+   "months_before_t0": 141.6
+  },
+  {
+   "date": "2014-07-15",
+   "date_precision": "day",
+   "date_type": "event",
+   "source_type": "gov_contract",
+   "description": "Registr smluv: Ceska posta bank/real-estate services contract under same ICO",
+   "url": "https://www.hlidacstatu.cz/hledatSmlouvy?Q=icoPlatce%3A02406233+OR+icoPrijemce%3A02406233",
+   "confidence": "low",
+   "note": "Back-office contract, not customer traction",
+   "months_before_t0": 135.0
+  },
+  {
+   "date": "2019-12-18",
+   "date_precision": "day",
+   "date_type": "event",
+   "source_type": "gov_contract",
+   "description": "Registr smluv: electricity supply contract with Sladovna Pisek o.p.s. (public-sector customer; more follow 2021-2024)",
+   "url": "https://www.hlidacstatu.cz/hledatSmlouvy?Q=icoPlatce%3A02406233+OR+icoPrijemce%3A02406233",
+   "confidence": "medium",
+   "note": "Energy retailer history; supplier named Nano Green s.r.o.",
+   "months_before_t0": 69.9
+  },
+  {
+   "date": "2024-01-18",
+   "date_precision": "day",
+   "date_type": "captured",
+   "source_type": "website_first",
+   "description": "Earliest Wayback capture of deltagreen.cz (301); first 200 capture 2024-02-21",
+   "url": "https://web.archive.org/cdx/search/cdx?url=deltagreen.cz&limit=2",
+   "confidence": "medium",
+   "note": "",
+   "months_before_t0": 20.9
+  },
+  {
+   "date": "2024-05-28",
+   "date_precision": "day",
+   "date_type": "announced",
+   "source_type": "prior_round",
+   "description": "EUR 2.2M round announced (Tilia led; Credo, Purple Ventures participated)",
+   "url": "https://en.ain.ua/2024/05/28/czech-startup-delta-green-secures-funding-expand-europe",
+   "confidence": "medium",
+   "note": "Lead per search-result summary; article body not read",
+   "months_before_t0": 16.6
+  },
+  {
+   "date": "2024-05-29",
+   "date_precision": "day",
+   "date_type": "registered",
+   "source_type": "registry_capital_increase",
+   "description": "Capital 1,000,000 -> 1,216,129 CZK; Tilia Impact Ventures Fund II, Credo Stage IV L.P., Purple Ventures 2 Fund registered as shareholders",
+   "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?typ=UPLNY&subjektId=728808",
+   "confidence": "high",
+   "note": "",
+   "months_before_t0": 16.6
+  },
+  {
+   "date": "2024-10-21",
+   "date_precision": "day",
+   "date_type": "registered",
+   "source_type": "registry_other",
+   "description": "Further capital/shareholder change registered (shareholder list in extract ends here)",
+   "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?typ=UPLNY&subjektId=728808",
+   "confidence": "low",
+   "note": "Nature of change not analysed",
+   "months_before_t0": 11.8
+  },
+  {
+   "date": "2025-10-15",
+   "date_precision": "day",
+   "date_type": "announced",
+   "source_type": "press_round",
+   "description": "EUR 2M round at EUR 25M valuation; Credo increased earlier stake",
+   "url": "https://cc.cz/z-prahy-propojuji-evropske-domacnosti-a-tvori-z-nich-obri-elektrarnu-jejich-cena-je-ve-stamilionech/",
+   "confidence": "high",
+   "note": "",
+   "months_before_t0": 0.0
+  }
+ ],
+ "not_found": [
+  {
+   "source_type": "registry_capital_increase",
+   "what_was_checked": "No registry capital change found in 2025 near the Oct 2025 round (last change 2024-10-21)",
+   "url_or_query": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?typ=UPLNY&subjektId=728808"
+  },
+  {
+   "source_type": "accelerator",
+   "what_was_checked": "none in sources used",
+   "url_or_query": "https://www.hlidacstatu.cz/subjekt/02406233"
+  },
+  {
+   "source_type": "grant_national",
+   "what_was_checked": "Hlidac dotace count 0",
+   "url_or_query": "https://www.hlidacstatu.cz/subjekt/02406233"
+  },
+  {
+   "source_type": "press_first",
+   "what_was_checked": "Only round-announcement coverage surfaced via a few web searches; no systematic search for earlier press mentions",
+   "url_or_query": "web search: company name + investor names"
+  },
+  {
+   "source_type": "grant_eu",
+   "what_was_checked": "CORDIS / EIC / STARFOS not queried (lightweight control timeline); Hlidac statu dotace used as national-grant proxy only",
+   "url_or_query": "n/a"
+  }
+ ],
+ "after_investment": null,
+ "caveats": [
+  "T0 = Oct 2025 round per control list; Credo and Tilia were already shareholders from May 2024, so a first-investment T0 would be 2024-05-28 (Credo not clearly lead).",
+  "Lead of Oct 2025 round not stated explicitly in the article."
+ ]
+}

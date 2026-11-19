@@ -1,0 +1,67 @@
+{
+  "company": "Apaleo",
+  "slug": "apaleo",
+  "website": "https://apaleo.com",
+  "country_hq": "Germany",
+  "legal_entities": [
+    {"name": "Apaleo GmbH", "id_type": "HRB", "id": "229514", "country": "Germany", "url": "https://www.unternehmen24.info/Handelsregister/Deutschland/Bilanz/Firma/4281209/Jahresabschluss zum Geschäftsjahr vom 01_01_2023 bis zum 31_12_2023"}
+  ],
+  "sector": "Hospitality SaaS: open, API-first cloud property management platform for hotels and serviced apartments",
+  "thesis_fit": {"sector_bucket": "other", "note": "Vertical SaaS (hospitality). Not AI/deep tech/defense/energy. Matches Rockaway Ventures' 'digitise traditional industries' framing, not the AI/deep-tech bucket."},
+  "rockaway": {
+    "entity": "Rockaway Ventures",
+    "round": "Series A extension (round total EUR 9m)",
+    "amount": "Round total EUR 9m after extension; size of Rockaway ticket and of the extension itself not stated",
+    "lead": "Rockaway Ventures and Serpentine Ventures (co-leads, both new investors)",
+    "co_investors": ["Serpentine Ventures", "Redalpine", "Force Over Mass Capital", "unnamed hospitality angels"],
+    "announced_date": "2023-03-01",
+    "announced_url": "https://apaleo.com/blog/apaleo-news/apaleo-series-a-extension-9m",
+    "deal_date": "",
+    "deal_date_url": "",
+    "t0": "2023-03-01",
+    "t0_basis": "announced"
+  },
+  "prior_investors": [
+    {"name": "apaAngels (friends-and-partners angel network of hotel/hotel-tech people, individuals not named)", "round": "Seed", "date": "2017-06-26", "url": "https://www.hospitalitynet.org/news/4083435.html", "also_coinvested_with_rockaway_elsewhere": null},
+    {"name": "Force Over Mass", "round": "Series A (lead)", "date": "2021-03-31", "url": "https://apaleo.com/blog/apaleo-news/apaleo-funding-round-series-a", "also_coinvested_with_rockaway_elsewhere": null},
+    {"name": "Redalpine", "round": "Series A", "date": "2021-03-31", "url": "https://apaleo.com/blog/apaleo-news/apaleo-funding-round-series-a", "also_coinvested_with_rockaway_elsewhere": null},
+    {"name": "Bayern Kapital", "round": "Series A", "date": "2021-03-31", "url": "https://apaleo.com/blog/apaleo-news/apaleo-funding-round-series-a", "also_coinvested_with_rockaway_elsewhere": null}
+  ],
+  "events": [
+    {"date": "2017-01-01", "date_precision": "month", "date_type": "event", "source_type": "registry_incorporation", "description": "Company says it was founded in January 2017 (statement in seed announcement; no Handelsregister entry date retrieved).", "url": "https://www.hospitalitynet.org/news/4083435.html", "months_before_t0": 74.0, "confidence": "medium", "note": "Date comes from company's own press release, not the registry. Munich Startup (2017-07-11) also says January 2017."},
+    {"date": "2017-06-10", "date_precision": "day", "date_type": "captured", "source_type": "website_first", "description": "Earliest 2017 Wayback capture of apaleo.com (HTTP 301). Domain has captures back to 2011 under other/unknown use, so this does not prove the apaleo site existed then.", "url": "https://web.archive.org/cdx/search/cdx?url=apaleo.com&output=json&from=2017&to=2018&limit=6", "months_before_t0": 68.6, "confidence": "low", "note": "First capture with status 200 is 2017-10-27 (https://www.apaleo.com/), 64.1 months before T0."},
+    {"date": "2017-06-26", "date_precision": "day", "date_type": "announced", "source_type": "prior_round", "description": "Seed financing completed, funded by 'apaAngels' (friends of founders from hotel industry); amount undisclosed. Press release also states founding in Jan 2017, development start Feb 2017.", "url": "https://www.hospitalitynet.org/news/4083435.html", "months_before_t0": 68.1, "confidence": "high", "note": "Earliest dated public item found. Munich Startup covered it on 2017-07-11 (https://www.munich-startup.de/news/apaleo-seed-finanzierung), team about 15 people."},
+    {"date": "2017-10-27", "date_precision": "day", "date_type": "captured", "source_type": "website_first", "description": "First Wayback capture of www.apaleo.com with status 200.", "url": "https://web.archive.org/cdx/search/cdx?url=apaleo.com&output=json&from=2017&to=2018&limit=4&filter=statuscode:200", "months_before_t0": 64.1, "confidence": "medium", "note": "Snapshot content not opened."},
+    {"date": "2021-03-31", "date_precision": "day", "date_type": "announced", "source_type": "press_round", "description": "EUR 4.5m Series A led by Force Over Mass, with Redalpine and Bayern Kapital. Also covered by tech.eu on 2021-03-31.", "url": "https://apaleo.com/blog/apaleo-news/apaleo-funding-round-series-a", "months_before_t0": 23.0, "confidence": "high", "note": "Same round also at https://tech.eu/2021/03/31/munich-based-hosptech-apaleo-raises-e4-5-million-in-series-a-round/"},
+    {"date": "2021-06-19", "date_precision": "day", "date_type": "captured", "source_type": "hiring", "description": "Earliest Wayback capture of apaleo.com/careers/ (status 200). Careers page existed; first-ever careers page date unknown because no earlier capture found.", "url": "https://web.archive.org/cdx/search/cdx?url=apaleo.com/careers*&output=json&limit=3&filter=statuscode:200", "months_before_t0": 20.4, "confidence": "low", "note": "Not a first-hiring signal, only a lower bound on when the page existed."},
+    {"date": "2023-03-01", "date_precision": "day", "date_type": "announced", "source_type": "rockaway_announced", "description": "Series A extension to EUR 9m, co-led by Rockaway Ventures and Serpentine Ventures. Quote from Andrea Lauren, General Partner at Rockaway Ventures.", "url": "https://apaleo.com/blog/apaleo-news/apaleo-series-a-extension-9m", "months_before_t0": 0.0, "confidence": "high", "note": "Also on Hospitality Net: https://www.hospitalitynet.org/news/4115220/apaleo-expands-its-series-a-round-to-9-million-to-fuel-further-growth-into-hotel-groups-across-europe"},
+    {"date": "2023-04-26", "date_precision": "day", "date_type": "announced", "source_type": "other", "description": "Law firm Baker Tilly publishes note on advising Rockaway Ventures and Serpentine Ventures on the investment (legal due diligence and documents).", "url": "https://www.bakertilly.de/beitrag/baker-tilly-begleitet-rockaway-ventures-und-serpentine-ventures-bei-investition-in-offene-hospitality-plattform-apaleo", "months_before_t0": -1.8, "confidence": "high", "note": "Publication date only; closing date not stated. Not used for T0."}
+  ],
+  "not_found": [
+    {"source_type": "registry_incorporation", "what_was_checked": "Exact Handelsregister entry date for Apaleo GmbH (HRB 229514). northdata.de returned HTTP 429 after 2 requests; openregister.de returned 403; handelsregister.de not queried (session-based form).", "url_or_query": "https://www.northdata.de/ ; https://openregister.de/company/DE-HRB-U1308-39308"},
+    {"source_type": "registry_capital_increase", "what_was_checked": "Stammkapital and capital-increase entries around 2021-03 and 2023-03 not retrieved (registry/aggregators blocked or not queried).", "url_or_query": "Apaleo GmbH Handelsregister München HRB 229514"},
+    {"source_type": "registry_new_shareholder", "what_was_checked": "German register entries do not list shareholders; Gesellschafterliste would need to be downloaded from the register. Not done.", "url_or_query": "handelsregister.de Gesellschafterliste"},
+    {"source_type": "financial_statements", "what_was_checked": "Bundesanzeiger filing for FY2023 exists (found via search aggregator), earlier years' first revenue not checked.", "url_or_query": "bundesanzeiger.de Apaleo GmbH"},
+    {"source_type": "grant_national", "what_was_checked": "Search for apaleo public grants (Bayern Kapital grant claim not supported; Bayern Kapital appears only as Series A investor).", "url_or_query": "apaleo founded Bayern Kapital grant"},
+    {"source_type": "grant_eu", "what_was_checked": "Not searched in CORDIS.", "url_or_query": "cordis.europa.eu apaleo"},
+    {"source_type": "accelerator", "what_was_checked": "No accelerator participation found in searches.", "url_or_query": "apaleo accelerator"},
+    {"source_type": "gov_contract", "what_was_checked": "Not applicable/not checked (B2B SaaS to private hotels).", "url_or_query": ""},
+    {"source_type": "website_pricing", "what_was_checked": "CDX shows first apaleo.com/pricing capture 2020-05-11 (status 200 listed after 301s); no earlier pricing page found. Content not opened.", "url_or_query": "https://web.archive.org/cdx/search/cdx?url=apaleo.com/pricing*"},
+    {"source_type": "website_customers", "what_was_checked": "No Wayback captures for apaleo.com/customers*; customers page may use another path.", "url_or_query": "https://web.archive.org/cdx/search/cdx?url=apaleo.com/customers*"},
+    {"source_type": "product_launch", "what_was_checked": "Not searched (Product Hunt/stores not relevant).", "url_or_query": ""},
+    {"source_type": "rockaway_deal", "what_was_checked": "No separate deal/closing date found for Rockaway's investment.", "url_or_query": "Apaleo Rockaway closing 2023"}
+  ],
+  "after_investment": {
+    "next_rounds": [
+      {"date": "2024-11-10", "round": "Growth equity", "amount": "EUR 20m", "lead": "PSG", "url": "https://nordic9.com/news/apaleo-secures-20-million-growth-equity-investment-led-by-psg-joined-by-redalpine-fomcap-iv-and-rockaway-ventures/"}
+    ],
+    "exit": null,
+    "notes": "Rockaway Ventures, Redalpine and FOMCAP IV (Force Over Mass) participated in the 2024 round per the same source. Date is that of the nordic9 page."
+  },
+  "caveats": [
+    "T0 is the announcement date; no deal/closing date visible. Baker Tilly note (2023-04-26) is later and only a publication date.",
+    "Search-snippet claim that Redalpine backed seed in 2018 (German source) not verified and not used.",
+    "Wayback 2017 captures: apaleo.com had earlier captures (2011-2016) from unrelated use of the domain.",
+    "Rockaway Ventures fund size: sources vary (EUR 53m per SPEC; press says closed second fund near EUR 55m)."
+  ]
+}

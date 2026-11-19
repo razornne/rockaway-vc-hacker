@@ -1,0 +1,139 @@
+{
+ "company": "Vermeer",
+ "slug": "vermeer",
+ "website": "https://getvermeer.com (also vermeer.ai)",
+ "country_hq": "USA (New York); forward operations in Kyiv, Ukraine",
+ "legal_entities": [],
+ "sector": "GPS-free visual positioning system (VPS) for drones and aircraft; defense and dual-use",
+ "thesis_fit": {
+  "sector_bucket": "defense/dual-use",
+  "note": "Per Czech press, Rockaway's second dual-use investment after CulturePulse and its 13th portfolio company."
+ },
+ "rockaway": {
+  "entity": "Rockaway Ventures (fund)",
+  "round": "Series A (USD 10M total; headline says Draper-led extension bringing Series A to USD 10M)",
+  "amount": "Round USD 10M (Czech press: USD 9-9.3M / CZK 228M); Rockaway ticket not disclosed",
+  "lead": "Draper Associates",
+  "co_investors": [
+   "AeroX Ventures",
+   "Boscolo Intervest",
+   "High Point Ventures",
+   "U.S. Air Force Techstars program"
+  ],
+  "announced_date": "2025-10-23",
+  "announced_url": "https://www.rockawaycapital.com/en/news/from-hollywood-studios-to-the-frontlines-rockaway-ventures-invests-in-vermeer-the-startup-enabling-drones-to-fly-without-gps",
+  "deal_date": "",
+  "deal_date_url": "",
+  "t0": "2025-10-23",
+  "t0_basis": "announced"
+ },
+ "prior_investors": [
+  {
+   "name": "Air Force Accelerator powered by Techstars (accelerator; SBIR/AFWERX non-dilutive awards over USD 7M claimed)",
+   "round": "accelerator / grants",
+   "date": "",
+   "url": "https://dronelife.com/2025/10/23/vermeer-secures-10-million-series-a-to-advance-gps-free-drone-navigation-for-defense-and-dual-use-applications/",
+   "also_coinvested_with_rockaway_elsewhere": null
+  }
+ ],
+ "events": [
+  {
+   "date": "2018-07-07",
+   "date_precision": "day",
+   "date_type": "captured",
+   "source_type": "website_first",
+   "description": "First Wayback capture of getvermeer.com: AR-enabled camera flight for aerial photography (pre-defense product).",
+   "url": "https://web.archive.org/web/20181026123515/https://www.getvermeer.com/",
+   "months_before_t0": 87.6,
+   "confidence": "medium",
+   "note": "CDX first capture 2018-07-07; text read from the 2018-10-26 snapshot. Continuity with the defense company supported by DroneXL/Forbes CZ (software grew out of film work); weak signal."
+  },
+  {
+   "date": "2019",
+   "date_precision": "year",
+   "date_type": "event",
+   "source_type": "accelerator",
+   "description": "CEO reportedly met Techstars Air Force accelerator leadership in 2019; exact cohort year not confirmed.",
+   "url": "https://nsin.mil/news/2024-05-03-vermeer",
+   "months_before_t0": 81.7,
+   "confidence": "low",
+   "note": "Taken from a web-search summary of the NSIN article; the page itself could not be fetched."
+  },
+  {
+   "date": "2024-05-03",
+   "date_precision": "day",
+   "date_type": "announced",
+   "source_type": "press_first",
+   "description": "NSIN alumni spotlight on CEO Brian Streem and Vermeer (earliest press found; earlier press probably exists).",
+   "url": "https://nsin.mil/news/2024-05-03-vermeer",
+   "months_before_t0": 17.7,
+   "confidence": "medium",
+   "note": "Date from URL; page not fetched."
+  },
+  {
+   "date": "2025-10-14",
+   "date_precision": "day",
+   "date_type": "captured",
+   "source_type": "website_first",
+   "description": "First Wayback capture of vermeer.ai (new domain, tiny page).",
+   "url": "https://web.archive.org/web/20251014100830/https://vermeer.ai/",
+   "months_before_t0": 0.3,
+   "confidence": "medium",
+   "note": "Nine days before announcement."
+  },
+  {
+   "date": "2025-10-23",
+   "date_precision": "day",
+   "date_type": "announced",
+   "source_type": "rockaway_announced",
+   "description": "Series A USD 10M announced, Draper-led, Rockaway participating.",
+   "url": "https://www.rockawaycapital.com/en/news/from-hollywood-studios-to-the-frontlines-rockaway-ventures-invests-in-vermeer-the-startup-enabling-drones-to-fly-without-gps",
+   "months_before_t0": 0.0,
+   "confidence": "high",
+   "note": "Lupa and Forbes CZ same day."
+  }
+ ],
+ "not_found": [
+  {
+   "source_type": "registry_incorporation",
+   "what_was_checked": "ARES name search 'Vermeer': only unrelated Vermeer CS s.r.o. (ICO 10678956) and a sole trader; no Czech entity for this company. US entity not found in sources read.",
+   "url_or_query": "ARES vyhledat obchodniJmeno=Vermeer"
+  },
+  {
+   "source_type": "grant_national",
+   "what_was_checked": "US SBIR/AFWERX awards (over USD 7M claimed) not verified on sbir.gov; dates unknown.",
+   "url_or_query": "sbir.gov not queried"
+  },
+  {
+   "source_type": "accelerator",
+   "what_was_checked": "Techstars Air Force cohort year not found; NATO DIANA, ESA BIC, StartupYard not found in search results.",
+   "url_or_query": "web search"
+  },
+  {
+   "source_type": "prior_round",
+   "what_was_checked": "No pre-seed/seed round reported. Finanzen.net headline implies Series A was built in tranches (Draper-led extension); earlier tranche not found. Dealroom/PitchBook not opened.",
+   "url_or_query": "https://www.finanzen.net/nachricht/aktien/american-ukrainian-defense-tech-startup-vermeer-reaches-10m-in-total-series-a-funding-following-draper-associates-led-extension-15110384 (403)"
+  },
+  {
+   "source_type": "gov_contract",
+   "what_was_checked": "Czech registr smluv not applicable (US company).",
+   "url_or_query": ""
+  },
+  {
+   "source_type": "rockaway_deal",
+   "what_was_checked": "No closing date separate from the announcement.",
+   "url_or_query": ""
+  }
+ ],
+ "after_investment": {
+  "next_rounds": [],
+  "exit": null,
+  "notes": "2026: Sentry Operations partnership, 40+ customers (https://dronexl.co/2026/05/29/vermeer-gps-free-drone-navigation-ukraine/). Lupa: team grew from 10 to 40 in a year."
+ },
+ "caveats": [
+  "Company is US/Ukrainian, not Czech; no Czech registry signals exist.",
+  "No pre-T0 VC-source signal found; earliest signal is an old website of a different product.",
+  "Founders in Rockaway release: Brian Streem (CEO), Suresh Kumar (CTO).",
+  "Czech press quotes USD 9M-9.3M versus USD 10M in the company release."
+ ]
+}

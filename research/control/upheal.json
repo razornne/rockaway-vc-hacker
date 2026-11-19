@@ -1,0 +1,112 @@
+{
+ "company": "Upheal",
+ "slug": "upheal",
+ "website": "https://www.upheal.io",
+ "country_hq": "Czechia (Prague)",
+ "legal_entities": [
+  {
+   "name": "Upheal s.r.o.",
+   "id_type": "ICO",
+   "id": "14138018",
+   "country": "CZ",
+   "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?typ=UPLNY&subjektId=1145979"
+  },
+  {
+   "name": "Upheal, Inc. (shareholder of the s.r.o.; US, not checked)",
+   "id_type": "other",
+   "id": "",
+   "country": "US",
+   "url": ""
+  }
+ ],
+ "sector": "AI (healthtech / clinical documentation)",
+ "thesis_fit": {
+  "sector_bucket": "AI",
+  "note": "AI clinical documentation (healthtech)"
+ },
+ "control_note": "CONTROL GROUP: not a Rockaway investment. The rockaway block is replaced by control_round (same fields).",
+ "control_round": {
+  "round": "Seed",
+  "amount": "USD 3.25M",
+  "lead": "Credo Ventures (article also names KAYA VC, Inovia)",
+  "co_investors": [
+   "KAYA VC",
+   "Inovia Capital"
+  ],
+  "announced_date": "2024-02-28",
+  "announced_url": "https://en.ain.ua/2024/02/28/upheal-secures-3-25m-kaya-vc",
+  "deal_date": "",
+  "deal_date_url": "",
+  "t0": "2024-02-28",
+  "t0_basis": "announced"
+ },
+ "prior_investors": [],
+ "events": [
+  {
+   "date": "2021-12-22",
+   "date_precision": "day",
+   "date_type": "captured",
+   "source_type": "website_first",
+   "description": "Earliest Wayback capture of upheal.io (301)",
+   "url": "https://web.archive.org/cdx/search/cdx?url=upheal.io&limit=2",
+   "confidence": "medium",
+   "note": "",
+   "months_before_t0": 26.2
+  },
+  {
+   "date": "2022-01-10",
+   "date_precision": "day",
+   "date_type": "registered",
+   "source_type": "registry_incorporation",
+   "description": "Upheal s.r.o. incorporated, capital 20,000 CZK",
+   "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?typ=UPLNY&subjektId=1145979",
+   "confidence": "high",
+   "note": "",
+   "months_before_t0": 25.6
+  },
+  {
+   "date": "2022-08-29",
+   "date_precision": "day",
+   "date_type": "registered",
+   "source_type": "registry_new_shareholder",
+   "description": "Upheal, Inc. becomes shareholder of the Czech s.r.o. (parent entity, not an investor round)",
+   "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?typ=UPLNY&subjektId=1145979",
+   "confidence": "medium",
+   "note": "",
+   "months_before_t0": 18.0
+  },
+  {
+   "date": "2024-02-28",
+   "date_precision": "day",
+   "date_type": "announced",
+   "source_type": "press_round",
+   "description": "USD 3.25M seed (Credo lead; KAYA, Inovia); company total raised USD 4.35M",
+   "url": "https://en.ain.ua/2024/02/28/upheal-secures-3-25m-kaya-vc",
+   "confidence": "high",
+   "note": "",
+   "months_before_t0": 0.0
+  }
+ ],
+ "not_found": [
+  {
+   "source_type": "prior_round",
+   "what_was_checked": "Article implies ~USD 1.1M raised earlier (4.35M total vs 3.25M); date/investors not found",
+   "url_or_query": "https://en.ain.ua/2024/02/28/upheal-secures-3-25m-kaya-vc"
+  },
+  {
+   "source_type": "press_first",
+   "what_was_checked": "Only round-announcement coverage surfaced via a few web searches; no systematic search for earlier press mentions",
+   "url_or_query": "web search: company name + investor names"
+  },
+  {
+   "source_type": "grant_eu",
+   "what_was_checked": "CORDIS / EIC / STARFOS not queried (lightweight control timeline); Hlidac statu dotace used as national-grant proxy only",
+   "url_or_query": "n/a"
+  }
+ ],
+ "after_investment": null,
+ "caveats": [
+  "Financing entity is US (Upheal, Inc.); Czech s.r.o. shows no capital increase.",
+  "Lead attribution inconsistent across articles (Credo vs KAYA)."
+ ]
+}

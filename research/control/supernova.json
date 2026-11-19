@@ -1,0 +1,108 @@
+{
+ "company": "Supernova",
+ "slug": "supernova",
+ "website": "",
+ "country_hq": "Czechia (per press; city unverified)",
+ "legal_entities": [
+  {
+   "name": "Supernova Corporation CZ s.r.o. (possible Czech entity; relation to Series A issuer unverified)",
+   "id_type": "ICO",
+   "id": "06781021",
+   "country": "CZ",
+   "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/06781021"
+  },
+  {
+   "name": "Supernova.io Inc (Delaware per Seedtable)",
+   "id_type": "other",
+   "id": "",
+   "country": "US",
+   "url": "https://seedtable.com/companies/supernovaio-inc/funding-rounds/series-a-2025-10"
+  }
+ ],
+ "sector": "AI (product development platform)",
+ "thesis_fit": {
+  "sector_bucket": "AI",
+  "note": "AI-driven product development platform (Portal)"
+ },
+ "control_note": "CONTROL GROUP: not a Rockaway investment. The rockaway block is replaced by control_round (same fields).",
+ "control_round": {
+  "round": "Series A",
+  "amount": "USD 9.2M",
+  "lead": "Taiwania Capital; Kaya, Credo, Reflex, J&T Ventures participated",
+  "co_investors": [
+   "J&T Ventures",
+   "Reflex Capital",
+   "Kaya",
+   "Credo Ventures",
+   "EQT Ventures"
+  ],
+  "announced_date": "2025-09-30",
+  "announced_url": "https://tech.eu/2025/09/30/supernova-raises-92-million-series-a-to-bring-ai-powered-vibe-coding-to-enterprise-product-teams/",
+  "deal_date": "",
+  "deal_date_url": "",
+  "t0": "2025-09-30",
+  "t0_basis": "announced"
+ },
+ "prior_investors": [],
+ "events": [
+  {
+   "date": "2018-01-18",
+   "date_precision": "day",
+   "date_type": "registered",
+   "source_type": "registry_incorporation",
+   "description": "Supernova Corporation CZ s.r.o. incorporated (assumed Czech entity)",
+   "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/06781021",
+   "confidence": "low",
+   "note": "Name match only; company founded 2018 in Ostrava per CzechCrunch",
+   "months_before_t0": 92.4
+  },
+  {
+   "date": "2022",
+   "date_precision": "year",
+   "date_type": "announced",
+   "source_type": "prior_round",
+   "description": "Most recent earlier round in 2022; USD 17.5M raised before Series A (dates/investors not given)",
+   "url": "https://cc.cz/potkali-se-v-cajovne-pak-rozbehli-startup-kde-automatizuji-praci-vyvojaru-ted-ziskali-200-milionu/",
+   "confidence": "medium",
+   "note": "",
+   "months_before_t0": 39.0
+  },
+  {
+   "date": "2025-09-30",
+   "date_precision": "day",
+   "date_type": "announced",
+   "source_type": "press_round",
+   "description": "USD 9.2M Series A led by Taiwania Capital; J&T Ventures, Reflex, Kaya, Credo, EQT Ventures, Wing VC, YC",
+   "url": "https://tech.eu/2025/09/30/supernova-raises-92-million-series-a-to-bring-ai-powered-vibe-coding-to-enterprise-product-teams/",
+   "confidence": "high",
+   "note": "",
+   "months_before_t0": 0.0
+  }
+ ],
+ "not_found": [
+  {
+   "source_type": "accelerator",
+   "what_was_checked": "Y Combinator is a named round participant and the article says the company joined YC; batch year not verified",
+   "url_or_query": "https://cc.cz/potkali-se-v-cajovne-pak-rozbehli-startup-kde-automatizuji-praci-vyvojaru-ted-ziskali-200-milionu/"
+  },
+  {
+   "source_type": "website_first",
+   "what_was_checked": "Domain not confirmed and not queried",
+   "url_or_query": ""
+  },
+  {
+   "source_type": "press_first",
+   "what_was_checked": "Only round-announcement coverage surfaced via a few web searches; no systematic search for earlier press mentions",
+   "url_or_query": "web search: company name + investor names"
+  },
+  {
+   "source_type": "grant_eu",
+   "what_was_checked": "CORDIS / EIC / STARFOS not queried (lightweight control timeline); Hlidac statu dotace used as national-grant proxy only",
+   "url_or_query": "n/a"
+  }
+ ],
+ "after_investment": null,
+ "caveats": [
+  "Series A of a company founded 2018; not comparable with early-seed T0s. US parent likely; Czech registry not analysed."
+ ]
+}

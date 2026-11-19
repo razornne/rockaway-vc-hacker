@@ -1,0 +1,157 @@
+{
+  "company": "CulturePulse",
+  "slug": "culturepulse",
+  "website": "https://culturepulse.ai",
+  "country_hq": "SK (Bratislava operating sub) / US (Delaware parent)",
+  "legal_entities": [
+    {
+      "name": "CulturePulse s.r.o.",
+      "id_type": "other",
+      "id": "ICO 54440807 (ORSR Bratislava III, vl. 193130/B)",
+      "country": "SK",
+      "url": "https://www.orsr.sk/vypis.asp?ID=739114&SID=2&P=1"
+    },
+    {
+      "name": "CulturePulse, Inc.",
+      "id_type": "other",
+      "id": "Delaware file no. 6209958 (as listed in ORSR; sole shareholder of the s.r.o.)",
+      "country": "US",
+      "url": "https://www.orsr.sk/vypis.asp?ID=739114&SID=2&P=1"
+    }
+  ],
+  "sector": "AI / agent-based behavioural modelling (digital twins of populations) for security, defence, marketing, urban planning",
+  "thesis_fit": {
+    "sector_bucket": "defense/dual-use",
+    "note": "Security risk prediction; later NATO DIANA (Estonian accelerator). Rockaway release stresses security and innovation in Europe."
+  },
+  "rockaway": {
+    "entity": "Rockaway Ventures",
+    "round": "Series A per press (first institutional round after 2023 seed)",
+    "amount": "USD 1.5m / EUR 1.45m (sources differ); round stayed open",
+    "lead": "Rockaway Ventures per cc.cz; Rockaway release does not say lead",
+    "co_investors": [
+      "Added later per ain.ua 2025-03-21 update: B Ventures Group, Simpact Ventures (same round not confirmed)"
+    ],
+    "announced_date": "2025-02-06",
+    "announced_url": "https://cc.cz/vidi-do-hlavy-izraelcum-i-palestincum-startup-predpovida-hrozby-ted-ziskava-dalsi-investici/",
+    "deal_date": "",
+    "deal_date_url": "",
+    "t0": "2025-02-06",
+    "t0_basis": "announced"
+  },
+  "prior_investors": [
+    {
+      "name": "Zero Gravity Capital (Slovak fund)",
+      "round": "Seed ~USD 1m",
+      "date": "2023-04-20",
+      "url": "https://tech.eu/2023/04/20/slovakian-social-media-analytics-start-up-culturepulse-ai-raises-just-shy-of-1-million-to-pivot-to-ai-saas-model/",
+      "also_coinvested_with_rockaway_elsewhere": null
+    }
+  ],
+  "events": [
+    {
+      "date": "2022-02-09",
+      "date_precision": "day",
+      "date_type": "captured",
+      "source_type": "website_first",
+      "description": "Earliest Wayback capture of culturepulse.ai (301 redirect).",
+      "url": "https://web.archive.org/web/20220209194628/http://culturepulse.ai/",
+      "months_before_t0": 35.9,
+      "confidence": "medium",
+      "note": "culturepulse.io has captures from 2014, probably an unrelated owner, not used."
+    },
+    {
+      "date": "2022-03-18",
+      "date_precision": "day",
+      "date_type": "registered",
+      "source_type": "registry_incorporation",
+      "description": "CulturePulse s.r.o. registered in Slovakia (Budimir), 100% owned by CulturePulse, Inc. (Delaware); directors Justin Lane and LeRon Shults.",
+      "url": "https://www.orsr.sk/vypis.asp?ID=739114&SID=2&P=1",
+      "months_before_t0": 34.7,
+      "confidence": "high",
+      "note": "Group founded 2021 per press (ain.ua); US incorporation date not verified."
+    },
+    {
+      "date": "2023-04-20",
+      "date_precision": "day",
+      "date_type": "announced",
+      "source_type": "prior_round",
+      "description": "Tech.eu: seed just under USD 1m from Zero Gravity Capital; pivot from social-media analytics to AI SaaS; HQ Slovakia.",
+      "url": "https://tech.eu/2023/04/20/slovakian-social-media-analytics-start-up-culturepulse-ai-raises-just-shy-of-1-million-to-pivot-to-ai-saas-model/",
+      "months_before_t0": 21.6,
+      "confidence": "high",
+      "note": "First press found, not necessarily first ever."
+    },
+    {
+      "date": "2025-02-06",
+      "date_precision": "day",
+      "date_type": "announced",
+      "source_type": "press_round",
+      "description": "CzechCrunch: USD 1.5m Series A led by Rockaway Ventures; customers UN and University of Cambridge.",
+      "url": "https://cc.cz/vidi-do-hlavy-izraelcum-i-palestincum-startup-predpovida-hrozby-ted-ziskava-dalsi-investici/",
+      "months_before_t0": 0.0,
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "date": "2025-02-07",
+      "date_precision": "day",
+      "date_type": "announced",
+      "source_type": "rockaway_announced",
+      "description": "Rockaway Capital news release on the investment (Zabrodsky, Smid quoted).",
+      "url": "https://www.rockawaycapital.com/en/news/rockaway-ventures-invests-in-culturepulse-driving-innovation-in-behavioral-analysis-and-security-risk-prediction-across-europe-and-beyond",
+      "months_before_t0": -0.0,
+      "confidence": "high",
+      "note": "Date taken from fetched page summary and ain.ua."
+    },
+    {
+      "date": "2026-04-02",
+      "date_precision": "day",
+      "date_type": "announced",
+      "source_type": "accelerator",
+      "description": "Tehnopol story: CulturePulse in NATO DIANA Estonian accelerator (2026 cohort).",
+      "url": "https://www.tehnopol.ee/en/startup-story-culturepulse-x-nato-diana-estonian-accelerator/",
+      "months_before_t0": -13.8,
+      "confidence": "medium",
+      "note": "After T0; cohort year inferred from search summary."
+    }
+  ],
+  "not_found": [
+    {
+      "source_type": "grant_national",
+      "what_was_checked": "APVV / Slovak grants not searched",
+      "url_or_query": "CulturePulse APVV"
+    },
+    {
+      "source_type": "grant_eu",
+      "what_was_checked": "CORDIS not searched",
+      "url_or_query": "cordis.europa.eu CulturePulse"
+    },
+    {
+      "source_type": "hiring",
+      "what_was_checked": "Wayback CDX for careers pages returned an offline page",
+      "url_or_query": "web.archive.org cdx culturepulse.ai/careers*"
+    },
+    {
+      "source_type": "registry_new_shareholder",
+      "what_was_checked": "ORSR shows only Inc. as shareholder; Rockaway (if on a cap table) is in the Delaware parent, not visible",
+      "url_or_query": "https://www.orsr.sk/vypis.asp?ID=739114&SID=2&P=1"
+    },
+    {
+      "source_type": "accelerator",
+      "what_was_checked": "No pre-T0 DIANA/accelerator evidence; first DIANA mention is 2026",
+      "url_or_query": "search NATO DIANA CulturePulse cohort"
+    }
+  ],
+  "after_investment": {
+    "next_rounds": [],
+    "exit": null,
+    "notes": "PitchBook (search snippet only) lists a Rockaway Ventures investment dated 2026-07-03 and Caplight a June 2026 seed deal; unverified, possibly a follow-on. Additional Series A investors per ain.ua 2025-03-21: B Ventures Group, Simpact Ventures."
+  },
+  "caveats": [
+    "Rockaway presumably invested in the Delaware parent; unverified.",
+    "Amount EUR 1.45m vs USD 1.5m; \"Series A\" label although a 2023 seed exists.",
+    "Slovak sub registered 2022-03-18; 2021 group history unverified.",
+    "Wayback offline intermittently; only first capture checked."
+  ]
+}

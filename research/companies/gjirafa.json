@@ -1,0 +1,60 @@
+{
+  "company": "Gjirafa",
+  "slug": "gjirafa",
+  "website": "https://gjirafa.com",
+  "country_hq": "Kosovo",
+  "legal_entities": [
+    {"name": "Gjirafa, Inc.", "id_type": "other", "id": "", "country": "United States (Delaware per aggregator, unverified)", "url": "https://techcrunch.com/2019/03/25/gjirafa-raises-a-6-7m-series-b-from-rockaway-capital-to-digitise-the-balkans"},
+    {"name": "Kosovo operating entity (name and ARBK number not confirmed)", "id_type": "other", "id": "", "country": "Kosovo", "url": "https://travel.gjirafa.com/terms"}
+  ],
+  "sector": "Albanian-language search engine, later e-commerce, video/media and ad technology for the Western Balkans",
+  "thesis_fit": {"sector_bucket": "other", "note": "Consumer internet/search/media tech; pre-dates the AI/deep-tech thesis."},
+  "rockaway": {
+    "entity": "Rockaway Capital",
+    "round": "Series A (USD 2m)",
+    "amount": "USD 2m (Czech report: more than USD 2m)",
+    "lead": "Rockaway Capital (Dusan Zabrodsky, investment partner)",
+    "co_investors": [],
+    "announced_date": "2016-02-10",
+    "announced_url": "https://techcrunch.com/2016/02/10/gjirafa/",
+    "deal_date": "",
+    "deal_date_url": "",
+    "t0": "2016-02-10",
+    "t0_basis": "announced"
+  },
+  "prior_investors": [
+    {"name": "Angels incl. Esther Dyson, Ondrej Bartos (Credo Ventures), Philip Staehelin", "round": "Angel (during StartupYard)", "date": "2016-02-11", "url": "https://startupyard.com/startupyard-alum-gjirafa-com-snags-2-million-from-rockaway-capital/", "also_coinvested_with_rockaway_elsewhere": null},
+    {"name": "StartupYard (accelerator, Rockaway is an investor in it)", "round": "Accelerator 2014 batch", "date": "2014-05-15", "url": "https://startupyard.com/meet-the-2014-founders-gjirafa-albaniakosovos-answer-to-google/", "also_coinvested_with_rockaway_elsewhere": true}
+  ],
+  "events": [
+    {"date": "2013-01-12", "date_precision": "day", "date_type": "captured", "source_type": "website_first", "description": "Earliest Wayback capture of gjirafa.com (301 to www). First status-200 capture 2013-03-02.", "url": "https://web.archive.org/cdx/search/cdx?url=gjirafa.com&output=json&limit=4&fl=timestamp,original,statuscode", "months_before_t0": 36.9, "confidence": "medium", "note": "Content not opened. Press says public launch came in 2014 after a failed 2013 attempt, so 2013 site may be an earlier version."},
+    {"date": "2013-03-02", "date_precision": "day", "date_type": "captured", "source_type": "website_first", "description": "First Wayback capture of gjirafa.com with status 200.", "url": "https://web.archive.org/cdx/search/cdx?url=gjirafa.com&output=json&from=2013&to=2015&limit=4&filter=statuscode:200", "months_before_t0": 35.3, "confidence": "medium", "note": "Content not opened."},
+    {"date": "2014-05-15", "date_precision": "day", "date_type": "announced", "source_type": "accelerator", "description": "StartupYard profiles Gjirafa as a 2014 batch founder team; full-text search launch planned for July 2014; investors 'have shown interest'.", "url": "https://startupyard.com/meet-the-2014-founders-gjirafa-albaniakosovos-answer-to-google/", "months_before_t0": 20.8, "confidence": "high", "note": "Rockaway is a StartupYard investor (per StartupYard 2016 post). Batch start itself is earlier in 2014."},
+    {"date": "2016-02-10", "date_precision": "day", "date_type": "announced", "source_type": "rockaway_announced", "description": "TechCrunch reports USD 2m round led by Rockaway Capital. Czech coverage (cc.cz) and StartupYard dated 2016-02-11.", "url": "https://techcrunch.com/2016/02/10/gjirafa/", "months_before_t0": 0.0, "confidence": "medium", "note": "Date taken from the TechCrunch URL; page not opened. Verified: https://startupyard.com/startupyard-alum-gjirafa-com-snags-2-million-from-rockaway-capital/ (2016-02-11) and https://cc.cz/2016/02/rockaway-investuje-2-miliony-dolaru-do-tohoto-startupu-ze-smichovskeho-startupyardu/ (2016-02-11)."}
+  ],
+  "not_found": [
+    {"source_type": "registry_incorporation", "what_was_checked": "ARBK (Kosovo) entry: arbk.rks-gov.net is a JS single-page app, not queried via curl. A number 810840307 appears on Gjirafa Travel terms next to 'biznesit' but its label and entity are unclear, so not recorded as an ID.", "url_or_query": "https://arbk.rks-gov.net/ ; https://travel.gjirafa.com/terms"},
+    {"source_type": "registry_incorporation", "what_was_checked": "Gjirafa, Inc. in Delaware: no registry record found; aggregators (MarketScreener) say Wilmington, DE, founded Feb 2013 (unverified).", "url_or_query": "Gjirafa Inc Delaware"},
+    {"source_type": "registry_capital_increase", "what_was_checked": "Not retrievable (see above).", "url_or_query": ""},
+    {"source_type": "registry_new_shareholder", "what_was_checked": "Not retrievable; Delaware does not publish shareholders.", "url_or_query": ""},
+    {"source_type": "financial_statements", "what_was_checked": "Not checked.", "url_or_query": ""},
+    {"source_type": "grant_national", "what_was_checked": "Not searched.", "url_or_query": ""},
+    {"source_type": "grant_eu", "what_was_checked": "Not searched.", "url_or_query": ""},
+    {"source_type": "gov_contract", "what_was_checked": "Not checked.", "url_or_query": ""},
+    {"source_type": "press_first", "what_was_checked": "A 2013 webcertain note about a new Albanian search engine (date and content not retrieved; redirect blocked) and a Red Herring/NYU engineering piece were not opened.", "url_or_query": "https://webcertain.com/site/knowhowamp/new-search-engine-launches-targeting-albania/kb1539"},
+    {"source_type": "rockaway_deal", "what_was_checked": "No separate deal date. rockawaycapital.com/?p=765 fetch returned only a different news list, not the Gjirafa post.", "url_or_query": "https://www.rockawaycapital.com/?p=765"}
+  ],
+  "after_investment": {
+    "next_rounds": [
+      {"date": "2019-03-25", "round": "Series B", "amount": "USD 6.7m", "lead": "Rockaway Capital", "url": "https://techcrunch.com/2019/03/25/gjirafa-raises-a-6-7m-series-b-from-rockaway-capital-to-digitise-the-balkans"}
+    ],
+    "exit": null,
+    "notes": "A 2025 press item says Gjirafa received USD 8.7m from Rockaway across two rounds (https://startupsmagazine.co.uk/article-rockaway-ventures-closes-second-fund-nearly-55m); that source attributes it to Rockaway Ventures although the investments were made by Rockaway Capital in 2016 and 2019. Gjirafa is described there as one of Rockaway's most successful investments."
+  },
+  "caveats": [
+    "T0 entity is Rockaway Capital (2016); Rockaway Ventures fund did not exist then. Count it as a Rockaway group investment.",
+    "Cahani is CEO/founder (name and role from press). Founding year differs by source: 2011, 2012, 2013.",
+    "Search engine public launch 2014 vs Wayback 2013 captures: earlier site version cannot be excluded.",
+    "TechCrunch 2016 date from URL only."
+  ]
+}

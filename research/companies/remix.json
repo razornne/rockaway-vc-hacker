@@ -1,0 +1,152 @@
+{
+  "company": "Remix",
+  "slug": "remix",
+  "website": "https://remixshop.com",
+  "country_hq": "Bulgaria (founded in Bulgaria; Sofia per search summaries, HQ not stated in Rockaway release)",
+  "legal_entities": [
+    {
+      "name": "Remix Global AD",
+      "id_type": "other",
+      "id": "",
+      "country": "BG",
+      "url": "https://newsroom.thredup.com/news/thredup-jumpstarts-european-expansion-with-acquisition-of-remix"
+    }
+  ],
+  "sector": "Second-hand / recommerce fashion platform with own logistics and AI tooling; Recommerce-as-a-Service",
+  "thesis_fit": {
+    "sector_bucket": "other",
+    "note": "Circular-fashion marketplace plus logistics/AI platform; not AI/deep tech/defense core. Rockaway frames it as a technology platform."
+  },
+  "rockaway": {
+    "entity": "Rockaway Ventures (fund)",
+    "round": "Series A, ~20% stake",
+    "amount": "undisclosed",
+    "lead": "",
+    "co_investors": [],
+    "announced_date": "2025-12-19",
+    "announced_url": "https://www.rockawaycapital.com/en/news/rockaway-ventures-invests-in-remix-a-technology-platform-for-circular-fashion",
+    "deal_date": "",
+    "deal_date_url": "",
+    "t0": "2025-12-19",
+    "t0_basis": "announced"
+  },
+  "prior_investors": [
+    {
+      "name": "thredUP Inc. (acquirer 2021; kept minority stake after Dec 2024 management buyout)",
+      "round": "Acquisition announced 2021-07-26 (~USD 28.5M); divested to management 2024-12-04",
+      "date": "2021-07-26",
+      "url": "https://newsroom.thredup.com/news/thredup-jumpstarts-european-expansion-with-acquisition-of-remix",
+      "also_coinvested_with_rockaway_elsewhere": null
+    }
+  ],
+  "events": [
+    {
+      "date": "2012-01-01",
+      "date_precision": "year",
+      "date_type": "event",
+      "source_type": "other",
+      "description": "Remix founded (year only, per thredUP release); no registry extract read",
+      "url": "https://newsroom.thredup.com/news/thredup-jumpstarts-european-expansion-with-acquisition-of-remix",
+      "months_before_t0": 167.6,
+      "confidence": "medium",
+      "note": "Registry incorporation date not verified (Bulgarian Commercial Register not queried). Year precision, months measured from 2012-01-01."
+    },
+    {
+      "date": "2014-06-08",
+      "date_precision": "day",
+      "date_type": "captured",
+      "source_type": "website_first",
+      "description": "First Wayback snapshot of remixshop.com titled 'Remix' (fashion shop); earlier captures 2002-2008 are a different or parked use of the domain",
+      "url": "https://web.archive.org/web/20140608021633/http://www.remixshop.com/",
+      "months_before_t0": 138.4,
+      "confidence": "medium",
+      "note": "Only the page title was checked, not the full content."
+    },
+    {
+      "date": "2021-07-26",
+      "date_precision": "day",
+      "date_type": "announced",
+      "source_type": "other",
+      "description": "thredUP announces acquisition of Remix Global AD (~USD 28.5M + USD 6.5M RSUs); nine markets; CEO Lyubomir Klenov",
+      "url": "https://newsroom.thredup.com/news/thredup-jumpstarts-european-expansion-with-acquisition-of-remix",
+      "months_before_t0": 52.8,
+      "confidence": "high",
+      "note": "M&A, not a venture round; first public financial event found."
+    },
+    {
+      "date": "2024-12-04",
+      "date_precision": "day",
+      "date_type": "announced",
+      "source_type": "other",
+      "description": "thredUP sells European business (Remix) to a management buyout led by GM Florin Filote; keeps minority stake; USD 2M cash injection 'to support fundraising'; 2023 net revenue USD 63.5M",
+      "url": "https://www.retail-insight-network.com/news/thredup-european-business-divesture/",
+      "months_before_t0": 12.5,
+      "confidence": "high",
+      "note": "Direct public signal that Remix was about to raise capital, 12 months before the Rockaway announcement."
+    },
+    {
+      "date": "2025-12-19",
+      "date_precision": "day",
+      "date_type": "announced",
+      "source_type": "rockaway_announced",
+      "description": "Rockaway Ventures announces Series A, ~20% stake (D. Zabrodsky quoted)",
+      "url": "https://www.rockawaycapital.com/en/news/rockaway-ventures-invests-in-remix-a-technology-platform-for-circular-fashion",
+      "months_before_t0": 0.0,
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "not_found": [
+    {
+      "source_type": "registry_capital_increase",
+      "what_checked": "Bulgarian Commercial Register (portal.registryagency.bg) answers HTTP 200 but is a JS app; no extract retrieved, so Rockaway capital increase / new shareholder not verified",
+      "url_or_query": "https://portal.registryagency.bg/CR/en/Reports/"
+    },
+    {
+      "source_type": "financial_statements",
+      "what_checked": "Not retrieved; only thredUP-disclosed 2023 revenue USD 63.5M",
+      "url_or_query": "https://www.retail-insight-network.com/news/thredup-european-business-divesture/"
+    },
+    {
+      "source_type": "prior_round",
+      "what_checked": "No venture rounds before the 2021 thredUP acquisition found in web search",
+      "url_or_query": "web search: Remix Global AD funding history"
+    },
+    {
+      "source_type": "grant_eu",
+      "what_checked": "Not searched",
+      "url_or_query": ""
+    },
+    {
+      "source_type": "gov_contract",
+      "what_checked": "Not searched",
+      "url_or_query": ""
+    },
+    {
+      "source_type": "accelerator",
+      "what_checked": "Not searched",
+      "url_or_query": ""
+    },
+    {
+      "source_type": "hiring",
+      "what_checked": "Not searched (Wayback went offline mid-session)",
+      "url_or_query": ""
+    },
+    {
+      "source_type": "rockaway_deal",
+      "what_checked": "No co-investors, lead, amount or closing date disclosed",
+      "url_or_query": "Rockaway release; Lupa 2025-12-19; Vestbee"
+    }
+  ],
+  "after_investment": {
+    "next_rounds": [],
+    "exit": null,
+    "notes": "No later round found."
+  },
+  "caveats": [
+    "Remix is ~13 years old with revenue ~USD 63M: not an early-stage sourcing case; earliest signals reflect company age, not discovery.",
+    "Unrelated companies named 'Remix' (gaming, music) appear in search; ignored.",
+    "Capital.bg thredUP article returned 403/Cloudflare; shareholder structure (four founders + <10% Dutch holder) only via search summary, not used.",
+    "Mergr/Crunchbase listings used as hints only."
+  ]
+}

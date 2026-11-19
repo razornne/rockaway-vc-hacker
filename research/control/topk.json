@@ -1,0 +1,75 @@
+{
+ "company": "TopK",
+ "slug": "topk",
+ "website": "https://topk.io",
+ "country_hq": "Czechia (Prague)",
+ "legal_entities": [],
+ "sector": "AI (search infrastructure)",
+ "thesis_fit": {
+  "sector_bucket": "AI",
+  "note": "search engine for AI era"
+ },
+ "control_note": "CONTROL GROUP: not a Rockaway investment. The rockaway block is replaced by control_round (same fields).",
+ "control_round": {
+  "round": "Seed",
+  "amount": "USD 5.5M (EUR 4.6M)",
+  "lead": "not stated; Earlybird, KAYA among investors",
+  "co_investors": [
+   "Earlybird",
+   "KAYA"
+  ],
+  "announced_date": "2025-07-01",
+  "announced_url": "https://siliconcanals.com/?p=65960",
+  "deal_date": "",
+  "deal_date_url": "",
+  "t0": "2025-07-01",
+  "t0_basis": "announced"
+ },
+ "prior_investors": [],
+ "events": [
+  {
+   "date": "2024-11-22",
+   "date_precision": "day",
+   "date_type": "captured",
+   "source_type": "website_first",
+   "description": "Earliest Wayback 200 capture of topk.io",
+   "url": "https://web.archive.org/cdx/search/cdx?url=topk.io&limit=2",
+   "confidence": "medium",
+   "note": "Company founded 2024 per article",
+   "months_before_t0": 7.3
+  },
+  {
+   "date": "2025-07-01",
+   "date_precision": "day",
+   "date_type": "announced",
+   "source_type": "press_round",
+   "description": "USD 5.5M seed (Earlybird, KAYA, others) reported",
+   "url": "https://siliconcanals.com/?p=65960",
+   "confidence": "high",
+   "note": "",
+   "months_before_t0": 0.0
+  }
+ ],
+ "not_found": [
+  {
+   "source_type": "registry_incorporation",
+   "what_was_checked": "ARES name search for TopK variants returned no matching Czech entity",
+   "url_or_query": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat (POST obchodniJmeno=TopK)"
+  },
+  {
+   "source_type": "press_first",
+   "what_was_checked": "Only round-announcement coverage surfaced via a few web searches; no systematic search for earlier press mentions",
+   "url_or_query": "web search: company name + investor names"
+  },
+  {
+   "source_type": "grant_eu",
+   "what_was_checked": "CORDIS / EIC / STARFOS not queried (lightweight control timeline); Hlidac statu dotace used as national-grant proxy only",
+   "url_or_query": "n/a"
+  }
+ ],
+ "after_investment": null,
+ "caveats": [
+  "No Czech legal entity found; likely foreign parent, not verified.",
+  "Lead not named in article; Earlybird/KAYA listed as investors."
+ ]
+}

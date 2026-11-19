@@ -1,0 +1,248 @@
+{
+  "company": "Filuta AI",
+  "slug": "filuta",
+  "website": "https://filuta.ai",
+  "country_hq": "Czech Republic (Prague); parent Filuta AI Inc., Delaware, USA",
+  "legal_entities": [
+    {
+      "name": "Filuta AI CZ s.r.o. (formerly Gloriabitura s.r.o.)",
+      "id_type": "ICO",
+      "id": "09745424",
+      "country": "CZ",
+      "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/09745424"
+    },
+    {
+      "name": "Filuta AI Inc.",
+      "id_type": "other",
+      "id": "Delaware reg. no. 6983300 (as shown in the Czech commercial register)",
+      "country": "US",
+      "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=1103788&typ=UPLNY"
+    },
+    {
+      "name": "Filuta AI Labs s.r.o.",
+      "id_type": "ICO",
+      "id": "23463392",
+      "country": "CZ",
+      "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/23463392"
+    },
+    {
+      "name": "Filuta AI Services s.r.o.",
+      "id_type": "ICO",
+      "id": "23464101",
+      "country": "CZ",
+      "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/23464101"
+    }
+  ],
+  "sector": "Composite AI / intelligent automation and simulation-based testing (gaming, aviation, automotive, defense simulators)",
+  "thesis_fit": {
+    "sector_bucket": "AI",
+    "note": "Press cites defense (military simulators), aviation and automotive as target markets, but gaming testing is the lead example."
+  },
+  "rockaway": {
+    "entity": "Rockaway Ventures (fund)",
+    "round": "Seed",
+    "amount": "USD 4.2M (about EUR 3.6M, about CZK 91-96M; sources differ)",
+    "lead": "Rockaway Ventures",
+    "co_investors": [
+      "Tarpan Capital (Tarpan Partners)",
+      "Lion Beat Capital"
+    ],
+    "announced_date": "2025-06-24",
+    "announced_url": "https://cc.cz/budeme-jeden-z-nejsilnejsich-tymu-pro-vyvoj-umele-inteligence-v-cesku-veri-ziskal-na-to-sto-milionu/",
+    "deal_date": "",
+    "deal_date_url": "",
+    "t0": "2025-06-24",
+    "t0_basis": "announced"
+  },
+  "prior_investors": [
+    {
+      "name": "Nation 1 (N1), lead",
+      "round": "Pre-seed, CZK 56M",
+      "date": "2023-01-23",
+      "url": "https://www.lupa.cz/aktuality/filuta-ai-startup-cechu-z-microsoftu-ci-googlu-ziskal-nejvetsi-tuzemskou-pre-seed-investici/",
+      "also_coinvested_with_rockaway_elsewhere": null
+    },
+    {
+      "name": "Czech Founders VC",
+      "round": "Pre-seed, CZK 56M",
+      "date": "2023-01-23",
+      "url": "https://cc.cz/ceske-startupy-maji-novy-rekord-projekt-filuta-funguje-paty-mesic-a-prave-ziskal-56-milionu/",
+      "also_coinvested_with_rockaway_elsewhere": true
+    },
+    {
+      "name": "SPM Invest",
+      "round": "Pre-seed, CZK 56M",
+      "date": "2023-01-23",
+      "url": "https://cc.cz/ceske-startupy-maji-novy-rekord-projekt-filuta-funguje-paty-mesic-a-prave-ziskal-56-milionu/",
+      "also_coinvested_with_rockaway_elsewhere": null
+    },
+    {
+      "name": "Microsoft startup program (equity role unclear)",
+      "round": "Pre-seed",
+      "date": "2023-01-23",
+      "url": "https://www.lupa.cz/aktuality/filuta-ai-startup-cechu-z-microsoftu-ci-googlu-ziskal-nejvetsi-tuzemskou-pre-seed-investici/",
+      "also_coinvested_with_rockaway_elsewhere": null
+    }
+  ],
+  "events": [
+    {
+      "date": "2020-12-11",
+      "date_precision": "day",
+      "date_type": "registered",
+      "source_type": "registry_incorporation",
+      "description": "Czech s.r.o. incorporated as shelf company Gloriabitura s.r.o. (later became Filuta AI CZ). Not yet Filuta.",
+      "url": "https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=1103788",
+      "months_before_t0": 54.4,
+      "confidence": "high",
+      "note": "Predecessor shell; real activity starts 2022."
+    },
+    {
+      "date": "2022-05-05",
+      "date_precision": "day",
+      "date_type": "registered",
+      "source_type": "registry_other",
+      "description": "Founder Filip Dvorak registered as sole shareholder and managing director of the shell (sole-shareholder decision dated 2022-04-16).",
+      "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=1103788&typ=UPLNY",
+      "months_before_t0": 37.7,
+      "confidence": "high",
+      "note": "Earliest registry signal tied to the founder. [manual check 2026-11-16: founder / own Delaware parent, not an outside investor → reclassified]"
+    },
+    {
+      "date": "2022-09",
+      "date_precision": "month",
+      "date_type": "event",
+      "source_type": "other",
+      "description": "Per Lupa the startup began operating in September 2022.",
+      "url": "https://www.lupa.cz/aktuality/filuta-ai-startup-cechu-z-microsoftu-ci-googlu-ziskal-nejvetsi-tuzemskou-pre-seed-investici/",
+      "months_before_t0": 33.7,
+      "confidence": "medium",
+      "note": "Self-reported start."
+    },
+    {
+      "date": "2022-10-20",
+      "date_precision": "day",
+      "date_type": "registered",
+      "source_type": "registry_other",
+      "description": "Delaware parent Filuta AI Inc. registered as 100% shareholder of the Czech s.r.o. (notarial deed 2022-10-07); business scope extended to R&D and software.",
+      "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=1103788&typ=UPLNY",
+      "months_before_t0": 32.1,
+      "confidence": "high",
+      "note": "US holding on top of Czech operating company. [manual check 2026-11-16: founder / own Delaware parent, not an outside investor → reclassified]"
+    },
+    {
+      "date": "2023-01-23",
+      "date_precision": "day",
+      "date_type": "captured",
+      "source_type": "website_first",
+      "description": "First Wayback capture of filuta.ai: 'Operationalized Composite AI'. (filuta.com captures from 2011 belong to an older, apparently different site.)",
+      "url": "https://web.archive.org/web/20230123102450/https://filuta.ai/",
+      "months_before_t0": 29.0,
+      "confidence": "high",
+      "note": "CDX first capture; may be incomplete."
+    },
+    {
+      "date": "2023-01-23",
+      "date_precision": "day",
+      "date_type": "announced",
+      "source_type": "prior_round",
+      "description": "Pre-seed CZK 56M led by Nation 1; Czech Founders, SPM Invest, Microsoft program, Horizon Europe project. Czech press calls it the largest domestic pre-seed. Also the first press coverage found.",
+      "url": "https://www.lupa.cz/aktuality/filuta-ai-startup-cechu-z-microsoftu-ci-googlu-ziskal-nejvetsi-tuzemskou-pre-seed-investici/",
+      "months_before_t0": 29.0,
+      "confidence": "high",
+      "note": "Same day: https://cc.cz/ceske-startupy-maji-novy-rekord-projekt-filuta-funguje-paty-mesic-a-prave-ziskal-56-milionu/"
+    },
+    {
+      "date": "2023-03-14",
+      "date_precision": "day",
+      "date_type": "registered",
+      "source_type": "registry_other",
+      "description": "Czech entity renamed from Gloriabitura s.r.o. to Filuta AI CZ s.r.o. (deed NZ 315/2023 dated 2023-03-14).",
+      "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=1103788&typ=UPLNY",
+      "months_before_t0": 27.4,
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "date": "2025-06-24",
+      "date_precision": "day",
+      "date_type": "announced",
+      "source_type": "rockaway_announced",
+      "description": "Seed round USD 4.2M led by Rockaway Ventures with Tarpan Capital and Lion Beat Capital.",
+      "url": "https://cc.cz/budeme-jeden-z-nejsilnejsich-tymu-pro-vyvoj-umele-inteligence-v-cesku-veri-ziskal-na-to-sto-milionu/",
+      "months_before_t0": 0.0,
+      "confidence": "high",
+      "note": "Earliest article found; echo24 25 Jun, Ekonomicky denik 29 Jun, Vestbee and Silicon Canals later."
+    },
+    {
+      "date": "2025-07-03",
+      "date_precision": "day",
+      "date_type": "registered",
+      "source_type": "registry_incorporation",
+      "description": "Two new Czech subsidiaries incorporated: Filuta AI Labs s.r.o. and Filuta AI Services s.r.o.",
+      "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/23463392",
+      "months_before_t0": -0.3,
+      "confidence": "high",
+      "note": "After T0."
+    },
+    {
+      "date": "2025-10-06",
+      "date_precision": "day",
+      "date_type": "event",
+      "source_type": "gov_contract",
+      "description": "Contract with the Ministry of Industry and Trade for targeted grant support, about CZK 35.7M (Hlidac statu).",
+      "url": "https://www.hlidacstatu.cz/hledat?Q=ico%3A09745424",
+      "months_before_t0": -3.4,
+      "confidence": "medium",
+      "note": "From a summarised page; programme not seen. After T0."
+    }
+  ],
+  "not_found": [
+    {
+      "source_type": "grant_eu",
+      "what_was_checked": "CORDIS web search for Filuta AI as participant: no hit. Press mentions an unnamed 'EU Horizon' project/program in the pre-seed.",
+      "url_or_query": "web search 'CORDIS Filuta AI'"
+    },
+    {
+      "source_type": "grant_national",
+      "what_was_checked": "STARFOS / TA CR not queried directly. Hlidac statu shows 3 subsidy records and 2 de minimis entries, contents not seen.",
+      "url_or_query": "https://www.hlidacstatu.cz/hledat?Q=ico%3A09745424"
+    },
+    {
+      "source_type": "accelerator",
+      "what_was_checked": "NATO DIANA, ESA BIC, StartupYard not searched specifically; none mentioned in press.",
+      "url_or_query": ""
+    },
+    {
+      "source_type": "financial_statements",
+      "what_was_checked": "Sbirka listin shows statements 2021-2025 filed; PDFs not opened, revenue onset not determined.",
+      "url_or_query": "https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=1103788"
+    },
+    {
+      "source_type": "hiring",
+      "what_was_checked": "Not checked (Wayback careers pages).",
+      "url_or_query": ""
+    },
+    {
+      "source_type": "registry_capital_increase",
+      "what_was_checked": "Czech s.r.o. capital stays CZK 100,000, 100% held by the US Inc.; the round happened at Delaware level, so no Czech registry signal for Rockaway.",
+      "url_or_query": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=1103788&typ=UPLNY"
+    },
+    {
+      "source_type": "other",
+      "what_was_checked": "University spin-off: none stated. Founder is a Matfyz PhD with Toronto/PARC background per press; looks founder-led, not a spin-off.",
+      "url_or_query": "https://www.lupa.cz/aktuality/filuta-ai-startup-cechu-z-microsoftu-ci-googlu-ziskal-nejvetsi-tuzemskou-pre-seed-investici/"
+    }
+  ],
+  "after_investment": {
+    "next_rounds": [],
+    "exit": null,
+    "notes": "Series A planned for H2 2026 (echo24); no announcement found as of 2026-11. MPO grant contract Oct 2025."
+  },
+  "caveats": [
+    "Deal date unknown: investment sits in the Delaware parent, not visible in the Czech register.",
+    "Amount varies by source (USD 4.2M = EUR 3.6-3.7M).",
+    "Founders in press: Filip Dvorak (CEO), Martin Dousek (CTO, 2023 article).",
+    "Delaware records not checked.",
+    "manual check 2026-11-16: registry dates confirmed in úplný výpis; Rockaway not a member of the Czech s.r.o. (invested at Delaware Inc. level, inferred)."
+  ]
+}

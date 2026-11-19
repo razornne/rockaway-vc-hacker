@@ -1,0 +1,169 @@
+{
+  "company": "Valpas",
+  "slug": "valpas",
+  "website": "https://valpashotels.com (earlier valpas.io)",
+  "country_hq": "FI",
+  "legal_entities": [
+    {
+      "name": "Valpas Enterprises Oy (formerly Luteiden Torjunta Helle Oy until 2018-03-09)",
+      "id_type": "other",
+      "id": "Y-tunnus 2575159-9",
+      "country": "FI",
+      "url": "https://avoindata.prh.fi/opendata-ytj-api/v3/companies?businessId=2575159-9"
+    }
+  ],
+  "sector": "Hospitality hardware + certification: bed-bug-safe hotel rooms (smart bed legs with traps)",
+  "thesis_fit": {
+    "sector_bucket": "other",
+    "note": "Hardware/IoT for hospitality; not AI or defence. Rockaway is a minor participant."
+  },
+  "rockaway": {
+    "entity": "Rockaway Ventures (confirmed participant, tech.eu)",
+    "round": "Seed EUR 4m",
+    "amount": "EUR 4m total round; Rockaway share not disclosed",
+    "lead": "Zenith VC",
+    "co_investors": [
+      "Icebreaker VC",
+      "Finnish Industry Investment (Tesi)",
+      "Canon Marketing Japan MIRAI Fund",
+      "Activum SG Ventures",
+      "Houghton Street Ventures",
+      "Morrow Ventures"
+    ],
+    "announced_date": "2024-06-26",
+    "announced_url": "https://tech.eu/2024/06/26/pest-control-startup-valpas-raised-4m-seed-for-pesticide-free-bed-bug-solution/",
+    "deal_date": "",
+    "deal_date_url": "",
+    "t0": "2024-06-26",
+    "t0_basis": "announced"
+  },
+  "prior_investors": [
+    {
+      "name": "Maki.vc, Icebreaker.vc, Reaktor Ventures",
+      "round": "Seed EUR 0.5m (led by Maki.vc)",
+      "date": "2018",
+      "url": "https://www.finsmes.com/?p=136222",
+      "also_coinvested_with_rockaway_elsewhere": null
+    },
+    {
+      "name": "ActivumSG Ventures, Tesi, Realty Corporation (+ existing)",
+      "round": "Seed EUR 1.6m",
+      "date": "2022-04-21",
+      "url": "https://valpashotels.com/blog/valpas-raises-1-6meur-to-empower-hotels-to-make-every-trip-bed-bug-safe",
+      "also_coinvested_with_rockaway_elsewhere": null
+    }
+  ],
+  "events": [
+    {
+      "date": "2013-10-17",
+      "date_precision": "day",
+      "date_type": "registered",
+      "source_type": "registry_incorporation",
+      "description": "Oy registered as Luteiden Torjunta Helle Oy (pest control); became Valpas Enterprises Oy in 2018.",
+      "url": "https://avoindata.prh.fi/opendata-ytj-api/v3/companies?businessId=2575159-9",
+      "months_before_t0": 128.3,
+      "confidence": "high",
+      "note": "Valpas founding year is reported inconsistently (2013/2017/2022)."
+    },
+    {
+      "date": "2018-03-09",
+      "date_precision": "day",
+      "date_type": "registered",
+      "source_type": "registry_other",
+      "description": "Company renamed Valpas Enterprises Oy.",
+      "url": "https://avoindata.prh.fi/opendata-ytj-api/v3/companies?businessId=2575159-9",
+      "months_before_t0": 75.6,
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "date": "2018-04-09",
+      "date_precision": "day",
+      "date_type": "captured",
+      "source_type": "website_first",
+      "description": "Earliest Wayback capture of valpas.io.",
+      "url": "https://web.archive.org/web/20180409060920/https://valpas.io/",
+      "months_before_t0": 74.6,
+      "confidence": "high",
+      "note": "Capture date only."
+    },
+    {
+      "date": "2018-06-01",
+      "date_precision": "year",
+      "date_type": "announced",
+      "source_type": "prior_round",
+      "description": "Seed EUR 0.5m led by Maki.vc with Icebreaker.vc and Reaktor Ventures.",
+      "url": "https://www.finsmes.com/?p=136222",
+      "months_before_t0": 72.8,
+      "confidence": "low",
+      "note": "Year only (2018) from search summaries; page returned 403 so date unverified. Stored as 2018-06-01 for sorting."
+    },
+    {
+      "date": "2019-04-19",
+      "date_precision": "day",
+      "date_type": "captured",
+      "source_type": "website_first",
+      "description": "Earliest Wayback capture of valpashotels.com (hotel-facing site).",
+      "url": "https://web.archive.org/web/20190419123450/http://www.valpashotels.com:80/",
+      "months_before_t0": 62.3,
+      "confidence": "high",
+      "note": "Capture date only."
+    },
+    {
+      "date": "2022-04-21",
+      "date_precision": "day",
+      "date_type": "announced",
+      "source_type": "prior_round",
+      "description": "EUR 1.6m seed (ActivumSG, Tesi, Realty Corp); over 300 premium hotels as customers.",
+      "url": "https://valpashotels.com/blog/valpas-raises-1-6meur-to-empower-hotels-to-make-every-trip-bed-bug-safe",
+      "months_before_t0": 26.2,
+      "confidence": "high",
+      "note": "Customers named: Pestana, ARP Hansen, Design Hotels."
+    },
+    {
+      "date": "2024-06-26",
+      "date_precision": "day",
+      "date_type": "announced",
+      "source_type": "rockaway_announced",
+      "description": "EUR 4m seed led by Zenith VC; Rockaway Ventures listed among participants.",
+      "url": "https://tech.eu/2024/06/26/pest-control-startup-valpas-raised-4m-seed-for-pesticide-free-bed-bug-solution/",
+      "months_before_t0": 0.0,
+      "confidence": "high",
+      "note": "Business Wire release also exists (403 on fetch)."
+    }
+  ],
+  "not_found": [
+    {
+      "source_type": "rockaway_deal",
+      "what_was_checked": "No Rockaway press release or quote on Valpas found",
+      "url_or_query": "Valpas Rockaway search"
+    },
+    {
+      "source_type": "grant_national",
+      "what_was_checked": "Business Finland not searched",
+      "url_or_query": "Business Finland Valpas"
+    },
+    {
+      "source_type": "hiring",
+      "what_was_checked": "Not sampled",
+      "url_or_query": "valpashotels.com careers"
+    },
+    {
+      "source_type": "financial_statements",
+      "what_was_checked": "Not opened (Asiakastieto snippet: 2024 turnover ~EUR 1.4m, 7 staff, unverified)",
+      "url_or_query": "https://www.asiakastieto.fi/yritykset/fi/valpas-enterprises-oy/25751599/taloustiedot"
+    }
+  ],
+  "after_investment": {
+    "next_rounds": [],
+    "exit": null,
+    "notes": "None found."
+  },
+  "caveats": [
+    "Valpas is Finnish (Helsinki), not Czech.",
+    "Rockaway is a minor participant; T0 is the round announcement.",
+    "2018 round date unverified.",
+    "Wayback CDX intermittently offline; first captures only.",
+    "manual check 2026-11-16: tech.eu article confirms Rockaway Ventures among participants; Zenith VC led."
+  ]
+}

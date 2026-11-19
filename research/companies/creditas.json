@@ -1,0 +1,166 @@
+{
+  "company": "Creditas (formerly BankFacil)",
+  "slug": "creditas",
+  "website": "https://www.creditas.com",
+  "country_hq": "Brazil (Sao Paulo); not Czech and unrelated to Czech Banka Creditas",
+  "legal_entities": [
+    {
+      "name": "CREDITAS SOLUCOES LTDA",
+      "id_type": "other",
+      "id": "CNPJ 17.770.708/0001-24",
+      "country": "BR",
+      "url": "https://brasilapi.com.br/api/cnpj/v1/17770708000124"
+    }
+  ],
+  "sector": "Fintech: secured consumer lending (originally P2P loans)",
+  "thesis_fit": {
+    "sector_bucket": "other",
+    "note": "Fintech lending; early-stage venture bet."
+  },
+  "rockaway": {
+    "entity": "Rockaway Ventures, startup arm of the Rockaway group (CzechCrunch 2017; pt.wikipedia says Rockaway Capital). A minority venture stake, not a holding/control position.",
+    "round": "Seed (2013)",
+    "amount": "USD 1.4M round total; Rockaway share undisclosed",
+    "lead": "Rockaway and Napkn Ventures (pt.wikipedia)",
+    "co_investors": [
+      "Napkn Ventures"
+    ],
+    "announced_date": "",
+    "announced_url": "",
+    "deal_date": "2013-10",
+    "deal_date_url": "https://cc.cz/rockaway-po-3-letech-prodava-za-desetinasobek-podil-v-serveru-s-p2p-pujckami/",
+    "t0": "2013-10",
+    "t0_basis": "deal"
+  },
+  "prior_investors": [],
+  "events": [
+    {
+      "date": "2012-04-29",
+      "date_precision": "day",
+      "date_type": "captured",
+      "source_type": "website_first",
+      "description": "First Wayback capture of bankfacil.com.br: pre-launch landing page (\"Estamos trabalhando para ajuda-lo a controlar sua vida financeira\") with e-mail sign-up.",
+      "url": "https://web.archive.org/web/20120429040755/http://www.bankfacil.com.br/",
+      "months_before_t0": 17.8,
+      "confidence": "high",
+      "note": "Months measured to approximate T0."
+    },
+    {
+      "date": "2012-04",
+      "date_precision": "month",
+      "date_type": "event",
+      "source_type": "other",
+      "description": "pt.wikipedia: BankFacil founded April 2012 in Sao Paulo.",
+      "url": "https://pt.wikipedia.org/wiki/Creditas",
+      "months_before_t0": 18.8,
+      "confidence": "low",
+      "note": "Exame says founded 2013."
+    },
+    {
+      "date": "2013-01-24",
+      "date_precision": "day",
+      "date_type": "registered",
+      "source_type": "registry_incorporation",
+      "description": "CNPJ 17.770.708/0001-24 CREDITAS SOLUCOES LTDA, activity start 2013-01-24 (current name; link to BankFacil is an inference).",
+      "url": "https://brasilapi.com.br/api/cnpj/v1/17770708000124",
+      "months_before_t0": 9.0,
+      "confidence": "medium",
+      "note": "Brazilian registry via BrasilAPI."
+    },
+    {
+      "date": "2013-10",
+      "date_precision": "month",
+      "date_type": "announced",
+      "source_type": "rockaway_deal",
+      "description": "Rockaway Ventures bought a minority stake \"3.5 years\" before 24 Apr 2017 in a USD 1.4M round with Napkn Ventures (derived, approx. Oct 2013). This is T0.",
+      "url": "https://cc.cz/rockaway-po-3-letech-prodava-za-desetinasobek-podil-v-serveru-s-p2p-pujckami/",
+      "months_before_t0": 0.8,
+      "confidence": "low",
+      "note": "Derived from a relative statement; pt.wikipedia says only \"2013 seed led by Rockaway Capital and Napkn Ventures\"."
+    },
+    {
+      "date": "2015-08-04",
+      "date_precision": "day",
+      "date_type": "announced",
+      "source_type": "press_round",
+      "description": "Series A BRL 10M (about USD 2.9M): Accion Frontier Investments Group and Redpoint eventures (Rockaway not named).",
+      "url": "https://globalprivatecapital.org/?p=5622",
+      "months_before_t0": -21.3,
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "date": "2017-02-23",
+      "date_precision": "day",
+      "date_type": "announced",
+      "source_type": "press_round",
+      "description": "Series B BRL 60M led by IFC with Naspers Fintech; company renamed Creditas.",
+      "url": "https://exame.com/pme/startup-empresta-dinheiro-com-juro-de-115-ao-mes-e-ganha-aporte/",
+      "months_before_t0": -40.0,
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "date": "2017-04-24",
+      "date_precision": "day",
+      "date_type": "announced",
+      "source_type": "other",
+      "description": "Exit announced: Rockaway Ventures sells its minority stake at about 10x the original investment (buyer not named).",
+      "url": "https://cc.cz/rockaway-po-3-letech-prodava-za-desetinasobek-podil-v-serveru-s-p2p-pujckami/",
+      "months_before_t0": -42.0,
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "not_found": [
+    {
+      "source_type": "rockaway_announced",
+      "what_was_checked": "No 2013 announcement of the Rockaway/Napkn investment found (PT and EN searches); it appears only in the 2017 exit article and aggregators. Rockaway exit page URL given in the coordinator file did not load the article (listing page returned).",
+      "url_or_query": "https://rockawaycapital.com/en/2017/04/rockaway-ventures-announces-exit-the-value-of-its-share-in-creditas-increased-tenfold"
+    },
+    {
+      "source_type": "press_first",
+      "what_was_checked": "No pre-T0 press on BankFacil found.",
+      "url_or_query": ""
+    },
+    {
+      "source_type": "registry_capital_increase",
+      "what_was_checked": "Brazilian JUCESP filings not accessible; investment may have gone through a foreign vehicle; not checked.",
+      "url_or_query": ""
+    },
+    {
+      "source_type": "hiring / grants / accelerator",
+      "what_was_checked": "Not checked.",
+      "url_or_query": ""
+    }
+  ],
+  "after_investment": {
+    "next_rounds": [
+      {
+        "date": "2015-08-04",
+        "round": "Series A",
+        "amount": "BRL 10M (~USD 2.9M)",
+        "lead": "Accion Frontier Investments Group, Redpoint eventures",
+        "url": "https://globalprivatecapital.org/?p=5622"
+      },
+      {
+        "date": "2017-02-23",
+        "round": "Series B",
+        "amount": "BRL 60M",
+        "lead": "IFC, Naspers Fintech",
+        "url": "https://exame.com/pme/startup-empresta-dinheiro-com-juro-de-115-ao-mes-e-ganha-aporte/"
+      }
+    ],
+    "exit": {
+      "date": "2017-04-24",
+      "buyer": "not named; about 10x original investment",
+      "url": "https://cc.cz/rockaway-po-3-letech-prodava-za-desetinasobek-podil-v-serveru-s-p2p-pujckami/"
+    },
+    "notes": "Later Series D (SoftBank, 2019) and more per pt.wikipedia."
+  },
+  "caveats": [
+    "Coordinator file lists Creditas with date 2017-04: that is the EXIT announcement (the URL is \"announces exit\"), not the entry. Entry is about 3.5 years earlier (about Oct 2013, derived, low confidence).",
+    "Rockaway entity: CzechCrunch says Rockaway Ventures, pt.wikipedia says Rockaway Capital; whether the EUR 53m fund existed in 2013 is not established, so this is pre-fund group venture money.",
+    "Seed size varies: USD 1.4M (cc.cz) vs BRL 3M (Forbes Brasil / Exame, per search summary)."
+  ]
+}

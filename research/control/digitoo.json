@@ -1,0 +1,162 @@
+{
+ "company": "Digitoo",
+ "slug": "digitoo",
+ "website": "",
+ "country_hq": "Czechia (Prague)",
+ "legal_entities": [
+  {
+   "name": "Digitoo s.r.o.",
+   "id_type": "ICO",
+   "id": "08494584",
+   "country": "CZ",
+   "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?typ=UPLNY&subjektId=1061878"
+  }
+ ],
+ "sector": "AI/fintech (document processing)",
+ "thesis_fit": {
+  "sector_bucket": "AI",
+  "note": "AI document/invoice processing"
+ },
+ "control_note": "CONTROL GROUP: not a Rockaway investment. The rockaway block is replaced by control_round (same fields).",
+ "control_round": {
+  "round": "Seed",
+  "amount": "EUR 2.3M",
+  "lead": "Reflex Capital",
+  "co_investors": [
+   "CB Growth ONE"
+  ],
+  "announced_date": "2023-12-14",
+  "announced_url": "https://en.ain.ua/2023/12/14/digitoo-raises-2-3m-seed-reflex-capital",
+  "deal_date": "2023-11-30",
+  "deal_date_url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?typ=UPLNY&subjektId=1061878",
+  "t0": "2023-12-14",
+  "t0_basis": "announced"
+ },
+ "prior_investors": [
+  {
+   "name": "Nation 1 (GP S.a r.l.)",
+   "round": "2021 investment",
+   "date": "2021-05-12",
+   "url": "https://www.hlidacstatu.cz/dotace/hledat?Q=ico%3A08494584",
+   "also_coinvested_with_rockaway_elsewhere": null
+  },
+  {
+   "name": "DataSentics, a.s.",
+   "round": "shareholder from 2022-02-16",
+   "date": "2022-02-16",
+   "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?typ=UPLNY&subjektId=1061878",
+   "also_coinvested_with_rockaway_elsewhere": null
+  }
+ ],
+ "events": [
+  {
+   "date": "2019-09-09",
+   "date_precision": "day",
+   "date_type": "registered",
+   "source_type": "registry_incorporation",
+   "description": "Digitoo s.r.o. incorporated, capital 200,000 CZK",
+   "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?typ=UPLNY&subjektId=1061878",
+   "confidence": "high",
+   "note": "",
+   "months_before_t0": 51.2
+  },
+  {
+   "date": "2020-08-13",
+   "date_precision": "day",
+   "date_type": "captured",
+   "source_type": "website_first",
+   "description": "Earliest Wayback capture of digitoo.cz (200)",
+   "url": "https://web.archive.org/cdx/search/cdx?url=digitoo.cz&limit=2",
+   "confidence": "medium",
+   "note": "",
+   "months_before_t0": 40.0
+  },
+  {
+   "date": "2021-05-12",
+   "date_precision": "day",
+   "date_type": "registered",
+   "source_type": "registry_capital_increase",
+   "description": "Capital 200,000 -> 272,856 CZK; Kaya Diamond s.r.o. and Nation 1 registered (Hlidac lists Investice do firmy CZK 4.6M from Nation 1 GP, 2021)",
+   "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?typ=UPLNY&subjektId=1061878",
+   "confidence": "medium",
+   "note": "Relation of Kaya Diamond s.r.o. to KAYA VC not verified",
+   "months_before_t0": 31.1
+  },
+  {
+   "date": "2022-02-16",
+   "date_precision": "day",
+   "date_type": "registered",
+   "source_type": "registry_new_shareholder",
+   "description": "DataSentics, a.s. registered as shareholder with capital change",
+   "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?typ=UPLNY&subjektId=1061878",
+   "confidence": "high",
+   "note": "",
+   "months_before_t0": 21.9
+  },
+  {
+   "date": "2022-09-30",
+   "date_precision": "day",
+   "date_type": "event",
+   "source_type": "gov_contract",
+   "description": "Registr smluv: Digitoo licence with Prague City Tourism a.s., CZK 138,884 (first of several)",
+   "url": "https://www.hlidacstatu.cz/hledatSmlouvy?Q=icoPlatce%3A08494584+OR+icoPrijemce%3A08494584",
+   "confidence": "high",
+   "note": "",
+   "months_before_t0": 14.5
+  },
+  {
+   "date": "2023-07-14",
+   "date_precision": "day",
+   "date_type": "registered",
+   "source_type": "registry_capital_increase",
+   "description": "Capital change registered (DataSentics shareholding ends)",
+   "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?typ=UPLNY&subjektId=1061878",
+   "confidence": "medium",
+   "note": "",
+   "months_before_t0": 5.0
+  },
+  {
+   "date": "2023-11-30",
+   "date_precision": "day",
+   "date_type": "registered",
+   "source_type": "registry_capital_increase",
+   "description": "Capital change; CB Growth ONE s.r.o. and Reflex 2 Ventures SE registered as shareholders",
+   "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?typ=UPLNY&subjektId=1061878",
+   "confidence": "high",
+   "note": "",
+   "months_before_t0": 0.5
+  },
+  {
+   "date": "2023-12-14",
+   "date_precision": "day",
+   "date_type": "announced",
+   "source_type": "press_round",
+   "description": "EUR 2.3M seed led by Reflex Capital",
+   "url": "https://en.ain.ua/2023/12/14/digitoo-raises-2-3m-seed-reflex-capital",
+   "confidence": "high",
+   "note": "",
+   "months_before_t0": 0.0
+  }
+ ],
+ "not_found": [
+  {
+   "source_type": "accelerator",
+   "what_was_checked": "none seen in sources used",
+   "url_or_query": "https://www.hlidacstatu.cz/subjekt/08494584"
+  },
+  {
+   "source_type": "press_first",
+   "what_was_checked": "Only round-announcement coverage surfaced via a few web searches; no systematic search for earlier press mentions",
+   "url_or_query": "web search: company name + investor names"
+  },
+  {
+   "source_type": "grant_eu",
+   "what_was_checked": "CORDIS / EIC / STARFOS not queried (lightweight control timeline); Hlidac statu dotace used as national-grant proxy only",
+   "url_or_query": "n/a"
+  }
+ ],
+ "after_investment": null,
+ "caveats": [
+  "Relation of Kaya Diamond s.r.o. to KAYA VC and of Nation 1 to any named fund not verified."
+ ]
+}

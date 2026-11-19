@@ -1,0 +1,61 @@
+{
+  "company": "Spotawheel",
+  "slug": "spotawheel",
+  "website": "https://www.spotawheel.com",
+  "country_hq": "Greece",
+  "legal_entities": [
+    {"name": "Spotawheel (legal name and form not confirmed; listed in Nea Ionia, Greece)", "id_type": "other", "id": "", "country": "Greece", "url": "https://registry.elevategreece.gov.gr/company/spotawheel/"}
+  ],
+  "sector": "Online used-car trading/retail platform (buys cars upfront, reconditions, resells; Greece, Poland, Romania, Germany)",
+  "thesis_fit": {"sector_bucket": "other", "note": "Marketplace/asset-heavy retail with debt financing; not AI/deep tech."},
+  "rockaway": {
+    "entity": "Rockaway Ventures",
+    "round": "EUR 100m round (equity plus asset-backed debt), labelled Series B by some outlets",
+    "amount": "Rockaway ticket not disclosed; round EUR 100m incl. debt",
+    "lead": "VentureFriends",
+    "co_investors": ["Endeavor Catalyst", "Adevinta Ventures", "UNIQA Ventures", "Velocity Partners", "FJ Labs", "Collective Spark", "UK credit fund (unnamed)"],
+    "announced_date": "2022-05-03",
+    "announced_url": "https://globalventuring.com/corporate/spotawheel-drives-to-105m-round/?format=md",
+    "deal_date": "",
+    "deal_date_url": "",
+    "t0": "2022-05-03",
+    "t0_basis": "announced"
+  },
+  "prior_investors": [
+    {"name": "VentureFriends", "round": "2019 round (EUR 5m, equity+debt) and later lead", "date": "2019-09-04", "url": "https://siliconcanals.com/greek-startup-spotawheel-nabs-e5m-to-bring-transparency-in-online-used-car-market/", "also_coinvested_with_rockaway_elsewhere": null},
+    {"name": "Velocity Partners", "round": "2019 round", "date": "2019-09-04", "url": "https://siliconcanals.com/greek-startup-spotawheel-nabs-e5m-to-bring-transparency-in-online-used-car-market/", "also_coinvested_with_rockaway_elsewhere": null},
+    {"name": "FJ Labs", "round": "Series A/2020 per company registry profile and aggregators", "date": "", "url": "https://registry.elevategreece.gov.gr/company/spotawheel/", "also_coinvested_with_rockaway_elsewhere": null}
+  ],
+  "events": [
+    {"date": "2016-05-29", "date_precision": "day", "date_type": "captured", "source_type": "website_first", "description": "Earliest Wayback capture of spotawheel.gr (HTTP 301). Shows domain live by May 2016.", "url": "https://web.archive.org/cdx/search/cdx?url=spotawheel.gr&output=json&limit=5&fl=timestamp,original,statuscode", "months_before_t0": 71.1, "confidence": "medium", "note": "First capture with status 200 is 2017-01-27 (widget referral from autoblog.gr). Snapshot content not opened."},
+    {"date": "2017-01-27", "date_precision": "day", "date_type": "captured", "source_type": "website_first", "description": "First Wayback capture with status 200 (spotawheel.gr/?ref=wdgt_autoblog), showing a distribution widget on autoblog.gr.", "url": "https://web.archive.org/cdx/search/cdx?url=spotawheel.gr/*&output=json&limit=15&filter=statuscode:200&collapse=urlkey&fl=timestamp,original", "months_before_t0": 63.2, "confidence": "medium", "note": "Content not opened."},
+    {"date": "2019-09-02", "date_precision": "day", "date_type": "announced", "source_type": "press_round", "description": "TechCrunch coverage of the EUR 5m round (date taken from URL; page not opened). First press found. Silicon Canals dated 2019-09-04; Pappas Post 2019-09-25 gives ~USD 5.5m, VentureFriends lead with Velocity Partners, ~USD 9m raised since 2016 launch.", "url": "https://techcrunch.com/2019/09/02/spotawheel", "months_before_t0": 32.0, "confidence": "medium", "note": "Other coverage: https://siliconcanals.com/greek-startup-spotawheel-nabs-e5m-to-bring-transparency-in-online-used-car-market/ and https://www.pappaspost.com/spotawheel-greece-5-million-funding/"},
+    {"date": "2022-05-03", "date_precision": "day", "date_type": "announced", "source_type": "rockaway_announced", "description": "EUR 100m round (equity plus debt) led by VentureFriends; Rockaway Ventures listed among investors. Endeavor Greece post dated 2022-05-04.", "url": "https://globalventuring.com/corporate/spotawheel-drives-to-105m-round/?format=md", "months_before_t0": 0.0, "confidence": "high", "note": "Endeavor: https://www.endeavor.org.gr/blog/spotawheel-closes-eur100m-funding-round-with-participation-from-endeavor . An aggregator dates the deal 2022-04-28 (not primary, not used)."}
+  ],
+  "not_found": [
+    {"source_type": "registry_incorporation", "what_was_checked": "GEMI number, legal name, incorporation date. Web search found none; GEMI portal (publicity.businessportal.gr) loads as a JS app and was not queried; opengemi.gov.gr did not connect from this machine.", "url_or_query": "https://publicity.businessportal.gr/"},
+    {"source_type": "registry_capital_increase", "what_was_checked": "Capital increases around 2022-04/05 not retrievable without GEMI access.", "url_or_query": "GEMI Spotawheel"},
+    {"source_type": "registry_new_shareholder", "what_was_checked": "Greek Societe Anonyme shareholder changes not retrieved.", "url_or_query": "GEMI Spotawheel"},
+    {"source_type": "financial_statements", "what_was_checked": "Not retrieved.", "url_or_query": "GEMI financial statements"},
+    {"source_type": "prior_round", "what_was_checked": "A June 2016 seed of about USD 300k (VentureFriends, L-Stone Capital) is claimed by one aggregator; no primary source found.", "url_or_query": "Spotawheel 2016 seed funding"},
+    {"source_type": "grant_national", "what_was_checked": "Not searched in Greek national grant databases.", "url_or_query": ""},
+    {"source_type": "grant_eu", "what_was_checked": "Not searched in CORDIS/EIC.", "url_or_query": ""},
+    {"source_type": "accelerator", "what_was_checked": "No accelerator found in searches.", "url_or_query": "Spotawheel accelerator"},
+    {"source_type": "gov_contract", "what_was_checked": "Not applicable (B2C/B2B used cars).", "url_or_query": ""},
+    {"source_type": "hiring", "what_was_checked": "Not examined.", "url_or_query": ""},
+    {"source_type": "rockaway_deal", "what_was_checked": "No Rockaway-side announcement for Spotawheel found; rockawaycapital.com page fetched did not mention it.", "url_or_query": "https://www.rockawaycapital.com/?p=42358"}
+  ],
+  "after_investment": {
+    "next_rounds": [
+      {"date": "2025-11-06", "round": "Equity and debt", "amount": "EUR 300m (split undisclosed)", "lead": "Pollen Street Capital (debt); equity investors unnamed", "url": "https://tech.eu/2025/11/06/used-car-platform-spotawheel-bags-300m-in-equity-and-debt/"}
+    ],
+    "exit": null,
+    "notes": "Rockaway not mentioned in the 2025 article."
+  },
+  "caveats": [
+    "T0 is the announcement date. Rockaway Ventures was one of a large syndicate; no evidence of an earlier Rockaway investment.",
+    "Founding year given as 2015 or 2016 by different sources; most say 2016.",
+    "Founders per Endeavor: Charis Arvanitis (CEO), Kiriakos Agadakos; Dealroom also lists Christos Zis (aggregator).",
+    "TechCrunch 2019 date is from URL only."
+  ]
+}

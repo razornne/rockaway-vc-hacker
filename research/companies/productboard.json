@@ -1,0 +1,212 @@
+{
+  "company": "Productboard",
+  "slug": "productboard",
+  "website": "https://www.productboard.com",
+  "country_hq": "USA (San Francisco); development in Prague, CZ",
+  "legal_entities": [
+    {
+      "name": "Productboard Czechia s.r.o.",
+      "id_type": "ICO",
+      "id": "07323301",
+      "country": "CZ",
+      "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/07323301"
+    },
+    {
+      "name": "Productboard, Inc. (US parent; state of incorporation not verified)",
+      "id_type": "other",
+      "id": "",
+      "country": "US",
+      "url": "https://techcrunch.com/2016/10/19/productboard-raises-1-3-million-to-help-product-teams-prioritize-what-to-build-next/"
+    }
+  ],
+  "sector": "Product management SaaS",
+  "thesis_fit": {
+    "sector_bucket": "other",
+    "note": "B2B SaaS, not AI/deep tech at T0."
+  },
+  "rockaway": {
+    "entity": "Rockaway Capital (group, pre-fund); not the Rockaway Ventures EUR 53m fund",
+    "round": "Convertible note (pre-seed)",
+    "amount": "USD 400,000 (Rockaway write-up)",
+    "lead": "Rockaway Capital (only outside investor before the seed)",
+    "co_investors": [],
+    "announced_date": "2016-10-18",
+    "announced_url": "https://productboard.com/blog/productboard-raises-1-3-million-in-seed-funding-to-build-system-of-record-for-product-management",
+    "deal_date": "2015",
+    "deal_date_url": "https://rockawayventures.com/productboard-is-now-the-most-valuable-czech-start-up-it-obtained-billions-in-another-investment-round-and-became-unicorn/",
+    "t0": "2015",
+    "t0_basis": "deal"
+  },
+  "prior_investors": [],
+  "events": [
+    {
+      "date": "2014-01-03",
+      "date_precision": "day",
+      "date_type": "captured",
+      "source_type": "website_first",
+      "description": "First Wayback capture of productboard.com with a \"ProductBoard\" waitlist page (\"Define the future of product development... next-generation product strategy & development platform\").",
+      "url": "https://web.archive.org/web/20140103050238/http://www.productboard.com/",
+      "months_before_t0": 11.9,
+      "confidence": "medium",
+      "note": "Page text read via curl. Earlier captures (2011 redirect, 2013-04 bare \"Productboard\" page) cannot be attributed to this company. Months measured to 2015-01-01 (lower bound); about 15 if the note was April 2015 (low-confidence aggregator claim only)."
+    },
+    {
+      "date": "2014-02-28",
+      "date_precision": "day",
+      "date_type": "announced",
+      "source_type": "press_first",
+      "description": "Company blog post \"Welcome to Productboard\" dated 28 Feb 2014 (date from a search-result summary; page not opened).",
+      "url": "https://www.productboard.com/blog/welcome-to-productboard/",
+      "months_before_t0": 10.1,
+      "confidence": "low",
+      "note": "Crunchbase reportedly gives founder start Nov 2013 (page blocked, not verified)."
+    },
+    {
+      "date": "2014-09-16",
+      "date_precision": "day",
+      "date_type": "captured",
+      "source_type": "website_first",
+      "description": "Wayback capture: landing page \"Product Management. Redefined.\" with blog link.",
+      "url": "https://web.archive.org/web/20140916081032/http://www.productboard.com/",
+      "months_before_t0": 3.5,
+      "confidence": "medium",
+      "note": ""
+    },
+    {
+      "date": "2014",
+      "date_precision": "year",
+      "date_type": "event",
+      "source_type": "other",
+      "description": "Per a Rockaway write-up (via search summary), Jakub Havrlant and Hubert Palan first met in 2014 while driving along the US West Coast.",
+      "url": "https://rockawayventures.com/productboard-is-now-the-most-valuable-czech-start-up-it-obtained-billions-in-another-investment-round-and-became-unicorn/",
+      "months_before_t0": null,
+      "confidence": "low",
+      "note": "Year precision; the opened page confirmed only the 2015 USD 400k, the meeting anecdote came from a search summary. Verify wording."
+    },
+    {
+      "date": "2015-03-31",
+      "date_precision": "day",
+      "date_type": "captured",
+      "source_type": "other",
+      "description": "Wayback capture: closed beta, \"Request a beta invite\".",
+      "url": "https://web.archive.org/web/20150331060549/http://www.productboard.com/",
+      "months_before_t0": -2.9,
+      "confidence": "medium",
+      "note": ""
+    },
+    {
+      "date": "2015",
+      "date_precision": "year",
+      "date_type": "announced",
+      "source_type": "rockaway_deal",
+      "description": "Rockaway Capital convertible note, the first USD 400,000 of funding, \"in 2015\" (Rockaway write-up dated 4 Feb 2022).",
+      "url": "https://rockawayventures.com/productboard-is-now-the-most-valuable-czech-start-up-it-obtained-billions-in-another-investment-round-and-became-unicorn/",
+      "months_before_t0": 0.0,
+      "confidence": "medium",
+      "note": "Year precision only; no month in any source found. This is T0."
+    },
+    {
+      "date": "2015-10-11",
+      "date_precision": "day",
+      "date_type": "captured",
+      "source_type": "website_pricing",
+      "description": "First Wayback capture of /pricing (after T0).",
+      "url": "https://web.archive.org/web/20151011080644/http://www.productboard.com:80/pricing",
+      "months_before_t0": -9.3,
+      "confidence": "medium",
+      "note": ""
+    },
+    {
+      "date": "2016-09",
+      "date_precision": "month",
+      "date_type": "event",
+      "source_type": "product_launch",
+      "description": "Official launch at TechCrunch Disrupt SF after about 10 months of beta; 100+ paying beta customers.",
+      "url": "https://techcrunch.com/2016/10/19/productboard-raises-1-3-million-to-help-product-teams-prioritize-what-to-build-next/",
+      "months_before_t0": -20.0,
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "date": "2016-10-18",
+      "date_precision": "day",
+      "date_type": "announced",
+      "source_type": "press_round",
+      "description": "Seed USD 1.3M announced (Index Ventures and Credo Ventures co-lead, Spread Capital); first public disclosure of the earlier Rockaway Capital convertible note (total funding USD 1.7M).",
+      "url": "https://productboard.com/blog/productboard-raises-1-3-million-in-seed-funding-to-build-system-of-record-for-product-management",
+      "months_before_t0": -21.6,
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "date": "2018-07-27",
+      "date_precision": "day",
+      "date_type": "registered",
+      "source_type": "registry_incorporation",
+      "description": "Productboard Czechia s.r.o. (ICO 07323301) incorporated in Prague, 3.5 years after T0, so no pre-T0 Czech registry signal exists.",
+      "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/07323301",
+      "months_before_t0": -42.8,
+      "confidence": "high",
+      "note": "Development subsidiary of the US parent."
+    }
+  ],
+  "not_found": [
+    {
+      "source_type": "registry_capital_increase / registry_new_shareholder",
+      "what_was_checked": "ARES: only Productboard Czechia s.r.o. exists (incorporated 2018-07-27, after T0). Rockaway invested in the US parent, so no Czech registry trace.",
+      "url_or_query": "ARES vyhledat obchodniJmeno=productboard"
+    },
+    {
+      "source_type": "press_first",
+      "what_was_checked": "No press before the Oct 2016 seed found; month of the 2015 note not found.",
+      "url_or_query": "web search Productboard Rockaway 2015 convertible note"
+    },
+    {
+      "source_type": "grant_national / grant_eu / gov_contract / accelerator",
+      "what_was_checked": "Not searched in depth (US parent).",
+      "url_or_query": ""
+    },
+    {
+      "source_type": "hiring",
+      "what_was_checked": "Not checked (Wayback careers / StartupJobs not queried).",
+      "url_or_query": ""
+    },
+    {
+      "source_type": "other (Crunchbase)",
+      "what_was_checked": "Crunchbase convertible-note page returned HTTP 403.",
+      "url_or_query": "https://www.crunchbase.com/funding-round/aee5b378-f534-9737-6e08-2343d2bb57d3"
+    }
+  ],
+  "after_investment": {
+    "next_rounds": [
+      {
+        "date": "2016-10-18",
+        "round": "Seed",
+        "amount": "USD 1.3M",
+        "lead": "Index Ventures, Credo Ventures (Spread Capital; Reflex Capital per Rockaway)",
+        "url": "https://productboard.com/blog/productboard-raises-1-3-million-in-seed-funding-to-build-system-of-record-for-product-management"
+      },
+      {
+        "date": "2018-07-13",
+        "round": "Series A",
+        "amount": "USD 8M",
+        "lead": "Kleiner Perkins; previous seed investors incl. Rockaway Capital participated (date from coordinator portfolio file, not independently read)",
+        "url": "https://www.productboard.com/blog/productboard-raises-8-million-series-a-led-by-kleiner-perkins-to-help-product-managers-get-the-right-products-to-market-faster/"
+      },
+      {
+        "date": "",
+        "round": "Series B",
+        "amount": "USD 45M",
+        "lead": "Sequoia Capital",
+        "url": "https://www.productboard.com/blog/productboard-raises-a-45-m-series-b-led-by-sequoia-capital/"
+      }
+    ],
+    "exit": null,
+    "notes": "No exit found. Rockaway 2022 write-up describes a unicorn round (Tiger Global-led Series C)."
+  },
+  "caveats": [
+    "T0 is year-precision (2015), from a Rockaway write-up dated 2022; the money came from Rockaway Capital, not the Ventures fund. The coordinator file said \"before seed (2016)\"; the 2016 date is only the disclosure, the note itself is 2015.",
+    "Months before T0 are measured to 2015-01-01 (earliest possible), so they are lower bounds.",
+    "Havrlant met Palan in 2014 (Rockaway write-up): looks like a direct relationship, not a co-investor network (Index/Credo/Reflex joined only at the 2016 seed)."
+  ]
+}

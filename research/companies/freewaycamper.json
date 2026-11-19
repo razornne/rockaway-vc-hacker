@@ -1,0 +1,176 @@
+{
+  "company": "FreewayCamper",
+  "slug": "freewaycamper",
+  "website": "https://www.freewaycamper.com",
+  "country_hq": "Germany (Munich)",
+  "legal_entities": [
+    {
+      "name": "FreewayCamper GmbH",
+      "id_type": "HRB",
+      "id": "",
+      "country": "DE",
+      "url": "https://forbes.cz/drsny-svet-startupu-jak-ceske-campiri-proslo-ocistou-a-investori-prisli-o-penize/"
+    }
+  ],
+  "sector": "Online camper-van / motorhome rental marketplace",
+  "thesis_fit": {
+    "sector_bucket": "other",
+    "note": "Travel marketplace; outside current AI/deep-tech thesis."
+  },
+  "rockaway": {
+    "entity": "Rockaway Ventures (fund); Rockaway Capital named in the 2024 follow-on",
+    "round": "EUR 30M+ financing: equity, venture debt, bank debt",
+    "amount": "EUR 30M total; equity share undisclosed",
+    "lead": "Rockaway Ventures (main equity investor); Bridge to Growth provided venture debt",
+    "co_investors": [
+      "SEK Ventures (Flix founders, existing)",
+      "Bridge to Growth (debt)"
+    ],
+    "announced_date": "2022-06-20",
+    "announced_url": "https://forbes.cz/rockaway-sazi-na-sdilene-karavany-digitalizaci-na-trhu-s-obytnymi-vozy-ceka-revoluce/",
+    "deal_date": "",
+    "deal_date_url": "",
+    "t0": "2022-06-20",
+    "t0_basis": "announced"
+  },
+  "prior_investors": [
+    {
+      "name": "SEK Ventures (Flix founders)",
+      "round": "First round (amount undisclosed)",
+      "date": "2020-10-05",
+      "url": "https://www.munich-startup.de/en/64813/flixbus-founders-invest-in-freewaycamper/",
+      "also_coinvested_with_rockaway_elsewhere": null
+    }
+  ],
+  "events": [
+    {
+      "date": "2019-01-01",
+      "date_precision": "year",
+      "date_type": "event",
+      "source_type": "other",
+      "description": "FreewayCamper founded end of 2019 by Julia Blum and Nikolai Voitiouk-Blum",
+      "url": "https://www.munich-startup.de/en/139018/freewaycamper-secures-e30-million/",
+      "months_before_t0": 41.6,
+      "confidence": "medium",
+      "note": "Year only; months measured from 2019-01-01."
+    },
+    {
+      "date": "2020-09-01",
+      "date_precision": "month",
+      "date_type": "event",
+      "source_type": "grant_national",
+      "description": "Funding from the Free State of Bavaria via Werk1 since Sept 2020 (amount not given)",
+      "url": "https://www.munich-startup.de/en/64813/flixbus-founders-invest-in-freewaycamper/",
+      "months_before_t0": 21.6,
+      "confidence": "medium",
+      "note": "Programme type unverified; Werk1 is a Munich start-up hub."
+    },
+    {
+      "date": "2020-10-05",
+      "date_precision": "day",
+      "date_type": "announced",
+      "source_type": "prior_round",
+      "description": "First round: SEK Ventures (Flixbus co-founders incl. A. Schwaemmlein); amount undisclosed",
+      "url": "https://www.munich-startup.de/en/64813/flixbus-founders-invest-in-freewaycamper/",
+      "months_before_t0": 20.5,
+      "confidence": "high",
+      "note": "Earliest public financial signal found."
+    },
+    {
+      "date": "2021-12-01",
+      "date_precision": "day",
+      "date_type": "captured",
+      "source_type": "website_first",
+      "description": "Earliest Wayback CDX capture of freewaycamper.com (HTTP 301 only); the site probably existed earlier",
+      "url": "https://web.archive.org/cdx/search/cdx?url=freewaycamper.com&output=json&limit=3",
+      "months_before_t0": 6.6,
+      "confidence": "low",
+      "note": "Wayback went offline before further checks."
+    },
+    {
+      "date": "2022-05-11",
+      "date_precision": "day",
+      "date_type": "announced",
+      "source_type": "other",
+      "description": "Sibling Czech deal: Rockaway Ventures leads Campiri (camper sharing) seed extension; Miton and Purple Ventures co-invest",
+      "url": "https://cc.cz/ceske-campiri-ve-velkem-rozjizdi-pronajem-karavanu-po-evrope-115-milionu-mu-posila-rockaway-i-miton/",
+      "months_before_t0": 1.3,
+      "confidence": "high",
+      "note": "Not a FreewayCamper signal; shows Rockaway was already in the vertical 5.7 weeks earlier."
+    },
+    {
+      "date": "2022-06-20",
+      "date_precision": "day",
+      "date_type": "announced",
+      "source_type": "rockaway_announced",
+      "description": "Forbes CZ: Rockaway Ventures main equity investor in >EUR 30M round; cites recent Campiri and Spotawheel investments; 2021 revenue low single-digit EUR M, Q1 2022 +500%",
+      "url": "https://forbes.cz/rockaway-sazi-na-sdilene-karavany-digitalizaci-na-trhu-s-obytnymi-vozy-ceka-revoluce/",
+      "months_before_t0": 0.0,
+      "confidence": "high",
+      "note": "Earliest announcement found."
+    },
+    {
+      "date": "2022-07-21",
+      "date_precision": "day",
+      "date_type": "announced",
+      "source_type": "press_round",
+      "description": "Munich Startup: EUR 30M equity+debt round led by Rockaway Ventures; Bridge to Growth venture debt",
+      "url": "https://www.munich-startup.de/en/139018/freewaycamper-secures-e30-million/",
+      "months_before_t0": -1.0,
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "not_found": [
+    {
+      "source_type": "registry_capital_increase",
+      "what_checked": "Handelsregister / northdata not queried successfully (northdata rate-limited, handelsregister.de JS form); HRB number not found",
+      "url_or_query": ""
+    },
+    {
+      "source_type": "financial_statements",
+      "what_checked": "Only press figures (2021 revenue low single-digit EUR M) via Forbes CZ",
+      "url_or_query": "https://forbes.cz/rockaway-sazi-na-sdilene-karavany-digitalizaci-na-trhu-s-obytnymi-vozy-ceka-revoluce/"
+    },
+    {
+      "source_type": "grant_eu",
+      "what_checked": "Not searched",
+      "url_or_query": ""
+    },
+    {
+      "source_type": "hiring",
+      "what_checked": "Not searched",
+      "url_or_query": ""
+    },
+    {
+      "source_type": "rockaway_deal",
+      "what_checked": "Closing date and equity/debt split not disclosed",
+      "url_or_query": ""
+    }
+  ],
+  "after_investment": {
+    "next_rounds": [
+      {
+        "date": "2024-02-19",
+        "round": "Merger with Campiri announced (Forbes CZ date); a 2026 Forbes interview says merger April 2024",
+        "amount": "",
+        "lead": "Miton and Rockaway behind both",
+        "url": "https://forbes.cz/konsolidace-na-trhu-s-obytnaky-ceske-campiri-se-spojuje-s-nemci/"
+      },
+      {
+        "date": "2024-10-28",
+        "round": "EUR 4M in two tranches from existing shareholders (STR article date)",
+        "amount": "EUR 4M",
+        "lead": "Rockaway Capital, Nomiverse, SEK Ventures, Miton",
+        "url": "https://shorttermrentalz.com/news/freewaycamper-investment-campiri-merger/"
+      }
+    ],
+    "exit": null,
+    "notes": "Preliminary insolvency in March 2025, insolvency administrator a month later (Forbes CZ interview 2026-02-03); investors' recovery described as practically nil. The PitchBook-hinted 2025-03-10 'exit' fits the insolvency better than a sale; unconfirmed. Campiri was bought back by Nomiverse (L. Janousek) from the insolvency estate without VC money."
+  },
+  "caveats": [
+    "Campiri/FreewayCamper relationship: see .md.",
+    "Forbes CZ (2022-06-20) precedes the German release (2022-07-21) by one month; T0 uses the earlier.",
+    "Merger date conflicts: 2024-02-19 announcement vs 'April 2024' in the interview."
+  ]
+}

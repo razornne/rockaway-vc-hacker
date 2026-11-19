@@ -1,0 +1,122 @@
+[
+ {
+  "company": "Wultra",
+  "slug": "wultra",
+  "website": "https://www.wultra.com",
+  "country": "Czechia",
+  "sector": "cybersecurity / post-quantum authentication (deep tech)",
+  "round": "Seed+",
+  "amount": "EUR 3M",
+  "lead": "Tensor Ventures (Elevator Ventures co-lead per some sources); J&T Ventures participated",
+  "announced_date": "2025-01-15",
+  "url": "https://tech.eu/2025/01/15/wultra-secures-eur3m-to-protect-financial-institutions-from-quantum-threats/"
+ },
+ {
+  "company": "Delta Green",
+  "slug": "delta-green",
+  "website": "",
+  "country": "Czechia",
+  "sector": "energy (virtual power plant)",
+  "round": "Seed II / Series A (labels vary)",
+  "amount": "EUR 2M",
+  "lead": "Credo Ventures (lead not stated explicitly; Tilia Impact Ventures, Purple Ventures participated)",
+  "announced_date": "2025-10-15",
+  "url": "https://cc.cz/z-prahy-propojuji-evropske-domacnosti-a-tvori-z-nich-obri-elektrarnu-jejich-cena-je-ve-stamilionech/"
+ },
+ {
+  "company": "Duvo.ai",
+  "slug": "duvo",
+  "website": "https://duvo.ai",
+  "country": "Czechia (Prague) / US",
+  "sector": "AI (retail ops automation)",
+  "round": "Seed",
+  "amount": "USD 15M",
+  "lead": "Index Ventures; Credo Ventures, Northzone, Puzzle Ventures participated",
+  "announced_date": "2025-12-02",
+  "url": "https://tech.eu/2025/12/02/duvo-raises-15m-to-give-retailers-ai-staff-that-cuts-manual-work-by-40/"
+ },
+ {
+  "company": "TopK",
+  "slug": "topk",
+  "website": "https://topk.io",
+  "country": "Czechia (Prague)",
+  "sector": "AI (search infrastructure)",
+  "round": "Seed",
+  "amount": "USD 5.5M (EUR 4.6M)",
+  "lead": "not stated; Earlybird, KAYA among investors",
+  "announced_date": "2025-07-01",
+  "url": "https://siliconcanals.com/?p=65960"
+ },
+ {
+  "company": "Edmund",
+  "slug": "edmund",
+  "website": "https://edmund-ai.com",
+  "country": "Czechia (Prague)",
+  "sector": "industrial AI (maintenance)",
+  "round": "Seed",
+  "amount": "EUR 2.5M",
+  "lead": "FORWARD.one; Tensor Ventures, University2Ventures, LightHouse Ventures participated",
+  "announced_date": "2026-04-09",
+  "url": "https://inforcapital.com/news/czech-startup-edmund-raises-25-million-to-expand-its-ai-debugging-platform-for-industrial-maintenance"
+ },
+ {
+  "company": "Upheal",
+  "slug": "upheal",
+  "website": "https://www.upheal.io",
+  "country": "Czechia (Prague)",
+  "sector": "AI (healthtech / clinical documentation)",
+  "round": "Seed",
+  "amount": "USD 3.25M",
+  "lead": "Credo Ventures (article also names KAYA VC, Inovia)",
+  "announced_date": "2024-02-28",
+  "url": "https://en.ain.ua/2024/02/28/upheal-secures-3-25m-kaya-vc"
+ },
+ {
+  "company": "Grid.online",
+  "slug": "grid-online",
+  "website": "",
+  "country": "Czechia (Prague)",
+  "sector": "logistics (other)",
+  "round": "Seed",
+  "amount": "EUR 1.5M",
+  "lead": "Reflex Capital; J&T Ventures, Grid Invest",
+  "announced_date": "2025-02-12",
+  "url": "https://en.ain.ua/2025/02/12/czech-logistics-startup-gridonline-secures-eur15m-investment-from-reflex-capital"
+ },
+ {
+  "company": "DYNANIC",
+  "slug": "dynanic",
+  "website": "https://www.dyna-nic.com",
+  "country": "Czechia (Brno)",
+  "sector": "deep tech (chips, university spinout)",
+  "round": "Pre-seed (outside strict seed scope; filler)",
+  "amount": "EUR 550k",
+  "lead": "Tensor Ventures",
+  "announced_date": "2024-11-29",
+  "url": "https://tech.eu/2024/11/29/czech-spinout-dynanic-secures-550-000-pre-seed/"
+ },
+ {
+  "company": "Supernova",
+  "slug": "supernova",
+  "website": "",
+  "country": "Czechia (per press; city unverified)",
+  "sector": "AI (product development platform)",
+  "round": "Series A",
+  "amount": "USD 9.2M",
+  "lead": "Taiwania Capital; Kaya, Credo, Reflex, J&T Ventures participated",
+  "announced_date": "2025-09-30",
+  "url": "https://tech.eu/2025/09/30/supernova-raises-92-million-series-a-to-bring-ai-powered-vibe-coding-to-enterprise-product-teams/"
+ },
+ {
+  "company": "Digitoo",
+  "slug": "digitoo",
+  "website": "",
+  "country": "Czechia (Prague)",
+  "sector": "AI/fintech (document processing)",
+  "round": "Seed",
+  "amount": "EUR 2.3M",
+  "lead": "Reflex Capital",
+  "announced_date": "2023-12-14",
+  "url": "https://en.ain.ua/2023/12/14/digitoo-raises-2-3m-seed-reflex-capital"
+ }
+]

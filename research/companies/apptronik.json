@@ -1,0 +1,123 @@
+{
+  "company": "Apptronik",
+  "slug": "apptronik",
+  "website": "https://www.apptronik.com",
+  "country_hq": "USA (Austin, Texas)",
+  "legal_entities": [],
+  "sector": "General-purpose humanoid robots (Apollo)",
+  "thesis_fit": {
+    "sector_bucket": "deep tech",
+    "note": "Robotics / physical AI; large US co-investment, not a CEE sourcing case."
+  },
+  "rockaway": {
+    "entity": "Rockaway Ventures (fund), participant",
+    "round": "Series A-X extension",
+    "amount": "USD 520M round; Rockaway cheque undisclosed",
+    "lead": "not named in company release",
+    "co_investors": [
+      "B Capital",
+      "Google",
+      "Mercedes-Benz",
+      "PEAK6",
+      "AT&T Ventures",
+      "John Deere",
+      "Qatar Investment Authority"
+    ],
+    "announced_date": "2026-02-11",
+    "announced_url": "https://www.apptronik.com/news-collection/apptronik-closes-over-935-million-series-a",
+    "deal_date": "",
+    "deal_date_url": "",
+    "t0": "2026-02-11",
+    "t0_basis": "announced"
+  },
+  "prior_investors": [
+    {
+      "name": "B Capital and Capital Factory (co-leads), Google (participant)",
+      "round": "Series A, USD 350M announced (company later states USD 415M)",
+      "date": "2025-02-13",
+      "url": "https://techcrunch.com/2025/02/13/apptronik-raises-350m-to-build-humanoid-robots-with-help-from-google/",
+      "also_coinvested_with_rockaway_elsewhere": null
+    },
+    {
+      "name": "Mercedes-Benz, PEAK6",
+      "round": "Described as existing investors in the extension release",
+      "date": "2026-02-11",
+      "url": "https://www.apptronik.com/news-collection/apptronik-closes-over-935-million-series-a",
+      "also_coinvested_with_rockaway_elsewhere": null
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-02-13",
+      "date_precision": "day",
+      "date_type": "announced",
+      "source_type": "prior_round",
+      "description": "Series A USD 350M co-led by B Capital and Capital Factory, Google participating (TechCrunch headline and search summary; page not read)",
+      "url": "https://techcrunch.com/2025/02/13/apptronik-raises-350m-to-build-humanoid-robots-with-help-from-google/",
+      "months_before_t0": 11.9,
+      "confidence": "medium",
+      "note": "Company release says the initial Series A was USD 415M."
+    },
+    {
+      "date": "2025-01-01",
+      "date_precision": "year",
+      "date_type": "event",
+      "source_type": "other",
+      "description": "Petr Smid says he visited Apptronik's factory 'last year' (2025), which convinced him; first trace of Rockaway attention",
+      "url": "https://www.lupa.cz/aktuality/cesti-investori-z-rockaway-investovali-do-americkych-humanoidu-a-to-po-boku-googlu-nebo-mercedes-benz/",
+      "months_before_t0": 7.4,
+      "confidence": "medium",
+      "note": "Year precision; months_before_t0 computed for mid-2025 (approximate)."
+    },
+    {
+      "date": "2026-02-11",
+      "date_precision": "day",
+      "date_type": "announced",
+      "source_type": "other",
+      "description": "Apptronik announces USD 520M Series A-X extension; Rockaway NOT named in the company release",
+      "url": "https://www.apptronik.com/news-collection/apptronik-closes-over-935-million-series-a",
+      "months_before_t0": 0.0,
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "date": "2026-02-13",
+      "date_precision": "day",
+      "date_type": "announced",
+      "source_type": "rockaway_announced",
+      "description": "Vestbee and Lupa.cz name Rockaway Ventures among backers; Smid quoted",
+      "url": "https://vestbee.com/insights/articles/935-m-series-a-for-apptronik",
+      "months_before_t0": -0.1,
+      "confidence": "high",
+      "note": "Rockaway participation first documented here, 2 days after the round announcement."
+    }
+  ],
+  "not_found": [
+    {
+      "source_type": "rockaway_announced",
+      "what_checked": "Rockaway's own news page not checked for an Apptronik post; the Apptronik release does not list Rockaway",
+      "url_or_query": "https://www.apptronik.com/news-collection/apptronik-closes-over-935-million-series-a"
+    },
+    {
+      "source_type": "prior_round",
+      "what_checked": "Seed rounds (2022/2023) conflict in aggregators; no primary source found",
+      "url_or_query": ""
+    },
+    {
+      "source_type": "registry_incorporation",
+      "what_checked": "Skipped by instruction (US/Delaware)",
+      "url_or_query": ""
+    }
+  ],
+  "after_investment": {
+    "next_rounds": [],
+    "exit": null,
+    "notes": "Valuation reported ~USD 5B (Trending Topics) / ~5.3B (Dallas Innovates), unconfirmed."
+  },
+  "caveats": [
+    "LIGHT treatment: no registry, grants, hiring or full Wayback review.",
+    "Extension lead not named; Rockaway participation rests on Vestbee and Lupa (quoting Smid), not on the company release.",
+    "Large US co-investment alongside Google, Mercedes-Benz and QIA, not a CEE sourcing case.",
+    "apptronik.com Wayback captures start 2011-02-10 although the company is a later UT Austin spin-out; domain history not analysed."
+  ]
+}

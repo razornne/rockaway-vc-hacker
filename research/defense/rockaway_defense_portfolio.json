@@ -1,0 +1,62 @@
+[
+  {
+    "company": "URC Systems, spol. s r.o.",
+    "website": null,
+    "country": "Czech Republic (Prostejov)",
+    "description": "Electronic reconnaissance and radio/communication jamming, counter-drone and critical-infrastructure protection systems; ~120 employees, FY6/2023 revenue ~CZK 705-732m, profit ~CZK 160m (press figures differ).",
+    "round": "Control acquisition (UOHS review: possible exclusive control / up to 100%); acquirer Piombino Group (Rockaway group, ultimately Jakub Havrlant). Rockaway stake later contributed to Defense sub-fund.",
+    "amount": "not disclosed",
+    "date": "Announced 2024-03-14 (UOHS notice); 'owned since 2024' per Forbes CZ",
+    "co_investors": "not disclosed (Borovan: Rockaway 'may not be the only shareholder')",
+    "source_url": "https://www.borovan.cz/66343/rockaway-capital-chce-poprve-investovat-do-obranneho-prumyslu-kupuje-proti-dronovou-firmu ; https://www.hrot24.cz/clanek/rockaway-capital-kupuje-prostejovskeho-vyrobce-vojenskych-rusicek-urc-systems-HyMZn ; https://www.fki-fondy.cz/fondy/rockaway-defense/",
+    "overlap_with_rockaway_ventures": "No (group-level PE deal, not a Ventures deal)"
+  },
+  {
+    "company": "JISR Institute, a.s.",
+    "website": null,
+    "country": "Czech Republic (presumed)",
+    "description": "Listed as a fund asset on distributor page FKI; a third-party post links JISR to the 'Andromeda' anti-drone system built with URC Systems and the Czech Armed Forces. Not confirmed on any Rockaway page.",
+    "round": "unverified",
+    "amount": "not disclosed",
+    "date": "not disclosed (portfolio as of 2026-06-30)",
+    "co_investors": "not disclosed",
+    "source_url": "https://www.fki-fondy.cz/fondy/rockaway-defense/",
+    "overlap_with_rockaway_ventures": "No evidence"
+  },
+  {
+    "company": "Antares Defence Systems (UK RF/EW)",
+    "website": null,
+    "country": "United Kingdom (presumed)",
+    "description": "Listed as a fund asset on distributor page FKI. Separately, Hyperion Fund (Spain) took a minority stake (announced 2026-02-12); no source found naming Rockaway as investor. IDENTITY AND LINK TO ROCKAWAY UNVERIFIED.",
+    "round": "unverified",
+    "amount": "not disclosed",
+    "date": "not disclosed",
+    "co_investors": "Hyperion Fund, Operating Partners Group (in Hyperion round, not confirmed to involve Rockaway)",
+    "source_url": "https://www.fki-fondy.cz/fondy/rockaway-defense/ ; https://capital-riesgo.es/en/articles/hyperion-takes-a-minority-stake-in-the-british-company-antares-defence-systems/",
+    "overlap_with_rockaway_ventures": "No evidence"
+  },
+  {
+    "company": "Vermeer (VENTURES deal, not Defense fund)",
+    "website": null,
+    "country": "USA / Ukraine (team in Kyiv)",
+    "description": "Visual positioning system letting drones navigate without GPS; 30+ customers, validated in Ukraine.",
+    "round": "Series A, led by Draper Associates",
+    "amount": "CZK ~228m (USD 9.3m per Rockaway; USD 10m per Lupa.cz)",
+    "date": "2025-10-23",
+    "co_investors": "Draper Associates (lead), Rockaway Ventures; Lupa.cz also lists AeroX Ventures, Boscolo Intervest, High Point Ventures, Techstars/USAF accelerator",
+    "source_url": "https://www.rockawaycapital.com/en/news/from-hollywood-studios-to-the-frontlines-rockaway-ventures-invests-in-vermeer-the-startup-enabling-drones-to-fly-without-gps ; https://forbes.cz/rockaway-slape-do-obrany-spolu-s-fondem-ze-sillicon-valley-hlasi-investici-do-dronu/ ; https://www.lupa.cz/aktuality/americko-ukrajinske-drony-bez-gps-navigace-ziskaly-10-milionu-dolaru-po-boku-velkych-jmen-investuje-i-rockaway/",
+    "overlap_with_rockaway_ventures": "Yes - it IS a Rockaway Ventures portfolio company; included for contrast, not a Defense-fund holding"
+  },
+  {
+    "company": "CulturePulse (VENTURES deal, not Defense fund)",
+    "website": null,
+    "country": "USA / Slovakia",
+    "description": "AI behavioural modelling / risk-prediction platform (ARES digital twins); Rockaway frames as dual-use/security.",
+    "round": "Series A / first Rockaway investment",
+    "amount": "USD 1.5m round (EUR 1.45m per other outlets)",
+    "date": "2025-02-07",
+    "co_investors": "not named by Rockaway; ain.ua mentions B Ventures Group, Simpact Ventures",
+    "source_url": "https://www.rockawaycapital.com/en/news/rockaway-ventures-invests-in-culturepulse-driving-innovation-in-behavioral-analysis-and-security-risk-prediction-across-europe-and-beyond ; https://en.ain.ua/2025/02/07/culturepulse-raises-eur145m",
+    "overlap_with_rockaway_ventures": "Yes - Ventures portfolio company"
+  }
+]

@@ -1,0 +1,223 @@
+{
+  "company": "Cruxo",
+  "slug": "cruxo",
+  "website": "https://cruxo.io",
+  "country_hq": "Czech Republic (Prague)",
+  "legal_entities": [
+    {
+      "name": "CRUXO group s.r.o. (originally CRUXO.COM s.r.o.)",
+      "id_type": "ICO",
+      "id": "14134683",
+      "country": "CZ",
+      "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/14134683"
+    }
+  ],
+  "sector": "Retail media platform (ad campaigns and personalised offers on e-shops); adtech/martech",
+  "thesis_fit": {
+    "sector_bucket": "other",
+    "note": "Retail media adtech; outside the AI/deep tech/defense/energy focus."
+  },
+  "rockaway": {
+    "entity": "Rockaway Ventures (fund); register shows Rockaway Ventures Fund SCSp (Luxembourg) from 2026",
+    "round": "Follow-on to seed, CZK 15M",
+    "amount": "CZK 15M (round, with Czech Founders VC and angels)",
+    "lead": "not stated",
+    "co_investors": [
+      "Czech Founders VC",
+      "angel investors"
+    ],
+    "announced_date": "2024-11-11",
+    "announced_url": "https://cc.cz/v-e-commerce-bezi-tuhy-boj-o-marzi-i-zakaznika-cruxo-chce-pomoct-s-lepsi-reklamou-a-hlasi-investici/",
+    "deal_date": "2026-07-22",
+    "deal_date_url": "https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=1145924",
+    "t0": "2024-11-11",
+    "t0_basis": "announced"
+  },
+  "prior_investors": [
+    {
+      "name": "Czech Founders VC (lead)",
+      "round": "Seed CZK 20M (EUR 800K)",
+      "date": "2023-05-03",
+      "url": "https://itkey.media/?p=21034",
+      "also_coinvested_with_rockaway_elsewhere": true
+    },
+    {
+      "name": "Presto Ventures",
+      "round": "Seed CZK 20M",
+      "date": "2023-05-03",
+      "url": "https://www.mediaguru.cz/clanky/2023/05/cruxo-ziskalo-na-svou-expanzi-investici-20-milionu-kc/",
+      "also_coinvested_with_rockaway_elsewhere": true
+    },
+    {
+      "name": "ZAKA VC",
+      "round": "Seed CZK 20M",
+      "date": "2023-05-03",
+      "url": "https://www.mediaguru.cz/clanky/2023/05/cruxo-ziskalo-na-svou-expanzi-investici-20-milionu-kc/",
+      "also_coinvested_with_rockaway_elsewhere": true
+    }
+  ],
+  "events": [
+    {
+      "date": "2022-01-10",
+      "date_precision": "day",
+      "date_type": "registered",
+      "source_type": "registry_incorporation",
+      "description": "CRUXO.COM s.r.o. incorporated (renamed CRUXO group 2022-02-25); four founders as shareholders.",
+      "url": "https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=1145924",
+      "months_before_t0": 34.0,
+      "confidence": "high",
+      "note": "Full extract: https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=1145924&typ=UPLNY"
+    },
+    {
+      "date": "2022-02-25",
+      "date_precision": "day",
+      "date_type": "registered",
+      "source_type": "registry_other",
+      "description": "Fifth shareholder (Matej Novak) enters; capital redistributed (deed 2022-02-24).",
+      "url": "https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=1145924",
+      "months_before_t0": 32.5,
+      "confidence": "high",
+      "note": " [manual check 2026-11-16: individual, appears as team/partner, not identified as investor → reclassified]"
+    },
+    {
+      "date": "2022-04-08",
+      "date_precision": "day",
+      "date_type": "captured",
+      "source_type": "website_first",
+      "description": "First Wayback capture of cruxo.io: Czech page 'Cruxo - Retail marketing nove generace'.",
+      "url": "https://web.archive.org/web/20220408211018/https://cruxo.io/",
+      "months_before_t0": 31.1,
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "date": "2023-03-24",
+      "date_precision": "day",
+      "date_type": "registered",
+      "source_type": "registry_other",
+      "description": "Martin Svarc enters as shareholder (12.3%).",
+      "url": "https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=1145924",
+      "months_before_t0": 19.6,
+      "confidence": "high",
+      "note": "General meeting 2023-03-10 in sbirka listin. [manual check 2026-11-16: individual, appears as team/partner, not identified as investor → reclassified]"
+    },
+    {
+      "date": "2023-05-03",
+      "date_precision": "day",
+      "date_type": "announced",
+      "source_type": "prior_round",
+      "description": "Seed CZK 20M (EUR 800K) from Czech Founders, Presto Ventures, ZAKA VC.",
+      "url": "https://www.mediaguru.cz/clanky/2023/05/cruxo-ziskalo-na-svou-expanzi-investici-20-milionu-kc/",
+      "months_before_t0": 18.3,
+      "confidence": "high",
+      "note": "Earliest press about Cruxo found; also https://en.ain.ua/2023/05/04/cruxo-secures-800k-presto-ventures-and-zaka-vc"
+    },
+    {
+      "date": "2023-05-17",
+      "date_precision": "day",
+      "date_type": "registered",
+      "source_type": "registry_other",
+      "description": "Share restructuring registered (holdings re-sized); capital unchanged at CZK 10,000; investors not visible in register.",
+      "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=1145924&typ=UPLNY",
+      "months_before_t0": 17.9,
+      "confidence": "medium",
+      "note": "Likely seed-round mechanics; inference."
+    },
+    {
+      "date": "2024-10-21",
+      "date_precision": "day",
+      "date_type": "filed",
+      "source_type": "registry_other",
+      "description": "Notarial deed NZ 1099/2024 filed; shares reclassified into class A (voting) and B (non-voting).",
+      "url": "https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=1145924",
+      "months_before_t0": 0.7,
+      "confidence": "medium",
+      "note": "Link to the Rockaway round is inference."
+    },
+    {
+      "date": "2024-11-11",
+      "date_precision": "day",
+      "date_type": "announced",
+      "source_type": "rockaway_announced",
+      "description": "Cruxo announces additional CZK 15M from Rockaway Ventures, Czech Founders VC and angels; customers Dr. Max, Astratex, Lekarna.cz.",
+      "url": "https://cc.cz/v-e-commerce-bezi-tuhy-boj-o-marzi-i-zakaznika-cruxo-chce-pomoct-s-lepsi-reklamou-a-hlasi-investici/",
+      "months_before_t0": 0.0,
+      "confidence": "high",
+      "note": "Press article; no own release by Cruxo or Rockaway found."
+    },
+    {
+      "date": "2026-07-22",
+      "date_precision": "day",
+      "date_type": "event",
+      "source_type": "rockaway_deal",
+      "description": "Notarial deed for capital increase CZK 10,000 to 14,384 with new class C shares.",
+      "url": "https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=1145924",
+      "months_before_t0": -20.3,
+      "confidence": "medium",
+      "note": "Deed date from sbirka listin."
+    },
+    {
+      "date": "2026-08-24",
+      "date_precision": "day",
+      "date_type": "registered",
+      "source_type": "registry_new_shareholder",
+      "description": "Registered: Rockaway Ventures Fund SCSp (class C, 554/14384, about 3.9%) with Czech Founders Ventures, Presto Ventures II, ZAKA Startup 18 and two angels; capital CZK 14,384.",
+      "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=1145924&typ=UPLNY",
+      "months_before_t0": -21.4,
+      "confidence": "high",
+      "note": "First Rockaway entity in the register, about 21 months after the announcement."
+    }
+  ],
+  "not_found": [
+    {
+      "source_type": "grant_national",
+      "what_was_checked": "Hlidac statu: no public contracts; 4 subsidy and 3 de minimis records exist, contents not seen. STARFOS not queried.",
+      "url_or_query": "https://www.hlidacstatu.cz/hledat?Q=ico%3A14134683"
+    },
+    {
+      "source_type": "grant_eu",
+      "what_was_checked": "CORDIS/EIC not searched specifically.",
+      "url_or_query": ""
+    },
+    {
+      "source_type": "accelerator",
+      "what_was_checked": "Not searched specifically; none in press.",
+      "url_or_query": ""
+    },
+    {
+      "source_type": "financial_statements",
+      "what_was_checked": "Statements 2022-2025 filed (2022 and 2023 only on 2025-02-17); PDFs not opened.",
+      "url_or_query": "https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=1145924"
+    },
+    {
+      "source_type": "hiring",
+      "what_was_checked": "Not checked.",
+      "url_or_query": ""
+    },
+    {
+      "source_type": "rockaway_announced",
+      "what_was_checked": "No Rockaway or Cruxo own release found; Rockaway portfolio page lists only the logo.",
+      "url_or_query": "https://www.rockawaycapital.com/en/fund/rockaway-ventures"
+    }
+  ],
+  "after_investment": {
+    "next_rounds": [
+      {
+        "date": "2026-08-24",
+        "round": "Capital increase, new class C shares (register)",
+        "amount": "",
+        "lead": "",
+        "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=1145924&typ=UPLNY"
+      }
+    ],
+    "exit": null,
+    "notes": "Customers in six countries, monthly revenue in the millions (cc.cz 2024)."
+  },
+  "caveats": [
+    "T0 is a press date; the register shows Rockaway only from 2026-08-24, so whether the Nov 2024 money was convertible/loan funding that later became equity is unknown.",
+    "Dealroom item 'Cruxo secures additional 15M' not opened (403).",
+    "VCBacked lists Nov 2024 seed incl. Rockaway, consistent with cc.cz.",
+    "Founders in press: Michal Trunkat (CEO), Jan Galgonek, Matej Novak (CTO), Petr Pavlik, Martin Svarc (CCO); registry personal data not copied.",
+    "manual check 2026-11-16: the 2023 seed investors (Czech Founders, Presto, ZAKA) and Rockaway all enter the registry only on 2026-08-24, with a capital increase 10 000 → 14 384 CZK. The 2023 and 2024 money was therefore invisible in the registry for ~3 years (most likely convertible instruments)."
+  ]
+}

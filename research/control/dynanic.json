@@ -1,0 +1,193 @@
+{
+ "company": "DYNANIC",
+ "slug": "dynanic",
+ "website": "https://www.dyna-nic.com",
+ "country_hq": "Czechia (Brno)",
+ "legal_entities": [
+  {
+   "name": "DynaNIC Semiconductors s.r.o. (formerly BrnoLogic, spol. s r.o.)",
+   "id_type": "ICO",
+   "id": "11900865",
+   "country": "CZ",
+   "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?typ=UPLNY&subjektId=1135299"
+  }
+ ],
+ "sector": "deep tech (chips, university spinout)",
+ "thesis_fit": {
+  "sector_bucket": "deep tech",
+  "note": "FPGA SmartNIC chips/firmware, VUT Brno spin-off"
+ },
+ "control_note": "CONTROL GROUP: not a Rockaway investment. The rockaway block is replaced by control_round (same fields).",
+ "control_round": {
+  "round": "Pre-seed (outside strict seed scope; filler)",
+  "amount": "EUR 550k",
+  "lead": "Tensor Ventures",
+  "co_investors": [
+   "Tensor Ventures",
+   "angels"
+  ],
+  "announced_date": "2024-11-29",
+  "announced_url": "https://tech.eu/2024/11/29/czech-spinout-dynanic-secures-550-000-pre-seed/",
+  "deal_date": "2024-12-11",
+  "deal_date_url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?typ=UPLNY&subjektId=1135299",
+  "t0": "2024-11-29",
+  "t0_basis": "announced"
+ },
+ "prior_investors": [],
+ "events": [
+  {
+   "date": "2021-10-01",
+   "date_precision": "day",
+   "date_type": "registered",
+   "source_type": "registry_incorporation",
+   "description": "BrnoLogic, spol. s r.o. incorporated; founding shareholders include Vysoke uceni technicke v Brne (renamed DynaNIC 2024-12-11)",
+   "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?typ=UPLNY&subjektId=1135299",
+   "confidence": "high",
+   "note": "",
+   "months_before_t0": 37.9
+  },
+  {
+   "date": "2021-11-27",
+   "date_precision": "day",
+   "date_type": "captured",
+   "source_type": "website_first",
+   "description": "Earliest Wayback capture of brnologic.cz (301), predecessor-name domain",
+   "url": "https://web.archive.org/cdx/search/cdx?url=brnologic.cz&limit=2",
+   "confidence": "low",
+   "note": "Domain linked to the predecessor name; not verified as same operation",
+   "months_before_t0": 36.1
+  },
+  {
+   "date": "2022-06-13",
+   "date_precision": "day",
+   "date_type": "event",
+   "source_type": "gov_contract",
+   "description": "Registr smluv: licence contract with VUT Brno (no. 20726967)",
+   "url": "https://www.hlidacstatu.cz/hledatSmlouvy?Q=icoPlatce%3A11900865+OR+icoPrijemce%3A11900865",
+   "confidence": "medium",
+   "note": "Supplier recorded as BrnoLogic, spol. s r.o. under same ICO",
+   "months_before_t0": 29.6
+  },
+  {
+   "date": "2022",
+   "date_precision": "year",
+   "date_type": "event",
+   "source_type": "accelerator",
+   "description": "CzechInvest (API) Technologicka inkubace support, CZK 1,490,603",
+   "url": "https://www.hlidacstatu.cz/dotace/hledat?Q=ico%3A11900865",
+   "confidence": "medium",
+   "note": "Year-only in Hlidac; incubation support programme",
+   "months_before_t0": 29.0
+  },
+  {
+   "date": "2023-03-30",
+   "date_precision": "day",
+   "date_type": "event",
+   "source_type": "gov_contract",
+   "description": "Registr smluv: FPGA development contract with VZLU, CZK 229,416",
+   "url": "https://www.hlidacstatu.cz/hledatSmlouvy?Q=icoPlatce%3A11900865+OR+icoPrijemce%3A11900865",
+   "confidence": "medium",
+   "note": "",
+   "months_before_t0": 20.0
+  },
+  {
+   "date": "2023-06-09",
+   "date_precision": "day",
+   "date_type": "captured",
+   "source_type": "website_first",
+   "description": "Earliest Wayback 200 capture of dyna-nic.com",
+   "url": "https://web.archive.org/cdx/search/cdx?url=dyna-nic.com&limit=2",
+   "confidence": "medium",
+   "note": "",
+   "months_before_t0": 17.7
+  },
+  {
+   "date": "2023",
+   "date_precision": "year",
+   "date_type": "event",
+   "source_type": "accelerator",
+   "description": "JIC consulting support CZK 16,500",
+   "url": "https://www.hlidacstatu.cz/dotace/hledat?Q=ico%3A11900865",
+   "confidence": "low",
+   "note": "",
+   "months_before_t0": 17.0
+  },
+  {
+   "date": "2023",
+   "date_precision": "year",
+   "date_type": "event",
+   "source_type": "grant_national",
+   "description": "TA CR project Hardwarova akcelerace vysokorychlostni DPDK SmartNIC, est. CZK 6.3M (year of signing)",
+   "url": "https://www.hlidacstatu.cz/dotace/hledat?Q=ico%3A11900865",
+   "confidence": "medium",
+   "note": "",
+   "months_before_t0": 17.0
+  },
+  {
+   "date": "2023-08-14",
+   "date_precision": "day",
+   "date_type": "event",
+   "source_type": "gov_contract",
+   "description": "Registr smluv: TA CR TREND support agreement, CZK 9,306,407",
+   "url": "https://www.hlidacstatu.cz/hledatSmlouvy?Q=icoPlatce%3A11900865+OR+icoPrijemce%3A11900865",
+   "confidence": "medium",
+   "note": "Hlidac dotace lists a TA CR grant of the same amount with year 2025",
+   "months_before_t0": 15.5
+  },
+  {
+   "date": "2024",
+   "date_precision": "year",
+   "date_type": "event",
+   "source_type": "grant_national",
+   "description": "Ministry of Interior project Vysokorychlostni filtrace sitoveho provozu est. CZK 5.98M; Ministry of Culture creative vouchers CZK 150k x2",
+   "url": "https://www.hlidacstatu.cz/dotace/hledat?Q=ico%3A11900865",
+   "confidence": "medium",
+   "note": "",
+   "months_before_t0": 5.0
+  },
+  {
+   "date": "2024-11-29",
+   "date_precision": "day",
+   "date_type": "announced",
+   "source_type": "press_round",
+   "description": "EUR 550k pre-seed led by Tensor Ventures (first investment of its Fund II)",
+   "url": "https://tech.eu/2024/11/29/czech-spinout-dynanic-secures-550-000-pre-seed/",
+   "confidence": "high",
+   "note": "",
+   "months_before_t0": 0.0
+  },
+  {
+   "date": "2024-12-11",
+   "date_precision": "day",
+   "date_type": "registered",
+   "source_type": "registry_capital_increase",
+   "description": "Capital 500,000 -> 569,670.73 CZK; Tensor Warehouse s.r.o. and Brussels Houston Munich Angel Investors s.r.o. registered (after announcement)",
+   "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?typ=UPLNY&subjektId=1135299",
+   "confidence": "high",
+   "note": "",
+   "months_before_t0": -0.4
+  }
+ ],
+ "not_found": [
+  {
+   "source_type": "prior_round",
+   "what_was_checked": "First external round; none found",
+   "url_or_query": "https://tech.eu/2024/11/29/czech-spinout-dynanic-secures-550-000-pre-seed/"
+  },
+  {
+   "source_type": "press_first",
+   "what_was_checked": "Only round-announcement coverage surfaced via a few web searches; no systematic search for earlier press mentions",
+   "url_or_query": "web search: company name + investor names"
+  },
+  {
+   "source_type": "grant_eu",
+   "what_was_checked": "CORDIS / EIC / STARFOS not queried (lightweight control timeline); Hlidac statu dotace used as national-grant proxy only",
+   "url_or_query": "n/a"
+  }
+ ],
+ "after_investment": null,
+ "caveats": [
+  "Round is pre-seed, below the seed/Series A scope; included as sector-fit filler.",
+  "Hlidac matches contracts to ICO 11900865 under the former name BrnoLogic."
+ ]
+}

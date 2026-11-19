@@ -1,0 +1,111 @@
+{
+ "company": "Duvo.ai",
+ "slug": "duvo",
+ "website": "https://duvo.ai",
+ "country_hq": "Czechia (Prague) / US",
+ "legal_entities": [
+  {
+   "name": "duvo.ai s.r.o.",
+   "id_type": "ICO",
+   "id": "22646141",
+   "country": "CZ",
+   "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?typ=UPLNY&subjektId=1267923"
+  }
+ ],
+ "sector": "AI (retail ops automation)",
+ "thesis_fit": {
+  "sector_bucket": "AI",
+  "note": "AI workforce for retail operations"
+ },
+ "control_note": "CONTROL GROUP: not a Rockaway investment. The rockaway block is replaced by control_round (same fields).",
+ "control_round": {
+  "round": "Seed",
+  "amount": "USD 15M",
+  "lead": "Index Ventures; Credo Ventures, Northzone, Puzzle Ventures participated",
+  "co_investors": [
+   "Credo Ventures",
+   "Northzone",
+   "Puzzle Ventures"
+  ],
+  "announced_date": "2025-12-02",
+  "announced_url": "https://tech.eu/2025/12/02/duvo-raises-15m-to-give-retailers-ai-staff-that-cuts-manual-work-by-40/",
+  "deal_date": "",
+  "deal_date_url": "",
+  "t0": "2025-12-02",
+  "t0_basis": "announced"
+ },
+ "prior_investors": [],
+ "events": [
+  {
+   "date": "2025-02-24",
+   "date_precision": "day",
+   "date_type": "registered",
+   "source_type": "registry_incorporation",
+   "description": "duvo.ai s.r.o. incorporated, capital 12,000 CZK",
+   "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?typ=UPLNY&subjektId=1267923",
+   "confidence": "high",
+   "note": "",
+   "months_before_t0": 9.2
+  },
+  {
+   "date": "2025-08-01",
+   "date_precision": "day",
+   "date_type": "registered",
+   "source_type": "registry_new_shareholder",
+   "description": "Taskcrew Inc. becomes sole shareholder (Czech holders removed)",
+   "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?typ=UPLNY&subjektId=1267923",
+   "confidence": "medium",
+   "note": "Parent restructuring, not an institutional investor",
+   "months_before_t0": 4.0
+  },
+  {
+   "date": "2025-09-29",
+   "date_precision": "day",
+   "date_type": "captured",
+   "source_type": "website_first",
+   "description": "Earliest Wayback capture of duvo.ai (308)",
+   "url": "https://web.archive.org/cdx/search/cdx?url=duvo.ai&limit=2",
+   "confidence": "medium",
+   "note": "",
+   "months_before_t0": 2.1
+  },
+  {
+   "date": "2025-12-02",
+   "date_precision": "day",
+   "date_type": "announced",
+   "source_type": "press_round",
+   "description": "USD 15M seed led by Index Ventures; Credo, Northzone, Puzzle Ventures participated",
+   "url": "https://tech.eu/2025/12/02/duvo-raises-15m-to-give-retailers-ai-staff-that-cuts-manual-work-by-40/",
+   "confidence": "high",
+   "note": "",
+   "months_before_t0": 0.0
+  }
+ ],
+ "not_found": [
+  {
+   "source_type": "registry_capital_increase",
+   "what_was_checked": "Only 12,000 CZK initial capital, no increase",
+   "url_or_query": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?typ=UPLNY&subjektId=1267923"
+  },
+  {
+   "source_type": "prior_round",
+   "what_was_checked": "No earlier round found in sources used",
+   "url_or_query": "https://tech.eu/2025/12/02/duvo-raises-15m-to-give-retailers-ai-staff-that-cuts-manual-work-by-40/"
+  },
+  {
+   "source_type": "press_first",
+   "what_was_checked": "Only round-announcement coverage surfaced via a few web searches; no systematic search for earlier press mentions",
+   "url_or_query": "web search: company name + investor names"
+  },
+  {
+   "source_type": "grant_eu",
+   "what_was_checked": "CORDIS / EIC / STARFOS not queried (lightweight control timeline); Hlidac statu dotace used as national-grant proxy only",
+   "url_or_query": "n/a"
+  }
+ ],
+ "after_investment": null,
+ "caveats": [
+  "Credo participated but did not lead (Index Ventures led; Seedtable attributes lead differently). Included as key investor.",
+  "Operating company may sit in a US entity; only Czech s.r.o. checked."
+ ]
+}

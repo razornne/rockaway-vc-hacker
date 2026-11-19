@@ -1,0 +1,124 @@
+{
+ "company": "Edmund",
+ "slug": "edmund",
+ "website": "https://edmund-ai.com",
+ "country_hq": "Czechia (Prague)",
+ "legal_entities": [],
+ "sector": "industrial AI (maintenance)",
+ "thesis_fit": {
+  "sector_bucket": "industrial AI",
+  "note": "AI troubleshooting for industrial maintenance"
+ },
+ "control_note": "CONTROL GROUP: not a Rockaway investment. The rockaway block is replaced by control_round (same fields).",
+ "control_round": {
+  "round": "Seed",
+  "amount": "EUR 2.5M",
+  "lead": "FORWARD.one; Tensor Ventures, University2Ventures, LightHouse Ventures participated",
+  "co_investors": [
+   "Tensor Ventures",
+   "University2Ventures",
+   "LightHouse Ventures"
+  ],
+  "announced_date": "2026-04-09",
+  "announced_url": "https://inforcapital.com/news/czech-startup-edmund-raises-25-million-to-expand-its-ai-debugging-platform-for-industrial-maintenance",
+  "deal_date": "",
+  "deal_date_url": "",
+  "t0": "2026-04-09",
+  "t0_basis": "announced"
+ },
+ "prior_investors": [
+  {
+   "name": "LightHouse Ventures",
+   "round": "pre-seed EUR 500k (lead)",
+   "date": "2025-02-12",
+   "url": "https://tech.eu/2025/02/12/backed-by-500k-edmund-brings-ai-to-the-factory-floor-to-solve-industry-s-biggest-data-challenges/",
+   "also_coinvested_with_rockaway_elsewhere": null
+  },
+  {
+   "name": "Tensor Ventures",
+   "round": "pre-seed",
+   "date": "2025-02-12",
+   "url": "https://tech.eu/2025/02/12/backed-by-500k-edmund-brings-ai-to-the-factory-floor-to-solve-industry-s-biggest-data-challenges/",
+   "also_coinvested_with_rockaway_elsewhere": null
+  }
+ ],
+ "events": [
+  {
+   "date": "2023",
+   "date_precision": "year",
+   "date_type": "event",
+   "source_type": "other",
+   "description": "Company founded (year only)",
+   "url": "https://tech.eu/2025/02/12/backed-by-500k-edmund-brings-ai-to-the-factory-floor-to-solve-industry-s-biggest-data-challenges/",
+   "confidence": "medium",
+   "note": "Per article; no registry match",
+   "months_before_t0": 33.3
+  },
+  {
+   "date": "2025-01-08",
+   "date_precision": "day",
+   "date_type": "captured",
+   "source_type": "website_first",
+   "description": "Earliest Wayback 200 capture of edmund-ai.com",
+   "url": "https://web.archive.org/cdx/search/cdx?url=edmund-ai.com&limit=2",
+   "confidence": "medium",
+   "note": "",
+   "months_before_t0": 15.0
+  },
+  {
+   "date": "2025-02-12",
+   "date_precision": "day",
+   "date_type": "announced",
+   "source_type": "accelerator",
+   "description": "Joined Sherpa accelerator at Czech Founders (joining date not stated; article date used)",
+   "url": "https://tech.eu/2025/02/12/backed-by-500k-edmund-brings-ai-to-the-factory-floor-to-solve-industry-s-biggest-data-challenges/",
+   "confidence": "low",
+   "note": "Joining date unknown; on or before this date",
+   "months_before_t0": 13.8
+  },
+  {
+   "date": "2025-02-12",
+   "date_precision": "day",
+   "date_type": "announced",
+   "source_type": "prior_round",
+   "description": "EUR 500k pre-seed (LightHouse lead; Czech Founders VC, Borovicka Capital, Tensor)",
+   "url": "https://tech.eu/2025/02/12/backed-by-500k-edmund-brings-ai-to-the-factory-floor-to-solve-industry-s-biggest-data-challenges/",
+   "confidence": "high",
+   "note": "",
+   "months_before_t0": 13.8
+  },
+  {
+   "date": "2026-04-09",
+   "date_precision": "day",
+   "date_type": "announced",
+   "source_type": "press_round",
+   "description": "EUR 2.5M seed led by FORWARD.one; Tensor, University2Ventures, LightHouse participated",
+   "url": "https://inforcapital.com/news/czech-startup-edmund-raises-25-million-to-expand-its-ai-debugging-platform-for-industrial-maintenance",
+   "confidence": "high",
+   "note": "",
+   "months_before_t0": 0.0
+  }
+ ],
+ "not_found": [
+  {
+   "source_type": "registry_incorporation",
+   "what_was_checked": "ARES name search (Edmund, Edmund AI, edmund-ai, Edmund Technologies) found no matching company; legal entity unknown",
+   "url_or_query": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat"
+  },
+  {
+   "source_type": "press_first",
+   "what_was_checked": "Only round-announcement coverage surfaced via a few web searches; no systematic search for earlier press mentions",
+   "url_or_query": "web search: company name + investor names"
+  },
+  {
+   "source_type": "grant_eu",
+   "what_was_checked": "CORDIS / EIC / STARFOS not queried (lightweight control timeline); Hlidac statu dotace used as national-grant proxy only",
+   "url_or_query": "n/a"
+  }
+ ],
+ "after_investment": null,
+ "caveats": [
+  "T0 = 2026 seed; Tensor already invested at the Feb 2025 pre-seed (first-investment T0 would be 2025-02-12).",
+  "HQ reported as Prague or Ostrava depending on source."
+ ]
+}

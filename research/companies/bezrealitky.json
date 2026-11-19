@@ -1,0 +1,154 @@
+{
+  "company": "Bezrealitky",
+  "slug": "bezrealitky",
+  "website": "https://www.bezrealitky.cz",
+  "country_hq": "CZ",
+  "legal_entities": [
+    {
+      "name": "Pricetown s.r.o. (operator at T0 per estav.cz; not found in ARES)",
+      "id_type": "ICO",
+      "id": "27917223",
+      "country": "CZ",
+      "url": "https://www.estav.cz/pricetown"
+    },
+    {
+      "name": "Bezrealitky s.r.o. (created 2019, after T0)",
+      "id_type": "ICO",
+      "id": "08063168",
+      "country": "CZ",
+      "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/08063168"
+    },
+    {
+      "name": "Bezrealitky spravce s.r.o. (created 2017)",
+      "id_type": "ICO",
+      "id": "06234321",
+      "country": "CZ",
+      "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/06234321"
+    },
+    {
+      "name": "Rockaway Capital SE (investor holding)",
+      "id_type": "ICO",
+      "id": "01967631",
+      "country": "CZ",
+      "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/01967631"
+    }
+  ],
+  "sector": "Real-estate listing portal without agents",
+  "thesis_fit": {
+    "sector_bucket": "other",
+    "note": "Consumer marketplace; Rockaway Capital group deal, not a fund-thesis deal."
+  },
+  "rockaway": {
+    "entity": "Rockaway Capital (group), Jakub Havrlant; not the Rockaway Ventures fund",
+    "round": "Minority stake purchase (34.5%)",
+    "amount": "not disclosed",
+    "lead": "Media Bohemia / MMS Digital (51% majority)",
+    "co_investors": [
+      "Media Bohemia (MMS Digital)",
+      "Genesia Investment (Pricetown s.r.o., retained 14.5%)"
+    ],
+    "announced_date": "2016-04-04",
+    "announced_url": "https://cc.cz/skupina-rockaway-jakuba-havrlanta-ziskava-podil-v-realitnim-serveru-bezrealitky-cz/",
+    "deal_date": "",
+    "deal_date_url": "",
+    "t0": "2016-04-04",
+    "t0_basis": "announced"
+  },
+  "prior_investors": [
+    {
+      "name": "Genesia Investment (via Pricetown s.r.o., sole owner before April 2016)",
+      "round": "ownership",
+      "date": "",
+      "url": "https://cc.cz/skupina-rockaway-jakuba-havrlanta-ziskava-podil-v-realitnim-serveru-bezrealitky-cz/",
+      "also_coinvested_with_rockaway_elsewhere": null
+    }
+  ],
+  "events": [
+    {
+      "date": "2007-01-15",
+      "date_precision": "day",
+      "date_type": "captured",
+      "source_type": "website_first",
+      "description": "First Wayback capture of bezrealitky.cz: \"bezRealitky - Prodej ci pronajem nemovitosti ridite sami\", labelled trial operation (zkusebni provoz).",
+      "url": "https://web.archive.org/web/20070115162458/http://www.bezrealitky.cz/",
+      "months_before_t0": 110.6,
+      "confidence": "high",
+      "note": "Decoded as cp1250. 2005-2006 captures exist but are not attributed to the portal."
+    },
+    {
+      "date": "2007",
+      "date_precision": "year",
+      "date_type": "event",
+      "source_type": "other",
+      "description": "Portal founded in 2007 by Jakub Havrlant (later Rockaway founder); he left about 5.5 years before April 2016.",
+      "url": "https://cc.cz/skupina-rockaway-jakuba-havrlanta-ziskava-podil-v-realitnim-serveru-bezrealitky-cz/",
+      "months_before_t0": null,
+      "confidence": "medium",
+      "note": "Founding year per CzechCrunch; no registry entry read."
+    },
+    {
+      "date": "2016-04-04",
+      "date_precision": "day",
+      "date_type": "announced",
+      "source_type": "rockaway_announced",
+      "description": "CzechCrunch (citing Lupa.cz): Rockaway Capital acquires 34.5%; Media Bohemia/MMS Digital 51%; Genesia Investment (Pricetown s.r.o.) keeps 14.5%; about 400k monthly visitors.",
+      "url": "https://cc.cz/skupina-rockaway-jakuba-havrlanta-ziskava-podil-v-realitnim-serveru-bezrealitky-cz/",
+      "months_before_t0": 0.0,
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "date": "2016-08",
+      "date_precision": "month",
+      "date_type": "announced",
+      "source_type": "press_round",
+      "description": "Lupa.cz (search summary only): Bezrealitky.cz changes owner, goes into Media Bohemia group, Rockaway minority stake.",
+      "url": "https://www.lupa.cz/n/rockaway-group/",
+      "months_before_t0": -3.9,
+      "confidence": "low",
+      "note": "Not opened; date and wording unverified; may be the closing of the same deal."
+    },
+    {
+      "date": "2020-08-17",
+      "date_precision": "day",
+      "date_type": "announced",
+      "source_type": "other",
+      "description": "Exit: Marek Rosenbaum buys 100% of Bezrealitky and Bezrealitky Slovensko from MMS Digital, Rockaway and Genesia Investments.",
+      "url": "https://www.mediaguru.cz/clanky/2020/08/novym-majitelem-bezrealitky-je-marek-rosenbaum/",
+      "months_before_t0": -52.4,
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "not_found": [
+    {
+      "source_type": "registry_new_shareholder",
+      "what_was_checked": "ARES search \"Pricetown\": 0 hits; ICO 27917223 (from estav.cz) returns NENALEZENO; or.justice.cz current-only query by that ICO returned 0 subjects. No registry deal date available.",
+      "url_or_query": "https://or.justice.cz/ias/ui/rejstrik-$firma?ico=27917223"
+    },
+    {
+      "source_type": "rockaway_deal",
+      "what_was_checked": "Closing date not found; original Lupa April 2016 article not located (guessed URL 404).",
+      "url_or_query": "lupa.cz"
+    },
+    {
+      "source_type": "financial_statements / hiring / grants / accelerator",
+      "what_was_checked": "Not checked; business running since 2007.",
+      "url_or_query": ""
+    }
+  ],
+  "after_investment": {
+    "next_rounds": [],
+    "exit": {
+      "date": "2020-08-17",
+      "buyer": "Marek Rosenbaum (100%) from MMS Digital, Rockaway, Genesia Investments",
+      "url": "https://www.mediaguru.cz/clanky/2020/08/novym-majitelem-bezrealitky-je-marek-rosenbaum/"
+    },
+    "notes": "Rockaway site lists it under Exits (per search summary)."
+  },
+  "caveats": [
+    "Rockaway Capital group stake alongside a media group, not a Rockaway Ventures fund deal. The portal is a 2007 business, so the \"earliest signal\" is the 2007 site, not a pre-deal startup signal.",
+    "Lupa Aug 2016 describes ownership differently (Media Bohemia group, Rockaway minority); relation to the April announcement unresolved.",
+    "Havrlant founded Bezrealitky in 2007 and later Rockaway: founder return, not external sourcing."
+  ]
+}

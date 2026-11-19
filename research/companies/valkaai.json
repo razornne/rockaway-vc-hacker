@@ -1,0 +1,164 @@
+{
+  "company": "ValkaAI",
+  "slug": "valkaai",
+  "website": "https://valka.ai",
+  "country_hq": "Czechia (Prague); teams in US, Europe, UAE",
+  "legal_entities": [
+    {
+      "name": "Valka.AI s.r.o.",
+      "id_type": "ICO",
+      "id": "23132221",
+      "country": "CZ",
+      "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/23132221"
+    },
+    {
+      "name": "Valka.AI B.V.",
+      "id_type": "other",
+      "id": "",
+      "country": "NL (presumed from B.V. form; registry number not checked)",
+      "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23132221"
+    }
+  ],
+  "sector": "Real-time interactive AI avatars / digital humans (sports, esports, igaming)",
+  "thesis_fit": {
+    "sector_bucket": "AI",
+    "note": "Generative AI video; founder is serial (Oddin.gg, Hodei); operates under Realms Group."
+  },
+  "rockaway": {
+    "entity": "Rockaway Ventures (fund)",
+    "round": "Pre-seed",
+    "amount": "EUR 12M",
+    "lead": "Rockaway Ventures",
+    "co_investors": [
+      "J&T Ventures",
+      "Tensor Ventures",
+      "BD Partners",
+      "Fond Nase Cesko",
+      "Petr Zamecnik (angel)"
+    ],
+    "announced_date": "2026-02-24",
+    "announced_url": "https://www.rockawaycapital.com/en/news/e12m-investment-in-valkaai-led-by-rockaway-ventures",
+    "deal_date": "",
+    "deal_date_url": "",
+    "t0": "2026-02-24",
+    "t0_basis": "announced"
+  },
+  "prior_investors": [],
+  "events": [
+    {
+      "date": "2025-03-19",
+      "date_precision": "day",
+      "date_type": "captured",
+      "source_type": "website_first",
+      "description": "Earliest Wayback capture of valka.ai (only a 301 redirect, no readable content)",
+      "url": "https://web.archive.org/web/20250319133657/https://valka.ai/",
+      "months_before_t0": 11.2,
+      "confidence": "low",
+      "note": "First capture with content is 2025-07-09 (7.6 months before T0)."
+    },
+    {
+      "date": "2025-04-01",
+      "date_precision": "day",
+      "date_type": "registered",
+      "source_type": "registry_incorporation",
+      "description": "Valka.AI s.r.o. registered (ICO 23132221), capital CZK 1,000; sole member is Valka.AI B.V.; managing director Vlastimil Venclik",
+      "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23132221",
+      "months_before_t0": 10.8,
+      "confidence": "high",
+      "note": "Parent B.V. holds 100%; no later capital or shareholder entries (record last updated 2025-04-02)."
+    },
+    {
+      "date": "2025-05-12",
+      "date_precision": "day",
+      "date_type": "announced",
+      "source_type": "press_first",
+      "description": "CzechCrunch: Oddin founder Venclik launches Valka.ai (real-time AI avatar for sports, igaming); seeking external funding, no investors named",
+      "url": "https://cc.cz/jeho-startup-rychle-roste-ted-zavetril-dalsi-prilezitost-vyviji-lidskeho-avatara-pro-hry-a-igaming/",
+      "months_before_t0": 9.5,
+      "confidence": "medium",
+      "note": "Date taken from a subagent read of the page."
+    },
+    {
+      "date": "2025-06-08",
+      "date_precision": "day",
+      "date_type": "announced",
+      "source_type": "press_first",
+      "description": "E15 interview with Venclik: aim of European AI-video unicorn; says pre-seed to close by end of June/July 2025; investors approaching him",
+      "url": "https://www.e15.cz/rozhovory/vybudoval-nejrychleji-rostouci-startup-ted-chce-venclik-postavit-nejlepsi-ai-video-firmu-1425083",
+      "months_before_t0": 8.6,
+      "confidence": "medium",
+      "note": "Suggests the round was being negotiated about 8 months before the announcement."
+    },
+    {
+      "date": "2025-07-09",
+      "date_precision": "day",
+      "date_type": "captured",
+      "source_type": "website_first",
+      "description": "valka.ai first readable Wayback capture: 'Valka.AI is building the engine for next-generation digital humans', careers page present",
+      "url": "https://web.archive.org/web/20250709002724/https://valka.ai/",
+      "months_before_t0": 7.6,
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "date": "2026-02-24",
+      "date_precision": "day",
+      "date_type": "announced",
+      "source_type": "rockaway_announced",
+      "description": "Rockaway announces EUR 12M pre-seed led by Rockaway Ventures",
+      "url": "https://www.rockawaycapital.com/en/news/e12m-investment-in-valkaai-led-by-rockaway-ventures",
+      "months_before_t0": 0.0,
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "date": "2026-05-25",
+      "date_precision": "day",
+      "date_type": "announced",
+      "source_type": "other",
+      "description": "Lupa.cz profile says the company raised a record CZK 300M 'last year' before having a product (conflicts with the Feb 2026 announcement)",
+      "url": "https://www.lupa.cz/clanky/dokonaly-avatar-cesi-se-zkusenostmi-z-americkych-laboratori-skladaji-v-prazskem-startupu-video-hlas-a-pohyb-v-realnem-case/",
+      "months_before_t0": -3.0,
+      "confidence": "low",
+      "note": "Could mean the deal closed in 2025; not confirmed."
+    }
+  ],
+  "not_found": [
+    {
+      "source_type": "registry_capital_increase",
+      "what_was_checked": "Valka.AI s.r.o. ARES VR record: no capital change or new member after 2025-04-01 (investment sits at B.V. level)",
+      "url_or_query": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23132221"
+    },
+    {
+      "source_type": "grant_national",
+      "what_was_checked": "Not searched in STARFOS; no grant mentioned in press",
+      "url_or_query": "starfos.tacr.cz"
+    },
+    {
+      "source_type": "accelerator",
+      "what_was_checked": "No accelerator mentioned in press read",
+      "url_or_query": "web search"
+    },
+    {
+      "source_type": "gov_contract",
+      "what_was_checked": "Not checked",
+      "url_or_query": "hlidacstatu.cz ICO 23132221"
+    },
+    {
+      "source_type": "other",
+      "what_was_checked": "Dutch KvK record of Valka.AI B.V. (date, shareholders) not accessed",
+      "url_or_query": ""
+    }
+  ],
+  "after_investment": {
+    "next_rounds": [],
+    "exit": null,
+    "notes": "Lupa (2026-05) says first public launch is a Counter-Strike AI commentator; ~45 staff in San Francisco, Prague, Dubai."
+  },
+  "caveats": [
+    "T0 is the announcement date; the deal date is not visible in the Czech registry (investment likely at the Dutch B.V. level).",
+    "Pre-company signals concern the founder's earlier company Oddin.gg, not Valka.",
+    "Press dates for cc.cz, e15 and lupa come from a subagent page read.",
+    "manual check 2026-11-16: Rockaway release names co-investors J&T Ventures, Tensor Ventures, BD Partners, Fond Naše Česko. Lupa (2026-05-25) says the CZK 300M was raised 'loni' (2025); E15 (2025-06-08) says the round should close by end of June/July 2025 and 'investors come on their own'. The deal therefore most likely closed mid-2025, ~7 months before the announcement. Czech s.r.o. is 100% owned by Valka.AI B.V., so the round is not visible in the Czech registry."
+  ]
+}

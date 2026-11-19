@@ -1,0 +1,171 @@
+{
+  "company": "Raus",
+  "slug": "raus",
+  "website": "https://raus.life",
+  "country_hq": "Germany (Berlin)",
+  "legal_entities": [
+    {
+      "name": "StayRaus GmbH",
+      "id_type": "HRB",
+      "id": "",
+      "country": "DE",
+      "url": "https://www.startbase.com/organization/raus/"
+    }
+  ],
+  "sector": "Nature cabin / short-stay hospitality operator (hospitality tech)",
+  "thesis_fit": {
+    "sector_bucket": "other",
+    "note": "Travel/hospitality operator; outside AI/deep tech thesis."
+  },
+  "rockaway": {
+    "entity": "Rockaway Ventures (fund); nordic9 profile says Rockaway Capital",
+    "round": "Equity round (>EUR 8.5M) plus Varengold Bank asset-backed facility",
+    "amount": "EUR 8.5M total round; Rockaway share not stated",
+    "lead": "ROCH Ventures",
+    "co_investors": [
+      "Rockaway Ventures",
+      "Dupuis Investment (Frank Dupuis)",
+      "Speedinvest (existing)",
+      "10x Founders (existing)"
+    ],
+    "announced_date": "2023-11-09",
+    "announced_url": "https://shorttermrentalz.com/news/raus-cabin-rentals-fresh-funding-nature/",
+    "deal_date": "",
+    "deal_date_url": "",
+    "t0": "2023-11-09",
+    "t0_basis": "announced"
+  },
+  "prior_investors": [
+    {
+      "name": "Speedinvest",
+      "round": "Pre-seed, seven figures, lead",
+      "date": "2021-07-22",
+      "url": "https://shorttermrentalz.com/news/raus-pre-seed-funding/",
+      "also_coinvested_with_rockaway_elsewhere": null
+    },
+    {
+      "name": "Julian Stiefel and Julian Weselek (Tourlane co-founders, angels)",
+      "round": "Pre-seed",
+      "date": "2021-07-22",
+      "url": "https://shorttermrentalz.com/news/raus-pre-seed-funding/",
+      "also_coinvested_with_rockaway_elsewhere": null
+    },
+    {
+      "name": "10x Founders (lead), Shio Capital, Bellevue Holding, Boscor, Ennea VC, NFQ Capital, Nathan Blecharczyk (angel)",
+      "round": "~EUR 3M seed; date approx. late 2022",
+      "date": "2022-11",
+      "url": "https://shorttermrentalz.com/news/raus-cabin-rentals-fresh-funding-nature/",
+      "also_coinvested_with_rockaway_elsewhere": null
+    }
+  ],
+  "events": [
+    {
+      "date": "2021-07-22",
+      "date_precision": "day",
+      "date_type": "captured",
+      "source_type": "website_first",
+      "description": "First Wayback snapshot of raus.life (same day as the pre-seed announcement)",
+      "url": "https://web.archive.org/web/20210722121302/https://raus.life/",
+      "months_before_t0": 27.6,
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "date": "2021-07-22",
+      "date_precision": "day",
+      "date_type": "announced",
+      "source_type": "prior_round",
+      "description": "Pre-seed, 'seven-figure' sum led by Speedinvest, angels from Tourlane; founders Christopher Eilers, Johann Ahlers, Julian Trautwein",
+      "url": "https://shorttermrentalz.com/news/raus-pre-seed-funding/",
+      "months_before_t0": 27.6,
+      "confidence": "high",
+      "note": "Earliest public signal found. Other sources say the company was founded Oct 2021, i.e. after this article; sources conflict."
+    },
+    {
+      "date": "2022-11-01",
+      "date_precision": "month",
+      "date_type": "announced",
+      "source_type": "prior_round",
+      "description": "~EUR 3M round led by 10x Founders, Airbnb co-founder N. Blecharczyk among backers (month inferred from 'a year earlier' wording)",
+      "url": "https://shorttermrentalz.com/news/raus-cabin-rentals-fresh-funding-nature/",
+      "months_before_t0": 12.3,
+      "confidence": "low",
+      "note": "Exact date not read from the original article."
+    },
+    {
+      "date": "2023-04-01",
+      "date_precision": "month",
+      "date_type": "announced",
+      "source_type": "prior_round",
+      "description": ">EUR 2M additional funding 'in April' (year inferred as 2023 from context)",
+      "url": "https://shorttermrentalz.com/news/raus-cabin-rentals-fresh-funding-nature/",
+      "months_before_t0": 7.3,
+      "confidence": "low",
+      "note": "Ambiguous wording in a secondary article; unverified."
+    },
+    {
+      "date": "2023-11-09",
+      "date_precision": "day",
+      "date_type": "announced",
+      "source_type": "rockaway_announced",
+      "description": "EUR 8.5M round led by ROCH Ventures with Rockaway Ventures, Dupuis Investment, Speedinvest, 10x Founders; Varengold debt",
+      "url": "https://shorttermrentalz.com/news/raus-cabin-rentals-fresh-funding-nature/",
+      "months_before_t0": 0.0,
+      "confidence": "high",
+      "note": "nordic9.com dates the same story 2023-10-09 (portfolio_list uses it); STR, EU-Startups and ain.ua URLs show 2023-11-09, cc.cz 2023-11-13. The nordic9 date looks like a day/month mix-up; if it were right, T0 would be 1.0 month earlier."
+    },
+    {
+      "date": "2023-11-13",
+      "date_precision": "day",
+      "date_type": "announced",
+      "source_type": "press_round",
+      "description": "Czech coverage (cc.cz): Rockaway Ventures takes part, D. Zabrodsky quoted",
+      "url": "https://cc.cz/cesi-si-kupuji-kousek-dalsiho-nemeckeho-startupu-zalibil-se-jim-projekt-prenosnych-chatek/",
+      "months_before_t0": -0.1,
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "not_found": [
+    {
+      "source_type": "registry_incorporation",
+      "what_checked": "northdata.de blocked by rate limit, handelsregister.de not queried (JS form); HRB 229470 B appears only on Dealroom via search summary (unverified)",
+      "url_or_query": "https://www.northdata.de ; https://www.handelsregister.de"
+    },
+    {
+      "source_type": "registry_capital_increase",
+      "what_checked": "Not retrieved; German register shows capital changes and shareholder lists only through documents",
+      "url_or_query": ""
+    },
+    {
+      "source_type": "grant_national",
+      "what_checked": "Not searched",
+      "url_or_query": ""
+    },
+    {
+      "source_type": "gov_contract",
+      "what_checked": "Not searched; unlikely for a hospitality operator",
+      "url_or_query": ""
+    },
+    {
+      "source_type": "hiring",
+      "what_checked": "Not searched",
+      "url_or_query": ""
+    },
+    {
+      "source_type": "rockaway_deal",
+      "what_checked": "Closing date and Rockaway cheque size not disclosed; no earlier Rockaway entry found",
+      "url_or_query": ""
+    }
+  ],
+  "after_investment": {
+    "next_rounds": [],
+    "exit": null,
+    "notes": "No later round found in this pass."
+  },
+  "caveats": [
+    "Rockaway entity: Rockaway Ventures per STR/cc.cz; nordic9 profile lists Rockaway Capital.",
+    "Legal name StayRaus GmbH comes from Startbase only.",
+    "Founding date conflict: Oct 2021 (STR) vs pre-seed article July 2021."
+  ]
+}

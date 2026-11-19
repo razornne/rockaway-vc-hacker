@@ -1,0 +1,187 @@
+{
+ "company": "BottleCap AI",
+ "slug": "bottlecap-ai",
+ "website": "https://www.bottlecapai.com",
+ "country_hq": "Czechia (Prague)",
+ "legal_entities": [
+  {
+   "name": "BottleCap SE",
+   "id_type": "ICO",
+   "id": "23012854",
+   "country": "CZ",
+   "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/23012854"
+  },
+  {
+   "name": "Beck Adventures Incubator s.r.o.",
+   "id_type": "ICO",
+   "id": "21421790",
+   "country": "CZ",
+   "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/21421790"
+  },
+  {
+   "name": "The Godfather SE",
+   "id_type": "ICO",
+   "id": "22480862",
+   "country": "CZ",
+   "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/22480862"
+  }
+ ],
+ "sector": "Efficiency-first LLMs (CAP1 model, Pulse news app)",
+ "thesis_fit": {
+  "sector_bucket": "AI",
+  "note": "Foundation-model efficiency research; founders Tomas Mikolov (word2vec), Jaroslav Beck (Beat Saber), David Herel."
+ },
+ "rockaway": {
+  "entity": "Rockaway Ventures (fund, per press)",
+  "round": "Seed",
+  "amount": "USD 7.5M (CZK 150M+)",
+  "lead": "20VC",
+  "co_investors": [
+   "Rockaway Ventures",
+   "Ivo Lukacovic (angel)",
+   "unnamed founders of Canva, ElevenLabs, Hugging Face, Datadog, Supercell"
+  ],
+  "announced_date": "2026-01-29",
+  "announced_url": "https://cc.cz/jaroslav-beck-a-tomas-mikolov-ziskavaji-150-milionu-pro-svuj-ai-startup-investuje-do-nej-i-ivo-lukacovic/",
+  "deal_date": "",
+  "deal_date_url": "",
+  "t0": "2026-01-29",
+  "t0_basis": "announced"
+ },
+ "prior_investors": [
+  {
+   "name": "Jaroslav Beck (personal, ~USD 10M)",
+   "round": "founder funding",
+   "date": "2025-03-03",
+   "url": "https://www.lupa.cz/aktuality/tomas-mikolov-a-spolutvurce-beat-saberu-rozjizdi-startup-pro-radikakni-zefektivneni-ai-modelu/",
+   "also_coinvested_with_rockaway_elsewhere": null
+  }
+ ],
+ "events": [
+  {
+   "date": "2024-03-30",
+   "date_precision": "day",
+   "date_type": "registered",
+   "source_type": "registry_incorporation",
+   "description": "Beck Adventures Incubator s.r.o. incorporated (Beck's holding; shareholder of BottleCap SE from April 2025 and sole subscriber of the Jan 2026 capital increase)",
+   "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/21421790",
+   "months_before_t0": 22.0,
+   "confidence": "low",
+   "note": "Predecessor vehicle, not BottleCap itself."
+  },
+  {
+   "date": "2025-01-16",
+   "date_precision": "day",
+   "date_type": "registered",
+   "source_type": "registry_incorporation",
+   "description": "The Godfather SE incorporated; first shareholder of BottleCap SE (2025-03-03 to 2025-04-10), apparently a shelf company",
+   "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/22480862",
+   "months_before_t0": 12.4,
+   "confidence": "low",
+   "note": ""
+  },
+  {
+   "date": "2025-03-02",
+   "date_precision": "day",
+   "date_type": "captured",
+   "source_type": "website_first",
+   "description": "bottlecapai.com first Wayback capture: 'Making existing LLMs radically more efficient', founders page",
+   "url": "https://web.archive.org/web/20250302130538/https://www.bottlecapai.com/",
+   "months_before_t0": 10.9,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "date": "2025-03-03",
+   "date_precision": "day",
+   "date_type": "registered",
+   "source_type": "registry_incorporation",
+   "description": "BottleCap SE registered (ICO 23012854), capital EUR 120,000; board member J. Beck; supervisory board initially D. Herel, from 2025-06-23 T. Mikolov",
+   "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23012854",
+   "months_before_t0": 10.9,
+   "confidence": "high",
+   "note": "Names and roles only."
+  },
+  {
+   "date": "2025-03-03",
+   "date_precision": "day",
+   "date_type": "announced",
+   "source_type": "press_first",
+   "description": "Lupa.cz: Mikolov, Beck and Herel launch BottleCap AI; Beck investing USD 10M",
+   "url": "https://www.lupa.cz/aktuality/tomas-mikolov-a-spolutvurce-beat-saberu-rozjizdi-startup-pro-radikakni-zefektivneni-ai-modelu/",
+   "months_before_t0": 10.9,
+   "confidence": "medium",
+   "note": "Date from subagent read."
+  },
+  {
+   "date": "2025-05-13",
+   "date_precision": "day",
+   "date_type": "announced",
+   "source_type": "product_launch",
+   "description": "Lupa.cz: first technical result, algorithm speeding LLM pretraining by up to 50% (details not published)",
+   "url": "https://www.lupa.cz/aktuality/cesi-vyrazne-zrychlili-trenink-umele-inteligence-uz-by-nemusel-stat-tolik-penez-a-zrat-hromadu-energie/",
+   "months_before_t0": 8.6,
+   "confidence": "medium",
+   "note": "No paper or Hugging Face release found."
+  },
+  {
+   "date": "2026-01-05",
+   "date_precision": "day",
+   "date_type": "registered",
+   "source_type": "registry_capital_increase",
+   "description": "Capital raised by EUR 19,489 to EUR 139,489 via preferential shares, subscribed by Beck Adventures Incubator s.r.o. (preferential shares transferable without consent until 2026-01-31)",
+   "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23012854",
+   "months_before_t0": 0.8,
+   "confidence": "medium",
+   "note": "Investors not named in the registry, so Rockaway is not visible; may be a technical step before closing."
+  },
+  {
+   "date": "2026-01-29",
+   "date_precision": "day",
+   "date_type": "announced",
+   "source_type": "rockaway_announced",
+   "description": "Round announced: USD 7.5M seed led by 20VC with Rockaway Ventures; first app Pulse launched",
+   "url": "https://cc.cz/jaroslav-beck-a-tomas-mikolov-ziskavaji-150-milionu-pro-svuj-ai-startup-investuje-do-nej-i-ivo-lukacovic/",
+   "months_before_t0": 0.0,
+   "confidence": "high",
+   "note": ""
+  }
+ ],
+ "not_found": [
+  {
+   "source_type": "grant_national",
+   "what_was_checked": "Not searched in STARFOS",
+   "url_or_query": "starfos.tacr.cz"
+  },
+  {
+   "source_type": "grant_eu",
+   "what_was_checked": "Not searched in CORDIS",
+   "url_or_query": "cordis.europa.eu"
+  },
+  {
+   "source_type": "accelerator",
+   "what_was_checked": "None mentioned in press",
+   "url_or_query": "web search"
+  },
+  {
+   "source_type": "registry_new_shareholder",
+   "what_was_checked": "Rockaway or 20VC not shown as shareholder of BottleCap SE; investment probably at a foreign holding not found",
+   "url_or_query": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23012854"
+  },
+  {
+   "source_type": "investor_portfolio",
+   "what_was_checked": "Not on the Rockaway fund page (logo wall stale per fund_facts)",
+   "url_or_query": ""
+  }
+ ],
+ "after_investment": {
+  "next_rounds": [],
+  "exit": null,
+  "notes": "Pulse app and CAP1 model launched at announcement."
+ },
+ "caveats": [
+  "Rockaway entity beyond 'Rockaway Ventures' per press not confirmed.",
+  "No public source states how Rockaway was introduced.",
+  "Press dates from lupa.cz and cc.cz come from a subagent read."
+ ]
+}

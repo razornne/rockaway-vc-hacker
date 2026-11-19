@@ -1,0 +1,117 @@
+{
+ "company": "Navigara",
+ "slug": "navigara",
+ "website": "https://navigara.com",
+ "country_hq": "USA (San Francisco per Vestbee); Czech-founded, engineering in Prague",
+ "legal_entities": [],
+ "sector": "Engineering-performance analytics (measuring AI impact on dev teams)",
+ "thesis_fit": {
+  "sector_bucket": "AI",
+  "note": "Developer tooling / AI ROI measurement; USD 1M ARR before launch per a Pulse.bot summary of The Recursive (low confidence)."
+ },
+ "rockaway": {
+  "entity": "Rockaway Ventures (fund, per press)",
+  "round": "Seed",
+  "amount": "USD 2.5M",
+  "lead": "Disputed: Inovo VC (Parsers.vc, Pulse2); Vestbee names no lead; a Pulse.bot summary of The Recursive calls Rockaway the lead",
+  "co_investors": [
+   "Inovo.vc",
+   "QQ Capital"
+  ],
+  "announced_date": "2026-02-19",
+  "announced_url": "https://vestbee.com/insights/articles/navigara-raises-2-5-m",
+  "deal_date": "",
+  "deal_date_url": "",
+  "t0": "2026-02-19",
+  "t0_basis": "announced"
+ },
+ "prior_investors": [],
+ "events": [
+  {
+   "date": "2025-06-18",
+   "date_precision": "day",
+   "date_type": "captured",
+   "source_type": "website_first",
+   "description": "navigara.com first capture of the Navigara product site ('Vision AI: AI-Powered Code Analysis for Engineering Teams'); the 2025-05-12 capture was still an unrelated IT job-board site",
+   "url": "https://web.archive.org/web/20250618155536/https://navigara.com/",
+   "months_before_t0": 8.1,
+   "confidence": "medium",
+   "note": "Domain existed since 2014 with unrelated content; switch happened between 2025-05-12 and 2025-06-18."
+  },
+  {
+   "date": "2025-11-07",
+   "date_precision": "day",
+   "date_type": "captured",
+   "source_type": "website_first",
+   "description": "Site re-titled 'The AI Developer That Measures Performance | Navigara'",
+   "url": "https://web.archive.org/web/20251107024838/https://navigara.com/",
+   "months_before_t0": 3.4,
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "date": "2026-02-19",
+   "date_precision": "day",
+   "date_type": "announced",
+   "source_type": "press_round",
+   "description": "Vestbee: Navigara raises USD 2.5M from Inovo.vc, Rockaway Ventures, QQ Capital; founders Jirka Bachel and Peter Malina",
+   "url": "https://vestbee.com/insights/articles/navigara-raises-2-5-m",
+   "months_before_t0": 0.0,
+   "confidence": "high",
+   "note": "Founding year 2025 per Vestbee/Parsers; CB Insights/Pulse2 say 2022 (conflict)."
+  },
+  {
+   "date": "2026-03-08",
+   "date_precision": "day",
+   "date_type": "announced",
+   "source_type": "press_round",
+   "description": "Parsers.vc: Inovo VC led the round, Rockaway and QQ Capital participated",
+   "url": "https://parsers.vc/news/260308-navigara-secures-2-5-million-to-measure-ai/",
+   "months_before_t0": -0.6,
+   "confidence": "medium",
+   "note": "Favours Inovo as lead (two secondary sources); Rockaway-as-lead only via an aggregator summary."
+  }
+ ],
+ "not_found": [
+  {
+   "source_type": "registry_incorporation",
+   "what_was_checked": "ARES name search 'Navig' returned no Navigara entity; HQ is US so the entity is probably foreign (not verified)",
+   "url_or_query": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat obchodniJmeno=Navig"
+  },
+  {
+   "source_type": "registry_capital_increase",
+   "what_was_checked": "No Czech entity found, nothing to check",
+   "url_or_query": ""
+  },
+  {
+   "source_type": "grant_national",
+   "what_was_checked": "Not searched",
+   "url_or_query": "starfos.tacr.cz"
+  },
+  {
+   "source_type": "accelerator",
+   "what_was_checked": "None seen in press",
+   "url_or_query": "web search"
+  },
+  {
+   "source_type": "hiring",
+   "what_was_checked": "Wayback careers pages not fetched (Internet Archive went offline mid-run)",
+   "url_or_query": "navigara.com/careers*"
+  },
+  {
+   "source_type": "product_launch",
+   "what_was_checked": "GitHub / Hugging Face output not searched; official launch announced together with the round",
+   "url_or_query": ""
+  }
+ ],
+ "after_investment": {
+  "next_rounds": [],
+  "exit": null,
+  "notes": ""
+ },
+ "caveats": [
+  "No legal entity found, so the incorporation-to-round gap cannot be measured; website_first is a proxy.",
+  "Founding year disputed (2022 vs 2025).",
+  "Lead disputed; see rockaway.lead."
+ ]
+}

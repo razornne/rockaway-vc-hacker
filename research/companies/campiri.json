@@ -1,0 +1,210 @@
+{
+  "company": "Campiri",
+  "slug": "campiri",
+  "website": "https://www.campiri.cz (also campiri.com)",
+  "country_hq": "CZ",
+  "legal_entities": [
+    {
+      "name": "Campiri s.r.o.",
+      "id_type": "ICO",
+      "id": "09283447",
+      "country": "CZ",
+      "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/09283447"
+    }
+  ],
+  "sector": "Campervan / RV rental marketplace (P2P, agencies, own fleet)",
+  "thesis_fit": {
+    "sector_bucket": "other",
+    "note": "Consumer marketplace; Rockaway Capital framed it as a continuation of its digital vehicle rental/sales investments (Spotawheel)."
+  },
+  "rockaway": {
+    "entity": "Rockaway Ventures Fund SCSp SICAV-RAIF (registry)",
+    "round": "Seed extension (equity ~CZK 67m; total ~CZK 115m incl. earlier convertibles, founders money, plus CZK 32m debt)",
+    "amount": "EUR 2.7m new round per tech.eu; Rockaway post (not directly read) cites EUR 1.03m Rockaway share of EUR 2.3m",
+    "lead": "Rockaway Ventures (with Miton per cc.cz)",
+    "co_investors": [
+      "Miton (via MITON Happy Campers s.r.o.)",
+      "Purple Ventures"
+    ],
+    "announced_date": "2022-05-11",
+    "announced_url": "https://cc.cz/ceske-campiri-ve-velkem-rozjizdi-pronajem-karavanu-po-evrope-115-milionu-mu-posila-rockaway-i-miton/",
+    "deal_date": "2022-05-04",
+    "deal_date_url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=1089068&typ=UPLNY",
+    "t0": "2022-05-11",
+    "t0_basis": "announced"
+  },
+  "prior_investors": [
+    {
+      "name": "Miton",
+      "round": "first outside investment, mid-Jan 2021",
+      "date": "2021-01",
+      "url": "https://www.miton.cz/en/blog/campiri-is-set-to-digitalise-recreational-vehicle-rental-and-were-in-for-the-ride/",
+      "also_coinvested_with_rockaway_elsewhere": null
+    },
+    {
+      "name": "Petr Jahn (angel)",
+      "round": "2021",
+      "date": "2021-01",
+      "url": "https://cc.cz/2021/02/svobodne-cestovani-v-obytnaku-lukas-janousek-spolu-s-mitonem-spousti-sluzbu-pro-sdileni-karavanu/",
+      "also_coinvested_with_rockaway_elsewhere": null
+    },
+    {
+      "name": "Eva Janeckova, Oldrich Bajer (angels), Purple Ventures",
+      "round": "earlier convertible loans/seed",
+      "date": "",
+      "url": "https://cc.cz/ceske-campiri-ve-velkem-rozjizdi-pronajem-karavanu-po-evrope-115-milionu-mu-posila-rockaway-i-miton/",
+      "also_coinvested_with_rockaway_elsewhere": null
+    }
+  ],
+  "events": [
+    {
+      "date": "2020-06-26",
+      "date_precision": "day",
+      "date_type": "registered",
+      "source_type": "registry_incorporation",
+      "description": "Campiri s.r.o. registered in Hradec Kralove (initial shareholders incl. original founder Michal Tyl). Project sold to Janousek and Tesar later in 2020.",
+      "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=1089068&typ=UPLNY",
+      "months_before_t0": 22.5,
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "date": "2020-10-12",
+      "date_precision": "day",
+      "date_type": "captured",
+      "source_type": "website_first",
+      "description": "First Wayback snapshot of campiri.cz (pre-launch).",
+      "url": "https://web.archive.org/web/20201012225211/https://www.campiri.cz",
+      "months_before_t0": 18.9,
+      "confidence": "high",
+      "note": "Capture date only from CDX; content not opened."
+    },
+    {
+      "date": "2021-01-14",
+      "date_precision": "day",
+      "date_type": "registered",
+      "source_type": "registry_other",
+      "description": "Nomiverse s.r.o. (Janousek vehicle) becomes sole shareholder; Janousek managing director from 23 Dec 2020.",
+      "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=1089068&typ=UPLNY",
+      "months_before_t0": 15.8,
+      "confidence": "high",
+      "note": "Registration date; effective earlier. [manual check 2026-11-16: founder's own vehicle (Nomiverse), not outside money → reclassified]"
+    },
+    {
+      "date": "2021-02-03",
+      "date_precision": "day",
+      "date_type": "announced",
+      "source_type": "prior_round",
+      "description": "CzechCrunch and Miton blog: Miton (joined mid-Jan 2021) + angel Petr Jahn + founders, CZK 14m; platform to launch March 2021.",
+      "url": "https://cc.cz/2021/02/svobodne-cestovani-v-obytnaku-lukas-janousek-spolu-s-mitonem-spousti-sluzbu-pro-sdileni-karavanu/",
+      "months_before_t0": 15.2,
+      "confidence": "high",
+      "note": "Miton blog same date: https://www.miton.cz/en/blog/campiri-is-set-to-digitalise-recreational-vehicle-rental-and-were-in-for-the-ride/"
+    },
+    {
+      "date": "2021-02-22",
+      "date_precision": "day",
+      "date_type": "captured",
+      "source_type": "website_first",
+      "description": "Wayback: company blog post \"Pracujeme na novem webu\" (new web in progress).",
+      "url": "https://web.archive.org/web/20210222081558/https://www.campiri.cz/cs/blog/pracujeme-na-novem-webu.-co-za-novinky-prinese-nove-campiri",
+      "months_before_t0": 14.6,
+      "confidence": "medium",
+      "note": "Capture date; content not read."
+    },
+    {
+      "date": "2021-04-20",
+      "date_precision": "day",
+      "date_type": "captured",
+      "source_type": "product_launch",
+      "description": "Wayback: blog post \"Spustili jsme novy web\" (new website launched).",
+      "url": "https://web.archive.org/web/20210420083118/https://www.campiri.cz/cs/blog/sputili-jsme-novy-web",
+      "months_before_t0": 12.7,
+      "confidence": "medium",
+      "note": "Capture date = latest possible post date."
+    },
+    {
+      "date": "2022-04-14",
+      "date_precision": "day",
+      "date_type": "registered",
+      "source_type": "registry_other",
+      "description": "Paul Tesar added as second managing director; business scope widened (vehicle rental, travel agency etc.) shortly before round.",
+      "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=1089068&typ=UPLNY",
+      "months_before_t0": 0.9,
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "date": "2022-05-04",
+      "date_precision": "day",
+      "date_type": "registered",
+      "source_type": "registry_capital_increase",
+      "description": "Share capital CZK 1,200 -> 2,274; new shareholders MITON Happy Campers s.r.o., PV 111 s.r.o., CASCADE Solution a.s. registered. Rockaway Ventures Fund SCSp SICAV-RAIF registered as a member in the same entry.",
+      "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=1089068&typ=UPLNY",
+      "months_before_t0": 0.2,
+      "confidence": "high",
+      "note": "Rockaway is not named in the registry; which new shareholder (if any) is a Rockaway vehicle NOT verified (CASCADE Solution a.s. ICO 07074042 unexplained). [manual check 2026-11-16: confirmed]"
+    },
+    {
+      "date": "2022-05-11",
+      "date_precision": "day",
+      "date_type": "announced",
+      "source_type": "rockaway_announced",
+      "description": "Round announced: Rockaway Ventures lead with Miton; Zabrodsky (Rockaway Capital) quoted. Tech.eu: EUR 2.7m added, EUR 4.64m total.",
+      "url": "https://cc.cz/ceske-campiri-ve-velkem-rozjizdi-pronajem-karavanu-po-evrope-115-milionu-mu-posila-rockaway-i-miton/",
+      "months_before_t0": 0.0,
+      "confidence": "high",
+      "note": "https://tech.eu/2022/05/11/czech-caravan-rental-platform-rides-in-eur464-million-for-europe-expansion/"
+    },
+    {
+      "date": "2022-05-04",
+      "date_precision": "day",
+      "date_type": "registered",
+      "source_type": "rockaway_deal",
+      "description": "Rockaway Ventures Fund SCSp SICAV-RAIF registered as member of Campiri s.r.o. (7 days before the press announcement).",
+      "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=1089068&typ=UPLNY",
+      "months_before_t0": 0.2,
+      "confidence": "high",
+      "note": "manual check 2026-11-16"
+    }
+  ],
+  "not_found": [
+    {
+      "source_type": "grant_national",
+      "what_was_checked": "STARFOS / Hlidac statu not searched",
+      "url_or_query": "starfos.tacr.cz; ICO 09283447"
+    },
+    {
+      "source_type": "hiring",
+      "what_was_checked": "Wayback careers pages not sampled (CDX intermittently offline)",
+      "url_or_query": "web.archive.org cdx campiri.cz/kariera*"
+    },
+    {
+      "source_type": "financial_statements",
+      "what_was_checked": "Sbirka listin not opened; revenue only from press (CZK 20m for 2021)",
+      "url_or_query": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=1089068&typ=UPLNY"
+    },
+    {
+      "source_type": "website_pricing",
+      "what_was_checked": "Not checked",
+      "url_or_query": "campiri.cz/cs/obytna-auta snapshots 2021-03"
+    },
+    {
+      "source_type": "rockaway_announced",
+      "what_was_checked": "Rockaway's own press post not retrieved (fetch returned a listing page)",
+      "url_or_query": "rockawaycapital.com Campiri"
+    }
+  ],
+  "after_investment": {
+    "next_rounds": [],
+    "exit": null,
+    "notes": "Combined with German FreewayCamper (also backed by Rockaway Capital and Miton) per shorttermrentalz/proptechbuzz coverage (date not verified; one database says Feb 2024). Registry: share restructuring Jan 2024; MITON Happy Campers, PV 111, CASCADE Solution removed 14 May 2024; Nomiverse sole shareholder again from 16 Dec 2025. Forbes.cz headline says investors lost money after a restructuring (article not read)."
+  },
+  "caveats": [
+    "Round amounts differ across sources (EUR 2.3m / 2.7m; CZK 115m total including debt).",
+    "Rockaway entity in the Czech registry not identified.",
+    "T0 uses announcement date; registry capital increase 2022-05-04 is the likely deal date.",
+    "Wayback CDX was intermittently offline.",
+    "manual check 2026-11-16: agent claimed Rockaway is not named in the registry — wrong; it is, from 2022-05-04."
+  ]
+}

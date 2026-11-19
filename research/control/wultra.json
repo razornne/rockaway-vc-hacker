@@ -1,0 +1,162 @@
+{
+ "company": "Wultra",
+ "slug": "wultra",
+ "website": "https://www.wultra.com",
+ "country_hq": "Czechia",
+ "legal_entities": [
+  {
+   "name": "Wultra s.r.o. (formerly Lime - HighTech Solutions s.r.o.)",
+   "id_type": "ICO",
+   "id": "03643174",
+   "country": "CZ",
+   "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?typ=UPLNY&subjektId=883583"
+  }
+ ],
+ "sector": "cybersecurity / post-quantum authentication (deep tech)",
+ "thesis_fit": {
+  "sector_bucket": "deep tech",
+  "note": "post-quantum authentication for banks; closest bucket deep tech/cyber"
+ },
+ "control_note": "CONTROL GROUP: not a Rockaway investment. The rockaway block is replaced by control_round (same fields).",
+ "control_round": {
+  "round": "Seed+",
+  "amount": "EUR 3M",
+  "lead": "Tensor Ventures (Elevator Ventures co-lead per some sources); J&T Ventures participated",
+  "co_investors": [
+   "J&T Ventures",
+   "Elevator Ventures"
+  ],
+  "announced_date": "2025-01-15",
+  "announced_url": "https://tech.eu/2025/01/15/wultra-secures-eur3m-to-protect-financial-institutions-from-quantum-threats/",
+  "deal_date": "2024-12-30",
+  "deal_date_url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?typ=UPLNY&subjektId=883583",
+  "t0": "2025-01-15",
+  "t0_basis": "announced"
+ },
+ "prior_investors": [
+  {
+   "name": "J&T Ventures (J&T Ventures CG SICAV a.s.)",
+   "round": "earlier round (registry shareholder from 2021-11-26)",
+   "date": "2021-11-26",
+   "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?typ=UPLNY&subjektId=883583",
+   "also_coinvested_with_rockaway_elsewhere": null
+  }
+ ],
+ "events": [
+  {
+   "date": "2013-05-30",
+   "date_precision": "day",
+   "date_type": "captured",
+   "source_type": "website_first",
+   "description": "Earliest Wayback capture of wultra.com",
+   "url": "https://web.archive.org/cdx/search/cdx?url=wultra.com&limit=2",
+   "confidence": "medium",
+   "note": "Capture predates the 2014 incorporation; domain history not verified",
+   "months_before_t0": 139.6
+  },
+  {
+   "date": "2014-12-15",
+   "date_precision": "day",
+   "date_type": "registered",
+   "source_type": "registry_incorporation",
+   "description": "Incorporated as Lime - HighTech Solutions s.r.o. (renamed Wultra s.r.o. 2018-07-17)",
+   "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?typ=UPLNY&subjektId=883583",
+   "confidence": "high",
+   "note": "",
+   "months_before_t0": 121.0
+  },
+  {
+   "date": "2020-04-19",
+   "date_precision": "day",
+   "date_type": "event",
+   "source_type": "gov_contract",
+   "description": "Registr smluv: UP CR Antivirus employment-subsidy agreement (Hlidac dotace: ANTIVIRUS, CZK 0)",
+   "url": "https://www.hlidacstatu.cz/hledatSmlouvy?Q=icoPlatce%3A03643174+OR+icoPrijemce%3A03643174",
+   "confidence": "medium",
+   "note": "Employment programme, not product traction",
+   "months_before_t0": 56.9
+  },
+  {
+   "date": "2021-11-26",
+   "date_precision": "day",
+   "date_type": "registered",
+   "source_type": "registry_new_shareholder",
+   "description": "J&T Ventures CG SICAV a.s. registered as shareholder",
+   "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?typ=UPLNY&subjektId=883583",
+   "confidence": "high",
+   "note": "",
+   "months_before_t0": 37.7
+  },
+  {
+   "date": "2021-11-26",
+   "date_precision": "day",
+   "date_type": "registered",
+   "source_type": "registry_capital_increase",
+   "description": "Zakladni kapital change registered same day (amount not extracted)",
+   "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?typ=UPLNY&subjektId=883583",
+   "confidence": "medium",
+   "note": "",
+   "months_before_t0": 37.7
+  },
+  {
+   "date": "2024-12-30",
+   "date_precision": "day",
+   "date_type": "registered",
+   "source_type": "registry_new_shareholder",
+   "description": "Tensor Warehouse s.r.o. and EV II EuVECA GmbH & Co KG registered as shareholders",
+   "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?typ=UPLNY&subjektId=883583",
+   "confidence": "high",
+   "note": "",
+   "months_before_t0": 0.5
+  },
+  {
+   "date": "2024-12-30",
+   "date_precision": "day",
+   "date_type": "registered",
+   "source_type": "registry_capital_increase",
+   "description": "Zakladni kapital change registered (0.5 months before the press announcement)",
+   "url": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?typ=UPLNY&subjektId=883583",
+   "confidence": "high",
+   "note": "",
+   "months_before_t0": 0.5
+  },
+  {
+   "date": "2025-01-15",
+   "date_precision": "day",
+   "date_type": "announced",
+   "source_type": "press_round",
+   "description": "EUR 3M Seed+ announced",
+   "url": "https://tech.eu/2025/01/15/wultra-secures-eur3m-to-protect-financial-institutions-from-quantum-threats/",
+   "confidence": "high",
+   "note": "",
+   "months_before_t0": 0.0
+  }
+ ],
+ "not_found": [
+  {
+   "source_type": "accelerator",
+   "what_was_checked": "none seen in sources used",
+   "url_or_query": "https://www.hlidacstatu.cz/subjekt/03643174"
+  },
+  {
+   "source_type": "grant_national",
+   "what_was_checked": "Hlidac dotace: only ANTIVIRUS CZK 0 (2021)",
+   "url_or_query": "https://www.hlidacstatu.cz/dotace/hledat?Q=ico%3A03643174"
+  },
+  {
+   "source_type": "press_first",
+   "what_was_checked": "Only round-announcement coverage surfaced via a few web searches; no systematic search for earlier press mentions",
+   "url_or_query": "web search: company name + investor names"
+  },
+  {
+   "source_type": "grant_eu",
+   "what_was_checked": "CORDIS / EIC / STARFOS not queried (lightweight control timeline); Hlidac statu dotace used as national-grant proxy only",
+   "url_or_query": "n/a"
+  }
+ ],
+ "after_investment": null,
+ "caveats": [
+  "Deal date proxy = registry entry 2024-12-30; press announcement 2025-01-15.",
+  "Co-lead (Elevator Ventures) varies by source."
+ ]
+}

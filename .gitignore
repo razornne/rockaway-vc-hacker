@@ -1,0 +1,8 @@
+data/
+cache/
+.env
+__pycache__/
+*.pyc
+.venv/
+.dd/
+uv.lock.bak
