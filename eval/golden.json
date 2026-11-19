@@ -1,0 +1,84 @@
+{
+  "_note": "Facts verified manually against primary sources on 2026-11-16 (see research/FINDINGS.md, Verification). Used by `dd eval`. Updated 2026-11-17 after the public-money audit (docs/AUDIT.md).",
+  "campiri": {
+    "registry_shareholder": [
+      {
+        "name_contains": "Rockaway Ventures Fund",
+        "from": "2022-05-04"
+      },
+      {
+        "name_contains": "MITON Happy Campers",
+        "from": "2022-05-04"
+      }
+    ],
+    "source": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=1089068&typ=UPLNY"
+  },
+  "cruxo": {
+    "registry_shareholder": [
+      {
+        "name_contains": "Rockaway Ventures Fund",
+        "from": "2026-08-24"
+      },
+      {
+        "name_contains": "Czech Founders Ventures",
+        "from": "2026-08-24"
+      },
+      {
+        "name_contains": "Presto Ventures II",
+        "from": "2026-08-24"
+      }
+    ],
+    "registry_capital": [
+      {
+        "amount_czk": 14384,
+        "from": "2026-08-24"
+      }
+    ],
+    "source": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=1145924&typ=UPLNY",
+    "grant_count": 3
+  },
+  "filuta": {
+    "registry_shareholder": [
+      {
+        "name_contains": "Filuta AI Inc",
+        "from": "2022-10-20"
+      }
+    ],
+    "registry_flag": [
+      "foreign_holding"
+    ],
+    "source": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=1103788&typ=UPLNY",
+    "grant_national": [
+      {
+        "provider_contains": "Ministerstvo průmyslu",
+        "amount_czk": 36790550,
+        "year": "2025",
+        "agreement_amount_czk": 35675527,
+        "_note": "subsidy agreement in registr smluv (35 675 527 Kč, 2025-10-06) is attached to this grant, not a customer contract"
+      }
+    ],
+    "no_gov_contract": true
+  },
+  "valkaai": {
+    "registry_shareholder": [
+      {
+        "name_contains": "Valka.AI B.V",
+        "from": "2025-04-01"
+      }
+    ],
+    "registry_flag": [
+      "foreign_holding"
+    ],
+    "source": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23132221"
+  },
+  "navigara": {
+    "registry_flag": [
+      "no_cz_entity"
+    ],
+    "subdomain_contains": [
+      "app.navigara.com",
+      "docs.navigara.com"
+    ],
+    "github_org": "navigaracom"
+  }
+}

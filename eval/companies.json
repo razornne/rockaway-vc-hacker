@@ -1,0 +1,35 @@
+[
+  {"id": "navigara", "name": "Navigara", "domain": "navigara.com", "ico": null, "country": "CZ/US", "tier": "showcase",
+   "hints": {"github_org": "navigaracom", "note": "no Czech entity found"}},
+  {"id": "filuta", "name": "Filuta AI", "domain": "filuta.ai", "ico": "09745424", "country": "CZ", "tier": "showcase",
+   "hints": {"github_org": "FilutaAI", "holding": "Filuta AI Inc. (Delaware)"}},
+  {"id": "cruxo", "name": "Cruxo", "domain": "cruxo.io", "ico": "14134683", "country": "CZ", "tier": "showcase",
+   "hints": {"github_org": "cruxoio"}},
+  {"id": "duvo", "name": "Duvo", "domain": "duvo.ai", "ico": "22646141", "country": "CZ", "tier": "showcase-control", "hints": {}},
+
+  {"id": "valkaai", "name": "ValkaAI", "domain": "valka.ai", "ico": "23132221", "country": "CZ", "tier": "portfolio",
+   "hints": {"holding": "Valka.AI B.V."}},
+  {"id": "bottlecap-ai", "name": "BottleCap AI", "domain": "bottlecapai.com", "ico": "23012854", "country": "CZ", "tier": "portfolio",
+   "hints": {"legal_form": "SE"}},
+  {"id": "campiri", "name": "Campiri", "domain": "campiri.com", "ico": "09283447", "country": "CZ", "tier": "portfolio", "hints": {}},
+  {"id": "culturepulse", "name": "CulturePulse", "domain": "culturepulse.ai", "ico": null, "country": "SK/US", "tier": "portfolio",
+   "hints": {"sk_ico": "54440807", "holding": "CulturePulse, Inc. (Delaware)"}},
+  {"id": "vermeer", "name": "Vermeer", "domain": "getvermeer.com", "ico": null, "country": "US", "tier": "portfolio",
+   "hints": {"context_terms": ["drone", "drones", "uav", "uas", "gps-denied", "gps denied", "visual navigation", "getvermeer", "rockaway", "draper"],
+             "_note": "ambiguous name: Vermeer Manufacturing, Vermeer LLP, Vermeer Capital, Dura Vermeer"}},
+  {"id": "valpas", "name": "Valpas", "domain": "valpashotels.com", "ico": null, "country": "FI", "tier": "portfolio",
+   "hints": {"fi_business_id": "2575159-9"}},
+  {"id": "apaleo", "name": "Apaleo", "domain": "apaleo.com", "ico": null, "country": "DE", "tier": "portfolio", "hints": {}},
+
+  {"id": "topk", "name": "TopK", "domain": "topk.io", "ico": null, "country": "CZ/US", "tier": "control", "hints": {}},
+  {"id": "upheal", "name": "Upheal", "domain": "upheal.io", "ico": "14138018", "country": "CZ", "tier": "control",
+   "hints": {"holding": "Upheal, Inc."}},
+  {"id": "wultra", "name": "Wultra", "domain": "wultra.com", "ico": "03643174", "country": "CZ", "tier": "control", "hints": {}},
+
+  {"id": "fly4future", "name": "Fly4Future", "domain": "fly4future.com", "ico": "06632581", "country": "CZ", "tier": "memo",
+   "hints": {"github_org": "fly4future", "sector_terms": ["drone", "swarm", "autonomous", "gps denied", "counter-drone"],
+             "_note": "investment memo target: Czech defence/dual-use, outside the Rockaway portfolio, round in progress (2026)"}},
+  {"id": "dronetag", "name": "Dronetag", "domain": "dronetag.com", "ico": "08198519", "country": "CZ", "tier": "memo",
+   "hints": {"sector_terms": ["drone", "remote id", "airspace", "detection"],
+             "_note": "second defence/dual-use candidate: Czech MoD contract (TED 436033-2026), NATO DIANA 2024"}}
+]
