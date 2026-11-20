@@ -57,6 +57,15 @@ class LLM:
             self._client = OpenAI(api_key=self.s.openai_api_key, max_retries=0, timeout=90)
         return self._client
 
+    @property
+    def anthropic_client(self):
+        if getattr(self, "_anthropic", None) is None:
+            if not getattr(self.s, "anthropic_api_key", ""):
+                raise RuntimeError("ANTHROPIC_API_KEY is not set (.env)")
+            import anthropic
+            self._anthropic = anthropic.Anthropic(api_key=self.s.anthropic_api_key, max_retries=0, timeout=180)
+        return self._anthropic
+
     def price(self, model: str) -> tuple[float, float]:
         if model in self.s.prices:
             price = self.s.prices[model]
@@ -86,13 +95,28 @@ class LLM:
         worst = self.cost(model, est_in, max_output_tokens)
         if not math.isfinite(self.s.budget_usd) or self.s.budget_usd < 0 or max_output_tokens < 1:
             raise BudgetExceeded("invalid budget or output token limit")
-        client = self.client  # Fail for a missing key before reserving any money.
+        claude = model.startswith("claude-")
+        client = self.anthropic_client if claude else self.client  # Fail for a missing key before reserving money.
+        if claude:  # exact input count (free endpoint) instead of the byte bound: Claude counts this text differently
+            try:
+                n = client.messages.count_tokens(model=model, system=system,
+                                                 messages=[{"role": "user", "content": prompt}]).input_tokens
+                est_in = n + len(json.dumps(schema.model_json_schema()).encode("utf-8")) + 1024
+                worst = self.cost(model, est_in, max_output_tokens)
+            except Exception:
+                pass  # keep the conservative byte-based bound
         reservation = 'pending:' + uuid.uuid4().hex
         self.store.db.execute('BEGIN IMMEDIATE')
         try:
             spent = self.store.llm_spent()
             if spent + worst > self.s.budget_usd:
                 raise BudgetExceeded(f"budget ${self.s.budget_usd:.2f}: spent ${spent:.4f}, next call up to ${worst:.4f}")
+            if claude:
+                spent_c = float(self.store.db.execute(
+                    "SELECT COALESCE(SUM(cost_usd),0) FROM llm_call WHERE model LIKE 'claude-%'").fetchone()[0])
+                if spent_c + worst > self.s.anthropic_budget_usd:
+                    raise BudgetExceeded(f"Anthropic budget ${self.s.anthropic_budget_usd:.2f}: spent ${spent_c:.4f}, "
+                                         f"next call up to ${worst:.4f}")
             self.store.db.execute(
                 'INSERT INTO llm_call(cache_key,model,purpose,cost_usd,response,created_at) VALUES(?,?,?,?,NULL,?)',
                 (reservation, model, purpose, worst, now()))
@@ -103,6 +127,8 @@ class LLM:
 
         kwargs = dict(model=model, instructions=system, input=prompt, text_format=schema,
                       max_output_tokens=max_output_tokens)
+        if claude:
+            return self._call_claude(client, kwargs, schema, model, purpose, reservation, key)
         try:
             if hasattr(client.responses, 'create'):
                 # Read usage before parsing: malformed/incomplete structured outputs can still be billed.
@@ -137,6 +163,36 @@ class LLM:
         self.store.db.execute(
             'UPDATE llm_call SET cache_key=?,response=? WHERE cache_key=?',
             (key, parsed.model_dump_json(), reservation))
+        self.store.db.commit()
+        return LLMResult(parsed, c, False, model)
+
+
+    def _call_claude(self, client, kwargs, schema, model, purpose, reservation, key) -> LLMResult:
+        """Same contract as the OpenAI path: structured output against the same schema, usage recorded before
+        parsing, the reservation settled to the real cost. Thinking is adaptive (the default on current Claude
+        models); effort is the same setting as for OpenAI so that a comparison changes only the model."""
+        try:
+            resp = client.messages.create(
+                model=model, max_tokens=kwargs["max_output_tokens"], system=kwargs["instructions"],
+                messages=[{"role": "user", "content": kwargs["input"]}],
+                output_config={"effort": self.effort,
+                               "format": {"type": "json_schema", "schema": _strict_schema(schema.model_json_schema())}})
+        except Exception:
+            self.store.db.execute("UPDATE llm_call SET purpose=? WHERE cache_key=?", (f"{purpose} (failed, no usage)",
+                                                                                      reservation))
+            self.store.db.commit()
+            raise
+        tin, tout = resp.usage.input_tokens, resp.usage.output_tokens
+        c = self.cost(model, tin, tout)
+        self.store.db.execute('UPDATE llm_call SET input_tokens=?,output_tokens=?,cost_usd=? WHERE cache_key=?',
+                              (tin, tout, c, reservation))
+        self.store.db.commit()
+        if resp.stop_reason != "end_turn":
+            raise RuntimeError(f"model stopped with {resp.stop_reason}; usage recorded")
+        text = next((b.text for b in resp.content if b.type == "text"), "")
+        parsed = schema.model_validate_json(text)
+        self.store.db.execute('UPDATE llm_call SET cache_key=?,response=? WHERE cache_key=?',
+                              (key, parsed.model_dump_json(), reservation))
         self.store.db.commit()
         return LLMResult(parsed, c, False, model)
 

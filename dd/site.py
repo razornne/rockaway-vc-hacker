@@ -16,7 +16,7 @@ from dd.store import Store
 h = html.escape
 
 GROUPS = {  # tier in eval/companies.json -> group on the site
-    "memo": "Defence / dual-use · outside the Rockaway portfolio",
+    "memo": "Defence and dual-use, outside the Rockaway portfolio",
     "showcase": "Rockaway Ventures portfolio",
     "portfolio": "Rockaway Ventures portfolio",
     "showcase-control": "Comparison companies (not in the Rockaway portfolio)",
@@ -24,32 +24,32 @@ GROUPS = {  # tier in eval/companies.json -> group on the site
 }
 GROUP_ORDER = list(dict.fromkeys(GROUPS.values()))
 FEATURED = ("fly4future", "dronetag")
-CARD_TILES = ("Raising now (per press)", "Last closed round", "Funding rounds", "Sales to public buyers",
-              "Grants & subsidies (not revenue)", "Defence evidence (official sources)")
+CARD_TILES = ("Raising now (per press)", "Last closed round", "Latest reported round", "Funding rounds",
+              "Sales to public buyers", "Grants & subsidies awarded (not revenue)", "Defence evidence (official sources)")
 
 SITE_CSS = """
-.page{max-width:1000px}
-.lead{font-size:18px;color:var(--ink2);max-width:780px;margin:0 0 14px}
-.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:14px}
-.card{border:1px solid var(--line);border-radius:12px;padding:18px 20px;display:flex;flex-direction:column}
-.card h3{margin:0;font-size:19px}.card .tag{font-size:12px;color:var(--muted);margin:2px 0 8px}
-.card p.one{font-size:14px;color:var(--ink2);margin:0 0 12px}
-.card .tiles{grid-template-columns:repeat(2,1fr);gap:8px;margin:0 0 14px}
-.card .tile{padding:10px 12px}.card .tile .v{font-size:16px}.card .tile .l{font-size:11px}
-.card .go{margin-top:auto;font-weight:600;text-decoration:none}
-.steps{margin-top:14px;counter-reset:s;border:1px solid var(--line);border-radius:10px}
-.step{display:grid;grid-template-columns:170px 1fr;gap:12px;padding:12px 16px;font-size:14px;color:var(--ink2);border-top:1px solid var(--line)}
-.step:first-child{border-top:0}
-.step b{color:var(--ink);font-size:14px}
-table.t th.num{text-align:right}
-.step b:before{counter-increment:s;content:counter(s) ". ";color:var(--muted)}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:14px}
-.stat{border:1px solid var(--line);border-radius:10px;padding:14px 16px}
-.stat .v{font-size:26px;font-weight:650;line-height:1.2}.stat .l{font-size:13px;color:var(--ink2);margin-top:4px}
-ul.plain{margin:8px 0 0;padding-left:20px}ul.plain li{margin:6px 0}
-.crumb{max-width:1000px;margin:20px auto -16px;font-size:13.5px}
-.nav{font-size:13.5px;margin-bottom:18px}.nav a{margin-right:16px}
-@media(max-width:760px){.cards,.stats,.step{grid-template-columns:1fr}.card .tiles{grid-template-columns:1fr}}
+.feature{display:grid;grid-template-columns:minmax(0,43rem) var(--margin);column-gap:var(--gap);padding:1.4rem 0;
+border-top:1px solid var(--rule)}
+.feature:first-of-type{border-top:0}
+.feature h3{font:500 2rem/1.1 var(--serif);margin:0 0 .5rem;letter-spacing:-.01em}
+.feature h3 a{color:var(--ink);text-decoration:none}.feature h3 a:hover{text-decoration:underline}
+.feature p{margin:0 0 .7rem}
+.feature .open{font:500 14px var(--sans)}
+.mini{font:13px/1.35 var(--sans);color:var(--muted);padding-top:.4rem}
+.mini div{padding:.35rem 0;border-top:1px solid var(--rule)}.mini div:first-child{border-top:0;padding-top:0}
+.mini b{display:block;font:600 15px/1.3 var(--sans);color:var(--ink);font-variant-numeric:tabular-nums}
+ol.steps{margin:.4rem 0 0;padding:0;list-style:none;counter-reset:s;max-width:43rem}
+ol.steps li{counter-increment:s;display:grid;grid-template-columns:2rem minmax(0,1fr);padding:.7rem 0;border-top:1px solid var(--rule)}
+ol.steps li:before{content:counter(s);font:600 15px/1.62 var(--sans);color:var(--accent)}
+ul.plain{margin:.4rem 0 0;padding-left:1.2rem;max-width:43rem}ul.plain li{margin:.45rem 0}
+.prose{max-width:43rem}.prose p{margin:0 0 1rem}
+.measure .row{align-items:baseline}
+.measure .val{font:600 1.45rem/1.2 var(--sans);font-variant-numeric:tabular-nums}
+.measure .txt{font-size:16px}
+.nav{font:500 14px var(--sans);display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;margin-top:1.4rem}.nav a{text-decoration:none}
+.nav a:hover{text-decoration:underline}
+@media(max-width:900px){.feature{grid-template-columns:minmax(0,1fr)}.mini{display:flex;flex-wrap:wrap;gap:.4rem 1.4rem}
+.mini div{border-top:0;padding:0}}
 """
 
 NOINDEX = '<meta name="robots" content="noindex, nofollow">'
@@ -61,11 +61,11 @@ def _companies_meta() -> dict[str, dict]:
 
 
 def _shell(title: str, body: str) -> str:
-    from dd.page import CSS
+    from dd.page import CSS, FONTS
     return ("<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\">"
-            '<meta name="viewport" content="width=device-width, initial-scale=1">' + NOINDEX +
+            '<meta name="viewport" content="width=device-width, initial-scale=1">' + NOINDEX + FONTS +
             f"<title>{h(title)}</title><style>{CSS}{SITE_CSS}</style></head><body>"
-            f'<div class="page"><div class="wrap">{body}</div></div></body></html>')
+            f'<div class="page">{body}</div></body></html>')
 
 
 def _one_line(text: str) -> str:
@@ -91,14 +91,11 @@ def _brief_data(store: Store, cid: str) -> dict | None:
 
 def _card(cid: str, d: dict, meta: dict) -> str:
     tiles = [t for t in d["tiles"] if t["label"] in CARD_TILES][:4]
-    t_html = "".join(f'<div class="tile{" " + t["tone"] if t.get("tone") else ""}"><div class="l">{h(t["label"])}</div>'
-                     f'<div class="v">{h(str(t["value"]))}</div><div class="s">{h(t.get("sub") or "")}</div></div>'
-                     for t in tiles)
+    mini = "".join(f'<div>{h(t["label"])}<b>{h(str(t["value"]))}</b></div>' for t in tiles)
     c = d["company"]
-    return (f'<div class="card"><h3>{h(c.name)}</h3><div class="tag">{h(c.domain or "")}'
-            f'{" · IČO " + h(meta.get("ico")) if meta.get("ico") else ""}</div>'
-            f'<p class="one">{h(d["product"])}</p><div class="tiles">{t_html}</div>'
-            f'<a class="go" href="briefs/{h(cid)}-dossier.html">Open the brief →</a></div>')
+    return (f'<div class="feature"><div><h3><a href="briefs/{h(cid)}-dossier.html">{h(c.name)}</a></h3>'
+            f'<p>{h(d["product"])}</p><a class="open" href="briefs/{h(cid)}-dossier.html">Read the {h(c.name)} brief</a>'
+            f'</div><div class="mini">{mini}</div></div>')
 
 
 def _index(m: dict, cards: str, table_rows: dict[str, list[str]], n_collectors: int) -> str:
@@ -109,108 +106,102 @@ def _index(m: dict, cards: str, table_rows: dict[str, list[str]], n_collectors: 
     fo_n = sum(fo.values())
     costs = [r["cost"] for _, r, _ in m["rows"] if r]
     n_briefs = len(costs)
+
+    def measure(value, text):
+        return f'<div class="row"><div class="txt">{text}</div><div class="val">{value}</div></div>'
+
     body = [
-        '<header><p class="kicker">Prototype · application for VC Hacker, Rockaway Ventures · Mykyta Bulatnikov</p>',
-        "<h1>Due diligence briefs from public data</h1>",
-        '<p class="lead">Give it a company: a name, a Czech IČO or a domain. It collects public evidence, keeps every '
-        "fact with its source and the exact quote, computes the numbers in code and writes a brief that an investor "
-        "can check line by line. The investment memo stays with a human.</p>",
-        '<div class="nav"><a href="#briefs">Briefs</a><a href="#how">How it works</a><a href="#quality">Quality</a>'
-        '<a href="#limits">Limits</a><a href="method.html">Method &amp; evaluation</a></div></header>',
+        "<header><h1>Due diligence briefs from public data</h1>",
+        '<p class="oneliner">Give it a company: a name, a Czech company ID or a domain. It collects public evidence, '
+        "keeps every fact with its source and the exact quote, computes the numbers in code, and writes a brief an "
+        "investor can check line by line. The investment memo stays with a human.</p>",
+        '<dl class="facts"><div><dt>Built by</dt><dd>Mykyta Bulatnikov</dd></div>'
+        "<div><dt>For</dt><dd>VC Hacker application, Rockaway Ventures</dd></div>"
+        "<div><dt>Data collected</dt><dd>November 2026</dd></div>"
+        "<div><dt>Source code</dt><dd>available on request</dd></div></dl>",
+        '<div class="nav"><a href="#briefs">The two showcase briefs</a><a href="#why">Why this tool</a>'
+        '<a href="#trust">How far to trust it</a><a href="#all">All briefs</a><a href="method.html">Method and '
+        "evaluation</a></div></header>",
 
-        "<h2>Two Czech defence / dual-use companies</h2>",
-        '<p class="h2note">Neither is in the Rockaway portfolio. The tiles are computed by code from official records '
-        "and press; amounts from the press are quoted as written in the source.</p>",
-        f'<div class="cards">{cards}</div>',
+        '<h2 id="briefs">Two Czech dual-use drone companies</h2>',
+        '<p class="h2note">Neither is in the Rockaway portfolio. The numbers next to each are computed by code from '
+        "official records and press.</p>",
+        cards,
 
-        '<h2 id="briefs">All briefs</h2>',
-        f'<p class="h2note">{n_briefs} companies.'
-        + ("" if all(r.get("invest") for _, r, _ in m["rows"] if r) else
-           " Briefs without an investment view were generated before that section existed.") + "</p>",
-    ]
-    for g in GROUP_ORDER:
-        if table_rows.get(g):
-            body.append(f"<h3>{h(g)}</h3>")
-            body.append('<table class="t"><tr><th>Company</th><th>What it does (from the brief)</th>'
-                        '<th class="num">Facts</th><th class="num">Sources</th><th>Investment view</th></tr>'
-                        + "".join(table_rows[g]) + "</table>")
-    body += [
-        '<h2 id="how">How it works</h2>',
-        '<div class="steps">'
-        f"<div class=\"step\"><b>Collect</b>{n_collectors} collectors read official records (Czech business "
-        "register, ARES, public contracts and subsidies, EU procurement, EU funding portal, NATO DIANA cohorts), the "
-        "company website, public code, certificate logs and press. Every response is saved with its URL and date.</div>"
-        "<div class=\"step\"><b>Extract</b>An LLM proposes facts from unstructured pages only. A fact is kept only if "
-        "its exact quote is found in the saved source and it passes category rules.</div>"
-        "<div class=\"step\"><b>Compute &amp; check</b>Code computes the numbers (public money by type, funding rounds, "
-        "fit with the Rockaway thesis) and checks company claims against independent sources.</div>"
-        "<div class=\"step\"><b>Analyse</b>A second LLM call writes findings and the investment view. It may cite only "
-        "collected facts; every finding carries an evidence label.</div>"
-        "<div class=\"step\"><b>Brief</b>One HTML page with sources and quotes, a Markdown copy and a CSV of all "
-        "facts. No investment recommendation.</div></div>",
-        '<ul class="plain">'
-        "<li>Structured sources (registers, procurement, grants, GitHub, certificate logs) are parsed by code, not "
-        "by the LLM.</li>"
-        "<li>Facts are separated from claims and opinions: <i>Verified</i>, <i>Corroborated</i>, <i>Company claim</i>, "
-        "<i>Analyst view</i>.</li>"
-        "<li>No LinkedIn, Crunchbase, Dealroom or PitchBook. Personal data is limited to names and roles from public "
-        "sources.</li>"
-        "<li>Web pages are treated as data, never as instructions to the model.</li></ul>",
-
-        '<h2 id="quality">Quality: what is checked, and what is not yet</h2>',
-        '<p class="h2note">These are guards against specific failures, not an accuracy score. From <code>dd eval</code> '
-        'over all briefs on this site; details on the <a href="method.html">method page</a>.</p>',
-        '<div class="stats">'
-        f'<div class="stat"><div class="v">{gold_ok}/{len(m["golden"])}</div><div class="l">hand-checked register, '
-        "grant and infrastructure facts reproduced. A small regression set: it shows official records are parsed "
-        "correctly, not that every brief is right.</div></div>"
-        f'<div class="stat"><div class="v">{checked - missing}/{checked}</div><div class="l">quotes behind '
-        "model-extracted facts found in the saved source. This rules out invented quotes; a real quote can still be "
-        "misread.</div></div>"
-        f'<div class="stat"><div class="v">{_pct(fo["verified"] + fo["corroborated"], fo_n)}</div><div class="l">of '
-        f"{fo_n} factual statements rest on an official record or two independent outlets; {_pct(fo['claim'], fo_n)} "
-        "only on the company's word. This describes the evidence, not whether conclusions are right.</div></div>"
-        f'<div class="stat"><div class="v">${min(costs):.2f}–{max(costs):.2f}</div><div class="l">model cost per brief '
-        f"(OpenAI gpt-5-nano and gpt-5-mini)</div></div></div>",
-        '<p><b>The real quality process</b> is reading the output by hand: that found 26 systematic errors so far, each '
-        'fixed in code and covered by a test (<a href="method.html#errors">list</a>). <b>Not measured yet:</b> the share '
-        "of statements that are actually correct (a hand-labelled sample: does the quote support the fact, are numbers "
-        "and entities right, does the conclusion follow), the time saved against a manual first look, and a comparison "
-        "with a plain model plus web search on the same companies.</p>",
-
-        "<h2>Why a diligence tool, not a sourcing radar</h2>",
-        '<p>I first tested a different idea: could public data have found Rockaway Ventures deals earlier than the '
-        "fund did? I traced 14 Rockaway Ventures deals from 2022–2026 and 10 comparison rounds back through registry "
-        "records and press.</p>",
+        '<h2 id="why">Why a diligence tool, not a sourcing radar</h2>',
+        '<div class="prose"><p>I first tested the obvious idea: could public data have found Rockaway Ventures deals '
+        "earlier than the fund did? I traced 14 Rockaway Ventures deals from 2022–2026 and 10 comparison rounds back "
+        "through register records and press.</p></div>",
         '<ul class="plain">'
         "<li>In 9 of the 14 deals, outside funding was publicly visible before Rockaway invested; in all 9 the first "
         "public trace was press coverage of an earlier round, not the business register.</li>"
         "<li>The register did not announce Rockaway's own rounds early: Campiri appeared 7 days before the "
-        "announcement, Cruxo 21 months after it, and Filuta and ValkaAI are held through foreign companies, so the "
-        "round is not visible in the Czech register at all.</li>"
+        "announcement, Cruxo 21 months after it, and Filuta and ValkaAI are held through foreign companies, so their "
+        "rounds are not visible in the Czech register at all.</li>"
         "<li>The 2026 AI deals (ValkaAI, BottleCap AI, Navigara) had no earlier rounds; where there was a visible "
-        "signal, it was the founder.</li>"
-        "</ul>",
-        "<p>A radar built on public registers would not have found these deals sooner. This tests one idea — public "
-        "registers as an early signal — on deals the fund made; it says nothing about deals the fund passed on or never "
-        "saw, or about sourcing tools built on other signals. The step where the same public data clearly helps is "
-        "after a company is on the table: checking it quickly, with every claim traceable to its source.</p>",
+        "signal, it was the founder.</li></ul>",
+        '<div class="prose"><p style="margin-top:1rem">A radar built on public registers would not have found these '
+        "deals sooner. That tests one idea, public registers as an early signal, on deals the fund made; it says nothing "
+        "about deals the fund passed on or never saw. The same public data clearly helps after a company is on the "
+        "table: checking it quickly, with every claim traceable to its source.</p></div>",
+
+        '<h2 id="trust">How far to trust it</h2>',
+        '<p class="h2note">These are guards against specific failures, not an accuracy score. Computed by '
+        '<code>dd eval</code> over all briefs on this site; details on the <a href="method.html">method page</a>.</p>',
+        '<div class="measure">',
+        measure(f"{gold_ok}/{len(m['golden'])}", "Hand-checked register, grant and infrastructure facts reproduced. A "
+                "small regression set: official records are parsed correctly, which says nothing yet about every brief."),
+        measure(f"{checked - missing}/{checked}", "Quotes behind model-extracted facts found in the saved source. This "
+                "rules out invented quotes; a real quote can still be misread."),
+        measure(_pct(fo["verified"] + fo["corroborated"], fo_n), f"Of {fo_n} factual statements rest on an official "
+                f"record or two independent outlets; {_pct(fo['claim'], fo_n)} only on the company's word. This describes "
+                "the evidence, not whether conclusions are right."),
+        measure(f"${min(costs):.2f}–{max(costs):.2f}", "Model cost per brief (OpenAI gpt-5-nano and gpt-5-mini)."),
+        "</div>",
+        '<div class="prose"><p style="margin-top:1.2rem">The real quality process is reading the output by hand. That '
+        'has found 26 systematic errors so far, each fixed in code and covered by a test (<a href="method.html#errors">'
+        "the list</a>). Not measured yet: the share of statements that are actually correct (a hand-labelled sample is "
+        "in progress), the time saved against a manual first look, and a comparison with a plain model plus web search "
+        "on the same companies.</p></div>",
+
+        f'<h2 id="all">All {n_briefs} briefs</h2>',
+    ]
+    for g in GROUP_ORDER:
+        if table_rows.get(g):
+            body.append(f"<h3>{h(g)}</h3>")
+            body.append('<table class="t"><tr><th>Company</th><th>What it does, from the brief</th>'
+                        '<th class="num">Facts</th><th class="num">Sources</th></tr>'
+                        + "".join(table_rows[g]) + "</table>")
+    body += [
+        '<h2 id="how">How a brief is made</h2>',
+        '<ol class="steps">'
+        f"<li><span><b>Collect.</b> {n_collectors} collectors read official records (the Czech business register and "
+        "ARES, public contracts and subsidies, EU procurement, the EU funding portal, NATO DIANA cohorts), the company "
+        "website, public code, certificate logs and press. Every response is saved with its URL and date.</span></li>"
+        "<li><span><b>Extract.</b> A language model proposes facts from unstructured pages only. A fact is kept only if "
+        "its exact quote is found in the saved source and it passes category rules.</span></li>"
+        "<li><span><b>Compute and check.</b> Code computes the numbers (public money by type, grants awarded and paid, "
+        "funding rounds, round size against the fund's ticket) and checks company claims against independent "
+        "sources.</span></li>"
+        "<li><span><b>Analyse.</b> A second model call writes the findings and the investment view. It may cite only "
+        "collected facts, and every statement carries a mark for how strong its evidence is.</span></li>"
+        "<li><span><b>Brief.</b> One page with sources and quotes, a Markdown copy and a CSV of all facts. No "
+        "investment recommendation.</span></li></ol>",
 
         '<h2 id="limits">What it cannot see</h2>',
         '<ul class="plain">'
-        "<li><b>Financial statements.</b> Revenue and profit from filed accounts (Sbírka listin) are not extracted yet; "
-        "sales to public buyers are the only revenue figure, and only for the public sector.</li>"
+        "<li><b>Financial statements.</b> Revenue and profit from filed accounts are not read yet; sales to public "
+        "buyers are the only revenue figure, and only for the public sector.</li>"
         "<li><b>Paid databases and LinkedIn.</b> Not used by design; team size and cap table come only from the "
         "register and public pages.</li>"
-        "<li><b>Registers outside Czechia.</b> Only flagged (for example a Delaware or Dutch holding), not read.</li>"
-        "<li><b>NATO DIANA.</b> The live site blocks scripts, so cohorts are read from archived copies; a year that "
-        "could not be read is shown as “no data”, not as “not selected”.</li>"
+        "<li><b>Registers outside Czechia.</b> Flagged (for example a Delaware or Dutch holding), not read.</li>"
+        "<li><b>NATO DIANA.</b> The live site blocks scripts, so cohorts are read from archived copies.</li>"
         "<li><b>Competitors.</b> Candidates come from text similarity with DIANA cohort descriptions and from what the "
         "company and press name; the model may reject all of them.</li>"
-        "<li><b>Analyst views</b> are model-written opinions over the collected facts. They are labelled and meant as "
+        "<li><b>Judgements</b> are model-written views over the collected facts. They are marked as such and meant as "
         "starting points for the memo, not conclusions.</li></ul>",
-        '<p class="foot">Private preview, not indexed by search engines. Source code is available on request. '
-        "Data as collected in November 2026.</p>",
+        '<p class="foot">Private preview, not indexed by search engines. Source code is available on request. Data as '
+        "collected in November 2026.</p>",
     ]
     return _shell("Due diligence briefs from public data", "".join(body))
 
@@ -230,10 +221,10 @@ def _method(m: dict) -> str:
         + "".join("<tr>" + "".join(f'<td class="num">{c}</td>' if i in num else f"<td>{c}</td>"
                                    for i, c in enumerate(r)) + "</tr>" for r in rows) + "</table>")
     body = [
-        '<header><div class="nav"><a href="index.html">← Overview</a></div>',
-        '<p class="kicker">Method &amp; evaluation</p><h1>How the briefs are built and checked</h1>',
-        '<p class="lead">All numbers on this page are produced by <code>dd eval</code> from the same database as the '
-        "briefs. No LLM is involved in the evaluation.</p></header>",
+        '<nav class="crumb"><a href="index.html">← Overview</a></nav>',
+        '<header><h1>How the briefs are built and checked</h1>',
+        '<p class="oneliner">All numbers on this page are produced by <code>dd eval</code> from the same database as the '
+        "briefs. No language model is involved in the evaluation.</p></header>",
 
         "<h2>Sources</h2>",
         t(["Source", "What is read"], [(h(name), h(what)) for _, name, what in render.METHOD]),
@@ -314,8 +305,8 @@ def build_site(store: Store, out: Path) -> list[Path]:
         paths = write_dossier(store, comp, briefs)
         page = Path(paths["html"])
         text = page.read_text(encoding="utf-8")
-        text = text.replace("<body>", '<body><div style="max-width:960px;margin:20px auto -12px;padding:0 4px;'
-                            'font-size:13.5px"><a href="../index.html">← All briefs</a></div>', 1)
+        text = text.replace('<div class="page"><header>',
+                            '<div class="page"><nav class="crumb"><a href="../index.html">← All briefs</a></nav><header>', 1)
         page.write_text(text, encoding="utf-8")
         written += [Path(p) for p in paths.values()]
         d = _brief_data(store, cid)
@@ -323,8 +314,7 @@ def build_site(store: Store, out: Path) -> list[Path]:
         table_rows.setdefault(group, []).append(
             f'<tr><td><a href="briefs/{h(cid)}-dossier.html">{h(comp.name)}</a></td>'
             f'<td>{h(_one_line((d or {}).get("product", "")))}</td>'
-            f'<td class="num">{r["facts"]}</td><td class="num">{r["sources"]}</td>'
-            f'<td>{"yes" if r["invest"] else "—"}</td></tr>')
+            f'<td class="num">{r["facts"]}</td><td class="num">{r["sources"]}</td></tr>')
     for cid in FEATURED:
         d = _brief_data(store, cid)
         if d:

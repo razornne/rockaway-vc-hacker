@@ -220,75 +220,104 @@ def extras(sig: dict, facts: dict[int, Fact], refs, company: Company) -> dict:
 
 
 # ------------------------------------------------------------------ page
+FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">'
+         '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
+         '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;'
+         '0,6..72,500;0,6..72,600;1,6..72,400&family=Public+Sans:wght@400;500;600&display=swap">')
+
+# Design: an outside-in research brief. The argument runs down the left column in a reading serif; every statement's
+# evidence (a Harvey-ball mark for how strong it is, and its source numbers) sits level with it in a right margin,
+# so a reader can follow the story and check any line without leaving it. Numbers and tables are set in Public Sans.
 CSS = """
-:root{color-scheme:light;--ink:#111827;--ink2:#374151;--muted:#6b7280;--line:#e5e7eb;--soft:#f9fafb;--paper:#fff;
---accent:#1d4ed8;--s1:#2a78d6;--s2:#eb6834;
---ok:#047857;--okb:#ecfdf5;--mid:#0e7490;--midb:#ecfeff;--warn:#a16207;--warnb:#fefce8;--bad:#b42318;--badb:#fef3f2;--view:#5b21b6;--viewb:#f5f3ff}
-*{box-sizing:border-box}html{background:#f3f4f6}
-body{margin:0;color:var(--ink);font:15px/1.6 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
-.page{max-width:960px;margin:32px auto;background:var(--paper);border:1px solid var(--line);border-radius:12px}
-.wrap{padding:40px 56px}
-header .kicker{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 8px}
-h1{font-size:34px;line-height:1.15;margin:0 0 10px;letter-spacing:-.01em}
-.oneliner{font-size:18px;color:var(--ink2);margin:0 0 14px;max-width:760px}
-.meta{font-size:13px;color:var(--muted)}.meta span+span:before{content:"·";margin:0 8px}
-.trust{margin:22px 0 0;padding:12px 16px;background:var(--soft);border:1px solid var(--line);border-radius:8px;font-size:13px;color:var(--ink2)}
-.trust b{color:var(--ink)}
-h2{font-size:20px;margin:44px 0 6px;letter-spacing:-.005em}
-.h2note{font-size:13px;color:var(--muted);margin:0 0 16px}
-h3{font-size:15px;margin:24px 0 8px}
-.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
-.tile{border:1px solid var(--line);border-radius:10px;padding:14px 16px}
-.tile .l{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
-.tile .v{font-size:21px;font-weight:650;margin:4px 0 2px;line-height:1.25}
-.tile .s{font-size:12.5px;color:var(--muted)}.tile.muted .v{color:var(--muted);font-weight:500}
-.tile.warn{border-color:#fde68a;background:#fffdf5}
-ul.items{list-style:none;padding:0;margin:0}ul.items li{padding:10px 0;border-top:1px solid var(--line)}
-ul.items li:first-child{border-top:0}
-.lab{font-weight:650}
-.assume{display:block;font-size:12.5px;color:var(--muted);margin-top:2px}
-.ev{display:inline-block;font-size:11px;font-weight:600;padding:1px 7px;border-radius:4px;margin-right:6px;vertical-align:1px;white-space:nowrap;cursor:help}
-.ev-verified{color:var(--ok);background:var(--okb)}.ev-corroborated{color:var(--mid);background:var(--midb)}
-.ev-single,.ev-mixed{color:var(--warn);background:var(--warnb)}.ev-claim{color:var(--bad);background:var(--badb)}.ev-view{color:var(--view);background:var(--viewb)}
-sup.r{font-size:10.5px;margin-left:2px;white-space:nowrap}sup.r a{color:var(--accent);text-decoration:none;font-weight:600}
-sup.r a:hover{text-decoration:underline}
-.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.col{border:1px solid var(--line);border-radius:10px;padding:14px 16px}
-.col h3{margin:0 0 6px;font-size:13px;text-transform:uppercase;letter-spacing:.05em}
-.col.for h3{color:var(--ok)}.col.against h3{color:var(--bad)}.col.must h3{color:var(--ink2)}
-.col ul.items li{padding:8px 0;font-size:14px}
-table.t{width:100%;border-collapse:collapse;font-size:13.5px;margin:6px 0 4px}
-table.t th{font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);text-align:left;font-weight:600;padding:8px 10px;border-bottom:1px solid var(--line)}
-table.t td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
-table.t td.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
-.pill{font-size:11.5px;font-weight:600;padding:1px 7px;border-radius:4px;background:var(--soft);border:1px solid var(--line);white-space:nowrap}
-.pill.sought{color:var(--warn);background:var(--warnb);border-color:#fde68a}.pill.closed{color:var(--ok);background:var(--okb);border-color:#a7f3d0}
-.pill.contradicted{color:var(--bad);background:var(--badb);border-color:#fecdca}.pill.confirmed{color:var(--ok);background:var(--okb);border-color:#a7f3d0}
-.chart{margin:10px 0 6px}.legend{display:flex;gap:16px;font-size:12.5px;color:var(--ink2);margin-bottom:8px}
-.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
-.bars{display:flex;align-items:flex-end;gap:10px;height:170px;border-bottom:1px solid #d1d5db;padding:18px 4px 0}
-.tot{position:absolute;left:0;right:0;text-align:center;font-size:11.5px;color:var(--ink2);margin-bottom:2px;transform:translateY(-100%)}
+:root{color-scheme:light;--paper:#fff;--ink:#1e242b;--ink2:#3d4650;--muted:#6a737d;--rule:#dcdfe3;--wash:#f4f5f6;
+--accent:#1b5e63;--brick:#9e3b2a;--ochre:#8a6a12;--s1:#2f6fa8;--s2:#b97a1a;
+--serif:"Newsreader",Georgia,"Times New Roman",serif;--sans:"Public Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+--margin:13.5rem;--gap:2.5rem}
+*{box-sizing:border-box}
+html{background:var(--paper)}
+body{margin:0;color:var(--ink);background:var(--paper);font:400 17px/1.62 var(--serif);font-optical-sizing:auto;
+-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:var(--accent);text-underline-offset:2px;text-decoration-thickness:1px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:2px}
+.page{max-width:calc(43rem + var(--margin) + var(--gap) + 6rem);margin:0 auto;padding:0 3rem 5rem}
+.crumb{font:500 14px/1 var(--sans);padding:1.6rem 0 0}.crumb a{text-decoration:none}
+header{padding:3.2rem 0 1.4rem}
+h1{font:500 3rem/1.04 var(--serif);letter-spacing:-.015em;margin:0 0 .9rem;font-variation-settings:"opsz" 72}
+.oneliner{font-size:1.32rem;line-height:1.42;color:var(--ink2);margin:0 0 1.6rem;max-width:40rem}
+dl.facts{display:flex;flex-wrap:wrap;gap:.4rem 2.2rem;margin:0;font:14px/1.4 var(--sans)}
+dl.facts div{display:flex;flex-direction:column}
+dl.facts dt{color:var(--muted);font-size:12.5px}dl.facts dd{margin:0;color:var(--ink)}
+.key{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1.4rem;margin:2rem 0 0;padding:.9rem 0 0;
+border-top:1px solid var(--rule);font:13px/1.4 var(--sans);color:var(--ink2)}
+.key .k{display:inline-flex;align-items:center;gap:.45rem}
+.key p{flex-basis:100%;margin:.2rem 0 0;color:var(--muted)}
+h2{font:500 1.75rem/1.2 var(--serif);letter-spacing:-.01em;margin:3.6rem 0 .3rem;padding-top:1.2rem;border-top:1px solid var(--ink)}
+.h2note{font:14px/1.5 var(--sans);color:var(--muted);margin:0 0 1.2rem;max-width:43rem}
+h3{font:600 15px/1.3 var(--sans);margin:2rem 0 .5rem;color:var(--ink)}
+h3.against{color:var(--brick)}h3.must{color:var(--accent)}
+.row{display:grid;grid-template-columns:minmax(0,43rem) var(--margin);column-gap:var(--gap);padding:.75rem 0;
+border-top:1px solid var(--rule)}
+.row:first-of-type{border-top:0}
+.txt{max-width:43rem}
+.lead{font-weight:600}
+.assume{display:block;font:italic 400 14.5px/1.45 var(--serif);color:var(--muted);margin-top:.25rem}
+.proof{font:12.5px/1.45 var(--sans);color:var(--muted);padding-top:.32rem}
+.proof .ev{color:var(--ink2);margin-left:.4rem}
+.proof .src{display:block;margin:.1rem 0 0 1.25rem}
+.src a{font-weight:500;text-decoration:none}.src a:hover{text-decoration:underline}
+.mk{display:inline-block;width:.78rem;height:.78rem;border-radius:50%;border:1.5px solid var(--ink);vertical-align:-1px;flex:none}
+.mk-verified{background:var(--ink)}
+.mk-corroborated{background:conic-gradient(var(--ink) 0 75%,transparent 0)}
+.mk-mixed{background:conic-gradient(var(--ink) 0 25%,transparent 0)}
+.mk-single{background:conic-gradient(var(--ink) 0 50%,transparent 0)}
+.mk-claim{background:transparent}
+.mk-view{border-radius:1px;transform:rotate(45deg) scale(.8);border-color:var(--muted)}
+.empty{font:14px var(--sans);color:var(--muted)}
+.ledger .row{align-items:baseline}
+.ledger .lab{font:14px/1.35 var(--sans);color:var(--ink2)}
+.ledger .val{font:600 1.45rem/1.2 var(--sans);font-variant-numeric:tabular-nums;letter-spacing:-.01em;margin:.15rem 0 .1rem}
+.ledger .note{font:13.5px/1.45 var(--sans);color:var(--muted)}
+.ledger .muted .val{color:var(--muted);font-weight:500}
+.ledger .warn .val{color:var(--ochre)}
+.lgrid{display:grid;grid-template-columns:minmax(0,14rem) minmax(0,1fr);column-gap:1.6rem}
+table.t{width:100%;border-collapse:collapse;font:14px/1.45 var(--sans);margin:.4rem 0 .6rem}
+table.t th{text-align:left;font-weight:600;font-size:13px;color:var(--ink2);padding:.5rem .8rem .5rem 0;border-bottom:1px solid var(--ink)}
+table.t td{padding:.6rem .8rem .6rem 0;border-bottom:1px solid var(--rule);vertical-align:top}
+table.t td.num,table.t th.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+table.t td:last-child,table.t th:last-child{padding-right:0}
+.st{font-weight:600;white-space:nowrap}.st-sought{color:var(--ochre)}.st-closed,.st-confirmed{color:var(--accent)}
+.st-contradicted{color:var(--brick)}.st-not_found,.st-not_checkable,.st-reported{color:var(--muted)}
+.m{color:var(--muted);font-size:12.5px}
+.chart{margin:.6rem 0 .4rem;max-width:43rem;font-family:var(--sans)}
+.legend{display:flex;gap:1.4rem;font-size:13px;color:var(--ink2);margin-bottom:.6rem}
+.legend i{display:inline-block;width:.7rem;height:.7rem;margin-right:.4rem;vertical-align:-1px}
+.bars{display:flex;align-items:flex-end;gap:.7rem;height:170px;border-bottom:1px solid var(--ink);padding:1.4rem .2rem 0}
 .bar{flex:1;display:flex;flex-direction:column-reverse;align-items:stretch;gap:2px;height:100%;position:relative;min-width:18px}
-.seg.top{border-radius:4px 4px 0 0}
-.bar:hover .seg{filter:brightness(.92)}
-.bar .tip{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);background:#111827;color:#fff;font-size:12px;padding:6px 8px;border-radius:6px;white-space:nowrap;z-index:2;margin-bottom:6px}
-.bar:hover .tip{display:block}
-.years{display:flex;gap:10px;padding:4px 4px 0;font-size:11.5px;color:var(--muted)}.years span{flex:1;text-align:center;min-width:18px}
-.evbar{display:flex;height:14px;border-radius:4px;overflow:hidden;gap:2px;margin:8px 0}
-.evkey{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12.5px;color:var(--ink2)}
-.tech{border-top:3px solid var(--line);margin-top:48px;padding-top:4px}
-ol.src{list-style:none;padding:0;margin:0;font-size:13px}
-ol.src li{display:grid;grid-template-columns:30px 1fr;gap:6px;padding:8px 0;border-top:1px solid var(--line);overflow-wrap:anywhere}
-ol.src .n{font-weight:700;color:var(--accent)}ol.src .m{color:var(--muted);font-size:12px}ol.src q{color:var(--ink2)}
-.cls{font-size:11px;font-weight:600;color:var(--ink2);background:var(--soft);border:1px solid var(--line);padding:0 6px;border-radius:4px}
-details{margin-top:14px}summary{cursor:pointer;color:var(--accent);font-size:13.5px}
-.fact{padding:6px 0;border-top:1px solid var(--line);font-size:12px;overflow-wrap:anywhere}.fact code{font-size:11px}
-.foot{font-size:12.5px;color:var(--muted);margin-top:28px;border-top:1px solid var(--line);padding-top:14px}
-.empty{color:var(--muted);font-size:14px}
-a{color:var(--accent)}
-@media(max-width:760px){.wrap{padding:24px 16px}.page{margin:0;border-radius:0;border:0}.tiles,.cols{grid-template-columns:1fr}h1{font-size:28px}
+.tot{position:absolute;left:0;right:0;text-align:center;font-size:12px;color:var(--ink2);transform:translateY(-100%);
+font-variant-numeric:tabular-nums}
+.seg:last-child{border-radius:3px 3px 0 0}
+.bar .tip{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;
+font-size:12px;padding:.35rem .5rem;white-space:nowrap;z-index:2;margin-bottom:1.4rem}
+.bar:hover .tip{display:block}.bar:hover .seg{filter:brightness(.9)}
+.years{display:flex;gap:.7rem;padding:.3rem .2rem 0;font-size:12px;color:var(--muted)}.years span{flex:1;text-align:center;min-width:18px}
+.chartnote{font:13.5px/1.5 var(--sans);color:var(--ink2);margin:.6rem 0 0}
+.rests{font:14px/1.5 var(--sans);color:var(--ink2);display:flex;flex-wrap:wrap;gap:.4rem 1.6rem}
+.rests span{display:inline-flex;align-items:center;gap:.45rem}
+ol.sources{list-style:none;padding:0;margin:0;font:13.5px/1.5 var(--sans)}
+ol.sources li{display:grid;grid-template-columns:2.4rem minmax(0,1fr);padding:.55rem 0;border-top:1px solid var(--rule);overflow-wrap:anywhere}
+ol.sources .n{font-weight:600;color:var(--accent);font-variant-numeric:tabular-nums}
+ol.sources .m{display:block}ol.sources q{display:block;color:var(--ink2);font-family:var(--serif);font-size:15px;margin-top:.15rem}
+ol.sources li:target{background:var(--wash)}
+details{margin-top:1.4rem;font:13.5px var(--sans)}summary{cursor:pointer;color:var(--accent)}
+.fact{padding:.4rem 0;border-top:1px solid var(--rule);font-size:12px;overflow-wrap:anywhere}.fact code{font-size:11px}
+.foot{font:13px/1.55 var(--sans);color:var(--muted);margin-top:2.4rem;border-top:1px solid var(--rule);padding-top:1rem;max-width:43rem}
+@media(max-width:900px){:root{--margin:0;--gap:0}.page{padding:0 1rem 3rem}
+.row{grid-template-columns:minmax(0,1fr)}.proof{padding-top:.3rem}.proof .src{display:inline;margin-left:.5rem}
+h1{font-size:2.3rem}.oneliner{font-size:1.15rem}h2{font-size:1.45rem;margin-top:2.6rem}
+.lgrid{grid-template-columns:minmax(0,1fr)}
 table.t{display:block;overflow-x:auto}}
-@media print{html{background:#fff}.page{border:0;margin:0;max-width:none}details{display:none}.tile,.col,tr{break-inside:avoid}}
+@media print{.page{max-width:none;padding:0}details,.crumb{display:none}.row,tr{break-inside:avoid}a{color:var(--ink)}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
 """
 
 
@@ -299,135 +328,164 @@ def render(company: Company, analysis: dict, p: dict, titles: dict, label_titles
     srcs, x = p["sources"], p.get("extras") or {}
     by_kind = {s["kind"]: s for s in p["sections"]}
 
-    def refs(nums):
+    def refs(nums, cls="src"):
         if not nums:
             return ""
         links = []
         for n in nums:
             s = srcs[n - 1]
-            tip = f"{s['host']} · {CLASS_LABELS[s['cls']]}" + (f" — {s['quote']}" if s["quote"] else "")
+            tip = f"{s['host']} ({CLASS_LABELS[s['cls']]})" + (f": {s['quote']}" if s["quote"] else "")
             links.append(f'<a href="#src-{n}" title="{h(tip, quote=True)}">{n}</a>')
-        return f'<sup class="r">[{", ".join(links)}]</sup>'
+        return f'<span class="{cls}">Sources {", ".join(links)}</span>'
 
-    def ev(key, basis):
+    def mark(key):
+        return f'<span class="mk mk-{key}" aria-hidden="true"></span>'
+
+    def proof(it=None, key=None, basis="", nums=()):
+        key = key or it["strength"]
+        nums = nums or (it["nums"] if it else ())
+        basis = basis or (it.get("basis", "") if it else "")
         lab, expl = STRENGTH[key]
-        tip = expl + (f" · based on: {basis}" if basis else "")
-        return f'<span class="ev ev-{key}" title="{h(tip, quote=True)}">{h(lab)}</span>'
+        tip = expl + (f". Based on: {basis}" if basis else "")
+        return (f'<div class="proof" title="{h(tip, quote=True)}">{mark(key)}<span class="ev">{h(lab)}</span>'
+                f'{refs(nums)}</div>')
 
-    def item(it, label=False, badge=True):
-        lab = (f'<span class="lab">{h(label_titles.get(it.get("label"), ""))}.</span> '
-               if label and it.get("label") else "")
-        out = f'<li>{ev(it["strength"], it["basis"]) if badge else ""}{lab}{h(it["text"])}{refs(it["nums"])}'
-        out += "".join(f'<span class="assume">Assumes: {h(a)}</span>' for a in it["assumptions"])
-        return out + "</li>"
+    def claim(it, label=False):
+        lead = (f'<span class="lead">{h(label_titles.get(it.get("label"), ""))}.</span> '
+                if label and it.get("label") else "")
+        body = f'{lead}{h(it["text"])}' + "".join(f'<span class="assume">Assumes {h(a[:1].lower() + a[1:])}</span>'
+                                                  for a in it["assumptions"])
+        return f'<div class="row"><div class="txt">{body}</div>{proof(it)}</div>'
 
-    def section(kind, note=None, label=False, badge=True, title=True):
+    def block(kind, title=None, note=None, label=False, level="h3"):
         s = by_kind.get(kind)
         if not s:
             return ""
-        out = (f"<h3>{h(titles[kind])}</h3>" if title else "") + (f'<p class="h2note">{h(note)}</p>' if note else "")
+        out = (f"<{level}>{h(title or titles[kind])}</{level}>" if title is not False else "")
+        out += f'<p class="h2note">{h(note)}</p>' if note else ""
         if s["no_data"]:
             return out + '<p class="empty">No sourced findings.</p>'
-        return out + '<ul class="items">' + "".join(item(it, label, badge) for it in s["items"]) + "</ul>"
+        return out + "".join(claim(it, label) for it in s["items"])
 
     def table(head, rows, num_cols=()):
-        out = ['<table class="t"><tr>' + "".join(f"<th>{h(c)}</th>" for c in head) + "</tr>"]
+        out = ['<table class="t"><tr>' + "".join(f'<th{" class=num" if i in num_cols else ""}>{h(c)}</th>'
+                                                 for i, c in enumerate(head)) + "</tr>"]
         for r in rows:
             out.append("<tr>" + "".join(f'<td class="num">{c}</td>' if i in num_cols else f"<td>{c}</td>"
                                         for i, c in enumerate(r)) + "</tr>")
         return "".join(out) + "</table>"
 
+    def tref(nums):  # source numbers inside a table cell
+        return refs(nums).replace("Sources ", "") if nums else ""
+
     ident = p["identity"]
     product = next((it for it in p["tldr"] if it.get("label") == "product"), None)
+    generated = str(analysis.get("generated_at", ""))[:10]
     parts = ["<!doctype html>", '<html lang="en"><head><meta charset="utf-8">',
              '<meta name="viewport" content="width=device-width, initial-scale=1">',
-             '<meta name="robots" content="noindex, nofollow">',
-             f"<title>{h(company.name)} — due diligence brief</title><style>{CSS}</style></head><body>",
-             '<div class="page"><div class="wrap"><header>',
-             '<p class="kicker">Due diligence brief · outside-in, public sources</p>', f"<h1>{h(company.name)}</h1>"]
+             '<meta name="robots" content="noindex, nofollow">', FONTS,
+             f"<title>{h(company.name)}: due diligence brief</title><style>{CSS}</style></head><body>",
+             '<div class="page"><header>', f"<h1>{h(company.name)}</h1>"]
     if product:
-        parts.append(f'<p class="oneliner">{h(product["text"])}{refs(product["nums"])}</p>')
-    meta = [company.domain, ident.get("name"), ident.get("ico") and f"IČO {ident['ico']}", company.country,
-            f"Data as of {str(analysis.get('generated_at', ''))[:10]}", f"{len(srcs)} sources"]
-    parts.append('<div class="meta">' + "".join(f"<span>{h(str(m))}</span>" for m in meta if m) + "</div>")
-    parts.append('<div class="trust"><b>How to read.</b> Numbers in brackets link to the source (hover to preview). '
-                 "Labels show how strong the evidence is: "
-                 + " ".join(f'{ev(k, "")}' for k in STRENGTH)
-                 + " Key numbers, tables and charts are computed by code from official records and sources; the "
-                 "written findings come from an LLM that may only cite collected facts. This brief prepares a memo; "
-                 "it does not recommend an investment.</div></header>")
-
-    if x.get("tiles"):
-        parts.append('<h2>Key numbers</h2><p class="h2note">Computed by code from registries, procurement and press. '
-                     "No LLM.</p><div class=tiles>")
-        for t in x["tiles"]:
-            parts.append(f'<div class="tile {t.get("tone", "")}"><div class="l">{h(t["label"])}</div>'
-                         f'<div class="v">{h(str(t["value"]))}{refs(t["nums"])}</div><div class="s">{h(t["sub"])}</div></div>')
-        parts.append("</div>")
+        parts.append(f'<p class="oneliner">{h(product["text"])}</p>')
+    facts_row = [("Website", company.domain), ("Legal entity", ident.get("name")),
+                 ("Company ID (IČO)", ident.get("ico")), ("Country", company.country),
+                 ("Data as of", generated), ("Sources cited", str(len(srcs)))]
+    parts.append('<dl class="facts">' + "".join(f"<div><dt>{h(k)}</dt><dd>{h(str(v))}</dd></div>"
+                                                for k, v in facts_row if v) + "</dl>")
+    parts.append('<div class="key">' + "".join(f'<span class="k">{mark(k)}{h(STRENGTH[k][0])}</span>' for k in STRENGTH)
+                 + "<p>Each statement shows on its right how strong its evidence is and which sources it rests on; hover "
+                 "for the quote. Numbers, tables and charts are computed by code from official records and sources. "
+                 "The written findings come from a language model that may only cite collected facts. This brief "
+                 "prepares a memo; it does not recommend an investment.</p></div></header>")
 
     rest = [it for it in p["tldr"] if it.get("label") != "product"]
     if rest:
-        parts.append('<h2>Summary</h2><ul class="items">' + "".join(item(it, label=True) for it in rest) + "</ul>")
+        parts.append("<h2>In short</h2>" + "".join(claim(it, label=True) for it in rest))
 
     case = by_kind.get("investment_case")
     if case and not case["no_data"]:
-        parts.append('<h2>For the memo</h2><p class="h2note">The strongest arguments each way and what diligence must '
-                     "confirm. Judgements, each tied to its evidence.</p><div class=cols>")
-        for lab, cls, title in (("for", "for", "For"), ("against", "against", "Against"), ("must_be_true", "must", "Must be true")):
+        parts.append('<h2>For the memo</h2><p class="h2note">The strongest arguments each way, and what diligence has '
+                     "to confirm. These are judgements, each tied to its evidence.</p>")
+        for lab, cls, title in (("for", "for", "For"), ("against", "against", "Against"),
+                                ("must_be_true", "must", "Must be true")):
             its = [it for it in case["items"] if it.get("label") == lab]
-            parts.append(f'<div class="col {cls}"><h3>{title}</h3><ul class="items">'
-                         + ("".join(item(it, badge=False) for it in its) or '<li class="empty">—</li>') + "</ul></div>")
+            if its:
+                parts.append(f'<h3 class="{cls}">{title}</h3>' + "".join(claim(it) for it in its))
+
+    if x.get("tiles"):
+        parts.append('<h2>Key numbers</h2><p class="h2note">Computed by code from registers, procurement records and '
+                     "press. Amounts from the press are quoted as written.</p><div class=ledger>")
+        for t in x["tiles"]:
+            tone = {"muted": " muted", "warn": " warn"}.get(t.get("tone", ""), "")
+            parts.append(f'<div class="row{tone}"><div class="lgrid"><div class="lab">{h(t["label"])}</div>'
+                         f'<div><div class="val">{h(str(t["value"]))}</div>'
+                         f'<div class="note">{h(str(t["sub"]).replace(" · ", "; "))}</div></div>'
+                         f'</div><div class="proof">{refs(t["nums"])}</div></div>')
         parts.append("</div>")
 
     invest = any(k in by_kind and not by_kind[k]["no_data"]
                  for k in ("thesis_fit", "business_model", "market", "competition", "investment_case"))
     if invest or x.get("money_chart") or x.get("money"):
-        parts.append("<h2>Business</h2>")
+        parts.append("<h2>Business and public money</h2>")
     if not invest:
         parts.append('<p class="h2note">This brief was generated before the investment view (business model, market, '
                      "competition) existed. Public money below is computed by code.</p>")
     else:
-        parts.append(section("business_model"))
+        parts.append(block("business_model"))
     if x.get("money_chart"):
         mx = max((r["grants"] + r["sales"]) for r in x["money_chart"]) or 1
         unpaid = max(float(x.get("grants_awarded") or 0) - float(x.get("grants_paid") or 0), 0)
         parts.append('<h3>Public money received by year</h3><p class="h2note">Grant payments recorded in the Czech '
                      "subsidy payments register (IsRed), and sales to public buyers by contract year. Research-project "
-                     "budgets are excluded: they are not revenue."
-                     + (f" Awarded support without published payments ({_czk(unpaid)}) is not shown by year." if unpaid else "")
-                     + "</p><div class=chart><div class=legend>"
+                     "budgets are left out: they are not revenue."
+                     + (f" Awarded support without published payments ({_czk(unpaid)}) has no year and is not shown." if unpaid else "")
+                     + '</p><div class=chart><div class=legend>'
                      '<span><i style="background:var(--s1)"></i>Grant payments</span>'
                      '<span><i style="background:var(--s2)"></i>Sales to public buyers</span></div><div class=bars>')
         for r in x["money_chart"]:
             g, s_ = r["grants"], r["sales"]
             vals = [(v, c) for v, c in ((g, "--s1"), (s_, "--s2")) if v]
-            segs = "".join(f'<div class="seg{" top" if i == len(vals) - 1 else ""}" style="height:{v / mx * 100:.2f}%;'
-                           f'background:var({c})"></div>' for i, (v, c) in enumerate(vals))
+            segs = "".join(f'<div class="seg" style="height:{v / mx * 100:.2f}%;background:var({c})"></div>' for v, c in vals)
             lab = f'<div class="tot" style="bottom:{(g + s_) / mx * 100:.2f}%">{_short(g + s_)}</div>' if g + s_ else ""
-            parts.append(f'<div class="bar">{segs}{lab}<div class="tip">{r["year"]}: grants {_czk(g)} · sales {_czk(s_)}</div></div>')
+            parts.append(f'<div class="bar">{segs}{lab}<div class="tip">{r["year"]}: grant payments {_czk(g)}, '
+                         f'sales {_czk(s_)}</div></div>')
         tg_, ts_ = sum(r["grants"] for r in x["money_chart"]), sum(r["sales"] for r in x["money_chart"])
         parts.append('</div><div class=years>' + "".join(f"<span>{r['year']}</span>" for r in x["money_chart"]) + "</div>"
-                     f'<p class="h2note" style="margin-top:8px">Total over these years: grant payments {_czk(tg_)}'
-                     + (f"; sales to public buyers {_czk(ts_)} ({_pct(ts_ / (tg_ + ts_))} of the public money)" if ts_ else
-                        ("; no sales to public buyers found" if x.get("sales_checked") else
-                                                     "; sales to public buyers not checked")) + ".</p></div>")
+                     f'<p class="chartnote">Over these years: grant payments {_czk(tg_)}'
+                     + (f", sales to public buyers {_czk(ts_)} ({_pct(ts_ / (tg_ + ts_))} of the public money)" if ts_ else
+                        (", no sales to public buyers found" if x.get("sales_checked") else
+                         ", sales to public buyers not checked")) + ".</p></div>")
     if x.get("money"):
         parts.append("<h3>Public money by type</h3>" + table(
-            ["Type", "What it means", "Count", "Amount", "Src"],
-            [[h(r["kind"]), h(r["meaning"]), str(r["count"]), h(r["czk"]), refs(r["nums"])] for r in x["money"]], (2, 3)))
-    if invest:
-        parts.append(section("market", "Only statements found in sources, attributed to who makes them. No market size "
-                                       "is estimated here."))
+            ["Type", "What it means", "Count", "Amount", "Sources"],
+            [[h(r["kind"]), h(r["meaning"]), str(r["count"]), h(r["czk"]), tref(r["nums"])] for r in x["money"]], (2,)))
+
+    own = by_kind.get("ownership")
+    if x.get("funding") or (own and not own["no_data"]):
+        parts.append("<h2>Funding and ownership</h2>")
+        if x.get("funding"):
+            parts.append('<p class="h2note">Every reported round, worded as in the source. Sought means money the '
+                         "company is asking for; closed means money reported as received.</p>"
+                         + table(["Date", "Round", "Amount, as reported", "Investors", "Status", "Sources"],
+                                 [[h(r["date"]), h(r["round"]), h(r["amount"]), h(r["investors"]),
+                                   f'<span class="st st-{r["status"]}">{STATUS_TEXT.get(r["status"], r["status"])}</span>'
+                                   + (f' <span class="m">{r["reports"]} reports</span>' if r["reports"] > 1 else ""),
+                                   tref(r["nums"])] for r in x["funding"]]))
+        parts.append(block("ownership", title="What the register and press show"))
+
     if invest or x.get("peers"):
-        parts.append("<h2>Competition</h2>")
+        parts.append("<h2>Market and competition</h2>")
     if invest:
-        parts.append(section("competition", title=False))
+        parts.append(block("market", title="Market", note="Only statements found in sources, attributed to who makes "
+                                                           "them. No market size is estimated here."))
+        parts.append(block("competition", title="Competitors named or found"))
     if x.get("peers"):
-        parts.append('<h3>Candidates from NATO DIANA cohorts</h3><p class="h2note">Companies selected by NATO DIANA '
-                     "whose one-line description overlaps this company's website (matched by code). Candidates to check, "
-                     "not confirmed competitors.</p>" + table(
-                         ["Company", "Country", "NATO DIANA description", "Cohort", "Src"],
-                         [[h(r["name"]), h(r["country"]), h(r["description"]), str(r["year"] or ""), refs(r["nums"])]
+        parts.append('<h3>Candidates from NATO DIANA cohorts</h3><p class="h2note">Companies selected by NATO DIANA whose '
+                     "one-line description overlaps this company's website, matched by code. Candidates to check, not "
+                     "confirmed competitors.</p>" + table(
+                         ["Company", "Country", "NATO DIANA description", "Cohort", "Sources"],
+                         [[h(r["name"]), h(r["country"]), h(r["description"]), str(r["year"] or ""), tref(r["nums"])]
                           for r in x["peers"]]))
 
     if x.get("thesis") or (by_kind.get("thesis_fit") and not by_kind["thesis_fit"]["no_data"]):
@@ -435,76 +493,62 @@ def render(company: Company, analysis: dict, p: dict, titles: dict, label_titles
         if x.get("thesis"):
             fund_links = ", ".join(f'<a href="{h(u, quote=True)}" rel="noopener noreferrer">{i + 1}</a>'
                                    for i, u in enumerate(x.get("fund_sources") or []) if safe_href(u))
-            parts.append(f'<p class="h2note">Fund profile from public statements ({fund_links}); company side computed '
-                         "by code.</p>" + table(["", "Rockaway Ventures", "This company", "Src"],
-                                                [[f"<b>{h(r['criterion'])}</b>", h(r["fund"]), h(r["company"]), refs(r["nums"])]
-                                                 for r in x["thesis"]]))
-        parts.append(section("thesis_fit", label=True).replace("<h3>Fit with the Rockaway thesis</h3>", "<h3>Assessment</h3>"))
+            parts.append(f'<p class="h2note">The fund side is taken from public statements ({fund_links}); the company '
+                         "side is computed by code.</p>" + table(["", "Rockaway Ventures", "This company", "Sources"],
+                                                                 [[f"<b>{h(r['criterion'])}</b>", h(r["fund"]), h(r["company"]),
+                                                                   tref(r["nums"])] for r in x["thesis"]]))
+        parts.append(block("thesis_fit", title="Assessment", label=True))
 
-    if x.get("funding"):
-        parts.append('<h2>Funding history</h2><p class="h2note">Every reported round, as worded in the source. '
-                     "<b>Sought</b> = money the company is asking for; <b>Closed</b> = money reported as received.</p>"
-                     + table(["Date", "Round", "Amount (as reported)", "Investors", "Status", "Src"],
-                             [[h(r["date"]), h(r["round"]), h(r["amount"]), h(r["investors"]),
-                               f'<span class="pill {r["status"]}">{STATUS_TEXT.get(r["status"], r["status"])}</span>'
-                               + (f' <span class="m">{r["reports"]} reports</span>' if r["reports"] > 1 else ""),
-                               refs(r["nums"])] for r in x["funding"]]))
-
-    parts.append('<div class="tech"><h2>Technical due diligence</h2><p class="h2note">What is built, who owns it, '
-                 "what could be rebuilt, and what to verify.</p>")
-    parts.append(section("ownership"))
-    parts.append(section("tech_profile"))
-    parts.append(section("rebuild_check", label=True))
+    parts.append("<h2>Technology</h2>"
+                 '<p class="h2note">What is built, what could be rebuilt, and which claims hold up against independent '
+                 "sources. An outside view: it says what to ask, not whether the code is good.</p>")
+    parts.append(block("tech_profile", title="What is built"))
+    parts.append(block("rebuild_check", label=True))
     if x.get("checks"):
         parts.append("<h3>Claims checked against independent sources</h3>" + table(
-            ["Check", "Result", "Detail", "Src"],
-            [[h(c["check"]), f'<span class="pill {h(str(c["status"]))}">{h(CHECK_TEXT.get(c["status"], str(c["status"])))}</span>',
-              h(c["detail"]), refs(c["nums"])] for c in x["checks"]]))
-    parts.append(section("risk_flags"))
-    parts.append(section("questions", badge=False))
-    parts.append("</div>")
+            ["Check", "Result", "Detail", "Sources"],
+            [[h(c["check"]), f'<span class="st st-{h(str(c["status"]))}">{h(CHECK_TEXT.get(c["status"], str(c["status"])))}</span>',
+              h(c["detail"]), tref(c["nums"])] for c in x["checks"]]))
 
-    # evidence quality: how much of this brief rests on what
+    parts.append("<h2>Risks and questions for the founders</h2>")
+    parts.append(block("risk_flags", title="Risks"))
+    parts.append(block("questions", title="Questions"))
+
     counts = Counter(it["strength"] for it in p["tldr"] + [it for s in p["sections"] for it in s["items"]])
     total = sum(counts.values())
     if total:
-        colors = {"verified": "#047857", "corroborated": "#0e7490", "single": "#ca8a04", "mixed": "#eab308",
-                  "claim": "#b42318", "view": "#7c3aed"}
-        parts.append('<h2>Evidence behind this brief</h2><p class="h2note">All findings above by the strength of their '
-                     "evidence. Analyst views are expected in risks, the case for and against, and questions.</p>"
-                     '<div class="evbar">' + "".join(
-                         f'<div style="flex:{counts[k]};background:{colors[k]}" title="{h(STRENGTH[k][0])}: {counts[k]}"></div>'
-                         for k in STRENGTH if counts.get(k)) + '</div><div class="evkey">' + "".join(
-                         f'<span><i style="display:inline-block;width:10px;height:10px;border-radius:2px;background:{colors[k]};'
-                         f'margin-right:6px"></i>{h(STRENGTH[k][0])} {counts[k]} ({counts[k] / total:.0%})</span>'
+        parts.append('<h2>What this brief rests on</h2><p class="h2note">All statements above by the strength of their '
+                     "evidence. Judgements are expected in the case for and against, the rebuild check, risks and "
+                     'questions.</p><div class="rests">' + "".join(
+                         f"<span>{mark(k)}{h(STRENGTH[k][0])}: {counts[k]} ({counts[k] / total:.0%})</span>"
                          for k in STRENGTH if counts.get(k)) + "</div>")
 
-    parts.append('<h2>Sources</h2><ol class="src">')
+    parts.append('<h2>Sources</h2><ol class="sources">')
     for s in srcs:
         url = safe_href(s["url"])
-        link = (f'<a href="{h(url, quote=True)}" rel="noopener noreferrer" target="_blank">{h(s["host"])} ↗</a>'
+        link = (f'<a href="{h(url, quote=True)}" rel="noopener noreferrer" target="_blank">{h(s["host"])}</a>'
                 if url else h(s["host"]))
-        date = f" · {h(s['date'])}" if s["date"] else ""
-        q = f"<br><q>{h(s['quote'])}</q>" if s["quote"] else ""
+        date = f", {h(s['date'])}" if s["date"] else ""
+        q = f"<q>{h(s['quote'])}</q>" if s["quote"] else ""
         parts.append(f'<li id="src-{s["n"]}"><span class="n">{s["n"]}</span><div>{link} '
-                     f'<span class="cls">{h(CLASS_LABELS[s["cls"]])}</span> <span class="m">{h(s["type"])}{date}</span>{q}</div></li>')
+                     f'<span class="m">{h(CLASS_LABELS[s["cls"]])}, {h(s["type"])}{date}</span>{q}</div></li>')
     parts.append("</ol>")
-    parts.append('<h2>How this dossier was built</h2>' + table(
+    parts.append('<h2>How this brief was built</h2>' + table(
         ["Step", "What it reads", "Facts", "Unavailable this run"],
         [[f"<b>{h(n)}</b>", h(w), str(c), h(", ".join(u)) if u else "—"] for n, w, c, u in p["method"]], (2,)))
-    parts.append(f'<p class="foot">Analysis model {h(str(analysis.get("model") or "unknown"))} · analysis cost '
-                 f'${float(analysis.get("cost_usd") or 0):.4f} · AI extraction cost ${extraction_cost:.4f}. Structured sources '
-                 "(registries, procurement, DNS, GitHub…) are parsed by code; the LLM only extracts quoted facts from text "
-                 "and writes the findings, each tied to cited sources. Outside-in assessment from public data; it does "
-                 "not replace access to the company's code, data, financials and contracts.</p>")
-    parts.append(f"<details><summary>Source appendix — all {len(all_facts)} collected facts, incl. checks and "
-                 "unavailable sources</summary>")
+    parts.append(f'<p class="foot">Analysis model {h(str(analysis.get("model") or "unknown"))}; analysis cost '
+                 f'${float(analysis.get("cost_usd") or 0):.4f}; extraction cost ${extraction_cost:.4f}. Structured sources '
+                 "(registers, procurement, DNS, GitHub) are parsed by code; the language model only extracts quoted facts "
+                 "from text and writes the findings, each tied to cited sources. An outside-in assessment from public "
+                 "data: it does not replace access to the company's code, data, financials and contracts.</p>")
+    parts.append(f"<details><summary>All {len(all_facts)} collected facts, including checks and unavailable sources"
+                 "</summary>")
     for fid in sorted(all_facts):
         f = all_facts[fid]
         url = safe_href(f.source_url)
         src = (f'<a href="{h(url, quote=True)}" rel="noopener noreferrer">{h(f.source_url)}</a>' if url
                else h(f.source_url or "(no URL)"))
-        parts.append(f'<div class="fact" id="fact-{fid}"><b>F{fid}</b> · {h(f.type)} · {h(fact_status(f))} · {src}'
+        parts.append(f'<div class="fact" id="fact-{fid}"><b>F{fid}</b> {h(f.type)}, {h(fact_status(f))}: {src}'
                      f"<br><code>{h(value_json(f.value))}</code></div>")
-    parts.append("</details></div></div></body></html>")
+    parts.append("</details></div></body></html>")
     return "\n".join(parts)

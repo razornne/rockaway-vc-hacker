@@ -170,7 +170,9 @@ def cmd_analyze(args, ctx):
     company = ctx.store.get_company(args.id)
     if not company:
         sys.exit(f"unknown company {args.id}")
-    result = analyze_company(ctx.store, LLM(ctx.settings, ctx.store), company, model=args.model)
+    # --compare stores the run apart (kind "dossier@<model>") so the published brief is not replaced
+    kind = f"dossier@{args.model}" if args.compare and args.model else "dossier"
+    result = analyze_company(ctx.store, LLM(ctx.settings, ctx.store), company, model=args.model, kind=kind)
     print(f"{company.id}: {len(result['sections'])} sections | cost ${result['cost_usd']:.4f}"
           f" | cached={result['cached']}")
 
@@ -180,7 +182,9 @@ def cmd_dossier(args, ctx):
     company = ctx.store.get_company(args.id)
     if not company:
         sys.exit(f"unknown company {args.id}")
-    paths = write_dossier(ctx.store, company, Path(args.output) if args.output else ctx.settings.home / 'dossiers')
+    kind, suffix = (f"dossier@{args.model}", f"-{args.model}") if args.model else ("dossier", "")
+    paths = write_dossier(ctx.store, company, Path(args.output) if args.output else ctx.settings.home / 'dossiers',
+                          kind=kind, suffix=suffix)
     for kind, path in paths.items():
         print(f"{kind}: {path}")
 
@@ -219,9 +223,11 @@ def main(argv=None):
     e = sub.add_parser("extract"); e.add_argument("id"); e.add_argument("--model")
     e.add_argument('--max-docs', type=int)
     a = sub.add_parser('analyze'); a.add_argument('id'); a.add_argument('--model')
+    a.add_argument('--compare', action='store_true', help='store the run apart from the published brief')
     v = sub.add_parser('verify'); v.add_argument('id')
     sub.add_parser('eval')
     d = sub.add_parser('dossier'); d.add_argument('id'); d.add_argument('--output')
+    d.add_argument('--model', help='render the comparison run of this model (see analyze --compare)')
     st = sub.add_parser("site"); st.add_argument("--output")
     ls = sub.add_parser("label-sheet"); ls.add_argument("ids", help="comma-separated company ids")
     ls.add_argument("--output", required=True)

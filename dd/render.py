@@ -268,9 +268,11 @@ def strip_fact_ids(text: str, known: set[int]) -> str:
 
 
 INTERNAL_WORDS = (
-    (r"['‘’\"]?\brd_project\b['‘’\"]?(?:\s+(?:contracts?\s+)?(?:kinds?|categories|category))?", "R&D project agreements"),
-    (r"['‘’\"]purchase['‘’\"](?:\s+(?:contracts?\s+)?(?:kinds?|categories|category))?", "purchase contracts"),
-    (r"['‘’\"]subsidy['‘’\"](?:\s+(?:contracts?\s+)?(?:kinds?|categories|category))?", "subsidy agreements"),
+    (r"['‘’\"]?\brd_project\b['‘’\"]?(?:\s+(?:contracts?|agreements?))?(?:\s+(?:kinds?|categories|category))?",
+     "R&D project agreements"),
+    (r"['‘’\"]purchase['‘’\"](?:\s+contracts?)?(?:\s+(?:kinds?|categories|category))?", "purchase contracts"),
+    (r"['‘’\"]subsidy['‘’\"](?:\s+(?:agreements?|contracts?))?(?:\s+(?:kinds?|categories|category))?", "subsidy agreements"),
+    (r"\bR&D project agreements agreements\b", "R&D project agreements"),
     (r"\bgrants_paid_czk\b", "grants paid"), (r"\bgrants_czk\b", "grants awarded"),
     (r"\bcontract_kinds\b", "contract types"),
 )

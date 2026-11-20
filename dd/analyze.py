@@ -277,7 +277,7 @@ def _validated_sections(parsed: AnalysisResponse, allowed_ids: set[int]) -> tupl
     return sections, sorted(used_ids)
 
 
-def analyze_company(store: Store, llm, company: Company, model: str | None = None) -> dict:
+def analyze_company(store: Store, llm, company: Company, model: str | None = None, kind: str = "dossier") -> dict:
     """Generate five evidence-linked sections with one structured model call and persist the snapshot."""
     current_facts = store.facts(company.id)
     eligible = _eligible_facts(company, current_facts)
@@ -318,6 +318,6 @@ def analyze_company(store: Store, llm, company: Company, model: str | None = Non
         "generated_item_count": sum(len(getattr(parsed, kind).items) for kind in SECTION_KINDS),
         "accepted_item_count": sum(len(section['items']) for section in sections),
     }
-    store.add_analysis(company.id, "dossier", output, model=result.model, prompt_version=output["prompt_version"],
+    store.add_analysis(company.id, kind, output, model=result.model, prompt_version=output["prompt_version"],
                        fact_ids=referenced_ids, cost_usd=output["cost_usd"])
     return output

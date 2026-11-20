@@ -32,6 +32,10 @@ def _prices() -> dict[str, tuple[float, float]]:
 @dataclass
 class Settings:
     openai_api_key: str = field(default_factory=lambda: os.getenv("OPENAI_API_KEY", ""))
+    # Claude models (claude-*) run through the Anthropic API, for model comparisons. Its own hard limit, because it is
+    # a separate account with its own balance; spend still counts towards LLM_BUDGET_USD as well.
+    anthropic_api_key: str = field(default_factory=lambda: os.getenv("ANTHROPIC_API_KEY", ""))
+    anthropic_budget_usd: float = field(default_factory=lambda: float(os.getenv("ANTHROPIC_BUDGET_USD", "0.40")))
     model_extract: str = field(default_factory=lambda: os.getenv("LLM_MODEL_EXTRACT", "gpt-5-nano"))
     model_analyze: str = field(default_factory=lambda: os.getenv("LLM_MODEL_ANALYZE", "gpt-5-mini"))
     budget_usd: float = field(default_factory=lambda: float(os.getenv("LLM_BUDGET_USD", "2.50")))

@@ -64,7 +64,7 @@ def test_write_dossier_outputs_and_escapes_untrusted_content(tmp_path):
     assert 'href="javascript:' not in page
     assert 'href="#src-1"' in page and 'id="src-1"' in page and f'id="fact-{fact.id}"' in page
     assert "[1](https://example.com/source?q=one&x=2)" in markdown
-    assert "Analyst view" in page and "How this dossier was built" in page
+    assert "Analyst view" in page and "How this brief was built" in page
     assert 'href="https://example.com/source?q=one&amp;x=2"' in page
     assert "Identity unverified" in page and "Checked · no results" in page
 

@@ -245,8 +245,8 @@ def _analysis_error(message: str) -> ValueError:
     return ValueError(f"cannot render dossier: {message}")
 
 
-def _load_and_validate(store: Store, company: Company) -> tuple[dict, list[Fact], dict[int, Fact]]:
-    analysis = store.latest_analysis(company.id, "dossier")
+def _load_and_validate(store: Store, company: Company, kind: str = "dossier") -> tuple[dict, list[Fact], dict[int, Fact]]:
+    analysis = store.latest_analysis(company.id, kind)
     if not isinstance(analysis, dict):
         raise _analysis_error("no latest dossier analysis exists")
     if analysis.get("company_id") != company.id:
@@ -363,12 +363,14 @@ def _csv_safe(value: Any) -> Any:
     return value
 
 
-def write_dossier(store: Store, company: Company, output_dir: Path) -> dict[str, str]:
-    """Render the latest dossier analysis after validating all fact references and snapshot age."""
-    analysis, sections, fact_by_id = _load_and_validate(store, company)
+def write_dossier(store: Store, company: Company, output_dir: Path, kind: str = "dossier",
+                  suffix: str = "") -> dict[str, str]:
+    """Render the latest dossier analysis after validating all fact references and snapshot age. `kind` selects a
+    comparison run (e.g. the same company analysed by another model); `suffix` keeps its files apart."""
+    analysis, sections, fact_by_id = _load_and_validate(store, company, kind)
     output_dir = Path(output_dir).expanduser().resolve()
     output_dir.mkdir(parents=True, exist_ok=True)
-    stem = _slug(company.id)
+    stem = _slug(company.id) + suffix
     markdown_path = (output_dir / f"{stem}-dossier.md").resolve()
     html_path = (output_dir / f"{stem}-dossier.html").resolve()
     csv_path = (output_dir / f"{stem}-facts.csv").resolve()
