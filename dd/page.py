@@ -242,6 +242,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius
 .page{max-width:calc(43rem + var(--margin) + var(--gap) + 6rem);margin:0 auto;padding:0 3rem 5rem}
 .crumb{font:500 14px/1 var(--sans);padding:1.6rem 0 0}.crumb a{text-decoration:none}
 header{padding:3.2rem 0 1.4rem}
+.logo{display:block;height:2.6rem;width:auto;max-width:14rem;object-fit:contain;object-position:left;margin:0 0 1.4rem}
 h1{font:500 3rem/1.04 var(--serif);letter-spacing:-.015em;margin:0 0 .9rem;font-variation-settings:"opsz" 72}
 .oneliner{font-size:1.32rem;line-height:1.42;color:var(--ink2);margin:0 0 1.6rem;max-width:40rem}
 dl.facts{display:flex;flex-wrap:wrap;gap:.4rem 2.2rem;margin:0;font:14px/1.4 var(--sans)}
@@ -388,10 +389,13 @@ def render(company: Company, analysis: dict, p: dict, titles: dict, label_titles
              '<div class="page"><header>', f"<h1>{h(company.name)}</h1>"]
     if product:
         parts.append(f'<p class="oneliner">{h(product["text"])}</p>')
-    facts_row = [("Website", company.domain), ("Legal entity", ident.get("name")),
-                 ("Company ID (IČO)", ident.get("ico")), ("Country", company.country),
-                 ("Data as of", generated), ("Sources cited", str(len(srcs)))]
-    parts.append('<dl class="facts">' + "".join(f"<div><dt>{h(k)}</dt><dd>{h(str(v))}</dd></div>"
+    site_url = safe_href(f"https://{company.domain}") if company.domain else None
+    website = (f'<a href="{h(site_url, quote=True)}" rel="noopener noreferrer" target="_blank">{h(company.domain)}</a>'
+               if site_url else None)
+    facts_row = [("Website", website), ("Legal entity", h(ident.get("name") or "")),
+                 ("Company ID (IČO)", h(ident.get("ico") or "")), ("Country", h(company.country or "")),
+                 ("Data as of", h(generated)), ("Sources cited", str(len(srcs)))]
+    parts.append('<dl class="facts">' + "".join(f"<div><dt>{h(k)}</dt><dd>{v}</dd></div>"
                                                 for k, v in facts_row if v) + "</dl>")
     parts.append('<div class="key">' + "".join(f'<span class="k">{mark(k)}{h(STRENGTH[k][0])}</span>' for k in STRENGTH)
                  + "<p>Each statement shows on its right how strong its evidence is and which sources it rests on; hover "

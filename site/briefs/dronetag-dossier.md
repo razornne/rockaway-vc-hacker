@@ -6,24 +6,24 @@ dronetag\.com · Dronetag s\.r\.o\. · IČO 08198519 · CZ · 2026\-11\-20
 
 ## TL;DR
 
-- **Product.** Hardware \+ software Remote ID receivers, transmitters and visualization sold to public safety, pilots and integrators via shop and APIs\. *(Company claim)* ^[1](https://www.dronetag.com/products/rider),[2](https://shop.dronetag.com/),[3](https://www.dronetag.com/),[4](https://help.dronetag.com/),[5](https://www.dronetag.com/)
-- **Stage & traction.** Closed convertible loan from Y Soft Ventures; multiple public\-sector purchase orders and R&amp;D grants, plus NATO DIANA accelerator participation\. *(Verified)* ^[6](https://cc.cz/cesky-startup-dronetag-zajistuje-bezpecne-letani-s-drony-od-brnenskeho-fondu-ziskava-15-milionu/),[7](https://smlouvy.gov.cz/smlouva/14335472),[8](https://smlouvy.gov.cz/smlouva/19531615),[9](https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-CB620BAAB8F876B73CB37E46F22B3EA45A7011A6D4B0075BEC74064FA6A5BC56),[10](https://web.archive.org/web/20250811133329id_/https://www.diana.nato.int/about-diana/2024-cohort-of-companies.html)
-- **Technology & moat.** Public repos, mobile apps and a REST API are visible; hard\-to\-copy elements \(claimed large receiver network and protocol authorship\) are company statements with limited independent proof\. *(Partly verified)* ^[11](https://github.com/dronetag),[12](https://apps.apple.com/us/app/drone-scanner-gen-2/id6742736434?uo=4),[13](https://help.dronetag.com/developers/data-pull/getting-started-rest),[14](https://www.dronetag.com/),[15](https://www.dronetag.com/)
-- **Key risk.** Material claims about scale, approvals and performance \(50k devices, FAA approval, 3,000\+ receivers\) are unverified in public records\. *(Analyst view)* ^[15](https://www.dronetag.com/),[16](https://startuply.vc/article/dronetag-s-faa-approved-hardware-serves-15-military-forces-and-40-countries-1gv9lf),[14](https://www.dronetag.com/)
-- **Diligence focus.** Verify shipped units, named paying customers and contract margin profiles first, because revenue concentration and stated scale drive valuation\. *(Analyst view)* ^[15](https://www.dronetag.com/),[17](https://www.dronetag.com/),[18](https://shop.dronetag.com/)
+- **Product.** Sells Remote ID receivers, transmitters and drone detection devices, plus a visualization platform, to pilots, public safety and defence buyers; the company's own claim\. *(Company claim)* ^[1](https://shop.dronetag.com/),[2](https://shop.dronetag.com/),[3](https://www.dronetag.com/),[4](https://www.dronetag.com/products/rider),[5](https://www.dronetag.com/products/beacon)
+- **Stage & traction.** Public\-sector sales are early: 7 purchase contracts worth about CZK 1\.4m \(fire rescue, defence ministry, city IT\), one CZK 27\.4m defence tender won, and a NATO DIANA 2024 listing\. Only one disclosed funding round, a convertible loan\. *(Verified)* ^[6](https://smlouvy.gov.cz/smlouva/14335472),[7](https://smlouvy.gov.cz/smlouva/21293531),[8](https://smlouvy.gov.cz/smlouva/35562893),[9](https://ted.europa.eu/en/notice/-/detail/436033-2026),[10](https://web.archive.org/web/20250811133329id_/https://www.diana.nato.int/about-diana/2024-cohort-of-companies.html)
+- **Technology & moat.** Little independently evidenced moat: a public Remote ID scanning plugin shows core receiving logic is open code\. The claimed co\-authored Remote ID white paper is unverified, and no patent facts were collected\. *(Partly verified)* ^[11](https://github.com/dronetag/flutter-opendroneid),[12](https://www.dronetag.com/),[13](https://help.dronetag.com/)
+- **Key risk.** Revenue visibility depends on a few public buyers and one tender, while the claimed 50,000\+ devices and 25,000\+ customers have no independent check\. *(Analyst view)* ^[9](https://ted.europa.eu/en/notice/-/detail/436033-2026),[6](https://smlouvy.gov.cz/smlouva/14335472),[14](https://www.dronetag.com/),[15](https://www.dronetag.com/)
+- **Diligence focus.** Verify actual revenue and the delivery schedule of the defence award first, then the device and customer counts, because they decide whether traction is real\. *(Analyst view)* ^[9](https://ted.europa.eu/en/notice/-/detail/436033-2026),[16](https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=1053249),[14](https://www.dronetag.com/)
 
 ## At a glance (computed by code, no LLM)
 
 | Signal | Value | Sources |
 |---|---|---|
-| Funding \(press\) | 2022\-06\-27 · convertible loan · 15 milionů · Y Soft Ventures · 2 reports | 6, 19 |
-| Public money | 14 contract\(s\) in the contract register; 8 grant project\(s\) awarded 22\.2M CZK, 4\.1M CZK paid so far · by kind: 7 purchase\(s\) by public buyers \(1\.4M CZK\); 5 R&amp;D project agreement\(s\), amounts are project budgets, not revenue; 2 device loan\(s\) \(372,979 CZK\) · counterparties: Správa informačních technologií města Plzně, TECHNISERV, spol\. s r\.o\.,, České vysoké učení technické v Praze, Česká republika \- Ministerstvo obrany | 7, 20, 8, 21, 22, 23 |
-| Defence signals | 1 EU\-procurement award\(s\), 1 from defence buyers \(27\.4M CZK\): Ministerstvo obrany; NATO DIANA 2024 \(Secure Information Sharing\) | 24, 10 |
-| Thesis fit \(Rockaway\) | sectors: defence / dual\-use \(6 facts, incl\. structured defence evidence\); deep tech \(7 facts\); energy \(5 facts\); industrial / manufacturing AI \(4 facts\) · geography: CZ \(core region\) | 16, 25, 26, 27, 28 |
-| Hiring | 4 open roles: engineering 2, sales gtm 2 | 29, 30, 31, 32 |
-| Engineering footprint | 13 public repos \(56★, last push 2026\-11\-16\); 37 subdomains; 5 docs pages; stack: Cloudflare, Webflow | 33, 34, 35, 36, 37 |
-| Customers | public pricing: yes; 2 mobile app\(s\) | 38 |
-| Timeline | Czech entity registered 2019\-06\-07; first press 2022\-01\-31 \(20 articles collected\) | 39, 40 |
+| Funding \(press\) | 2022\-06\-27 · convertible loan · 15 milionů · Y Soft Ventures · 2 reports | 17, 18 |
+| Public money | 14 contract\(s\) in the contract register; 8 grant project\(s\) awarded 22\.2M CZK, 4\.1M CZK paid so far · by kind: 7 purchase\(s\) by public buyers \(1\.4M CZK\); 5 R&amp;D project agreement\(s\), amounts are project budgets, not revenue; 2 device loan\(s\) \(372,979 CZK\) · counterparties: Správa informačních technologií města Plzně, TECHNISERV, spol\. s r\.o\.,, České vysoké učení technické v Praze, Česká republika \- Ministerstvo obrany | 6, 19, 20, 7, 21, 22 |
+| Defence signals | 1 EU\-procurement award\(s\), 1 from defence buyers \(27\.4M CZK\): Ministerstvo obrany; NATO DIANA 2024 \(Secure Information Sharing\) | 9, 10 |
+| Thesis fit \(Rockaway\) | sectors: defence / dual\-use \(6 facts, incl\. structured defence evidence\); deep tech \(7 facts\); energy \(5 facts\); industrial / manufacturing AI \(4 facts\) · geography: CZ \(core region\) | 23, 24, 25, 26, 27 |
+| Hiring | 4 open roles: engineering 2, sales gtm 2 | 28, 29, 30, 31 |
+| Engineering footprint | 13 public repos \(56★, last push 2026\-11\-16\); 37 subdomains; 5 docs pages; stack: Cloudflare, Webflow | 32, 33, 34, 35, 36 |
+| Customers | public pricing: yes; 2 mobile app\(s\) | 37 |
+| Timeline | Czech entity registered 2019\-06\-07; first press 2022\-01\-31 \(20 articles collected\) | 38, 39 |
 
 # Investment view
 
@@ -31,173 +31,151 @@ dronetag\.com · Dronetag s\.r\.o\. · IČO 08198519 · CZ · 2026\-11\-20
 
 ## Fit with the Rockaway thesis
 
-- **Sector:** Evidence supports defence / dual\-use and deep\-tech positioning \(tenders, NATO DIANA, press on military customers and Remote ID hardware\)\. *(Analyst view)* ^[24](https://ted.europa.eu/en/notice/-/detail/436033-2026),[10](https://web.archive.org/web/20250811133329id_/https://www.diana.nato.int/about-diana/2024-cohort-of-companies.html),[16](https://startuply.vc/article/dronetag-s-faa-approved-hardware-serves-15-military-forces-and-40-countries-1gv9lf),[25](http://www.unmannedairspace.info/uncategorized/dronetag-drone-detection-system-chosen-for-eudis-business-accelerator-funding/),[41](https://technologickainkubace.org/en/news/czech-startup-conquers-america-and-expands-further-makes-drone-tracking-devices/)
-  - Assumption: Public defence tender and DIANA listing indicate meaningful defence relevance
+- **Sector:** Defence/dual\-use fit is supported by a won Czech Ministry of Defence tender for commercial drone detection, CZK 27\.44m notice value, and a 2024 NATO DIANA selection\. *(Analyst view)* ^[9](https://ted.europa.eu/en/notice/-/detail/436033-2026),[10](https://web.archive.org/web/20250811133329id_/https://www.diana.nato.int/about-diana/2024-cohort-of-companies.html)
+  - Assumption: Notice value equals awarded contract value
 
 ## Business model
 
-- Primary revenue: hardware device sales \(shop SKUs for RIDER, Scout, Mini, Beacon\) and one\-off device purchases by public buyers\. *(Partly verified)* ^[18](https://shop.dronetag.com/),[42](https://www.dronetag.com/products/scout),[43](https://shop.dronetag.com/),[44](https://shop.dronetag.com/),[45](https://smlouvy.gov.cz/smlouva/35562893)
-  - Assumption: Shop prices reflect core product revenue
-- Recurring revenue: monthly connectivity / subscription plans for devices \(published starting price €15/month\)\. *(Company claim)* ^[46](https://www.dronetag.com/products/mini-4g),[38](https://help.dronetag.com/)
-  - Assumption: Subscription shown applies to deployed devices
-- Public\-sector sales and paid contracts: multiple supplier roles and a won defence tender \(Ministerstvo obrany\) worth CZK 27,440,000\. *(Verified)* ^[24](https://ted.europa.eu/en/notice/-/detail/436033-2026),[7](https://smlouvy.gov.cz/smlouva/14335472),[21](https://smlouvy.gov.cz/smlouva/21293531),[47](https://smlouvy.gov.cz/smlouva/39280395)
-  - Assumption: Listed gov contracts reflect real sales to public buyers
-- Non\-revenue public support: multiple awarded grants and R&amp;D project contracts \(awarded and paid amounts listed separately\)\. *(Verified)* ^[9](https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-CB620BAAB8F876B73CB37E46F22B3EA45A7011A6D4B0075BEC74064FA6A5BC56),[48](https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-BD75A4A2C5439114B888DAC35F1644BA5C96325258C41AD6051E7A4D5F730B62),[49](https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-229B4E8F4048EBD1C3D113AAD9B5204574DE1F45FA3D70E1D6B35696BE338613)
-  - Assumption: Grants are project support, not sales revenue
+- Seven public purchase contracts in the registry \(2020–2026\) total CZK 1\.40m, with fire\-service and Ministry of Defence buyers among them\. *(Verified)* ^[8](https://smlouvy.gov.cz/smlouva/35562893),[40](https://smlouvy.gov.cz/smlouva/39254662),[7](https://smlouvy.gov.cz/smlouva/21293531)
+- Company website claims 50,000\+ devices sold and 25,000\+ customers, with no period or revenue figure; these are unverified marketing claims\. *(Analyst view)* ^[14](https://www.dronetag.com/),[15](https://www.dronetag.com/)
+  - Assumption: Claims use the company's own counting method
+- Public grants total CZK 22\.21m awarded across eight support items and are not revenue; the only paid amount is CZK 4\.10m for one TAČR project, paid 2022–2024\. *(Verified)* ^[41](https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-CB620BAAB8F876B73CB37E46F22B3EA45A7011A6D4B0075BEC74064FA6A5BC56),[42](https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-BD75A4A2C5439114B888DAC35F1644BA5C96325258C41AD6051E7A4D5F730B62),[43](https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-229B4E8F4048EBD1C3D113AAD9B5204574DE1F45FA3D70E1D6B35696BE338613)
+- Five R&amp;D project agreements \(CZK 45\.57m\) are research\-consortium budgets, not Dronetag revenue\. *(Verified)* ^[19](https://smlouvy.gov.cz/smlouva/19558935),[20](https://smlouvy.gov.cz/smlouva/19531615),[21](https://smlouvy.gov.cz/smlouva/27898271)
 
 ## Market
 
-- Company market claim: '10\+ million active drones worldwide' and accelerating global drone activity \(company\-stated\)\. *(Company claim)* ^[50](https://www.dronetag.com/)
-  - Assumption: This is a company\-provided market driver
-- Procurement demand signal: a won Czech defence tender \(Ministerstvo obrany\) for commercial UAS detection service indicates defence buyer demand\. *(Verified)* ^[24](https://ted.europa.eu/en/notice/-/detail/436033-2026)
-  - Assumption: Tender win signals procurement appetite
-- Other demand evidence: multiple Czech public buyers \(fire service, airports, hospitals\) bought or borrowed Scout/Rider devices per public contract records\. *(Verified)* ^[47](https://smlouvy.gov.cz/smlouva/39280395),[51](https://smlouvy.gov.cz/smlouva/34910865),[52](https://smlouvy.gov.cz/smlouva/38661160)
-  - Assumption: Contracts reflect real institutional customers
+- The company states 10\+ million active drones worldwide and exponential market growth; no independent market\-size figure is supplied\. *(Company claim)* ^[44](https://www.dronetag.com/)
+- Registry purchase orders from fire\-rescue \(HZS\) and Ministry of Defence buyers show public\-safety and defence procurement of detection devices\. *(Analyst view)* ^[45](https://smlouvy.gov.cz/smlouva/39280395),[7](https://smlouvy.gov.cz/smlouva/21293531)
+  - Assumption: Small orders indicate scalable procurement
+- A Technologická Inkubace article says the company started from an upcoming drone monitoring law; the company says it works with EU, US and Asian authorities\. *(Partly verified)* ^[46](https://technologickainkubace.org/en/news/czech-startup-conquers-america-and-expands-further-makes-drone-tracking-devices/),[12](https://www.dronetag.com/)
 
 ## Competition
 
-- DroneTector Limited — listed as NATO DIANA peer; overlaps on small\-drone detection sensors and tracking capabilities \(found in DIANA cohort list\)\. *(Analyst view)* ^[53](https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html)
-  - Assumption: Shared DIANA listing implies product overlap
-- AegisX — DIANA\-listed peer focused on low\-flying drone detection; operational overlap in 'detect &amp; track' capability\. *(Analyst view)* ^[54](https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html)
-  - Assumption: Shared detection focus suggests competitive overlap
-- Broader CUAS/Remote ID incumbents and directories reference Dronetag among global vendors; press directories note crowded C\-UAS market\. *(Analyst view)* ^[25](http://www.unmannedairspace.info/uncategorized/dronetag-drone-detection-system-chosen-for-eudis-business-accelerator-funding/),[55](https://globaldronehq.com/blogs/guides/dronetag-rider-review)
-  - Assumption: Industry directories indicate many competing vendors
+- DroneTector Limited \(UK\), found via the vetted NATO DIANA 2026 cohort list, detects small drones with sensors; overlap is real, but Dronetag's core is Remote ID receivers, so it is not a confirmed competitor\. *(Analyst view)* ^[47](https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html),[1](https://shop.dronetag.com/)
+  - Assumption: Both sell detection to the same defence buyers
+- AegisX \(Sweden\), a DIANA 2026 candidate, detects low\-flying fibre\-optic drones; overlap is partial because it targets a different drone type\. *(Analyst view)* ^[48](https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html)
 
 ## Case for and against
 
-- **For:** Defence validation and pipeline — won Czech Ministry of Defence tender and multiple public\-supplier contracts showing government procurement traction\. *(Analyst view)* ^[24](https://ted.europa.eu/en/notice/-/detail/436033-2026),[21](https://smlouvy.gov.cz/smlouva/21293531),[45](https://smlouvy.gov.cz/smlouva/35562893)
-  - Assumption: Tender win reflects repeatable public procurement capability
-- **For:** Product\-market fit signal — published shop SKUs, device sales and customer counts claimed on company site plus mobile apps in stores\. *(Analyst view)* ^[15](https://www.dronetag.com/),[17](https://www.dronetag.com/),[56](https://apps.apple.com/us/app/drone-scanner/id1644548782?uo=4)
-  - Assumption: Site claims reflect real unit sales
-- **Against:** Market concentration risk — reliance on public grants and R&amp;D project funding \(large R&amp;D project agreements\) could mask commercial margins\. *(Analyst view)* ^[20](https://smlouvy.gov.cz/smlouva/19558935),[8](https://smlouvy.gov.cz/smlouva/19531615),[9](https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-CB620BAAB8F876B73CB37E46F22B3EA45A7011A6D4B0075BEC74064FA6A5BC56)
-  - Assumption: Significant RD projects may indicate dependency on public R&amp;D
-- **Against:** Competitive pressure — multiple DIANA\-listed peers and global C\-UAS directories suggest crowded competition for defence and public\-safety buyers\. *(Analyst view)* ^[53](https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html),[54](https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html),[25](http://www.unmannedairspace.info/uncategorized/dronetag-drone-detection-system-chosen-for-eudis-business-accelerator-funding/)
-  - Assumption: DIANA peer list reflects relevant competition
-- **Must be true:** Verify margins and unit economics on device sales plus subscription ARPU to confirm self\-sustaining commercial model\. *(Analyst view)* ^[18](https://shop.dronetag.com/),[46](https://www.dronetag.com/products/mini-4g),[45](https://smlouvy.gov.cz/smlouva/35562893)
-  - Assumption: Published prices and contract values can be used to model unit economics
-- **Must be true:** Confirm pipeline reproducibility beyond Czech public buyers and that the Ministry\-of\-Defence tender scales to further defence contracts\. *(Analyst view)* ^[24](https://ted.europa.eu/en/notice/-/detail/436033-2026),[47](https://smlouvy.gov.cz/smlouva/39280395),[57](https://smlouvy.gov.cz/smlouva/39254662)
-  - Assumption: Current public contracts are representative of future pipeline
+- **For:** Public research bodies have funded the core technology: TAČR awarded CZK 4\.10m for IoT drone identification \(paid in full\) and CZK 3\.70m for U\-space testing\. *(Analyst view)* ^[41](https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-CB620BAAB8F876B73CB37E46F22B3EA45A7011A6D4B0075BEC74064FA6A5BC56),[42](https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-BD75A4A2C5439114B888DAC35F1644BA5C96325258C41AD6051E7A4D5F730B62)
+  - Assumption: Funded projects match the commercial product
+- **For:** Defence\-buyer access is evidenced by the CZK 27\.44m Ministry of Defence tender win and the 2024 NATO DIANA selection\. *(Analyst view)* ^[9](https://ted.europa.eu/en/notice/-/detail/436033-2026),[10](https://web.archive.org/web/20250811133329id_/https://www.diana.nato.int/about-diana/2024-cohort-of-companies.html)
+  - Assumption: Tender scope matches the company's core product
+- **Against:** Revenue remains unquantified: registry sales total CZK 1\.40m, while device and customer figures lack a period and revenue\. *(Analyst view)* ^[8](https://smlouvy.gov.cz/smlouva/35562893),[14](https://www.dronetag.com/),[15](https://www.dronetag.com/)
+- **Against:** Could kill the deal: funding is a 2022 convertible loan with a later round planned, and demand is tied to drone\-monitoring rules that could change\. *(Analyst view)* ^[17](https://cc.cz/cesky-startup-dronetag-zajistuje-bezpecne-letani-s-drony-od-brnenskeho-fondu-ziskava-15-milionu/),[46](https://technologickainkubace.org/en/news/czech-startup-conquers-america-and-expands-further-makes-drone-tracking-devices/)
+  - Assumption: No later round has closed in supplied facts
+- **Must be true:** Diligence must confirm the CZK 27\.44m Ministry of Defence award is contracted, its delivery schedule, and whether it recurs beyond one order\. *(Analyst view)* ^[9](https://ted.europa.eu/en/notice/-/detail/436033-2026)
+  - Assumption: Notice value may differ from contract value
+- **Must be true:** Diligence must establish actual annual revenue with its period, and the amount and currency of the 2022 convertible loan\. *(Analyst view)* ^[17](https://cc.cz/cesky-startup-dronetag-zajistuje-bezpecne-letani-s-drony-od-brnenskeho-fondu-ziskava-15-milionu/),[18](https://www.monitoruji.cz/domaci/1916288/ceske-krabicky-zajistuji-viditelnost-dronu-dronetag-nyni-ziskal-investici-od-y-softu),[14](https://www.dronetag.com/)
 
 # Technical due diligence
 
 ## Ownership and capital
 
-- Closed convertible loan \(reported CZK 15 million\) from Y Soft Ventures; corroborating press coverage\. *(Corroborated)* ^[6](https://cc.cz/cesky-startup-dronetag-zajistuje-bezpecne-letani-s-drony-od-brnenskeho-fondu-ziskava-15-milionu/),[19](https://www.monitoruji.cz/domaci/1916288/ceske-krabicky-zajistuji-viditelnost-dronu-dronetag-nyni-ziskal-investici-od-y-softu),[58](https://www.investujeme.cz/tiskove-zpravy/y-soft-ventures-investuje-do-dronetag-poskytne-vyrobu-i-logistiku/)
-  - Assumption: Reported amount currency is CZK as stated in sources
-- Company incorporated 2019\-06\-07; multiple filings and recent annual reports present in commercial register\. *(Verified)* ^[39](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/08198519),[59](https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=1053249),[60](https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=1053249)
-  - Assumption: Public filings reflect corporate existence
-- Significant public\-money involvement: a mix of purchase orders, R&amp;D project agreements and awarded grants are visible in public registers\. *(Verified)* ^[7](https://smlouvy.gov.cz/smlouva/14335472),[8](https://smlouvy.gov.cz/smlouva/19531615),[9](https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-CB620BAAB8F876B73CB37E46F22B3EA45A7011A6D4B0075BEC74064FA6A5BC56),[48](https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-BD75A4A2C5439114B888DAC35F1644BA5C96325258C41AD6051E7A4D5F730B62),[61](https://www.hlidacstatu.cz/Dotace/Detail/DeMinimis-1C7C01F80F12B968633E05C67F7301F971385B5C0EBD08AD010525B0084D81CD)
-  - Assumption: Each cited entry represents one awarded agreement
+- Only disclosed round: a convertible loan from Y Soft Ventures reported June 2022\. Sources disagree on currency \(EUR 15m versus CZK 15m\), and no later priced round is visible\. *(Corroborated)* ^[17](https://cc.cz/cesky-startup-dronetag-zajistuje-bezpecne-letani-s-drony-od-brnenskeho-fondu-ziskava-15-milionu/),[18](https://www.monitoruji.cz/domaci/1916288/ceske-krabicky-zajistuji-viditelnost-dronu-dronetag-nyni-ziskal-investici-od-y-softu)
+  - Assumption: Both press reports describe the same June 2022 transaction
+- Public money is support, not sales: 5 R&amp;D consortium agreements \(about CZK 45\.6m budget\) with university and industry partners are research budgets\. Those partners are not customers\. *(Verified)* ^[19](https://smlouvy.gov.cz/smlouva/19558935),[20](https://smlouvy.gov.cz/smlouva/19531615),[21](https://smlouvy.gov.cz/smlouva/27898271),[22](https://smlouvy.gov.cz/smlouva/31992832),[49](https://smlouvy.gov.cz/smlouva/38998074)
+- Eight grants totalling CZK 22\.2m were awarded for multi\-year projects\. Only one, CZK 4\.1m, shows payments made, so awards are not received revenue\. *(Verified)* ^[41](https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-CB620BAAB8F876B73CB37E46F22B3EA45A7011A6D4B0075BEC74064FA6A5BC56),[50](https://www.hlidacstatu.cz/Dotace/Detail/DeMinimis-E2B306E7B38FFA8D069A99E770C3DD3ABF062E17AAF092CBC25134F2F0570D30),[42](https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-BD75A4A2C5439114B888DAC35F1644BA5C96325258C41AD6051E7A4D5F730B62),[43](https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-229B4E8F4048EBD1C3D113AAD9B5204574DE1F45FA3D70E1D6B35696BE338613),[51](https://www.hlidacstatu.cz/Dotace/Detail/Eufondy-D2A8FFBB8D0398366E44EA3D58A40667E5A51A3B1DB5EE6D621F4BA30527B367)
 
 ## Technology profile
 
-- Product surfaces: mobile apps \(Drone Scanner gen\.2 and Drone Scanner\), REST API and visualization platform documented in help pages\. *(Partly verified)* ^[12](https://apps.apple.com/us/app/drone-scanner-gen-2/id6742736434?uo=4),[56](https://apps.apple.com/us/app/drone-scanner/id1644548782?uo=4),[13](https://help.dronetag.com/developers/data-pull/getting-started-rest),[3](https://www.dronetag.com/)
-  - Assumption: Docs reflect live product surfaces
-- Device portfolio: RIDER, Scout, Mini and Beacon hardware lines sold via shop with listed prices and battery\-life claims\. *(Company claim)* ^[1](https://www.dronetag.com/products/rider),[42](https://www.dronetag.com/products/scout),[43](https://shop.dronetag.com/),[62](https://www.dronetag.com/products/beacon)
-- Engineering footprint: public GitHub organization with active repos \(sensor demos, Flutter OpenDroneID plugin\) and developer docs\. *(Partly verified)* ^[11](https://github.com/dronetag),[63](https://github.com/dronetag/scout-sensor-demo-map),[64](https://github.com/dronetag/flutter-opendroneid),[36](https://help.dronetag.com/)
-  - Assumption: Public repos indicate in\-house engineering work
+- Company claims Remote ID receivers, transmitters, a visualization platform and a REST API\. Public product pages list portable and stationary drone detection hardware, not independently tested\. *(Company claim)* ^[1](https://shop.dronetag.com/),[2](https://shop.dronetag.com/),[3](https://www.dronetag.com/),[52](https://help.dronetag.com/),[27](https://www.dronetag.com/)
+- Public engineering footprint: 13 collected GitHub repos \(latest push November 2026\), mostly small, and 5 help\-site pages including a REST API guide\. The 50\-person team is a company claim\. *(Partly verified)* ^[11](https://github.com/dronetag/flutter-opendroneid),[53](https://github.com/dronetag/scout-sensor-demo-map),[54](https://help.dronetag.com/developers/data-pull/getting-started-rest),[55](https://www.dronetag.com/),[56](https://github.com/dronetag)
+- AI dependency is not evidenced: no LLM vendor was collected as a tool or subprocessor, and both open engineering roles are hardware, not ML\. AI capability remains unknown\. *(Company claim)* ^[28](https://www.dronetag.com/careers),[30](https://www.dronetag.com/careers)
 
 ## What could be rebuilt, and what cannot be judged from outside
 
-- **Replicable with off-the-shelf parts:** REST API and device data ingestion can be reproduced using standard REST tooling and open OpenDroneID stacks \(docs and plugins available\)\. *(Analyst view)* ^[13](https://help.dronetag.com/developers/data-pull/getting-started-rest),[64](https://github.com/dronetag/flutter-opendroneid),[65](https://github.com/dronetag/opendronelist)
-  - Assumption: Open\- source OpenDroneID implementations suffice for basic ingestion
-- **Edge supported by public evidence:** Awarded R&amp;D grants and a public defence tender win show institutional validation for specific projects, not product performance metrics\. *(Analyst view)* ^[9](https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-CB620BAAB8F876B73CB37E46F22B3EA45A7011A6D4B0075BEC74064FA6A5BC56),[48](https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-BD75A4A2C5439114B888DAC35F1644BA5C96325258C41AD6051E7A4D5F730B62),[24](https://ted.europa.eu/en/notice/-/detail/436033-2026)
-  - Assumption: Grants and tender award imply institutional interest
-- **Cannot be judged from outside:** True operational detection accuracy, network scale \(3,000\+ receivers\) and claimed FAA approvals cannot be judged from public repos, docs or press\. *(Analyst view)* ^[14](https://www.dronetag.com/),[15](https://www.dronetag.com/),[16](https://startuply.vc/article/dronetag-s-faa-approved-hardware-serves-15-military-forces-and-40-countries-1gv9lf)
-  - Assumption: Requires internal telemetry, certificates, and customer contracts
+- **Replicable with off-the-shelf parts:** Direct Remote ID scanning over Wi\-Fi and Bluetooth can be reproduced with the public flutter\-opendroneid plugin on standard phone radios\. Its license is unclear, and field range would differ\. *(Analyst view)* ^[11](https://github.com/dronetag/flutter-opendroneid),[13](https://help.dronetag.com/)
+  - Assumption: Phone\-based scanning is a reference, not Dronetag's receiver hardware
+- **Edge supported by public evidence:** Public evidence supports buyer validation: a NATO DIANA 2024 listing and a Czech Ministry of Defence tender notice naming Dronetag as winner at CZK 27\.4m\. This does not prove product performance\. *(Analyst view)* ^[10](https://web.archive.org/web/20250811133329id_/https://www.diana.nato.int/about-diana/2024-cohort-of-companies.html),[9](https://ted.europa.eu/en/notice/-/detail/436033-2026)
+  - Assumption: The tender notice reflects a final award
+- **Cannot be judged from outside:** Receiver detection range, accuracy and field reliability cannot be judged from outside without test data, device logs or field deployment results\. *(Analyst view)* ^[27](https://www.dronetag.com/),[57](https://www.dronetag.com/)
+  - Assumption: No independent test results were supplied
 
 ## Risks and caveats
 
-- Reliance on public funding and R&amp;D projects for tech development could mask product\-market revenue if purchases are limited\. *(Analyst view)* ^[9](https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-CB620BAAB8F876B73CB37E46F22B3EA45A7011A6D4B0075BEC74064FA6A5BC56),[8](https://smlouvy.gov.cz/smlouva/19531615),[7](https://smlouvy.gov.cz/smlouva/14335472)
-  - Assumption: Grant/R&amp;D receipts support development more than sales
-- Material scale and approval claims \(50k devices, FAA approval, 3,000\+ receivers\) lack direct independent verification in public registers\. *(Analyst view)* ^[15](https://www.dronetag.com/),[16](https://startuply.vc/article/dronetag-s-faa-approved-hardware-serves-15-military-forces-and-40-countries-1gv9lf),[14](https://www.dronetag.com/)
-  - Assumption: Public press is not independent certification
-- Customer concentration risk unclear: public buyer purchases visible but named commercial customers are not listed in public registers\. *(Analyst view)* ^[45](https://smlouvy.gov.cz/smlouva/35562893),[47](https://smlouvy.gov.cz/smlouva/39280395),[17](https://www.dronetag.com/)
-  - Assumption: Public tenders partly offset but do not equal broad commercial revenue
+- Public\-money concentration: only 7 purchase contracts \(about CZK 1\.4m\) are public sales, while R&amp;D and grant money dominates\. One defence tender is the largest buyer signal\. *(Analyst view)* ^[6](https://smlouvy.gov.cz/smlouva/14335472),[7](https://smlouvy.gov.cz/smlouva/21293531),[58](https://smlouvy.gov.cz/smlouva/34910865),[8](https://smlouvy.gov.cz/smlouva/35562893),[9](https://ted.europa.eu/en/notice/-/detail/436033-2026)
+- Unverified scale claims: 50,000\+ devices sold, 25,000\+ customers and a 3,000\+ receiver network are company website statements with no independent check\. *(Analyst view)* ^[14](https://www.dronetag.com/),[15](https://www.dronetag.com/),[12](https://www.dronetag.com/)
+- Thin visible engineering: 2 open engineering roles, both hardware, and 2 sales partnership roles\. The team size is a company claim\. *(Analyst view)* ^[28](https://www.dronetag.com/careers),[30](https://www.dronetag.com/careers),[55](https://www.dronetag.com/)
 
 ## Questions for founders
 
-- Please provide audited shipment and invoiced\-customer lists to substantiate the '50,000\+ sold devices' claim\. *(Analyst view)* ^[15](https://www.dronetag.com/)
-- Please share documentation \(FAA certificates or approvals\) supporting the press claim of 'FAA\-approved hardware'\. *(Analyst view)* ^[16](https://startuply.vc/article/dronetag-s-faa-approved-hardware-serves-15-military-forces-and-40-countries-1gv9lf)
-- Provide representative commercial contracts and margin data for purchase orders vs\. R&amp;D grants to clarify revenue mix\. *(Analyst view)* ^[7](https://smlouvy.gov.cz/smlouva/14335472),[8](https://smlouvy.gov.cz/smlouva/19531615),[9](https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-CB620BAAB8F876B73CB37E46F22B3EA45A7011A6D4B0075BEC74064FA6A5BC56)
-- Request performance benchmarks and raw detection telemetry to validate claimed network scale and detection accuracy\. *(Analyst view)* ^[14](https://www.dronetag.com/),[64](https://github.com/dronetag/flutter-opendroneid),[63](https://github.com/dronetag/scout-sensor-demo-map)
+- What are annual revenue, gross margin and the hardware versus subscription split? The 2025 accounts were filed but are not in the data\. *(Analyst view)* ^[16](https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=1053249),[59](https://www.dronetag.com/products/mini-4g),[60](https://www.dronetag.com/products/scout)
+- Of the claimed 50,000\+ devices and 25,000\+ customers, how many are paying, and can the company provide named references? *(Analyst view)* ^[14](https://www.dronetag.com/),[15](https://www.dronetag.com/),[36](https://www.dronetag.com/reference-installations)
+- What in the stack beyond the public Remote ID plugin is hard to copy, such as firmware, data or certifications, given no patent facts were collected? *(Analyst view)* ^[11](https://github.com/dronetag/flutter-opendroneid),[12](https://www.dronetag.com/)
 
 ## Sources
 
-1. [dronetag\.com](https://www.dronetag.com/products/rider) · Company's own website · Product capability — “A compact, wireless, battery\-powered Remote ID receiver designed for public safety organizations and professional pilots, providing instant situational awareness in the field\.”
+1. [shop\.dronetag\.com](https://shop.dronetag.com/) · Company's own website · Product capability — “Remote ID Receivers Detect, monitor and visualize nearby drone activity in real time\.”
 2. [shop\.dronetag\.com](https://shop.dronetag.com/) · Company's own website · Product capability — “Remote ID Transmitters Make drones digitally visible and compliant across operations\.”
 3. [dronetag\.com](https://www.dronetag.com/) · Company's own website · Product capability — “Take command with the Dronetag App, the central hub of our ecosystem\. Manage devices, inspect airspace, and analyze flight data from a single, intuitive interface on mobile and web\.”
-4. [help\.dronetag\.com](https://help.dronetag.com/) · Company's own website · Integration — “Use our API services to receive air traffic data, share your data or learn how to integrate our platform services into your application\.”
-5. [dronetag\.com](https://www.dronetag.com/) · Company's own website · Integration — “Seamless Integration Our hardware and software are designed to work in perfect harmony\. With over 15 UTM integration partners and a seamless API, our solutions easily integrate into your existing workflow\.”
-6. [cc\.cz](https://cc.cz/cesky-startup-dronetag-zajistuje-bezpecne-letani-s-drony-od-brnenskeho-fondu-ziskava-15-milionu/) · Independent press · Funding round — “Aktuální investice je strukturovaná jako konvertibilní půjčka”
-7. [smlouvy\.gov\.cz](https://smlouvy.gov.cz/smlouva/14335472) · Official record · Public contract · 2020\-11\-03 — “Správa informačních technologií města Plzně · 120 000 CZK · objednávka”
-8. [smlouvy\.gov\.cz](https://smlouvy.gov.cz/smlouva/19531615) · Official record · Public contract · 2022\-01\-05 — “České vysoké učení technické v Praze · 6 802 393 CZK · Smlouva o účasti na řešení projektu č\. FW04020025”
-9. [hlidacstatu\.cz](https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-CB620BAAB8F876B73CB37E46F22B3EA45A7011A6D4B0075BEC74064FA6A5BC56) · Official record · National grant · 2022 — “IoT zařízení pro digitální identifikaci pilotovaného letectví v U\-space · Technologická agentura ČR · 4 102 946 CZK”
+4. [dronetag\.com](https://www.dronetag.com/products/rider) · Company's own website · Product capability — “A compact, wireless, battery\-powered Remote ID receiver designed for public safety organizations and professional pilots, providing instant situational awareness in the field\.”
+5. [dronetag\.com](https://www.dronetag.com/products/beacon) · Company's own website · Customer — “Used by Professional Pilots &amp; Drone Builders”
+6. [smlouvy\.gov\.cz](https://smlouvy.gov.cz/smlouva/14335472) · Official record · Public contract · 2020\-11\-03 — “Správa informačních technologií města Plzně · 120 000 CZK · objednávka”
+7. [smlouvy\.gov\.cz](https://smlouvy.gov.cz/smlouva/21293531) · Official record · Public contract · 2022\-08\-08 — “Česká republika \- Ministerstvo obrany · 68 970 CZK · 22373/2022\-VLCH Zažízení pro dálkovou identifikaci dronů, č\. spec\. 36896/22, pro projekt AIROPS \(DZRO AIROPS\), Účtování dle bodu usměrnění VaV č\.1\.”
+8. [smlouvy\.gov\.cz](https://smlouvy.gov.cz/smlouva/35562893) · Official record · Public contract · 2025\-11\-11 — “LOM PRAHA s\.p\. · 578 709 CZK · Kupní smlouva \- detekční zařízení”
+9. [ted\.europa\.eu](https://ted.europa.eu/en/notice/-/detail/436033-2026) · Official record · EU procurement notice \(TED\) · 2026\-06\-23 — “Czechia – Electronic message and information services – Detekce komerčních UAS pomocí RID \- služba — buyer: Ministerstvo obrany”
 10. [web\.archive\.org](https://web.archive.org/web/20250811133329id_/https://www.diana.nato.int/about-diana/2024-cohort-of-companies.html) · Official record · Accelerator selection · 2024 — “DRONETAG — Secure Information Sharing”
-11. [github\.com](https://github.com/dronetag) · Public technical artifact · GitHub organisation · 2019\-07\-16 — “dronetag · 31 public repos”
-12. [apps\.apple\.com](https://apps.apple.com/us/app/drone-scanner-gen-2/id6742736434?uo=4) · Public technical artifact · Mobile app · 2025\-05\-30 — “Drone Scanner \(gen\.2\)”
-13. [help\.dronetag\.com](https://help.dronetag.com/developers/data-pull/getting-started-rest) · Company's own website · Website page — “Getting Started with the REST API \| Dronetag Help”
-14. [dronetag\.com](https://www.dronetag.com/) · Company's own website · Technical claim — “Dronetag founders co\-authored the technical white paper for the Remote ID protocol\. We work directly with authorities in the EU, the US, and Asia to shape the future of drone regulation\.”
-15. [dronetag\.com](https://www.dronetag.com/) · Company's own website · Revenue / traction figure — “Sold devices 50,000 \+”
-16. [startuply\.vc](https://startuply.vc/article/dronetag-s-faa-approved-hardware-serves-15-military-forces-and-40-countries-1gv9lf) · Independent press · Press article · 2026\-05\-22 — “Dronetag's FAA\-Approved Hardware Serves 15 Military Forces and 40 Countries”
-17. [dronetag\.com](https://www.dronetag.com/) · Company's own website · Revenue / traction figure — “Customers 25,000 \+”
-18. [shop\.dronetag\.com](https://shop.dronetag.com/) · Company's own website · Pricing — “Dronetag RIDER 24,990 Kč”
-19. [monitoruji\.cz](https://www.monitoruji.cz/domaci/1916288/ceske-krabicky-zajistuji-viditelnost-dronu-dronetag-nyni-ziskal-investici-od-y-softu) · Independent press · Funding round — “Český startup Dronetag získal investici 15 milionů korun od brněnského fondu Y Soft Ventures spadajícího pod společnost Y Soft\.”
-20. [smlouvy\.gov\.cz](https://smlouvy.gov.cz/smlouva/19558935) · Official record · Public contract · 2021\-12\-21 — “TECHNISERV, spol\. s r\.o\., · 18 646 872 CZK · Smlouva o účasti na řešení projektu CK03000054 a využití výsledků”
-21. [smlouvy\.gov\.cz](https://smlouvy.gov.cz/smlouva/21293531) · Official record · Public contract · 2022\-08\-08 — “Česká republika \- Ministerstvo obrany · 68 970 CZK · 22373/2022\-VLCH Zažízení pro dálkovou identifikaci dronů, č\. spec\. 36896/22, pro projekt AIROPS \(DZRO AIROPS\), Účtování dle bodu usměrnění VaV č\.1\.”
-22. [smlouvy\.gov\.cz](https://smlouvy.gov.cz/smlouva/27898271) · Official record · Public contract · 2024\-03\-05 — “UpVision s\.r\.o\., · 20 119 961 CZK · Smlouva o účasti na řešení projektu CL01000047”
-23. [smlouvy\.gov\.cz](https://smlouvy.gov.cz/smlouva/31992832) · Official record · Public contract · 2025\-02\-03 — “TECHNISERV, spol\. s r\.o\. · 0 CZK · Smlouva o využití výsledků projektu CK03000054”
-24. [ted\.europa\.eu](https://ted.europa.eu/en/notice/-/detail/436033-2026) · Official record · EU procurement notice \(TED\) · 2026\-06\-23 — “Czechia – Electronic message and information services – Detekce komerčních UAS pomocí RID \- služba — buyer: Ministerstvo obrany”
-25. [unmannedairspace\.info](http://www.unmannedairspace.info/uncategorized/dronetag-drone-detection-system-chosen-for-eudis-business-accelerator-funding/) · Independent press · Press article · 2026\-03\-18 — “Dronetag drone detection system chosen for EUDIS Business Accelerator funding \- Unmanned airspace”
-26. [esa\-bic\.cz](https://www.esa-bic.cz/startups/dronetag/) · Independent press · Press article — “Dronetag – ESA BIC Czech Republic”
-27. [euro\.cz](https://www.euro.cz/clanky/uz-zadne-ufo-y-soft-investuje-15-milionu-do-startupu-dronetag-ktery-se-zabyva-dalkovou-identifikaci-dronu/) · Independent press · Press article · 2022\-06\-28 — “Už žádné UFO\. Y Soft investuje 15 milionů do startupu Dronetag, který se zabývá dálkovou identifikací dronů \- Euro\.cz”
-28. [dronetag\.com](https://www.dronetag.com/) · Company's own website · Product capability — “Portable, battery\-powered drone detection”
-29. [dronetag\.com](https://www.dronetag.com/careers) · Company's own website · Job posting — “Engineering Hardware Engineer Prague, Czech Republic Full\-Time On\-Site”
-30. [dronetag\.com](https://www.dronetag.com/careers) · Company's own website · Job posting — “Engineering Hardware Engineer Prague, Czech Republic Full\-Time On\-Site See more”
-31. [dronetag\.com](https://www.dronetag.com/careers) · Company's own website · Job posting — “Sales Partnership Development Manager Prague, Czech Republic Full\-Time Hybrid”
-32. [dronetag\.com](https://www.dronetag.com/careers) · Company's own website · Job posting — “Sales Partnership Development Manager Prague, Czech Republic Full\-Time Hybrid See more”
-33. [github\.com](https://github.com/dronetag/pre-commit-hooks) · Public technical artifact · GitHub repository · 2025\-07\-24 — “dronetag/pre\-commit\-hooks · Python · last push 2025\-07\-24”
-34. [github\.com](https://github.com/dronetag/device-configuration-sample) · Public technical artifact · GitHub repository · 2025\-09\-19 — “dronetag/device\-configuration\-sample · Sample scripts to control configuration settings of Dronetag devices · Python · last push 2025\-09\-19”
-35. [github\.com](https://github.com/dronetag/mavsniff) · Public technical artifact · GitHub repository · 2025\-09\-29 — “dronetag/mavsniff · Python · last push 2025\-09\-29”
-36. [help\.dronetag\.com](https://help.dronetag.com/) · Company's own website · Website page — “Dronetag Help”
-37. [dronetag\.com](https://www.dronetag.com/reference-installations) · Company's own website · Website page — “Drone Detection Installations by Dronetag”
-38. [help\.dronetag\.com](https://help.dronetag.com/) · Company's own website · Pricing — “Find out more about our subscription plans and how to manage your subscription”
-39. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/08198519) · Official record · Registry: incorporation · 2019\-06\-07 — “registered 2019\-06\-07”
-40. [business\.esa\.int](https://business.esa.int/news/aspiring-to-new-heights-drone-remote-id-device) · Independent press · Press article · 2022\-01\-31 — “Aspiring to new heights with drone Remote ID device”
-41. [technologickainkubace\.org](https://technologickainkubace.org/en/news/czech-startup-conquers-america-and-expands-further-makes-drone-tracking-devices/) · Independent press · Press article · 2025\-01\-22 — “Czech startup conquers America and expands further\. Makes drone tracking devices \- Technologická Inkubace”
-42. [dronetag\.com](https://www.dronetag.com/products/scout) · Company's own website · Pricing — “From €3,099 / $3,499”
-43. [shop\.dronetag\.com](https://shop.dronetag.com/) · Company's own website · Pricing — “Dronetag Mini 7,030 Kč”
-44. [shop\.dronetag\.com](https://shop.dronetag.com/) · Company's own website · Pricing — “Dronetag Beacon 3,499 Kč”
-45. [smlouvy\.gov\.cz](https://smlouvy.gov.cz/smlouva/35562893) · Official record · Public contract · 2025\-11\-11 — “LOM PRAHA s\.p\. · 578 709 CZK · Kupní smlouva \- detekční zařízení”
-46. [dronetag\.com](https://www.dronetag.com/products/mini-4g) · Company's own website · Pricing — “Plans start at €15 / $15 per month, and you get the first 2 months on us\.”
-47. [smlouvy\.gov\.cz](https://smlouvy.gov.cz/smlouva/39280395) · Official record · Public contract · 2026\-08\-27 — “MV \- generální ředitelství HZS ČR · 198 439 CZK · Nákup stacionárního přijímače dálkové identifikace Dronetag Scout s příslušenstvím”
-48. [hlidacstatu\.cz](https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-BD75A4A2C5439114B888DAC35F1644BA5C96325258C41AD6051E7A4D5F730B62) · Official record · National grant · 2024 — “Zkušební implementace U\-space v České republice · Technologická agentura ČR · 3 696 180 CZK”
-49. [hlidacstatu\.cz](https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-229B4E8F4048EBD1C3D113AAD9B5204574DE1F45FA3D70E1D6B35696BE338613) · Official record · National grant · 2022 — “Digitalizace poskytování služeb AFIS a Radio · Technologická agentura ČR · 4 363 875 CZK”
-50. [dronetag\.com](https://www.dronetag.com/) · Company's own website · Market statement — “With 10\+ millions active drones worldwide and exponential market growth, the skies are becoming increasingly complex\.”
-51. [smlouvy\.gov\.cz](https://smlouvy.gov.cz/smlouva/34910865) · Official record · Public contract · 2025\-09\-17 — “České vysoké učení technické v Praze · 140 617 CZK · Dronetag Scout \- 2xOmni \+ 2x90° Sector”
-52. [smlouvy\.gov\.cz](https://smlouvy.gov.cz/smlouva/38661160) · Official record · Public contract · 2026\-07\-07 — “Karlovarská krajská nemocnice a\.s\. · 131 390 CZK · Smlouva o výpůjčce \- 1 x Dronetag Scout v konfiguraci 4x směrová anténa s LTE modulem”
-53. [web\.archive\.org](https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html) · Official record · NATO DIANA cohort company — “DroneTector Limited: High\-resolution sensors to detect and track small drones”
-54. [web\.archive\.org](https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html) · Official record · NATO DIANA cohort company — “AegisX: Detecting &amp; tracking low flying fibre optic drones”
-55. [globaldronehq\.com](https://globaldronehq.com/blogs/guides/dronetag-rider-review) · Independent press · Press article · 2026\-06\-20 — “Dronetag RIDER Review 2026: Remote ID Detector – Global Drone HQ”
-56. [apps\.apple\.com](https://apps.apple.com/us/app/drone-scanner/id1644548782?uo=4) · Public technical artifact · Mobile app · 2022\-09\-11 — “Drone Scanner”
-57. [smlouvy\.gov\.cz](https://smlouvy.gov.cz/smlouva/39254662) · Official record · Public contract · 2026\-08\-25 — “Hasičský záchranný sbor Pardubického kraje · 181 322 CZK · objednávka: nákup 1 ks zařízení pro dálkovou identifikaci dronů Dronetag Scout \+4x90°”
-58. [investujeme\.cz](https://www.investujeme.cz/tiskove-zpravy/y-soft-ventures-investuje-do-dronetag-poskytne-vyrobu-i-logistiku/) · Independent press · Press article · 2022\-06\-27 — “Y Soft Ventures investuje do Dronetag, poskytne výrobu i logistiku \- Investujeme\.cz \- odborný server společnosti Swiss Life Select a\.s\.”
-59. [or\.justice\.cz](https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=1053249) · Official record · Registry: filed document · 2024\-07\-13
-60. [or\.justice\.cz](https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=1053249) · Official record · Registry: filed document · 2026\-10\-12
+11. [github\.com](https://github.com/dronetag/flutter-opendroneid) · Public technical artifact · GitHub repository · 2026\-11\-02 — “dronetag/flutter\-opendroneid · Flutter plugin for receiving Bluetooth advertising/WiFi NAN signals/beacons · Dart · last push 2026\-11\-02”
+12. [dronetag\.com](https://www.dronetag.com/) · Company's own website · Technical claim — “Dronetag founders co\-authored the technical white paper for the Remote ID protocol\. We work directly with authorities in the EU, the US, and Asia to shape the future of drone regulation\.”
+13. [help\.dronetag\.com](https://help.dronetag.com/) · Company's own website · Product capability — “Tool for scanning Direct Remote ID signals through Wifi and Bluetooth”
+14. [dronetag\.com](https://www.dronetag.com/) · Company's own website · Revenue / traction figure — “Sold devices 50,000 \+”
+15. [dronetag\.com](https://www.dronetag.com/) · Company's own website · Revenue / traction figure — “Customers 25,000 \+”
+16. [or\.justice\.cz](https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=1053249) · Official record · Registry: filed document · 2026\-10\-12
+17. [cc\.cz](https://cc.cz/cesky-startup-dronetag-zajistuje-bezpecne-letani-s-drony-od-brnenskeho-fondu-ziskava-15-milionu/) · Independent press · Funding round — “Aktuální investice je strukturovaná jako konvertibilní půjčka”
+18. [monitoruji\.cz](https://www.monitoruji.cz/domaci/1916288/ceske-krabicky-zajistuji-viditelnost-dronu-dronetag-nyni-ziskal-investici-od-y-softu) · Independent press · Funding round — “Český startup Dronetag získal investici 15 milionů korun od brněnského fondu Y Soft Ventures spadajícího pod společnost Y Soft\.”
+19. [smlouvy\.gov\.cz](https://smlouvy.gov.cz/smlouva/19558935) · Official record · Public contract · 2021\-12\-21 — “TECHNISERV, spol\. s r\.o\., · 18 646 872 CZK · Smlouva o účasti na řešení projektu CK03000054 a využití výsledků”
+20. [smlouvy\.gov\.cz](https://smlouvy.gov.cz/smlouva/19531615) · Official record · Public contract · 2022\-01\-05 — “České vysoké učení technické v Praze · 6 802 393 CZK · Smlouva o účasti na řešení projektu č\. FW04020025”
+21. [smlouvy\.gov\.cz](https://smlouvy.gov.cz/smlouva/27898271) · Official record · Public contract · 2024\-03\-05 — “UpVision s\.r\.o\., · 20 119 961 CZK · Smlouva o účasti na řešení projektu CL01000047”
+22. [smlouvy\.gov\.cz](https://smlouvy.gov.cz/smlouva/31992832) · Official record · Public contract · 2025\-02\-03 — “TECHNISERV, spol\. s r\.o\. · 0 CZK · Smlouva o využití výsledků projektu CK03000054”
+23. [startuply\.vc](https://startuply.vc/article/dronetag-s-faa-approved-hardware-serves-15-military-forces-and-40-countries-1gv9lf) · Independent press · Press article · 2026\-05\-22 — “Dronetag's FAA\-Approved Hardware Serves 15 Military Forces and 40 Countries”
+24. [unmannedairspace\.info](http://www.unmannedairspace.info/uncategorized/dronetag-drone-detection-system-chosen-for-eudis-business-accelerator-funding/) · Independent press · Press article · 2026\-03\-18 — “Dronetag drone detection system chosen for EUDIS Business Accelerator funding \- Unmanned airspace”
+25. [esa\-bic\.cz](https://www.esa-bic.cz/startups/dronetag/) · Independent press · Press article — “Dronetag – ESA BIC Czech Republic”
+26. [euro\.cz](https://www.euro.cz/clanky/uz-zadne-ufo-y-soft-investuje-15-milionu-do-startupu-dronetag-ktery-se-zabyva-dalkovou-identifikaci-dronu/) · Independent press · Press article · 2022\-06\-28 — “Už žádné UFO\. Y Soft investuje 15 milionů do startupu Dronetag, který se zabývá dálkovou identifikací dronů \- Euro\.cz”
+27. [dronetag\.com](https://www.dronetag.com/) · Company's own website · Product capability — “Portable, battery\-powered drone detection”
+28. [dronetag\.com](https://www.dronetag.com/careers) · Company's own website · Job posting — “Engineering Hardware Engineer Prague, Czech Republic Full\-Time On\-Site”
+29. [dronetag\.com](https://www.dronetag.com/careers) · Company's own website · Job posting — “Engineering Hardware Engineer Prague, Czech Republic Full\-Time On\-Site See more”
+30. [dronetag\.com](https://www.dronetag.com/careers) · Company's own website · Job posting — “Sales Partnership Development Manager Prague, Czech Republic Full\-Time Hybrid”
+31. [dronetag\.com](https://www.dronetag.com/careers) · Company's own website · Job posting — “Sales Partnership Development Manager Prague, Czech Republic Full\-Time Hybrid See more”
+32. [github\.com](https://github.com/dronetag/pre-commit-hooks) · Public technical artifact · GitHub repository · 2025\-07\-24 — “dronetag/pre\-commit\-hooks · Python · last push 2025\-07\-24”
+33. [github\.com](https://github.com/dronetag/device-configuration-sample) · Public technical artifact · GitHub repository · 2025\-09\-19 — “dronetag/device\-configuration\-sample · Sample scripts to control configuration settings of Dronetag devices · Python · last push 2025\-09\-19”
+34. [github\.com](https://github.com/dronetag/mavsniff) · Public technical artifact · GitHub repository · 2025\-09\-29 — “dronetag/mavsniff · Python · last push 2025\-09\-29”
+35. [help\.dronetag\.com](https://help.dronetag.com/) · Company's own website · Website page — “Dronetag Help”
+36. [dronetag\.com](https://www.dronetag.com/reference-installations) · Company's own website · Website page — “Drone Detection Installations by Dronetag”
+37. [help\.dronetag\.com](https://help.dronetag.com/) · Company's own website · Pricing — “Find out more about our subscription plans and how to manage your subscription”
+38. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/08198519) · Official record · Registry: incorporation · 2019\-06\-07 — “registered 2019\-06\-07”
+39. [business\.esa\.int](https://business.esa.int/news/aspiring-to-new-heights-drone-remote-id-device) · Independent press · Press article · 2022\-01\-31 — “Aspiring to new heights with drone Remote ID device”
+40. [smlouvy\.gov\.cz](https://smlouvy.gov.cz/smlouva/39254662) · Official record · Public contract · 2026\-08\-25 — “Hasičský záchranný sbor Pardubického kraje · 181 322 CZK · objednávka: nákup 1 ks zařízení pro dálkovou identifikaci dronů Dronetag Scout \+4x90°”
+41. [hlidacstatu\.cz](https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-CB620BAAB8F876B73CB37E46F22B3EA45A7011A6D4B0075BEC74064FA6A5BC56) · Official record · National grant · 2022 — “IoT zařízení pro digitální identifikaci pilotovaného letectví v U\-space · Technologická agentura ČR · 4 102 946 CZK”
+42. [hlidacstatu\.cz](https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-BD75A4A2C5439114B888DAC35F1644BA5C96325258C41AD6051E7A4D5F730B62) · Official record · National grant · 2024 — “Zkušební implementace U\-space v České republice · Technologická agentura ČR · 3 696 180 CZK”
+43. [hlidacstatu\.cz](https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-229B4E8F4048EBD1C3D113AAD9B5204574DE1F45FA3D70E1D6B35696BE338613) · Official record · National grant · 2022 — “Digitalizace poskytování služeb AFIS a Radio · Technologická agentura ČR · 4 363 875 CZK”
+44. [dronetag\.com](https://www.dronetag.com/) · Company's own website · Market statement — “With 10\+ millions active drones worldwide and exponential market growth, the skies are becoming increasingly complex\.”
+45. [smlouvy\.gov\.cz](https://smlouvy.gov.cz/smlouva/39280395) · Official record · Public contract · 2026\-08\-27 — “MV \- generální ředitelství HZS ČR · 198 439 CZK · Nákup stacionárního přijímače dálkové identifikace Dronetag Scout s příslušenstvím”
+46. [technologickainkubace\.org](https://technologickainkubace.org/en/news/czech-startup-conquers-america-and-expands-further-makes-drone-tracking-devices/) · Independent press · Press article · 2025\-01\-22 — “Czech startup conquers America and expands further\. Makes drone tracking devices \- Technologická Inkubace”
+47. [web\.archive\.org](https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html) · Official record · NATO DIANA cohort company — “DroneTector Limited: High\-resolution sensors to detect and track small drones”
+48. [web\.archive\.org](https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html) · Official record · NATO DIANA cohort company — “AegisX: Detecting &amp; tracking low flying fibre optic drones”
+49. [smlouvy\.gov\.cz](https://smlouvy.gov.cz/smlouva/38998074) · Official record · Public contract · 2026\-07\-30 — “UpVision s\.r\.o\. · 0 CZK · Smlouva o využití výsledků projektu CL01000047”
+50. [hlidacstatu\.cz](https://www.hlidacstatu.cz/Dotace/Detail/DeMinimis-E2B306E7B38FFA8D069A99E770C3DD3ABF062E17AAF092CBC25134F2F0570D30) · Official record · National grant · 2020 — “Účast v projektu CzechStarter \(projekt Podpora start\-upů, reg\. č\. CZ\.01\.2\.111/0\.0/0\.0/15\_022/0005661\), VI\. výzva · Agentura pro podporu podnikání a investic CzechInvest · 797 171 CZK”
+51. [hlidacstatu\.cz](https://www.hlidacstatu.cz/Dotace/Detail/Eufondy-D2A8FFBB8D0398366E44EA3D58A40667E5A51A3B1DB5EE6D621F4BA30527B367) · Official record · National grant · 2025 — “Podpora veletržních aktivit společnosti Dronetag s\.r\.o\. · Ministerstvo pro místní rozvoj · 972 335 CZK”
+52. [help\.dronetag\.com](https://help.dronetag.com/) · Company's own website · Integration — “Use our API services to receive air traffic data, share your data or learn how to integrate our platform services into your application\.”
+53. [github\.com](https://github.com/dronetag/scout-sensor-demo-map) · Public technical artifact · GitHub repository · 2026\-08\-14 — “dronetag/scout\-sensor\-demo\-map · Example application of consuming data from the sensor mode of the Dronetag Scout · Jinja · last push 2026\-08\-14”
+54. [help\.dronetag\.com](https://help.dronetag.com/developers/data-pull/getting-started-rest) · Company's own website · Website page — “Getting Started with the REST API \| Dronetag Help”
+55. [dronetag\.com](https://www.dronetag.com/) · Company's own website · Team claim — “We are a team of 50 multidisciplinary experts, pilots, and engineers passionate about creating technology that solves real\-world problems for the entire drone community\.”
+56. [github\.com](https://github.com/dronetag) · Public technical artifact · GitHub organisation · 2019\-07\-16 — “dronetag · 31 public repos”
+57. [dronetag\.com](https://www.dronetag.com/) · Company's own website · Product capability — “Stationary, long\-range drone detection”
+58. [smlouvy\.gov\.cz](https://smlouvy.gov.cz/smlouva/34910865) · Official record · Public contract · 2025\-09\-17 — “České vysoké učení technické v Praze · 140 617 CZK · Dronetag Scout \- 2xOmni \+ 2x90° Sector”
+59. [dronetag\.com](https://www.dronetag.com/products/mini-4g) · Company's own website · Pricing — “Plans start at €15 / $15 per month, and you get the first 2 months on us\.”
+60. [dronetag\.com](https://www.dronetag.com/products/scout) · Company's own website · Pricing — “From €3,099 / $3,499”
 61. [hlidacstatu\.cz](https://www.hlidacstatu.cz/Dotace/Detail/DeMinimis-1C7C01F80F12B968633E05C67F7301F971385B5C0EBD08AD010525B0084D81CD) · Official record · National grant · 2019 — “Podpora byla udělena na základě výběru do programu ESA BIC Prague\. · Agentura pro podporu podnikání a investic CzechInvest · 1 351 788 CZK”
-62. [dronetag\.com](https://www.dronetag.com/products/beacon) · Company's own website · Product capability — “Up to 8\-hour battery”
-63. [github\.com](https://github.com/dronetag/scout-sensor-demo-map) · Public technical artifact · GitHub repository · 2026\-08\-14 — “dronetag/scout\-sensor\-demo\-map · Example application of consuming data from the sensor mode of the Dronetag Scout · Jinja · last push 2026\-08\-14”
-64. [github\.com](https://github.com/dronetag/flutter-opendroneid) · Public technical artifact · GitHub repository · 2026\-11\-02 — “dronetag/flutter\-opendroneid · Flutter plugin for receiving Bluetooth advertising/WiFi NAN signals/beacons · Dart · last push 2026\-11\-02”
-65. [github\.com](https://github.com/dronetag/opendronelist) · Public technical artifact · GitHub repository · 2025\-10\-16 — “dronetag/opendronelist · A public community\-driven list of drones and their common properties · HTML · last push 2025\-10\-16”
-66. [hlidacstatu\.cz](https://www.hlidacstatu.cz/Dotace/Detail/DeMinimis-E2B306E7B38FFA8D069A99E770C3DD3ABF062E17AAF092CBC25134F2F0570D30) · Official record · National grant · 2020 — “Účast v projektu CzechStarter \(projekt Podpora start\-upů, reg\. č\. CZ\.01\.2\.111/0\.0/0\.0/15\_022/0005661\), VI\. výzva · Agentura pro podporu podnikání a investic CzechInvest · 797 171 CZK”
-67. [smlouvy\.gov\.cz](https://smlouvy.gov.cz/smlouva/39744521) · Official record · Public contract · 2026\-09\-25 — “Státní pokladna Centrum sdílených služeb, s\. p\. · 241 589 CZK · Smlouva o výpůjčce\_zařízení Dronetag Scout”
-68. [web\.archive\.org](https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html) · Official record · NATO DIANA cohort company — “OLEDCOMM: Stealth in drone flight\. Unjammable connectivity by light”
-69. [web\.archive\.org](https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html) · Official record · NATO DIANA cohort company — “VISS: Hardware\-enforced endpoint protection making remote cyber compromise physically impossible”
-70. [web\.archive\.org](https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html) · Official record · NATO DIANA cohort company — “DATAMBIT Limited: AI deepfake detection securing operational integrity and strengthening strategic decisions”
-71. [web\.archive\.org](https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html) · Official record · NATO DIANA cohort company — “Ca nadian Strategic Missions Corporation: Remote monitoring for Micro Modular Reactors \(MMRs\)”
-72. [web\.archive\.org](https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html) · Official record · NATO DIANA cohort company — “SolarinBlue: Fast \(re\)\-deployment of floating solar farms in remote locations”
-73. [web\.archive\.org](https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html) · Official record · NATO DIANA cohort company — “Volta Space Technologies: Persistent drone flight and emergency power in extremely cold environments”
-74. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/08198519) · Official record · Registry: identity · 2019\-06\-07 — “Dronetag s\.r\.o\. · s\.r\.o\. · registered 2019\-06\-07”
+62. [smlouvy\.gov\.cz](https://smlouvy.gov.cz/smlouva/38661160) · Official record · Public contract · 2026\-07\-07 — “Karlovarská krajská nemocnice a\.s\. · 131 390 CZK · Smlouva o výpůjčce \- 1 x Dronetag Scout v konfiguraci 4x směrová anténa s LTE modulem”
+63. [smlouvy\.gov\.cz](https://smlouvy.gov.cz/smlouva/39744521) · Official record · Public contract · 2026\-09\-25 — “Státní pokladna Centrum sdílených služeb, s\. p\. · 241 589 CZK · Smlouva o výpůjčce\_zařízení Dronetag Scout”
+64. [web\.archive\.org](https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html) · Official record · NATO DIANA cohort company — “OLEDCOMM: Stealth in drone flight\. Unjammable connectivity by light”
+65. [web\.archive\.org](https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html) · Official record · NATO DIANA cohort company — “VISS: Hardware\-enforced endpoint protection making remote cyber compromise physically impossible”
+66. [web\.archive\.org](https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html) · Official record · NATO DIANA cohort company — “DATAMBIT Limited: AI deepfake detection securing operational integrity and strengthening strategic decisions”
+67. [web\.archive\.org](https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html) · Official record · NATO DIANA cohort company — “Ca nadian Strategic Missions Corporation: Remote monitoring for Micro Modular Reactors \(MMRs\)”
+68. [web\.archive\.org](https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html) · Official record · NATO DIANA cohort company — “SolarinBlue: Fast \(re\)\-deployment of floating solar farms in remote locations”
+69. [web\.archive\.org](https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html) · Official record · NATO DIANA cohort company — “Volta Space Technologies: Persistent drone flight and emergency power in extremely cold environments”
+70. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/08198519) · Official record · Registry: identity · 2019\-06\-07 — “Dronetag s\.r\.o\. · s\.r\.o\. · registered 2019\-06\-07”
 
 ## How this dossier was built
 
@@ -217,7 +195,7 @@ dronetag\.com · Dronetag s\.r\.o\. · IČO 08198519 · CZ · 2026\-11\-20
 | Web history | Wayback Machine: first captures of the domain and key pages | 3 | — |
 | AI extraction | an LLM reads saved pages and articles and proposes facts; a fact is kept only if its quote is found in the source text and its category passes rule checks | 60 | — |
 
-Analysis: gpt\-5\-mini (cost $0.0217); AI extraction cost $0.0081. Full fact table: CSV export.
+Analysis: claude\-haiku\-5\-5 (cost $0.0184); AI extraction cost $0.0081. Full fact table: CSV export.
 
 ## Source appendix (all collected facts)
 

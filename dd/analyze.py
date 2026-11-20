@@ -102,6 +102,11 @@ FACT_PRIORITY = {
 }
 
 
+def out_limit(model: str) -> int:
+    """Output token limit. Claude's adaptive thinking counts against it (Haiku 5.5 at medium effort ran out at 12k)."""
+    return 32000 if str(model).startswith("claude-") else 12000
+
+
 def _fact_dict(fact: Fact) -> dict:
     """Compact representation passed to the model; the snapshot hash still uses full data."""
     value = json.dumps(fact.value, ensure_ascii=False, sort_keys=True, separators=(",", ":"), default=str)
@@ -295,7 +300,7 @@ def analyze_company(store: Store, llm, company: Company, model: str | None = Non
     prompt = _prompt(company, bounded_facts, derived)
     selected_model = model or llm.s.model_analyze
     result = llm.call(purpose="company_analysis", model=selected_model, prompt=prompt,
-                      schema=AnalysisResponse, max_output_tokens=12000, system=ANALYSIS_SYSTEM)
+                      schema=AnalysisResponse, max_output_tokens=out_limit(selected_model), system=ANALYSIS_SYSTEM)
     parsed = result.parsed if isinstance(result.parsed, AnalysisResponse) else AnalysisResponse.model_validate(result.parsed)
     sections, referenced_ids = _validated_sections(parsed, allowed_ids)
     from dd import invest  # investment view: second call over the same snapshot

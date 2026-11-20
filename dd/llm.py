@@ -47,6 +47,8 @@ class LLM:
         self.store = store
         self._client = client
         self.effort = os.getenv("LLM_REASONING_EFFORT", "low")
+        # Claude models: "medium" is Haiku 5.5's own default; at "low" it returned incomplete investment views
+        self.claude_effort = os.getenv("LLM_CLAUDE_EFFORT", "medium")
 
     @property
     def client(self):
@@ -84,7 +86,8 @@ class LLM:
 
     def call(self, *, purpose: str, model: str, prompt: str, schema: type[T], max_output_tokens: int = 4000,
              system: str = SYSTEM_GUARD) -> LLMResult:
-        key = hashlib.sha256(json.dumps([model, system, prompt, self.effort, max_output_tokens, schema.__name__,
+        effort = self.claude_effort if model.startswith("claude-") else self.effort
+        key = hashlib.sha256(json.dumps([model, system, prompt, effort, max_output_tokens, schema.__name__,
                                          schema.model_json_schema()], sort_keys=True).encode()).hexdigest()
         row = self.store.db.execute("SELECT response, model FROM llm_call WHERE cache_key=? AND response IS NOT NULL", (key,)).fetchone()
         if row:
@@ -170,13 +173,18 @@ class LLM:
     def _call_claude(self, client, kwargs, schema, model, purpose, reservation, key) -> LLMResult:
         """Same contract as the OpenAI path: structured output against the same schema, usage recorded before
         parsing, the reservation settled to the real cost. Thinking is adaptive (the default on current Claude
-        models); effort is the same setting as for OpenAI so that a comparison changes only the model."""
+        models) and counts against max_tokens, so callers give Claude a larger output limit; the request streams
+        (recommended by Anthropic for long outputs) and only the final message is used."""
+        req = dict(model=model, max_tokens=kwargs["max_output_tokens"], system=kwargs["instructions"],
+                   messages=[{"role": "user", "content": kwargs["input"]}],
+                   output_config={"effort": self.claude_effort,
+                                  "format": {"type": "json_schema", "schema": _strict_schema(schema.model_json_schema())}})
         try:
-            resp = client.messages.create(
-                model=model, max_tokens=kwargs["max_output_tokens"], system=kwargs["instructions"],
-                messages=[{"role": "user", "content": kwargs["input"]}],
-                output_config={"effort": self.effort,
-                               "format": {"type": "json_schema", "schema": _strict_schema(schema.model_json_schema())}})
+            if hasattr(client.messages, "stream"):
+                with client.messages.stream(**req) as stream:
+                    resp = stream.get_final_message()
+            else:  # lightweight injected clients used by offline tests
+                resp = client.messages.create(**req)
         except Exception:
             self.store.db.execute("UPDATE llm_call SET purpose=? WHERE cache_key=?", (f"{purpose} (failed, no usage)",
                                                                                       reservation))

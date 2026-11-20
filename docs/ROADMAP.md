@@ -54,19 +54,19 @@ Next to registers, each country has its own public procurement portal, grant age
 
 **Order.** Slovakia and Poland first: structured financial statements, close to the Czech model, and many CEE deals there. Then the Baltics — Estonia, Latvia and Lithuania — which produce many startups and publish much of their register data openly; Lithuania's financial statements are mostly behind paid access.
 
-## 3. Compare Anthropic models with the current OpenAI setup
+## 3. Model choice: done for the showcase, open for the rest
 
-**Problem.** The analysis — findings, risks, investment view — is only as good as the model that writes it. The current setup (`gpt-5-nano` for extraction, `gpt-5-mini` for analysis) was chosen for cost under a hard budget.
+**Done (20 November 2026).** The LLM layer is provider-neutral (same schemas, cache, cost ledger and budgets for OpenAI and Anthropic), and `dd compare` puts the same company's brief from several models side by side. On Fly4Future, with identical collected facts:
 
-**How.**
-1. Make the LLM layer provider-neutral: the same structured-output schemas, cache, cost ledger and hard budget for OpenAI and Anthropic.
-2. Run an A/B on the same collected facts, so only the model changes:
-   - extraction: Claude Haiku 5.5 vs `gpt-5-nano`;
-   - analysis: Claude Sonnet 5.5 vs `gpt-5-mini`.
-3. Measure what the tool already measures — golden facts, quote integrity, share of Verified/Corroborated findings — plus a blind read of both versions by an investor: which brief would you rather take into a meeting, and which statements are wrong?
-4. Check current prices before the run. The cost ledger gives the volume: an analysis call averages about 15.6k input and 2.6k output tokens, so cost per brief follows directly from the price list.
+| Analysis model | Cost per brief | Read |
+|---|---|---|
+| OpenAI `gpt-5-mini` | $0.025 | generic phrasing ("strong technical base and IP") |
+| Claude Haiku 5.5 | $0.014 at low effort, about $0.02 at medium | specific and careful with numbers; one overstated "for" |
+| Claude Sonnet 5.5 | $0.24 | the most specific (staff, unit volumes, patent topics, round discrepancies), every specific checked against the facts; one section came back empty |
 
-**Decision rule.** Switch a step only if the stronger model gives fewer wrong or unsupported statements at an acceptable cost per brief, not because it reads better.
+Haiku 5.5 became the analysis model, at medium effort. At low effort it once returned a one-sided case for and against (only "for"); the investment view now retries once when one side is missing, and Claude gets a larger output limit because adaptive thinking counts against it.
+
+**Open.** The two showcase briefs use Haiku; the other 14 still use `gpt-5-mini` until there is Anthropic credit for them (about $0.02 each). The decision should be confirmed by the hand-labelled accuracy sheet (item 0), not by one read. Extraction stays on `gpt-5-nano`; a Haiku extraction test is the next comparison.
 
 ## 4. An export the fund can edit
 

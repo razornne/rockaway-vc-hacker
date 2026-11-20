@@ -60,7 +60,7 @@ input: name | domain | IČO
  signals  (code) → public money by type, funding rounds, defence evidence, thesis fit, AI dependency
         │
         ▼
- analyze  (LLM, gpt-5-mini) → findings and the investment view; may cite only fact ids;
+ analyze  (LLM, Claude Haiku 5.5) → findings and the investment view; may cite only fact ids;
            every finding gets an evidence label computed from its sources
         │
         ▼
@@ -106,7 +106,7 @@ Computed by code from a finding's cited facts, not chosen by the model:
 ## 7. Stack
 
 - Python 3.12, `uv`, `httpx`, `selectolax`, `pydantic`, SQLite.
-- OpenAI API with structured output: `gpt-5-nano` for extraction, `gpt-5-mini` for analysis. Models, prices and the budget are set in `.env`.
+- Structured output on both providers: OpenAI `gpt-5-nano` for extraction; Claude Haiku 5.5 (Anthropic API, medium effort, adaptive thinking) for analysis, chosen after a side-by-side comparison (`dd compare`); `gpt-5-mini` still runs where Claude credit is not available. Models, prices and hard budgets (overall and Anthropic) are set in `.env`.
 - CLI: `dd seed | collect | extract | verify | analyze | dossier | eval | site | spent`.
 - Secrets in `.env` (git-ignored): `OPENAI_API_KEY`, `HLIDAC_TOKEN`, `GITHUB_TOKEN`, `TAVILY_API_KEY`, `EXA_API_KEY`.
 

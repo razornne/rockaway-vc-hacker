@@ -37,7 +37,7 @@ def test_claude_call_is_structured_costed_and_cached(tmp_path):
     r = llm.call(purpose="t", model="claude-sonnet-5-5", prompt="p", schema=Out, max_output_tokens=4000)
     assert r.parsed.answer == "ok" and r.cost_usd == pytest.approx(0.07)
     kw = llm._anthropic.messages.calls[0]
-    assert kw["output_config"]["format"]["type"] == "json_schema" and kw["output_config"]["effort"] == llm.effort
+    assert kw["output_config"]["format"]["type"] == "json_schema" and kw["output_config"]["effort"] == llm.claude_effort
     again = llm.call(purpose="t", model="claude-sonnet-5-5", prompt="p", schema=Out, max_output_tokens=4000)
     assert again.cached and len(llm._anthropic.messages.calls) == 1
 

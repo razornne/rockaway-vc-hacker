@@ -53,10 +53,10 @@
 | campiri | 10/11 | 182 | 47 | 9/33 | ● | ● | · | · | ● | · | · | ● | ● | ● | ● | $0.0284 |
 | cruxo | 10/11 | 205 | 54 | 8/35 | ● | ● | ● | · | ● | · | · | ● | ● | ● | ● | $0.0313 |
 | culturepulse | 10/11 | 113 | 36 | 8/34 | ● | · | · | · | ● | · | ● | ● | ● | · | ● | $0.0253 |
-| dronetag | 11/11 | 263 | 74 | 8/38 | ● | · | ● | ● | ● | ● | · | ● | ● | · | ● | $0.0298 |
+| dronetag | 11/11 | 263 | 70 | 7/36 | ● | · | ● | ● | ● | ● | · | ● | ● | · | ● | $0.0265 |
 | duvo | 10/11 | 239 | 60 | 9/33 | ● | · | · | · | ● | ● | ● | ● | ● | ● | ● | $0.0275 |
 | filuta | 10/11 | 211 | 58 | 6/33 | ● | · | ● | · | ● | · | ● | ● | ● | ● | ● | $0.0304 |
-| fly4future | 11/11 | 221 | 61 | 7/38 | ● | · | ● | · | ● | ● | · | ● | ● | · | ● | $0.0327 |
+| fly4future | 11/11 | 221 | 64 | 9/37 | ● | · | ● | · | ● | ● | · | ● | ● | · | ● | $0.0296 |
 | navigara | 10/11 | 193 | 59 | 3/31 | ● | · | · | · | ● | ● | ● | ● | ● | ● | ● | $0.0289 |
 | topk | 11/11 | 187 | 56 | 6/35 | ● | · | · | · | ● | · | ● | ● | ● | ● | ● | $0.0257 |
 | trlspace | no dossier: cannot render dossier: no latest dossier analysis exists |
@@ -71,31 +71,31 @@
 
 | Label | Findings | Share |
 |---|---|---|
-| Verified | 58 | 11% |
+| Verified | 59 | 11% |
 | Corroborated | 43 | 8% |
 | Single source | 8 | 1% |
 | Partly verified | 44 | 8% |
-| Company claim | 35 | 6% |
-| Analyst view | 356 | 65% |
+| Company claim | 36 | 7% |
+| Analyst view | 351 | 65% |
 
 ### By section (views are expected in risks, rebuild verdict and questions)
 
 | Section | Verified | Corroborated | Single source | Partly verified | Company claim | Analyst view |
 |---|---|---|---|---|---|---|
-| summary (TL;DR) | 13 | 12 | 0 | 17 | 6 | 32 |
+| summary (TL;DR) | 14 | 12 | 0 | 16 | 6 | 32 |
 | thesis_fit | 0 | 0 | 0 | 0 | 0 | 25 |
-| business_model | 5 | 5 | 0 | 7 | 11 | 20 |
-| market | 3 | 9 | 7 | 1 | 4 | 13 |
-| competition | 0 | 0 | 0 | 0 | 0 | 10 |
+| business_model | 8 | 5 | 0 | 6 | 10 | 19 |
+| market | 2 | 9 | 7 | 3 | 4 | 13 |
+| competition | 0 | 0 | 0 | 0 | 0 | 9 |
 | investment_case | 0 | 0 | 0 | 0 | 0 | 96 |
-| ownership | 21 | 13 | 1 | 3 | 2 | 0 |
-| tech_profile | 16 | 4 | 0 | 16 | 12 | 0 |
-| rebuild_check | 0 | 0 | 0 | 0 | 0 | 48 |
+| ownership | 20 | 13 | 1 | 4 | 2 | 0 |
+| tech_profile | 15 | 4 | 0 | 15 | 14 | 0 |
+| rebuild_check | 0 | 0 | 0 | 0 | 0 | 47 |
 | risk_flags | 0 | 0 | 0 | 0 | 0 | 48 |
-| questions | 0 | 0 | 0 | 0 | 0 | 64 |
+| questions | 0 | 0 | 0 | 0 | 0 | 62 |
 
-Factual statements (everything except analyst views): 188. Verified or corroborated: 54%; partly verified: 23%; single outlet: 4%; company claim only: 19%.
+Factual statements (everything except analyst views): 190. Verified or corroborated: 54%; partly verified: 23%; single outlet: 4%; company claim only: 19%.
 
 ## 5. Cost
 
-LLM total for current dossiers: $0.4476; ledger incl. all earlier runs: $1.4483.
+LLM total for current dossiers: $0.4412; ledger incl. all earlier runs: $1.7720.

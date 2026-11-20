@@ -22,6 +22,8 @@ Private working notes (session logs, earlier handoffs, application context, the 
 - The showcase is live at https://dd-briefs.vercel.app (Vercel project `dd-briefs`, root directory `site/`, no build step). A push to `main` redeploys it; pushes to other branches create preview deployments behind Vercel login.
 - `uv run dd eval`: golden facts 18/18; all quotes of extracted facts found in sources. These are guards, not accuracy.
 - 20 November: fixes after an outside review (see `docs/AUDIT.md` §7): round size vs ticket computed in code; grants merged per project with awarded and paid apart; rebuild check without time estimates. All 16 briefs re-analysed (prompts `analyze-v5`, `invest-v4`); LLM spend $1.45 of $2.50.
+- Analysis model: Claude Haiku 5.5 (`LLM_MODEL_ANALYZE`, medium effort via `LLM_CLAUDE_EFFORT`) for the two showcase briefs; the other 14 still `gpt-5-mini`. Anthropic spend has its own hard limit (`ANTHROPIC_BUDGET_USD`, $0.40; about $0.32 used). Compare models with `dd analyze ID --model M --compare` and `dd compare ID --models a,b --output DIR`.
+- Logos: `assets/logos/<company id>.png` (transparent, trimmed), copied into the site by `dd site`. The author link on the home page comes from `DD_AUTHOR_URL` in `.env`.
 - Semantic accuracy: `eval/labels/showcase-2026-11-20.csv` (76 statements of the two defence briefs) waits for a person to label; score with `uv run dd label-score <file>`.
 - Not done: reading filed accounts, registers outside Czechia, Dronetag competitors, an editable export for the fund, the investment view for the older portfolio briefs. See `docs/ROADMAP.md`.
 - Mykyta's brother, an investment analyst, is reviewing the briefs; his feedback shapes the export format and the design.
@@ -38,7 +40,7 @@ Private working notes (session logs, earlier handoffs, application context, the 
 - A source that was not read is shown as *Not checked*, never as *None found*.
 
 **Cost**
-- The code uses the OpenAI API. Budget $3, hard limit in code $2.50 (`LLM_BUDGET_USD`). Models and prices are set in `.env`; check availability and current prices before any paid call.
+- The code uses the OpenAI API (extraction, older briefs) and the Anthropic API (analysis with Claude Haiku 5.5). OpenAI budget $3, overall hard limit in code $2.50 (`LLM_BUDGET_USD`); Anthropic balance about $0.43, hard limit $0.40 (`ANTHROPIC_BUDGET_USD`). Models and prices are set in `.env`; check availability and current prices before any paid call.
 - When spawning research sub-agents, set the model explicitly to a mid-tier model (Sonnet), do not inherit the most expensive one.
 
 **Secrets**

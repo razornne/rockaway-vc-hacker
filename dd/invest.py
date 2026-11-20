@@ -12,7 +12,7 @@ import re
 
 from pydantic import BaseModel, ConfigDict
 
-from dd.analyze import ANALYSIS_SYSTEM, AnalysisItem, LabeledItem
+from dd.analyze import ANALYSIS_SYSTEM, AnalysisItem, LabeledItem, out_limit
 from dd.store import Company
 
 PROMPT_VERSION = "invest-v4"
@@ -130,11 +130,37 @@ def validated(parsed: InvestResponse, allowed: set[int]) -> tuple[list[dict], se
     return sections, used
 
 
+CASE_LABELS = ("for", "against", "must_be_true")
+
+
+def _case_labels(sections: list[dict]) -> set[str]:
+    case = next((s for s in sections if s["kind"] == "investment_case"), {"items": []})
+    return {i.get("label") for i in case["items"]}
+
+
 def run(llm, company: Company, facts_json: list[dict], derived: dict, allowed: set[int], model: str):
-    result = llm.call(purpose="investment_view", model=model, prompt=prompt(company, facts_json, derived),
-                      schema=InvestResponse, max_output_tokens=12000, system=ANALYSIS_SYSTEM)
+    base = prompt(company, facts_json, derived)
+    result = llm.call(purpose="investment_view", model=model, prompt=base,
+                      schema=InvestResponse, max_output_tokens=out_limit(model), system=ANALYSIS_SYSTEM)
     parsed = result.parsed if isinstance(result.parsed, InvestResponse) else InvestResponse.model_validate(result.parsed)
     sections, used = validated(parsed, allowed)
+    missing = [lab for lab in CASE_LABELS if lab not in _case_labels(sections)]
+    if missing and len(missing) < len(CASE_LABELS):  # one-sided, not empty: an empty case is "no data"
+        # A smaller model sometimes returns a one-sided case (only 'for'). One retry that names what is missing;
+        # its case replaces the first one only if it is more complete. Both calls are cached and costed.
+        retry = llm.call(purpose="investment_view_retry", model=model, schema=InvestResponse, max_output_tokens=out_limit(model),
+                         system=ANALYSIS_SYSTEM,
+                         prompt=base + "\n\nCOMPLETENESS: an earlier answer had no investment_case items labelled "
+                                + ", ".join(missing) + ". Return the full investment view again with two or three 'for', "
+                                "two or three 'against' and one or two 'must_be_true' items, each citing the facts it "
+                                "rests on.")
+        p2 = retry.parsed if isinstance(retry.parsed, InvestResponse) else InvestResponse.model_validate(retry.parsed)
+        sections2, used2 = validated(p2, allowed)
+        if len(_case_labels(sections2)) > len(_case_labels(sections)):
+            new_case = next(s for s in sections2 if s["kind"] == "investment_case")
+            sections = [new_case if s["kind"] == "investment_case" else s for s in sections]
+            used = used | {i for it in new_case["items"] for i in it["fact_ids"]}
+        result = type(result)(result.parsed, result.cost_usd + retry.cost_usd, result.cached and retry.cached, result.model)
     if not ((derived.get("thesis") or {}).get("portfolio_overlap")):  # "no overlap found" is not a finding
         for s in sections:
             if s["kind"] == "thesis_fit":

@@ -196,6 +196,12 @@ def cmd_site(args, ctx):
     print(f"{len(paths)} files written to {paths[-1].parent}")
 
 
+def cmd_compare(args, ctx):
+    from dd.compare import write_compare
+    path = write_compare(ctx.store, args.id, [m.strip() for m in args.models.split(",")], Path(args.output))
+    print(f"comparison: {path}")
+
+
 def cmd_label_sheet(args, ctx):
     from dd.labels import write_sheet
     out = Path(args.output)
@@ -232,6 +238,8 @@ def main(argv=None):
     ls = sub.add_parser("label-sheet"); ls.add_argument("ids", help="comma-separated company ids")
     ls.add_argument("--output", required=True)
     lsc = sub.add_parser("label-score"); lsc.add_argument("path")
+    cp = sub.add_parser("compare"); cp.add_argument("id"); cp.add_argument("--models", required=True)
+    cp.add_argument("--output", required=True)
     sub.add_parser("models")
     sub.add_parser("spent")
     args = p.parse_args(argv)
@@ -241,7 +249,7 @@ def main(argv=None):
      "collect": cmd_collect, "facts": cmd_facts,
      "extract": cmd_extract, "analyze": cmd_analyze, "verify": cmd_verify, "eval": cmd_eval, "dossier": cmd_dossier,
      "models": cmd_models, "spent": cmd_spent, "site": cmd_site,
-     "label-sheet": cmd_label_sheet, "label-score": cmd_label_score}[args.cmd](args, ctx)
+     "label-sheet": cmd_label_sheet, "label-score": cmd_label_score, "compare": cmd_compare}[args.cmd](args, ctx)
 
 
 if __name__ == "__main__":

@@ -47,7 +47,7 @@ Rockaway now has a defence fund, and defence / dual-use is where official public
 1. **Collect.** Twelve collectors read the Czech business register (ARES, or.justice.cz), Czech public contracts and subsidies (Hlídač státu), EU procurement (TED), the EU Funding & Tenders portal, NATO DIANA cohorts (archived copies), the company website and job boards, GitHub, certificate transparency logs, app stores, research databases and the press. Every response is cached with its URL and date.
 2. **Extract.** A small model (OpenAI `gpt-5-nano`) proposes facts from unstructured pages only. A fact is kept only if its exact quote is found in the saved source and passes category rules.
 3. **Compute and verify.** Code computes public money by type, funding rounds and thesis fit, and checks company claims against independent sources: patents, the register, the IAB vendor list, security pages, named customers, government vendor lists.
-4. **Analyse.** A second model (`gpt-5-mini`) writes findings and the investment view. It may cite only collected facts; evidence labels are computed from the sources, not chosen by the model.
+4. **Analyse.** A second model writes findings and the investment view: Claude Haiku 5.5 since a side-by-side test against `gpt-5-mini` and Claude Sonnet 5.5 (the two showcase briefs; the others still use `gpt-5-mini`). It may cite only collected facts; evidence labels are computed from the sources, not chosen by the model.
 5. **Brief.** One HTML page with sources and quotes, a Markdown copy, and a CSV of all facts.
 
 More: [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md).

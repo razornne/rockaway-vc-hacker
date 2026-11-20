@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import html
 import json
+import os
 import re
 from pathlib import Path
 
@@ -35,6 +36,9 @@ border-top:1px solid var(--rule)}
 .feature h3 a{color:var(--ink);text-decoration:none}.feature h3 a:hover{text-decoration:underline}
 .feature p{margin:0 0 .7rem}
 .feature .open{font:500 14px var(--sans)}
+.feature .logo{height:2.2rem;max-width:11rem;margin:0 0 1rem}
+a.site{font:400 13px var(--sans);color:var(--muted);margin-left:1.2rem}a.site:hover{color:var(--accent)}
+table.t a.site{margin-left:0}
 .mini{font:13px/1.35 var(--sans);color:var(--muted);padding-top:.4rem}
 .mini div{padding:.35rem 0;border-top:1px solid var(--rule)}.mini div:first-child{border-top:0;padding-top:0}
 .mini b{display:block;font:600 15px/1.3 var(--sans);color:var(--ink);font-variant-numeric:tabular-nums}
@@ -89,13 +93,23 @@ def _brief_data(store: Store, cid: str) -> dict | None:
     return {"company": comp, "product": product["text"] if product else "", "tiles": p["extras"]["tiles"]}
 
 
+LOGOS = ROOT / "assets" / "logos"  # company logos supplied by hand, made transparent: <company id>.png
+AUTHOR_URL = os.getenv("DD_AUTHOR_URL", "")  # the author's public profile, linked from the name on the home page
+
+
+def _logo(cid: str, prefix: str = "") -> str:
+    return (f'<img class="logo" src="{prefix}logos/{h(cid)}.png" alt="">' if (LOGOS / f"{cid}.png").exists() else "")
+
+
 def _card(cid: str, d: dict, meta: dict) -> str:
     tiles = [t for t in d["tiles"] if t["label"] in CARD_TILES][:4]
-    mini = "".join(f'<div>{h(t["label"])}<b>{h(str(t["value"]))}</b></div>' for t in tiles)
+    mini = "".join(f'<div>{h(t["label"])}<b>{h(str(t["value"]).replace(" · ", ", "))}</b></div>' for t in tiles)
     c = d["company"]
-    return (f'<div class="feature"><div><h3><a href="briefs/{h(cid)}-dossier.html">{h(c.name)}</a></h3>'
+    site = (f' <a class="site" href="https://{h(c.domain, quote=True)}" rel="noopener noreferrer" target="_blank">'
+            f"{h(c.domain)}</a>" if c.domain else "")
+    return (f'<div class="feature"><div>{_logo(cid)}<h3><a href="briefs/{h(cid)}-dossier.html">{h(c.name)}</a></h3>'
             f'<p>{h(d["product"])}</p><a class="open" href="briefs/{h(cid)}-dossier.html">Read the {h(c.name)} brief</a>'
-            f'</div><div class="mini">{mini}</div></div>')
+            f'{site}</div><div class="mini">{mini}</div></div>')
 
 
 def _index(m: dict, cards: str, table_rows: dict[str, list[str]], n_collectors: int) -> str:
@@ -115,7 +129,9 @@ def _index(m: dict, cards: str, table_rows: dict[str, list[str]], n_collectors: 
         '<p class="oneliner">Give it a company: a name, a Czech company ID or a domain. It collects public evidence, '
         "keeps every fact with its source and the exact quote, computes the numbers in code, and writes a brief an "
         "investor can check line by line. The investment memo stays with a human.</p>",
-        '<dl class="facts"><div><dt>Built by</dt><dd>Mykyta Bulatnikov</dd></div>'
+        '<dl class="facts"><div><dt>Built by</dt><dd>'
+        + (f'<a href="{h(AUTHOR_URL, quote=True)}" rel="noopener noreferrer" target="_blank">Mykyta Bulatnikov</a>'
+           if AUTHOR_URL.startswith("https://") else "Mykyta Bulatnikov") + "</dd></div>"
         "<div><dt>For</dt><dd>VC Hacker application, Rockaway Ventures</dd></div>"
         "<div><dt>Data collected</dt><dd>November 2026</dd></div>"
         "<div><dt>Source code</dt><dd>available on request</dd></div></dl>",
@@ -156,7 +172,8 @@ def _index(m: dict, cards: str, table_rows: dict[str, list[str]], n_collectors: 
         measure(_pct(fo["verified"] + fo["corroborated"], fo_n), f"Of {fo_n} factual statements rest on an official "
                 f"record or two independent outlets; {_pct(fo['claim'], fo_n)} only on the company's word. This describes "
                 "the evidence, not whether conclusions are right."),
-        measure(f"${min(costs):.2f}–{max(costs):.2f}", "Model cost per brief (OpenAI gpt-5-nano and gpt-5-mini)."),
+        measure(f"${min(costs):.2f}–{max(costs):.2f}", "Model cost per brief. Extraction with OpenAI gpt-5-nano; analysis with Claude Haiku 5.5 for the two showcase "
+                "briefs and OpenAI gpt-5-mini for the others."),
         "</div>",
         '<div class="prose"><p style="margin-top:1.2rem">The real quality process is reading the output by hand. That '
         'has found 26 systematic errors so far, each fixed in code and covered by a test (<a href="method.html#errors">'
@@ -293,6 +310,9 @@ def build_site(store: Store, out: Path) -> list[Path]:
     for old in briefs.glob("*"):
         if old.suffix in (".html", ".md", ".csv"):
             old.unlink()
+    (out / "logos").mkdir(exist_ok=True)
+    for logo in LOGOS.glob("*.png"):
+        (out / "logos" / logo.name).write_bytes(logo.read_bytes())
     meta = _companies_meta()
     m = metrics(store)
     written: list[Path] = []
@@ -306,13 +326,16 @@ def build_site(store: Store, out: Path) -> list[Path]:
         page = Path(paths["html"])
         text = page.read_text(encoding="utf-8")
         text = text.replace('<div class="page"><header>',
-                            '<div class="page"><nav class="crumb"><a href="../index.html">← All briefs</a></nav><header>', 1)
+                            '<div class="page"><nav class="crumb"><a href="../index.html">← All briefs</a></nav><header>'
+                            + _logo(cid, "../"), 1)
         page.write_text(text, encoding="utf-8")
         written += [Path(p) for p in paths.values()]
         d = _brief_data(store, cid)
         group = GROUPS.get(meta.get(cid, {}).get("tier"), GROUP_ORDER[-1])
         table_rows.setdefault(group, []).append(
-            f'<tr><td><a href="briefs/{h(cid)}-dossier.html">{h(comp.name)}</a></td>'
+            f'<tr><td><a href="briefs/{h(cid)}-dossier.html">{h(comp.name)}</a>'
+            + (f'<br><a class="site" href="https://{h(comp.domain, quote=True)}" rel="noopener noreferrer" '
+               f'target="_blank">{h(comp.domain)}</a>' if comp.domain else "") + '</td>'
             f'<td>{h(_one_line((d or {}).get("product", "")))}</td>'
             f'<td class="num">{r["facts"]}</td><td class="num">{r["sources"]}</td></tr>')
     for cid in FEATURED:
