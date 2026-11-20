@@ -35,6 +35,14 @@ def _czk(x: float | int | None) -> str:
     return f"{x:,.0f} CZK".replace(",", " ")
 
 
+def _signed(x: float | int | None) -> str:
+    if x is None:
+        return "—"
+    x = float(x)
+    s = f"{abs(x) / 1e6:,.1f}M CZK" if abs(x) >= 1e6 else f"{abs(x) / 1e3:,.0f}k CZK"
+    return ("+" if x > 0 else "−" if x < 0 else "") + s
+
+
 def _pct(x: float) -> str:
     return f"{x:.1%}" if 0 < x < 0.1 else f"{x:.0%}"
 
@@ -43,7 +51,12 @@ def _short(x: float) -> str:
     return f"{x / 1e6:.1f}M" if x >= 1e5 else f"{x / 1e3:.0f}k"
 
 
-from dd.thesis import last_round, stage_rank as _stage, stage_ticket  # noqa: E402,F401  (round choice lives with the ticket logic)
+from dd.thesis import format_money, last_round, stage_rank as _stage, stage_ticket  # noqa: E402,F401  (round choice lives with the ticket logic)
+
+
+def _amount(text: Any) -> str:
+    """Round amounts in one format (15M CZK); the source's own wording when it cannot be read."""
+    return format_money(text) or (str(text) if text else "amount not stated")
 
 
 def _year(s: Any) -> int | None:
@@ -61,19 +74,58 @@ def extras(sig: dict, facts: dict[int, Fact], refs, company: Company) -> dict:
     rounds = fu.get("rounds") or []
     tiles = []
 
+    # filed annual accounts first: the only official view of revenue, profit and cash
+    fin = fu.get("financials")
+    acc_reason = next(((f.value or {}).get("reason") for f in facts.values()
+                       if f.type == "source_unavailable" and f.key == "annual_accounts"), None)
+    fin_rows: list[dict] = []
+    if fin:
+        nums = refs.add(fin.get("fact_ids") or [])
+        y = fin.get("period")
+        py = str(int(y) - 1) if str(y).isdigit() else "prior year"
+        if fin.get("income_statement_published"):
+            tiles.append({"label": f"Revenue {y} (filed accounts)", "value": _czk(fin.get("revenue")),
+                          "sub": f"{_czk(fin.get('revenue_prior'))} in {py}; sales of products, services and goods",
+                          "nums": nums})
+        else:
+            tiles.append({"label": f"Revenue {y} (filed accounts)", "value": "not published",
+                          "sub": "only a balance sheet is filed; small companies without an audit may omit the "
+                                 "income statement", "nums": nums, "tone": "muted"})
+        tiles.append({"label": f"Net result {y}", "value": _signed(fin.get("net_result")),
+                      "sub": f"{_signed(fin.get('net_result_prior'))} in {py}", "nums": nums})
+        tiles.append({"label": f"Cash at year end {y}", "value": _czk(fin.get("cash")),
+                      "sub": f"equity {_czk(fin.get('equity'))}; liabilities {_czk(fin.get('liabilities'))}",
+                      "nums": nums})
+        rows = [("Revenue (products, services and goods)", "revenue", "revenue_prior"),
+                ("Other operating income (often subsidies)", "other_operating_income", None),
+                ("Personnel costs", "personnel_costs", None), ("Operating result", "operating_result", None),
+                ("Net result", "net_result", "net_result_prior"), ("Cash", "cash", "cash_prior"),
+                ("Equity", "equity", None), ("Liabilities", "liabilities", None), ("Total assets", "total_assets", None)]
+        for label, k, kp in rows:
+            if fin.get(k) is None and not (k == "revenue" and not fin.get("income_statement_published")):
+                continue
+            cur = ("not published" if k == "revenue" and not fin.get("income_statement_published") else
+                   _signed(fin.get(k)) if k in ("net_result", "operating_result") else _czk(fin.get(k)))
+            prv = "" if not kp else (_signed(fin.get(kp)) if k == "net_result" else _czk(fin.get(kp)))
+            fin_rows.append({"label": label, "current": cur, "prior": prv, "nums": nums})
+    else:
+        tiles.append({"label": "Filed accounts", "value": "Not read",
+                      "sub": acc_reason or "the Collection of Deeds was not read for this brief", "nums": [],
+                      "tone": "muted"})
+
     sought = [r for r in rounds if r.get("status") == "sought"]
     closed = [r for r in rounds if r.get("status") == "closed"]
     if sought:
         r = sorted(sought, key=lambda r: r.get("date") or "")[-1]
         n = len({str(x.get("amount")) for x in sought if x.get("amount")})
-        tiles.append({"label": "Raising now (per press)", "value": r.get("amount") or "amount not stated",
+        tiles.append({"label": "Raising now (per press)", "value": _amount(r.get("amount")),
                       "sub": (f"{n} different figures reported — see funding table" if n > 1 else
                               f"{r.get('round') or 'round'} · {r.get('date') or 'undated'}"),
                       "nums": refs.add([i for x in sought for i in x["fact_ids"]][:4]), "tone": "warn" if n > 1 else ""})
     r = last_round(rounds)  # stage first: a later article can restate an earlier round (see dd.thesis.last_round)
     if r:
         tiles.append({"label": "Last closed round" if r.get("status") == "closed" else "Latest reported round",
-                      "value": r.get("amount") or "amount not stated",
+                      "value": _amount(r.get("amount")),
                       "sub": " · ".join(x for x in (r.get("round"), r.get("date"), ", ".join(r.get("investors") or [])[:60]) if x),
                       "nums": refs.add(r["fact_ids"][:3])})
     if not rounds:
@@ -134,7 +186,9 @@ def extras(sig: dict, facts: dict[int, Fact], refs, company: Company) -> dict:
                       "sub": f"Czech registry · first press {tl.get('first_press') or 'n/a'}",
                       "nums": refs.add(tl.get("incorporated_fact_ids") or [])})
 
-    funding_rows = [{"date": r.get("date") or "undated", "round": r.get("round") or "—", "amount": r.get("amount") or "—",
+    funding_rows = [{"date": r.get("date") or "undated", "round": r.get("round") or "—",
+                     "amount": format_money(r.get("amount")) or r.get("amount") or "—",
+                     "as_reported": r.get("amount") if format_money(r.get("amount")) else "",
                      "investors": ", ".join(r.get("investors") or []) or "—", "status": r.get("status", "reported"),
                      "reports": r.get("reports", 1), "nums": refs.add(r["fact_ids"][:4])}
                     for r in sorted(rounds, key=lambda r: r.get("date") or "9999")]
@@ -215,7 +269,7 @@ def extras(sig: dict, facts: dict[int, Fact], refs, company: Company) -> dict:
                                   for p in th.get("portfolio_overlap") or []) or "none found by term overlap",
              "nums": []},
         ]
-    return {"grants_awarded": grants, "grants_paid": paid, "sales_checked": cz_contracts or ted, "tiles": tiles, "funding": funding_rows, "money": money_rows, "money_chart": chart, "peers": peers,
+    return {"financials": fin_rows, "financials_period": (fin or {}).get("period"), "grants_awarded": grants, "grants_paid": paid, "sales_checked": cz_contracts or ted, "tiles": tiles, "funding": funding_rows, "money": money_rows, "money_chart": chart, "peers": peers,
             "checks": checks, "thesis": thesis_rows, "fund_sources": fund.get("sources") or []}
 
 
@@ -248,6 +302,10 @@ h1{font:500 3rem/1.04 var(--serif);letter-spacing:-.015em;margin:0 0 .9rem;font-
 dl.facts{display:flex;flex-wrap:wrap;gap:.4rem 2.2rem;margin:0;font:14px/1.4 var(--sans)}
 dl.facts div{display:flex;flex-direction:column}
 dl.facts dt{color:var(--muted);font-size:12.5px}dl.facts dd{margin:0;color:var(--ink)}
+.toc{display:flex;flex-wrap:wrap;gap:.35rem 1.3rem;font:500 14px/1.4 var(--sans);padding:.9rem 0;margin-top:.6rem;
+border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.toc a{text-decoration:none}.toc a:hover{text-decoration:underline}
+h2[id]{scroll-margin-top:1rem}
 .key{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1.4rem;margin:2rem 0 0;padding:.9rem 0 0;
 border-top:1px solid var(--rule);font:13px/1.4 var(--sans);color:var(--ink2)}
 .key .k{display:inline-flex;align-items:center;gap:.45rem}
@@ -430,6 +488,15 @@ def render(company: Company, analysis: dict, p: dict, titles: dict, label_titles
 
     invest = any(k in by_kind and not by_kind[k]["no_data"]
                  for k in ("thesis_fit", "business_model", "market", "competition", "investment_case"))
+    if x.get("financials"):
+        y = x.get("financials_period")
+        py = str(int(y) - 1) if str(y).isdigit() else "prior year"
+        parts.append('<h2>Filed accounts</h2><p class="h2note">Read by code from the annual accounts in the Czech '
+                     "Collection of Deeds. Accepted only when total assets equal equity and liabilities. Amounts in "
+                     "CZK; grants and subsidies sit in other operating income, not in revenue.</p>"
+                     + table(["", str(y), py, "Sources"],
+                             [[h(r["label"]), h(r["current"]), h(r["prior"]), tref(r["nums"])] for r in x["financials"]],
+                             (1, 2)))
     if invest or x.get("money_chart") or x.get("money"):
         parts.append("<h2>Business and public money</h2>")
     if not invest:
@@ -469,10 +536,14 @@ def render(company: Company, analysis: dict, p: dict, titles: dict, label_titles
     if x.get("funding") or (own and not own["no_data"]):
         parts.append("<h2>Funding and ownership</h2>")
         if x.get("funding"):
-            parts.append('<p class="h2note">Every reported round, worded as in the source. Sought means money the '
-                         "company is asking for; closed means money reported as received.</p>"
-                         + table(["Date", "Round", "Amount, as reported", "Investors", "Status", "Sources"],
-                                 [[h(r["date"]), h(r["round"]), h(r["amount"]), h(r["investors"]),
+            parts.append('<p class="h2note">Every reported round. Amounts are written in one format, with the source\'s '
+                         "own wording under them when it differs. Sought means money the company is asking for; closed "
+                         "means money reported as received.</p>"
+                         + table(["Date", "Round", "Amount", "Investors", "Status", "Sources"],
+                                 [[h(r["date"]), h(r["round"]),
+                                   h(r["amount"]) + (f'<br><span class="m">as reported: {h(r["as_reported"])}</span>'
+                                                     if r.get("as_reported") and r["as_reported"] != r["amount"] else ""),
+                                   h(r["investors"]),
                                    f'<span class="st st-{r["status"]}">{STATUS_TEXT.get(r["status"], r["status"])}</span>'
                                    + (f' <span class="m">{r["reports"]} reports</span>' if r["reports"] > 1 else ""),
                                    tref(r["nums"])] for r in x["funding"]]))
@@ -555,4 +626,22 @@ def render(company: Company, analysis: dict, p: dict, titles: dict, label_titles
         parts.append(f'<div class="fact" id="fact-{fid}"><b>F{fid}</b> {h(f.type)}, {h(fact_status(f))}: {src}'
                      f"<br><code>{h(value_json(f.value))}</code></div>")
     parts.append("</details></div></body></html>")
-    return "\n".join(parts)
+    return _with_contents("\n".join(parts))
+
+
+TOC_SKIP = {"How this brief was built", "What this brief rests on"}
+
+
+def _with_contents(doc: str) -> str:
+    """Give each section heading an anchor and put a short list of links to them under the header."""
+    links = []
+
+    def anchor(m):
+        title = m.group(1)
+        slug = re.sub(r"[^a-z0-9]+", "-", html.unescape(title).lower()).strip("-")
+        if title not in TOC_SKIP:
+            links.append(f'<a href="#{slug}">{title}</a>')
+        return f'<h2 id="{slug}">{title}</h2>'
+
+    doc = re.sub(r"<h2>(.*?)</h2>", anchor, doc)
+    return doc.replace("</header>", '</header><nav class="toc" aria-label="Sections">' + "".join(links) + "</nav>", 1)

@@ -2,7 +2,7 @@
 
 bottlecapai\.com · BottleCap SE · IČO 23012854 · CZ · 2026\-11\-20
 
-**How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — combines independent evidence with the company's own statements; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
+**How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — part of it rests on an official or independent source, part on one outlet or the company's own words; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
 
 ## TL;DR
 
@@ -16,7 +16,7 @@ bottlecapai\.com · BottleCap SE · IČO 23012854 · CZ · 2026\-11\-20
 
 | Signal | Value | Sources |
 |---|---|---|
-| Funding \(press\) | 2026\-01\-29 · seed · 7\.5 million USD · 20VC, Canva founders and managers, ElevenLabs, Datadog, Hugging Face, Synthesia, Rockaway · 5 reports; date n/a · Rockaway Ventures, 20VC | 4, 5, 15, 16, 17, 18 |
+| Funding \(press\) | 2026\-01\-29 · seed · 7\.5M USD · 20VC, Canva founders and managers, ElevenLabs, Datadog, Hugging Face, Synthesia, Rockaway · 5 reports; date n/a · Rockaway Ventures, 20VC | 4, 5, 15, 16, 17, 18 |
 | Investors in registry | Beck Adventures Incubator s\.r\.o\. \(from 2025\-04\-10\) | 19 |
 | Thesis fit \(Rockaway\) | sectors: AI\-led transformative tech \(30 facts\); deep tech \(10 facts\); energy \(2 facts\) · geography: CZ \(core region\) | 20, 21, 22, 7 |
 | Hiring | 2 open roles: other 1, ml research 1 | 23, 24 |

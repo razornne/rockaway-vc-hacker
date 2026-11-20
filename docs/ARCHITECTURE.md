@@ -35,7 +35,7 @@ input: name | domain | IČO
         │
         ▼
  collectors (fetch → raw cache → facts), 12 in total
-   registry      ARES + ARES VR (identity, shareholders, capital), or.justice.cz filings list, ISIR
+   registry      ARES + ARES VR (identity, shareholders, capital), or.justice.cz filings and annual accounts (dd/accounts.py), ISIR
    public_money  Hlídač státu API: Czech public contracts and subsidies (needs an IČO)
    procurement   TED: EU tenders won
    eu_funding    EU Funding & Tenders portal: EU-funded projects
@@ -130,6 +130,6 @@ Numbers that a partner compares — round size against the fund's ticket, public
 
 - Without access to the code, technical DD is an outside view: it answers "is it worth digging and what to ask", not "is the code good".
 - The register does not see most strong startups' rounds (2 of 14 fund deals).
-- Filed accounts are listed but not read (see [`ROADMAP.md`](ROADMAP.md)).
+- Filed accounts are read from text PDFs only and used only if the balance sheet balances and the net result agrees between the statements; scans are shown as *Not read* (see [`ROADMAP.md`](ROADMAP.md)).
 - Registers outside Czechia are flagged, not read.
 - The fund's memo template, CRM and process are unknown, so there is no CRM export.

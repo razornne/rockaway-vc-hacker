@@ -4,32 +4,24 @@ What I would build next, in order of value for an investment team. Each item say
 
 ## 0. Prove that the briefs are right, and that they save time
 
-Before adding sources, the existing output has to earn trust.
+Before adding sources, the existing output has to earn trust. Status on 20 November 2026:
 
-- **Semantic accuracy (started).** `dd label-sheet` writes every statement of chosen briefs into a CSV with the cited quotes and links; an investor marks for each one whether the quotes support it, whether numbers and names are right, whether a judgement follows, and whether it concludes something from missing data. `dd label-score` counts the answers per question and per section. First target: the two defence briefs (about 100 statements), labelled by someone other than the author.
-- **Baseline.** The same companies and questions given to one capable model with web search. Same labelling. This shows what the collectors, quote checks and code-computed numbers add, or do not.
-- **Time.** From company name to a brief usable for a founder call, including the human check, against a manual first look by an analyst.
-- **Fact selection.** The analysis sees at most 90 facts (plus those cited by code-computed signals), chosen by fact type and order. For companies with 200+ facts this should rank by relevance to each section.
+- **Semantic accuracy (first pass done, human pass open).** `dd label-sheet` wrote all 72 statements of the two defence briefs into [`eval/labels/showcase-2026-11-20.csv`](../eval/labels/showcase-2026-11-20.csv) with the cited quotes and links; each was judged on six questions. Result ([score](../eval/labels/showcase-2026-11-20-score.md)): 82% fully supported by their quotes and 18% partly, 35 of 37 numbers right, 0 problems that would mislead an investor and 16 minor ones. The reviewer was an AI model (Claude Opus 5.5), not a person. Next: the same sheet labelled by an investor, and the agreement between the two.
+- **Baseline (done for two companies).** `gpt-5-mini` with web search on the same task ([`eval/baseline/`](../eval/baseline/README.md)). On 14 facts settled by official records the tool states 14 right, the plain model 2 (3 partly, 2 wrong, 7 missed). Next: more companies, and a stronger baseline model with more searches.
+- **Time (machine side done).** A fresh company takes about 7 minutes and $0.03 from name to brief. Not measured: how long an analyst needs for the same first look, and how long the human check of a brief takes. That needs a person and a stopwatch.
+- **Fact selection (improved).** The analysis no longer takes the first 90 facts: facts are picked in turns across topics (money, claim checks, product, traction, company, press), with a larger budget for Claude (250 facts) than for `gpt-5-mini` (90). A real relevance ranking per section is still open.
 
-## 1. Read the filed accounts (revenue, profit, cash)
+## 1. Filed accounts: text PDFs done, scans and other countries open
 
-**Problem.** For a Czech company the tool already lists every document in the Collection of Deeds (Sbírka listin): type, year, filing date and link. It does not read them, so a brief has no revenue, profit or cash — the first thing an investor asks for. Reading them is hard for four reasons:
+**Done.** For a Czech company the registry collector downloads the latest annual accounts from the Collection of Deeds (Sbírka listin), reads the text layer and extracts the balance sheet and, when filed, the income statement: revenue, operating and net result, personnel costs, cash, equity, liabilities, receivables, for the year and the year before. A filing is used only if total assets equal total equity and liabilities as read, and the net result in the balance sheet must match the income statement. The unit ("v celých tisících Kč/CZK") is read from the form. Three form layouts are handled (with and without a row-number column, numbers with and without thousands spaces), each covered by a test. Results: Fly4Future revenue CZK 47.8M for 2025 (net result 8.8M, cash 57.1M); Dronetag balance sheet only (small entity: revenue "not published", net result 4.2M, cash 19.6M); Spaceti revenue 46.9M, net loss 10.4M.
 
-1. **Format.** The accounts are PDFs; many are scans with no text layer, so the numbers need OCR. A single misread digit or a missed "in thousands of CZK" changes a number by orders of magnitude — the same class of error as the 10,000× decimal bug found in the public-money audit.
-2. **Small companies may hide the profit and loss statement.** Under Czech accounting law, micro and small entities without a statutory audit do not have to publish the income statement. For most startups the public filing is a balance sheet only: no revenue, but total assets, equity, cash and liabilities.
-3. **Late or missing filings.** The deadline is up to 12 months after year end and many companies file late or never, so the newest public numbers are often 1–2 years old.
-4. **Foreign holdings.** When the operating company belongs to a Delaware or Dutch parent, the Czech accounts show only the subsidiary.
+**Open.**
+1. **Scans.** Many filings have no text layer. They are shown as *Not read* with the reason. Next: OCR or a vision model on the page images, accepted only through the same balance check.
+2. **The other 14 briefs.** They were collected before the accounts reader existed. Re-collecting the register changes fact ids, so each needs a new analysis (about $0.03 each).
+3. **Notes to the accounts.** Loans, convertibles and headcount are in the notes as free text (Dronetag's CZK 15M convertible loan is there). They need model extraction with a checked quote, like press.
+4. **Late filings and foreign parents.** The newest public numbers are often 1–2 years old, and a Delaware or Dutch parent's accounts are not in the Czech collection.
 
-**How.**
-- Download only the latest one or two annual accounts per company, politely and cached.
-- If the PDF has a text layer, parse it; if it is a scan, read the page images with OCR or a vision-capable model.
-- Extract a small fixed set of fields from the standard Czech forms: revenue (if published), operating result, net result, total assets, equity, cash, liabilities, headcount (if stated). Record the unit and the page.
-- Check every statement by code before accepting it: assets = liabilities + equity; subtotals add up; the prior-year column matches the previous year's filing. A number that fails a check is shown as "unreadable", not guessed.
-- In the brief: "Revenue: not published (small-entity exemption)" is a fact with a source; it is never shown as zero. Derived numbers (equity burn per year as a proxy for losses, cash at year end) are labelled as estimates.
-
-**How to measure.** Hand-check 10–15 statements (text PDFs and scans) and compare field by field; target zero accepted numbers that are wrong, at the price of some "unreadable".
-
-**Shortcut to compare against.** Paid Czech data providers have already digitised these statements. They could serve as a cross-check, or as the source if the fund already pays for one.
+**How to measure.** Hand-check 10–15 filings field by field; target zero accepted numbers that are wrong, at the price of some *Not read*.
 
 ## 2. Registers of other CEE countries
 
@@ -97,7 +89,15 @@ Every row keeps its source and evidence label, plus an empty "analyst comment / 
 
 **How to measure.** Gaps closed per company, share of found facts that turn out wrong, cost.
 
-## 6. Smaller items
+## 6. From a showcase to a tool the team can use
+
+**Problem.** The site is a set of static briefs. A partner cannot type a new company and get a brief.
+
+**How.** The pipeline already runs end to end from `dd add`; what is missing is a front door with a budget. The smallest honest version: a form on the site that files a request (name, IČO or domain) into a queue; a worker on a small server or a scheduled job runs `dd add` → `collect` → `extract` → `verify` → `analyze` → `dossier` with a per-request and a monthly spending cap, and publishes the brief behind a login (the briefs name people and are not for search engines). About 7 minutes and $0.03 per company makes this cheap; the hard parts are polite crawling under load and keeping keys off the client. A serverless function is a poor fit, because a run takes minutes.
+
+**How to measure.** Time from request to brief, failures per 100 requests, cost per brief, and whether people come back to use it.
+
+## 7. Smaller items
 
 - **Competitors.** Today candidates come from text similarity with NATO DIANA cohorts, and the model may reject all of them (Dronetag). Add procurement co-bidders and EU project consortium partners as sources.
 - **Investment view for every brief.** Older portfolio briefs were generated before the investment view existed; regenerate them (about $0.3 in total).

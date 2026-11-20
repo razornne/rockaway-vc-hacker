@@ -95,7 +95,22 @@ Design change from the same review: the rebuild check no longer gives a time-to-
 
 The review also pointed out that the headline metrics are guards, not accuracy: quotes found in sources rule out invented quotes but not misreadings; evidence labels describe where evidence comes from, not whether a conclusion is right. The showcase now says so, and a hand-labelled accuracy check is the next step (see `ROADMAP.md`).
 
-## 8. What remains a limit
+## 8. Accuracy check, baseline and filed accounts (20 November)
+
+A second outside review asked whether the evidence labels overstate compound statements, whether amounts are written one way, and whether the tool is better than a plain model. Answering it found four more errors.
+
+| # | Error | Example | Fix |
+|---|---|---|---|
+| 27 | A statement was labelled *Verified* when only part of its evidence was official | A finding citing a register record and one press article showed *Verified* | `render.item_strength()`: *Verified* only if every cited source is official or technical; official plus one outlet is *Partly verified*; official plus two or more outlets is *Corroborated*. Tests in `test_evidence.py` |
+| 28 | Amounts in the source's words, or without a currency | Dronetag: "15 milionů korun" in a table; the showcase card showed the round with no currency | `thesis.format_money()`: one format everywhere ("15M CZK", "10–16M EUR"), the original wording kept beside it as "as reported"; compound amounts ("100M CZK + 4–5M EUR") are not turned into one number |
+| 29 | Grouped thousands read as a decimal | Spaceti: "28,000,000 CZK" parsed as 28 and shown as "0k CZK" | `thesis._num()`: "28,000,000" and "28.000.000" are thousands; a single comma group ("28,000") is thousands unless a word like "million" follows. Test cases in `test_ticket.py` |
+| 30 | Czech news pages in windows-1250 decoded as UTF-8 | Spaceti: investor "Radomír Čech" stored as "Radom�r �ech" | `Resp.text` uses the charset from the header or the page's meta tag, then UTF-8, then windows-1250. Test in `test_http_text.py`. Briefs collected before the fix keep the garbled text until re-collected |
+
+**Semantic accuracy.** All 72 statements of the two defence briefs were judged against their cited sources (`eval/labels/`). No material errors; two wrong numbers (a price ceiling, "up to CZK 1.5M" per drone, read as the price) and two conclusions from missing data (Dronetag "has no product surfaces", although its apps and API docs were collected — the facts were in the database but not in what the analysis cited). Both are model errors, not fixed in code; the prompt already forbids conclusions from absence. The labels were made by an AI reviewer, not a person.
+
+**Filed accounts.** The new reader rejects a filing unless total assets equal total equity and liabilities and the net result agrees between the two statements. Building it surfaced three form layouts (row-number column or not, thousands spaces or not, "Kč" or "CZK"); each is handled and tested. Scanned filings are shown as *Not read*.
+
+## 9. What remains a limit
 
 - An ambiguous company name has to be marked by hand (`context_terms`); it is not detected automatically.
 - SOC 2 cannot be checked publicly; the report is shared under NDA. The brief says "not checkable".

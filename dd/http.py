@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 import time
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -41,7 +42,21 @@ class Resp:
 
     @property
     def text(self) -> str:
-        return self.content.decode("utf-8", errors="replace")
+        """Decoded with the page's declared charset: Czech news sites still serve windows-1250, which read as UTF-8
+        turns names into 'Radom�r �ech'. Falls back to UTF-8, then windows-1250 if UTF-8 does not fit."""
+        declared = re.search(r"charset=[\"']?([\w-]+)", self.content_type or "", re.I) \
+            or re.search(rb"<meta[^>]{0,200}charset=[\"']?([\w-]+)", self.content[:4096], re.I)
+        if declared:
+            name = declared.group(1)
+            name = name.decode("ascii", "ignore") if isinstance(name, bytes) else name
+            try:
+                return self.content.decode(name, errors="replace")
+            except LookupError:
+                pass
+        try:
+            return self.content.decode("utf-8")
+        except UnicodeDecodeError:
+            return self.content.decode("cp1250", errors="replace")
 
     def json(self) -> Any:
         return json.loads(self.content)

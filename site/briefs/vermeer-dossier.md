@@ -2,7 +2,7 @@
 
 getvermeer\.com · US · 2026\-11\-20
 
-**How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — combines independent evidence with the company's own statements; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
+**How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — part of it rests on an official or independent source, part on one outlet or the company's own words; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
 
 ## TL;DR
 
@@ -16,7 +16,7 @@ getvermeer\.com · US · 2026\-11\-20
 
 | Signal | Value | Sources |
 |---|---|---|
-| Funding \(press\) | 2025\-10\-23 · Series A · $10 million · Rockaway Ventures, Draper Associates, AeroX Ventures, Boscolo Intervest, High Point Ventur · 5 reports | 16, 4, 17, 5, 18 |
+| Funding \(press\) | 2025\-10\-23 · Series A · 10M USD · Rockaway Ventures, Draper Associates, AeroX Ventures, Boscolo Intervest, High Point Ventur · 5 reports | 16, 4, 17, 5, 18 |
 | Thesis fit \(Rockaway\) | sectors: AI\-led transformative tech \(11 facts\); deep tech \(11 facts\); defence / dual\-use \(8 facts\); industrial / manufacturing AI \(3 facts\) · geography: US · overlaps portfolio: URC Systems, spol\. s r\.o\. \(drone, electro, jamming\), JISR Institute, a\.s\. \(drone, forces\) | 19, 20, 21, 22, 23 |
 | AI dependency | no LLM vendor named as subprocessor or in own tech claims; own\-model evidence: 10 papers, 0 verified HF models, 0 ML roles, 4 own\-model claims | 24, 12, 13 |
 | Engineering footprint | stack: Cloudflare, Webflow |  |

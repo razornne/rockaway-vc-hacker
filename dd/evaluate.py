@@ -92,8 +92,12 @@ def metrics(store: Store) -> dict:
     rows, strengths, total_cost = [], Counter(), 0.0
     by_section: dict[str, Counter] = {}
     integrity_rows = []
+    # the evaluation set only: a company added for a one-off run (dd add) is not part of the measured briefs
+    evaluated = {c["id"] for c in json.loads((ROOT / "eval" / "companies.json").read_text(encoding="utf-8"))}
     for comp in store.companies():
         cid = comp.id
+        if cid not in evaluated:
+            continue
         try:
             analysis, sections, facts = _load_and_validate(store, comp)
         except ValueError as e:

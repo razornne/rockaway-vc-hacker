@@ -130,7 +130,7 @@ EUR_PER = {"EUR": 1.0, "CZK": 1 / 25.0, "USD": 1 / 1.10}  # approximate fixed ra
 FX_NOTE = "converted at approximate fixed rates (25 CZK/EUR, 1.10 USD/EUR)"
 STAGES = ((r"pre-?seed", 1), (r"\bseed", 2), (r"series\s*a\b", 3), (r"series\s*b\b", 4), (r"series\s*c\b", 5),
           (r"growth|series\s*[d-z]\b", 6))
-_NUM = r"\d{1,3}(?:[  ]\d{3})+(?![\d.,])|\d+(?:[.,]\d+)?"
+_NUM = r"\d{1,3}(?:[  ]\d{3})+(?![\d.,])|\d{1,3}(?:[.,]\d{3})+(?![\d.,])|\d+(?:[.,]\d+)?"
 _AMOUNT = re.compile(rf"({_NUM})\s*(?:[-–—]|to|až)\s*[€$]?\s*({_NUM})|({_NUM})", re.I)
 _MULT = ((re.compile(r"\b(?:mld|miliard\w*|billions?|bn)\b", re.I), 1e9),
          (re.compile(r"\b(?:mil\w*|millions?|mio|mn)\b|(?<=\d)\s?m\b", re.I), 1e6),
@@ -139,30 +139,81 @@ _CURRENCY = (("EUR", re.compile(r"€|\beur\w*\b", re.I)), ("USD", re.compile(r"
              ("CZK", re.compile(r"\bkč\b|kč|\bczk\b|\bkorun\w*", re.I)))
 
 
+class _Never:
+    def start(self):
+        return 10 ** 6
+
+
+_NOPE = _Never()
+
+
 def stage_rank(name: Any) -> int:
     n = str(name or "").lower()
     return next((rank for pat, rank in STAGES if re.search(pat, n)), 0)  # first match: "pre-seed" before "seed"
 
 
-def _num(s: str) -> float:
-    s = s.replace(" ", " ")
+def _num(s: str, scaled: bool = False) -> float:
+    """'85 291', '28,000,000' and '28.000.000' are grouped thousands; '1,5' and '4.2' are decimals. A single group
+    after a comma ('28,000') is thousands unless a word like 'million' follows ('1,500 milionu' is 1.5 million)."""
+    s = s.replace("\u00a0", " ")
     if re.fullmatch(r"\d{1,3}(?: \d{3})+", s):
         return float(s.replace(" ", ""))
+    if re.fullmatch(r"\d{1,3}([.,])\d{3}(?:\1\d{3})+", s) or (re.fullmatch(r"\d{1,3},\d{3}", s) and not scaled):
+        return float(re.sub(r"[.,]", "", s))
     return float(s.replace(",", "."))
 
 
-def parse_amount(text: Any) -> dict | None:
-    """'~15M CZK' -> {'low': 600000.0, 'high': 600000.0, 'currency': 'CZK'} in EUR. None when the amount or its
-    currency cannot be read: an unreadable amount is unknown, never zero."""
+def parse_money(text: Any) -> dict | None:
+    """'15 milionů korun' -> {'low': 15e6, 'high': 15e6, 'currency': 'CZK'} in the original currency. None when the
+    amount or its currency cannot be read: an unreadable amount is unknown, never zero."""
     t = str(text or "")
-    cur = next((c for c, rx in _CURRENCY if rx.search(t)), None)
     m = _AMOUNT.search(t)
-    if not cur or not m:
+    if not m or "+" in t:  # "100 milionů korun + 4-5 milionů eur" is several amounts: not one number
+        return None
+    # the currency that belongs to this number: a symbol just before it, or a word just after it
+    before, after = t[max(0, m.start() - 3):m.start()], t[m.end():m.end() + 30]
+    cur = (next((c for c, rx in _CURRENCY if rx.search(before)), None)
+           or next((c for c, rx in sorted(_CURRENCY, key=lambda cr: (cr[1].search(after) or _NOPE).start())
+                    if rx.search(after)), None))
+    if not cur:
+        found = {c for c, rx in _CURRENCY if rx.search(t)}
+        cur = found.pop() if len(found) == 1 else None
+    if not cur:
         return None
     lo, hi = (m.group(1), m.group(2)) if m.group(1) else (m.group(3), m.group(3))
-    mult = next((k for rx, k in _MULT if rx.search(t[m.start():])), 1.0)
-    rate = EUR_PER[cur]
-    return {"low": _num(lo) * mult * rate, "high": _num(hi) * mult * rate, "currency": cur}
+    mult = next((k for rx, k in _MULT if rx.search(t[m.start():m.end() + 30])), 1.0)
+    return {"low": _num(lo, mult > 1) * mult, "high": _num(hi, mult > 1) * mult, "currency": cur}
+
+
+def parse_amount(text: Any) -> dict | None:
+    """Like parse_money, converted to EUR at the stated approximate rates."""
+    a = parse_money(text)
+    if not a:
+        return None
+    rate = EUR_PER[a["currency"]]
+    return {"low": a["low"] * rate, "high": a["high"] * rate, "currency": a["currency"]}
+
+
+def _m(x: float) -> str:
+    if x >= 1e9:
+        return f"{x / 1e9:.2f}".rstrip("0").rstrip(".") + "B"
+    if x >= 1e6:
+        return f"{x / 1e6:.2f}".rstrip("0").rstrip(".") + "M"
+    return f"{x / 1e3:.0f}k"
+
+
+def format_money(text: Any) -> str | None:
+    """One way to write amounts everywhere: '15 milionů korun' -> '15M CZK', '10 až 16 milionů eur' -> '10–16M EUR'.
+    None when the amount or currency cannot be read (the caller then shows the source's own wording)."""
+    a = parse_money(text)
+    if not a:
+        return None
+    if a["low"] == a["high"]:
+        return f"{_m(a['low'])} {a['currency']}"
+    lo, hi = _m(a["low"]), _m(a["high"])
+    if lo[-1] == hi[-1]:
+        lo = lo[:-1]
+    return f"{lo}–{hi} {a['currency']}"
 
 
 def pick_round(rounds: list[dict]) -> dict | None:
@@ -195,7 +246,8 @@ def stage_ticket(rounds: list[dict]) -> dict:
     r = pick_round(rounds or [])
     if not r:
         return {"relation": "no_round", "text": "No round reported in collected sources.", "fact_ids": []}
-    head = f"{STATUS_WORD.get(r.get('status'), 'Reported round')}: {r.get('amount') or 'amount not stated'}" \
+    shown = format_money(r.get("amount")) or r.get("amount") or "amount not stated"
+    head = f"{STATUS_WORD.get(r.get('status'), 'Reported round')}: {shown}" \
            + (f" ({r['round']})" if r.get("round") else "")
     a = parse_amount(r.get("amount"))
     if not a:

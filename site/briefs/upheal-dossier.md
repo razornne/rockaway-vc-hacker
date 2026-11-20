@@ -2,7 +2,7 @@
 
 upheal\.io · Upheal s\.r\.o\. · IČO 14138018 · CZ · 2026\-11\-20
 
-**How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — combines independent evidence with the company's own statements; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
+**How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — part of it rests on an official or independent source, part on one outlet or the company's own words; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
 
 ## TL;DR
 
@@ -16,7 +16,7 @@ upheal\.io · Upheal s\.r\.o\. · IČO 14138018 · CZ · 2026\-11\-20
 
 | Signal | Value | Sources |
 |---|---|---|
-| Funding \(press\) | 2024\-02\-28 · $4\.35 million; 2024\-11\-14 · Series Seed; 2024\-11\-18 · seed · 76,000,000 CZK | 6, 18, 7 |
+| Funding \(press\) | 2024\-02\-28 · 4\.35M USD; 2024\-11\-14 · Series Seed; 2024\-11\-18 · seed · 76M CZK | 6, 18, 7 |
 | Thesis fit \(Rockaway\) | sectors: AI\-led transformative tech \(19 facts\) · geography: CZ \(core region\) | 19, 20 |
 | Engineering footprint | product surfaces: auth\.upheal\.io, status\.upheal\.io; 5 docs pages; stack: Cloudflare, Webflow | 21, 22, 23, 11 |
 | Customers | public pricing: yes; 1 mobile app\(s\) | 24 |

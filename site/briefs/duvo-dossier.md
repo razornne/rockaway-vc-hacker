@@ -2,7 +2,7 @@
 
 duvo\.ai · duvo\.ai s\.r\.o\. · IČO 22646141 · CZ · 2026\-11\-20
 
-**How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — combines independent evidence with the company's own statements; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
+**How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — part of it rests on an official or independent source, part on one outlet or the company's own words; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
 
 ## TL;DR
 
@@ -16,7 +16,7 @@ duvo\.ai · duvo\.ai s\.r\.o\. · IČO 22646141 · CZ · 2026\-11\-20
 
 | Signal | Value | Sources |
 |---|---|---|
-| Funding \(press\) | 2025\-12\-02 · seed funding · $15 million · Index Ventures, Credo Ventures, Northzone, Puzzle Ventures, Roy Reznik \(angel\), David Sing; 2026\-10\-14 · Series A · €28\.55 million · Balderton Capital, Index Ventures, Northzone, Credo Ventures · 4 reports | 4, 5, 6, 18, 19 |
+| Funding \(press\) | 2025\-12\-02 · seed funding · 15M USD · Index Ventures, Credo Ventures, Northzone, Puzzle Ventures, Roy Reznik \(angel\), David Sing; 2026\-10\-14 · Series A · 28\.55M EUR · Balderton Capital, Index Ventures, Northzone, Credo Ventures · 4 reports | 4, 5, 6, 18, 19 |
 | Thesis fit \(Rockaway\) | sectors: AI\-led transformative tech \(24 facts\); deep tech \(6 facts\) · geography: CZ \(core region\) | 20, 21, 22, 23 |
 | Hiring | 9 open roles: other 2, sales gtm 2, ml research 2, forward deployed 2, engineering 1; European Union, London, United Kingdom, USA, United Kingdom | 24, 25, 26, 27, 28, 29 |
 | AI dependency | relies on \(subprocessor / own claims\): Anthropic; own\-model evidence: 0 papers, 0 verified HF models, 2 ML roles, 2 own\-model claims | 17, 30, 14, 28 |
@@ -40,12 +40,12 @@ duvo\.ai · duvo\.ai s\.r\.o\. · IČO 22646141 · CZ · 2026\-11\-20
   - Assumption: SaaS/subscription is the main commercial model\.
 - Pricing / GTM: free plan and free two\-week enterprise trial indicate a land\-and\-expand model with freemium onboarding\. *(Company claim)* ^[43](https://www.duvo.ai/),[38](https://www.duvo.ai/),[44](https://www.duvo.ai/)
   - Assumption: Trials are used to convert enterprise customers\.
-- Customers pay: named enterprise customers include Notino, Morrisons, Holland &amp; Barrett, Boden, Allegro and Rohlik — these are paying\-reference evidence\. *(Verified)* ^[3](https://www.therecursive.com/rohlik-founder-tomas-cuprs-duvo-raises-eur28-7m-series-a-to-take-enterprise-ai-agents-to-the-us),[36](https://finance.yahoo.com/technology/ai/articles/duvo-raises-32-million-series-130000587.html),[37](https://tech.eu/2026/10/14/from-rohlik-to-enterprise-ai-tomas-cuprs-duvo-raises-32m-series-a/)
+- Customers pay: named enterprise customers include Notino, Morrisons, Holland &amp; Barrett, Boden, Allegro and Rohlik — these are paying\-reference evidence\. *(Partly verified)* ^[3](https://www.therecursive.com/rohlik-founder-tomas-cuprs-duvo-raises-eur28-7m-series-a-to-take-enterprise-ai-agents-to-the-us),[36](https://finance.yahoo.com/technology/ai/articles/duvo-raises-32-million-series-130000587.html),[37](https://tech.eu/2026/10/14/from-rohlik-to-enterprise-ai-tomas-cuprs-duvo-raises-32m-series-a/)
   - Assumption: Named customers are commercial users\.
 
 ## Market
 
-- Target buyers: large retail and consumer brands \(explicitly named by press\) — Duvo positions at retailers’ finance, operations and store networks\. *(Verified)* ^[3](https://www.therecursive.com/rohlik-founder-tomas-cuprs-duvo-raises-eur28-7m-series-a-to-take-enterprise-ai-agents-to-the-us),[36](https://finance.yahoo.com/technology/ai/articles/duvo-raises-32-million-series-130000587.html),[45](https://tech.eu/2026/10/14/from-rohlik-to-enterprise-ai-tomas-cuprs-duvo-raises-32m-series-a/)
+- Target buyers: large retail and consumer brands \(explicitly named by press\) — Duvo positions at retailers’ finance, operations and store networks\. *(Corroborated)* ^[3](https://www.therecursive.com/rohlik-founder-tomas-cuprs-duvo-raises-eur28-7m-series-a-to-take-enterprise-ai-agents-to-the-us),[36](https://finance.yahoo.com/technology/ai/articles/duvo-raises-32-million-series-130000587.html),[45](https://tech.eu/2026/10/14/from-rohlik-to-enterprise-ai-tomas-cuprs-duvo-raises-32m-series-a/)
   - Assumption: Press accurately lists reference customers\.
 - Claimed demand/impact: press cites platform value generated for large brands exceeding $100M annually \(company/press claim\)\. *(Single source)* ^[46](https://www.wired.cz/news-beat/cuprovo-duvo-ziskalo-32-milionu-dolaru-na-expanzi)
   - Assumption: Figure is a company\-sourced claim reported by press\.

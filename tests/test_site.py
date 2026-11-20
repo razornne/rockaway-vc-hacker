@@ -48,7 +48,7 @@ def test_latest_reported_round_by_stage_not_article_date():
         {"date": "2025-06-24", "round": "seed", "amount": "4.2 million USD", "fact_ids": []},
         {"date": "2025-06-24", "round": "pre-seed", "amount": "nearly $56 million", "fact_ids": []}]}}
     t = _tiles(sig, _facts())
-    assert t["Latest reported round"]["value"] == "4.2 million USD"
+    assert t["Latest reported round"]["value"] == "4.2M USD"
     assert [page._stage(x) for x in ("pre-seed", "Pre-Seed", "seed", "Series A", "growth equity", "loan")] == [1, 1, 2, 3, 6, 0]
 
 

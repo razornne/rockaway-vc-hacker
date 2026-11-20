@@ -189,7 +189,8 @@ def test_collector_offline(tmp_path: Path):
     assert {"identity", "registry_incorporation", "registry_shareholder", "registry_capital",
             "registry_officer_change", "filing", "insolvency"} <= set(types)
     assert all(f.source_url and f.extractor == "registry" for f in facts)
-    assert "source_unavailable" not in types
+    # the offline fixture has no accounts PDF to download: only that source may be reported unavailable
+    assert {f.key for f in facts if f.type == "source_unavailable"} <= {"annual_accounts"}
 
 
 def test_collector_network_failure_returns_unavailable(tmp_path: Path):

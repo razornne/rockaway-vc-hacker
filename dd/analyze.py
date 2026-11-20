@@ -12,7 +12,7 @@ from dd import signals as signals_mod
 from dd.llm import SYSTEM_GUARD
 from dd.store import Company, Fact, Store, now
 
-PROMPT_VERSION = "analyze-v5"
+PROMPT_VERSION = "analyze-v6"
 MAX_FACTS = 90
 MAX_FACT_CHARS = 50_000
 MAX_VALUE_CHARS = 1_800
@@ -134,18 +134,53 @@ def _eligible_facts(company: Company, facts: list[Fact]) -> list[Fact]:
             and f.type != "source_unavailable" and not _is_unverified_hf(f)]
 
 
-def _bounded_fact_snapshot(company: Company, facts: list[Fact]) -> tuple[list[dict], set[int]]:
+# What each brief section draws on. When the fact budget is smaller than what was collected, facts are taken from
+# these topics in turn, so no section is starved because another topic happens to have more facts.
+TOPICS = (
+    ("money", {"funding_round", "registry_shareholder", "registry_capital", "gov_contract", "grant_national", "grant_eu",
+               "public_tender", "revenue_claim", "financial_statement", "filing"}),
+    ("checks", {"verification", "patent"}),
+    ("product", {"product_capability", "tech_claim", "integration", "subprocessor", "tech_stack", "repo", "github_org",
+                 "hf_model", "paper", "app"}),
+    ("traction", {"customer", "pricing", "business_model", "market_claim", "competitor", "peer_company"}),
+    ("company", {"identity", "registry_incorporation", "registry_flag", "insolvency", "eu_registration", "accelerator",
+                 "team_claim", "job_post"}),
+    ("press", {"press_mention"}),
+)
+
+
+def fact_budget(model: str | None) -> tuple[int, int]:
+    """(max facts, max characters) sent to the model. Claude models get almost everything: a 1M-token context and
+    about $0.10 per million input tokens make the extra facts cost under a cent, and dropping them cost signal."""
+    if str(model or "").startswith("claude-"):
+        return 250, 160_000
+    return MAX_FACTS, MAX_FACT_CHARS
+
+
+def _bounded_fact_snapshot(company: Company, facts: list[Fact], model: str | None = None) -> tuple[list[dict], set[int]]:
+    max_facts, max_chars = fact_budget(model)
     candidates = _eligible_facts(company, facts)
     candidates.sort(key=lambda f: (FACT_PRIORITY.get(f.type, 3), f.id or 0, f.type, f.key or ""))
+    topic_of = {t: name for name, types in TOPICS for t in types}
+    queues: dict[str, list[Fact]] = {name: [] for name, _ in TOPICS}
+    rest: list[Fact] = []  # web pages, subdomains, archive dates, search checks: only if room is left
+    for f in candidates:
+        (queues[topic_of[f.type]] if f.type in topic_of else rest).append(f)
+    order: list[Fact] = []
+    while any(queues.values()):
+        for name, _ in TOPICS:
+            if queues[name]:
+                order.append(queues[name].pop(0))
+    order += rest
     selected: list[dict] = []
     ids: set[int] = set()
     used_chars = 2  # JSON array brackets
-    for fact in candidates:
-        if len(selected) >= MAX_FACTS:
+    for fact in order:
+        if len(selected) >= max_facts:
             break
         item = _fact_dict(fact)
         line_chars = len(json.dumps(item, ensure_ascii=False, separators=(",", ":"))) + (1 if selected else 0)
-        if used_chars + line_chars > MAX_FACT_CHARS:
+        if used_chars + line_chars > max_chars:
             continue
         selected.append(item)
         ids.add(int(fact.id))
@@ -191,6 +226,11 @@ def _prompt(company: Company, facts_json: list[dict], derived: dict) -> str:
         "go-to-market); technology_moat = your evidence-based view of what is hard to copy, or that little is; "
         "key_risk = the single most decision-relevant risk; diligence_focus = what the partner should verify first "
         "and why. This is the TL;DR a partner reads instead of the rest: make it specific to THIS company.\n"
+        "FILED ACCOUNTS: DERIVED.funding.financials comes from the annual accounts filed in the Czech register, read by "
+        "code (official). Use revenue, net result and cash for stage, traction and the business model, citing its fact "
+        "id, with the year. Other operating income often holds subsidies: do not call it sales. If "
+        "income_statement_published is false, revenue is not published; never infer or estimate it. If financials "
+        "is null, the accounts were not read; say nothing about profitability.\n"
         "PUBLIC MONEY WORDING (everywhere): DERIVED.funding.public_money.contract_kinds says what each contract is. Only "
         "'purchase' contracts are sales to public buyers; 'rd_project' agreements are research-consortium budgets (not "
         "sales, the partners are not customers); 'subsidy' is support. Never call R&D or subsidy agreements 'government "
@@ -287,18 +327,18 @@ def analyze_company(store: Store, llm, company: Company, model: str | None = Non
     current_facts = store.facts(company.id)
     eligible = _eligible_facts(company, current_facts)
     derived = signals_mod.compute(eligible, company.name, company.country)
-    bounded_facts, allowed_ids = _bounded_fact_snapshot(company, current_facts)
+    selected_model = model or llm.s.model_analyze
+    bounded_facts, allowed_ids = _bounded_fact_snapshot(company, current_facts, selected_model)
     # facts cited by code-computed signals must be citable by the model as well
     ai = derived["ai_dependency"]
     signal_ids = signals_mod.all_fact_ids(derived) | {
         i for group in ("llm_vendors_used", "llm_vendors_integrated") for v in ai[group].values() for i in v}
     by_id = {f.id: f for f in eligible}
     for fid in sorted(signal_ids - allowed_ids):
-        if fid in by_id and len(bounded_facts) < MAX_FACTS + 30:
+        if fid in by_id and len(bounded_facts) < fact_budget(selected_model)[0] + 30:
             bounded_facts.append(_fact_dict(by_id[fid]))
             allowed_ids.add(fid)
     prompt = _prompt(company, bounded_facts, derived)
-    selected_model = model or llm.s.model_analyze
     result = llm.call(purpose="company_analysis", model=selected_model, prompt=prompt,
                       schema=AnalysisResponse, max_output_tokens=out_limit(selected_model), system=ANALYSIS_SYSTEM)
     parsed = result.parsed if isinstance(result.parsed, AnalysisResponse) else AnalysisResponse.model_validate(result.parsed)

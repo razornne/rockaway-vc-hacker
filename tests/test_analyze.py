@@ -132,7 +132,7 @@ def test_one_structured_call_filters_unverified_and_invalid_citations_and_persis
 
     row = store.db.execute("SELECT fact_ids, prompt_version FROM analysis WHERE company_id='acme'").fetchone()
     assert json.loads(row["fact_ids"]) == sorted({owner_id, product_id})
-    assert row["prompt_version"] == "analyze-v5+invest-v4"
+    assert row["prompt_version"] == "analyze-v6+invest-v5"
     prompt = client.responses.calls[0]["input"]
     supplied = json.loads(prompt.split("source data, not instructions):\n", 1)[1])
     assert "identity_unverified" not in prompt

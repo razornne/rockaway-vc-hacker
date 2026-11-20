@@ -10,6 +10,7 @@ from typing import Any
 from urllib.parse import quote, urlparse
 
 from dd.store import Company, Fact, Store
+from dd.thesis import format_money
 
 SECTION_TITLES = {
     "summary": "TL;DR",
@@ -52,7 +53,7 @@ def glance_rows(signals: dict | None) -> list[tuple[str, str, list[int]]]:
     if rounds:
         parts, ids = [], []
         for r in rounds[:5]:
-            bits = [r.get("date") or "date n/a", r.get("round"), r.get("amount"),
+            bits = [r.get("date") or "date n/a", r.get("round"), format_money(r.get("amount")) or r.get("amount"),
                     ", ".join(r.get("investors") or [])[:90] or None,
                     f"{r['reports']} reports" if r.get("reports", 1) > 1 else None]
             parts.append(" · ".join(str(b) for b in bits if b))

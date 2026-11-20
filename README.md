@@ -36,7 +36,7 @@ Rockaway now has a defence fund, and defence / dual-use is where official public
 
 ## What a brief contains
 
-- Key numbers computed by code: latest round, sales to public buyers, grants (kept apart from revenue), defence evidence from official sources.
+- Key numbers computed by code: revenue, net result and cash from filed accounts, latest round, sales to public buyers, grants (kept apart from revenue), defence evidence from official sources.
 - For the memo: the case for, the case against, and what must be true.
 - Ownership, funding rounds, public money (grants awarded vs actually paid, sales to public buyers), customers, technical profile, what could be rebuilt and what cannot be judged from outside, competition, fit with the Rockaway thesis.
 - Risks and questions for the founder.
@@ -44,7 +44,7 @@ Rockaway now has a defence fund, and defence / dual-use is where official public
 
 ## How it works
 
-1. **Collect.** Twelve collectors read the Czech business register (ARES, or.justice.cz), Czech public contracts and subsidies (Hlídač státu), EU procurement (TED), the EU Funding & Tenders portal, NATO DIANA cohorts (archived copies), the company website and job boards, GitHub, certificate transparency logs, app stores, research databases and the press. Every response is cached with its URL and date.
+1. **Collect.** Twelve collectors read the Czech business register (ARES, or.justice.cz, and the filed annual accounts), Czech public contracts and subsidies (Hlídač státu), EU procurement (TED), the EU Funding & Tenders portal, NATO DIANA cohorts (archived copies), the company website and job boards, GitHub, certificate transparency logs, app stores, research databases and the press. Every response is cached with its URL and date.
 2. **Extract.** A small model (OpenAI `gpt-5-nano`) proposes facts from unstructured pages only. A fact is kept only if its exact quote is found in the saved source and passes category rules.
 3. **Compute and verify.** Code computes public money by type, funding rounds and thesis fit, and checks company claims against independent sources: patents, the register, the IAB vendor list, security pages, named customers, government vendor lists.
 4. **Analyse.** A second model writes findings and the investment view: Claude Haiku 5.5 since a side-by-side test against `gpt-5-mini` and Claude Sonnet 5.5 (the two showcase briefs; the others still use `gpt-5-mini`). It may cite only collected facts; evidence labels are computed from the sources, not chosen by the model.
@@ -52,31 +52,31 @@ Rockaway now has a defence fund, and defence / dual-use is where official public
 
 More: [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md).
 
-## How it is checked, and what is not measured yet
+## How it is checked
 
-`uv run dd eval` writes [`eval/report.md`](eval/report.md) without calling a model. These are guards against specific failures, not an accuracy score:
+Two questions matter: is each statement right, and is the tool better than simply asking a model with web search?
 
-- **18 of 18** hand-checked register, grant and infrastructure facts reproduced — a small regression set showing that official records are parsed correctly.
-- **811 of 811** quotes behind model-extracted facts found in the saved sources — this rules out invented quotes, not misread ones.
-- Of 188 factual statements, **54%** rest on an official record or two independent outlets and 19% only on the company's word; the labels describe the evidence, not whether a conclusion is right.
-- Numbers a partner compares — round size against the fund's ticket, grants awarded versus actually paid, sales versus R&D budgets — are computed in code; the model is told not to redo that arithmetic.
-- **$0.02–0.03** of model cost per brief; about $1.45 for the whole project, including development runs.
+- **Semantic accuracy.** All 72 statements of the two defence briefs were judged one by one against the quotes and links they cite ([`eval/labels/`](eval/labels/showcase-2026-11-20-score.md)): **82%** fully supported and 18% partly, none unsupported; **35 of 37** numbers right (both misses read a price ceiling, "up to CZK 1.5M" per drone, as the price); **0** problems that would mislead an investor, 16 minor ones, mostly judgements that go a step beyond their evidence. The reviewer was an AI model (Claude Opus 5.5), not a person; a human pass on the same sheet is the next step.
+- **Baseline.** `gpt-5-mini` with web search on the same task ([`eval/baseline/`](eval/baseline/README.md)). On 14 facts that official records settle — filed revenue and profit, grants awarded and paid, a Ministry of Defence tender, the round — the tool states **14** right and the plain model **2** (3 partly, 2 wrong, 7 missed). The plain model took Fly4Future's revenue from a 2024 slide (≈ CZK 24M; filed: CZK 45.1M) and cited a rejected grant application as a grant.
+- **Time.** A new company from nothing to a brief takes about **7 minutes and $0.03** (Spaceti: collection 2.7 min, extraction 2 min, analysis 1.6 min). The plain model takes 30 seconds. How long an analyst needs for the same first look is not measured: that needs a person.
+- **Numbers in code.** Round size against the fund's ticket, grants awarded versus paid, sales versus R&D budgets and the filed accounts are computed by code; the model is told not to redo that arithmetic. Filed accounts are used only if the balance sheet balances.
 
-The real quality process is reading the output by hand. That has found 26 systematic errors so far — a subsidy counted as a customer contract, the same grant added up across registers, a namesake company taken for the target, a failed patent search reported as "no patents", a decimal misread that inflated a total 10,000 times, a model claiming a CZK 15M round "exceeds" a €0.5–2m ticket. Each was fixed in code and covered by a test: [`docs/AUDIT.md`](docs/AUDIT.md).
+Guards that run on every build (`uv run dd eval`, no model, [`eval/report.md`](eval/report.md)): 18 of 18 hand-checked register facts reproduced, every quote behind a model-extracted fact found in its saved source. They rule out specific failures, not wrong conclusions.
 
-Not measured yet: how many statements are actually correct. `uv run dd label-sheet` writes the statements of chosen briefs with their quotes into a sheet for a person to label, and `dd label-score` counts the result; the first sheet ([`eval/labels/`](eval/labels/)) covers the two defence briefs. Time saved and a comparison with a plain model plus web search are next ([`docs/ROADMAP.md`](docs/ROADMAP.md)).
+Reading the output by hand remains the main quality process. It has found 30 systematic errors so far — a subsidy counted as a customer contract, the same grant added up across registers, a namesake company taken for the target, a decimal misread that inflated a total 10,000 times, "28,000,000 CZK" read as 28, a *Verified* label on a statement that rested partly on one article. Each was fixed in code and covered by a test: [`docs/AUDIT.md`](docs/AUDIT.md).
 
 ## What it cannot do yet
 
-- Revenue and profit from filed accounts are not read yet: the filings are listed, not parsed.
+- Scanned filings (no text layer) are not read; only the two showcase briefs have been re-run with filed accounts so far.
 - Registers outside Czechia are flagged (a Delaware or Dutch holding), not read.
 - NATO DIANA's live site blocks scripts, so cohorts come from archived copies.
 - Competitor candidates are text-similarity matches; the model may reject all of them.
 - Analyst views are model-written opinions over collected facts, labelled as such.
+- The site shows finished briefs; a partner cannot request a new company from it yet.
 
 ## What's next
 
-[`docs/ROADMAP.md`](docs/ROADMAP.md): reading filed accounts, registers of other CEE countries, an A/B of Anthropic models against the current setup, an editable export for the fund (an Excel workbook, one sheet per question), and a bounded research agent that closes gaps.
+[`docs/ROADMAP.md`](docs/ROADMAP.md): a human pass on the accuracy sheet and a timed manual first look; OCR for scanned filings; registers of other CEE countries; a request form with a budgeted queue so the team can run new companies; an editable export for the fund (an Excel workbook, one sheet per question); and a bounded research agent that closes gaps.
 
 ## Repository
 
@@ -106,6 +106,7 @@ uv run dd eval                      # evaluation report
 uv run dd site                      # rebuild the showcase in site/
 uv run dd label-sheet fly4future,dronetag --output eval/labels/sheet.csv   # statements for a person to label
 uv run dd label-score eval/labels/sheet.csv                               # accuracy per question
+uv run python eval/baseline.py fly4future         # plain model + web search, for comparison (paid)
 uv run pytest -q -m "not network"
 ```
 

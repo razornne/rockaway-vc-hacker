@@ -2,7 +2,7 @@
 
 culturepulse\.ai · SK/US · 2026\-11\-20
 
-**How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — combines independent evidence with the company's own statements; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
+**How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — part of it rests on an official or independent source, part on one outlet or the company's own words; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
 
 ## TL;DR
 
@@ -16,7 +16,7 @@ culturepulse\.ai · SK/US · 2026\-11\-20
 
 | Signal | Value | Sources |
 |---|---|---|
-| Funding \(press\) | 2023\-04\-20 · Seed · just south of $1 million · Zero Gravity Capital · 2 reports; 2025\-02\-06 · Series A · $1\.5 million · Rockaway Ventures \(Rockaway Capital\), B Ventures Group \(USA\), Simpact VC \(PL\), Rockaway Ve · 6 reports; 2025\-02\-10 · strategická investícia · 1,5 milióna USD · B Ventures group \(USA\), Rockaway Ventures Fund \(Česko\), Simpact Ventures \(Poľsko\) | 4, 14, 5, 15, 16, 17 |
+| Funding \(press\) | 2023\-04\-20 · Seed · 1M USD · Zero Gravity Capital · 2 reports; 2025\-02\-06 · Series A · 1\.5M USD · Rockaway Ventures \(Rockaway Capital\), B Ventures Group \(USA\), Simpact VC \(PL\), Rockaway Ve · 6 reports; 2025\-02\-10 · strategická investícia · 1\.5M USD · B Ventures group \(USA\), Rockaway Ventures Fund \(Česko\), Simpact Ventures \(Poľsko\) | 4, 14, 5, 15, 16, 17 |
 | Thesis fit \(Rockaway\) | sectors: AI\-led transformative tech \(19 facts\); defence / dual\-use \(3 facts\) · geography: SK/US \(core region\) · overlaps portfolio: BudgetBakers \(finance, persona\) | 9, 18, 19, 20 |
 | AI dependency | no LLM vendor named as subprocessor or in own tech claims; own\-model evidence: 7 papers, 0 verified HF models, 0 ML roles, 0 own\-model claims | 8, 21, 22 |
 | Engineering footprint | 7 public repos \(1★, last push 2026\-04\-06\); stack: AmazonS3 | 10, 23, 24 |

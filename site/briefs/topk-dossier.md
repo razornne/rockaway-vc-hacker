@@ -2,7 +2,7 @@
 
 topk\.io · CZ/US · 2026\-11\-20
 
-**How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — combines independent evidence with the company's own statements; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
+**How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — part of it rests on an official or independent source, part on one outlet or the company's own words; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
 
 ## TL;DR
 
@@ -16,7 +16,7 @@ topk\.io · CZ/US · 2026\-11\-20
 
 | Signal | Value | Sources |
 |---|---|---|
-| Funding \(press\) | 2025\-07\-01 · seed · $5\.5M \(nearly €4\.66M\) · Earlybird, KAYA, Irregular Expressions, angel investors, niekoľkých anjelských investorov · 5 reports | 6, 7, 19, 20, 21 |
+| Funding \(press\) | 2025\-07\-01 · seed · 5\.5M USD · Earlybird, KAYA, Irregular Expressions, angel investors, niekoľkých anjelských investorov · 5 reports | 6, 7, 19, 20, 21 |
 | Thesis fit \(Rockaway\) | sectors: AI\-led transformative tech \(20 facts\); deep tech \(7 facts\); energy \(2 facts\) · geography: CZ/US \(core region\) · overlaps portfolio: Gjirafa \(e\-comme, search\) | 10, 22, 13, 14, 23, 24 |
 | AI dependency | no LLM vendor named as subprocessor or in own tech claims; integrates with customers' OpenAI \(not a dependency\); own\-model evidence: 4 papers, 0 verified HF models, 0 ML roles, 1 own\-model claims | 25, 26, 27, 13 |
 | Engineering footprint | 8 public repos \(106★, last push 2026\-11\-17\); product surfaces: api\.topk\.io, console\.topk\.io, docs\.topk\.io, login\.topk\.io, status\.topk\.io; 5 docs pages; stack: Next\.js, Vercel | 28, 29, 30, 31, 5, 32 |

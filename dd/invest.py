@@ -15,7 +15,7 @@ from pydantic import BaseModel, ConfigDict
 from dd.analyze import ANALYSIS_SYSTEM, AnalysisItem, LabeledItem, out_limit
 from dd.store import Company
 
-PROMPT_VERSION = "invest-v4"
+PROMPT_VERSION = "invest-v5"
 INVEST_KINDS = ("thesis_fit", "business_model", "market", "competition", "investment_case")
 LIMITS = {"thesis_fit": 2, "business_model": 4, "market": 3, "competition": 5, "investment_case": 6}
 # stage and ticket are compared by code (dd.thesis.stage_ticket); the model gets the result and must not redo it
@@ -65,6 +65,11 @@ def prompt(company: Company, facts_json: list[dict], derived: dict) -> str:
         "DERIVED.thesis.portfolio_overlap and say whether it looks like a conflict (same product, same buyer) or a "
         "possible synergy, citing the company's own facts that show the overlapping capability (e.g. a GPS-free "
         "navigation claim); always include this label when that list is not empty.\n"
+        "FILED ACCOUNTS: DERIVED.funding.financials comes from the annual accounts filed in the Czech register, read by "
+        "code (official). Use revenue, net result and cash for stage, traction and the business model, citing its fact "
+        "id, with the year. Other operating income often holds subsidies: do not call it sales. If "
+        "income_statement_published is false, revenue is not published; never infer or estimate it. If financials "
+        "is null, the accounts were not read; say nothing about profitability.\n"
         "business_model: how the company makes money and who pays, from business_model, revenue_claim, pricing, "
         "customer, public_tender, gov_contract and grant facts. Separate revenue from customers from public grants "
         "(grants are not revenue). Public contracts: use DERIVED.funding.public_money.contract_kinds — only 'purchase' "

@@ -1,335 +1,290 @@
 ﻿row,company,section,label,statement,tool_evidence_label,cited_quotes,cited_links,supported,numbers,entities,follows,from_absence,severity,comment
-1,fly4future,TL;DR,Product,"Sells autonomous drones, company-claimed to fly without GPS, at up to 1.5M CZK per unit; contract counterparties are mostly universities.",Verified,"[1] Nějakých 70 až 80 kusů ročně. Jde ale o stroje až za 1,5 milionu korun s velkou přidanou hodnotou.
-[2] The Czechs want to disrupt China's dominance over drones. They plan to produce tens of thousands of units per year - News service - Czech technical university in Prague
-[3] VYSOKÉ UČENÍ TECHNICKÉ V BRNĚ · 658 829 CZK · Kupní smlouva - Senzorický systém pro mobilní roboty – 3D laserové skenery","[1] https://aktualne.cvut.cz/zpravy-z-medii/20260615-rozvoj-dronu-v-cesku-zajisti-obdoba-agentury-darpa-chytra-armada-a-silni
-[2] https://aktualne.cvut.cz/en/media-screenings/20260813-the-czechs-want-to-disrupt-chinas-dominance-over-drones-they-plan-to
-[3] https://smlouvy.gov.cz/smlouva/24070505",,,,,,,
-2,fly4future,TL;DR,Stage & traction,No closed round is evidenced; three raises are sought. Public money is R&D-heavy: 12 R&D agreements versus 2 purchase contracts. No public-sector listing check is supplied.,Verified,"[1] Fly4future proto nyní od investorů žádá 10 až 16 milionů eur, tedy zhruba 244 až 390 milionů korun.
-[2] Od jedné firmy už máme příslib přes 100 milionů korun. K tomu plánujeme získat dalších 100 milionů z evropských fondů. To je budget, který potřebuji na vybudování týmu. V úterý jedu do Německa jednat s agenturou Sprind, která by nám mohla zprostředkovat investici kolem čtyř až pěti milionů eur na vývoj autonomních rojů
-[3] Vysoká škola báňská - Technická univerzita Ostrava · 96 323 CZK · Objednávka: konzultace pro vývoj dronové platformy
-[4] VYSOKÉ UČENÍ TECHNICKÉ V BRNĚ · 658 829 CZK · Kupní smlouva - Senzorický systém pro mobilní roboty – 3D laserové skenery","[1] https://cc.cz/od-univerzitniho-projektu-po-milionove-trzby-ceske-drony-maji-za-ukol-dorucit-jidlo-zachranit-zivot-i-ockovat/
-[2] https://aktualne.cvut.cz/zpravy-z-medii/20260414-cesti-vedci-vytvorili-letajici-roj-autonomnich-dronu-ted-shani-investory-pro
-[3] https://smlouvy.gov.cz/smlouva/38841586
-[4] https://smlouvy.gov.cz/smlouva/24070505",,,,,,,
-3,fly4future,TL;DR,Technology & moat,"Public code is ROS-based mission and bridge software, and the two patent filings are not granted. Little is publicly hard to copy; the swarm autonomy code is not public.",Verified,"[1] fly4future/iroc_bridge · Node to translate messages from ROS to backend and back · C++ · last push 2026-10-30
-[2] fly4future/argentswarm_core · Digest of the swarm autonomy software at f4f. · C++ · last push 2026-10-22
-[3] WO2024255934A1 · Method of marking bark beetle infested trees and means for executing this … · Fly4Future s.r.o.
-[4] CZ38123U1 · A drone sprayer · Fly4Future s.r.o.","[1] https://github.com/fly4future/iroc_bridge
-[2] https://github.com/fly4future/argentswarm_core
-[3] https://patents.google.com/patent/WO2024255934A1
-[4] https://patents.google.com/patent/CZ38123U1",,,,,,,
-4,fly4future,TL;DR,Key risk,"The unclosed 10-16M EUR round sits above the fund's 0.5-2M initial ticket, so the investment depends on syndicate formation and undocumented runway.",Analyst view,"[1] Fly4future proto nyní od investorů žádá 10 až 16 milionů eur, tedy zhruba 244 až 390 milionů korun.
-[2] Bereme to už jako Series A, protože máme produkt a kontrakty. Potřebujeme zatím pro jeden projekt získat osm milionů eur (necelých 200 milionů korun – pozn. red.).","[1] https://cc.cz/od-univerzitniho-projektu-po-milionove-trzby-ceske-drony-maji-za-ukol-dorucit-jidlo-zachranit-zivot-i-ockovat/
-[2] https://aktualne.cvut.cz/zpravy-z-medii/20260615-rozvoj-dronu-v-cesku-zajisti-obdoba-agentury-darpa-chytra-armada-a-silni",,,,,,,
-5,fly4future,TL;DR,Diligence focus,Verify first whether revenue comes from customer purchases or R&D pass-through; request the filed 2024 and 2025 accounts and the signed customer list.,Analyst view,"[1] 
-[2] 
-[3] Thanks to our participation in the competition, we have created a truly unique system that is already in demand by clients. Several industrial partners are now focusing on flying without GPS , so this is a very hot topic now that not only the defence industry but also the civilian industry is aware of.","[1] https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=995597
-[2] https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=995597
-[3] https://fly4future.com/winning-solution-sprind-drone-flight-without-gps/",,,,,,,
-6,fly4future,Ownership and capital,,Ostrava-seated s.r.o. registered in 2017; no registry investor entries were supplied; the company describes itself as a CTU Prague spinout.,Partly verified,"[1] Fly4Future s.r.o. · s.r.o. · registered 2017-11-27
-[2] Fly4Future was formed in 2017 as a spinout of the Multi-Robot Systems group at the Czech Technical University in Prague (MRS CTU)","[1] https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/06632581
-[2] https://fly4future.com/about-us/",,,,,,,
-7,fly4future,Ownership and capital,,"Rounds sought: 10-16M EUR from investors (article dated 2026-10-16). The founder states 100M CZK is already promised by one unnamed firm, with Sprind mediating 4-5M EUR.",Corroborated,"[1] Fly4future proto nyní od investorů žádá 10 až 16 milionů eur, tedy zhruba 244 až 390 milionů korun.
-[2] Od jedné firmy už máme příslib přes 100 milionů korun. K tomu plánujeme získat dalších 100 milionů z evropských fondů. To je budget, který potřebuji na vybudování týmu. V úterý jedu do Německa jednat s agenturou Sprind, která by nám mohla zprostředkovat investici kolem čtyř až pěti milionů eur na vývoj autonomních rojů","[1] https://cc.cz/od-univerzitniho-projektu-po-milionove-trzby-ceske-drony-maji-za-ukol-dorucit-jidlo-zachranit-zivot-i-ockovat/
-[2] https://aktualne.cvut.cz/zpravy-z-medii/20260414-cesti-vedci-vytvorili-letajici-roj-autonomnich-dronu-ted-shani-investory-pro",,,,,,,
-8,fly4future,Ownership and capital,,"Public money: 17 contracts (12 R&D, 2 purchase, 3 other); 18 awarded grants total 138.4M CZK, with 32.7M CZK paid on the 5 grants that have payment data. Awards are not revenue.",Verified,"[1] Eurosecur s. r. o. · 74 624 392 CZK · Dohoda o vypořádání závazků z neuveřejněné smlouvy o spolupráci na řešení projektu „Univerzální systém 
-kolaborativních dronů""
+1,fly4future,TL;DR,Product,Sells custom autonomous drones and a DroneBuilder configurator to industrial and academic clients; company says most units ship abroad.,Partly verified,"[1] The company’s primary focus is the design and construction of custom drones for both industrial and academic clients.
+[2] DroneBuilder Build your drone with us! Use our custom drone-building tool and get a free consultation.
+[3] Čeští vědci vytvořili létající roj autonomních dronů. Teď shání investory pro jejich sériovou výrobu - Zpravodajský servis - České vysoké učení technické v Praze","[1] https://fly4future.com/about-us/
+[2] https://fly4future.com/about-us/
+[3] https://aktualne.cvut.cz/zpravy-z-medii/20260414-cesti-vedci-vytvorili-letajici-roj-autonomnich-dronu-ted-shani-investory-pro",partly,n/a,yes,n/a,no,minor,"'most units ship abroad' is in a press article, but the cited source is only its title"
+2,fly4future,TL;DR,Stage & traction,"FY2025 filed revenue CZK 47.8M (prior 45.1M), net result CZK 8.8M (prior 16.6M). Two public purchase contracts total about CZK 0.76M. A 10–16M EUR round is still sought.",Partly verified,"[1] Balance sheet at 2025-12-31 (CZK thousands): total assets 85 291; cash 57 141; equity 55 167; net result 8 837. Income statement: revenue 47 786; operating result 18 605.
 [2] VYSOKÉ UČENÍ TECHNICKÉ V BRNĚ · 658 829 CZK · Kupní smlouva - Senzorický systém pro mobilní roboty – 3D laserové skenery
 [3] Vysoká škola báňská - Technická univerzita Ostrava · 96 323 CZK · Objednávka: konzultace pro vývoj dronové platformy
-[4] Letecká platforma pro autonomní inspekce v členitém indoor prostředí · Technologická agentura ČR · 19 404 800 CZK","[1] https://smlouvy.gov.cz/smlouva/19121879
+[4] Fly4future proto nyní od investorů žádá 10 až 16 milionů eur, tedy zhruba 244 až 390 milionů korun.","[1] https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=92247881&subjektId=995597&spis=1101858
 [2] https://smlouvy.gov.cz/smlouva/24070505
 [3] https://smlouvy.gov.cz/smlouva/38841586
-[4] https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-9C717B54B2622718D226FA630A14F049D620A56B273EA1F0D08011E5E084B9A7",,,,,,,
-9,fly4future,Technology profile,,"Built: ROS-based C++ mission handler, ROS-to-backend bridge and Siyi gimbal plugin. Public code shows autonomy plumbing, not a shipped product.",Verified,"[1] fly4future/iroc_mission_handler · Action server component that manages drone flight through desired waypoints. · C++ · last push 2026-10-30
-[2] fly4future/iroc_bridge · Node to translate messages from ROS to backend and back · C++ · last push 2026-10-30
-[3] fly4future/siyi_cam_executor_plugin · A ROS package that provides a plugin for controlling Siyi camera gimbals. This plugin is designed to be used by the mission handler package for executing subtasks during missions. · C++ · last push 2025-08-28","[1] https://github.com/fly4future/iroc_mission_handler
-[2] https://github.com/fly4future/iroc_bridge
-[3] https://github.com/fly4future/siyi_cam_executor_plugin",,,,,,,
-10,fly4future,Technology profile,,"Public engineering is thin: 15 repos with 6 stars in total, one docs page, and a WordPress marketing site that does not show the product stack.",Partly verified,"[1] fly4future/install_script · Shell · last push 2026-11-09
-[2] We Help You to Establish Flying Robots’ Research/Lab | Fly4Future
-[3] ","[1] https://github.com/fly4future/install_script
-[2] https://fly4future.com/custom-drones/we-help-you-to-establish-flying-robots-research-lab/
-[3] https://fly4future.com/",,,,,,,
-11,fly4future,Technology profile,,"AI dependency: no LLM vendor is named as a tool or subprocessor, only Google Analytics. No papers, verified models or ML roles are supplied, so own-model capability is unevidenced.",Company claim,"[1] We use Google Analytics to track this information. Find out how Google uses your data at
-[2] System Engineer Specialist","[1] https://fly4future.com/privacy-policy/
-[2] https://fly4future.com/career/",,,,,,,
-12,fly4future,"What could be rebuilt, and what cannot be judged from outside",Replicable with off-the-shelf parts,"Mission handling and ROS-to-backend bridging map to ROS 2 nodes with pluginlib, and WebRTC streaming maps to open-source WebRTC libraries; off-the-shelf parts could reproduce these components.",Analyst view,"[1] fly4future/iroc_bridge · Node to translate messages from ROS to backend and back · C++ · last push 2026-10-30
-[2] fly4future/webrtc_ros · Streaming of ROS Image Topics using WebRTC · C++ · last push 2026-05-12
-[3] fly4future/siyi_cam_executor_plugin · A ROS package that provides a plugin for controlling Siyi camera gimbals. This plugin is designed to be used by the mission handler package for executing subtasks during missions. · C++ · last push 2025-08-28","[1] https://github.com/fly4future/iroc_bridge
-[2] https://github.com/fly4future/webrtc_ros
-[3] https://github.com/fly4future/siyi_cam_executor_plugin",,,,,,,
-13,fly4future,"What could be rebuilt, and what cannot be judged from outside",Edge supported by public evidence,"Public evidence shows Horizon Europe SME participation, Czech agency R&D support agreements, and two published drone applications, none of them granted patents.",Analyst view,"[1] Strengthening Research and Innovation Excellence in Autonomous Aerial Systems
-[2] Multi-robotický letecký systém pro autonomní bezpečnostní dohled a inspekci rozlehlých průmyslových objektů odolný vůči výpadku komunikace a signálu GNSS · Technologická agentura ČR · 21 826 349 CZK
-[3] WO2024255934A1 · Method of marking bark beetle infested trees and means for executing this … · Fly4Future s.r.o.
-[4] CZ38123U1 · A drone sprayer · Fly4Future s.r.o.","[1] https://cordis.europa.eu/project/id/101071270
-[2] https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-591970AB3CA3161135465C224B2E4C4522AEC0FE7906E2A4F31ACAFBFFE9F8D3
-[3] https://patents.google.com/patent/WO2024255934A1
-[4] https://patents.google.com/patent/CZ38123U1",,,,,,,
-14,fly4future,Risks and caveats,,"Public-money concentration: R&D agreements dominate the contract register at 130.6M CZK, and payment data is visible for only 5 of 18 grants.",Analyst view,"[1] Eurosecur s. r. o. · 74 624 392 CZK · Dohoda o vypořádání závazků z neuveřejněné smlouvy o spolupráci na řešení projektu „Univerzální systém 
-kolaborativních dronů""
-[2] Letecká platforma pro autonomní inspekce v členitém indoor prostředí · Technologická agentura ČR · 19 404 800 CZK","[1] https://smlouvy.gov.cz/smlouva/19121879
-[2] https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-9C717B54B2622718D226FA630A14F049D620A56B273EA1F0D08011E5E084B9A7",,,,,,,
-15,fly4future,Risks and caveats,,"Unverified claims: GPS-free flight, own batteries and chip, and NDAA compliance appear only as company statements, and no verification check is supplied.",Analyst view,"[1] The Czechs want to disrupt China's dominance over drones. They plan to produce tens of thousands of units per year - News service - Czech technical university in Prague
-[2] All of our UAV platforms are fully capable of meeting NDAA compliance , ensuring that our products are free from components sourced from prohibited manufacturers as outlined in Section 889 of the U.S. National Defense Authorization Act (NDAA)
-[3] Thanks to our participation in the competition, we have created a truly unique system that is already in demand by clients. Several industrial partners are now focusing on flying without GPS , so this is a very hot topic now that not only the defence industry but also the civilian industry is aware of.","[1] https://aktualne.cvut.cz/en/media-screenings/20260813-the-czechs-want-to-disrupt-chinas-dominance-over-drones-they-plan-to
-[2] https://fly4future.com/
-[3] https://fly4future.com/winning-solution-sprind-drone-flight-without-gps/",,,,,,,
-16,fly4future,Risks and caveats,,Thin engineering footprint: 2 open engineering roles and 6 repo stars against a company of about 40 people.,Analyst view,"[1] System Engineer Specialist
-[2] Robotics SW Engineer
-[3] Dnes má kolem 40 zaměstnanců.","[1] https://fly4future.com/career/
-[2] https://fly4future.com/career/
-[3] https://cc.cz/od-univerzitniho-projektu-po-milionove-trzby-ceske-drony-maji-za-ukol-dorucit-jidlo-zachranit-zivot-i-ockovat/",,,,,,,
-17,fly4future,Questions for founders,,"What share of 2025-2026 income is customer purchases versus R&D pass-through, given purchase contracts total only 0.76M CZK?",Analyst view,"[1] Vysoká škola báňská - Technická univerzita Ostrava · 96 323 CZK · Objednávka: konzultace pro vývoj dronové platformy
-[2] VYSOKÉ UČENÍ TECHNICKÉ V BRNĚ · 658 829 CZK · Kupní smlouva - Senzorický systém pro mobilní roboty – 3D laserové skenery
-[3] ","[1] https://smlouvy.gov.cz/smlouva/38841586
-[2] https://smlouvy.gov.cz/smlouva/24070505
-[3] https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=995597",,,,,,,
-18,fly4future,Questions for founders,,"Which named clients support the 'already in demand' claim and the 1.5M CZK per-unit price for 70-80 units a year, and what are the unit gross margins?",Analyst view,"[1] Thanks to our participation in the competition, we have created a truly unique system that is already in demand by clients. Several industrial partners are now focusing on flying without GPS , so this is a very hot topic now that not only the defence industry but also the civilian industry is aware of.
-[2] Nějakých 70 až 80 kusů ročně. Jde ale o stroje až za 1,5 milionu korun s velkou přidanou hodnotou.","[1] https://fly4future.com/winning-solution-sprind-drone-flight-without-gps/
-[2] https://aktualne.cvut.cz/zpravy-z-medii/20260615-rozvoj-dronu-v-cesku-zajisti-obdoba-agentury-darpa-chytra-armada-a-silni",,,,,,,
-19,fly4future,Questions for founders,,"Can the team share the swarm autonomy code and flight logs to test the GPS-free claim, plus evidence for NDAA compliance?",Analyst view,"[1] fly4future/argentswarm_core · Digest of the swarm autonomy software at f4f. · C++ · last push 2026-10-22
-[2] All of our UAV platforms are fully capable of meeting NDAA compliance , ensuring that our products are free from components sourced from prohibited manufacturers as outlined in Section 889 of the U.S. National Defense Authorization Act (NDAA)","[1] https://github.com/fly4future/argentswarm_core
-[2] https://fly4future.com/",,,,,,,
-20,fly4future,Fit with the Rockaway thesis,Sector,Deep tech and energy evidence is substantive: grant-funded drone systems for photovoltaic plant monitoring and grid inspection. Defence evidence is company wording only (an NDAA-compliant claim); no won defence tender or EU defence project appears in the facts.,Analyst view,"[1] Systém pro automatizované monitorování a údržbu fotovoltaických elektráren využívající umělou inteligenci a bezpilotní letecké platformy · Technologická agentura ČR · 8 470 372 CZK
-[2] Systém pro automatizovanou inspekci prvků přenosové soustavy elektrické energie s využitím bezpilotních prostředků · Technologická agentura ČR · 5 855 742 CZK
-[3] All of our UAV platforms are fully capable of meeting NDAA compliance , ensuring that our products are free from components sourced from prohibited manufacturers as outlined in Section 889 of the U.S. National Defense Authorization Act (NDAA)
-[4] Czechia-Brno: Industrial machinery — buyer: Vysoké učení technické v Brně, Středoevropský technologický institut","[1] https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-F940343665E2F83FB3555FEDDE2A186490FEF16884132196B49785C0BFC8198B
-[2] https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-0BB20EACD417951BEDBEE8CB242827A16521DF3F26B31BD25693E45B738FFF35
-[3] https://fly4future.com/
-[4] https://ted.europa.eu/en/notice/-/detail/271589-2023",,,,,,,
-21,fly4future,Fit with the Rockaway thesis,Portfolio overlap,"Vermeer, a Rockaway portfolio company, also offers GPS-free drone navigation for defence and dual-use. Fly4Future's GPS-free flight claims suggest a possible overlap, but a shared buyer is not shown in the facts, so conflict is unconfirmed.",Analyst view,"[1] The Czechs want to disrupt China's dominance over drones. They plan to produce tens of thousands of units per year - News service - Czech technical university in Prague
-[2] Thanks to our participation in the competition, we have created a truly unique system that is already in demand by clients. Several industrial partners are now focusing on flying without GPS , so this is a very hot topic now that not only the defence industry but also the civilian industry is aware of.","[1] https://aktualne.cvut.cz/en/media-screenings/20260813-the-czechs-want-to-disrupt-chinas-dominance-over-drones-they-plan-to
-[2] https://fly4future.com/winning-solution-sprind-drone-flight-without-gps/",,,,,,,
-22,fly4future,Business model,,"Product sales are thin in the facts: two purchase contracts total about 0.76M CZK (a 2023 university buyer for 3D laser scanners; a 2026 university consultation order). A press article gives 1.5M CZK per drone unit and 70-80 units a year, with unclear period.",Verified,"[1] VYSOKÉ UČENÍ TECHNICKÉ V BRNĚ · 658 829 CZK · Kupní smlouva - Senzorický systém pro mobilní roboty – 3D laserové skenery
-[2] Vysoká škola báňská - Technická univerzita Ostrava · 96 323 CZK · Objednávka: konzultace pro vývoj dronové platformy
-[3] Nějakých 70 až 80 kusů ročně. Jde ale o stroje až za 1,5 milionu korun s velkou přidanou hodnotou.","[1] https://smlouvy.gov.cz/smlouva/24070505
-[2] https://smlouvy.gov.cz/smlouva/38841586
-[3] https://aktualne.cvut.cz/zpravy-z-medii/20260615-rozvoj-dronu-v-cesku-zajisti-obdoba-agentury-darpa-chytra-armada-a-silni",,,,,,,
-23,fly4future,Business model,,"Grants are support, not revenue: about 138M CZK is awarded across 18 grants for multi-year projects, but only about 32.7M CZK is recorded as paid, across five grants with payment data.",Verified,"[1] Multi-robotický letecký systém pro autonomní bezpečnostní dohled a inspekci rozlehlých průmyslových objektů odolný vůči výpadku komunikace a signálu GNSS · Technologická agentura ČR · 21 826 349 CZK
-[2] Letecká platforma pro autonomní inspekce v členitém indoor prostředí · Technologická agentura ČR · 19 404 800 CZK
-[3] Udržitelné zemědělství: Energeticky výkonné bezpilotní technologie pro precizní zemědělství · Technologická agentura ČR · 14 761 078 CZK
-[4] Rozhraní pro intuitivní a spolehlivou obsluhu heterogenní skupiny robotů s monitoringem stavu a bezpečným systémem řešení poruch · Technologická agentura ČR · 4 879 000 CZK
-[5] Registrace ochranné známky · Ministerstvo průmyslu a obchodu · 50 550 CZK","[1] https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-591970AB3CA3161135465C224B2E4C4522AEC0FE7906E2A4F31ACAFBFFE9F8D3
-[2] https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-9C717B54B2622718D226FA630A14F049D620A56B273EA1F0D08011E5E084B9A7
-[3] https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-C37E481DFF08F9C6D7DB0A6EB8DB96B80DAA067EE0CFD31F35DF85D5957BA882
-[4] https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-FABB6D47509E746A7D3236D2A5CED6AEE7342716CA15492D85681B97AE506BD8
-[5] https://www.hlidacstatu.cz/Dotace/Detail/IsRed-F727F0B0BD373F910CA65A6D1E8DFA930B310A55DDF46B35EDC9CB6BAB703678",,,,,,,
-24,fly4future,Business model,,"Twelve research-consortium agreements (about 130.6M CZK) are project budgets for university-led research, not customer revenue or sales to public buyers.",Analyst view,"[1] Eurosecur s. r. o. · 74 624 392 CZK · Dohoda o vypořádání závazků z neuveřejněné smlouvy o spolupráci na řešení projektu „Univerzální systém 
-kolaborativních dronů""
-[2] Eurosecur s. r. o. · 25 494 062 CZK · Smlouva o spolupráci na řešení projektu OP TAK  „Univerzální systém kolaborativních robotů“
-[3] České vysoké učení technické v Praze · 12 270 000 CZK · SMLOUVA O ÚČASTI NA ŘEŠENÍ PROJEKTU A O VYUŽITÍ VÝSLEDKŮ OZ01020024","[1] https://smlouvy.gov.cz/smlouva/19121879
-[2] https://smlouvy.gov.cz/smlouva/29827008
-[3] https://smlouvy.gov.cz/smlouva/34343605",,,,,,,
-25,fly4future,Market,,"Fly4Future states that industry and civilian users want flying without GPS and that clients already use its system. A founder quoted in a 2026 press article says most drones are sold abroad, with about 10% of output staying in Czechia.",Partly verified,"[1] Thanks to our participation in the competition, we have created a truly unique system that is already in demand by clients. Several industrial partners are now focusing on flying without GPS , so this is a very hot topic now that not only the defence industry but also the civilian industry is aware of.
-[2] Čeští vědci vytvořili létající roj autonomních dronů. Teď shání investory pro jejich sériovou výrobu - Zpravodajský servis - České vysoké učení technické v Praze","[1] https://fly4future.com/winning-solution-sprind-drone-flight-without-gps/
-[2] https://aktualne.cvut.cz/zpravy-z-medii/20260414-cesti-vedci-vytvorili-letajici-roj-autonomnich-dronu-ted-shani-investory-pro",,,,,,,
-26,fly4future,Market,,"No sourced market size exists in the supplied facts. The only market context is an unquantified press remark about drone-industry and defence investment, so sizing needs separate research.",Analyst view,"[1] Otevřeli jsme první investiční kolo a zájem je velký. Rád bych postupně s pomocí investorů vybudoval v Česku významnou firmu, která bude jednou i globálním hráčem.",[1] https://aktualne.cvut.cz/zpravy-z-medii/20260615-rozvoj-dronu-v-cesku-zajisti-obdoba-agentury-darpa-chytra-armada-a-silni,,,,,,,
-27,fly4future,Market,,"The only public procurement notice is a 2023 Brno industrial-machinery tender where a university is the buyer. It is flagged as not a defence buyer, so it shows no defence procurement.",Verified,"[1] Czechia-Brno: Industrial machinery — buyer: Vysoké učení technické v Brně, Středoevropský technologický institut",[1] https://ted.europa.eu/en/notice/-/detail/271589-2023,,,,,,,
-28,fly4future,Competition,,"Arke Telekom (Türkiye) lists GNSS-free tactical drone communications, the closest stated overlap with Fly4Future's GPS-free flight claims. Found via the NATO DIANA 2026 cohort list; a candidate, not a confirmed competitor.",Analyst view,"[1] Arke Telekom Mühendislik Elektronik Sanayi Ticaret Ltd. Şti: Resilient, autonomous communication architecture for GNSS-free tactical drone operations
-[2] The Czechs want to disrupt China's dominance over drones. They plan to produce tens of thousands of units per year - News service - Czech technical university in Prague","[1] https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html
-[2] https://aktualne.cvut.cz/en/media-screenings/20260813-the-czechs-want-to-disrupt-chinas-dominance-over-drones-they-plan-to",,,,,,,
-29,fly4future,Competition,,"Alpha Autonomy (Greece) offers AI-powered UAV swarms for ISR in contested environments, overlapping Fly4Future's stated autonomous drone swarm work. Found via the NATO DIANA 2026 cohort list; candidate only.",Analyst view,"[1] Alpha Autonomy: AI-powered autonomous UAV swarms for resilient, low-altitude ISR in denied & contested environments
-[2] Od jedné firmy už máme příslib přes 100 milionů korun. K tomu plánujeme získat dalších 100 milionů z evropských fondů. To je budget, který potřebuji na vybudování týmu. V úterý jedu do Německa jednat s agenturou Sprind, která by nám mohla zprostředkovat investici kolem čtyř až pěti milionů eur na vývoj autonomních rojů","[1] https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html
-[2] https://aktualne.cvut.cz/zpravy-z-medii/20260414-cesti-vedci-vytvorili-letajici-roj-autonomnich-dronu-ted-shani-investory-pro",,,,,,,
-30,fly4future,Competition,,"Mara (US, swarm protection) and AegisX (Sweden, low-flying fibre-optic drone detection) overlap with Fly4Future's counter-drone capture grant project. Both come from the NATO DIANA 2026 list; candidates, with overlap low.",Analyst view,"[1] Mara: Simultaneous 360° protection against swarms of 48+ EW-resistant drones at 1/20th the cost.
-[2] AegisX: Detecting & tracking low flying fibre optic drones
-[3] Létající robot využívající umělou inteligencí pro bezpečný odchyt nepovolených dronů v chráněném prostoru · Ministerstvo pro místní rozvoj · 35 982 614 CZK","[1] https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html
-[2] https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html
-[3] https://www.hlidacstatu.cz/Dotace/Detail/Eufondy-93510F1C93F6AA6B9F1C335DE7BF3F07C0C08252A5D581995B6192C10DC090FB",,,,,,,
-31,fly4future,Competition,,"Marble Aerospace (UK) fields high-speed UAVs with autonomous robotic hangars for ISR. Overlap with Fly4Future is weaker, mainly in autonomy and robotics. Found via the NATO DIANA 2026 cohort list; candidate only.",Analyst view,"[1] Marble Aerospace Limited: Fleets of high-speed UAVs with autonomous robotic hangars to create rapidly deployable “ISR bubbles”
-[2] Od jedné firmy už máme příslib přes 100 milionů korun. K tomu plánujeme získat dalších 100 milionů z evropských fondů. To je budget, který potřebuji na vybudování týmu. V úterý jedu do Německa jednat s agenturou Sprind, která by nám mohla zprostředkovat investici kolem čtyř až pěti milionů eur na vývoj autonomních rojů","[1] https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html
-[2] https://aktualne.cvut.cz/zpravy-z-medii/20260414-cesti-vedci-vytvorili-letajici-roj-autonomnich-dronu-ted-shani-investory-pro",,,,,,,
-32,fly4future,Case for and against,For,Demand signal: Fly4Future says clients already use its GPS-free system and several industrial partners focus on GPS-free flight. This is an unverified company claim; named customers are needed to confirm it.,Analyst view,"[1] Thanks to our participation in the competition, we have created a truly unique system that is already in demand by clients. Several industrial partners are now focusing on flying without GPS , so this is a very hot topic now that not only the defence industry but also the civilian industry is aware of.
-[2] The Czechs want to disrupt China's dominance over drones. They plan to produce tens of thousands of units per year - News service - Czech technical university in Prague","[1] https://fly4future.com/winning-solution-sprind-drone-flight-without-gps/
-[2] https://aktualne.cvut.cz/en/media-screenings/20260813-the-czechs-want-to-disrupt-chinas-dominance-over-drones-they-plan-to",,,,,,,
-33,fly4future,Case for and against,For,"External validation: technology-agency awards, including a 2025 GNSS-resistant multi-robot project, and an EU Horizon grant support the research base, though this is not revenue.",Analyst view,"[1] Multi-robotický letecký systém pro autonomní bezpečnostní dohled a inspekci rozlehlých průmyslových objektů odolný vůči výpadku komunikace a signálu GNSS · Technologická agentura ČR · 21 826 349 CZK
-[2] Strengthening Research and Innovation Excellence in Autonomous Aerial Systems","[1] https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-591970AB3CA3161135465C224B2E4C4522AEC0FE7906E2A4F31ACAFBFFE9F8D3
-[2] https://cordis.europa.eu/project/id/101071270",,,,,,,
-34,fly4future,Case for and against,Against,"Revenue is unproven: two purchase contracts total about 0.76M CZK and no named customers appear in the facts. Grant money is support, not sales.",Analyst view,"[1] VYSOKÉ UČENÍ TECHNICKÉ V BRNĚ · 658 829 CZK · Kupní smlouva - Senzorický systém pro mobilní roboty – 3D laserové skenery
-[2] Vysoká škola báňská - Technická univerzita Ostrava · 96 323 CZK · Objednávka: konzultace pro vývoj dronové platformy","[1] https://smlouvy.gov.cz/smlouva/24070505
-[2] https://smlouvy.gov.cz/smlouva/38841586",,,,,,,
-35,fly4future,Case for and against,Against,"Funding is unclosed: a 10-16M EUR raise is being sought, an 8M EUR Series A is planned for one project, and the investors named so far are unidentified.",Analyst view,"[1] Fly4future proto nyní od investorů žádá 10 až 16 milionů eur, tedy zhruba 244 až 390 milionů korun.
+[4] https://cc.cz/od-univerzitniho-projektu-po-milionove-trzby-ceske-drony-maji-za-ukol-dorucit-jidlo-zachranit-zivot-i-ockovat/",yes,yes,yes,n/a,no,n/a,"revenue, prior revenue, net result and the two purchases (0.66M + 0.10M) match the filings and register"
+3,fly4future,TL;DR,Technology & moat,"Little is shown hard to copy: two patent applications, none granted, and ROS-based repos. Edge rests on CTU research lineage and public research funding.",Partly verified,"[1] WO2024255934A1 · Method of marking bark beetle infested trees and means for executing this … · Fly4Future s.r.o.
+[2] CZ38123U1 · A drone sprayer · Fly4Future s.r.o.
+[3] fly4future/iroc_mission_handler · Action server component that manages drone flight through desired waypoints. · C++ · last push 2026-10-30
+[4] Fly4Future was formed in 2017 as a spinout of the Multi-Robot Systems group at the Czech Technical University in Prague (MRS CTU)","[1] https://patents.google.com/patent/WO2024255934A1
+[2] https://patents.google.com/patent/CZ38123U1
+[3] https://github.com/fly4future/iroc_mission_handler
+[4] https://fly4future.com/about-us/",yes,yes,yes,yes,no,n/a,
+4,fly4future,TL;DR,Key risk,"Earnings quality: net result halved while receivables rose to CZK 20.4M and other operating income of CZK 20.8M may be subsidies, not sales.",Analyst view,[1] Balance sheet at 2025-12-31 (CZK thousands): total assets 85 291; cash 57 141; equity 55 167; net result 8 837. Income statement: revenue 47 786; operating result 18 605.,[1] https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=92247881&subjektId=995597&spis=1101858,yes,yes,yes,yes,no,n/a,"net result 16.6M -> 8.8M, receivables 5.6M -> 20.4M; 'may be subsidies' is hedged"
+5,fly4future,TL;DR,Diligence focus,"Verify the revenue split between hardware sales, R&D income and subsidies, and whether claimed 70–80 units a year at up to CZK 1.5M are real orders.",Analyst view,"[1] Balance sheet at 2025-12-31 (CZK thousands): total assets 85 291; cash 57 141; equity 55 167; net result 8 837. Income statement: revenue 47 786; operating result 18 605.
+[2] Nějakých 70 až 80 kusů ročně. Jde ale o stroje až za 1,5 milionu korun s velkou přidanou hodnotou.","[1] https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=92247881&subjektId=995597&spis=1101858
+[2] https://aktualne.cvut.cz/zpravy-z-medii/20260615-rozvoj-dronu-v-cesku-zajisti-obdoba-agentury-darpa-chytra-armada-a-silni",yes,yes,yes,yes,no,n/a,
+6,fly4future,Ownership and capital,,"Round still sought: 10–16M EUR (October 2026 report), an 8M EUR Series A plan, and an investor search for about CZK 200M plus 4–5M EUR. No closed round is supplied.",Corroborated,"[1] Fly4future proto nyní od investorů žádá 10 až 16 milionů eur, tedy zhruba 244 až 390 milionů korun.
 [2] Bereme to už jako Series A, protože máme produkt a kontrakty. Potřebujeme zatím pro jeden projekt získat osm milionů eur (necelých 200 milionů korun – pozn. red.).
 [3] Od jedné firmy už máme příslib přes 100 milionů korun. K tomu plánujeme získat dalších 100 milionů z evropských fondů. To je budget, který potřebuji na vybudování týmu. V úterý jedu do Německa jednat s agenturou Sprind, která by nám mohla zprostředkovat investici kolem čtyř až pěti milionů eur na vývoj autonomních rojů","[1] https://cc.cz/od-univerzitniho-projektu-po-milionove-trzby-ceske-drony-maji-za-ukol-dorucit-jidlo-zachranit-zivot-i-ockovat/
 [2] https://aktualne.cvut.cz/zpravy-z-medii/20260615-rozvoj-dronu-v-cesku-zajisti-obdoba-agentury-darpa-chytra-armada-a-silni
-[3] https://aktualne.cvut.cz/zpravy-z-medii/20260414-cesti-vedci-vytvorili-letajici-roj-autonomnich-dronu-ted-shani-investory-pro",,,,,,,
-36,fly4future,Case for and against,Against,"Kill risk: the company plans tens of thousands of units a year, while it reports about 40 staff and a stated 70-80 units a year. Failure to fund scale-up would leave that plan unexecuted.",Analyst view,"[1] The Czechs want to disrupt China's dominance over drones. They plan to produce tens of thousands of units per year - News service - Czech technical university in Prague
-[2] Dnes má kolem 40 zaměstnanců.
-[3] Nějakých 70 až 80 kusů ročně. Jde ale o stroje až za 1,5 milionu korun s velkou přidanou hodnotou.","[1] https://aktualne.cvut.cz/en/media-screenings/20260813-the-czechs-want-to-disrupt-chinas-dominance-over-drones-they-plan-to
+[3] https://aktualne.cvut.cz/zpravy-z-medii/20260414-cesti-vedci-vytvorili-letajici-roj-autonomnich-dronu-ted-shani-investory-pro",partly,yes,yes,n/a,no,minor,"the 100M CZK is a commitment from one firm plus planned EU funds, not an investor search"
+7,fly4future,Ownership and capital,,"Public money: 17 contracts (two purchases, 12 R&D agreements, three other) and 18 grants awarded CZK 138.4M, of which CZK 32.7M is recorded as paid. R&D budgets are not sales.",Verified,"[1] VYSOKÉ UČENÍ TECHNICKÉ V BRNĚ · 658 829 CZK · Kupní smlouva - Senzorický systém pro mobilní roboty – 3D laserové skenery
+[2] Eurosecur s. r. o. · 74 624 392 CZK · Dohoda o vypořádání závazků z neuveřejněné smlouvy o spolupráci na řešení projektu „Univerzální systém 
+kolaborativních dronů""
+[3] Letecká platforma pro autonomní inspekce v členitém indoor prostředí · Technologická agentura ČR · 19 404 800 CZK","[1] https://smlouvy.gov.cz/smlouva/24070505
+[2] https://smlouvy.gov.cz/smlouva/19121879
+[3] https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-9C717B54B2622718D226FA630A14F049D620A56B273EA1F0D08011E5E084B9A7",yes,yes,yes,n/a,no,n/a,
+8,fly4future,Ownership and capital,,"Structure: s.r.o. incorporated 27 Nov 2017 as a CTU Prague spinout, with initial capital of CZK 30,000. Shareholder split and ownership percentages are not supplied.",Partly verified,"[1] registered 2017-11-27
+[2] Fly4Future was formed in 2017 as a spinout of the Multi-Robot Systems group at the Czech Technical University in Prague (MRS CTU)
+[3] 30 000 CZK","[1] https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/06632581
+[2] https://fly4future.com/about-us/
+[3] https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06632581",yes,yes,yes,n/a,no,n/a,
+9,fly4future,Technology profile,,"Company claims fully autonomous GNSS-free drones with four cameras, 3D lidar and an onboard computer; these remain unverified company claims.",Partly verified,"[1] We custom-build ready-to-fly fully autonomous flying robots that can be adjusted for any application and industry.
+[2] Technologickým jádrem dronu je kombinace čtyř kamer, 3D lidaru a výkonného palubního počítače. Díky těmto senzorům se dokáže orientovat a mapovat okolí i bez signálu GPS.
+[3] The challenge was to develop a drone that would be able to fly fully autonomously and without the use of GPS to a given location, pick up an object and carry it to safety, all in challenging conditions.","[1] https://fly4future.com/
 [2] https://cc.cz/od-univerzitniho-projektu-po-milionove-trzby-ceske-drony-maji-za-ukol-dorucit-jidlo-zachranit-zivot-i-ockovat/
-[3] https://aktualne.cvut.cz/zpravy-z-medii/20260615-rozvoj-dronu-v-cesku-zajisti-obdoba-agentury-darpa-chytra-armada-a-silni",,,,,,,
-37,fly4future,Case for and against,Must be true,"Diligence must confirm invoiced revenue from paying buyers and actual unit pricing, since only two purchase contracts and one press-quoted price are sourced.",Analyst view,"[1] Nějakých 70 až 80 kusů ročně. Jde ale o stroje až za 1,5 milionu korun s velkou přidanou hodnotou.
+[3] https://fly4future.com/winning-solution-sprind-drone-flight-without-gps/",yes,n/a,yes,n/a,no,n/a,
+10,fly4future,Technology profile,,"Engineering footprint: 15 public repos (C++ ROS components such as mission handler and fleet manager), 11 subdomains, one docs page; little public activity.",Partly verified,"[1] fly4future/iroc_mission_handler · Action server component that manages drone flight through desired waypoints. · C++ · last push 2026-10-30
+[2] fly4future/iroc_fleet_manager · ROS node for handling fleet mission execution, part of the ""IROC_Core"" package. · C++ · last push 2026-10-30
+[3] We Help You to Establish Flying Robots’ Research/Lab | Fly4Future","[1] https://github.com/fly4future/iroc_mission_handler
+[2] https://github.com/fly4future/iroc_fleet_manager
+[3] https://fly4future.com/custom-drones/we-help-you-to-establish-flying-robots-research-lab/",partly,yes,yes,partly,no,minor,'little public activity' contradicts pushes in Oct-Nov 2026
+11,fly4future,Technology profile,,"No LLM vendor is named as a dependency; only Google Analytics appears as a subprocessor. Language-model features are a company claim, and no ML roles are posted.",Partly verified,"[1] We use Google Analytics to track this information. Find out how Google uses your data at
+[2] Dron podle vývojářů přijímá pokyny v přirozeném jazyce, a to v libovolné řeči. Díky jazykovým modelům pracuje i s pojmy, které mu programátor nemusel předem definovat.
+[3] System Engineer Specialist","[1] https://fly4future.com/privacy-policy/
+[2] https://cc.cz/od-univerzitniho-projektu-po-milionove-trzby-ceske-drony-maji-za-ukol-dorucit-jidlo-zachranit-zivot-i-ockovat/
+[3] https://fly4future.com/career/",yes,n/a,yes,n/a,no,n/a,
+12,fly4future,"What could be rebuilt, and what cannot be judged from outside",Replicable with off-the-shelf parts,"Mission handling, fleet coordination and ROS-to-backend bridging resemble open ROS packages plus WebRTC streaming, based on public repo descriptions.",Analyst view,"[1] fly4future/iroc_mission_handler · Action server component that manages drone flight through desired waypoints. · C++ · last push 2026-10-30
+[2] fly4future/iroc_bridge · Node to translate messages from ROS to backend and back · C++ · last push 2026-10-30
+[3] fly4future/webrtc_ros · Streaming of ROS Image Topics using WebRTC · C++ · last push 2026-05-12","[1] https://github.com/fly4future/iroc_mission_handler
+[2] https://github.com/fly4future/iroc_bridge
+[3] https://github.com/fly4future/webrtc_ros",yes,n/a,yes,yes,no,n/a,
+13,fly4future,"What could be rebuilt, and what cannot be judged from outside",Edge supported by public evidence,"Public records show Horizon Europe AeroSTREAM participation and state-funded multi-robot GNSS-resilient research; these show funding, not a commercial moat or granted patents.",Analyst view,"[1] Strengthening Research and Innovation Excellence in Autonomous Aerial Systems
+[2] České vysoké učení technické v Praze · 0 CZK · Projekt FW12010288: Multi-robotický letecký systém pro autonomní bezpečnostní dohled a inspekci rozlehlých průmyslových objektů odolný vůči výpadku komunikace a signálu GNSS","[1] https://cordis.europa.eu/project/id/101071270
+[2] https://smlouvy.gov.cz/smlouva/32841120",yes,n/a,yes,yes,no,n/a,
+14,fly4future,"What could be rebuilt, and what cannot be judged from outside",Cannot be judged from outside,"Field autonomy, swarm reliability and detection accuracy cannot be judged without flight logs, code, models or customer deployments.",Analyst view,"[1] The challenge was to develop a drone that would be able to fly fully autonomously and without the use of GPS to a given location, pick up an object and carry it to safety, all in challenging conditions.
+[2] Od přelomu roku nabízí už i ty s funkcí letu v roji.","[1] https://fly4future.com/winning-solution-sprind-drone-flight-without-gps/
+[2] https://aktualne.cvut.cz/zpravy-z-medii/20260414-cesti-vedci-vytvorili-letajici-roj-autonomnich-dronu-ted-shani-investory-pro",yes,n/a,yes,yes,no,n/a,
+15,fly4future,Risks and caveats,,"Profit compression: net result fell 47% while personnel costs rose 57% to CZK 30.4M, with cash slipping to CZK 57.1M.",Analyst view,[1] Balance sheet at 2025-12-31 (CZK thousands): total assets 85 291; cash 57 141; equity 55 167; net result 8 837. Income statement: revenue 47 786; operating result 18 605.,[1] https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=92247881&subjektId=995597&spis=1101858,yes,yes,yes,yes,no,n/a,-47% and +57% recomputed from the filed accounts
+16,fly4future,Risks and caveats,,Public research money dominates reported activity: 12 R&D budgets and CZK 138.4M in grant awards; paid amounts are known for only five grants.,Analyst view,"[1] Eurosecur s. r. o. · 74 624 392 CZK · Dohoda o vypořádání závazků z neuveřejněné smlouvy o spolupráci na řešení projektu „Univerzální systém 
+kolaborativních dronů""
+[2] Letecká platforma pro autonomní inspekce v členitém indoor prostředí · Technologická agentura ČR · 19 404 800 CZK
+[3] Rozhraní pro intuitivní a spolehlivou obsluhu heterogenní skupiny robotů s monitoringem stavu a bezpečným systémem řešení poruch · Technologická agentura ČR · 4 879 000 CZK","[1] https://smlouvy.gov.cz/smlouva/19121879
+[2] https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-9C717B54B2622718D226FA630A14F049D620A56B273EA1F0D08011E5E084B9A7
+[3] https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-FABB6D47509E746A7D3236D2A5CED6AEE7342716CA15492D85681B97AE506BD8",yes,yes,yes,partly,no,minor,R&D agreements are consortium budgets; 'dominates reported activity' overstates against 47.8M revenue
+17,fly4future,Risks and caveats,,NDAA-compliant platforms is an unverified company claim; no verification was found and the company is not listed in NATO DIANA.,Analyst view,"[1] All of our UAV platforms are fully capable of meeting NDAA compliance , ensuring that our products are free from components sourced from prohibited manufacturers as outlined in Section 889 of the U.S. National Defense Authorization Act (NDAA)
+[2] ","[1] https://fly4future.com/
+[2] https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html",yes,n/a,yes,yes,no,n/a,"not in NATO DIANA comes from a checked source, not from missing data"
+18,fly4future,Questions for founders,,"Which part of FY2025 revenue is drone sales versus R&D or subsidies, and does 70–80 units a year at CZK 1.5M each reconcile with it?",Analyst view,"[1] Balance sheet at 2025-12-31 (CZK thousands): total assets 85 291; cash 57 141; equity 55 167; net result 8 837. Income statement: revenue 47 786; operating result 18 605.
+[2] Nějakých 70 až 80 kusů ročně. Jde ale o stroje až za 1,5 milionu korun s velkou přidanou hodnotou.","[1] https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=92247881&subjektId=995597&spis=1101858
+[2] https://aktualne.cvut.cz/zpravy-z-medii/20260615-rozvoj-dronu-v-cesku-zajisti-obdoba-agentury-darpa-chytra-armada-a-silni",partly,no,yes,yes,no,minor,"the source says 'up to CZK 1.5M', not 1.5M each"
+19,fly4future,Questions for founders,,"What independent evidence shows GNSS-free swarm autonomy beyond company claims, such as flight logs or a named deployment?",Analyst view,"[1] The challenge was to develop a drone that would be able to fly fully autonomously and without the use of GPS to a given location, pick up an object and carry it to safety, all in challenging conditions.
+[2] Od přelomu roku nabízí už i ty s funkcí letu v roji.","[1] https://fly4future.com/winning-solution-sprind-drone-flight-without-gps/
+[2] https://aktualne.cvut.cz/zpravy-z-medii/20260414-cesti-vedci-vytvorili-letajici-roj-autonomnich-dronu-ted-shani-investory-pro",yes,n/a,yes,yes,no,n/a,
+20,fly4future,Questions for founders,,"Can receivables of CZK 20.4M be linked to named paying customers, and what is the runway if the 10–16M EUR round does not close?",Analyst view,"[1] Balance sheet at 2025-12-31 (CZK thousands): total assets 85 291; cash 57 141; equity 55 167; net result 8 837. Income statement: revenue 47 786; operating result 18 605.
+[2] Fly4future proto nyní od investorů žádá 10 až 16 milionů eur, tedy zhruba 244 až 390 milionů korun.","[1] https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=92247881&subjektId=995597&spis=1101858
+[2] https://cc.cz/od-univerzitniho-projektu-po-milionove-trzby-ceske-drony-maji-za-ukol-dorucit-jidlo-zachranit-zivot-i-ockovat/",yes,yes,yes,yes,no,n/a,
+21,fly4future,Fit with the Rockaway thesis,Sector,"Defence/dual-use: only website wording and a 2023 TED notice naming the company; no defence tender won, not listed in NATO DIANA.",Analyst view,"[1] Czechia-Brno: Industrial machinery — buyer: Vysoké učení technické v Brně, Středoevropský technologický institut
+[2] All of our UAV platforms are fully capable of meeting NDAA compliance , ensuring that our products are free from components sourced from prohibited manufacturers as outlined in Section 889 of the U.S. National Defense Authorization Act (NDAA)
+[3] ","[1] https://ted.europa.eu/en/notice/-/detail/271589-2023
+[2] https://fly4future.com/
+[3] https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html",partly,n/a,yes,partly,no,minor,"misses the counter-drone grant (MMR); the 2023 TED notice is a university machinery tender, not defence"
+22,fly4future,Fit with the Rockaway thesis,Portfolio overlap,"Possible conflict with Vermeer (Rockaway participant, GPS-free drone navigation): company claims GNSS-free autonomous flight, so product overlap is likely; buyers unknown.",Analyst view,"[1] The challenge was to develop a drone that would be able to fly fully autonomously and without the use of GPS to a given location, pick up an object and carry it to safety, all in challenging conditions.
+[2] drony schopné operovat bez GNSS signálu","[1] https://fly4future.com/winning-solution-sprind-drone-flight-without-gps/
+[2] https://czechinvest.gov.cz/en/Key-sectors/Smart-mobility-catalog/Firmy/Fly4Future",yes,n/a,yes,partly,no,minor,overlap with Vermeer is plausible; 'conflict' vs complement is not settled by the evidence
+23,fly4future,Business model,,"2025 filed accounts (CZK): net turnover 47.8M, up from 45.1M; net result fell to 8.8M from 16.6M; cash 57.1M. Other operating income of 20.8M is not sales.",Verified,[1] Balance sheet at 2025-12-31 (CZK thousands): total assets 85 291; cash 57 141; equity 55 167; net result 8 837. Income statement: revenue 47 786; operating result 18 605.,[1] https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=92247881&subjektId=995597&spis=1101858,yes,yes,yes,n/a,no,n/a,
+24,fly4future,Business model,,Model: custom-built drones and a DroneBuilder configurator sold to industrial and academic clients; pricing stated as 1.5M CZK per drone unit. No named customers in supplied facts.,Partly verified,"[1] The company’s primary focus is the design and construction of custom drones for both industrial and academic clients.
+[2] DroneBuilder Build your drone with us! Use our custom drone-building tool and get a free consultation.
+[3] Nějakých 70 až 80 kusů ročně. Jde ale o stroje až za 1,5 milionu korun s velkou přidanou hodnotou.","[1] https://fly4future.com/about-us/
+[2] https://fly4future.com/about-us/
+[3] https://aktualne.cvut.cz/zpravy-z-medii/20260615-rozvoj-dronu-v-cesku-zajisti-obdoba-agentury-darpa-chytra-armada-a-silni",partly,no,yes,n/a,no,minor,'1.5M CZK per drone' should be 'up to 1.5M'
+25,fly4future,Business model,,"Public money: 2 purchase contracts total 0.76M CZK, the only public sales. 12 research agreements (130.6M CZK) are consortium budgets, not revenue. Grants: 138.4M CZK awarded, 32.7M CZK paid.",Verified,"[1] VYSOKÉ UČENÍ TECHNICKÉ V BRNĚ · 658 829 CZK · Kupní smlouva - Senzorický systém pro mobilní roboty – 3D laserové skenery
+[2] Vysoká škola báňská - Technická univerzita Ostrava · 96 323 CZK · Objednávka: konzultace pro vývoj dronové platformy
+[3] Eurosecur s. r. o. · 74 624 392 CZK · Dohoda o vypořádání závazků z neuveřejněné smlouvy o spolupráci na řešení projektu „Univerzální systém 
+kolaborativních dronů""
+[4] Multi-robotický letecký systém pro autonomní bezpečnostní dohled a inspekci rozlehlých průmyslových objektů odolný vůči výpadku komunikace a signálu GNSS · Technologická agentura ČR · 21 826 349 CZK
+[5] Letecká platforma pro autonomní inspekce v členitém indoor prostředí · Technologická agentura ČR · 19 404 800 CZK","[1] https://smlouvy.gov.cz/smlouva/24070505
+[2] https://smlouvy.gov.cz/smlouva/38841586
+[3] https://smlouvy.gov.cz/smlouva/19121879
+[4] https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-591970AB3CA3161135465C224B2E4C4522AEC0FE7906E2A4F31ACAFBFFE9F8D3
+[5] https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-9C717B54B2622718D226FA630A14F049D620A56B273EA1F0D08011E5E084B9A7",yes,yes,yes,n/a,no,n/a,
+26,fly4future,Market,,Company claims industry and civilian demand for GPS-free flight is strong and attracting industrial partners; no figures given.,Company claim,"[1] Thanks to our participation in the competition, we have created a truly unique system that is already in demand by clients. Several industrial partners are now focusing on flying without GPS , so this is a very hot topic now that not only the defence industry but also the civilian industry is aware of.",[1] https://fly4future.com/winning-solution-sprind-drone-flight-without-gps/,yes,n/a,yes,n/a,no,n/a,
+27,fly4future,Market,,Named speaker Věra Sasková says the market is receptive to AI and autonomous robotics in real industrial applications (press interview).,Single source,"[1] Vnímám, že je trh velmi pozitivně naladěný na umělou inteligenci. Robotika se z AI posunula do stavu, kdy ji začínáme nasazovat do reálných průmyslových aplikací.",[1] https://cc.cz/od-univerzitniho-projektu-po-milionove-trzby-ceske-drony-maji-za-ukol-dorucit-jidlo-zachranit-zivot-i-ockovat/,yes,n/a,yes,n/a,no,n/a,
+28,fly4future,Market,,No sourced market size exists in the supplied facts; the only market context is generic text on drones and defence investment.,Analyst view,"[1] Otevřeli jsme první investiční kolo a zájem je velký. Rád bych postupně s pomocí investorů vybudoval v Česku významnou firmu, která bude jednou i globálním hráčem.",[1] https://aktualne.cvut.cz/zpravy-z-medii/20260615-rozvoj-dronu-v-cesku-zajisti-obdoba-agentury-darpa-chytra-armada-a-silni,partly,n/a,yes,n/a,no,n/a,a statement about missing data; the cited fact does not bear on it
+29,fly4future,Competition,,Press (24n.cz) names DJI as primary reference competitor; the company positions itself as a European alternative to Chinese drone makers. Found via press search.,Analyst view,"[1] европейской альтернативы китайским производителям, прежде всего DJI.",[1] https://24n.cz/ru/cheshskie-drony-fly4future-brosaiut-vyzov-dji-investitsii-avtonomnost,yes,n/a,yes,n/a,no,n/a,
+30,fly4future,Competition,,"NATO DIANA 2026 candidate, not a confirmed competitor: AI swarm ISR UAVs overlap with Fly4Future's swarm-flight line; found via a vetted defence list.",Analyst view,"[1] Alpha Autonomy: AI-powered autonomous UAV swarms for resilient, low-altitude ISR in denied & contested environments
+[2] Od přelomu roku nabízí už i ty s funkcí letu v roji.","[1] https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html
+[2] https://aktualne.cvut.cz/zpravy-z-medii/20260414-cesti-vedci-vytvorili-letajici-roj-autonomnich-dronu-ted-shani-investory-pro",yes,n/a,yes,yes,no,n/a,
+31,fly4future,Competition,,"NATO DIANA 2026 candidate (UK): high-speed UAV fleets with autonomous hangars for ISR; overlaps on autonomous fleets but targets rapid deployment, not custom builds.",Analyst view,"[1] Marble Aerospace Limited: Fleets of high-speed UAVs with autonomous robotic hangars to create rapidly deployable “ISR bubbles”
+[2] koordinovat se v systémech více robotů","[1] https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html
+[2] https://czechinvest.gov.cz/en/Key-sectors/Smart-mobility-catalog/Firmy/Fly4Future",yes,n/a,yes,yes,no,n/a,
+32,fly4future,Case for and against,For,"Filed 2025 accounts show 47.8M CZK turnover, 57.1M CZK cash and a published income statement: revenue exists before the round.",Analyst view,"[1] Balance sheet at 2025-12-31 (CZK thousands): total assets 85 291; cash 57 141; equity 55 167; net result 8 837. Income statement: revenue 47 786; operating result 18 605.
+[2] VYSOKÉ UČENÍ TECHNICKÉ V BRNĚ · 658 829 CZK · Kupní smlouva - Senzorický systém pro mobilní roboty – 3D laserové skenery","[1] https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=92247881&subjektId=995597&spis=1101858
+[2] https://smlouvy.gov.cz/smlouva/24070505",yes,yes,yes,yes,no,n/a,
+33,fly4future,Case for and against,For,"Technical base: two drone patent publications (none granted), an EU Horizon Europe SME participation (2022-2025) and national R&D awards up to 2025.",Analyst view,"[1] WO2024255934A1 · Method of marking bark beetle infested trees and means for executing this … · Fly4Future s.r.o.
+[2] CZ38123U1 · A drone sprayer · Fly4Future s.r.o.
+[3] Strengthening Research and Innovation Excellence in Autonomous Aerial Systems
+[4] Multirobotický systém pro autonomní terénní operace s vícezdrojovou navigací · Technologická agentura ČR · 6 000 000 CZK","[1] https://patents.google.com/patent/WO2024255934A1
+[2] https://patents.google.com/patent/CZ38123U1
+[3] https://cordis.europa.eu/project/id/101071270
+[4] https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-61879203CFBA1CC5F2290E554298A735EE0E9CAB917E2CBF95B339FD4E8F5EC0",yes,yes,yes,yes,no,n/a,
+34,fly4future,Case for and against,Against,"Net result fell to 8.8M CZK from 16.6M while personnel costs rose to 30.4M from 19.4M CZK, showing spend growth ahead of profit.",Analyst view,[1] Balance sheet at 2025-12-31 (CZK thousands): total assets 85 291; cash 57 141; equity 55 167; net result 8 837. Income statement: revenue 47 786; operating result 18 605.,[1] https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=92247881&subjektId=995597&spis=1101858,yes,yes,yes,yes,no,n/a,
+35,fly4future,Case for and against,Against,"Funding not closed: 10-16M EUR sought from investors, 100M CZK plus 100M CZK and 4-5M EUR search, and an 8M EUR Series A plan; failure to close could stall scaling.",Analyst view,"[1] Fly4future proto nyní od investorů žádá 10 až 16 milionů eur, tedy zhruba 244 až 390 milionů korun.
+[2] Od jedné firmy už máme příslib přes 100 milionů korun. K tomu plánujeme získat dalších 100 milionů z evropských fondů. To je budget, který potřebuji na vybudování týmu. V úterý jedu do Německa jednat s agenturou Sprind, která by nám mohla zprostředkovat investici kolem čtyř až pěti milionů eur na vývoj autonomních rojů
+[3] Bereme to už jako Series A, protože máme produkt a kontrakty. Potřebujeme zatím pro jeden projekt získat osm milionů eur (necelých 200 milionů korun – pozn. red.).","[1] https://cc.cz/od-univerzitniho-projektu-po-milionove-trzby-ceske-drony-maji-za-ukol-dorucit-jidlo-zachranit-zivot-i-ockovat/
+[2] https://aktualne.cvut.cz/zpravy-z-medii/20260414-cesti-vedci-vytvorili-letajici-roj-autonomnich-dronu-ted-shani-investory-pro
+[3] https://aktualne.cvut.cz/zpravy-z-medii/20260615-rozvoj-dronu-v-cesku-zajisti-obdoba-agentury-darpa-chytra-armada-a-silni",partly,yes,yes,yes,no,minor,same mischaracterisation as row 6
+36,fly4future,Case for and against,Must be true,"Diligence confirms 2025 revenue is customer-paid, not grants, and identifies the paying customers and the share of purchase contracts.",Analyst view,"[1] Balance sheet at 2025-12-31 (CZK thousands): total assets 85 291; cash 57 141; equity 55 167; net result 8 837. Income statement: revenue 47 786; operating result 18 605.
 [2] VYSOKÉ UČENÍ TECHNICKÉ V BRNĚ · 658 829 CZK · Kupní smlouva - Senzorický systém pro mobilní roboty – 3D laserové skenery
-[3] Vysoká škola báňská - Technická univerzita Ostrava · 96 323 CZK · Objednávka: konzultace pro vývoj dronové platformy","[1] https://aktualne.cvut.cz/zpravy-z-medii/20260615-rozvoj-dronu-v-cesku-zajisti-obdoba-agentury-darpa-chytra-armada-a-silni
+[3] Vysoká škola báňská - Technická univerzita Ostrava · 96 323 CZK · Objednávka: konzultace pro vývoj dronové platformy","[1] https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=92247881&subjektId=995597&spis=1101858
 [2] https://smlouvy.gov.cz/smlouva/24070505
-[3] https://smlouvy.gov.cz/smlouva/38841586",,,,,,,
-38,dronetag,TL;DR,Product,"Sells Remote ID receivers, transmitters and drone detection devices, plus a visualization platform, to pilots, public safety and defence buyers; the company's own claim.",Company claim,"[1] Remote ID Receivers Detect, monitor and visualize nearby drone activity in real time.
-[2] Remote ID Transmitters Make drones digitally visible and compliant across operations.
-[3] Take command with the Dronetag App, the central hub of our ecosystem. Manage devices, inspect airspace, and analyze flight data from a single, intuitive interface on mobile and web.
-[4] A compact, wireless, battery-powered Remote ID receiver designed for public safety organizations and professional pilots, providing instant situational awareness in the field.
-[5] Used by Professional Pilots & Drone Builders","[1] https://shop.dronetag.com/
-[2] https://shop.dronetag.com/
-[3] https://www.dronetag.com/
-[4] https://www.dronetag.com/products/rider
-[5] https://www.dronetag.com/products/beacon",,,,,,,
-39,dronetag,TL;DR,Stage & traction,"Public-sector sales are early: 7 purchase contracts worth about CZK 1.4m (fire rescue, defence ministry, city IT), one CZK 27.4m defence tender won, and a NATO DIANA 2024 listing. Only one disclosed funding round, a convertible loan.",Verified,"[1] Správa informačních technologií města Plzně · 120 000 CZK · objednávka
-[2] Česká republika - Ministerstvo obrany · 68 970 CZK · 22373/2022-VLCH Zažízení pro dálkovou identifikaci dronů, č. spec. 36896/22,  pro projekt AIROPS (DZRO AIROPS),  Účtování dle bodu usměrnění VaV č.1.
-[3] LOM PRAHA s.p. · 578 709 CZK · Kupní smlouva - detekční zařízení
-[4] Czechia – Electronic message and information services – Detekce komerčních UAS pomocí RID - služba — buyer: Ministerstvo obrany
-[5] DRONETAG — Secure Information Sharing","[1] https://smlouvy.gov.cz/smlouva/14335472
-[2] https://smlouvy.gov.cz/smlouva/21293531
-[3] https://smlouvy.gov.cz/smlouva/35562893
-[4] https://ted.europa.eu/en/notice/-/detail/436033-2026
-[5] https://web.archive.org/web/20250811133329id_/https://www.diana.nato.int/about-diana/2024-cohort-of-companies.html",,,,,,,
-40,dronetag,TL;DR,Technology & moat,"Little independently evidenced moat: a public Remote ID scanning plugin shows core receiving logic is open code. The claimed co-authored Remote ID white paper is unverified, and no patent facts were collected.",Partly verified,"[1] dronetag/flutter-opendroneid · Flutter plugin for receiving Bluetooth advertising/WiFi NAN signals/beacons · Dart · last push 2026-11-02
-[2] Dronetag founders co-authored the technical white paper for the Remote ID protocol. We work directly with authorities in the EU, the US, and Asia to shape the future of drone regulation.
-[3] Tool for scanning Direct Remote ID signals through Wifi and Bluetooth","[1] https://github.com/dronetag/flutter-opendroneid
-[2] https://www.dronetag.com/
-[3] https://help.dronetag.com/",,,,,,,
-41,dronetag,TL;DR,Key risk,"Revenue visibility depends on a few public buyers and one tender, while the claimed 50,000+ devices and 25,000+ customers have no independent check.",Analyst view,"[1] Czechia – Electronic message and information services – Detekce komerčních UAS pomocí RID - služba — buyer: Ministerstvo obrany
-[2] Správa informačních technologií města Plzně · 120 000 CZK · objednávka
-[3] Sold devices 50,000 +
-[4] Customers 25,000 +","[1] https://ted.europa.eu/en/notice/-/detail/436033-2026
-[2] https://smlouvy.gov.cz/smlouva/14335472
-[3] https://www.dronetag.com/
-[4] https://www.dronetag.com/",,,,,,,
-42,dronetag,TL;DR,Diligence focus,"Verify actual revenue and the delivery schedule of the defence award first, then the device and customer counts, because they decide whether traction is real.",Analyst view,"[1] Czechia – Electronic message and information services – Detekce komerčních UAS pomocí RID - služba — buyer: Ministerstvo obrany
-[2] 
-[3] Sold devices 50,000 +","[1] https://ted.europa.eu/en/notice/-/detail/436033-2026
-[2] https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=1053249
-[3] https://www.dronetag.com/",,,,,,,
-43,dronetag,Ownership and capital,,"Only disclosed round: a convertible loan from Y Soft Ventures reported June 2022. Sources disagree on currency (EUR 15m versus CZK 15m), and no later priced round is visible.",Corroborated,"[1] Aktuální investice je strukturovaná jako konvertibilní půjčka
-[2] Český startup Dronetag získal investici 15 milionů korun od brněnského fondu Y Soft Ventures spadajícího pod společnost Y Soft.","[1] https://cc.cz/cesky-startup-dronetag-zajistuje-bezpecne-letani-s-drony-od-brnenskeho-fondu-ziskava-15-milionu/
-[2] https://www.monitoruji.cz/domaci/1916288/ceske-krabicky-zajistuji-viditelnost-dronu-dronetag-nyni-ziskal-investici-od-y-softu",,,,,,,
-44,dronetag,Ownership and capital,,"Public money is support, not sales: 5 R&D consortium agreements (about CZK 45.6m budget) with university and industry partners are research budgets. Those partners are not customers.",Verified,"[1] TECHNISERV, spol. s r.o., · 18 646 872 CZK · Smlouva o účasti na řešení projektu CK03000054 a využití výsledků
-[2] České vysoké učení technické v Praze · 6 802 393 CZK · Smlouva o účasti na řešení projektu č. FW04020025
-[3] UpVision s.r.o., · 20 119 961 CZK · Smlouva o účasti na řešení projektu CL01000047
-[4] TECHNISERV, spol. s r.o. · 0 CZK · Smlouva  o využití výsledků projektu CK03000054
-[5] UpVision s.r.o. · 0 CZK · Smlouva o využití výsledků projektu CL01000047","[1] https://smlouvy.gov.cz/smlouva/19558935
-[2] https://smlouvy.gov.cz/smlouva/19531615
-[3] https://smlouvy.gov.cz/smlouva/27898271
-[4] https://smlouvy.gov.cz/smlouva/31992832
-[5] https://smlouvy.gov.cz/smlouva/38998074",,,,,,,
-45,dronetag,Ownership and capital,,"Eight grants totalling CZK 22.2m were awarded for multi-year projects. Only one, CZK 4.1m, shows payments made, so awards are not received revenue.",Verified,"[1] IoT zařízení pro digitální identifikaci pilotovaného letectví v U-space · Technologická agentura ČR · 4 102 946 CZK
-[2] Účast v projektu CzechStarter (projekt Podpora start-upů, reg. č. CZ.01.2.111/0.0/0.0/15_022/0005661), VI. výzva · Agentura pro podporu podnikání a investic CzechInvest · 797 171 CZK
-[3] Zkušební implementace U-space v České republice · Technologická agentura ČR · 3 696 180 CZK
-[4] Digitalizace poskytování služeb AFIS a Radio · Technologická agentura ČR · 4 363 875 CZK
-[5] Podpora veletržních aktivit společnosti Dronetag s.r.o. · Ministerstvo pro místní rozvoj · 972 335 CZK","[1] https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-CB620BAAB8F876B73CB37E46F22B3EA45A7011A6D4B0075BEC74064FA6A5BC56
-[2] https://www.hlidacstatu.cz/Dotace/Detail/DeMinimis-E2B306E7B38FFA8D069A99E770C3DD3ABF062E17AAF092CBC25134F2F0570D30
-[3] https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-BD75A4A2C5439114B888DAC35F1644BA5C96325258C41AD6051E7A4D5F730B62
-[4] https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-229B4E8F4048EBD1C3D113AAD9B5204574DE1F45FA3D70E1D6B35696BE338613
-[5] https://www.hlidacstatu.cz/Dotace/Detail/Eufondy-D2A8FFBB8D0398366E44EA3D58A40667E5A51A3B1DB5EE6D621F4BA30527B367",,,,,,,
-46,dronetag,Technology profile,,"Company claims Remote ID receivers, transmitters, a visualization platform and a REST API. Public product pages list portable and stationary drone detection hardware, not independently tested.",Company claim,"[1] Remote ID Receivers Detect, monitor and visualize nearby drone activity in real time.
-[2] Remote ID Transmitters Make drones digitally visible and compliant across operations.
-[3] Take command with the Dronetag App, the central hub of our ecosystem. Manage devices, inspect airspace, and analyze flight data from a single, intuitive interface on mobile and web.
-[4] Use our API services to receive air traffic data, share your data or learn how to integrate our platform services into your application.
-[5] Portable, battery-powered drone detection","[1] https://shop.dronetag.com/
-[2] https://shop.dronetag.com/
-[3] https://www.dronetag.com/
-[4] https://help.dronetag.com/
-[5] https://www.dronetag.com/",,,,,,,
-47,dronetag,Technology profile,,"Public engineering footprint: 13 collected GitHub repos (latest push November 2026), mostly small, and 5 help-site pages including a REST API guide. The 50-person team is a company claim.",Partly verified,"[1] dronetag/flutter-opendroneid · Flutter plugin for receiving Bluetooth advertising/WiFi NAN signals/beacons · Dart · last push 2026-11-02
-[2] dronetag/scout-sensor-demo-map · Example application of consuming data from the sensor mode of the Dronetag Scout · Jinja · last push 2026-08-14
-[3] Getting Started with the REST API | Dronetag Help
-[4] We are a team of 50 multidisciplinary experts, pilots, and engineers passionate about creating technology that solves real-world problems for the entire drone community.
-[5] dronetag · 31 public repos","[1] https://github.com/dronetag/flutter-opendroneid
-[2] https://github.com/dronetag/scout-sensor-demo-map
-[3] https://help.dronetag.com/developers/data-pull/getting-started-rest
-[4] https://www.dronetag.com/
-[5] https://github.com/dronetag",,,,,,,
-48,dronetag,Technology profile,,"AI dependency is not evidenced: no LLM vendor was collected as a tool or subprocessor, and both open engineering roles are hardware, not ML. AI capability remains unknown.",Company claim,"[1] Engineering Hardware Engineer Prague, Czech Republic Full-Time On-Site
-[2] Sales Partnership Development Manager Prague, Czech Republic Full-Time Hybrid","[1] https://www.dronetag.com/careers
-[2] https://www.dronetag.com/careers",,,,,,,
-49,dronetag,"What could be rebuilt, and what cannot be judged from outside",Replicable with off-the-shelf parts,"Direct Remote ID scanning over Wi-Fi and Bluetooth can be reproduced with the public flutter-opendroneid plugin on standard phone radios. Its license is unclear, and field range would differ.",Analyst view,"[1] dronetag/flutter-opendroneid · Flutter plugin for receiving Bluetooth advertising/WiFi NAN signals/beacons · Dart · last push 2026-11-02
-[2] Tool for scanning Direct Remote ID signals through Wifi and Bluetooth","[1] https://github.com/dronetag/flutter-opendroneid
-[2] https://help.dronetag.com/",,,,,,,
-50,dronetag,"What could be rebuilt, and what cannot be judged from outside",Edge supported by public evidence,Public evidence supports buyer validation: a NATO DIANA 2024 listing and a Czech Ministry of Defence tender notice naming Dronetag as winner at CZK 27.4m. This does not prove product performance.,Analyst view,"[1] DRONETAG — Secure Information Sharing
-[2] Czechia – Electronic message and information services – Detekce komerčních UAS pomocí RID - služba — buyer: Ministerstvo obrany","[1] https://web.archive.org/web/20250811133329id_/https://www.diana.nato.int/about-diana/2024-cohort-of-companies.html
-[2] https://ted.europa.eu/en/notice/-/detail/436033-2026",,,,,,,
-51,dronetag,"What could be rebuilt, and what cannot be judged from outside",Cannot be judged from outside,"Receiver detection range, accuracy and field reliability cannot be judged from outside without test data, device logs or field deployment results.",Analyst view,"[1] Portable, battery-powered drone detection
-[2] Stationary, long-range drone detection","[1] https://www.dronetag.com/
-[2] https://www.dronetag.com/",,,,,,,
-52,dronetag,Risks and caveats,,"Public-money concentration: only 7 purchase contracts (about CZK 1.4m) are public sales, while R&D and grant money dominates. One defence tender is the largest buyer signal.",Analyst view,"[1] Správa informačních technologií města Plzně · 120 000 CZK · objednávka
-[2] Česká republika - Ministerstvo obrany · 68 970 CZK · 22373/2022-VLCH Zažízení pro dálkovou identifikaci dronů, č. spec. 36896/22,  pro projekt AIROPS (DZRO AIROPS),  Účtování dle bodu usměrnění VaV č.1.
-[3] České vysoké učení technické v Praze · 140 617 CZK · Dronetag Scout - 2xOmni + 2x90° Sector
-[4] LOM PRAHA s.p. · 578 709 CZK · Kupní smlouva - detekční zařízení
-[5] Czechia – Electronic message and information services – Detekce komerčních UAS pomocí RID - služba — buyer: Ministerstvo obrany","[1] https://smlouvy.gov.cz/smlouva/14335472
-[2] https://smlouvy.gov.cz/smlouva/21293531
-[3] https://smlouvy.gov.cz/smlouva/34910865
-[4] https://smlouvy.gov.cz/smlouva/35562893
-[5] https://ted.europa.eu/en/notice/-/detail/436033-2026",,,,,,,
-53,dronetag,Risks and caveats,,"Unverified scale claims: 50,000+ devices sold, 25,000+ customers and a 3,000+ receiver network are company website statements with no independent check.",Analyst view,"[1] Sold devices 50,000 +
-[2] Customers 25,000 +
-[3] Dronetag founders co-authored the technical white paper for the Remote ID protocol. We work directly with authorities in the EU, the US, and Asia to shape the future of drone regulation.","[1] https://www.dronetag.com/
-[2] https://www.dronetag.com/
-[3] https://www.dronetag.com/",,,,,,,
-54,dronetag,Risks and caveats,,"Thin visible engineering: 2 open engineering roles, both hardware, and 2 sales partnership roles. The team size is a company claim.",Analyst view,"[1] Engineering Hardware Engineer Prague, Czech Republic Full-Time On-Site
-[2] Sales Partnership Development Manager Prague, Czech Republic Full-Time Hybrid
-[3] We are a team of 50 multidisciplinary experts, pilots, and engineers passionate about creating technology that solves real-world problems for the entire drone community.","[1] https://www.dronetag.com/careers
-[2] https://www.dronetag.com/careers
-[3] https://www.dronetag.com/",,,,,,,
-55,dronetag,Questions for founders,,"What are annual revenue, gross margin and the hardware versus subscription split? The 2025 accounts were filed but are not in the data.",Analyst view,"[1] 
-[2] Plans start at €15 / $15 per month, and you get the first 2 months on us.
-[3] From €3,099 / $3,499","[1] https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=1053249
+[3] https://smlouvy.gov.cz/smlouva/38841586",yes,n/a,yes,yes,no,n/a,
+37,fly4future,Case for and against,Must be true,"Diligence confirms GNSS-free autonomy works in field trials, the basis for the Vermeer overlap and the 60-100 person team plan.",Analyst view,"[1] The challenge was to develop a drone that would be able to fly fully autonomously and without the use of GPS to a given location, pick up an object and carry it to safety, all in challenging conditions.
+[2] Cílem je vybudovat ve Fly4Future tým 60 až 100 lidí, který bude zaměřený výhradně na inženýring a integraci vybraných produktů","[1] https://fly4future.com/winning-solution-sprind-drone-flight-without-gps/
+[2] https://aktualne.cvut.cz/zpravy-z-medii/20260615-rozvoj-dronu-v-cesku-zajisti-obdoba-agentury-darpa-chytra-armada-a-silni",partly,yes,yes,partly,no,minor,ties autonomy field trials to the team plan without a reason
+38,dronetag,TL;DR,Product,"Dronetag sells Remote ID drone detection hardware, such as the RIDER receiver and Scout sensors, plus subscriptions to public-safety and professional-pilot buyers.",Company claim,"[1] A compact, wireless, battery-powered Remote ID receiver designed for public safety organizations and professional pilots, providing instant situational awareness in the field.
+[2] Yes. Your RIDER comes with a 2-month free trial. After that, you'll need to activate RIDER Connect to cover the LTE data and cloud services.
+[3] Detects all Remote ID-compliant drones, including DJI, Autel and Skydio, up to 25 km (15 mi) on sector antennas.","[1] https://www.dronetag.com/products/rider
+[2] https://www.dronetag.com/products/rider
+[3] https://www.dronetag.com/products/scout",yes,n/a,yes,n/a,no,n/a,
+39,dronetag,TL;DR,Stage & traction,"2025 accounts show CZK 4.2m net result and CZK 19.6m cash, but no revenue is published. The only disclosed round is a CZK 15m convertible loan (2022). Winner of a 2026 Ministry of Defence RID detection tender (CZK 27.4m notice).",Partly verified,"[1] Balance sheet at 2025-12-31 (CZK thousands): total assets 32 773; cash 19 605; equity 5 545; net result 4 163. No income statement filed (small entity).
+[2] Aktuální investice je strukturovaná jako konvertibilní půjčka
+[3] Czechia – Electronic message and information services – Detekce komerčních UAS pomocí RID - služba — buyer: Ministerstvo obrany","[1] https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=93244930&subjektId=1053249&spis=1175754
+[2] https://cc.cz/cesky-startup-dronetag-zajistuje-bezpecne-letani-s-drony-od-brnenskeho-fondu-ziskava-15-milionu/
+[3] https://ted.europa.eu/en/notice/-/detail/436033-2026",yes,yes,yes,n/a,no,n/a,the 15M CZK loan is also in the notes to the 2025 accounts
+40,dronetag,TL;DR,Technology & moat,"Hard-to-copy evidence is thin: the public Flutter receiver plugin reuses open Remote ID standards, and no patent records were supplied. Defensibility may rest on certified hardware and public-sector references, still unverified.",Partly verified,"[1] dronetag/flutter-opendroneid · Flutter plugin for receiving Bluetooth advertising/WiFi NAN signals/beacons · Dart · last push 2026-11-02
+[2] Remote ID Compliant FAA (USA), EASA (EU), CAAS (SGP), CAA (UK)
+[3] Czechia – Electronic message and information services – Detekce komerčních UAS pomocí RID - služba — buyer: Ministerstvo obrany","[1] https://github.com/dronetag/flutter-opendroneid
 [2] https://www.dronetag.com/products/mini-4g
-[3] https://www.dronetag.com/products/scout",,,,,,,
-56,dronetag,Questions for founders,,"Of the claimed 50,000+ devices and 25,000+ customers, how many are paying, and can the company provide named references?",Analyst view,"[1] Sold devices 50,000 +
-[2] Customers 25,000 +
-[3] Drone Detection Installations by Dronetag","[1] https://www.dronetag.com/
+[3] https://ted.europa.eu/en/notice/-/detail/436033-2026",yes,n/a,yes,yes,no,n/a,
+41,dronetag,TL;DR,Key risk,"Without a published income statement, the CZK 4.2m profit cannot be tied to sales. Public money is mostly R&D consortium budgets (CZK 45.6m), not customer purchases (CZK 1.4m).",Analyst view,"[1] Balance sheet at 2025-12-31 (CZK thousands): total assets 32 773; cash 19 605; equity 5 545; net result 4 163. No income statement filed (small entity).
+[2] TECHNISERV, spol. s r.o., · 18 646 872 CZK · Smlouva o účasti na řešení projektu CK03000054 a využití výsledků
+[3] Správa informačních technologií města Plzně · 120 000 CZK · objednávka","[1] https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=93244930&subjektId=1053249&spis=1175754
+[2] https://smlouvy.gov.cz/smlouva/19558935
+[3] https://smlouvy.gov.cz/smlouva/14335472",yes,yes,yes,yes,no,n/a,
+42,dronetag,TL;DR,Diligence focus,"Verify first: 2025 management accounts splitting sales, subsidies and other income, then delivery under the MoD tender. Company claims of 25,000+ customers and 50,000+ devices are unverified.",Analyst view,"[1] Balance sheet at 2025-12-31 (CZK thousands): total assets 32 773; cash 19 605; equity 5 545; net result 4 163. No income statement filed (small entity).
+[2] Czechia – Electronic message and information services – Detekce komerčních UAS pomocí RID - služba — buyer: Ministerstvo obrany
+[3] Customers 25,000 +
+[4] Sold devices 50,000 +","[1] https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=93244930&subjektId=1053249&spis=1175754
+[2] https://ted.europa.eu/en/notice/-/detail/436033-2026
+[3] https://www.dronetag.com/
+[4] https://www.dronetag.com/",yes,n/a,yes,yes,no,n/a,
+43,dronetag,Ownership and capital,,"One disclosed round: CZK 15m convertible loan from Y Soft Ventures, reported June 2022. Registry investor entries were not supplied. Round size fits Rockaway's initial ticket range.",Corroborated,"[1] Aktuální investice je strukturovaná jako konvertibilní půjčka
+[2] Český startup Dronetag získal investici 15 milionů korun od brněnského fondu Y Soft Ventures spadajícího pod společnost Y Soft.","[1] https://cc.cz/cesky-startup-dronetag-zajistuje-bezpecne-letani-s-drony-od-brnenskeho-fondu-ziskava-15-milionu/
+[2] https://www.monitoruji.cz/domaci/1916288/ceske-krabicky-zajistuji-viditelnost-dronu-dronetag-nyni-ziskal-investici-od-y-softu",yes,yes,yes,n/a,no,n/a,round within ticket matches the code's comparison
+44,dronetag,Ownership and capital,,"Public money: 7 purchase contracts (CZK 1.4m), 5 R&D consortium agreements (CZK 45.6m), 2 loans (CZK 0.4m), and 8 grants (CZK 22.2m awarded, CZK 4.1m paid). Grants are support, not sales.",Verified,"[1] Správa informačních technologií města Plzně · 120 000 CZK · objednávka
+[2] TECHNISERV, spol. s r.o., · 18 646 872 CZK · Smlouva o účasti na řešení projektu CK03000054 a využití výsledků
+[3] Karlovarská krajská nemocnice a.s. · 131 390 CZK · Smlouva o výpůjčce - 1 x Dronetag Scout v konfiguraci 4x směrová anténa s LTE modulem 
+[4] Účast v projektu CzechStarter (projekt Podpora start-upů, reg. č. CZ.01.2.111/0.0/0.0/15_022/0005661), VI. výzva · Agentura pro podporu podnikání a investic CzechInvest · 797 171 CZK
+[5] IoT zařízení pro digitální identifikaci pilotovaného letectví v U-space · Technologická agentura ČR · 4 102 946 CZK","[1] https://smlouvy.gov.cz/smlouva/14335472
+[2] https://smlouvy.gov.cz/smlouva/19558935
+[3] https://smlouvy.gov.cz/smlouva/38661160
+[4] https://www.hlidacstatu.cz/Dotace/Detail/DeMinimis-E2B306E7B38FFA8D069A99E770C3DD3ABF062E17AAF092CBC25134F2F0570D30
+[5] https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-CB620BAAB8F876B73CB37E46F22B3EA45A7011A6D4B0075BEC74064FA6A5BC56",yes,yes,yes,n/a,no,n/a,
+45,dronetag,Ownership and capital,,"Legal entity: Dronetag s.r.o., Prague, registered 7 June 2019 with CZK 50,000 share capital. Registry records managing-director entries from 2019, one ending April 2022. Insolvency check (Nov 2026) returned no records.",Verified,"[1] Dronetag s.r.o. · s.r.o. · registered 2019-06-07
+[2] registered 2019-06-07
+[3] 50 000 CZK
+[4] 
+[5] ","[1] https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/08198519
+[2] https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/08198519
+[3] https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/08198519
+[4] https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/08198519
+[5] https://isir.justice.cz/isir/ueu/vysledek_lustrace.do?ic=08198519&aktualnost=AKTUALNI_I_UKONCENA&rowsAtOnce=50",partly,yes,yes,n/a,no,n/a,officer and insolvency entries come from register records whose quotes are empty in the sheet
+46,dronetag,Technology profile,,"Public engineering: 13 public GitHub repos (56 stars combined), including an open-source Flutter plugin for Bluetooth and Wi-Fi Remote ID reception, and 5 docs pages, including REST API getting-started.",Partly verified,"[1] dronetag/flutter-opendroneid · Flutter plugin for receiving Bluetooth advertising/WiFi NAN signals/beacons · Dart · last push 2026-11-02
+[2] dronetag/scout-sensor-demo-map · Example application of consuming data from the sensor mode of the Dronetag Scout · Jinja · last push 2026-08-14
+[3] Getting Started with the REST API | Dronetag Help","[1] https://github.com/dronetag/flutter-opendroneid
+[2] https://github.com/dronetag/scout-sensor-demo-map
+[3] https://help.dronetag.com/developers/data-pull/getting-started-rest",yes,yes,yes,n/a,no,n/a,
+47,dronetag,Technology profile,,"Company claims, unverified: streaming via MQTT and webhooks, over 15 UTM integration partners, and aviation protocols such as ADS-B and FLARM on Scout. No product surfaces or tests were supplied.",Company claim,"[1] Advanced integrations Collected data can be streamed in real time to the Dronetag App or into broader security systems via API, MQTT, and webhooks.
+[2] Scout Aviation configuration expands detection beyond Remote ID by adding support for aviation protocols including ADS-B, ADS-L, UAT, FLARM, OGN, and FANET.
+[3] Seamless Integration Our hardware and software are designed to work in perfect harmony. With over 15 UTM integration partners and a seamless API, our solutions easily integrate into your existing workflow.","[1] https://www.dronetag.com/products/scout
+[2] https://www.dronetag.com/products/scout
+[3] https://www.dronetag.com/",partly,n/a,yes,n/a,yes,minor,'no product surfaces supplied' is wrong: 37 subdomains and 2 mobile apps were collected
+48,dronetag,Technology profile,,"AI dependency: no LLM vendor is named as a tool or subprocessor, and no model, paper or ML role appears; own-model capability is unknown from the evidence.",Company claim,"[1] Engineering Hardware Engineer Prague, Czech Republic Full-Time On-Site
+[2] Sales Partnership Development Manager Prague, Czech Republic Full-Time Hybrid","[1] https://www.dronetag.com/careers
+[2] https://www.dronetag.com/careers",yes,n/a,yes,n/a,no,n/a,
+49,dronetag,"What could be rebuilt, and what cannot be judged from outside",Replicable with off-the-shelf parts,Basic Remote ID scanning over Bluetooth and Wi-Fi NAN can be reproduced from the open OpenDroneID standard and the open-source flutter-opendroneid plugin using commodity radios.,Analyst view,"[1] dronetag/flutter-opendroneid · Flutter plugin for receiving Bluetooth advertising/WiFi NAN signals/beacons · Dart · last push 2026-11-02
+[2] Tool for scanning Direct Remote ID signals through Wifi and Bluetooth","[1] https://github.com/dronetag/flutter-opendroneid
+[2] https://help.dronetag.com/",yes,n/a,yes,yes,no,n/a,
+50,dronetag,"What could be rebuilt, and what cannot be judged from outside",Cannot be judged from outside,"Detection range (up to 25 km on sector antennas) and the claimed 3,000-receiver network cannot be judged without field data, firmware or operator logs.",Analyst view,"[1] Detects all Remote ID-compliant drones, including DJI, Autel and Skydio, up to 25 km (15 mi) on sector antennas.
+[2] Dronetag founders co-authored the technical white paper for the Remote ID protocol. We work directly with authorities in the EU, the US, and Asia to shape the future of drone regulation.","[1] https://www.dronetag.com/products/scout
+[2] https://www.dronetag.com/",partly,yes,yes,yes,no,n/a,"the 3,000-receiver claim is not in the cited quotes"
+51,dronetag,Risks and caveats,,"Liquidity: all 25.9m CZK liabilities are short-term against 19.6m cash, and 2025 revenue is unpublished, so runway and burn cannot be assessed.",Analyst view,[1] Balance sheet at 2025-12-31 (CZK thousands): total assets 32 773; cash 19 605; equity 5 545; net result 4 163. No income statement filed (small entity).,[1] https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=93244930&subjektId=1053249&spis=1175754,yes,yes,yes,yes,no,n/a,
+52,dronetag,Risks and caveats,,Public-money dependence: research budgets (CZK 45.6m) dwarf purchases (CZK 1.4m); only CZK 4.1m of CZK 22.2m awarded grants is recorded as paid.,Analyst view,"[1] TECHNISERV, spol. s r.o., · 18 646 872 CZK · Smlouva o účasti na řešení projektu CK03000054 a využití výsledků
+[2] Správa informačních technologií města Plzně · 120 000 CZK · objednávka
+[3] IoT zařízení pro digitální identifikaci pilotovaného letectví v U-space · Technologická agentura ČR · 4 102 946 CZK
+[4] Účast v projektu CzechStarter (projekt Podpora start-upů, reg. č. CZ.01.2.111/0.0/0.0/15_022/0005661), VI. výzva · Agentura pro podporu podnikání a investic CzechInvest · 797 171 CZK","[1] https://smlouvy.gov.cz/smlouva/19558935
+[2] https://smlouvy.gov.cz/smlouva/14335472
+[3] https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-CB620BAAB8F876B73CB37E46F22B3EA45A7011A6D4B0075BEC74064FA6A5BC56
+[4] https://www.hlidacstatu.cz/Dotace/Detail/DeMinimis-E2B306E7B38FFA8D069A99E770C3DD3ABF062E17AAF092CBC25134F2F0570D30",yes,yes,yes,partly,no,minor,consortium budgets are not the company's own money; 'dependence' overstates
+53,dronetag,Risks and caveats,,"Thin visible engineering: 4 open roles, no ML hiring, no product surfaces in supplied facts, and a claimed team of 50 against 13 public repos, mostly with few stars.",Analyst view,"[1] We are a team of 50 multidisciplinary experts, pilots, and engineers passionate about creating technology that solves real-world problems for the entire drone community.
+[2] dronetag/flutter-opendroneid · Flutter plugin for receiving Bluetooth advertising/WiFi NAN signals/beacons · Dart · last push 2026-11-02
+[3] dronetag/opendronelist · A public community-driven list of drones and their common properties · HTML · last push 2025-10-16
+[4] Engineering Hardware Engineer Prague, Czech Republic Full-Time On-Site","[1] https://www.dronetag.com/
+[2] https://github.com/dronetag/flutter-opendroneid
+[3] https://github.com/dronetag/opendronelist
+[4] https://www.dronetag.com/careers",partly,yes,yes,partly,yes,minor,"'no product surfaces' is wrong (2 mobile apps, REST API docs)"
+54,dronetag,Questions for founders,,"What is 2025 revenue, and how much of the CZK 4.2m net result is sales versus subsidies or one-offs? Request full accounts or a management P&L before any valuation work.",Analyst view,"[1] Balance sheet at 2025-12-31 (CZK thousands): total assets 32 773; cash 19 605; equity 5 545; net result 4 163. No income statement filed (small entity).
+[2] Yes. Your RIDER comes with a 2-month free trial. After that, you'll need to activate RIDER Connect to cover the LTE data and cloud services.","[1] https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=93244930&subjektId=1053249&spis=1175754
+[2] https://www.dronetag.com/products/rider",yes,n/a,yes,yes,no,n/a,
+55,dronetag,Questions for founders,,"Beyond the open Remote ID plugin and standard protocols, what is proprietary, such as firmware, sensors or antennas, and what evidence would prove it?",Analyst view,"[1] dronetag/flutter-opendroneid · Flutter plugin for receiving Bluetooth advertising/WiFi NAN signals/beacons · Dart · last push 2026-11-02
+[2] Detects all Remote ID-compliant drones, including DJI, Autel and Skydio, up to 25 km (15 mi) on sector antennas.","[1] https://github.com/dronetag/flutter-opendroneid
+[2] https://www.dronetag.com/products/scout",yes,n/a,yes,yes,no,n/a,
+56,dronetag,Questions for founders,,"Which of the FAA, EASA and white-paper claims can be confirmed independently, and has the 2026 MoD tender moved into deliveries at scale?",Analyst view,"[1] Dronetag's FAA-Approved Hardware Serves 15 Military Forces and 40 Countries
+[2] Dronetag founders co-authored the technical white paper for the Remote ID protocol. We work directly with authorities in the EU, the US, and Asia to shape the future of drone regulation.
+[3] Remote ID Compliant FAA (USA), EASA (EU), CAAS (SGP), CAA (UK)
+[4] Czechia – Electronic message and information services – Detekce komerčních UAS pomocí RID - služba — buyer: Ministerstvo obrany","[1] https://startuply.vc/article/dronetag-s-faa-approved-hardware-serves-15-military-forces-and-40-countries-1gv9lf
 [2] https://www.dronetag.com/
-[3] https://www.dronetag.com/reference-installations",,,,,,,
-57,dronetag,Questions for founders,,"What in the stack beyond the public Remote ID plugin is hard to copy, such as firmware, data or certifications, given no patent facts were collected?",Analyst view,"[1] dronetag/flutter-opendroneid · Flutter plugin for receiving Bluetooth advertising/WiFi NAN signals/beacons · Dart · last push 2026-11-02
-[2] Dronetag founders co-authored the technical white paper for the Remote ID protocol. We work directly with authorities in the EU, the US, and Asia to shape the future of drone regulation.","[1] https://github.com/dronetag/flutter-opendroneid
-[2] https://www.dronetag.com/",,,,,,,
-58,dronetag,Fit with the Rockaway thesis,Sector,"Defence/dual-use fit is supported by a won Czech Ministry of Defence tender for commercial drone detection, CZK 27.44m notice value, and a 2024 NATO DIANA selection.",Analyst view,"[1] Czechia – Electronic message and information services – Detekce komerčních UAS pomocí RID - služba — buyer: Ministerstvo obrany
+[3] https://www.dronetag.com/products/mini-4g
+[4] https://ted.europa.eu/en/notice/-/detail/436033-2026",yes,n/a,yes,yes,no,n/a,
+57,dronetag,Fit with the Rockaway thesis,Sector,Defence/dual-use: won a Czech Ministry of Defence detection-service tender (CZK 27.44m value) and was selected for NATO DIANA 2024; both are structured defence evidence.,Analyst view,"[1] Czechia – Electronic message and information services – Detekce komerčních UAS pomocí RID - služba — buyer: Ministerstvo obrany
 [2] DRONETAG — Secure Information Sharing","[1] https://ted.europa.eu/en/notice/-/detail/436033-2026
-[2] https://web.archive.org/web/20250811133329id_/https://www.diana.nato.int/about-diana/2024-cohort-of-companies.html",,,,,,,
-59,dronetag,Business model,,"Seven public purchase contracts in the registry (2020–2026) total CZK 1.40m, with fire-service and Ministry of Defence buyers among them.",Verified,"[1] LOM PRAHA s.p. · 578 709 CZK · Kupní smlouva - detekční zařízení
-[2] Hasičský záchranný sbor Pardubického kraje · 181 322 CZK · objednávka: nákup 1 ks zařízení pro dálkovou identifikaci dronů Dronetag Scout +4x90°
-[3] Česká republika - Ministerstvo obrany · 68 970 CZK · 22373/2022-VLCH Zažízení pro dálkovou identifikaci dronů, č. spec. 36896/22,  pro projekt AIROPS (DZRO AIROPS),  Účtování dle bodu usměrnění VaV č.1.","[1] https://smlouvy.gov.cz/smlouva/35562893
-[2] https://smlouvy.gov.cz/smlouva/39254662
-[3] https://smlouvy.gov.cz/smlouva/21293531",,,,,,,
-60,dronetag,Business model,,"Company website claims 50,000+ devices sold and 25,000+ customers, with no period or revenue figure; these are unverified marketing claims.",Analyst view,"[1] Sold devices 50,000 +
-[2] Customers 25,000 +","[1] https://www.dronetag.com/
-[2] https://www.dronetag.com/",,,,,,,
-61,dronetag,Business model,,"Public grants total CZK 22.21m awarded across eight support items and are not revenue; the only paid amount is CZK 4.10m for one TAČR project, paid 2022–2024.",Verified,"[1] IoT zařízení pro digitální identifikaci pilotovaného letectví v U-space · Technologická agentura ČR · 4 102 946 CZK
-[2] Zkušební implementace U-space v České republice · Technologická agentura ČR · 3 696 180 CZK
-[3] Digitalizace poskytování služeb AFIS a Radio · Technologická agentura ČR · 4 363 875 CZK","[1] https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-CB620BAAB8F876B73CB37E46F22B3EA45A7011A6D4B0075BEC74064FA6A5BC56
-[2] https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-BD75A4A2C5439114B888DAC35F1644BA5C96325258C41AD6051E7A4D5F730B62
-[3] https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-229B4E8F4048EBD1C3D113AAD9B5204574DE1F45FA3D70E1D6B35696BE338613",,,,,,,
-62,dronetag,Business model,,"Five R&D project agreements (CZK 45.57m) are research-consortium budgets, not Dronetag revenue.",Verified,"[1] TECHNISERV, spol. s r.o., · 18 646 872 CZK · Smlouva o účasti na řešení projektu CK03000054 a využití výsledků
-[2] České vysoké učení technické v Praze · 6 802 393 CZK · Smlouva o účasti na řešení projektu č. FW04020025
-[3] UpVision s.r.o., · 20 119 961 CZK · Smlouva o účasti na řešení projektu CL01000047","[1] https://smlouvy.gov.cz/smlouva/19558935
-[2] https://smlouvy.gov.cz/smlouva/19531615
-[3] https://smlouvy.gov.cz/smlouva/27898271",,,,,,,
-63,dronetag,Market,,The company states 10+ million active drones worldwide and exponential market growth; no independent market-size figure is supplied.,Company claim,"[1] With 10+ millions active drones worldwide and exponential market growth, the skies are becoming increasingly complex.",[1] https://www.dronetag.com/,,,,,,,
-64,dronetag,Market,,Registry purchase orders from fire-rescue (HZS) and Ministry of Defence buyers show public-safety and defence procurement of detection devices.,Analyst view,"[1] MV - generální ředitelství HZS ČR · 198 439 CZK · Nákup stacionárního přijímače dálkové identifikace Dronetag Scout s příslušenstvím
-[2] Česká republika - Ministerstvo obrany · 68 970 CZK · 22373/2022-VLCH Zažízení pro dálkovou identifikaci dronů, č. spec. 36896/22,  pro projekt AIROPS (DZRO AIROPS),  Účtování dle bodu usměrnění VaV č.1.","[1] https://smlouvy.gov.cz/smlouva/39280395
-[2] https://smlouvy.gov.cz/smlouva/21293531",,,,,,,
-65,dronetag,Market,,"A Technologická Inkubace article says the company started from an upcoming drone monitoring law; the company says it works with EU, US and Asian authorities.",Partly verified,"[1] Czech startup conquers America and expands further. Makes drone tracking devices - Technologická Inkubace
-[2] Dronetag founders co-authored the technical white paper for the Remote ID protocol. We work directly with authorities in the EU, the US, and Asia to shape the future of drone regulation.","[1] https://technologickainkubace.org/en/news/czech-startup-conquers-america-and-expands-further-makes-drone-tracking-devices/
-[2] https://www.dronetag.com/",,,,,,,
-66,dronetag,Competition,,"DroneTector Limited (UK), found via the vetted NATO DIANA 2026 cohort list, detects small drones with sensors; overlap is real, but Dronetag's core is Remote ID receivers, so it is not a confirmed competitor.",Analyst view,"[1] DroneTector Limited: High-resolution sensors to detect and track small drones
-[2] Remote ID Receivers Detect, monitor and visualize nearby drone activity in real time.","[1] https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html
-[2] https://shop.dronetag.com/",,,,,,,
-67,dronetag,Competition,,"AegisX (Sweden), a DIANA 2026 candidate, detects low-flying fibre-optic drones; overlap is partial because it targets a different drone type.",Analyst view,[1] AegisX: Detecting & tracking low flying fibre optic drones,[1] https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html,,,,,,,
-68,dronetag,Case for and against,For,Public research bodies have funded the core technology: TAČR awarded CZK 4.10m for IoT drone identification (paid in full) and CZK 3.70m for U-space testing.,Analyst view,"[1] IoT zařízení pro digitální identifikaci pilotovaného letectví v U-space · Technologická agentura ČR · 4 102 946 CZK
-[2] Zkušební implementace U-space v České republice · Technologická agentura ČR · 3 696 180 CZK","[1] https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-CB620BAAB8F876B73CB37E46F22B3EA45A7011A6D4B0075BEC74064FA6A5BC56
-[2] https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-BD75A4A2C5439114B888DAC35F1644BA5C96325258C41AD6051E7A4D5F730B62",,,,,,,
-69,dronetag,Case for and against,For,Defence-buyer access is evidenced by the CZK 27.44m Ministry of Defence tender win and the 2024 NATO DIANA selection.,Analyst view,"[1] Czechia – Electronic message and information services – Detekce komerčních UAS pomocí RID - služba — buyer: Ministerstvo obrany
-[2] DRONETAG — Secure Information Sharing","[1] https://ted.europa.eu/en/notice/-/detail/436033-2026
-[2] https://web.archive.org/web/20250811133329id_/https://www.diana.nato.int/about-diana/2024-cohort-of-companies.html",,,,,,,
-70,dronetag,Case for and against,Against,"Revenue remains unquantified: registry sales total CZK 1.40m, while device and customer figures lack a period and revenue.",Analyst view,"[1] LOM PRAHA s.p. · 578 709 CZK · Kupní smlouva - detekční zařízení
-[2] Sold devices 50,000 +
-[3] Customers 25,000 +","[1] https://smlouvy.gov.cz/smlouva/35562893
+[2] https://web.archive.org/web/20250811133329id_/https://www.diana.nato.int/about-diana/2024-cohort-of-companies.html",yes,yes,yes,yes,no,n/a,
+58,dronetag,Business model,,"Hardware plus subscriptions: RIDER listed at CZK 24,990, Scout from €3,099, connectivity from €15/month after a free trial; company claims 50,000+ devices sold, undated.",Company claim,"[1] Dronetag RIDER 24,990 Kč
+[2] From €3,099 / $3,499
+[3] Plans start at €15 / $15 per month, and you get the first 2 months on us.
+[4] Sold devices 50,000 +","[1] https://shop.dronetag.com/
+[2] https://www.dronetag.com/products/scout
+[3] https://www.dronetag.com/products/mini-4g
+[4] https://www.dronetag.com/",yes,yes,yes,n/a,no,n/a,
+59,dronetag,Business model,,"The 2025 filing publishes no income statement, so revenue is unknown; it shows a CZK 4.16m net result and CZK 19.6m cash.",Verified,[1] Balance sheet at 2025-12-31 (CZK thousands): total assets 32 773; cash 19 605; equity 5 545; net result 4 163. No income statement filed (small entity).,[1] https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=93244930&subjektId=1053249&spis=1175754,yes,yes,yes,n/a,no,n/a,
+60,dronetag,Business model,,"Purchase contracts in the public register total CZK 1.40m across 7 contracts, including fire-rescue and Ministry of Defence buyers.",Verified,"[1] Hasičský záchranný sbor Pardubického kraje · 181 322 CZK · objednávka: nákup 1 ks zařízení pro dálkovou identifikaci dronů Dronetag Scout +4x90°
+[2] Česká republika - Ministerstvo obrany · 68 970 CZK · 22373/2022-VLCH Zažízení pro dálkovou identifikaci dronů, č. spec. 36896/22,  pro projekt AIROPS (DZRO AIROPS),  Účtování dle bodu usměrnění VaV č.1.
+[3] MV - generální ředitelství HZS ČR · 198 439 CZK · Nákup stacionárního přijímače dálkové identifikace Dronetag Scout s příslušenstvím","[1] https://smlouvy.gov.cz/smlouva/39254662
+[2] https://smlouvy.gov.cz/smlouva/21293531
+[3] https://smlouvy.gov.cz/smlouva/39280395",yes,yes,yes,n/a,no,n/a,
+61,dronetag,Business model,,"The won MoD tender of CZK 27.44m is a contract award, not yet shown as revenue; delivery and invoicing are unknown.",Analyst view,[1] Czechia – Electronic message and information services – Detekce komerčních UAS pomocí RID - služba — buyer: Ministerstvo obrany,[1] https://ted.europa.eu/en/notice/-/detail/436033-2026,yes,n/a,yes,yes,no,n/a,
+62,dronetag,Market,,No independent market size is supplied; the only figure is the company's claim of 10+ million active drones worldwide.,Analyst view,"[1] With 10+ millions active drones worldwide and exponential market growth, the skies are becoming increasingly complex.",[1] https://www.dronetag.com/,yes,n/a,yes,n/a,no,n/a,
+63,dronetag,Market,,"Company says Remote ID rules are rolling out and lists FAA, EASA, CAAS and CAA compliance as demand drivers.",Company claim,"[1] As Remote ID regulation rolls out gradually around the world, explore the countries where it’s already in effect to see where you can use our solution today.
+[2] Remote ID Compliant FAA (USA), EASA (EU), CAAS (SGP), CAA (UK)","[1] https://www.dronetag.com/products/scout
+[2] https://www.dronetag.com/products/mini-4g",yes,n/a,yes,n/a,no,n/a,
+64,dronetag,Market,,"Public buyers are market evidence: Ministry of Defence, fire rescue and a Plzeň city IT authority buy Dronetag equipment.",Analyst view,"[1] Česká republika - Ministerstvo obrany · 68 970 CZK · 22373/2022-VLCH Zažízení pro dálkovou identifikaci dronů, č. spec. 36896/22,  pro projekt AIROPS (DZRO AIROPS),  Účtování dle bodu usměrnění VaV č.1.
+[2] MV - generální ředitelství HZS ČR · 198 439 CZK · Nákup stacionárního přijímače dálkové identifikace Dronetag Scout s příslušenstvím
+[3] Správa informačních technologií města Plzně · 113 940 CZK · objednávka","[1] https://smlouvy.gov.cz/smlouva/21293531
+[2] https://smlouvy.gov.cz/smlouva/39280395
+[3] https://smlouvy.gov.cz/smlouva/38977950",yes,n/a,yes,n/a,no,n/a,
+65,dronetag,Competition,,"DroneTector (UK, DIANA 2026 candidate) detects small drones with high-resolution sensors; overlaps Dronetag's detection products, a possible conflict in counter-drone buying. Not a confirmed competitor.",Analyst view,"[1] DroneTector Limited: High-resolution sensors to detect and track small drones
+[2] Portable, battery-powered drone detection
+[3] Stationary, long-range drone detection","[1] https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html
 [2] https://www.dronetag.com/
-[3] https://www.dronetag.com/",,,,,,,
-71,dronetag,Case for and against,Against,"Could kill the deal: funding is a 2022 convertible loan with a later round planned, and demand is tied to drone-monitoring rules that could change.",Analyst view,"[1] Aktuální investice je strukturovaná jako konvertibilní půjčka
-[2] Czech startup conquers America and expands further. Makes drone tracking devices - Technologická Inkubace","[1] https://cc.cz/cesky-startup-dronetag-zajistuje-bezpecne-letani-s-drony-od-brnenskeho-fondu-ziskava-15-milionu/
-[2] https://technologickainkubace.org/en/news/czech-startup-conquers-america-and-expands-further-makes-drone-tracking-devices/",,,,,,,
-72,dronetag,Case for and against,Must be true,"Diligence must confirm the CZK 27.44m Ministry of Defence award is contracted, its delivery schedule, and whether it recurs beyond one order.",Analyst view,[1] Czechia – Electronic message and information services – Detekce komerčních UAS pomocí RID - služba — buyer: Ministerstvo obrany,[1] https://ted.europa.eu/en/notice/-/detail/436033-2026,,,,,,,
-73,dronetag,Case for and against,Must be true,"Diligence must establish actual annual revenue with its period, and the amount and currency of the 2022 convertible loan.",Analyst view,"[1] Aktuální investice je strukturovaná jako konvertibilní půjčka
-[2] Český startup Dronetag získal investici 15 milionů korun od brněnského fondu Y Soft Ventures spadajícího pod společnost Y Soft.
-[3] Sold devices 50,000 +","[1] https://cc.cz/cesky-startup-dronetag-zajistuje-bezpecne-letani-s-drony-od-brnenskeho-fondu-ziskava-15-milionu/
-[2] https://www.monitoruji.cz/domaci/1916288/ceske-krabicky-zajistuji-viditelnost-dronu-dronetag-nyni-ziskal-investici-od-y-softu
-[3] https://www.dronetag.com/",,,,,,,
+[3] https://www.dronetag.com/",yes,n/a,yes,yes,no,n/a,
+66,dronetag,Competition,,"AegisX (Sweden, DIANA 2026 candidate) tracks low-flying fibre-optic drones, a narrower niche; overlap with Dronetag's detection is partial.",Analyst view,"[1] AegisX: Detecting & tracking low flying fibre optic drones
+[2] Stationary, long-range drone detection","[1] https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html
+[2] https://www.dronetag.com/",yes,n/a,yes,yes,no,n/a,
+67,dronetag,Competition,,"Aerix Systems (France, DIANA 2026 candidate) makes interceptor drones for counter-UAS; adjacent rather than overlapping, as Dronetag's facts show detection only.",Analyst view,"[1] Aerix Systems: Versatile interceptor drone with omnidirectional propulsion for CUAS missions
+[2] Portable, battery-powered drone detection","[1] https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html
+[2] https://www.dronetag.com/",yes,n/a,yes,yes,no,n/a,
+68,dronetag,Case for and against,For,Defence traction: won MoD detection-service tender and NATO DIANA 2024 selection; 2025 accounts show a CZK 4.16m net result.,Analyst view,"[1] Czechia – Electronic message and information services – Detekce komerčních UAS pomocí RID - služba — buyer: Ministerstvo obrany
+[2] DRONETAG — Secure Information Sharing
+[3] Balance sheet at 2025-12-31 (CZK thousands): total assets 32 773; cash 19 605; equity 5 545; net result 4 163. No income statement filed (small entity).","[1] https://ted.europa.eu/en/notice/-/detail/436033-2026
+[2] https://web.archive.org/web/20250811133329id_/https://www.diana.nato.int/about-diana/2024-cohort-of-companies.html
+[3] https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=93244930&subjektId=1053249&spis=1175754",yes,yes,yes,yes,no,n/a,
+69,dronetag,Case for and against,For,"Product claim: detects all Remote ID drones, including DJI, Autel and Skydio, up to 25 km on sector antennas, per company site.",Analyst view,"[1] Detects all Remote ID-compliant drones, including DJI, Autel and Skydio, up to 25 km (15 mi) on sector antennas.",[1] https://www.dronetag.com/products/scout,yes,yes,yes,partly,no,minor,a company claim used as an argument for
+70,dronetag,Case for and against,Against,"Revenue unpublished for 2025; liabilities of CZK 25.9m exceed equity of CZK 5.5m, and grants paid are far below grants awarded.",Analyst view,"[1] Balance sheet at 2025-12-31 (CZK thousands): total assets 32 773; cash 19 605; equity 5 545; net result 4 163. No income statement filed (small entity).
+[2] IoT zařízení pro digitální identifikaci pilotovaného letectví v U-space · Technologická agentura ČR · 4 102 946 CZK","[1] https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=93244930&subjektId=1053249&spis=1175754
+[2] https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-CB620BAAB8F876B73CB37E46F22B3EA45A7011A6D4B0075BEC74064FA6A5BC56",yes,yes,yes,partly,no,minor,grants paid below awarded is normal for multi-year projects; a weak argument against
+71,dronetag,Case for and against,Against,"Could kill the deal: company-claimed demand depends on Remote ID rules, and DIANA-listed detection peers such as DroneTector compete for the same buyers.",Analyst view,"[1] As Remote ID regulation rolls out gradually around the world, explore the countries where it’s already in effect to see where you can use our solution today.
+[2] DroneTector Limited: High-resolution sensors to detect and track small drones","[1] https://www.dronetag.com/products/scout
+[2] https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html",yes,n/a,yes,partly,no,minor,"DroneTector is a candidate from a list, not a confirmed competitor"
+72,dronetag,Case for and against,Must be true,2025 revenue and net result must be confirmed from management accounts; MoD contract delivery and invoicing must be verified.,Analyst view,"[1] Balance sheet at 2025-12-31 (CZK thousands): total assets 32 773; cash 19 605; equity 5 545; net result 4 163. No income statement filed (small entity).
+[2] Czechia – Electronic message and information services – Detekce komerčních UAS pomocí RID - služba — buyer: Ministerstvo obrany","[1] https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=93244930&subjektId=1053249&spis=1175754
+[2] https://ted.europa.eu/en/notice/-/detail/436033-2026",yes,n/a,yes,yes,no,n/a,

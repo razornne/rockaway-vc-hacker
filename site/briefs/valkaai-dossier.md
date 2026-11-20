@@ -2,13 +2,13 @@
 
 valka\.ai · Valka\.AI s\.r\.o\. · IČO 23132221 · CZ · 2026\-11\-20
 
-**How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — combines independent evidence with the company's own statements; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
+**How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — part of it rests on an official or independent source, part on one outlet or the company's own words; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
 
 ## TL;DR
 
 - **Product.** A real\-time interactive AI\-video platform selling lifelike AI personas and live commentators to sports, esports and media/entertainment customers\. *(Partly verified)* ^[1](https://valka.ai/),[2](https://valka.ai/),[3](https://www.rockawaycapital.com/en/news/e12m-investment-in-valkaai-led-by-rockaway-ventures)
 - **Stage & traction.** Pre\-seed with large external rounds \(reported €12M closed; later reported expansion to €13M\) and media coverage; no named paying customers found in the facts\. *(Corroborated)* ^[4](https://www.rockawaycapital.com/en/news/e12m-investment-in-valkaai-led-by-rockaway-ventures),[5](https://lookai.vc/look-ai-ventures-joins-valkaai-13m-pre-seed-round/),[6](https://cc.cz/jeho-startup-rychle-roste-ted-zavetril-dalsi-prilezitost-vyviji-lidskeho-avatara-pro-hry-a-igaming/)
-- **Technology & moat.** Claimed proprietary 'language of motion' and control model for real\-time synthesis — technical description exists, but public patents not found\. *(Verified)* ^[7](https://www.rockawaycapital.com/en/news/e12m-investment-in-valkaai-led-by-rockaway-ventures),[8](https://patents.google.com/?assignee=valkaai)
+- **Technology & moat.** Claimed proprietary 'language of motion' and control model for real\-time synthesis — technical description exists, but public patents not found\. *(Partly verified)* ^[7](https://www.rockawaycapital.com/en/news/e12m-investment-in-valkaai-led-by-rockaway-ventures),[8](https://patents.google.com/?assignee=valkaai)
 - **Key risk.** Central technical claims \(real\-time synthesis, 'proprietary control model'\) are unverified externally and lack independent patent evidence\. *(Analyst view)* ^[7](https://www.rockawaycapital.com/en/news/e12m-investment-in-valkaai-led-by-rockaway-ventures),[8](https://patents.google.com/?assignee=valkaai)
 - **Diligence focus.** Verify live\-system demos under customer\-like latency and quality constraints, and obtain independent performance metrics and cost\-per\-minute estimates\. *(Analyst view)* ^[9](https://vestbee.com/insights/articles/valka-ai-raises-12-m),[10](https://vestbee.com/insights/articles/valka-ai-raises-12-m),[11](https://valka.ai/blog/valkaai-raises-12-million)
 
@@ -16,7 +16,7 @@ valka\.ai · Valka\.AI s\.r\.o\. · IČO 23132221 · CZ · 2026\-11\-20
 
 | Signal | Value | Sources |
 |---|---|---|
-| Funding \(press\) | 2026\-02\-24 · pre\-seed · €12 million · Rockaway Ventures, J&amp;T Ventures, Tensor Ventures, BD Partners, Fond Naše Česko, Petr Zámeč · 7 reports; 2026\-11\-12 · pre\-seed · €13 million · Look AI Ventures, ff Venture Capital, Rockaway Ventures, J&amp;T Ventures, Tensor Ventures, BD · 2 reports | 4, 12, 13, 14, 15, 16 |
+| Funding \(press\) | 2026\-02\-24 · pre\-seed · 12M EUR · Rockaway Ventures, J&amp;T Ventures, Tensor Ventures, BD Partners, Fond Naše Česko, Petr Zámeč · 7 reports; 2026\-11\-12 · pre\-seed · 13M EUR · Look AI Ventures, ff Venture Capital, Rockaway Ventures, J&amp;T Ventures, Tensor Ventures, BD · 2 reports | 4, 12, 13, 14, 15, 16 |
 | Public money | 1 grant project\(s\) awarded 20\.6M CZK | 17 |
 | Thesis fit \(Rockaway\) | sectors: AI\-led transformative tech \(34 facts\); deep tech \(8 facts\); industrial / manufacturing AI \(2 facts\) · geography: CZ \(core region\) · overlaps portfolio: CulturePulse \(VENTURES deal, not Defense fund\) \(digital, frames\) | 6, 18, 19, 2, 17 |
 | Hiring | 5 open roles: other 2, ml research 2, engineering 1 | 20, 21, 22, 23, 24 |

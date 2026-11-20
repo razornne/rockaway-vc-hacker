@@ -66,6 +66,22 @@ def write_sheet(store: Store, company_ids: list[str], path: Path) -> int:
     return len(rows)
 
 
+def summary(path: Path) -> dict | None:
+    """The headline counts of a labelled sheet (for the showcase), or None when nothing is labelled yet."""
+    if not path.exists():
+        return None
+    with path.open(encoding="utf-8-sig", newline="") as f:
+        done = [r for r in csv.DictReader(f) if any((r.get(q) or "").strip() for q, _, _ in QUESTIONS)]
+    if not done:
+        return None
+    c = {q: Counter((r.get(q) or "").strip().lower() for r in done) for q, _, _ in QUESTIONS}
+    answered = lambda q: sum(v for k, v in c[q].items() if k not in ("", "n/a"))  # noqa: E731
+    return {"n": len(done), "supported": c["supported"]["yes"], "partly": c["supported"]["partly"],
+            "unsupported": c["supported"]["no"], "numbers_right": c["numbers"]["yes"], "numbers": answered("numbers"),
+            "follows": c["follows"]["yes"], "judgements": answered("follows"), "from_absence": c["from_absence"]["yes"],
+            "material": c["severity"]["material"], "minor": c["severity"]["minor"]}
+
+
 def score(path: Path) -> str:
     with path.open(encoding="utf-8-sig", newline="") as f:
         rows = list(csv.DictReader(f))
@@ -73,6 +89,10 @@ def score(path: Path) -> str:
     out = [f"# Semantic accuracy: {path.name}", "", f"Labelled rows: {len(done)} of {len(rows)}.", ""]
     for q, text, options in QUESTIONS:
         c = Counter((r.get(q) or "").strip().lower() or "(blank)" for r in done)
+        if q == "severity":  # not a pass rate: how many problems, and how bad
+            out.append(f"- **{text}** {c.get('material', 0)} material, {c.get('minor', 0)} minor, out of {len(done)} "
+                       "statements")
+            continue
         answered = sum(v for k, v in c.items() if k not in ("(blank)", "n/a"))
         parts = ", ".join(f"{k} {v}" for k, v in c.most_common())
         good = c.get(options[0], 0)

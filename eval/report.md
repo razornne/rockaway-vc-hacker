@@ -53,49 +53,47 @@
 | campiri | 10/11 | 182 | 47 | 9/33 | ● | ● | · | · | ● | · | · | ● | ● | ● | ● | $0.0284 |
 | cruxo | 10/11 | 205 | 54 | 8/35 | ● | ● | ● | · | ● | · | · | ● | ● | ● | ● | $0.0313 |
 | culturepulse | 10/11 | 113 | 36 | 8/34 | ● | · | · | · | ● | · | ● | ● | ● | · | ● | $0.0253 |
-| dronetag | 11/11 | 263 | 70 | 7/36 | ● | · | ● | ● | ● | ● | · | ● | ● | · | ● | $0.0265 |
-| duvo | 10/11 | 239 | 60 | 9/33 | ● | · | · | · | ● | ● | ● | ● | ● | ● | ● | $0.0275 |
+| dronetag | 11/11 | 264 | 72 | 5/35 | ● | · | ● | ● | ● | ● | · | ● | ● | · | ● | $0.0363 |
+| duvo | 10/11 | 239 | 60 | 8/33 | ● | · | · | · | ● | ● | ● | ● | ● | ● | ● | $0.0275 |
 | filuta | 10/11 | 211 | 58 | 6/33 | ● | · | ● | · | ● | · | ● | ● | ● | ● | ● | $0.0304 |
-| fly4future | 11/11 | 221 | 64 | 9/37 | ● | · | ● | · | ● | ● | · | ● | ● | · | ● | $0.0296 |
+| fly4future | 11/11 | 222 | 69 | 4/37 | ● | · | ● | · | ● | ● | · | ● | ● | · | ● | $0.0330 |
 | navigara | 10/11 | 193 | 59 | 3/31 | ● | · | · | · | ● | ● | ● | ● | ● | ● | ● | $0.0289 |
 | topk | 11/11 | 187 | 56 | 6/35 | ● | · | · | · | ● | · | ● | ● | ● | ● | ● | $0.0257 |
-| trlspace | no dossier: cannot render dossier: no latest dossier analysis exists |
 | upheal | 10/11 | 195 | 50 | 3/33 | ● | · | · | · | ● | · | · | ● | ● | ● | ● | $0.0266 |
-| valkaai | 10/11 | 220 | 48 | 8/35 | ● | · | ● | · | ● | ● | ● | ● | · | ● | ● | $0.0276 |
-| valpas | 10/11 | 169 | 45 | 7/33 | ● | · | · | · | ● | · | ● | ● | ● | ● | ● | $0.0267 |
+| valkaai | 10/11 | 220 | 48 | 7/35 | ● | · | ● | · | ● | ● | ● | ● | · | ● | ● | $0.0276 |
+| valpas | 10/11 | 169 | 45 | 6/33 | ● | · | · | · | ● | · | ● | ● | ● | ● | ● | $0.0267 |
 | vermeer | 10/11 | 107 | 38 | 3/33 | ● | · | · | · | ● | · | ● | ● | · | ● | ● | $0.0275 |
-| vrgineers | no dossier: cannot render dossier: no latest dossier analysis exists |
-| wultra | 10/11 | 279 | 51 | 6/34 | ● | ● | ● | · | ● | ● | · | ● | ● | ● | ● | $0.0287 |
+| wultra | 10/11 | 279 | 51 | 5/34 | ● | ● | ● | · | ● | ● | · | ● | ● | ● | ● | $0.0287 |
 
 ## 4. Evidence strength over all findings
 
 | Label | Findings | Share |
 |---|---|---|
-| Verified | 59 | 11% |
-| Corroborated | 43 | 8% |
-| Single source | 8 | 1% |
-| Partly verified | 44 | 8% |
-| Company claim | 36 | 7% |
-| Analyst view | 351 | 65% |
+| Verified | 43 | 8% |
+| Corroborated | 48 | 9% |
+| Single source | 9 | 2% |
+| Partly verified | 53 | 10% |
+| Company claim | 37 | 7% |
+| Analyst view | 350 | 65% |
 
 ### By section (views are expected in risks, rebuild verdict and questions)
 
 | Section | Verified | Corroborated | Single source | Partly verified | Company claim | Analyst view |
 |---|---|---|---|---|---|---|
-| summary (TL;DR) | 14 | 12 | 0 | 16 | 6 | 32 |
+| summary (TL;DR) | 4 | 15 | 0 | 23 | 6 | 32 |
 | thesis_fit | 0 | 0 | 0 | 0 | 0 | 25 |
-| business_model | 8 | 5 | 0 | 6 | 10 | 19 |
-| market | 2 | 9 | 7 | 3 | 4 | 13 |
+| business_model | 6 | 5 | 0 | 8 | 11 | 18 |
+| market | 0 | 10 | 8 | 1 | 5 | 14 |
 | competition | 0 | 0 | 0 | 0 | 0 | 9 |
-| investment_case | 0 | 0 | 0 | 0 | 0 | 96 |
-| ownership | 20 | 13 | 1 | 4 | 2 | 0 |
-| tech_profile | 15 | 4 | 0 | 15 | 14 | 0 |
+| investment_case | 0 | 0 | 0 | 0 | 0 | 95 |
+| ownership | 19 | 14 | 1 | 4 | 2 | 0 |
+| tech_profile | 14 | 4 | 0 | 17 | 13 | 0 |
 | rebuild_check | 0 | 0 | 0 | 0 | 0 | 47 |
 | risk_flags | 0 | 0 | 0 | 0 | 0 | 48 |
 | questions | 0 | 0 | 0 | 0 | 0 | 62 |
 
-Factual statements (everything except analyst views): 190. Verified or corroborated: 54%; partly verified: 23%; single outlet: 4%; company claim only: 19%.
+Factual statements (everything except analyst views): 190. Verified or corroborated: 48%; partly verified: 28%; single outlet: 5%; company claim only: 19%.
 
 ## 5. Cost
 
-LLM total for current dossiers: $0.4412; ledger incl. all earlier runs: $1.7720.
+LLM total for current dossiers: $0.4544; ledger incl. all earlier runs: $1.9148.

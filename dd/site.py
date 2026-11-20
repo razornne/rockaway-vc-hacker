@@ -25,6 +25,16 @@ GROUPS = {  # tier in eval/companies.json -> group on the site
 }
 GROUP_ORDER = list(dict.fromkeys(GROUPS.values()))
 FEATURED = ("fly4future", "dronetag")
+REPO = "https://github.com/razornne/rockaway-vc-hacker"
+LABELS = ROOT / "eval" / "labels" / "showcase-2026-11-20.csv"  # semantic accuracy sheet (dd label-sheet / label-score)
+# eval/baseline/README.md: facts settled by official records, tool vs gpt-5-mini with web search (judged by hand)
+BASELINE = {"n": 14, "tool": 14, "plain": 2, "partly": 3, "wrong": 2, "missed": 7}
+# a fresh company end to end (dd add spaceti; collect, extract, verify, analyze, dossier), 20 November 2026
+TIMING = {"value": "7 min · $0.03",
+          "text": "A new company from nothing to a brief (Spaceti: collection 2.7 min, extraction 2 min, analysis 1.6 min "
+                  "with gpt-5-mini). The plain model with web search takes 30 s and $0.02 but misses what only official "
+                  "records hold. A manual first look by an analyst was not timed: that needs a person."}
+N_ERRORS = 30  # docs/AUDIT.md, numbered
 CARD_TILES = ("Raising now (per press)", "Last closed round", "Latest reported round", "Funding rounds",
               "Sales to public buyers", "Grants & subsidies awarded (not revenue)", "Defence evidence (official sources)")
 
@@ -116,10 +126,10 @@ def _index(m: dict, cards: str, table_rows: dict[str, list[str]], n_collectors: 
     gold_ok = sum(ok for _, _, ok, _ in m["golden"])
     checked = sum(r[1] for r in m["integrity"])
     missing = sum(r[2] for r in m["integrity"])
-    fo = m["facts_only"]
-    fo_n = sum(fo.values())
     costs = [r["cost"] for _, r, _ in m["rows"] if r]
     n_briefs = len(costs)
+    from dd.labels import summary
+    lab = summary(LABELS)
 
     def measure(value, text):
         return f'<div class="row"><div class="txt">{text}</div><div class="val">{value}</div></div>'
@@ -134,7 +144,8 @@ def _index(m: dict, cards: str, table_rows: dict[str, list[str]], n_collectors: 
            if AUTHOR_URL.startswith("https://") else "Mykyta Bulatnikov") + "</dd></div>"
         "<div><dt>For</dt><dd>VC Hacker application, Rockaway Ventures</dd></div>"
         "<div><dt>Data collected</dt><dd>November 2026</dd></div>"
-        "<div><dt>Source code</dt><dd>available on request</dd></div></dl>",
+        '<div><dt>Source code</dt><dd><a href="https://github.com/razornne/rockaway-vc-hacker" '
+        'rel="noopener noreferrer" target="_blank">github.com/razornne/rockaway-vc-hacker</a></dd></div></dl>',
         '<div class="nav"><a href="#briefs">The two showcase briefs</a><a href="#why">Why this tool</a>'
         '<a href="#trust">How far to trust it</a><a href="#all">All briefs</a><a href="method.html">Method and '
         "evaluation</a></div></header>",
@@ -162,24 +173,30 @@ def _index(m: dict, cards: str, table_rows: dict[str, list[str]], n_collectors: 
         "table: checking it quickly, with every claim traceable to its source.</p></div>",
 
         '<h2 id="trust">How far to trust it</h2>',
-        '<p class="h2note">These are guards against specific failures, not an accuracy score. Computed by '
-        '<code>dd eval</code> over all briefs on this site; details on the <a href="method.html">method page</a>.</p>',
+        '<p class="h2note">Is each statement right, and does the tool beat simply asking a model with web search? '
+        'Measured on the two showcase briefs; details on the <a href="method.html">method page</a>.</p>',
         '<div class="measure">',
-        measure(f"{gold_ok}/{len(m['golden'])}", "Hand-checked register, grant and infrastructure facts reproduced. A "
-                "small regression set: official records are parsed correctly, which says nothing yet about every brief."),
-        measure(f"{checked - missing}/{checked}", "Quotes behind model-extracted facts found in the saved source. This "
-                "rules out invented quotes; a real quote can still be misread."),
-        measure(_pct(fo["verified"] + fo["corroborated"], fo_n), f"Of {fo_n} factual statements rest on an official "
-                f"record or two independent outlets; {_pct(fo['claim'], fo_n)} only on the company's word. This describes "
-                "the evidence, not whether conclusions are right."),
-        measure(f"${min(costs):.2f}–{max(costs):.2f}", "Model cost per brief. Extraction with OpenAI gpt-5-nano; analysis with Claude Haiku 5.5 for the two showcase "
-                "briefs and OpenAI gpt-5-mini for the others."),
+        *([measure(_pct(lab["supported"], lab["n"]), f"Statements fully supported by the quotes they cite, of {lab['n']} in "
+                   f"the two showcase briefs; {lab['partly']} partly, {lab['unsupported']} not at all. Labelled one by one by an AI reviewer "
+                   "(Claude Opus 5.5) against the cited sources, not by a person: a human pass is still to do."),
+           measure(f"{lab['numbers_right']}/{lab['numbers']}", "Statements with amounts, dates or counts that have them "
+                   "right. Both misses read a price ceiling (“up to CZK 1.5M” per drone) as the price."),
+           measure(f"{lab['material']} / {lab['minor']}", f"Problems that would mislead an investor / minor ones, out "
+                   f"of {lab['n']} statements. The minor ones are mostly judgements that go a step beyond their "
+                   "evidence.")] if lab else []),
+        measure(f"{BASELINE['tool']}/{BASELINE['n']} vs {BASELINE['plain']}/{BASELINE['n']}",
+                "Facts settled by official records (filed revenue and profit, grants awarded and paid, a defence "
+                "tender, the round) stated right by the tool vs by a plain model with web search on the same two "
+                f"companies. The plain model missed {BASELINE['missed']} and got {BASELINE['wrong']} wrong "
+                f'(<a href="{REPO}/blob/main/eval/baseline/README.md">comparison</a>).'),
+        measure(TIMING["value"], TIMING["text"]),
         "</div>",
-        '<div class="prose"><p style="margin-top:1.2rem">The real quality process is reading the output by hand. That '
-        'has found 26 systematic errors so far, each fixed in code and covered by a test (<a href="method.html#errors">'
-        "the list</a>). Not measured yet: the share of statements that are actually correct (a hand-labelled sample is "
-        "in progress), the time saved against a manual first look, and a comparison with a plain model plus web search "
-        "on the same companies.</p></div>",
+        '<div class="prose"><p style="margin-top:1.2rem">Reading the output by hand remains the main quality process. '
+        f'It has found {N_ERRORS} systematic errors so far, each fixed in code and covered by a test (<a '
+        'href="method.html#errors">the list</a>). Guards that run on every build (hand-checked register facts '
+        f"{gold_ok}/{len(m['golden'])}, quotes found in their sources {checked - missing}/{checked}) only rule out "
+        "specific failures; they are on the method page. Model cost per brief: "
+        f"${min(costs):.2f}–{max(costs):.2f}.</p></div>",
 
         f'<h2 id="all">All {n_briefs} briefs</h2>',
     ]
@@ -207,8 +224,10 @@ def _index(m: dict, cards: str, table_rows: dict[str, list[str]], n_collectors: 
 
         '<h2 id="limits">What it cannot see</h2>',
         '<ul class="plain">'
-        "<li><b>Financial statements.</b> Revenue and profit from filed accounts are not read yet; sales to public "
-        "buyers are the only revenue figure, and only for the public sector.</li>"
+        "<li><b>Financial statements.</b> Filed annual accounts are read from the Czech collection of documents when "
+        "the filing has a text layer, and used only if the balance sheet balances. Scanned filings are shown as not "
+        "read (no OCR yet); small companies often file a balance sheet only, so revenue is “not published”. So far "
+        "only the two showcase briefs were re-run with accounts.</li>"
         "<li><b>Paid databases and LinkedIn.</b> Not used by design; team size and cap table come only from the "
         "register and public pages.</li>"
         "<li><b>Registers outside Czechia.</b> Flagged (for example a Delaware or Dutch holding), not read.</li>"
@@ -217,10 +236,59 @@ def _index(m: dict, cards: str, table_rows: dict[str, list[str]], n_collectors: 
         "company and press name; the model may reject all of them.</li>"
         "<li><b>Judgements</b> are model-written views over the collected facts. They are marked as such and meant as "
         "starting points for the memo, not conclusions.</li></ul>",
-        '<p class="foot">Private preview, not indexed by search engines. Source code is available on request. Data as '
+        '<p class="foot">Not indexed by search engines. Source code: <a href="https://github.com/razornne/'
+        'rockaway-vc-hacker">github.com/razornne/rockaway-vc-hacker</a>. Data as '
         "collected in November 2026.</p>",
     ]
     return _shell("Due diligence briefs from public data", "".join(body))
+
+
+def _accuracy_sections() -> list[str]:
+    """Semantic accuracy, the baseline and timing: the measures that say whether the briefs are right and useful."""
+    from dd.labels import summary
+    lab = summary(LABELS)
+    out = ['<h2 id="accuracy">Is each statement right?</h2>']
+    if lab:
+        out.append(
+            f'<p>Every one of the {lab["n"]} statements in the two showcase briefs was put in a sheet with the quotes and '
+            "links it cites (<code>dd label-sheet</code>) and judged against those sources on six questions "
+            f'(<a href="{REPO}/blob/main/eval/labels/showcase-2026-11-20.csv">the labelled sheet</a>). The reviewer was '
+            "an AI model, Claude Opus 5.5, not the model that wrote the briefs and not a person; a human pass is still "
+            "to do, and the sheet is built for it.</p>"
+            '<table class="t"><tr><th>Question</th><th class="num">Result</th></tr>'
+            f'<tr><td>The cited quotes support the statement</td><td class="num">{lab["supported"]} yes, {lab["partly"]} '
+            f'partly, {lab["unsupported"]} no</td></tr>'
+            f'<tr><td>Amounts, currencies, dates and counts are right</td><td class="num">{lab["numbers_right"]} of '
+            f'{lab["numbers"]}</td></tr>'
+            f'<tr><td>A judgement follows from its evidence</td><td class="num">{lab["follows"]} of {lab["judgements"]}'
+            f' (the rest partly)</td></tr>'
+            f'<tr><td>Concludes something from missing data</td><td class="num">{lab["from_absence"]} of {lab["n"]}'
+            "</td></tr>"
+            f'<tr><td>Would mislead an investor</td><td class="num">{lab["material"]} material, {lab["minor"]} minor'
+            "</td></tr></table>"
+            '<p class="h2note">The two wrong numbers read a price ceiling (“up to CZK 1.5M” per drone) as the price; the two conclusions from missing data say Dronetag has “no product surfaces” although its apps and API docs were collected. Most minor '
+            "problems are in the case for and against and the thesis fit: judgements that go a step beyond what the "
+            "cited facts show.</p>")
+    out += [
+        '<h2 id="baseline">Against a plain model with web search</h2>',
+        f'<p>The same task given to <code>gpt-5-mini</code> with web search, one call per company, asked for a source '
+        "for every statement (<code>eval/baseline.py</code>). Compared on the facts that official records settle "
+        f'(<a href="{REPO}/blob/main/eval/baseline/README.md">fact by fact</a>):</p>'
+        '<table class="t"><tr><th></th><th class="num">Tool</th><th class="num">Plain model + web search</th></tr>'
+        f'<tr><td>Stated right, of {BASELINE["n"]}</td><td class="num">{BASELINE["tool"]}</td><td class="num">'
+        f'{BASELINE["plain"]} (+{BASELINE["partly"]} partly)</td></tr>'
+        f'<tr><td>Wrong or misleading</td><td class="num">0</td><td class="num">{BASELINE["wrong"]}</td></tr>'
+        f'<tr><td>Missed</td><td class="num">0</td><td class="num">{BASELINE["missed"]}</td></tr>'
+        '<tr><td>Time and model cost per company</td><td class="num">about 7 min, $0.03</td><td class="num">'
+        "30 s, $0.02</td></tr></table>"
+        '<p class="h2note">The plain model took Fly4Future’s revenue from a 2024 slide (≈ CZK 24M; the filed figure is '
+        "CZK 45.1M), found no filed accounts for either company, missed Dronetag’s Ministry of Defence tender and cited "
+        "a rejected grant application as a grant. It is fast and writes sensible founder questions. Two companies, one "
+        "run each; a stronger model with more searches would do better.</p>",
+        '<h2 id="time">Time</h2>',
+        f'<p>{h(TIMING["text"])}</p>',
+    ]
+    return out
 
 
 def _method(m: dict) -> str:
@@ -240,8 +308,8 @@ def _method(m: dict) -> str:
     body = [
         '<nav class="crumb"><a href="index.html">← Overview</a></nav>',
         '<header><h1>How the briefs are built and checked</h1>',
-        '<p class="oneliner">All numbers on this page are produced by <code>dd eval</code> from the same database as the '
-        "briefs. No language model is involved in the evaluation.</p></header>",
+        '<p class="oneliner">First whether the statements are right and whether the tool beats a plain model with web '
+        "search; then the guards that <code>dd eval</code> runs on every build without a model.</p></header>",
 
         "<h2>Sources</h2>",
         t(["Source", "What is read"], [(h(name), h(what)) for _, name, what in render.METHOD]),
@@ -250,7 +318,11 @@ def _method(m: dict) -> str:
         '<p class="h2note">Every finding in a brief carries one of these labels.</p>',
         t(["Label", "Meaning"], [(h(lab), h(expl)) for lab, expl in render.STRENGTH.values()]),
 
+        *_accuracy_sections(),
+
         f"<h2>1. Hand-checked facts: {gold_ok}/{len(gold)} reproduced</h2>",
+        '<p class="h2note">Sections 1–4 are guards that run on every build. They rule out specific failures; they do '
+        "not say that a statement is right. That is measured above.</p>",
         '<p class="h2note">Registry, grant and infrastructure facts verified by hand against primary sources '
         "(full extract from or.justice.cz, ARES, Hlídač státu) and stored in <code>eval/golden.json</code>.</p>",
         t(["Company", "Check", "Result"], [(h(c), h(name), "✅" if ok else "❌ " + h(note)) for c, name, ok, note in gold]),
@@ -293,7 +365,13 @@ def _method(m: dict) -> str:
         "one, the payments in another — which overstated Fly4Future's grants by about 77M CZK. Grants are now one row "
         "per project, with the amount awarded and the amount actually paid shown apart, and only payments are placed "
         "on a timeline. The rebuild check no longer estimates how long a clone would take: it names what is "
-        "replicable, what edge public evidence supports, and what cannot be judged from outside.</p>",
+        "replicable, what edge public evidence supports, and what cannot be judged from outside.</p>"
+        "<p>Building the accuracy check, the baseline and filed-accounts reading found four more, all fixed: a "
+        "statement citing an official record and one press article was labelled <i>Verified</i> (a label now needs "
+        "every cited source to be official or technical); amounts were shown in the source’s words (“15 milionů”) or "
+        "without a currency (one format now: “15M CZK”, the original wording kept beside it); “28,000,000 CZK” was read "
+        "as 28 and shown as “0k CZK” (grouped thousands now parsed); and Czech news pages served in windows-1250 were "
+        "decoded as UTF-8, garbling investor names (the declared charset is now used).</p>",
         '<p class="foot"><a href="index.html">← Overview</a></p>',
     ]
     return _shell("Method and evaluation", "".join(body))

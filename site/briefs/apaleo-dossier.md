@@ -2,7 +2,7 @@
 
 apaleo\.com · DE · 2026\-11\-20
 
-**How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — combines independent evidence with the company's own statements; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
+**How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — part of it rests on an official or independent source, part on one outlet or the company's own words; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
 
 ## TL;DR
 
@@ -16,7 +16,7 @@ apaleo\.com · DE · 2026\-11\-20
 
 | Signal | Value | Sources |
 |---|---|---|
-| Funding \(press\) | 2023\-04\-26 · Series A · EUR 9 million · Rockaway Ventures, Serpentine Ventures; 2024\-11\-20 · growth equity · €20m \(€21\.1m\) · PSG, Redalpine, FOMCAP IV, Rockaway Ventures · 4 reports | 4, 14, 5, 15, 16 |
+| Funding \(press\) | 2023\-04\-26 · Series A · 9M EUR · Rockaway Ventures, Serpentine Ventures; 2024\-11\-20 · growth equity · 20M EUR · PSG, Redalpine, FOMCAP IV, Rockaway Ventures · 4 reports | 4, 14, 5, 15, 16 |
 | Thesis fit \(Rockaway\) | sectors: AI\-led transformative tech \(6 facts\); deep tech \(5 facts\) · geography: DE \(core region\) · overlaps portfolio: JISR Institute, a\.s\. \(distrib, third\-p\) | 17, 18, 19 |
 | Hiring | 11 open roles: sales gtm 4, other 3, engineering 3, forward deployed 1; Munich, Munich / Remote, Munich/ Berlin, Munich/ Berlin/ Germany remote, Paris, France | 20, 21, 22, 23, 24, 25 |
 | AI dependency | relies on \(subprocessor / own claims\): Anthropic, OpenAI; own\-model evidence: 1 papers, 0 verified HF models, 1 ML roles, 0 own\-model claims | 10, 11, 26, 27 |

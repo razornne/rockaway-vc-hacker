@@ -65,3 +65,28 @@ def test_reported_later_stage_beats_closed_earlier_stage():
               {"date": "2025-06-24", "round": "pre-seed", "amount": "nearly $56 million", "status": "closed", "fact_ids": [3]}]
     assert thesis.last_round(rounds)["amount"] == "4.2 million USD"
     assert thesis.stage_ticket(rounds)["relation"] == "above_ticket"
+
+
+def test_amounts_are_written_one_way():
+    assert thesis.format_money("15 milionů korun") == "15M CZK"
+    assert thesis.format_money("10 až 16 milionů eur") == "10–16M EUR"
+    assert thesis.format_money("$5.5M (nearly €4.66M)") == "5.5M USD"   # the currency next to the number
+    assert thesis.format_money("15 milionů") is None                    # no currency: show the source's words
+    assert thesis.format_money("100 milionů korun + 4-5 milionů eur") is None  # several amounts are not one
+
+
+def test_round_cluster_keeps_the_report_with_a_currency():
+    from dd.signals import _cluster_rounds
+    out = _cluster_rounds([
+        {"date": "2022-06-27", "round": "convertible loan", "amount": "15 milionů", "investors": ["Y Soft Ventures"], "fact_ids": [1]},
+        {"date": "2022-06-28", "round": None, "amount": "15 milionů korun", "investors": ["Y Soft Ventures"], "fact_ids": [2]}])
+    assert len(out) == 1 and out[0]["amount"] == "15 milionů korun"
+
+
+def test_grouped_thousands_are_not_decimals():
+    from dd.thesis import format_money
+    assert format_money("28,000,000 CZK") == "28M CZK"        # was read as 28 and shown as "0k CZK"
+    assert format_money("28.000.000 Kč") == "28M CZK"
+    assert format_money("€28,000") == "28k EUR"
+    assert format_money("1,5 milionu eur") == "1.5M EUR"      # Czech decimal comma
+    assert format_money("2,5 mld. Kč") == "2.5B CZK"

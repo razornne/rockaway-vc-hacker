@@ -2,7 +2,7 @@
 
 navigara\.com · CZ/US · 2026\-11\-20
 
-**How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — combines independent evidence with the company's own statements; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
+**How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — part of it rests on an official or independent source, part on one outlet or the company's own words; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
 
 ## TL;DR
 
@@ -16,7 +16,7 @@ navigara\.com · CZ/US · 2026\-11\-20
 
 | Signal | Value | Sources |
 |---|---|---|
-| Funding \(press\) | 2026\-02\-19 · seed · $2\.5 million · Inovo\.vc, Rockaway Ventures, QQ Capital · 6 reports | 5, 7, 18, 19, 6, 20 |
+| Funding \(press\) | 2026\-02\-19 · seed · 2\.5M USD · Inovo\.vc, Rockaway Ventures, QQ Capital · 6 reports | 5, 7, 18, 19, 6, 20 |
 | Thesis fit \(Rockaway\) | sectors: AI\-led transformative tech \(28 facts\); deep tech \(4 facts\) · geography: CZ/US \(core region\) | 21, 22, 23, 24 |
 | Hiring | 4 open roles: engineering 2, sales gtm 1, forward deployed 1; founding roles: Founding Account Executive; Brno, CZ, San Francisco, US | 25, 26, 27, 28 |
 | AI dependency | no LLM vendor named as subprocessor or in own tech claims; integrates with customers' OpenAI, Anthropic \(not a dependency\); own\-model evidence: 0 papers, 0 verified HF models, 0 ML roles, 1 own\-model claims | 15, 29, 3 |

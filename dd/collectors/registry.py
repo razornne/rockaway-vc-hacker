@@ -354,6 +354,60 @@ class RegistryCollector(Collector):
                               value={"doc_type": d["doc_type"], "period": d["period"], "reference": d["reference"],
                                      "filed": d["filed"], "created": d["created"], "received": d["received"],
                                      "url": d["url"]}))
+        try:
+            self._accounts(company, docs, url, ctx, facts)
+        except Exception as e:  # never raise
+            facts.append(self.unavailable(company, "annual_accounts", url, f"crash: {e}"))
+
+    def _accounts(self, company, docs, list_url, ctx, facts) -> None:
+        """The latest filed annual accounts, read by code (dd/accounts.py). The download link on a document page is
+        valid only in the same session, so the page is fetched fresh and the files are kept by document number."""
+        from dd.accounts import parse_accounts, pdf_text
+        stmts = [d for d in docs if str(d.get("doc_type") or "").startswith("účetní závěrka") and d.get("period")
+                 and d.get("url")]
+        if not stmts:
+            facts.append(self.unavailable(company, "annual_accounts", list_url, "no annual accounts in the Collection "
+                                                                               "of Deeds"))
+            return
+        latest = max(str(d["period"]) for d in stmts)
+        cache = ctx.settings.home / "filings"
+        cache.mkdir(parents=True, exist_ok=True)
+        pages, used = [], []
+        for d in [d for d in stmts if str(d["period"]) == latest]:
+            m = re.search(r"dokument=(\d+)", d["url"])
+            if not m:
+                continue
+            files = sorted(cache.glob(f"{m.group(1)}_*.bin"))
+            if not files:
+                page = ctx.http.request("GET", d["url"], use_cache=False, company_id=company.id, kind="or_sl_detail")
+                ids = list(dict.fromkeys(re.findall(r"content/download\?id=([a-f0-9]+)", page.text)))
+                for i, did in enumerate(ids):
+                    f = ctx.http.request("GET", f"https://or.justice.cz/ias/content/download?id={did}", use_cache=False)
+                    if f.ok and f.content:
+                        path = cache / f"{m.group(1)}_{i}.bin"
+                        path.write_bytes(f.content)
+                        files.append(path)
+            doc_pages = [t for path in files for t in pdf_text(path.read_bytes())]
+            pages += doc_pages
+            # the document with the balance sheet goes first: it is the source the brief links to
+            used.insert(0, d["url"]) if any("AKTIVA CELKEM" in t for t in doc_pages) else used.append(d["url"])
+        res = parse_accounts(pages)
+        if not res.get("readable"):
+            facts.append(self.unavailable(company, "annual_accounts", used[0] if used else list_url,
+                                          f"accounts for {latest}: {res.get('reason')}"))
+            return
+        k = lambda v: "n/a" if v is None else f"{v / 1000:,.0f}".replace(",", " ")  # noqa: E731 (CZK thousands)
+        b, p = res["balance"], res.get("pnl") or {}
+        snippet = (f"Balance sheet at {res.get('period_end')} (CZK thousands): total assets {k(b.get('total_assets', {}).get('current'))}; "
+                   f"cash {k(b.get('cash', {}).get('current'))}; equity {k(b.get('equity', {}).get('current'))}; "
+                   f"net result {k(b.get('net_result', {}).get('current'))}. "
+                   + (f"Income statement: revenue {k(res.get('revenue'))}; operating result "
+                      f"{k(p.get('operating_result', {}).get('current'))}." if res.get("pnl_published")
+                      else "No income statement filed (small entity)."))
+        facts.append(Fact(company_id=company.id, type="financial_statement", key=f"accounts-{latest}",
+                          value={**res, "period": latest, "documents": used}, source_url=used[0],
+                          event_date=res.get("period_end"), date_precision="day", snippet=snippet,
+                          extractor=self.name, confidence="high"))
 
     # --- ISIR ---------------------------------------------------------------
     def _isir(self, company, ico, ctx, facts) -> None:

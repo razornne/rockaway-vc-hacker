@@ -85,6 +85,11 @@ def _round_key(label: str) -> str:
     return re.sub(r"[^a-z0-9]", "", str(label).lower().replace("series", "")) or "?"
 
 
+def _parse_money(text):
+    from dd.thesis import parse_money
+    return parse_money(text)
+
+
 def _cluster_rounds(rounds: list[dict]) -> list[dict]:
     """Several articles report the same round; merge reports within 60 days that share investors or amount."""
     clusters: list[dict] = []
@@ -109,8 +114,9 @@ def _cluster_rounds(rounds: list[dict]) -> list[dict]:
         target["fact_ids"] = list(dict.fromkeys(target["fact_ids"] + r["fact_ids"]))
         if (not target.get("round") or str(target["round"]).lower() == "unknown") and r.get("round"):
             target["round"] = r["round"]
-        if not target.get("amount") and r.get("amount"):
-            target["amount"] = r["amount"]
+        if r.get("amount") and (not target.get("amount") or (_parse_money(target["amount"]) is None
+                                                             and _parse_money(r["amount"]) is not None)):
+            target["amount"] = r["amount"]  # prefer the report that states the currency ("15 milionů korun")
         for inv in r["investors"]:
             k = _inv_key(inv)
             if k and not any(k in x or x in k for x in target["_keys"]):
@@ -206,7 +212,30 @@ def funding(facts: list[Fact]) -> dict[str, Any]:
             seen_eu.add(f.key)
         grants.append(f)
     total = lambda fs: sum(float(f.value.get("amount_czk") or 0) for f in fs if isinstance(f.value, dict))
+    acc = sorted((f for f in facts if f.type == "financial_statement" and isinstance(f.value, dict)
+                  and f.value.get("readable")), key=lambda f: str(f.value.get("period")))
+    a = acc[-1] if acc else None
+    financials = None
+    if a:
+        v = a.value
+        cur = lambda block, key: ((v.get(block) or {}).get(key) or {}).get("current")  # noqa: E731
+        prev = lambda block, key: ((v.get(block) or {}).get(key) or {}).get("prior")  # noqa: E731
+        financials = {
+            "period": v.get("period"), "period_end": v.get("period_end"), "currency": "CZK",
+            "income_statement_published": v.get("pnl_published"),
+            "revenue": v.get("revenue"),
+            "revenue_prior": (sum(x or 0 for x in (prev("pnl", "revenue_products_services"), prev("pnl", "revenue_goods")))
+                              if v.get("pnl_published") else None),
+            "other_operating_income": cur("pnl", "other_operating_income"),
+            "personnel_costs": cur("pnl", "personnel_costs"), "operating_result": cur("pnl", "operating_result"),
+            "net_result": cur("balance", "net_result"), "net_result_prior": prev("balance", "net_result"),
+            "cash": cur("balance", "cash"), "cash_prior": prev("balance", "cash"),
+            "equity": cur("balance", "equity"), "total_assets": cur("balance", "total_assets"),
+            "liabilities": cur("balance", "liabilities"), "receivables": cur("balance", "receivables"),
+            "checks": v.get("checks"), "fact_ids": _ids([a]),
+        }
     return {
+        "financials": financials,
         "rounds": rounds,
         "registry_investors": [{"name": f.value.get("name"), "from": f.value.get("from"), "to": f.value.get("to"),
                                 "share_pct": f.value.get("share_pct"), "fact_ids": _ids([f])} for f in investor_holders],

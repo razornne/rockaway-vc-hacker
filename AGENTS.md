@@ -16,16 +16,15 @@ Fund focus, as stated by Rockaway (checked 19 November 2026): the VC Hacker post
 
 Private working notes (session logs, earlier handoffs, application context, the original non-English drafts) live in `local-notes/` on Mykyta's machine. That folder is excluded from git; read it if it exists, never commit it.
 
-## Current state (19 November 2026)
+## Current state (20 November 2026)
 
-- Branch `main`. 16 briefs: two defence showcases (Fly4Future, Dronetag) and 14 portfolio / control companies.
+- Branch `main`. 16 briefs on the site: two defence showcases (Fly4Future, Dronetag) and 14 portfolio / control companies. The site and `dd eval` include only companies in `eval/companies.json`; a company added with `dd add` for a one-off run (Spaceti, the timing run) stays out.
 - The showcase is live at https://dd-briefs.vercel.app (Vercel project `dd-briefs`, root directory `site/`, no build step). A push to `main` redeploys it; pushes to other branches create preview deployments behind Vercel login.
-- `uv run dd eval`: golden facts 18/18; all quotes of extracted facts found in sources. These are guards, not accuracy.
-- 20 November: fixes after an outside review (see `docs/AUDIT.md` §7): round size vs ticket computed in code; grants merged per project with awarded and paid apart; rebuild check without time estimates. All 16 briefs re-analysed (prompts `analyze-v5`, `invest-v4`); LLM spend $1.45 of $2.50.
-- Analysis model: Claude Haiku 5.5 (`LLM_MODEL_ANALYZE`, medium effort via `LLM_CLAUDE_EFFORT`) for the two showcase briefs; the other 14 still `gpt-5-mini`. Anthropic spend has its own hard limit (`ANTHROPIC_BUDGET_USD`, $0.40; about $0.32 used). Compare models with `dd analyze ID --model M --compare` and `dd compare ID --models a,b --output DIR`.
-- Logos: `assets/logos/<company id>.png` (transparent, trimmed), copied into the site by `dd site`. The author link on the home page comes from `DD_AUTHOR_URL` in `.env`.
-- Semantic accuracy: `eval/labels/showcase-2026-11-20.csv` (76 statements of the two defence briefs) waits for a person to label; score with `uv run dd label-score <file>`.
-- Not done: reading filed accounts, registers outside Czechia, Dronetag competitors, an editable export for the fund, the investment view for the older portfolio briefs. See `docs/ROADMAP.md`.
+- Quality, as shown on the site: semantic accuracy of the 72 statements of the two showcase briefs (`eval/labels/showcase-2026-11-20.csv`, labelled by an AI reviewer, Claude Opus 5.5, not a person: 82% fully supported, 35/37 numbers right, 0 material problems); a baseline against `gpt-5-mini` with web search (`eval/baseline/`, 14/14 vs 2/14 facts settled by official records); a timed fresh run (about 7 min, $0.03). `dd eval` (18/18 golden facts, all quotes found) are guards only. Constants for the baseline and timing are in `dd/site.py` (`BASELINE`, `TIMING`, `N_ERRORS`); update them with the files they cite.
+- Filed accounts: `dd/accounts.py` reads Czech annual accounts from text PDFs (balance sheet, income statement when filed) and accepts them only if assets equal equity and liabilities and the net result agrees. Only Fly4Future, Dronetag (and Spaceti) have them; the other 14 briefs need a registry re-collect and re-analysis.
+- Prompts `analyze-v6`, `invest-v5`. Analysis model: Claude Haiku 5.5 for the two showcase briefs, `gpt-5-mini` for the rest. Spend: about $1.91 of the $2.50 overall limit; Anthropic about $0.38 of the $0.40 limit (balance nearly exhausted: use `gpt-5-mini` for new runs).
+- Logos: `assets/logos/<company id>.png`, copied into the site by `dd site`. The author link comes from `DD_AUTHOR_URL` in `.env`.
+- Not done: a human pass on the accuracy sheet, a timed manual first look, OCR for scanned filings, registers outside Czechia, Dronetag competitors, an editable export for the fund, a request form for new companies. See `docs/ROADMAP.md`.
 - Mykyta's brother, an investment analyst, is reviewing the briefs; his feedback shapes the export format and the design.
 
 ## Rules
@@ -69,10 +68,11 @@ dd/                       the tool (CLI: uv run dd ...)
   extract.py              model extraction with quote checks and category rules
   verify.py               claim checks against independent sources (no model)
   signals.py, invest.py, thesis.py   numbers computed by code; investment view
+  accounts.py             filed annual accounts parser (balance and income statement checks)
   analyze.py, llm.py      analysis; LLM wrapper with cache, cost ledger, hard budget
   page.py, render.py, writer.py      brief HTML / Markdown / CSV
   evaluate.py, site.py    dd eval report; static showcase
-eval/                     companies.json, golden.json, report.md, run scripts
+eval/                     companies.json, golden.json, report.md, labels/ (accuracy sheet), baseline/, run scripts
 tests/                    unit tests (pytest -m "not network")
 site/                     built showcase, deployed to Vercel (noindex)
 docs/                     ARCHITECTURE.md, AUDIT.md, ROADMAP.md

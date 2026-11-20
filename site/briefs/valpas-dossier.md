@@ -2,13 +2,13 @@
 
 valpashotels\.com · FI · 2026\-11\-20
 
-**How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — combines independent evidence with the company's own statements; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
+**How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — part of it rests on an official or independent source, part on one outlet or the company's own words; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
 
 ## TL;DR
 
 - **Product.** Pesticide\-free smart bed legs plus IoT/AI mobile/web apps that provide real\-time room monitoring and a bookable “bed bug\-safe” attribute to hotels and hotel groups\. *(Partly verified)* ^[1](https://siliconcanals.com/helsinki-based-valpas-raises-4m/),[2](https://siliconcanals.com/helsinki-based-valpas-raises-4m/),[3](https://valpashotels.com/)
 - **Stage & traction.** Closed €4M Seed round with named VCs and prior seed in 2017; commercial footprint claims &gt;300 hotels including premium brands and some confirmed case evidence\. *(Corroborated)* ^[4](https://tech.eu/2024/06/26/pest-control-startup-valpas-raised-4m-seed-for-pesticide-free-bed-bug-solution/),[5](https://nordic9.com/news/valpas-raises-500k-in-a-seed-funding-round-supported-by-maki-vc-icebreaker-vc-and-reaktor-ventures-news9430502709),[6](https://siliconcanals.com/helsinki-based-valpas-raises-4m/),[7](https://bedbugsjapan.com/bed-bug-protection-hotels-japan-valpas)
-- **Technology & moat.** A granted furniture\-leg patent \(EP3468360B1\) plus an IoT\+image‑recognition product claim—patent provides legal protection; operational uniqueness depends on sensors, materials and certification\. *(Verified)* ^[8](https://patents.google.com/?assignee=valpas),[9](https://tech.eu/2024/06/26/pest-control-startup-valpas-raised-4m-seed-for-pesticide-free-bed-bug-solution/),[10](https://valpashotels.com/about)
+- **Technology & moat.** A granted furniture\-leg patent \(EP3468360B1\) plus an IoT\+image‑recognition product claim—patent provides legal protection; operational uniqueness depends on sensors, materials and certification\. *(Partly verified)* ^[8](https://patents.google.com/?assignee=valpas),[9](https://tech.eu/2024/06/26/pest-control-startup-valpas-raised-4m-seed-for-pesticide-free-bed-bug-solution/),[10](https://valpashotels.com/about)
 - **Key risk.** Many named hotel case studies lack independent corroboration \(several not\_found verifications\), so commercial depth and recurring revenue quality are unclear\. *(Analyst view)* ^[11](https://valpashotels.com/case-studies),[12](https://valpashotels.com/case-studies),[13](https://valpashotels.com/case-studies)
 - **Diligence focus.** First verify field efficacy and observable KPIs \(capture rates, false positives\), and obtain executed customer agreements showing recurring billing and installation scope\. *(Analyst view)* ^[9](https://tech.eu/2024/06/26/pest-control-startup-valpas-raised-4m-seed-for-pesticide-free-bed-bug-solution/),[14](https://nordic9.com/news/valpas-raises-500k-in-a-seed-funding-round-supported-by-maki-vc-icebreaker-vc-and-reaktor-ventures-news9430502709),[15](https://valpashotels.com/)
 
@@ -16,7 +16,7 @@ valpashotels\.com · FI · 2026\-11\-20
 
 | Signal | Value | Sources |
 |---|---|---|
-| Funding \(press\) | 2024\-06\-26 · Seed · €4 million · Zenith VC, Icebreaker VC, Finnish Industry Investment, Canon Marketing Japan MIRAI Fund, A · 4 reports; date n/a · Icebreaker, Reaktor | 4, 16, 17, 18, 5 |
+| Funding \(press\) | 2024\-06\-26 · Seed · 4M EUR · Zenith VC, Icebreaker VC, Finnish Industry Investment, Canon Marketing Japan MIRAI Fund, A · 4 reports; date n/a · Icebreaker, Reaktor | 4, 16, 17, 18, 5 |
 | Thesis fit \(Rockaway\) | sectors: AI\-led transformative tech \(11 facts\); deep tech \(6 facts\) · geography: FI | 19, 20, 21, 22 |
 | AI dependency | no LLM vendor named as subprocessor or in own tech claims; integrates with customers' OpenAI \(not a dependency\); own\-model evidence: 1 papers, 0 verified HF models, 0 ML roles, 3 own\-model claims | 23, 24, 25, 10 |
 | Engineering footprint | product surfaces: api\.valpashotels\.com, app\.valpashotels\.com, dashboard\.valpashotels\.com, docs\.valpashotels\.com; stack: Next\.js, Vercel | 26, 27, 28 |

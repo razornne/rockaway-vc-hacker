@@ -38,7 +38,7 @@ STRENGTH = {  # key: (short label, explanation)
     "verified": ("Verified", "backed by an official record or a public technical artifact"),
     "corroborated": ("Corroborated", "reported by two or more independent outlets"),
     "single": ("Single source", "one independent outlet; not yet corroborated"),
-    "mixed": ("Partly verified", "combines independent evidence with the company's own statements"),
+    "mixed": ("Partly verified", "part of it rests on an official or independent source, part on one outlet or the company's own words"),
     "claim": ("Company claim", "only the company's own website says so — verify in diligence"),
     "view": ("Analyst view", "a judgement drawn from the cited evidence, not a fact"),
 }
@@ -153,8 +153,12 @@ def item_strength(fact_ids: list[int], facts: dict[int, Fact], company_domain: s
     independent = classes["official"] + classes["technical"] + classes["press"]
     if classes["company"] and independent:
         return "mixed", basis
-    if classes["official"] or classes["technical"]:
+    # A statement often joins several points. "Verified" only when EVERY cited source is an official record or a
+    # technical artifact; an official record next to one press article supports only part of it.
+    if (classes["official"] or classes["technical"]) and not classes["press"]:
         return "verified", basis
+    if classes["official"] or classes["technical"]:
+        return ("corroborated" if len(outlets) >= 2 else "mixed"), basis
     if len(outlets) >= 2:
         return "corroborated", basis
     if outlets:
