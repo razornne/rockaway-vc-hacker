@@ -305,7 +305,21 @@ dl.facts dt{color:var(--muted);font-size:12.5px}dl.facts dd{margin:0;color:var(-
 .toc{display:flex;flex-wrap:wrap;gap:.35rem 1.3rem;font:500 14px/1.4 var(--sans);padding:.9rem 0;margin-top:.6rem;
 border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
 .toc a{text-decoration:none}.toc a:hover{text-decoration:underline}
+.toc .toc-h{display:none}
 h2[id]{scroll-margin-top:1rem}
+.toc-jump{position:fixed;right:1rem;bottom:1rem;z-index:5;font:500 13.5px/1 var(--sans);text-decoration:none;
+color:var(--accent);background:var(--paper);border:1px solid var(--rule);border-radius:999px;padding:.6rem .95rem;
+box-shadow:0 2px 8px rgba(30,36,43,.12);opacity:0;pointer-events:none;transition:opacity .15s}
+.toc-jump.show{opacity:1;pointer-events:auto}
+@media(min-width:1360px){
+.toc{position:fixed;top:0;left:max(1rem,calc(50% - 45rem));width:11rem;max-height:100vh;overflow-y:auto;
+flex-direction:column;flex-wrap:nowrap;gap:0;margin:0;padding:6.2rem 0 2rem;border:0;font-size:13.5px}
+.toc .toc-h{display:block;font:600 11.5px/1 var(--sans);letter-spacing:.06em;text-transform:uppercase;
+color:var(--muted);margin:0 0 .8rem .95rem}
+.toc a{display:block;padding:.34rem 0 .34rem .85rem;border-left:2px solid var(--rule);color:var(--ink2)}
+.toc a:hover{color:var(--accent);text-decoration:none}
+.toc a.on{border-left-color:var(--accent);color:var(--accent)}
+.toc-jump{display:none}}
 .key{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1.4rem;margin:2rem 0 0;padding:.9rem 0 0;
 border-top:1px solid var(--rule);font:13px/1.4 var(--sans);color:var(--ink2)}
 .key .k{display:inline-flex;align-items:center;gap:.45rem}
@@ -375,7 +389,7 @@ details{margin-top:1.4rem;font:13.5px var(--sans)}summary{cursor:pointer;color:v
 h1{font-size:2.3rem}.oneliner{font-size:1.15rem}h2{font-size:1.45rem;margin-top:2.6rem}
 .lgrid{grid-template-columns:minmax(0,1fr)}
 table.t{display:block;overflow-x:auto}}
-@media print{.page{max-width:none;padding:0}details,.crumb{display:none}.row,tr{break-inside:avoid}a{color:var(--ink)}}
+@media print{.page{max-width:none;padding:0}details,.crumb,.toc,.toc-jump{display:none}.row,tr{break-inside:avoid}a{color:var(--ink)}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 """
 
@@ -644,4 +658,19 @@ def _with_contents(doc: str) -> str:
         return f'<h2 id="{slug}">{title}</h2>'
 
     doc = re.sub(r"<h2>(.*?)</h2>", anchor, doc)
-    return doc.replace("</header>", '</header><nav class="toc" aria-label="Sections">' + "".join(links) + "</nav>", 1)
+    doc = doc.replace("</header>", '</header><nav class="toc" id="contents" aria-label="Sections">'
+                      '<span class="toc-h">In this brief</span>' + "".join(links) + "</nav>", 1)
+    return doc.replace("</body>", '<a class="toc-jump" href="#contents">↑ Sections</a>' + TOC_SCRIPT + "</body>", 1)
+
+
+# On wide screens the contents list is a fixed sidebar; this marks the section being read. On narrow screens the list
+# stays under the header and a "Sections" button appears once it has scrolled away. Without JavaScript both still work
+# as plain links.
+TOC_SCRIPT = """<script>(()=>{const toc=document.getElementById('contents');if(!toc)return;
+const links=[...toc.querySelectorAll('a')],byId=new Map(links.map(a=>[a.hash.slice(1),a]));
+const heads=[...document.querySelectorAll('h2[id]')].filter(h=>byId.has(h.id)),jump=document.querySelector('.toc-jump');
+let ticking=false;function update(){ticking=false;let cur=null;for(const h of heads){if(h.getBoundingClientRect().top<140)cur=h.id;else break}
+links.forEach(a=>{const on=a===byId.get(cur);a.classList.toggle('on',on);on?a.setAttribute('aria-current','true'):a.removeAttribute('aria-current')});
+if(jump)jump.classList.toggle('show',toc.getBoundingClientRect().bottom<0&&getComputedStyle(toc).position!=='fixed')}
+addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(update)}},{passive:true});
+addEventListener('resize',update);update()})()</script>"""
