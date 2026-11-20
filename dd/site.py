@@ -124,8 +124,9 @@ def _index(m: dict, cards: str, table_rows: dict[str, list[str]], n_collectors: 
         f'<div class="cards">{cards}</div>',
 
         '<h2 id="briefs">All briefs</h2>',
-        f'<p class="h2note">{n_briefs} companies. Portfolio and comparison briefs were generated before the investment '
-        "section existed, so they show the technical view, funding, ownership and public money.</p>",
+        f'<p class="h2note">{n_briefs} companies.'
+        + ("" if all(r.get("invest") for _, r, _ in m["rows"] if r) else
+           " Briefs without an investment view were generated before that section existed.") + "</p>",
     ]
     for g in GROUP_ORDER:
         if table_rows.get(g):
@@ -156,19 +157,26 @@ def _index(m: dict, cards: str, table_rows: dict[str, list[str]], n_collectors: 
         "sources.</li>"
         "<li>Web pages are treated as data, never as instructions to the model.</li></ul>",
 
-        '<h2 id="quality">Quality, measured</h2>',
-        '<p class="h2note">From <code>dd eval</code> over all briefs on this site. Details on the '
-        '<a href="method.html">method page</a>.</p>',
+        '<h2 id="quality">Quality: what is checked, and what is not yet</h2>',
+        '<p class="h2note">These are guards against specific failures, not an accuracy score. From <code>dd eval</code> '
+        'over all briefs on this site; details on the <a href="method.html">method page</a>.</p>',
         '<div class="stats">'
-        f'<div class="stat"><div class="v">{gold_ok}/{len(m["golden"])}</div><div class="l">hand-checked facts '
-        "reproduced (registry, grants, web infrastructure)</div></div>"
+        f'<div class="stat"><div class="v">{gold_ok}/{len(m["golden"])}</div><div class="l">hand-checked register, '
+        "grant and infrastructure facts reproduced. A small regression set: it shows official records are parsed "
+        "correctly, not that every brief is right.</div></div>"
         f'<div class="stat"><div class="v">{checked - missing}/{checked}</div><div class="l">quotes behind '
-        "LLM-extracted facts found in the saved source</div></div>"
+        "model-extracted facts found in the saved source. This rules out invented quotes; a real quote can still be "
+        "misread.</div></div>"
         f'<div class="stat"><div class="v">{_pct(fo["verified"] + fo["corroborated"], fo_n)}</div><div class="l">of '
-        f"{fo_n} factual statements verified or corroborated; {_pct(fo['claim'], fo_n)} rest on the company's word "
-        "only and are labelled so</div></div>"
-        f'<div class="stat"><div class="v">${min(costs):.2f}–{max(costs):.2f}</div><div class="l">LLM cost per brief '
+        f"{fo_n} factual statements rest on an official record or two independent outlets; {_pct(fo['claim'], fo_n)} "
+        "only on the company's word. This describes the evidence, not whether conclusions are right.</div></div>"
+        f'<div class="stat"><div class="v">${min(costs):.2f}–{max(costs):.2f}</div><div class="l">model cost per brief '
         f"(OpenAI gpt-5-nano and gpt-5-mini)</div></div></div>",
+        '<p><b>The real quality process</b> is reading the output by hand: that found 26 systematic errors so far, each '
+        'fixed in code and covered by a test (<a href="method.html#errors">list</a>). <b>Not measured yet:</b> the share '
+        "of statements that are actually correct (a hand-labelled sample: does the quote support the fact, are numbers "
+        "and entities right, does the conclusion follow), the time saved against a manual first look, and a comparison "
+        "with a plain model plus web search on the same companies.</p>",
 
         "<h2>Why a diligence tool, not a sourcing radar</h2>",
         '<p>I first tested a different idea: could public data have found Rockaway Ventures deals earlier than the '
@@ -183,9 +191,10 @@ def _index(m: dict, cards: str, table_rows: dict[str, list[str]], n_collectors: 
         "<li>The 2026 AI deals (ValkaAI, BottleCap AI, Navigara) had no earlier rounds; where there was a visible "
         "signal, it was the founder.</li>"
         "</ul>",
-        "<p>A radar built on public registers would not have found these deals sooner. The step where public data "
-        "does save time is after a company is on the table: checking it quickly, with every claim traceable to its "
-        "source.</p>",
+        "<p>A radar built on public registers would not have found these deals sooner. This tests one idea — public "
+        "registers as an early signal — on deals the fund made; it says nothing about deals the fund passed on or never "
+        "saw, or about sourcing tools built on other signals. The step where the same public data clearly helps is "
+        "after a company is on the table: checking it quickly, with every claim traceable to its source.</p>",
 
         '<h2 id="limits">What it cannot see</h2>',
         '<ul class="plain">'
@@ -247,7 +256,8 @@ def _method(m: dict) -> str:
         f'<p class="h2note">{fo_n} factual statements (everything except analyst views): '
         f"{_pct(fo['verified'] + fo['corroborated'], fo_n)} verified or corroborated, {_pct(fo['mixed'], fo_n)} partly "
         f"verified, {_pct(fo['single'], fo_n)} from a single outlet, {_pct(fo['claim'], fo_n)} company claim only. "
-        "Analyst views are expected in risks, the rebuild verdict and questions.</p>",
+        "Analyst views are expected in risks, the rebuild check and questions. The labels describe where the evidence "
+        "comes from; they do not measure whether a conclusion is right.</p>",
         t(["Label", "Findings", "Share"], [(h(render.STRENGTH[k][0]), str(s.get(k, 0)), _pct(s.get(k, 0), n))
                                           for k in keys], (1, 2)),
         t(["Section"] + [render.STRENGTH[k][0] for k in keys],
@@ -261,14 +271,21 @@ def _method(m: dict) -> str:
         f'<p class="h2note">LLM cost of all briefs on this site: ${m["total_cost"]:.2f}; all runs since the start of '
         f"the project, including re-runs after fixes: ${m['ledger']:.2f}.</p>",
 
-        "<h2>5. Errors found and fixed</h2>",
-        "<p>Before the full run every LLM-extracted fact of three companies was read by hand, and the run over all "
+        '<h2 id="errors">5. Errors found and fixed</h2>',
+        "<p>Before the full run every model-extracted fact of three companies was read by hand, and the run over all "
         "companies was audited the same way. 22 systematic errors were found and fixed in code, for example: a "
         "subsidy agreement counted as a customer contract, one grant counted twice because it appears in two "
         "databases, demo numbers on a dashboard screenshot taken as team size, a company with the same name taken "
-        "for the target, and a failed patent search reported as “no patents”. Later checks of the defence briefs found more: R&amp;D "
-        "consortium budgets counted as contracts, and a decimal misread that inflated a public-money total "
-        "10,000 times.</p>",
+        "for the target, and a failed patent search reported as “no patents”. Checks of the defence briefs found two "
+        "more: R&amp;D consortium budgets counted as contracts, and a decimal misread that inflated a public-money total "
+        "10,000 times.</p>"
+        "<p>An outside review on 20 November found two more, both fixed: the model compared a round of CZK 15M with a "
+        "€0.5–2m ticket and called it too large (round size versus ticket is now arithmetic in code, and the model is "
+        "told not to restate it), and grants were added up across registers that list the same project — the award in "
+        "one, the payments in another — which overstated Fly4Future's grants by about 77M CZK. Grants are now one row "
+        "per project, with the amount awarded and the amount actually paid shown apart, and only payments are placed "
+        "on a timeline. The rebuild check no longer estimates how long a clone would take: it names what is "
+        "replicable, what edge public evidence supports, and what cannot be judged from outside.</p>",
         '<p class="foot"><a href="index.html">← Overview</a></p>',
     ]
     return _shell("Method and evaluation", "".join(body))

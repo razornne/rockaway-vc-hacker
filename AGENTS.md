@@ -4,6 +4,8 @@
 
 Mykyta Bulatnikov is applying for the **VC Hacker** role at **Rockaway Ventures** (Prague). The application is a CV, a one-page letter (more important than the CV) and a link to something he built. This repository is that link: a due diligence tool that writes source-backed company briefs from public data, plus the portfolio research that led to it. Start with `README.md`; it tells the story.
 
+Fund focus, as stated by Rockaway (checked 19 November 2026): the VC Hacker posting says Seed to Series A, "AI, B2B software, and industrial tech", and scouting technical founders across Europe and the US. The fund page (rockawaycapital.com/en/fund/rockaway-ventures) says late seed and Series A (and, elsewhere on the page, seed to Series A); sectors AI-led transformative tech, deep tech, defence and dual-use, industrial and manufacturing AI, energy; CEE, DACH and European founders in the US; fund size €53M. `dd/thesis.py` encodes the fund page.
+
 ## Read before working
 
 1. `README.md` — the story, what the tool does, how it is measured.
@@ -18,7 +20,9 @@ Private working notes (session logs, earlier handoffs, application context, the 
 
 - Branch `main`. 16 briefs: two defence showcases (Fly4Future, Dronetag) and 14 portfolio / control companies.
 - The showcase is live at https://dd-briefs.vercel.app (Vercel project `dd-briefs`, root directory `site/`, no build step). A push to `main` redeploys it; pushes to other branches create preview deployments behind Vercel login.
-- `uv run dd eval`: golden facts 18/18; all quotes of extracted facts found in sources.
+- `uv run dd eval`: golden facts 18/18; all quotes of extracted facts found in sources. These are guards, not accuracy.
+- 20 November: fixes after an outside review (see `docs/AUDIT.md` §7): round size vs ticket computed in code; grants merged per project with awarded and paid apart; rebuild check without time estimates. All 16 briefs re-analysed (prompts `analyze-v5`, `invest-v4`); LLM spend $1.45 of $2.50.
+- Semantic accuracy: `eval/labels/showcase-2026-11-20.csv` (76 statements of the two defence briefs) waits for a person to label; score with `uv run dd label-score <file>`.
 - Not done: reading filed accounts, registers outside Czechia, Dronetag competitors, an editable export for the fund, the investment view for the older portfolio briefs. See `docs/ROADMAP.md`.
 - Mykyta's brother, an investment analyst, is reviewing the briefs; his feedback shapes the export format and the design.
 

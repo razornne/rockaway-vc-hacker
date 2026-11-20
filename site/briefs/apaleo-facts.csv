@@ -89,14 +89,14 @@
 4005,apaleo,search_check,exa:exa:b3a3c2e2a63b,"{""provider"": ""exa"", ""query"": ""Apaleo case study"", ""result_count"": 10, ""source"": ""exa"", ""status"": ""ok""}",,,https://api.exa.ai/search,,press,medium
 4006,apaleo,search_check,tavily:tavily:a662e9db1255,"{""provider"": ""tavily"", ""query"": ""\""apaleo.com\"""", ""result_count"": 10, ""source"": ""tavily"", ""status"": ""ok""}",,,https://api.tavily.com/search,,press,medium
 4007,apaleo,search_check,exa:exa:a662e9db1255,"{""provider"": ""exa"", ""query"": ""\""apaleo.com\"""", ""result_count"": 10, ""source"": ""exa"", ""status"": ""ok""}",,,https://api.exa.ai/search,,press,medium
-5532,apaleo,source_check,cordis_no_match,"{""candidate_projects"": 0, ""query"": ""Apaleo"", ""source"": ""cordis"", ""status"": ""empty""}",,,https://cordis.europa.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27Apaleo%27,,public_money,high
+7687,apaleo,source_check,cordis_no_match,"{""candidate_projects"": 0, ""query"": ""Apaleo"", ""source"": ""cordis"", ""status"": ""empty""}",,,https://cordis.europa.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27Apaleo%27,,public_money,high
 4008,apaleo,source_unavailable,press:hospitalitynet.org,"{""reason"": ""HTTP 403""}",,,https://www.hospitalitynet.org/news/4083435.html,,press,high
 4013,apaleo,source_unavailable,press:phocuswire.com,"{""reason"": ""HTTP 403""}",,,https://www.phocuswire.com/apaleo-secures-20m-growth-equity-investment-round,,press,high
 4025,apaleo,source_unavailable,press:phocuswire.com,"{""reason"": ""HTTP 403""}",,,https://www.phocuswire.com/hotelhero-founders-exit-join-hospitality-tech-specialist-apaleo,,press,high
 4026,apaleo,source_unavailable,press:hoteltechreport.com,"{""reason"": ""HTTP 403""}",,,https://hoteltechreport.com/operations/property-management-systems/apaleo-pms,,press,high
 4031,apaleo,source_unavailable,press:hospitalityinvestor.com,"{""reason"": ""HTTP 403""}",,,https://www.hospitalityinvestor.com/technology/hospitality-startup-apaleo-extends-series-funding-round-eu9m,,press,high
-5531,apaleo,source_unavailable,hlidac_statu,"{""reason"": ""no Czech IČO known for this company""}",,,https://www.hlidacstatu.cz/hledat,,public_money,high
-5533,apaleo,source_unavailable,starfos,"{""reason"": ""no documented public API (SPA with internal /api/starfos/*); TA ČR/IS VaVaI subsidies are covered via Hlídač dotace instead. Manual check: https://starfos.tacr.cz""}",,,https://starfos.tacr.cz,,public_money,high
+7686,apaleo,source_unavailable,hlidac_statu,"{""reason"": ""no Czech IČO known for this company""}",,,https://www.hlidacstatu.cz/hledat,,public_money,high
+7688,apaleo,source_unavailable,starfos,"{""reason"": ""no documented public API (SPA with internal /api/starfos/*); TA ČR/IS VaVaI subsidies are covered via Hlídač dotace instead. Manual check: https://starfos.tacr.cz""}",,,https://starfos.tacr.cz,,public_money,high
 3973,apaleo,subdomain,www.apaleo.com,"{""first_seen"": ""2017-03-07"", ""fqdn"": ""www.apaleo.com""}",2017-03-07,day,https://crt.sh/?q=%25.apaleo.com&output=json,,techfp,high
 3946,apaleo,subdomain,*.apaleo.com,"{""first_seen"": ""2017-06-29"", ""fqdn"": ""*.apaleo.com""}",2017-06-29,day,https://crt.sh/?q=%25.apaleo.com&output=json,,techfp,high
 3965,apaleo,subdomain,status.apaleo.com,"{""first_seen"": ""2017-07-11"", ""fqdn"": ""status.apaleo.com""}",2017-07-11,day,https://crt.sh/?q=%25.apaleo.com&output=json,,techfp,high

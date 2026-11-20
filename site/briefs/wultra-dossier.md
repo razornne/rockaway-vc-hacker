@@ -1,111 +1,169 @@
 # Wultra — due diligence brief
 
-wultra\.com · Wultra s\.r\.o\. · IČO 03643174 · CZ · 2026\-11\-17
+wultra\.com · Wultra s\.r\.o\. · IČO 03643174 · CZ · 2026\-11\-20
 
 **How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — combines independent evidence with the company's own statements; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
 
 ## TL;DR
 
-- **Product.** Commercial authentication products \(PowerAuth, mobile SDKs, FIDO2 tokens, post‑quantum authentication\) sold to banks and enterprises via licensing and per‑active‑user pricing\. *(Partly verified)* ^[1](https://github.com/wultra/powerauth-crypto),[2](https://github.com/wultra/powerauth-mobile-sdk),[3](https://www.wultra.com/products/talisman-fido2-hardware-token),[4](https://tech.eu/2025/01/15/wultra-secures-eur3m-to-protect-financial-institutions-from-quantum-threats/),[5](https://www.wultra.com/products/single-sign-on-sso)
-- **Stage & traction.** Multiple funding events \(press: €3M 2025; Series A €6\.8M\), named banking customers and at least one government contract \(Česká pošta\) per public records\. *(Verified)* ^[4](https://tech.eu/2025/01/15/wultra-secures-eur3m-to-protect-financial-institutions-from-quantum-threats/),[6](https://finance.yahoo.com/technology/ai/articles/wultra-raises-6-8-million-140000790.html),[7](https://cdn.prod.website-files.com/64fcce0d2e203c1c077a8c04/65c3aad8f10872792c8a7013_Wultra_CaseStudy_OTP_Bank.pdf),[8](https://smlouvy.gov.cz/smlouva/39855369)
-- **Technology & moat.** Long‑running open PowerAuth crypto repos \(extensive, public\) plus a published patent application for security tokens—moat likely from protocol IP and customer integrations rather than closed proprietary code\. *(Verified)* ^[1](https://github.com/wultra/powerauth-crypto),[2](https://github.com/wultra/powerauth-mobile-sdk),[9](https://patents.google.com/patent/EM150508630001S)
-- **Key risk.** Commercial claims about scale and revenue quality \("70 clients across 25 countries"\) appear in press but lack independent corroboration in registry or sales filings\. *(Analyst view)* ^[10](https://finance.yahoo.com/technology/ai/articles/wultra-raises-6-8-million-140000790.html),[6](https://finance.yahoo.com/technology/ai/articles/wultra-raises-6-8-million-140000790.html)
-- **Diligence focus.** First verify enterprise customer contracts \(top 10 clients, ARR per client\) because technical IP is partly open‑source and valuation will hinge on contract stickiness and pricing\. *(Analyst view)* ^[3](https://www.wultra.com/products/talisman-fido2-hardware-token),[10](https://finance.yahoo.com/technology/ai/articles/wultra-raises-6-8-million-140000790.html),[5](https://www.wultra.com/products/single-sign-on-sso)
+- **Product.** Wultra sells post‑quantum and mobile authentication products \(PowerAuth, Talisman hardware tokens\) to banks and fintechs\. *(Partly verified)* ^[1](https://github.com/wultra/powerauth-mobile-sdk),[2](https://github.com/wultra/powerauth-crypto),[3](https://www.wultra.com/)
+- **Stage & traction.** Evidence of institutional investors \(J&amp;T, Tensor, Seventure\) and reported seed \(€3M\) and Series A \(€6\.8M\); at least one named customer: OTP Bank Moldova\. *(Verified)* ^[4](https://tech.eu/2025/01/15/wultra-secures-eur3m-to-protect-financial-institutions-from-quantum-threats/),[5](https://finance.yahoo.com/technology/ai/articles/wultra-raises-6-8-million-140000790.html),[6](https://cdn.prod.website-files.com/64fcce0d2e203c1c077a8c04/65c3aad8f10872792c8a7013_Wultra_CaseStudy_OTP_Bank.pdf)
+- **Technology & moat.** Substantial open\-source PowerAuth codebase and hardware token product claim suggest engineering IP; patent publication filed but not granted\. *(Verified)* ^[2](https://github.com/wultra/powerauth-crypto),[1](https://github.com/wultra/powerauth-mobile-sdk),[7](https://patents.google.com/patent/EM150508630001S)
+- **Key risk.** Commercial dependence on a small set of large customers and on continued product certification/acceptance in regulated banking \(customer concentration unquantified\)\. *(Analyst view)* ^[6](https://cdn.prod.website-files.com/64fcce0d2e203c1c077a8c04/65c3aad8f10872792c8a7013_Wultra_CaseStudy_OTP_Bank.pdf),[8](https://finance.yahoo.com/technology/ai/articles/wultra-raises-6-8-million-130000062.html)
+- **Diligence focus.** Verify binding revenue from named customers \(OTP Bank Moldova\) and contract types, plus post‑quantum compliance claims and sales pipeline quality\. *(Analyst view)* ^[6](https://cdn.prod.website-files.com/64fcce0d2e203c1c077a8c04/65c3aad8f10872792c8a7013_Wultra_CaseStudy_OTP_Bank.pdf),[3](https://www.wultra.com/),[5](https://finance.yahoo.com/technology/ai/articles/wultra-raises-6-8-million-140000790.html)
 
 ## At a glance (computed by code, no LLM)
 
 | Signal | Value | Sources |
 |---|---|---|
-| Funding \(press\) | 2025\-01\-15 · €3M · Tensor Ventures, Elevator Ventures, J&amp;T Ventures; 2026\-06\-29 · Series A · 6,8 milionu eur · Seventure Partners, Ariadnex, J&amp;T Ventures, Elevator Ventures, Marc Norlain, Guillaume Des · 2 reports | 4, 11, 6 |
-| Investors in registry | J&amp;T Ventures CG SICAV a\.s\. \(from 2021\-11\-26, 15\.0%\); J&amp;T Ventures CG SICAV a\.s\. \(from 2022\-01\-01, 17\.68%\); Tensor Co\-Investment Fund \(from 2025\-12\-03, 5\.44%\); SEVENTURE PARTNERS, SA à directoire \(from 2026\-06\-22, 5\.71%\); SEVENTURE PARTNERS, SA à directoire \(from 2026\-06\-22, 2\.45%\) | 12, 13, 14, 15, 16 |
-| Public money | 1 contract\(s\), amount not published; 1 grant\(s\), amount not published · counterparties: Česká pošta, s\.p\. | 8, 17 |
-| Hiring | 14 open roles: other 7, sales gtm 4, engineering 3 | 18, 19, 20, 21, 22, 23 |
-| Engineering footprint | 15 public repos \(156★, last push 2026\-11\-16\); 3 subdomains; 3 docs pages; stack: Cloudflare, Webflow | 24, 25, 26, 27, 28 |
-| Customers | 1 named: OTP Bank Moldova; public pricing: yes; 1 mobile app\(s\) | 3, 10, 29 |
-| Claims checked | Customer \(OTP Bank Moldova\): confirmed; Investors vs registry \(SEVENTURE PARTNERS, SA à directoire, Tensor Co\-Investment Fund, Tensor Warehouse s\.r\.o\.\): confirmed | 7, 30, 31 |
-| Timeline | Czech entity registered 2014\-12\-15; first press 2021\-12\-01 \(21 articles collected\) | 32, 33 |
+| Funding \(press\) | 2025\-01\-15 · €3M · Tensor Ventures, Elevator Ventures, J&amp;T Ventures; 2026\-06\-29 · Series A · 6,8 milionu eur · Seventure Partners, Ariadnex, J&amp;T Ventures, Elevator Ventures, Marc Norlain, Guillaume Des · 2 reports | 4, 9, 5 |
+| Investors in registry | J&amp;T Ventures CG SICAV a\.s\. \(from 2021\-11\-26, 15\.0%\); J&amp;T Ventures CG SICAV a\.s\. \(from 2022\-01\-01, 17\.68%\); Tensor Co\-Investment Fund \(from 2025\-12\-03, 5\.44%\); SEVENTURE PARTNERS, SA à directoire \(from 2026\-06\-22, 5\.71%\); SEVENTURE PARTNERS, SA à directoire \(from 2026\-06\-22, 2\.45%\) | 10, 11, 12, 13, 14 |
+| Public money | 1 contract\(s\) in the contract register; 1 grant project\(s\), amount not published · by kind: 1 other · counterparties: Česká pošta, s\.p\. | 15, 16 |
+| Thesis fit \(Rockaway\) | sectors: deep tech \(19 facts\); AI\-led transformative tech \(3 facts\); industrial / manufacturing AI \(2 facts\) · geography: CZ \(core region\) | 17, 18, 19, 20, 21, 22 |
+| Hiring | 14 open roles: other 7, sales gtm 4, engineering 3 | 23, 24, 25, 26, 27, 28 |
+| Engineering footprint | 15 public repos \(156★, last push 2026\-11\-16\); 3 subdomains; 3 docs pages; stack: Cloudflare, Webflow | 29, 30, 31, 32, 33 |
+| Customers | 1 named: OTP Bank Moldova; public pricing: yes; 1 mobile app\(s\) | 34, 35, 36 |
+| Claims checked | Customer \(OTP Bank Moldova\): confirmed; Investors vs registry \(SEVENTURE PARTNERS, SA à directoire, Tensor Co\-Investment Fund, Tensor Warehouse s\.r\.o\.\): confirmed | 6, 37, 38 |
+| Timeline | Czech entity registered 2014\-12\-15; first press 2021\-12\-01 \(21 articles collected\) | 39, 40 |
 
-# Detailed findings
+# Investment view
+
+*Inputs for the partner's memo, not a recommendation: what the evidence says about the business, the market, competitors and fit with the fund, and the case for and against\.*
+
+## Fit with the Rockaway thesis
+
+- **Sector:** Evidence supports a deep\-tech / post\-quantum security positioning through press coverage and product marketing focused on quantum\-safe authentication\. *(Analyst view)* ^[19](https://tech.eu/2025/01/15/wultra-secures-eur3m-to-protect-financial-institutions-from-quantum-threats/),[20](https://finance.yahoo.com/technology/ai/articles/wultra-raises-6-8-million-140000790.html),[41](https://www.wultra.com/downloads/ignition-guide-for-post-quantum-authentication),[3](https://www.wultra.com/)
+  - Assumption: Company messaging reflects core go\-to\-market product
+
+## Business model
+
+- Primary customers appear to be banks and fintechs; OTP Bank Moldova is a documented customer in a Wultra case study\. *(Analyst view)* ^[6](https://cdn.prod.website-files.com/64fcce0d2e203c1c077a8c04/65c3aad8f10872792c8a7013_Wultra_CaseStudy_OTP_Bank.pdf),[41](https://www.wultra.com/downloads/ignition-guide-for-post-quantum-authentication)
+  - Assumption: Case study reflects paying client relationship
+- Company sells authentication SDKs, hardware FIDO2 token \(Talisman\) and related services, implied by product pages and developer docs\. *(Analyst view)* ^[32](https://developers.wultra.com/),[3](https://www.wultra.com/)
+  - Assumption: Public docs describe commercial product set
+- Public\-sector commercial traction is minimal in disclosed records: one framework/cooperation contract with Czech Post reported at 0 Kč; no priced public purchases found\. *(Analyst view)* ^[15](https://smlouvy.gov.cz/smlouva/39855369)
+  - Assumption: Contract listing indicates engagement, not revenue
+- Received a national 'Antivirus' support award entry recorded as a grant dataset item \(no cash amount disclosed in source\)\. *(Analyst view)* ^[16](https://www.hlidacstatu.cz/Dotace/Detail/Covid-66F2A0C9D621A3DF40E30EB3EFC81EEB29372C85044499F21CD2EB2B0EE51FC4)
+  - Assumption: Grant entry is administrative record, not revenue
+
+## Market
+
+- Management/press claim: Wultra now supports more than 70 clients across 25 countries; this is presented in multiple press releases\. *(Analyst view)* ^[20](https://finance.yahoo.com/technology/ai/articles/wultra-raises-6-8-million-140000790.html),[8](https://finance.yahoo.com/technology/ai/articles/wultra-raises-6-8-million-130000062.html)
+  - Assumption: Press quotes company\-provided metrics
+- Market demand framing in PR and guides emphasises imminent need for post\-quantum authentication among financial institutions \(company/press claim\)\. *(Analyst view)* ^[19](https://tech.eu/2025/01/15/wultra-secures-eur3m-to-protect-financial-institutions-from-quantum-threats/),[41](https://www.wultra.com/downloads/ignition-guide-for-post-quantum-authentication)
+  - Assumption: PR reflects perceived customer pain
+
+## Competition
+
+No sourced findings for this section.
+
+## Case for and against
+
+- **For:** Clear product and IP focus — post\-quantum authentication stack, FIDO2 hardware, developer docs and active open\-source repos indicate defensible technical depth\. *(Analyst view)* ^[3](https://www.wultra.com/),[32](https://developers.wultra.com/),[1](https://github.com/wultra/powerauth-mobile-sdk),[2](https://github.com/wultra/powerauth-crypto),[7](https://patents.google.com/patent/EM150508630001S)
+  - Assumption: Active repos reflect production\-grade engineering
+- **For:** Repeated institutional funding and syndication signal investor confidence \(seed €3M; Series A €6\.8M; named EU/VC investors present in registry\)\. *(Analyst view)* ^[4](https://tech.eu/2025/01/15/wultra-secures-eur3m-to-protect-financial-institutions-from-quantum-threats/),[5](https://finance.yahoo.com/technology/ai/articles/wultra-raises-6-8-million-140000790.html),[42](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174),[12](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174),[13](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174)
+  - Assumption: Funding announcements correspond to material capital
+- **Against:** Limited disclosed public procurement revenue; the only government contract shows 0 Kč, indicating weak or non\-revenue public\-sector validation\. *(Analyst view)* ^[15](https://smlouvy.gov.cz/smlouva/39855369)
+  - Assumption: Public\-contract record reflects procurement stage
+- **Against:** Company growth claims \(70 clients/25 countries\) are PR\-sourced and require verification — customer mix, retention and ARR per client are not disclosed\. *(Analyst view)* ^[20](https://finance.yahoo.com/technology/ai/articles/wultra-raises-6-8-million-140000790.html),[8](https://finance.yahoo.com/technology/ai/articles/wultra-raises-6-8-million-130000062.html),[6](https://cdn.prod.website-files.com/64fcce0d2e203c1c077a8c04/65c3aad8f10872792c8a7013_Wultra_CaseStudy_OTP_Bank.pdf)
+  - Assumption: PR metrics may mix pilots and paid contracts
+- **Must be true:** Diligence must confirm recurring revenue \(ARR\), customer contract types, and representative invoices for top clients to validate commercial scale\. *(Analyst view)* ^[20](https://finance.yahoo.com/technology/ai/articles/wultra-raises-6-8-million-140000790.html),[6](https://cdn.prod.website-files.com/64fcce0d2e203c1c077a8c04/65c3aad8f10872792c8a7013_Wultra_CaseStudy_OTP_Bank.pdf)
+  - Assumption: ARR evidence will correlate with PR client counts
+- **Must be true:** Technical claims of post\-quantum readiness and interoperability \(FIDO2 hardware plus SDKs\) must be validated through product demos, security audit reports and deployment references\. *(Analyst view)* ^[3](https://www.wultra.com/),[32](https://developers.wultra.com/),[7](https://patents.google.com/patent/EM150508630001S)
+  - Assumption: Audits or third\-party validations exist or will be provided
+
+# Technical due diligence
 
 ## Ownership and capital
 
-- Press‑reported funding: €3M round reported Jan 2025 naming Tensor Ventures, Elevator Ventures, J&amp;T Ventures\. *(Verified)* ^[4](https://tech.eu/2025/01/15/wultra-secures-eur3m-to-protect-financial-institutions-from-quantum-threats/)
-  - Assumption: Press article accurately lists investors
-- Series A reported \(\~€6\.8M\) led by Seventure Partners with Ariadnex founders and returning investors\. *(Verified)* ^[6](https://finance.yahoo.com/technology/ai/articles/wultra-raises-6-8-million-140000790.html),[11](https://www.lupa.cz/aktuality/ceska-firma-wultra-vybrala-dalsich-160-milionu-na-nasazeni-postkvantoveho-sifrovani/)
-- Registry evidence of investors/shareholders: Tensor Co‑Investment Fund \(5\.44%\), Tensor Warehouse s\.r\.o\. \(6\.67%\), SEVENTURE PARTNERS entries \(2\.45% and 5\.71%\)\. *(Verified)* ^[14](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174),[34](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174),[15](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174),[16](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174)
+- Registry shareholders include J&amp;T Ventures \(17\.68%\), EV II EuVECA \(11\.89%\), Tensor Warehouse and Tensor Co‑Investment Fund, and SEVENTURE entries added in 2026\. *(Verified)* ^[11](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174),[43](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174),[42](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174),[12](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174),[13](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174)
+- Funding rounds reported: €3M \(press, investors named\) and a Series A \~€6\.8M reported with Seventure lead; third‑party verification links investors to registry entries\. *(Verified)* ^[4](https://tech.eu/2025/01/15/wultra-secures-eur3m-to-protect-financial-institutions-from-quantum-threats/),[5](https://finance.yahoo.com/technology/ai/articles/wultra-raises-6-8-million-140000790.html),[37](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174),[38](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174),[44](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174)
+- Public money records: one signed collaboration agreement \(Česká pošta, signed 2026‑09‑24\) and one awarded national 'ANTIVIRUS' support record \(2021\) with zero Kč recorded\. *(Verified)* ^[15](https://smlouvy.gov.cz/smlouva/39855369),[16](https://www.hlidacstatu.cz/Dotace/Detail/Covid-66F2A0C9D621A3DF40E30EB3EFC81EEB29372C85044499F21CD2EB2B0EE51FC4)
 
 ## Technology profile
 
-- Product surfaces and docs: developer portal, downloadable Ignition Guide, deployment guides for Docker and REST APIs documented on developers\.wultra\.com\. *(Company claim)* ^[27](https://developers.wultra.com/),[35](https://www.wultra.com/downloads/ignition-guide-for-post-quantum-authentication),[29](https://developers.wultra.com/)
-- Ship‑ready open components: multiple actively maintained public repos for PowerAuth, crypto, mobile SDKs and push/enrollment servers \(Apache/AGPL licenses\)\. *(Verified)* ^[1](https://github.com/wultra/powerauth-crypto),[2](https://github.com/wultra/powerauth-mobile-sdk),[36](https://github.com/wultra/powerauth-push-server),[37](https://github.com/wultra/digital-onboarding-apple)
-- Engineering footprint: \~15 public repos with recent activity \(pushed 2026‑11‑16\), indicating active engineering outputs and reproducible SDKs\. *(Verified)* ^[25](https://github.com/wultra/mobile-utility-server),[26](https://github.com/wultra/react-native-powerauth-mobile-sdk),[38](https://github.com/wultra/powerauth-tests),[39](https://github.com/wultra/java-core),[24](https://github.com/wultra/mtoken-sdk-js)
+- Built product surfaces: extensive open‑source backend and mobile SDKs \(PowerAuth, mtoken SDKs, enrollment/push servers\) across Java, Swift, Kotlin, TypeScript repositories\. *(Verified)* ^[1](https://github.com/wultra/powerauth-mobile-sdk),[2](https://github.com/wultra/powerauth-crypto),[45](https://github.com/wultra/mtoken-sdk-ios),[46](https://github.com/wultra/mtoken-sdk-android),[47](https://github.com/wultra/powerauth-push-server)
+- Documentation and developer portal present \(developers\.wultra\.com\) and downloadable ignition guide for post‑quantum authentication\. *(Company claim)* ^[32](https://developers.wultra.com/),[41](https://www.wultra.com/downloads/ignition-guide-for-post-quantum-authentication)
+- Engineering footprint: 15 public repos with recent activity \(last pushes 2026‑11‑16\); small open engineering hiring slate \(3 engineering roles listed\)\. *(Partly verified)* ^[30](https://github.com/wultra/mobile-utility-server),[31](https://github.com/wultra/react-native-powerauth-mobile-sdk),[48](https://github.com/wultra/digital-onboarding-apple),[49](https://www.wultra.com/careers),[50](https://www.wultra.com/careers)
 
-## Rebuild check
+## What could be rebuilt, and what cannot be judged from outside
 
-- **Commodity:** SDKs, REST API and deployment guides — competent 2‑3 person team could reassemble an equivalent integration using public repos and Docker guidance\. *(Analyst view)* ^[2](https://github.com/wultra/powerauth-mobile-sdk),[1](https://github.com/wultra/powerauth-crypto),[27](https://developers.wultra.com/)
-  - Assumption: Team uses existing Apache/AGPL codebases
-- **Hard to copy:** Customer integrations, protocol maturity, a patent application for security tokens, and live bank/government deployments \(OTP Bank case study, Česká pošta contract\) are harder to reproduce quickly\. *(Analyst view)* ^[9](https://patents.google.com/patent/EM150508630001S),[7](https://cdn.prod.website-files.com/64fcce0d2e203c1c077a8c04/65c3aad8f10872792c8a7013_Wultra_CaseStudy_OTP_Bank.pdf),[8](https://smlouvy.gov.cz/smlouva/39855369)
-  - Assumption: Integrations include non‑public operational glue
-- **Verdict:** Quarter — a clone could be built in a quarter but would lack signed enterprise contracts, proven integrations and patent/legal protections\. *(Analyst view)* ^[1](https://github.com/wultra/powerauth-crypto),[7](https://cdn.prod.website-files.com/64fcce0d2e203c1c077a8c04/65c3aad8f10872792c8a7013_Wultra_CaseStudy_OTP_Bank.pdf),[9](https://patents.google.com/patent/EM150508630001S)
-  - Assumption: Clone team has experienced security engineers
+- **Replicable with off-the-shelf parts:** PowerAuth mobile SDK and server functionality can be reproduced using open Apache‑2\.0/AGPL repos and standard TLS/APIs \(repos show core protocol and SDK code\)\. *(Analyst view)* ^[1](https://github.com/wultra/powerauth-mobile-sdk),[2](https://github.com/wultra/powerauth-crypto),[47](https://github.com/wultra/powerauth-push-server)
+  - Assumption: Reproducibility assumes public repos include complete protocol and integration examples\.
+- **Edge supported by public evidence:** A patent publication and a named hardware product claim \(Talisman FIDO2 token\) provide public evidence of distinct IP and productization effort\. *(Analyst view)* ^[7](https://patents.google.com/patent/EM150508630001S),[3](https://www.wultra.com/)
+  - Assumption: Patent publication and product page substantiate a productized hardware effort\.
+- **Cannot be judged from outside:** Quality of production cryptography, security hardening, and in‑field resilience \(real fraud reduction\) cannot be judged from repos, docs or press alone\. *(Analyst view)* ^[2](https://github.com/wultra/powerauth-crypto),[32](https://developers.wultra.com/),[8](https://finance.yahoo.com/technology/ai/articles/wultra-raises-6-8-million-130000062.html)
+  - Assumption: These properties require access to code, audits, telemetry or customer contracts\.
 
 ## Risks and caveats
 
-- Unverified scale: press claims "70 clients across 25 countries" \(material to ARR and CAC\) lack registry or contract‑level corroboration in supplied facts\. *(Analyst view)* ^[10](https://finance.yahoo.com/technology/ai/articles/wultra-raises-6-8-million-140000790.html),[6](https://finance.yahoo.com/technology/ai/articles/wultra-raises-6-8-million-140000790.html)
-  - Assumption: Press reflects company statements
-- Open‑source exposure: core crypto and SDKs are public \(Apache/AGPL\), reducing technical exclusivity and making feature parity replicable from repos\. *(Analyst view)* ^[1](https://github.com/wultra/powerauth-crypto),[2](https://github.com/wultra/powerauth-mobile-sdk)
-- Concentration risk: a small number of named large customers \(OTP Bank Moldova, Česká pošta contract\) imply potential customer concentration\. *(Analyst view)* ^[3](https://www.wultra.com/products/talisman-fido2-hardware-token),[8](https://smlouvy.gov.cz/smlouva/39855369)
+- Concentration risk: public materials name OTP Bank Moldova and claim \~70 clients, but revenue/customer concentration is not disclosed\. *(Analyst view)* ^[6](https://cdn.prod.website-files.com/64fcce0d2e203c1c077a8c04/65c3aad8f10872792c8a7013_Wultra_CaseStudy_OTP_Bank.pdf),[8](https://finance.yahoo.com/technology/ai/articles/wultra-raises-6-8-million-130000062.html)
+  - Assumption: Client count claim may mask concentration in revenue\.
+- Certification/compliance risk: banking traction depends on regulatory acceptance \(PSD2/PSD3 claims and FIDO2 hardware positioning need contract/cert evidence\)\. *(Analyst view)* ^[3](https://www.wultra.com/),[1](https://github.com/wultra/powerauth-mobile-sdk)
+  - Assumption: Regulatory compliance assertions require certificate and contract verification\.
+- Public‑money visibility: small number of public records show awarded/zero amounts and an unpriced 'future collaboration' agreement; reliance on public grants appears limited but should be checked\. *(Analyst view)* ^[16](https://www.hlidacstatu.cz/Dotace/Detail/Covid-66F2A0C9D621A3DF40E30EB3EFC81EEB29372C85044499F21CD2EB2B0EE51FC4),[15](https://smlouvy.gov.cz/smlouva/39855369)
+  - Assumption: Available records reflect limited public funding to date\.
 
 ## Questions for founders
 
-- Provide top‑10 client list with contract start dates and ARR to validate the press claim of 70 clients and concentration risk\. *(Analyst view)* ^[10](https://finance.yahoo.com/technology/ai/articles/wultra-raises-6-8-million-140000790.html)
-- Share redacted enterprise contracts or reference letters for OTP Bank Moldova and Česká pošta to confirm deployment scope and SLAs\. *(Analyst view)* ^[7](https://cdn.prod.website-files.com/64fcce0d2e203c1c077a8c04/65c3aad8f10872792c8a7013_Wultra_CaseStudy_OTP_Bank.pdf),[8](https://smlouvy.gov.cz/smlouva/39855369)
-- Clarify how the pending patent \(EM150508630001S\) maps to product claims and what is protected versus implemented in public repos\. *(Analyst view)* ^[9](https://patents.google.com/patent/EM150508630001S),[1](https://github.com/wultra/powerauth-crypto)
-- Obtain ARR, gross margin and net retention metrics to validate per‑active‑user pricing assumptions and customer economics\. *(Analyst view)* ^[5](https://www.wultra.com/products/single-sign-on-sso),[40](https://www.wultra.com/products/mobile-first-authentication)
+- Please provide anonymized revenue by customer for the last 12 months to assess concentration and unit economics \(press client counts vs contract reality\)\. *(Analyst view)* ^[8](https://finance.yahoo.com/technology/ai/articles/wultra-raises-6-8-million-130000062.html),[6](https://cdn.prod.website-files.com/64fcce0d2e203c1c077a8c04/65c3aad8f10872792c8a7013_Wultra_CaseStudy_OTP_Bank.pdf)
+- Share copies of security and cryptographic third‑party audits or certifications that underpin banking claims \(PowerAuth, FIDO2 token\)\. *(Analyst view)* ^[2](https://github.com/wultra/powerauth-crypto),[3](https://www.wultra.com/),[7](https://patents.google.com/patent/EM150508630001S)
+- Provide representative customer contracts \(redacted\) showing contract kinds and billing \(SaaS, license, purchase\) for named customers like OTP Bank Moldova\. *(Analyst view)* ^[6](https://cdn.prod.website-files.com/64fcce0d2e203c1c077a8c04/65c3aad8f10872792c8a7013_Wultra_CaseStudy_OTP_Bank.pdf),[15](https://smlouvy.gov.cz/smlouva/39855369)
+- Clarify the commercial status of the Talisman FIDO2 hardware \(shipments, certifications, and any patents granted vs applied\)\. *(Analyst view)* ^[3](https://www.wultra.com/),[7](https://patents.google.com/patent/EM150508630001S)
 
 ## Sources
 
-1. [github\.com](https://github.com/wultra/powerauth-crypto) · Public technical artifact · GitHub repository · 2026\-11\-16 — “wultra/powerauth\-crypto · PowerAuth \- Open\-source solution for authentication, secure data storage and transport security in mobile banking\. · Java · last push 2026\-11\-16”
-2. [github\.com](https://github.com/wultra/powerauth-mobile-sdk) · Public technical artifact · GitHub repository · 2026\-11\-16 — “wultra/powerauth\-mobile\-sdk · PowerAuth mobile SDK adds capability for authentication and transaction signing into the mobile apps \(iOS, tvOS, watchOS, Android\)\. · Java · last push 2026\-11\-16”
-3. [wultra\.com](https://www.wultra.com/products/talisman-fido2-hardware-token) · Company's own website · Customer — “Case Study How OTP Bank Moldova Modernized Security &amp; UX for Corporate Customers OTP Bank SA \(Moldova\) undertook a strategic security upgrade to modernize transaction authentication for its corporate customers byreplacing its legacy hardware tokens with Talisman\.”
+1. [github\.com](https://github.com/wultra/powerauth-mobile-sdk) · Public technical artifact · GitHub repository · 2026\-11\-16 — “wultra/powerauth\-mobile\-sdk · PowerAuth mobile SDK adds capability for authentication and transaction signing into the mobile apps \(iOS, tvOS, watchOS, Android\)\. · Java · last push 2026\-11\-16”
+2. [github\.com](https://github.com/wultra/powerauth-crypto) · Public technical artifact · GitHub repository · 2026\-11\-16 — “wultra/powerauth\-crypto · PowerAuth \- Open\-source solution for authentication, secure data storage and transport security in mobile banking\. · Java · last push 2026\-11\-16”
+3. [wultra\.com](https://www.wultra.com/) · Company's own website · Product capability — “Talisman FIDO2 Hard Token Ultimate FIDO2 hardware token built for banking and ready for PSD3/PSR1 compliance\.”
 4. [tech\.eu](https://tech.eu/2025/01/15/wultra-secures-eur3m-to-protect-financial-institutions-from-quantum-threats/) · Independent press · Funding round — “Wultra has raised €3M from Tensor Ventures, Elevator Ventures, and J&amp;T Ventures to accelerate the development of post\-quantum authentication technology\.”
-5. [wultra\.com](https://www.wultra.com/products/single-sign-on-sso) · Company's own website · Pricing — “Only pay for active users”
-6. [finance\.yahoo\.com](https://finance.yahoo.com/technology/ai/articles/wultra-raises-6-8-million-140000790.html) · Independent press · Funding round — “backed by lead investor Seventure Partners, followed by ARIADNEXT founders Marc Norlain and Guillaume Despagne and existing investors J&amp;T Ventures and Elevator Ventures \.”
-7. [cdn\.prod\.website\-files\.com](https://cdn.prod.website-files.com/64fcce0d2e203c1c077a8c04/65c3aad8f10872792c8a7013_Wultra_CaseStudy_OTP_Bank.pdf) · Independent press · Independent check of a claim — “The following case study explores the successful outcomes of Wultra’s collaboration with OTP Bank\. Read on to learn why PSD2 compliance in the Moldovan market is more crucial than ever before, and additionally, how Wultra implemented a secure, compliant authentication solution into OTP Bank’s mobile”
-8. [smlouvy\.gov\.cz](https://smlouvy.gov.cz/smlouva/39855369) · Official record · Public contract · 2026\-09\-24 — “Česká pošta, s\.p\. · 0 CZK · Smlouva o budoucí spolupráci”
-9. [patents\.google\.com](https://patents.google.com/patent/EM150508630001S) · Official record · Patent publication — “EM150508630001S · Security tokens \[encryption devices\] · Wultra s\.r\.o\.”
-10. [finance\.yahoo\.com](https://finance.yahoo.com/technology/ai/articles/wultra-raises-6-8-million-140000790.html) · Independent press · Customer — “now support more than 70 clients across 25 countries worldwide,”
-11. [lupa\.cz](https://www.lupa.cz/aktuality/ceska-firma-wultra-vybrala-dalsich-160-milionu-na-nasazeni-postkvantoveho-sifrovani/) · Independent press · Funding round — “Prostředky v rámci investičního kola series A jako vedoucí investor poskytl fond Seventure Partners\.”
-12. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174) · Official record · Registry: shareholder · 2021\-11\-26 — “J&amp;T Ventures CG SICAV a\.s\. · 15\.0% · from 2021\-11\-26 · to 2022\-01\-01”
-13. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174) · Official record · Registry: shareholder · 2022\-01\-01 — “J&amp;T Ventures CG SICAV a\.s\. · 17\.68% · from 2022\-01\-01”
-14. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174) · Official record · Registry: shareholder · 2025\-12\-03 — “Tensor Co\-Investment Fund · 5\.44% · from 2025\-12\-03”
-15. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174) · Official record · Registry: shareholder · 2026\-06\-22 — “SEVENTURE PARTNERS, SA à directoire · 5\.71% · from 2026\-06\-22”
-16. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174) · Official record · Registry: shareholder · 2026\-06\-22 — “SEVENTURE PARTNERS, SA à directoire · 2\.45% · from 2026\-06\-22”
-17. [hlidacstatu\.cz](https://www.hlidacstatu.cz/Dotace/Detail/Covid-66F2A0C9D621A3DF40E30EB3EFC81EEB29372C85044499F21CD2EB2B0EE51FC4) · Official record · National grant · 2021 — “ANTIVIRUS · Úřad práce České republiky”
-18. [wultra\.com](https://www.wultra.com/careers) · Company's own website · Job posting — “Chief Product Officer”
-19. [wultra\.com](https://www.wultra.com/careers) · Company's own website · Job posting — “Chief People &amp; Culture Officer”
-20. [wultra\.com](https://www.wultra.com/careers) · Company's own website · Job posting — “Security Tester”
-21. [wultra\.com](https://www.wultra.com/careers) · Company's own website · Job posting — “Mobile Application Protection Product Manager”
-22. [wultra\.com](https://www.wultra.com/careers) · Company's own website · Job posting — “Talent Acquisition Specialist / Recruiter”
-23. [wultra\.com](https://www.wultra.com/careers) · Company's own website · Job posting — “People Operations Generalist”
-24. [github\.com](https://github.com/wultra/mtoken-sdk-js) · Public technical artifact · GitHub repository · 2026\-11\-13 — “wultra/mtoken\-sdk\-js · PowerAuth based Mobile Token SDK for Javascript mobile platforms · TypeScript · last push 2026\-11\-13”
-25. [github\.com](https://github.com/wultra/mobile-utility-server) · Public technical artifact · GitHub repository · 2026\-11\-16 — “wultra/mobile\-utility\-server · Utility server with various features suitable for mobile apps · Java · last push 2026\-11\-16”
-26. [github\.com](https://github.com/wultra/react-native-powerauth-mobile-sdk) · Public technical artifact · GitHub repository · 2026\-11\-16 — “wultra/react\-native\-powerauth\-mobile\-sdk · JavaScript Mobile SDK for PowerAuth Protocol \(React Native, Cordova / iOS, Android\) · TypeScript · last push 2026\-11\-16”
-27. [developers\.wultra\.com](https://developers.wultra.com/) · Company's own website · Website page — “Wultra Developer Portal”
-28. [wultra\.com](https://www.wultra.com/brand-guidelines) · Company's own website · Website page — “Brand Guidelines │ Wultra”
-29. [developers\.wultra\.com](https://developers.wultra.com/) · Company's own website · Pricing — “Follow our step\-by\-step guidebooks to deploy our Docker images, connect to our RESTful APIs, and integrate authentication SDK in your apps\.”
-30. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174) · Official record · Independent check of a claim · 2024\-12\-30 — “Press \(tech\.eu\) names Tensor Ventures as an investor; the commercial register lists Tensor Warehouse s\.r\.o\. as a shareholder from 2024\-12\-30 \(6\.67%\)\.”
-31. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174) · Official record · Independent check of a claim · 2025\-12\-03 — “Press \(tech\.eu\) names Tensor Ventures as an investor; the commercial register lists Tensor Co\-Investment Fund as a shareholder from 2025\-12\-03 \(5\.44%\)\.”
-32. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/03643174) · Official record · Registry: incorporation · 2014\-12\-15 — “registered 2014\-12\-15”
-33. [lupa\.cz](https://www.lupa.cz/aktuality/petr-dvorak-do-firmy-wultra-pustil-investory-j-t-za-desitky-milionu-ziskava-minoritu/) · Independent press · Press article · 2021\-12\-01 — “Petr Dvořák do firmy Wultra pustil investory, J&amp;T za desítky milionů získává minoritu \- Lupa\.cz”
-34. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174) · Official record · Registry: shareholder · 2024\-12\-30 — “Tensor Warehouse s\.r\.o\. · 6\.67% · from 2024\-12\-30 · to 2025\-12\-03”
-35. [wultra\.com](https://www.wultra.com/downloads/ignition-guide-for-post-quantum-authentication) · Company's own website · Website page — “Ignition Guide – Ignition Guide: How to Switch to Post\-Quantum Authentication \| Wultra Downloads”
-36. [github\.com](https://github.com/wultra/powerauth-push-server) · Public technical artifact · GitHub repository · 2026\-11\-16 — “wultra/powerauth\-push\-server · PowerAuth Push Server repository · Java · last push 2026\-11\-16”
-37. [github\.com](https://github.com/wultra/digital-onboarding-apple) · Public technical artifact · GitHub repository · 2026\-11\-16 — “wultra/digital\-onboarding\-apple · Wultra Digital Onboarding for Apple platforms · Swift · last push 2026\-11\-16”
-38. [github\.com](https://github.com/wultra/powerauth-tests) · Public technical artifact · GitHub repository · 2026\-11\-16 — “wultra/powerauth\-tests · Tests for PowerAuth backend services · Java · last push 2026\-11\-16”
-39. [github\.com](https://github.com/wultra/java-core) · Public technical artifact · GitHub repository · 2026\-11\-16 — “wultra/java\-core · Core Java classes shared across our projects · Java · last push 2026\-11\-16”
-40. [wultra\.com](https://www.wultra.com/products/mobile-first-authentication) · Company's own website · Pricing — “Only pay for active users”
-41. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174) · Official record · Independent check of a claim · 2026\-06\-22 — “Press \(finance\.yahoo\.com, lupa\.cz\) names Seventure Partners as an investor; the commercial register lists SEVENTURE PARTNERS, SA à directoire as a shareholder from 2026\-06\-22 \(2\.45%\)\.”
+5. [finance\.yahoo\.com](https://finance.yahoo.com/technology/ai/articles/wultra-raises-6-8-million-140000790.html) · Independent press · Funding round — “backed by lead investor Seventure Partners, followed by ARIADNEXT founders Marc Norlain and Guillaume Despagne and existing investors J&amp;T Ventures and Elevator Ventures \.”
+6. [cdn\.prod\.website\-files\.com](https://cdn.prod.website-files.com/64fcce0d2e203c1c077a8c04/65c3aad8f10872792c8a7013_Wultra_CaseStudy_OTP_Bank.pdf) · Independent press · Independent check of a claim — “The following case study explores the successful outcomes of Wultra’s collaboration with OTP Bank\. Read on to learn why PSD2 compliance in the Moldovan market is more crucial than ever before, and additionally, how Wultra implemented a secure, compliant authentication solution into OTP Bank’s mobile”
+7. [patents\.google\.com](https://patents.google.com/patent/EM150508630001S) · Official record · Patent publication — “EM150508630001S · Security tokens \[encryption devices\] · Wultra s\.r\.o\.”
+8. [finance\.yahoo\.com](https://finance.yahoo.com/technology/ai/articles/wultra-raises-6-8-million-130000062.html) · Independent press · Press article · 2026\-07\-01 — “Wultra Raises €6\.8 Million in Series A Funding to Accelerate Global Expansion of Post\-Quantum Digital Identity Solutions”
+9. [lupa\.cz](https://www.lupa.cz/aktuality/ceska-firma-wultra-vybrala-dalsich-160-milionu-na-nasazeni-postkvantoveho-sifrovani/) · Independent press · Funding round — “Prostředky v rámci investičního kola series A jako vedoucí investor poskytl fond Seventure Partners\.”
+10. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174) · Official record · Registry: shareholder · 2021\-11\-26 — “J&amp;T Ventures CG SICAV a\.s\. · 15\.0% · from 2021\-11\-26 · to 2022\-01\-01”
+11. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174) · Official record · Registry: shareholder · 2022\-01\-01 — “J&amp;T Ventures CG SICAV a\.s\. · 17\.68% · from 2022\-01\-01”
+12. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174) · Official record · Registry: shareholder · 2025\-12\-03 — “Tensor Co\-Investment Fund · 5\.44% · from 2025\-12\-03”
+13. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174) · Official record · Registry: shareholder · 2026\-06\-22 — “SEVENTURE PARTNERS, SA à directoire · 5\.71% · from 2026\-06\-22”
+14. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174) · Official record · Registry: shareholder · 2026\-06\-22 — “SEVENTURE PARTNERS, SA à directoire · 2\.45% · from 2026\-06\-22”
+15. [smlouvy\.gov\.cz](https://smlouvy.gov.cz/smlouva/39855369) · Official record · Public contract · 2026\-09\-24 — “Česká pošta, s\.p\. · 0 CZK · Smlouva o budoucí spolupráci”
+16. [hlidacstatu\.cz](https://www.hlidacstatu.cz/Dotace/Detail/Covid-66F2A0C9D621A3DF40E30EB3EFC81EEB29372C85044499F21CD2EB2B0EE51FC4) · Official record · National grant · 2021 — “ANTIVIRUS · Úřad práce České republiky”
+17. [havelpartners\.cz](https://www.havelpartners.cz/pravni-poradenstvi-pro-investory-pri-vstupu-do-startupu-wultra/) · Independent press · Press article · 2025\-01\-17 — “Právní poradenství pro investory při vstupu do startupu Wultra \- HAVEL &amp; PARTNERS”
+18. [quantumcomputingreport\.com](https://quantumcomputingreport.com/wultra-secures-e6-8-million-7-7-million-usd-series-a-to-expand-post-quantum-digital-identity-infrastructure-globally/) · Independent press · Press article · 2026\-07\-02 — “Wultra Secures €6\.8 Million \($7\.7 Million USD\) Series A to Expand Post\-Quantum Digital Identity Infrastructure Globally \- Quantum Computing Report”
+19. [tech\.eu](https://tech.eu/2025/01/15/wultra-secures-eur3m-to-protect-financial-institutions-from-quantum-threats/) · Independent press · Press article · 2025\-01\-15 — “Wultra secures €3M to protect against quantum cyberthreats \- Tech\.eu”
+20. [finance\.yahoo\.com](https://finance.yahoo.com/technology/ai/articles/wultra-raises-6-8-million-140000790.html) · Independent press · Press article · 2026\-07\-01 — “Wultra Raises €6\.8 Million in Series A Funding to Accelerate Global Expansion of Post\-Quantum Digital Identity Solutions”
+21. [tech\.eu](https://tech.eu/2025/01/15/wultra-secures-eur3m-to-protect-financial-institutions-from-quantum-threats/) · Independent press · Technical claim — “All Talisman devices are manufactured and assembled within the European Union, with final production taking place in the Czech Republic\.”
+22. [finance\.yahoo\.com](https://finance.yahoo.com/news/wultra-secures-3m-protect-financial-104000919.html) · Independent press · Technical claim — “all Talisman devices are manufactured and assembled within the European Union, with final production taking place in the Czech Republic”
+23. [wultra\.com](https://www.wultra.com/careers) · Company's own website · Job posting — “Chief Product Officer”
+24. [wultra\.com](https://www.wultra.com/careers) · Company's own website · Job posting — “Chief People &amp; Culture Officer”
+25. [wultra\.com](https://www.wultra.com/careers) · Company's own website · Job posting — “Security Tester”
+26. [wultra\.com](https://www.wultra.com/careers) · Company's own website · Job posting — “Mobile Application Protection Product Manager”
+27. [wultra\.com](https://www.wultra.com/careers) · Company's own website · Job posting — “Talent Acquisition Specialist / Recruiter”
+28. [wultra\.com](https://www.wultra.com/careers) · Company's own website · Job posting — “People Operations Generalist”
+29. [github\.com](https://github.com/wultra/mtoken-sdk-js) · Public technical artifact · GitHub repository · 2026\-11\-13 — “wultra/mtoken\-sdk\-js · PowerAuth based Mobile Token SDK for Javascript mobile platforms · TypeScript · last push 2026\-11\-13”
+30. [github\.com](https://github.com/wultra/mobile-utility-server) · Public technical artifact · GitHub repository · 2026\-11\-16 — “wultra/mobile\-utility\-server · Utility server with various features suitable for mobile apps · Java · last push 2026\-11\-16”
+31. [github\.com](https://github.com/wultra/react-native-powerauth-mobile-sdk) · Public technical artifact · GitHub repository · 2026\-11\-16 — “wultra/react\-native\-powerauth\-mobile\-sdk · JavaScript Mobile SDK for PowerAuth Protocol \(React Native, Cordova / iOS, Android\) · TypeScript · last push 2026\-11\-16”
+32. [developers\.wultra\.com](https://developers.wultra.com/) · Company's own website · Website page — “Wultra Developer Portal”
+33. [wultra\.com](https://www.wultra.com/brand-guidelines) · Company's own website · Website page — “Brand Guidelines │ Wultra”
+34. [wultra\.com](https://www.wultra.com/products/talisman-fido2-hardware-token) · Company's own website · Customer — “Case Study How OTP Bank Moldova Modernized Security &amp; UX for Corporate Customers OTP Bank SA \(Moldova\) undertook a strategic security upgrade to modernize transaction authentication for its corporate customers byreplacing its legacy hardware tokens with Talisman\.”
+35. [finance\.yahoo\.com](https://finance.yahoo.com/technology/ai/articles/wultra-raises-6-8-million-140000790.html) · Independent press · Customer — “now support more than 70 clients across 25 countries worldwide,”
+36. [developers\.wultra\.com](https://developers.wultra.com/) · Company's own website · Pricing — “Follow our step\-by\-step guidebooks to deploy our Docker images, connect to our RESTful APIs, and integrate authentication SDK in your apps\.”
+37. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174) · Official record · Independent check of a claim · 2024\-12\-30 — “Press \(tech\.eu\) names Tensor Ventures as an investor; the commercial register lists Tensor Warehouse s\.r\.o\. as a shareholder from 2024\-12\-30 \(6\.67%\)\.”
+38. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174) · Official record · Independent check of a claim · 2025\-12\-03 — “Press \(tech\.eu\) names Tensor Ventures as an investor; the commercial register lists Tensor Co\-Investment Fund as a shareholder from 2025\-12\-03 \(5\.44%\)\.”
+39. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/03643174) · Official record · Registry: incorporation · 2014\-12\-15 — “registered 2014\-12\-15”
+40. [lupa\.cz](https://www.lupa.cz/aktuality/petr-dvorak-do-firmy-wultra-pustil-investory-j-t-za-desitky-milionu-ziskava-minoritu/) · Independent press · Press article · 2021\-12\-01 — “Petr Dvořák do firmy Wultra pustil investory, J&amp;T za desítky milionů získává minoritu \- Lupa\.cz”
+41. [wultra\.com](https://www.wultra.com/downloads/ignition-guide-for-post-quantum-authentication) · Company's own website · Website page — “Ignition Guide – Ignition Guide: How to Switch to Post\-Quantum Authentication \| Wultra Downloads”
+42. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174) · Official record · Registry: shareholder · 2024\-12\-30 — “Tensor Warehouse s\.r\.o\. · 6\.67% · from 2024\-12\-30 · to 2025\-12\-03”
+43. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174) · Official record · Registry: shareholder · 2024\-12\-30 — “EV II EuVECA GmbH &amp; Co KG · 11\.89% · from 2024\-12\-30”
+44. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174) · Official record · Independent check of a claim · 2026\-06\-22 — “Press \(finance\.yahoo\.com, lupa\.cz\) names Seventure Partners as an investor; the commercial register lists SEVENTURE PARTNERS, SA à directoire as a shareholder from 2026\-06\-22 \(2\.45%\)\.”
+45. [github\.com](https://github.com/wultra/mtoken-sdk-ios) · Public technical artifact · GitHub repository · 2026\-11\-16 — “wultra/mtoken\-sdk\-ios · PowerAuth based Mobile Token SDK for iOS · Swift · last push 2026\-11\-16”
+46. [github\.com](https://github.com/wultra/mtoken-sdk-android) · Public technical artifact · GitHub repository · 2026\-11\-16 — “wultra/mtoken\-sdk\-android · PowerAuth based Mobile Token SDK for Android · Kotlin · last push 2026\-11\-16”
+47. [github\.com](https://github.com/wultra/powerauth-push-server) · Public technical artifact · GitHub repository · 2026\-11\-16 — “wultra/powerauth\-push\-server · PowerAuth Push Server repository · Java · last push 2026\-11\-16”
+48. [github\.com](https://github.com/wultra/digital-onboarding-apple) · Public technical artifact · GitHub repository · 2026\-11\-16 — “wultra/digital\-onboarding\-apple · Wultra Digital Onboarding for Apple platforms · Swift · last push 2026\-11\-16”
+49. [wultra\.com](https://www.wultra.com/careers) · Company's own website · Job posting — “Principal QA Engineer”
+50. [wultra\.com](https://www.wultra.com/careers) · Company's own website · Job posting — “Mobile Reverse Engineer – Android”
+51. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/03643174) · Official record · Registry: identity · 2014\-12\-15 — “Wultra s\.r\.o\. · s\.r\.o\. · registered 2014\-12\-15”
 
 ## How this dossier was built
 
@@ -122,7 +180,7 @@ wultra\.com · Wultra s\.r\.o\. · IČO 03643174 · CZ · 2026\-11\-17
 | Claim verification | company claims checked against independent sources: Google Patents \(patents\), IAB Global Vendor List \(TCF\), commercial register \(investors named in press\), security pages \(SOC 2 / ISO attestations\), news search \(customers\) | 5 | — |
 | AI extraction | an LLM reads saved pages and articles and proposes facts; a fact is kept only if its quote is found in the source text and its category passes rule checks | 83 | — |
 
-Analysis: gpt\-5\-mini (cost $0.0111); AI extraction cost $0.0086. Full fact table: CSV export.
+Analysis: gpt\-5\-mini (cost $0.0201); AI extraction cost $0.0086. Full fact table: CSV export.
 
 ## Source appendix (all collected facts)
 
@@ -313,10 +371,6 @@ Analysis: gpt\-5\-mini (cost $0.0111); AI extraction cost $0.0086. Full fact tab
 - F4660 · source\_unavailable · Unavailable · [https://www\.globenewswire\.com/news\-release/2025/01/15/3009819/0/en/Wultra\-Secures\-3M\-to\-Protect\-Financial\-Institutions\-from\-Quantum\-Threats\.html](https://www.globenewswire.com/news-release/2025/01/15/3009819/0/en/Wultra-Secures-3M-to-Protect-Financial-Institutions-from-Quantum-Threats.html)
 - F4661 · press\_mention · Sourced · [https://www\.therecursive\.com/czech\-wultra\-raises\-eur6\-8m\-series\-a\-to\-expand\-post\-quantum\-digital\-identity\-platform](https://www.therecursive.com/czech-wultra-raises-eur6-8m-series-a-to-expand-post-quantum-digital-identity-platform)
 - F4662 · source\_unavailable · Unavailable · [https://medium\.com/wultra\-blog](https://medium.com/wultra-blog)
-- F5546 · gov\_contract · Sourced · [https://smlouvy\.gov\.cz/smlouva/39855369](https://smlouvy.gov.cz/smlouva/39855369)
-- F5547 · grant\_national · Sourced · [https://www\.hlidacstatu\.cz/Dotace/Detail/Covid\-66F2A0C9D621A3DF40E30EB3EFC81EEB29372C85044499F21CD2EB2B0EE51FC4](https://www.hlidacstatu.cz/Dotace/Detail/Covid-66F2A0C9D621A3DF40E30EB3EFC81EEB29372C85044499F21CD2EB2B0EE51FC4)
-- F5548 · source\_check · Checked · no results · [https://cordis\.europa\.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27Wultra%27](https://cordis.europa.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27Wultra%27)
-- F5549 · source\_unavailable · Unavailable · [https://starfos\.tacr\.cz](https://starfos.tacr.cz)
 - F6260 · product\_capability · Medium confidence · [https://www\.wultra\.com/](https://www.wultra.com/)
 - F6261 · product\_capability · Medium confidence · [https://www\.wultra\.com/](https://www.wultra.com/)
 - F6262 · product\_capability · Medium confidence · [https://www\.wultra\.com/](https://www.wultra.com/)
@@ -405,3 +459,7 @@ Analysis: gpt\-5\-mini (cost $0.0111); AI extraction cost $0.0086. Full fact tab
 - F6401 · verification · Sourced · [https://ares\.gov\.cz/ekonomicke\-subjekty\-v\-be/rest/ekonomicke\-subjekty\-vr/03643174](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174)
 - F6402 · verification · Sourced · [https://ares\.gov\.cz/ekonomicke\-subjekty\-v\-be/rest/ekonomicke\-subjekty\-vr/03643174](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174)
 - F6404 · verification · Sourced · [https://cdn\.prod\.website\-files\.com/64fcce0d2e203c1c077a8c04/65c3aad8f10872792c8a7013\_Wultra\_CaseStudy\_OTP\_Bank\.pdf](https://cdn.prod.website-files.com/64fcce0d2e203c1c077a8c04/65c3aad8f10872792c8a7013_Wultra_CaseStudy_OTP_Bank.pdf)
+- F7842 · gov\_contract · Sourced · [https://smlouvy\.gov\.cz/smlouva/39855369](https://smlouvy.gov.cz/smlouva/39855369)
+- F7843 · grant\_national · Sourced · [https://www\.hlidacstatu\.cz/Dotace/Detail/Covid\-66F2A0C9D621A3DF40E30EB3EFC81EEB29372C85044499F21CD2EB2B0EE51FC4](https://www.hlidacstatu.cz/Dotace/Detail/Covid-66F2A0C9D621A3DF40E30EB3EFC81EEB29372C85044499F21CD2EB2B0EE51FC4)
+- F7844 · source\_check · Checked · no results · [https://cordis\.europa\.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27Wultra%27](https://cordis.europa.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27Wultra%27)
+- F7845 · source\_unavailable · Unavailable · [https://starfos\.tacr\.cz](https://starfos.tacr.cz)

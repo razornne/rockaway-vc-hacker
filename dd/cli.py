@@ -192,6 +192,18 @@ def cmd_site(args, ctx):
     print(f"{len(paths)} files written to {paths[-1].parent}")
 
 
+def cmd_label_sheet(args, ctx):
+    from dd.labels import write_sheet
+    out = Path(args.output)
+    n = write_sheet(ctx.store, [c.strip() for c in args.ids.split(",")], out)
+    print(f"{n} statements written to {out}")
+
+
+def cmd_label_score(args, ctx):
+    from dd.labels import score
+    print(score(Path(args.path)))
+
+
 def main(argv=None):
     sys.stdout.reconfigure(encoding="utf-8")  # Windows console (cp1251)
     p = argparse.ArgumentParser(prog="dd")
@@ -211,6 +223,9 @@ def main(argv=None):
     sub.add_parser('eval')
     d = sub.add_parser('dossier'); d.add_argument('id'); d.add_argument('--output')
     st = sub.add_parser("site"); st.add_argument("--output")
+    ls = sub.add_parser("label-sheet"); ls.add_argument("ids", help="comma-separated company ids")
+    ls.add_argument("--output", required=True)
+    lsc = sub.add_parser("label-score"); lsc.add_argument("path")
     sub.add_parser("models")
     sub.add_parser("spent")
     args = p.parse_args(argv)
@@ -219,7 +234,8 @@ def main(argv=None):
     {"seed": cmd_seed, "add": cmd_add, "collectors": cmd_collectors, "resolve": cmd_resolve,
      "collect": cmd_collect, "facts": cmd_facts,
      "extract": cmd_extract, "analyze": cmd_analyze, "verify": cmd_verify, "eval": cmd_eval, "dossier": cmd_dossier,
-     "models": cmd_models, "spent": cmd_spent, "site": cmd_site}[args.cmd](args, ctx)
+     "models": cmd_models, "spent": cmd_spent, "site": cmd_site,
+     "label-sheet": cmd_label_sheet, "label-score": cmd_label_score}[args.cmd](args, ctx)
 
 
 if __name__ == "__main__":

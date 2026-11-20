@@ -20,7 +20,7 @@ SECTION_TITLES = {
     "investment_case": "Case for and against",
     "ownership": "Ownership and capital",
     "tech_profile": "Technology profile",
-    "rebuild_check": "Rebuild check",
+    "rebuild_check": "What could be rebuilt, and what cannot be judged from outside",
     "risk_flags": "Risks and caveats",
     "questions": "Questions for founders",
 }
@@ -31,6 +31,8 @@ LABEL_TITLES = {
     "product": "Product", "stage_traction": "Stage & traction", "technology_moat": "Technology & moat",
     "key_risk": "Key risk", "diligence_focus": "Diligence focus",
     "commodity": "Commodity", "hard": "Hard to copy", "verdict": "Verdict",
+    "replicable": "Replicable with off-the-shelf parts", "evidenced_edge": "Edge supported by public evidence",
+    "not_assessable": "Cannot be judged from outside",
     "sector": "Sector", "stage_ticket": "Stage & ticket", "portfolio_overlap": "Portfolio overlap",
     "for": "For", "against": "Against", "must_be_true": "Must be true",
 }
@@ -74,7 +76,11 @@ def glance_rows(signals: dict | None) -> list[tuple[str, str, list[int]]]:
         # a total over all contracts would add research-project budgets to purchases: show the split instead
         contracts = (f"{pm['contracts']} contract(s) in the contract register" if kinds and pm.get("contracts") else
                      money(pm.get("contracts", 0), "contract", pm.get("contracts_czk") or 0, pm.get("contracts_unpriced", 0)))
-        parts = [contracts, money(pm.get("grants", 0), "grant", pm.get("grants_czk") or 0, pm.get("grants_unpriced", 0))]
+        grants = money(pm.get("grants", 0), "grant project", pm.get("grants_czk") or 0, pm.get("grants_unpriced", 0))
+        if grants and pm.get("grants_czk"):
+            grants = grants.replace(", ", " awarded ", 1) + (
+                f", {_czk(pm['grants_paid_czk'])} paid so far" if pm.get("grants_paid_czk") else "")
+        parts = [contracts, grants]
         text = "; ".join(x for x in parts if x)
         if kinds:
             names = (("purchase", "purchase(s) by public buyers"), ("rd_project", "R&D project agreement(s), amounts are "

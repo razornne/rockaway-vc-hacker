@@ -56,7 +56,7 @@ This matches the NBER survey by Gompers et al., where about 20% of deals come th
 Outside Czechia a radar would rely on press, accelerators and earlier rounds.
 
 **7. The thesis on the website is not the same as the actual deals.**
-- Website: late seed / Series A, finished product and customers.
+- Fund page: late seed / Series A (elsewhere on the same page: seed to Series A), proven product and early customers.
 - 2026 reality: a €12M pre-seed (ValkaAI); seed rounds in companies less than a year old.
 - The deals include consumer marketplaces (Campiri, Remix, Raus), although the stated sectors are AI and deep tech.
 

@@ -1,89 +1,152 @@
 # Vermeer — due diligence brief
 
-getvermeer\.com · US · 2026\-11\-17
+getvermeer\.com · US · 2026\-11\-20
 
 **How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — combines independent evidence with the company's own statements; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
 
 ## TL;DR
 
-- **Product.** Vermeer sells a Visual Positioning System \(VPS\) enabling drones and aerial platforms to determine absolute location in GPS‑denied or contested environments using multi‑camera vision and pre‑generated maps\. *(Partly verified)* ^[1](https://www.getvermeer.com/),[2](https://vestbee.com/insights/articles/vermeer-raises-funds),[3](https://www.rockawaycapital.com/en/news/from-hollywood-studios-to-the-frontlines-rockaway-ventures-invests-in-vermeer-the-startup-enabling-drones-to-fly-without-gps)
-- **Stage & traction.** Company closed a $10M Series A led by Draper Associates with participation from Rockaway and others and reports &gt;30 customers and defense partnerships\. *(Partly verified)* ^[4](https://scroll.media/en/2025/10/23/vermeer-raises-10m),[5](https://www.getvermeer.com/news),[6](https://cc.cz/z-hollywoodskych-studii-na-ukrajinskou-frontu-pomahaji-dronum-a-nabiraji-pres-200-milionu/)
-- **Technology & moat.** Claims include cameras \+ Nvidia‑powered AI and listed US patent numbers, but independent patent search found no publications under 'Vermeer', leaving IP moat unclear\. *(Partly verified)* ^[7](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation),[8](https://www.getvermeer.com/patents),[9](https://patents.google.com/?assignee=vermeer)
-- **Key risk.** Core IP and defensive claims \(granted patents, proprietary training footage\) are unverified or contradicted by patent search, risking easy competitive replication or procurement risk for defense customers\. *(Analyst view)* ^[9](https://patents.google.com/?assignee=vermeer),[7](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation)
-- **Diligence focus.** First verify patent grant status and assignees, then confirm contractual customer references \(the &gt;30 customers and named defense partners\) to validate revenue durability\. *(Analyst view)* ^[8](https://www.getvermeer.com/patents),[6](https://cc.cz/z-hollywoodskych-studii-na-ukrajinskou-frontu-pomahaji-dronum-a-nabiraji-pres-200-milionu/),[10](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation)
+- **Product.** An optical Visual Positioning System \(VPS\) that enables drones and aerial platforms to determine absolute location in GPS\-denied environments, sold for defense and commercial aerial autonomy\. *(Partly verified)* ^[1](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation),[2](https://scroll.media/en/2025/10/23/vermeer-raises-10m),[3](https://www.getvermeer.com/)
+- **Stage & traction.** Closed a $10M Series A with Draper Associates and others; press cites &gt;30 customers and partnerships with defence organisations and drone OEMs\. *(Partly verified)* ^[4](https://scroll.media/en/2025/10/23/vermeer-raises-10m),[5](https://www.getvermeer.com/news),[6](https://cc.cz/z-hollywoodskych-studii-na-ukrajinskou-frontu-pomahaji-dronum-a-nabiraji-pres-200-milionu/),[7](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation)
+- **Technology & moat.** Claims centre on passive, multi‑camera visual navigation using prebuilt maps and AI—harder to replicate at scale because of training data and mapping, though public evidence for proprietary IP is mixed\. *(Corroborated)* ^[8](https://www.rockawaycapital.com/en/news/from-hollywood-studios-to-the-frontlines-rockaway-ventures-invests-in-vermeer-the-startup-enabling-drones-to-fly-without-gps),[9](https://vestbee.com/insights/articles/vermeer-raises-funds),[10](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation),[11](https://cc.cz/z-hollywoodskych-studii-na-ukrajinskou-frontu-pomahaji-dronum-a-nabiraji-pres-200-milionu/)
+- **Key risk.** Material IP and technical\-uniqueness claims are inconsistent with an independent patent check that did not find Vermeer publications under that assignee\. *(Analyst view)* ^[12](https://www.getvermeer.com/patents),[13](https://www.getvermeer.com/patents),[14](https://www.getvermeer.com/patents),[15](https://patents.google.com/?assignee=vermeer)
+- **Diligence focus.** Verify asserted patents/ownership, demand representative flight logs and mapping/data provenance, and obtain redacted customer purchase orders to confirm revenue and integration depth\. *(Analyst view)* ^[15](https://patents.google.com/?assignee=vermeer),[12](https://www.getvermeer.com/patents),[6](https://cc.cz/z-hollywoodskych-studii-na-ukrajinskou-frontu-pomahaji-dronum-a-nabiraji-pres-200-milionu/)
 
 ## At a glance (computed by code, no LLM)
 
 | Signal | Value | Sources |
 |---|---|---|
-| Funding \(press\) | 2025\-10\-23 · Series A · $10 million · Rockaway Ventures, Draper Associates, AeroX Ventures, Boscolo Intervest, High Point Ventur · 5 reports | 11, 4, 12, 5, 13 |
-| AI dependency | no LLM vendor named as subprocessor or in own tech claims; own\-model evidence: 10 papers, 0 verified HF models, 0 ML roles, 4 own\-model claims | 14, 8, 15 |
+| Funding \(press\) | 2025\-10\-23 · Series A · $10 million · Rockaway Ventures, Draper Associates, AeroX Ventures, Boscolo Intervest, High Point Ventur · 5 reports | 16, 4, 17, 5, 18 |
+| Thesis fit \(Rockaway\) | sectors: AI\-led transformative tech \(11 facts\); deep tech \(11 facts\); defence / dual\-use \(8 facts\); industrial / manufacturing AI \(3 facts\) · geography: US · overlaps portfolio: URC Systems, spol\. s r\.o\. \(drone, electro, jamming\), JISR Institute, a\.s\. \(drone, forces\) | 19, 20, 21, 22, 23 |
+| AI dependency | no LLM vendor named as subprocessor or in own tech claims; own\-model evidence: 10 papers, 0 verified HF models, 0 ML roles, 4 own\-model claims | 24, 12, 13 |
 | Engineering footprint | stack: Cloudflare, Webflow |  |
-| Claims checked | Patents: not found | 9 |
-| Timeline | first press 2025\-10\-23 \(9 articles collected\) | 16 |
+| Claims checked | Patents: not found | 15 |
+| Timeline | first press 2025\-10\-23 \(9 articles collected\) | 23 |
 
-# Detailed findings
+# Investment view
+
+*Inputs for the partner's memo, not a recommendation: what the evidence says about the business, the market, competitors and fit with the fund, and the case for and against\.*
+
+## Fit with the Rockaway thesis
+
+- **Sector:** Defence / dual\-use and AI\-led navigation — company positions VPS as GPS\-denied visual navigation for drones used in contested environments\. *(Analyst view)* ^[25](https://vestbee.com/insights/articles/vermeer-raises-funds),[1](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation),[26](https://www.getvermeer.com/team)
+  - Assumption: Company positioning claims reflect product\-market fit\.
+- **Portfolio overlap:** URC Systems / JISR\-like anti\-drone capabilities could be complementary \(sensor/navigation vs\. EW/jamming\); overlapping buyer is defence customers\. *(Analyst view)* ^[25](https://vestbee.com/insights/articles/vermeer-raises-funds),[7](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation),[23](https://www.rockawaycapital.com/en/news/from-hollywood-studios-to-the-frontlines-rockaway-ventures-invests-in-vermeer-the-startup-enabling-drones-to-fly-without-gps)
+  - Assumption: Rockaway portfolio companies target defense drone\-related buyers\.
+
+## Business model
+
+- Primary monetization: sell/integrate VPS optical navigation into aerial platforms and OEM drone models\. *(Analyst view)* ^[8](https://www.rockawaycapital.com/en/news/from-hollywood-studios-to-the-frontlines-rockaway-ventures-invests-in-vermeer-the-startup-enabling-drones-to-fly-without-gps),[2](https://scroll.media/en/2025/10/23/vermeer-raises-10m),[9](https://vestbee.com/insights/articles/vermeer-raises-funds)
+  - Assumption: Sales are device or integration licenses to OEMs and integrators\.
+- Early commercial traction: claims of more than 30 customers and integration with Draganfly’s Commander 3XL\. *(Analyst view)* ^[6](https://cc.cz/z-hollywoodskych-studii-na-ukrajinskou-frontu-pomahaji-dronum-a-nabiraji-pres-200-milionu/)
+  - Assumption: Customer count implies recurring or one\-time sales\.
+- Funding: recently closed a $10M Series A led by Draper Associates with Rockaway participating, providing growth capital\. *(Analyst view)* ^[4](https://scroll.media/en/2025/10/23/vermeer-raises-10m),[17](https://vestbee.com/insights/articles/vermeer-raises-funds),[5](https://www.getvermeer.com/news)
+  - Assumption: Proceeds will be allocated to product scaling and ops\.
+
+## Market
+
+- Demand driver: resilience against jamming/spoofing — defence and contested\-environment operations highlighted by press and company\. *(Analyst view)* ^[1](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation),[27](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation),[26](https://www.getvermeer.com/team)
+  - Assumption: Defence procurement prioritizes GPS\-denial resilience\.
+- Commercial use\-cases cited: autonomous vehicles, remote delivery and industrial aerial applications\. *(Analyst view)* ^[11](https://cc.cz/z-hollywoodskych-studii-na-ukrajinskou-frontu-pomahaji-dronum-a-nabiraji-pres-200-milionu/),[2](https://scroll.media/en/2025/10/23/vermeer-raises-10m)
+  - Assumption: Company statements reflect intended TAM segments\.
+
+## Competition
+
+No sourced findings for this section.
+
+## Case for and against
+
+- **For:** Technology claim — VPS provides passive, signal\-independent GPS\-free positioning supported by multiple product and tech statements\. *(Analyst view)* ^[25](https://vestbee.com/insights/articles/vermeer-raises-funds),[9](https://vestbee.com/insights/articles/vermeer-raises-funds),[27](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation)
+  - Assumption: Product works as described in operational environments\.
+- **For:** Traction and partnerships — &gt;30 customers claimed and stated partnerships with US defence organisations and major contractors\. *(Analyst view)* ^[6](https://cc.cz/z-hollywoodskych-studii-na-ukrajinskou-frontu-pomahaji-dronum-a-nabiraji-pres-200-milionu/),[7](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation),[28](https://vestbee.com/insights/articles/vermeer-raises-funds)
+  - Assumption: Partnerships translate into paid integrations or pilots\.
+- **Against:** Intellectual property ambiguity — company web patents listed yet an external patent search returned no Vermeer assignee entries\. *(Analyst view)* ^[12](https://www.getvermeer.com/patents),[13](https://www.getvermeer.com/patents),[15](https://patents.google.com/?assignee=vermeer)
+  - Assumption: Patent listings may be incomplete or use different assignee names\.
+- **Against:** Operational/geopolitical risk — team and operations include Kyiv\-based staff and Ukrainian operations, which may pose risk to continuity\. *(Analyst view)* ^[29](https://scroll.media/en/2025/10/23/vermeer-raises-10m),[30](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation)
+  - Assumption: Geopolitical events could affect Ukraine operations\.
+- **Must be true:** Confirm patents and enforceability — verify issued patents, assignees, and scope for core VPS features\. *(Analyst view)* ^[12](https://www.getvermeer.com/patents),[13](https://www.getvermeer.com/patents),[14](https://www.getvermeer.com/patents),[15](https://patents.google.com/?assignee=vermeer)
+  - Assumption: Patent clarity materially affects defensibility\.
+- **Must be true:** Validate commercial revenue and contract types — obtain customer lists, revenue run\-rate, and whether defence partnerships are paid purchase contracts\. *(Analyst view)* ^[6](https://cc.cz/z-hollywoodskych-studii-na-ukrajinskou-frontu-pomahaji-dronum-a-nabiraji-pres-200-milionu/),[28](https://vestbee.com/insights/articles/vermeer-raises-funds),[7](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation)
+  - Assumption: Customer count alone insufficient to prove sustainable revenue\.
+
+# Technical due diligence
 
 ## Ownership and capital
 
-- Series A $10M reported \(Oct 2025\) with Draper Associates lead and participation from Rockaway Ventures, AeroX, Boscolo Intervest, High Point, and a U\.S\. Air Force Techstars connection\. *(Partly verified)* ^[4](https://scroll.media/en/2025/10/23/vermeer-raises-10m),[5](https://www.getvermeer.com/news),[13](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation),[17](https://www.draper.vc/portfolio/vermeer),[16](https://www.rockawaycapital.com/en/news/from-hollywood-studios-to-the-frontlines-rockaway-ventures-invests-in-vermeer-the-startup-enabling-drones-to-fly-without-gps)
+- Series A: multiple sources report a closed $10M Series A \(lead mentions include Draper Associates; named participants include Rockaway Ventures and US Air Force Techstars\)\. *(Partly verified)* ^[5](https://www.getvermeer.com/news),[4](https://scroll.media/en/2025/10/23/vermeer-raises-10m),[17](https://vestbee.com/insights/articles/vermeer-raises-funds),[18](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation)
+- Operational footprint: website and crawl indicate a US presence; no Czech IČO on site \(registry flag\)\. *(Company claim)* ^[31](https://getvermeer.com/),[32](https://www.getvermeer.com/)
 
 ## Technology profile
 
-- Product capabilities: VPS claims GPS‑free absolute localization for aerial platforms, passive operation, mixed‑reality previsualization, and named SKUs \(AVA, VPS‑212, VPS‑160\)\. *(Company claim)* ^[1](https://www.getvermeer.com/),[18](https://www.getvermeer.com/news),[14](https://www.getvermeer.com/patents)
-- Engineering footprint: Public site and patents page exist; site hosted on Webflow/Cloudflare; a GitHub org named AeroboDrones/Vermeer exists but no linked public product repos shown\. *(Partly verified)* ^[19](https://www.getvermeer.com/),[20](https://www.getvermeer.com/),[21](https://www.getvermeer.com/),[22](https://github.com/AeroboDrones)
-- AI dependency and assets: Company states use of Nvidia‑powered AI and thousands of hours of aerial footage for training; no verified LLM vendor dependency documented\. *(Single source)* ^[7](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation),[10](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation)
+- Core product capabilities claimed: VPS uses up to four electro‑optical/IR cameras, pre‑generated 2D/3D maps, and Nvidia‑powered AI to provide passive GPS‑free positioning\. *(Corroborated)* ^[8](https://www.rockawaycapital.com/en/news/from-hollywood-studios-to-the-frontlines-rockaway-ventures-invests-in-vermeer-the-startup-enabling-drones-to-fly-without-gps),[9](https://vestbee.com/insights/articles/vermeer-raises-funds),[10](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation)
+- Surfaces and footprint: public presence is primarily marketing site, press and careers pages; no public developer docs or product APIs indexed in the evidence\. *(Company claim)* ^[32](https://www.getvermeer.com/),[33](https://www.getvermeer.com/news),[34](https://vermeer.homerun.co/)
+- Engineering signals: site hosted via Webflow and Cloudflare; a GitHub organization exists \(AeroboDrones\) with public repos, but no linked product repos or documentation were provided\. *(Verified)* ^[35](https://www.getvermeer.com/),[36](https://www.getvermeer.com/),[37](https://github.com/AeroboDrones)
 
-## Rebuild check
+## What could be rebuilt, and what cannot be judged from outside
 
-- **Commodity:** Passive camera‑based absolute localization \(single‑platform VPS\) — a competent 2–3 person team can prototype visual localization using open CV and public mapping APIs in weeks\. *(Analyst view)* ^[1](https://www.getvermeer.com/),[23](https://vestbee.com/insights/articles/vermeer-raises-funds)
-  - Assumption: Use of public datasets and off‑the‑shelf ML APIs
-- **Hard to copy:** Claimed advantage — thousands of hours of aerial footage, Nvidia‑powered models, named defense partnerships and CMMC Level 2 assertion suggest nontrivial data, integration and compliance barriers to copy\. *(Analyst view)* ^[7](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation),[10](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation),[24](https://www.getvermeer.com/news)
-  - Assumption: Partnerships imply access to realistic operational data
-- **Verdict:** Month — a functional visual localisation prototype can be built in \~1 month; a clone would lack Vermeer's claimed dataset, verified patents, and defense integrations\. *(Analyst view)* ^[1](https://www.getvermeer.com/),[7](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation),[9](https://patents.google.com/?assignee=vermeer)
-  - Assumption: No access to Vermeer’s claimed proprietary footage or partner contracts
+- **Replicable with off-the-shelf parts:** Multi‑camera passive localization using cameras, prebuilt maps and Nvidia inference could be reassembled from off‑the‑shelf cameras, OpenCV\-like libraries, mapping tools and Nvidia SDKs \(public components\)\. *(Analyst view)* ^[8](https://www.rockawaycapital.com/en/news/from-hollywood-studios-to-the-frontlines-rockaway-ventures-invests-in-vermeer-the-startup-enabling-drones-to-fly-without-gps),[9](https://vestbee.com/insights/articles/vermeer-raises-funds),[10](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation)
+  - Assumption: Assumes access to comparable aerial mapping datasets and compute\.
+- **Edge supported by public evidence:** Public evidence of commercial traction \(&gt;30 customers\) and named defence/prime partnerships supports market adoption and integration as a defensible commercial edge\. *(Analyst view)* ^[6](https://cc.cz/z-hollywoodskych-studii-na-ukrajinskou-frontu-pomahaji-dronum-a-nabiraji-pres-200-milionu/),[7](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation),[4](https://scroll.media/en/2025/10/23/vermeer-raises-10m)
+  - Assumption: Assumes reported partnerships represent technical integrations, not only NDA talks\.
+- **Cannot be judged from outside:** Cannot externally validate algorithmic accuracy, mapping/data provenance, or robustness in contested RF environments without code, models, labeled datasets and flight logs\. *(Analyst view)* ^[20](https://www.getvermeer.com/),[38](https://www.getvermeer.com/),[15](https://patents.google.com/?assignee=vermeer)
+  - Assumption: Assumes no third‑party reproducibility reports were published\.
 
 ## Risks and caveats
 
-- Patent claims vs independent search contradiction: company lists US patent numbers on its site but independent Google Patents search returned no publications for 'Vermeer' assignee\. *(Analyst view)* ^[8](https://www.getvermeer.com/patents),[15](https://www.getvermeer.com/patents),[25](https://www.getvermeer.com/patents),[9](https://patents.google.com/?assignee=vermeer)
-- Customer/partner concentration risk: many defense partnerships named \(US Army/USAF/Lockheed/Northrop\) which can create procurement, export control, and dependency risk\. *(Analyst view)* ^[10](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation),[6](https://cc.cz/z-hollywoodskych-studii-na-ukrajinskou-frontu-pomahaji-dronum-a-nabiraji-pres-200-milionu/)
-- Thin public engineering trace: site on Webflow/Cloudflare and a GitHub org exist but no identified public product repos or docs to validate engineering depth\. *(Analyst view)* ^[20](https://www.getvermeer.com/),[21](https://www.getvermeer.com/),[22](https://github.com/AeroboDrones)
+- Unverified IP claims: company lists US patent numbers on its site, but an independent patent search did not find Vermeer as assignee—this inconsistency is a material diligence red flag\. *(Analyst view)* ^[12](https://www.getvermeer.com/patents),[13](https://www.getvermeer.com/patents),[14](https://www.getvermeer.com/patents),[15](https://patents.google.com/?assignee=vermeer)
+  - Assumption: Assumes the public patent search correctly matched assignee names\.
+- Concentration / dependency risk: reported partnerships with defence primes and mention of US Air Force Techstars may create dependence on a small set of large defence customers or programmes\. *(Analyst view)* ^[7](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation),[4](https://scroll.media/en/2025/10/23/vermeer-raises-10m)
+  - Assumption: Assumes partnerships translate to meaningful revenue share\.
+- Limited public engineering artefacts: no product docs or API surfaces and few public repos tied to the product, complicating technical verification from open sources\. *(Analyst view)* ^[32](https://www.getvermeer.com/),[33](https://www.getvermeer.com/news),[37](https://github.com/AeroboDrones)
+  - Assumption: Assumes internal repositories are private and not publicly indexed\.
 
 ## Questions for founders
 
-- Please produce chain‑of‑title and grant documents for the cited U\.S\. patents \(12,705,791; 12,366,459; 11,355,019\) given the patent search returned no matching assignee\. *(Analyst view)* ^[8](https://www.getvermeer.com/patents),[15](https://www.getvermeer.com/patents),[25](https://www.getvermeer.com/patents),[9](https://patents.google.com/?assignee=vermeer)
-- Provide three signed customer references \(including contactable POC and contract terms\) from the &gt;30 customers, and clarify paid vs PoC status\. *(Analyst view)* ^[6](https://cc.cz/z-hollywoodskych-studii-na-ukrajinskou-frontu-pomahaji-dronum-a-nabiraji-pres-200-milionu/),[26](https://vestbee.com/insights/articles/vermeer-raises-funds)
-- Document the proprietary dataset: size, provenance, labeling process, and exclusivity of the 'thousands of hours' of aerial footage used to train the Nvidia models\. *(Analyst view)* ^[7](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation)
-- Confirm CMMC Level 2 final assessment evidence and scope \(systems covered\), since the claim supports defense contracting trust assumptions\. *(Analyst view)* ^[24](https://www.getvermeer.com/news)
+- Please provide definitive patent chain‑of‑title and published patent documents or assignment records to reconcile the site’s patent numbers with the independent search\. *(Analyst view)* ^[12](https://www.getvermeer.com/patents),[15](https://patents.google.com/?assignee=vermeer)
+- Request redacted customer purchase orders or three reference POs showing recurring revenue and scope for the reported &gt;30 customers to confirm commercial depth\. *(Analyst view)* ^[6](https://cc.cz/z-hollywoodskych-studii-na-ukrajinskou-frontu-pomahaji-dronum-a-nabiraji-pres-200-milionu/),[28](https://vestbee.com/insights/articles/vermeer-raises-funds)
+- Ask for representative flight logs, map‑build pipelines, and labeled validation datasets used for training/validation to assess accuracy and generalization claims\. *(Analyst view)* ^[9](https://vestbee.com/insights/articles/vermeer-raises-funds),[20](https://www.getvermeer.com/)
+- Clarify the technical nature and legal status of reported defence/prime partnerships \(integration contracts vs\. exploratory engagements\)\. *(Analyst view)* ^[7](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation),[4](https://scroll.media/en/2025/10/23/vermeer-raises-10m)
 
 ## Sources
 
-1. [getvermeer\.com](https://www.getvermeer.com/) · Company's own website · Product capability — “Determine your absolute location in GPS denied environments for your aerial platform\.”
-2. [vestbee\.com](https://vestbee.com/insights/articles/vermeer-raises-funds) · Independent press · Technical claim — “Vermeer develops Visual Positioning Systems \(VPS\), technology that enables drones and other autonomous vehicles to navigate without GPS\.”
-3. [rockawaycapital\.com](https://www.rockawaycapital.com/en/news/from-hollywood-studios-to-the-frontlines-rockaway-ventures-invests-in-vermeer-the-startup-enabling-drones-to-fly-without-gps) · Independent press · Product capability — “VPS uses up to four electro\-optical or infrared cameras combined with pre\-generated 2D or 3D maps\.”
+1. [optics\.org](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation) · Independent press · Product capability — “Vermeer's "visual positioning system" \(VPS\) enables drone navigation without conventional GPS \- making the unmanned aerial vehicles immune to jamming and spoofing by Russia's opposition forces\.”
+2. [scroll\.media](https://scroll.media/en/2025/10/23/vermeer-raises-10m) · Independent press · Product capability — “The raised funds will be used to scale the company’s optical navigation platform for both defense and commercial use\.”
+3. [getvermeer\.com](https://www.getvermeer.com/) · Company's own website · Product capability — “Determine your absolute location in GPS denied environments for your aerial platform\.”
 4. [scroll\.media](https://scroll.media/en/2025/10/23/vermeer-raises-10m) · Independent press · Funding round — “The company closed its Series A $10 million round, with participation from AeroX Ventures, Boscolo Intervest, High Point Ventures, Rockaway Ventures, and U\.S\. Air Force Techstars\.”
 5. [getvermeer\.com](https://www.getvermeer.com/news) · Company's own website · Funding round — “Vermeer Raises 10M in Series A”
 6. [cc\.cz](https://cc.cz/z-hollywoodskych-studii-na-ukrajinskou-frontu-pomahaji-dronum-a-nabiraji-pres-200-milionu/) · Independent press · Customer — “Vermeer už má více než 30 zákazníků a spolupracuje například s kanadským výrobcem dronů Draganfly, který integruje VPS do modelu Commander 3XL\.”
-7. [optics\.org](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation) · Independent press · Technical claim — “Instead of GPS and radiofrequency signals, Vermeer's approach relies on up to four infrared cameras, combined with thousands of hours of aerial video footage and Nvidia\-powered AI technology\.”
-8. [getvermeer\.com](https://www.getvermeer.com/patents) · Company's own website · Technical claim — “Localization Processing Service”
-9. [patents\.google\.com](https://patents.google.com/?assignee=vermeer) · Official record · Independent check of a claim — “No publication with assignee 'Vermeer' \(or a listed legal name\) on Google Patents; other assignees sharing the name were excluded\.”
-10. [optics\.org](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation) · Independent press · Integration — “Vermeer says it has since partnered with the US Army, the US Air Force, Lockheed Martin, Northrop Grumman, and other defense organizations, as well as the AFU\.”
-11. [cc\.cz](https://cc.cz/z-hollywoodskych-studii-na-ukrajinskou-frontu-pomahaji-dronum-a-nabiraji-pres-200-milionu/) · Independent press · Funding round — “Čeští investoři z Rockaway Ventures se podíleli na investici do amerického startupu Vermeer”
-12. [vestbee\.com](https://vestbee.com/insights/articles/vermeer-raises-funds) · Independent press · Funding round — “Vermeer will use the $10 million Series A funding to advance its Visual Positioning System \(VPS\), increase production capacity, and scale global operations\.”
-13. [optics\.org](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation) · Independent press · Funding round — “Vermeer , a New York\-based startup with significant operations in Ukraine, says it has raised $10 million in series A venture funding to scale its optical navigational technology platform for drones\.”
-14. [getvermeer\.com](https://www.getvermeer.com/patents) · Company's own website · Product capability — “Applicable Products: AVA, VPS\-212, VPS\-160”
-15. [getvermeer\.com](https://www.getvermeer.com/patents) · Company's own website · Technical claim — “Localization Processing Service and Observed Scene Reconstruction Service”
-16. [rockawaycapital\.com](https://www.rockawaycapital.com/en/news/from-hollywood-studios-to-the-frontlines-rockaway-ventures-invests-in-vermeer-the-startup-enabling-drones-to-fly-without-gps) · Independent press · Press article · 2025\-10\-23 — “From Hollywood Studios to the Frontlines: Rockaway Ventures Invests in Vermeer, the Startup Enabling Drones to Fly Without GPS – Rockaway Capital”
-17. [draper\.vc](https://www.draper.vc/portfolio/vermeer) · Independent press · Press article — “Vermeer \| Portfolio Company \| DRAPER ASSOCIATES”
-18. [getvermeer\.com](https://www.getvermeer.com/news) · Company's own website · Technical claim — “Vermeer: Mixed Reality to Previsualize Drone Missions”
-19. [getvermeer\.com](https://www.getvermeer.com/) · Company's own website · Website page — “See the world \- Vermeer”
-20. [getvermeer\.com](https://www.getvermeer.com/) · Public technical artifact · Technology detected
-21. [getvermeer\.com](https://www.getvermeer.com/) · Public technical artifact · Technology detected
-22. [github\.com](https://github.com/AeroboDrones) · Public technical artifact · GitHub organisation · 2017\-10\-02 — “AeroboDrones · 3 public repos”
-23. [vestbee\.com](https://vestbee.com/insights/articles/vermeer-raises-funds) · Independent press · Technical claim — “The system uses electro\-optical or infrared cameras to analyze the environment and match it to 2D or 3D visual maps, determining precise location even when satellite signals are jammed or unavailable\.”
-24. [getvermeer\.com](https://www.getvermeer.com/news) · Company's own website · Technical claim — “PR Newswire: Vermeer Achieves Final Assessment Status for CMMC Level 2, Strengthening Its Position as a Trusted Defense Technology Partner”
-25. [getvermeer\.com](https://www.getvermeer.com/patents) · Company's own website · Technical claim — “Motion Tracking Interface for Planning Travel Path”
-26. [vestbee\.com](https://vestbee.com/insights/articles/vermeer-raises-funds) · Independent press · Customer — ““Our goal isn’t just to give drones mass, it’s to give them precision, intelligence, and purpose\. We’re proud to have earned the trust of over 30 customers, and with the support of Draper, and our other venture partners, we’re ready to scale that mission," claims Brian Streem, CEO of Vermeer\.”
+7. [optics\.org](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation) · Independent press · Integration — “Vermeer says it has since partnered with the US Army, the US Air Force, Lockheed Martin, Northrop Grumman, and other defense organizations, as well as the AFU\.”
+8. [rockawaycapital\.com](https://www.rockawaycapital.com/en/news/from-hollywood-studios-to-the-frontlines-rockaway-ventures-invests-in-vermeer-the-startup-enabling-drones-to-fly-without-gps) · Independent press · Product capability — “VPS uses up to four electro\-optical or infrared cameras combined with pre\-generated 2D or 3D maps\.”
+9. [vestbee\.com](https://vestbee.com/insights/articles/vermeer-raises-funds) · Independent press · Technical claim — “The system uses electro\-optical or infrared cameras to analyze the environment and match it to 2D or 3D visual maps, determining precise location even when satellite signals are jammed or unavailable\.”
+10. [optics\.org](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation) · Independent press · Technical claim — “Instead of GPS and radiofrequency signals, Vermeer's approach relies on up to four infrared cameras, combined with thousands of hours of aerial video footage and Nvidia\-powered AI technology\.”
+11. [cc\.cz](https://cc.cz/z-hollywoodskych-studii-na-ukrajinskou-frontu-pomahaji-dronum-a-nabiraji-pres-200-milionu/) · Independent press · Technical claim — “Řešení má využití nejen v obranném průmyslu, ale také v autonomních vozidlech nebo doručování na dálku\.”
+12. [getvermeer\.com](https://www.getvermeer.com/patents) · Company's own website · Technical claim — “Localization Processing Service”
+13. [getvermeer\.com](https://www.getvermeer.com/patents) · Company's own website · Technical claim — “Localization Processing Service and Observed Scene Reconstruction Service”
+14. [getvermeer\.com](https://www.getvermeer.com/patents) · Company's own website · Technical claim — “Motion Tracking Interface for Planning Travel Path”
+15. [patents\.google\.com](https://patents.google.com/?assignee=vermeer) · Official record · Independent check of a claim — “No publication with assignee 'Vermeer' \(or a listed legal name\) on Google Patents; other assignees sharing the name were excluded\.”
+16. [cc\.cz](https://cc.cz/z-hollywoodskych-studii-na-ukrajinskou-frontu-pomahaji-dronum-a-nabiraji-pres-200-milionu/) · Independent press · Funding round — “Čeští investoři z Rockaway Ventures se podíleli na investici do amerického startupu Vermeer”
+17. [vestbee\.com](https://vestbee.com/insights/articles/vermeer-raises-funds) · Independent press · Funding round — “Vermeer will use the $10 million Series A funding to advance its Visual Positioning System \(VPS\), increase production capacity, and scale global operations\.”
+18. [optics\.org](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation) · Independent press · Funding round — “Vermeer , a New York\-based startup with significant operations in Ukraine, says it has raised $10 million in series A venture funding to scale its optical navigational technology platform for drones\.”
+19. [draper\.vc](https://www.draper.vc/portfolio/vermeer) · Independent press · Press article — “Vermeer \| Portfolio Company \| DRAPER ASSOCIATES”
+20. [getvermeer\.com](https://www.getvermeer.com/) · Company's own website · Technical claim — “We have created a breakthrough in GPS\-denied navigation through computer vision\.”
+21. [openalex\.org](https://openalex.org/W1975506997) · Public technical artifact · Research paper · 2002\-07\-23 — “Long\-term prognosis after recovery from primary intracerebral hemorrhage · Neurology · cited 221×”
+22. [openalex\.org](https://openalex.org/W1989086261) · Public technical artifact · Research paper · 2010\-06\-01 — “A stepped frequency radar for use on Horizontal Directional Drills · International Conference on Ground Penetrating Radar \(GPR\) · cited 2×”
+23. [rockawaycapital\.com](https://www.rockawaycapital.com/en/news/from-hollywood-studios-to-the-frontlines-rockaway-ventures-invests-in-vermeer-the-startup-enabling-drones-to-fly-without-gps) · Independent press · Press article · 2025\-10\-23 — “From Hollywood Studios to the Frontlines: Rockaway Ventures Invests in Vermeer, the Startup Enabling Drones to Fly Without GPS – Rockaway Capital”
+24. [getvermeer\.com](https://www.getvermeer.com/patents) · Company's own website · Product capability — “Applicable Products: AVA, VPS\-212, VPS\-160”
+25. [vestbee\.com](https://vestbee.com/insights/articles/vermeer-raises-funds) · Independent press · Technical claim — “Vermeer develops Visual Positioning Systems \(VPS\), technology that enables drones and other autonomous vehicles to navigate without GPS\.”
+26. [getvermeer\.com](https://www.getvermeer.com/team) · Company's own website · Technical claim — “Vision based autonomy for the future fight\.”
+27. [optics\.org](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation) · Independent press · Technical claim — “Because it is a passive system that does not rely on external signals, VPS is said to be exceptionally reliable in contested environments, and ideal for both defense missions and civilian aerial applications\.”
+28. [vestbee\.com](https://vestbee.com/insights/articles/vermeer-raises-funds) · Independent press · Customer — ““Our goal isn’t just to give drones mass, it’s to give them precision, intelligence, and purpose\. We’re proud to have earned the trust of over 30 customers, and with the support of Draper, and our other venture partners, we’re ready to scale that mission," claims Brian Streem, CEO of Vermeer\.”
+29. [scroll\.media](https://scroll.media/en/2025/10/23/vermeer-raises-10m) · Independent press · Team claim — “Over the past year, the company has grown from 10 to 40 employees, including 8 team members in Ukraine\.”
+30. [optics\.org](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation) · Independent press · Team claim — “That success has seen its workforce quadruple to 40 employees over the past year, with eight of those people working in Ukraine\.”
+31. [getvermeer\.com](https://getvermeer.com/) · Company's own website · Registry: structure
+32. [getvermeer\.com](https://www.getvermeer.com/) · Company's own website · Website page — “See the world \- Vermeer”
+33. [getvermeer\.com](https://www.getvermeer.com/news) · Company's own website · Website page — “News \- Vermeer”
+34. [vermeer\.homerun\.co](https://vermeer.homerun.co/) · Company's own website · Website page — “Vermeer”
+35. [getvermeer\.com](https://www.getvermeer.com/) · Public technical artifact · Technology detected
+36. [getvermeer\.com](https://www.getvermeer.com/) · Public technical artifact · Technology detected
+37. [github\.com](https://github.com/AeroboDrones) · Public technical artifact · GitHub organisation · 2017\-10\-02 — “AeroboDrones · 3 public repos”
+38. [getvermeer\.com](https://www.getvermeer.com/) · Company's own website · Technical claim — “Our solution enables any aerial platform to determine its absolute location in contested, spoofed, and GPS\-denied environments\.”
 
 ## How this dossier was built
 
@@ -100,7 +163,7 @@ getvermeer\.com · US · 2026\-11\-17
 | Claim verification | company claims checked against independent sources: Google Patents \(patents\), IAB Global Vendor List \(TCF\), commercial register \(investors named in press\), security pages \(SOC 2 / ISO attestations\), news search \(customers\) | 1 | — |
 | AI extraction | an LLM reads saved pages and articles and proposes facts; a fact is kept only if its quote is found in the source text and its category passes rule checks | 39 | — |
 
-Analysis: gpt\-5\-mini (cost $0.0085); AI extraction cost $0.0108. Full fact table: CSV export.
+Analysis: gpt\-5\-mini (cost $0.0167); AI extraction cost $0.0108. Full fact table: CSV export.
 
 ## Source appendix (all collected facts)
 
@@ -168,9 +231,6 @@ Analysis: gpt\-5\-mini (cost $0.0085); AI extraction cost $0.0108. Full fact tab
 - F5175 · press\_mention · Sourced · [https://www\.hardwarefyi\.com/startup\-news/vermeer\-raises\-10m\-series\-a/](https://www.hardwarefyi.com/startup-news/vermeer-raises-10m-series-a/)
 - F5176 · source\_unavailable · Unavailable · [https://founderlodge\.com/round/Vermeer\-raises\-10000000\-Series\-A\-2025\-10\-24\-Brian\-Streem\-MjQ1NzY](https://founderlodge.com/round/Vermeer-raises-10000000-Series-A-2025-10-24-Brian-Streem-MjQ1NzY)
 - F5177 · source\_unavailable · Unavailable · [https://en\.wikipedia\.org/wiki/Vermeer\_Corporation](https://en.wikipedia.org/wiki/Vermeer_Corporation)
-- F5518 · source\_unavailable · Unavailable · [https://www\.hlidacstatu\.cz/hledat](https://www.hlidacstatu.cz/hledat)
-- F5519 · source\_check · Checked · no results · [https://cordis\.europa\.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27Vermeer%27](https://cordis.europa.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27Vermeer%27)
-- F5520 · source\_unavailable · Unavailable · [https://starfos\.tacr\.cz](https://starfos.tacr.cz)
 - F5986 · product\_capability · Medium confidence · [https://www\.getvermeer\.com/](https://www.getvermeer.com/)
 - F5987 · product\_capability · Medium confidence · [https://www\.getvermeer\.com/](https://www.getvermeer.com/)
 - F5988 · product\_capability · Medium confidence · [https://www\.getvermeer\.com/](https://www.getvermeer.com/)
@@ -211,3 +271,6 @@ Analysis: gpt\-5\-mini (cost $0.0085); AI extraction cost $0.0108. Full fact tab
 - F6024 · tech\_claim · Medium confidence · [https://www\.getvermeer\.com/patents](https://www.getvermeer.com/patents)
 - F6025 · product\_capability · Medium confidence · [https://www\.getvermeer\.com/patents](https://www.getvermeer.com/patents)
 - F6387 · verification · Sourced · [https://patents\.google\.com/?assignee=vermeer](https://patents.google.com/?assignee=vermeer)
+- F7821 · source\_unavailable · Unavailable · [https://www\.hlidacstatu\.cz/hledat](https://www.hlidacstatu.cz/hledat)
+- F7822 · source\_check · Checked · no results · [https://cordis\.europa\.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27Vermeer%27](https://cordis.europa.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27Vermeer%27)
+- F7823 · source\_unavailable · Unavailable · [https://starfos\.tacr\.cz](https://starfos.tacr.cz)

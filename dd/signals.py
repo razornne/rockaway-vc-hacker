@@ -149,6 +149,8 @@ def contract_kind(f: Fact) -> str:
     subj = str((f.value or {}).get("subject") or "")
     for kind, rx in (("subsidy", SUBSIDY_AGREEMENT), ("rd_project", RD_AGREEMENT), ("loan", LOAN), ("purchase", PURCHASE)):
         if rx.search(subj):
+            if kind == "purchase" and (f.value or {}).get("company_role") == "payer":
+                return "other"  # the company bought something: not a sale to a public buyer
             return kind
     return "other"
 
@@ -209,7 +211,11 @@ def funding(facts: list[Fact]) -> dict[str, Any]:
         "registry_investors": [{"name": f.value.get("name"), "from": f.value.get("from"), "to": f.value.get("to"),
                                 "share_pct": f.value.get("share_pct"), "fact_ids": _ids([f])} for f in investor_holders],
         "public_money": {"contracts": len(contracts), "contracts_czk": total(contracts), "grants": len(grants),
+                         # grants_czk = support AWARDED to the company (whole projects, multi-year); paid = only what
+                         # the payments register (IsRed) records as paid out, by year
                          "grants_czk": total(grants), "fact_ids": _ids(contracts + grants),
+                         "grants_paid_czk": sum(float((f.value or {}).get("paid_czk") or 0) for f in grants),
+                         "grants_with_payment_data": sum(bool((f.value or {}).get("paid_czk")) for f in grants),
                          # registr smluv may publish a contract without a price: "not stated" is not "0 CZK"
                          "contracts_unpriced": sum(not (f.value or {}).get("amount_czk") for f in contracts),
                          "grants_unpriced": sum(not (f.value or {}).get("amount_czk") for f in grants),
@@ -395,10 +401,11 @@ def defence(facts: list[Fact]) -> dict[str, Any]:
 
 def compute(facts: list[Fact], company_name: str | None = None, country: str | None = None) -> dict[str, Any]:
     from dd import thesis
-    return {"funding": funding(facts), "team_gtm": team_gtm(facts), "ai_dependency": ai_dependency(facts),
+    fu = funding(facts)
+    return {"funding": fu, "team_gtm": team_gtm(facts), "ai_dependency": ai_dependency(facts),
             "engineering": engineering(facts), "customers": customers(facts, company_name), "timeline": timeline(facts),
             "verification": verification(facts), "defence": defence(facts),
-            "thesis": thesis.fit(facts, company_name, country)}
+            "thesis": thesis.fit(facts, company_name, country, fu["rounds"])}
 
 
 def all_fact_ids(signals: Any) -> set[int]:

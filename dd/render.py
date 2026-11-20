@@ -261,7 +261,19 @@ def strip_fact_ids(text: str, known: set[int]) -> str:
         return "" if m.group(1).lower() in ("f", "fact", "facts", "fact id", "fact ids") else m.group(1)
     text = _PAREN.sub(paren, text)
     text = _IDWORD.sub(word, text)
+    # internal field names the model sometimes repeats from the derived signals ('rd_project', grants_czk)
+    for raw, plain in INTERNAL_WORDS:
+        text = re.sub(raw, plain, text, flags=re.I)
     return re.sub(r"\s+([.,;:?])", r"\1", re.sub(r"\s{2,}", " ", text)).strip()
+
+
+INTERNAL_WORDS = (
+    (r"['‘’\"]?\brd_project\b['‘’\"]?(?:\s+(?:contracts?\s+)?(?:kinds?|categories|category))?", "R&D project agreements"),
+    (r"['‘’\"]purchase['‘’\"](?:\s+(?:contracts?\s+)?(?:kinds?|categories|category))?", "purchase contracts"),
+    (r"['‘’\"]subsidy['‘’\"](?:\s+(?:contracts?\s+)?(?:kinds?|categories|category))?", "subsidy agreements"),
+    (r"\bgrants_paid_czk\b", "grants paid"), (r"\bgrants_czk\b", "grants awarded"),
+    (r"\bcontract_kinds\b", "contract types"),
+)
 
 
 INVEST_KINDS = ("thesis_fit", "business_model", "market", "competition", "investment_case")
@@ -299,6 +311,8 @@ def prepare(company: Company, analysis: dict, sections: list[dict], facts: dict[
             continue
         items = []
         for it in s["items"]:
+            if s["kind"] == "thesis_fit" and it.get("label") == "stage_ticket":
+                continue  # older analyses let the model compare round size with the ticket; code does it now
             # ownership and technology items state facts: label them by their sources, not by the model's own flag
             judgement = it["assessment"] and s["kind"] not in FACTUAL_SECTIONS
             key, basis = item_strength(it["fact_ids"], facts, company.domain, judgement, confirmed)

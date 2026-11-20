@@ -122,7 +122,103 @@ def portfolio_overlap(facts: list[Fact], company_name: str | None) -> list[dict]
     return uniq[:4]
 
 
-def fit(facts: list[Fact], company_name: str | None = None, country: str | None = None) -> dict[str, Any]:
+# ------------------------------------------------------------------ stage and ticket (code, never the model)
+# Round size is the total raised from all investors; the fund's initial ticket is its own cheque. Comparing them is
+# arithmetic, so it is done here and the model is told not to restate it (a model once wrote that CZK 15M "exceeds"
+# a EUR 0.5-2m ticket).
+EUR_PER = {"EUR": 1.0, "CZK": 1 / 25.0, "USD": 1 / 1.10}  # approximate fixed rates, stated next to every result
+FX_NOTE = "converted at approximate fixed rates (25 CZK/EUR, 1.10 USD/EUR)"
+STAGES = ((r"pre-?seed", 1), (r"\bseed", 2), (r"series\s*a\b", 3), (r"series\s*b\b", 4), (r"series\s*c\b", 5),
+          (r"growth|series\s*[d-z]\b", 6))
+_NUM = r"\d{1,3}(?:[  ]\d{3})+(?![\d.,])|\d+(?:[.,]\d+)?"
+_AMOUNT = re.compile(rf"({_NUM})\s*(?:[-–—]|to|až)\s*[€$]?\s*({_NUM})|({_NUM})", re.I)
+_MULT = ((re.compile(r"\b(?:mld|miliard\w*|billions?|bn)\b", re.I), 1e9),
+         (re.compile(r"\b(?:mil\w*|millions?|mio|mn)\b|(?<=\d)\s?m\b", re.I), 1e6),
+         (re.compile(r"\b(?:tis\w*|thousands?)\b|(?<=\d)\s?k\b", re.I), 1e3))
+_CURRENCY = (("EUR", re.compile(r"€|\beur\w*\b", re.I)), ("USD", re.compile(r"\$|\busd\b|\bdolar\w*|\bdollar\w*", re.I)),
+             ("CZK", re.compile(r"\bkč\b|kč|\bczk\b|\bkorun\w*", re.I)))
+
+
+def stage_rank(name: Any) -> int:
+    n = str(name or "").lower()
+    return next((rank for pat, rank in STAGES if re.search(pat, n)), 0)  # first match: "pre-seed" before "seed"
+
+
+def _num(s: str) -> float:
+    s = s.replace(" ", " ")
+    if re.fullmatch(r"\d{1,3}(?: \d{3})+", s):
+        return float(s.replace(" ", ""))
+    return float(s.replace(",", "."))
+
+
+def parse_amount(text: Any) -> dict | None:
+    """'~15M CZK' -> {'low': 600000.0, 'high': 600000.0, 'currency': 'CZK'} in EUR. None when the amount or its
+    currency cannot be read: an unreadable amount is unknown, never zero."""
+    t = str(text or "")
+    cur = next((c for c, rx in _CURRENCY if rx.search(t)), None)
+    m = _AMOUNT.search(t)
+    if not cur or not m:
+        return None
+    lo, hi = (m.group(1), m.group(2)) if m.group(1) else (m.group(3), m.group(3))
+    mult = next((k for rx, k in _MULT if rx.search(t[m.start():])), 1.0)
+    rate = EUR_PER[cur]
+    return {"low": _num(lo) * mult * rate, "high": _num(hi) * mult * rate, "currency": cur}
+
+
+def pick_round(rounds: list[dict]) -> dict | None:
+    """The round a partner would discuss: the latest one being raised, else the latest closed one by stage then date
+    (a later article can restate an earlier round, sometimes with a wrong currency), else the latest by stage."""
+    sought = [r for r in rounds if r.get("status") == "sought"]
+    if sought:
+        return sorted(sought, key=lambda r: r.get("date") or "")[-1]
+    return last_round(rounds)
+
+
+def last_round(rounds: list[dict]) -> dict | None:
+    """The latest round that is not just being sought: highest stage first (a seed round reported without the word
+    'raised' still comes after a closed pre-seed), then closed over merely reported, then date."""
+    done = [r for r in rounds if r.get("status") != "sought"]
+    return sorted(done, key=lambda r: (stage_rank(r.get("round")), r.get("status") == "closed",
+                                       r.get("date") or ""))[-1] if done else None
+
+
+def _eur(x: float) -> str:
+    return f"€{x / 1e6:.1f}m".replace(".0m", "m") if x >= 1e5 else f"€{x / 1e3:.0f}k"
+
+
+STATUS_WORD = {"sought": "Round being raised", "closed": "Closed round", "reported": "Reported round"}
+
+
+def stage_ticket(rounds: list[dict]) -> dict:
+    lo_t, hi_t = FUND["initial_ticket_eur"]
+    ticket = f"{_eur(lo_t)}–{_eur(hi_t)}"
+    r = pick_round(rounds or [])
+    if not r:
+        return {"relation": "no_round", "text": "No round reported in collected sources.", "fact_ids": []}
+    head = f"{STATUS_WORD.get(r.get('status'), 'Reported round')}: {r.get('amount') or 'amount not stated'}" \
+           + (f" ({r['round']})" if r.get("round") else "")
+    a = parse_amount(r.get("amount"))
+    if not a:
+        return {"relation": "unknown_amount", "round": r, "fact_ids": r.get("fact_ids") or [],
+                "text": f"{head}. The amount or its currency is not stated clearly, so it is not compared with the "
+                        f"fund's initial ticket ({ticket})."}
+    size = _eur(a["low"]) if a["low"] == a["high"] else f"{_eur(a['low'])}–{_eur(a['high'])}"
+    approx = "" if a["currency"] == "EUR" else f" ≈ {size}, {FX_NOTE}"
+    if a["high"] < lo_t:
+        rel, says = "below_ticket", f"smaller than the fund's minimum initial ticket ({_eur(lo_t)})"
+    elif a["low"] > hi_t:
+        rel, says = "above_ticket", (f"larger than the fund's initial ticket ({ticket}). A round is the total from all "
+                                     "investors, so the fund would be one investor in a syndicate, as lead or participant")
+    elif a["low"] >= lo_t and a["high"] <= hi_t:
+        rel, says = "within_ticket", f"within the fund's initial ticket ({ticket}): one cheque could cover the whole round"
+    else:
+        rel, says = "overlaps_ticket", f"partly within the fund's initial ticket ({ticket})"
+    return {"relation": rel, "round": r, "round_eur": [a["low"], a["high"]], "fact_ids": r.get("fact_ids") or [],
+            "text": f"{head}{approx}. The round is {says}."}
+
+
+def fit(facts: list[Fact], company_name: str | None = None, country: str | None = None,
+        rounds: list[dict] | None = None) -> dict[str, Any]:
     ident = next((f for f in facts if f.type == "identity" and isinstance(f.value, dict)), None)
     geo = country or ("CZ" if ident else None)
     return {
@@ -130,5 +226,6 @@ def fit(facts: list[Fact], company_name: str | None = None, country: str | None 
         "sectors": sectors(facts),
         "geography": {"country": geo, "in_core_region": bool(geo and geo.split("/")[0] in CEE),
                       "fact_ids": [ident.id] if ident and ident.id else []},
+        "stage_ticket": stage_ticket(rounds or []),
         "portfolio_overlap": portfolio_overlap(facts, company_name),
     }

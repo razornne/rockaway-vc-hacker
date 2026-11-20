@@ -1,101 +1,157 @@
 # Valpas — due diligence brief
 
-valpashotels\.com · FI · 2026\-11\-17
+valpashotels\.com · FI · 2026\-11\-20
 
 **How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — combines independent evidence with the company's own statements; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
 
 ## TL;DR
 
-- **Product.** IoT smart bed legs plus mobile/web AI that provides room\-level 'bed bug\-safe' certification and an LLM Visibility audit product for hotels and travel platforms\. *(Partly verified)* ^[1](https://siliconcanals.com/helsinki-based-valpas-raises-4m/),[2](https://siliconcanals.com/helsinki-based-valpas-raises-4m/),[3](https://valpashotels.com/about),[4](https://optimiser.valpashotels.com/)
-- **Stage & traction.** Seed round \~€4M with Zenith, Icebreaker, Tesi, Canon/Global Brain et al\.; prior seed activity with Icebreaker/Reaktor; customer roster claims &gt;300 hotels including Accor\-family and case studies\. *(Corroborated)* ^[5](https://tech.eu/2024/06/26/pest-control-startup-valpas-raised-4m-seed-for-pesticide-free-bed-bug-solution/),[6](https://nordic9.com/news/valpas-raises-500k-in-a-seed-funding-round-supported-by-maki-vc-icebreaker-vc-and-reaktor-ventures-news9430502709),[7](https://siliconcanals.com/helsinki-based-valpas-raises-4m/),[8](https://www.arctictoday.com/%F0%9F%87%AB%F0%9F%87%AE-valpas-raised-e4m-in-seed-funding-led-by-zenith-venture-capital/)
-- **Technology & moat.** Granted patent\(s\) for a 'bed bug monitoring furniture leg' plus deployed IoT hardware and image\-recognition claims—patent \+ hardware integrations are the primary defensibility signals\. *(Verified)* ^[9](https://patents.google.com/?assignee=valpas),[1](https://siliconcanals.com/helsinki-based-valpas-raises-4m/),[10](https://tech.eu/2024/06/26/pest-control-startup-valpas-raised-4m-seed-for-pesticide-free-bed-bug-solution/)
-- **Key risk.** Material customer\-validation gaps—some named case studies lack independent corroboration while commercial claims reference large hotel groups; customer concentration and unverifed enterprise references matter\. *(Analyst view)* ^[11](https://valpashotels.com/case-studies),[12](https://valpashotels.com/case-studies),[7](https://siliconcanals.com/helsinki-based-valpas-raises-4m/)
-- **Diligence focus.** First verify patent family scope and enforceability, and independently confirm paid deployments with Accor/other major brands \(contracts, rollout counts, revenue per room\)\. *(Analyst view)* ^[9](https://patents.google.com/?assignee=valpas),[7](https://siliconcanals.com/helsinki-based-valpas-raises-4m/),[13](https://bedbugsjapan.com/bed-bug-protection-hotels-japan-valpas)
+- **Product.** Pesticide\-free smart bed legs plus IoT/AI mobile/web apps that provide real\-time room monitoring and a bookable “bed bug\-safe” attribute to hotels and hotel groups\. *(Partly verified)* ^[1](https://siliconcanals.com/helsinki-based-valpas-raises-4m/),[2](https://siliconcanals.com/helsinki-based-valpas-raises-4m/),[3](https://valpashotels.com/)
+- **Stage & traction.** Closed €4M Seed round with named VCs and prior seed in 2017; commercial footprint claims &gt;300 hotels including premium brands and some confirmed case evidence\. *(Corroborated)* ^[4](https://tech.eu/2024/06/26/pest-control-startup-valpas-raised-4m-seed-for-pesticide-free-bed-bug-solution/),[5](https://nordic9.com/news/valpas-raises-500k-in-a-seed-funding-round-supported-by-maki-vc-icebreaker-vc-and-reaktor-ventures-news9430502709),[6](https://siliconcanals.com/helsinki-based-valpas-raises-4m/),[7](https://bedbugsjapan.com/bed-bug-protection-hotels-japan-valpas)
+- **Technology & moat.** A granted furniture\-leg patent \(EP3468360B1\) plus an IoT\+image‑recognition product claim—patent provides legal protection; operational uniqueness depends on sensors, materials and certification\. *(Verified)* ^[8](https://patents.google.com/?assignee=valpas),[9](https://tech.eu/2024/06/26/pest-control-startup-valpas-raised-4m-seed-for-pesticide-free-bed-bug-solution/),[10](https://valpashotels.com/about)
+- **Key risk.** Many named hotel case studies lack independent corroboration \(several not\_found verifications\), so commercial depth and recurring revenue quality are unclear\. *(Analyst view)* ^[11](https://valpashotels.com/case-studies),[12](https://valpashotels.com/case-studies),[13](https://valpashotels.com/case-studies)
+- **Diligence focus.** First verify field efficacy and observable KPIs \(capture rates, false positives\), and obtain executed customer agreements showing recurring billing and installation scope\. *(Analyst view)* ^[9](https://tech.eu/2024/06/26/pest-control-startup-valpas-raised-4m-seed-for-pesticide-free-bed-bug-solution/),[14](https://nordic9.com/news/valpas-raises-500k-in-a-seed-funding-round-supported-by-maki-vc-icebreaker-vc-and-reaktor-ventures-news9430502709),[15](https://valpashotels.com/)
 
 ## At a glance (computed by code, no LLM)
 
 | Signal | Value | Sources |
 |---|---|---|
-| Funding \(press\) | 2024\-06\-26 · Seed · €4 million · Zenith VC, Icebreaker VC, Finnish Industry Investment, Canon Marketing Japan MIRAI Fund, A · 4 reports; date n/a · Icebreaker, Reaktor | 5, 14, 8, 15, 6 |
-| AI dependency | no LLM vendor named as subprocessor or in own tech claims; integrates with customers' OpenAI \(not a dependency\); own\-model evidence: 1 papers, 0 verified HF models, 0 ML roles, 3 own\-model claims | 16, 17, 3, 18 |
-| Engineering footprint | product surfaces: api\.valpashotels\.com, app\.valpashotels\.com, dashboard\.valpashotels\.com, docs\.valpashotels\.com; stack: Next\.js, Vercel | 19, 20, 21 |
-| Customers | 10 named: RUNO Hotel, Kamisuwa Onsen Shinyu, Kabin Hotel Group, Hotel Prince de Galles, Sokos Hotels Kupittaa; public pricing: yes; 2 mobile app\(s\) | 22, 23, 24, 25, 26 |
-| Claims checked | Customer \(Kabin Hotel Group\): confirmed; Patents: confirmed; Customer \(Kamisuwa Onsen Shinyu, RUNO Hotel\): not found | 13, 9, 11, 12 |
-| Timeline | first press 2023\-10\-06 \(16 articles collected\) | 27 |
+| Funding \(press\) | 2024\-06\-26 · Seed · €4 million · Zenith VC, Icebreaker VC, Finnish Industry Investment, Canon Marketing Japan MIRAI Fund, A · 4 reports; date n/a · Icebreaker, Reaktor | 4, 16, 17, 18, 5 |
+| Thesis fit \(Rockaway\) | sectors: AI\-led transformative tech \(11 facts\); deep tech \(6 facts\) · geography: FI | 19, 20, 21, 22 |
+| AI dependency | no LLM vendor named as subprocessor or in own tech claims; integrates with customers' OpenAI \(not a dependency\); own\-model evidence: 1 papers, 0 verified HF models, 0 ML roles, 3 own\-model claims | 23, 24, 25, 10 |
+| Engineering footprint | product surfaces: api\.valpashotels\.com, app\.valpashotels\.com, dashboard\.valpashotels\.com, docs\.valpashotels\.com; stack: Next\.js, Vercel | 26, 27, 28 |
+| Customers | 10 named: RUNO Hotel, Kamisuwa Onsen Shinyu, Kabin Hotel Group, Hotel Prince de Galles, Sokos Hotels Kupittaa; public pricing: yes; 2 mobile app\(s\) | 11, 29, 30, 31, 15 |
+| Claims checked | Customer \(Kabin Hotel Group\): confirmed; Patents: confirmed; Customer \(Kamisuwa Onsen Shinyu, RUNO Hotel\): not found | 7, 8, 12, 13 |
+| Timeline | first press 2023\-10\-06 \(16 articles collected\) | 32 |
 
-# Detailed findings
+# Investment view
+
+*Inputs for the partner's memo, not a recommendation: what the evidence says about the business, the market, competitors and fit with the fund, and the case for and against\.*
+
+## Fit with the Rockaway thesis
+
+- **Sector:** Product aligns with fund themes—patented IoT \+ AI deep‑tech for industrialised hotel safety \(patented smart bed legs, IoT sensors, image recognition, LLM\-driven visibility tooling\)\. *(Analyst view)* ^[1](https://siliconcanals.com/helsinki-based-valpas-raises-4m/),[9](https://tech.eu/2024/06/26/pest-control-startup-valpas-raised-4m-seed-for-pesticide-free-bed-bug-solution/),[33](https://patents.google.com/patent/EP3468360B1),[34](https://optimiser.valpashotels.com/),[35](https://optimiser.valpashotels.com/)
+  - Assumption: Claims reflect core product rather than marketing embellishment
+
+## Business model
+
+- Stated primary monetisation is an all‑inclusive annual Valpas fee capitalised as an asset improvement \(company accounting claim\)\. *(Company claim)* ^[15](https://valpashotels.com/)
+  - Assumption: Fee is paid by hotel operators or owners
+- Go‑to‑customer: direct hotel network and integrations with OTAs/travel platforms; company cites working with &gt;300 hotels including Accor and premium brands\. *(Corroborated)* ^[6](https://siliconcanals.com/helsinki-based-valpas-raises-4m/),[36](https://techfundingnews.com/finnish-startup-valpas-raises-e4m-for-chemical-free-bedbug-safety-tech/)
+  - Assumption: Partnerships include commercial/paid deployments
+- Product line includes hardware \(smart bed legs\), IoT monitoring, mobile/web app with image recognition and an AI visibility audit tool \(free optimiser product exists\)\. *(Partly verified)* ^[1](https://siliconcanals.com/helsinki-based-valpas-raises-4m/),[2](https://siliconcanals.com/helsinki-based-valpas-raises-4m/),[37](https://optimiser.valpashotels.com/),[38](https://optimiser.valpashotels.com/)
+  - Assumption: Free optimiser is a marketing funnel for paid product
+
+## Market
+
+- Demand driver \(company\): hotels want to avoid bed‑bug incidents and promote a bed‑bug‑safe attribute; Valpas markets a bookable, verifiable attribute\. *(Company claim)* ^[3](https://valpashotels.com/),[39](https://valpashotels.com/case-studies)
+  - Assumption: Hotels value a verifiable guest‑facing attribute
+- Traction claim \(press/company\): working with 300\+ hotels under premium brands across &gt;40 destinations, cited in multiple press pieces\. *(Corroborated)* ^[6](https://siliconcanals.com/helsinki-based-valpas-raises-4m/),[19](https://tech.eu/2024/06/26/pest-control-startup-valpas-raised-4m-seed-for-pesticide-free-bed-bug-solution/)
+  - Assumption: Press relays company deployment counts accurately
+- Sustainability claim: company states 1\.4 tCO2e saved per room per year from using Valpas\. *(Company claim)* ^[40](https://valpashotels.com/)
+  - Assumption: CO2e methodology is correct
+
+## Competition
+
+No sourced findings for this section.
+
+## Case for and against
+
+- **For:** Defensible IP and productised hardware—granted patent \(EP3468360B1\) for bed‑bug monitoring furniture leg supports an entry barrier\. *(Analyst view)* ^[33](https://patents.google.com/patent/EP3468360B1),[8](https://patents.google.com/?assignee=valpas),[10](https://valpashotels.com/about)
+  - Assumption: Patent scope is commercially meaningful
+- **For:** Commercial traction with major hotel channels — company and press cite &gt;300 hotels including Accor and premium collections, implying enterprise GTM access\. *(Analyst view)* ^[6](https://siliconcanals.com/helsinki-based-valpas-raises-4m/),[36](https://techfundingnews.com/finnish-startup-valpas-raises-e4m-for-chemical-free-bedbug-safety-tech/),[41](https://tech.eu/2024/06/26/pest-control-startup-valpas-raised-4m-seed-for-pesticide-free-bed-bug-solution/)
+  - Assumption: Count reflects active, paid deployments
+- **For:** Product stack shows AI/ML value drivers \(image recognition, LLM visibility reports, OTA/ChatGPT integrations\) that enable upsell and distribution via platforms\. *(Analyst view)* ^[9](https://tech.eu/2024/06/26/pest-control-startup-valpas-raised-4m-seed-for-pesticide-free-bed-bug-solution/),[37](https://optimiser.valpashotels.com/),[23](https://valpashotels.com/)
+  - Assumption: Integrations convert to distribution
+- **Against:** Revenue clarity and unit economics are not provided; the primary pricing claim \(capitalised annual fee\) lacks disclosed ARPU, contract length, or adoption metrics\. *(Analyst view)* ^[15](https://valpashotels.com/),[38](https://optimiser.valpashotels.com/),[4](https://tech.eu/2024/06/26/pest-control-startup-valpas-raised-4m-seed-for-pesticide-free-bed-bug-solution/)
+  - Assumption: Funding used to prove unit economics
+- **Against:** Independent customer corroboration limited—only Kabin Hotel Group has an independent external corroboration; several named customers lack third‑party confirmation\. *(Analyst view)* ^[7](https://bedbugsjapan.com/bed-bug-protection-hotels-japan-valpas),[12](https://valpashotels.com/case-studies),[13](https://valpashotels.com/case-studies)
+  - Assumption: Independent corroboration matters for revenue validation
+- **Against:** Product claims of ‘permanent protection’ and zero chemicals rest on company messaging; field durability, maintenance, and false positives are unverified\. *(Analyst view)* ^[24](https://valpashotels.com/about),[42](https://siliconcanals.com/helsinki-based-valpas-raises-4m/),[9](https://tech.eu/2024/06/26/pest-control-startup-valpas-raised-4m-seed-for-pesticide-free-bed-bug-solution/)
+  - Assumption: Operational risks could materially affect renewals
+
+# Technical due diligence
 
 ## Ownership and capital
 
-- Seed round: €4M reported \(June 2024 press\) with investors including Zenith VC \(lead\), Icebreaker VC, Finnish Industry Investment/Tesi, Canon Marketing Japan MIRAI Fund, Activum SG Ventures, Houghton Street, Rockaway, Morrow, Reaktor, Global Brain\. *(Corroborated)* ^[5](https://tech.eu/2024/06/26/pest-control-startup-valpas-raised-4m-seed-for-pesticide-free-bed-bug-solution/),[8](https://www.arctictoday.com/%F0%9F%87%AB%F0%9F%87%AE-valpas-raised-e4m-in-seed-funding-led-by-zenith-venture-capital/),[14](https://techfundingnews.com/finnish-startup-valpas-raises-e4m-for-chemical-free-bedbug-safety-tech/),[15](https://www.arctictoday.com/%F0%9F%87%AB%F0%9F%87%AE-valpas-raised-e4m-in-seed-funding-led-by-zenith-venture-capital/)
-- Prior financing: earlier seed/angel activity reported in 2017 involving Icebreaker and Reaktor \(single\-source press report\)\. *(Single source)* ^[6](https://nordic9.com/news/valpas-raises-500k-in-a-seed-funding-round-supported-by-maki-vc-icebreaker-vc-and-reaktor-ventures-news9430502709)
+- Seed round: €4M reported in press coverage \(June 2024\) with investors including Zenith VC, Icebreaker VC, Finnish Industry Investment, Canon Marketing Japan MIRAI Fund and others\. *(Corroborated)* ^[4](https://tech.eu/2024/06/26/pest-control-startup-valpas-raised-4m-seed-for-pesticide-free-bed-bug-solution/),[17](https://www.arctictoday.com/%F0%9F%87%AB%F0%9F%87%AE-valpas-raised-e4m-in-seed-funding-led-by-zenith-venture-capital/),[16](https://techfundingnews.com/finnish-startup-valpas-raises-e4m-for-chemical-free-bedbug-safety-tech/)
+- Prior financing: earlier seed activity reported in 2017 with Icebreaker and Reaktor referenced in press archives\. *(Single source)* ^[5](https://nordic9.com/news/valpas-raises-500k-in-a-seed-funding-round-supported-by-maki-vc-icebreaker-vc-and-reaktor-ventures-news9430502709)
 
 ## Technology profile
 
-- Product surfaces: public subdomains and apps—api\., app\., dashboard\., docs\.; mobile apps listed on iOS and Google Play\. *(Verified)* ^[21](https://crt.sh/?q=%25.valpashotels.com&output=json),[19](https://crt.sh/?q=%25.valpashotels.com&output=json),[20](https://crt.sh/?q=%25.valpashotels.com&output=json),[28](https://crt.sh/?q=%25.valpashotels.com&output=json),[29](https://apps.apple.com/us/app/valpas-for-travelers/id6753011582?uo=4)
-- Built capabilities: smart anti\-bedbug bed legs \(IoT\), real\-time room monitoring/alerts, and in‑app image recognition for pest ID; claims pesticide\-free operation\. *(Corroborated)* ^[1](https://siliconcanals.com/helsinki-based-valpas-raises-4m/),[30](https://nordic9.com/news/valpas-raises-500k-in-a-seed-funding-round-supported-by-maki-vc-icebreaker-vc-and-reaktor-ventures-news9430502709),[10](https://tech.eu/2024/06/26/pest-control-startup-valpas-raised-4m-seed-for-pesticide-free-bed-bug-solution/)
-- AI products: 'LLM Visibility Report' and optimiser that queries multiple LLMs; site states integration with ChatGPT \(OpenAI\)\. *(Company claim)* ^[4](https://optimiser.valpashotels.com/),[31](https://optimiser.valpashotels.com/),[16](https://valpashotels.com/)
+- Product built: smart anti‑bedbug bed legs, IoT platform, mobile/web apps and a dashboard that claim real‑time monitoring and in‑app image recognition\. *(Corroborated)* ^[1](https://siliconcanals.com/helsinki-based-valpas-raises-4m/),[2](https://siliconcanals.com/helsinki-based-valpas-raises-4m/),[14](https://nordic9.com/news/valpas-raises-500k-in-a-seed-funding-round-supported-by-maki-vc-icebreaker-vc-and-reaktor-ventures-news9430502709)
+- Public product surfaces and apps: app\.valpashotels\.com, dashboard and api subdomains plus iOS and Android app listings\. *(Verified)* ^[26](https://crt.sh/?q=%25.valpashotels.com&output=json),[27](https://crt.sh/?q=%25.valpashotels.com&output=json),[43](https://apps.apple.com/us/app/valpas-for-travelers/id6753011582?uo=4)
+- AI/LLM dependency and integrations: site claims integration with ChatGPT \(OpenAI\); separate Optimiser product queries LLMs to produce visibility reports\. *(Company claim)* ^[23](https://valpashotels.com/),[37](https://optimiser.valpashotels.com/),[35](https://optimiser.valpashotels.com/)
 
-## Rebuild check
+## What could be rebuilt, and what cannot be judged from outside
 
-- **Commodity:** LLM Visibility audit \(Visibility Score, Data Gaps, Quick Wins\) — could be rebuilt by 2–3 engineers using OpenAI \+ web scraping/APIs\. *(Analyst view)* ^[4](https://optimiser.valpashotels.com/),[32](https://optimiser.valpashotels.com/),[16](https://valpashotels.com/),[31](https://optimiser.valpashotels.com/)
-  - Assumption: access to OpenAI or equivalent LLM API
-- **Hard to copy:** Patented smart bed legs combined with deployed IoT hardware, sensors and image‑recognition workflow—granted patent\(s\) found \(EP3468360B1\) and hardware deployment claims\. *(Analyst view)* ^[9](https://patents.google.com/?assignee=valpas),[1](https://siliconcanals.com/helsinki-based-valpas-raises-4m/),[30](https://nordic9.com/news/valpas-raises-500k-in-a-seed-funding-round-supported-by-maki-vc-icebreaker-vc-and-reaktor-ventures-news9430502709)
-  - Assumption: patent covers key functional claims
-- **Verdict:** Quarter — software\-only clone possible in weeks, full hardware\+patent‑safe clone takes a quarter or more and still lacks granted patent coverage, installed hotel rollouts, and verified large\-brand contracts\. *(Analyst view)* ^[4](https://optimiser.valpashotels.com/),[9](https://patents.google.com/?assignee=valpas),[7](https://siliconcanals.com/helsinki-based-valpas-raises-4m/)
-  - Assumption: hardware manufacturing and certification required
+- **Replicable with off-the-shelf parts:** The LLM Visibility Report \(audit of AI visibility\) appears reproducible using public LLM APIs \(e\.g\., ChatGPT/OpenAI\) and web‑presence scraping\. *(Analyst view)* ^[37](https://optimiser.valpashotels.com/),[23](https://valpashotels.com/),[35](https://optimiser.valpashotels.com/)
+  - Assumption: Access to the same LLMs and web index snapshots
+- **Edge supported by public evidence:** Granted patent EP3468360B1 evidences proprietary IP for the furniture‑leg concept; independent customer mention confirms at least some commercial deployment\. *(Analyst view)* ^[8](https://patents.google.com/?assignee=valpas),[7](https://bedbugsjapan.com/bed-bug-protection-hotels-japan-valpas),[6](https://siliconcanals.com/helsinki-based-valpas-raises-4m/)
+  - Assumption: Patent maps to the shipped hardware design
+- **Cannot be judged from outside:** Image‑recognition accuracy, trap capture rate, long‑term elimination efficacy and false positive rates cannot be judged externally without raw model performance, telemetry and field logs\. *(Analyst view)* ^[9](https://tech.eu/2024/06/26/pest-control-startup-valpas-raised-4m-seed-for-pesticide-free-bed-bug-solution/),[24](https://valpashotels.com/about),[14](https://nordic9.com/news/valpas-raises-500k-in-a-seed-funding-round-supported-by-maki-vc-icebreaker-vc-and-reaktor-ventures-news9430502709)
+  - Assumption: No public performance datasets provided
 
 ## Risks and caveats
 
-- Integration/dependency risk: company states integration with ChatGPT/OpenAI for AI features — product reliance on a third‑party LLM increases operational and cost exposure\. *(Analyst view)* ^[16](https://valpashotels.com/)
-- Customer\-reference risk: independent corroboration exists for Kabin Hotel Group but some other named case studies \(e\.g\., RUNO, Kamisuwa Onsen\) are unverified in independent checks\. *(Analyst view)* ^[13](https://bedbugsjapan.com/bed-bug-protection-hotels-japan-valpas),[11](https://valpashotels.com/case-studies),[12](https://valpashotels.com/case-studies)
-- Performance/impact claims: environmental \(1\.4t CO2e per room\) and financial \(NOI/GOP uplift, capitalised fee accounting\) are asserted on site but lack independent validation in provided facts\. *(Analyst view)* ^[33](https://valpashotels.com/),[26](https://valpashotels.com/),[34](https://valpashotels.com/)
+- Customer verification gap: multiple named case studies lack independent corroboration, raising concentration and revenue‑quality risk\. *(Analyst view)* ^[11](https://valpashotels.com/case-studies),[12](https://valpashotels.com/case-studies),[13](https://valpashotels.com/case-studies)
+- Claims vs\. evidence mismatch: strong commercialization and CO2/NOI benefit claims exist but documented, audited impact metrics are not provided\. *(Analyst view)* ^[40](https://valpashotels.com/),[22](https://valpashotels.com/)
+- Dependency on third‑party LLMs for visibility product could create vendor risk if integrations or pricing change\. *(Analyst view)* ^[23](https://valpashotels.com/),[37](https://optimiser.valpashotels.com/)
 
 ## Questions for founders
 
-- Please produce the patent family claim chart: which specific claims of EP3468360B1 cover the active lure, trap, sensor and data certification functions? \(ref: EP3468360B1 / 6390\)\. *(Analyst view)* ^[9](https://patents.google.com/?assignee=valpas),[35](https://patents.google.com/patent/EP3468360B1)
-- For major enterprise references \(Accor, The Luxury Collection\): provide signed contracts, deployment counts, ARR per room and churn; press claims currently cite 300\+ hotels but need revenue verification\. *(Analyst view)* ^[7](https://siliconcanals.com/helsinki-based-valpas-raises-4m/),[8](https://www.arctictoday.com/%F0%9F%87%AB%F0%9F%87%AE-valpas-raised-e4m-in-seed-funding-led-by-zenith-venture-capital/)
-- Share independent test reports or confusion matrices for the image\-recognition and sensor detection pipeline \(accuracy, false positive/negative rates\) referenced in press and product copy\. *(Analyst view)* ^[10](https://tech.eu/2024/06/26/pest-control-startup-valpas-raised-4m-seed-for-pesticide-free-bed-bug-solution/),[30](https://nordic9.com/news/valpas-raises-500k-in-a-seed-funding-round-supported-by-maki-vc-icebreaker-vc-and-reaktor-ventures-news9430502709)
-- Provide customer\-level billing/contract treatment showing the 'all\-inclusive annual fee' is capitalised and examples of asset accounting entries with auditor confirmation\. *(Analyst view)* ^[26](https://valpashotels.com/)
+- Provide executed customer contracts or invoices for a sample of named hotels \(e\.g\., RUNO, Kamisuwa, Sokos\) to substantiate recurring revenue claims and install counts\. *(Analyst view)* ^[11](https://valpashotels.com/case-studies),[44](https://valpashotels.com/case-studies),[12](https://valpashotels.com/case-studies)
+- Share field performance metrics: per‑room capture rate, image‑recognition precision/recall, and telemetry that supports the “permanent protection” claim\. *(Analyst view)* ^[9](https://tech.eu/2024/06/26/pest-control-startup-valpas-raised-4m-seed-for-pesticide-free-bed-bug-solution/),[24](https://valpashotels.com/about)
+- Produce audited unit economics showing installation margin, recurring fees recognition \(capitalised vs revenue\) and payback period referenced to the pricing claim\. *(Analyst view)* ^[15](https://valpashotels.com/),[38](https://optimiser.valpashotels.com/)
+- Clarify patent scope and freedom‑to‑operate: provide the legal claim set mapping to shipped hardware and any third‑party licence dependencies\. *(Analyst view)* ^[8](https://patents.google.com/?assignee=valpas),[10](https://valpashotels.com/about)
 
 ## Sources
 
 1. [siliconcanals\.com](https://siliconcanals.com/helsinki-based-valpas-raises-4m/) · Independent press · Product capability — “Valpas has developed a solution that centres on smart anti\-bedbug bed legs\.”
 2. [siliconcanals\.com](https://siliconcanals.com/helsinki-based-valpas-raises-4m/) · Independent press · Product capability — “IoT and AI\-enabled mobile web app then provide in\-app image recognition to identify and dispose of the pests\.”
-3. [valpashotels\.com](https://valpashotels.com/about) · Company's own website · Product capability — “Valpas makes pest control obsolete\. With Valpas' patented smart bed legs installed, hotels are able to enjoy permanent protection from bed bug infestations and offer every guest rock\-solid digital certification that their room is bed bug\-safe\.”
-4. [optimiser\.valpashotels\.com](https://optimiser.valpashotels.com/) · Company's own website · Product capability — “LLM Visibility Report Grand Hotel Example V 74 Score 8 Gaps 12 Wins Enter your email to unlock What We Analyze Three dimensions of AI visibility 01 Visibility Score See how well AI assistants can understand and recommend your hotel to potential guests\.”
-5. [tech\.eu](https://tech.eu/2024/06/26/pest-control-startup-valpas-raised-4m-seed-for-pesticide-free-bed-bug-solution/) · Independent press · Funding round — “Valpas has secured €4 million in Seed funding\.”
-6. [nordic9\.com](https://nordic9.com/news/valpas-raises-500k-in-a-seed-funding-round-supported-by-maki-vc-icebreaker-vc-and-reaktor-ventures-news9430502709) · Independent press · Funding round — “Prior to this deal, Valpas raised money from Icebreaker and Reaktor in 2017\.”
-7. [siliconcanals\.com](https://siliconcanals.com/helsinki-based-valpas-raises-4m/) · Independent press · Customer — “The company is already working with over 300 hotels flagged under premium brands including Accor Hotels, The Luxury Collection, Design Hotels, ARP\-Hansen, and Bob W in over 40 destinations – amongst others across Europe, Mexico, and Japan\.”
-8. [arctictoday\.com](https://www.arctictoday.com/%F0%9F%87%AB%F0%9F%87%AE-valpas-raised-e4m-in-seed-funding-led-by-zenith-venture-capital/) · Independent press · Funding round — “Valpas raised €4m in seed funding led by Zenith Venture Capital”
-9. [patents\.google\.com](https://patents.google.com/?assignee=valpas) · Official record · Independent check of a claim — “1 granted patent\(s\) found, e\.g\. EP3468360B1\.”
-10. [tech\.eu](https://tech.eu/2024/06/26/pest-control-startup-valpas-raised-4m-seed-for-pesticide-free-bed-bug-solution/) · Independent press · Technical claim — “Valpas’ IoT and AI\-enabled mobile web app then provides in\-app image recognition to identify and dispose of the pests\.”
-11. [valpashotels\.com](https://valpashotels.com/case-studies) · Company's own website · Independent check of a claim
+3. [valpashotels\.com](https://valpashotels.com/) · Company's own website · Product capability — “Valpas sets the standard for bed bug safety and turns it into a bookable attribute\.”
+4. [tech\.eu](https://tech.eu/2024/06/26/pest-control-startup-valpas-raised-4m-seed-for-pesticide-free-bed-bug-solution/) · Independent press · Funding round — “Valpas has secured €4 million in Seed funding\.”
+5. [nordic9\.com](https://nordic9.com/news/valpas-raises-500k-in-a-seed-funding-round-supported-by-maki-vc-icebreaker-vc-and-reaktor-ventures-news9430502709) · Independent press · Funding round — “Prior to this deal, Valpas raised money from Icebreaker and Reaktor in 2017\.”
+6. [siliconcanals\.com](https://siliconcanals.com/helsinki-based-valpas-raises-4m/) · Independent press · Customer — “The company is already working with over 300 hotels flagged under premium brands including Accor Hotels, The Luxury Collection, Design Hotels, ARP\-Hansen, and Bob W in over 40 destinations – amongst others across Europe, Mexico, and Japan\.”
+7. [bedbugsjapan\.com](https://bedbugsjapan.com/bed-bug-protection-hotels-japan-valpas) · Independent press · Independent check of a claim — “The three Nagano hotels installed Valpas in all rooms as prevention and say no bed bugs had been found there \(DX Magazine, in Japanese\)\. The WAYFARER and KABIN groups say Valpas runs in every room of their hotels\. To see every hotel with a stated measure, open the map and keep “Hotel safety measures”
+8. [patents\.google\.com](https://patents.google.com/?assignee=valpas) · Official record · Independent check of a claim — “1 granted patent\(s\) found, e\.g\. EP3468360B1\.”
+9. [tech\.eu](https://tech.eu/2024/06/26/pest-control-startup-valpas-raised-4m-seed-for-pesticide-free-bed-bug-solution/) · Independent press · Technical claim — “Valpas’ IoT and AI\-enabled mobile web app then provides in\-app image recognition to identify and dispose of the pests\.”
+10. [valpashotels\.com](https://valpashotels.com/about) · Company's own website · Technical claim — “Valpas' patented smart bed legs installed”
+11. [valpashotels\.com](https://valpashotels.com/case-studies) · Company's own website · Customer — ““We want guests staying with us to feel that everything has been thought through down to the smallest detail\.””
 12. [valpashotels\.com](https://valpashotels.com/case-studies) · Company's own website · Independent check of a claim
-13. [bedbugsjapan\.com](https://bedbugsjapan.com/bed-bug-protection-hotels-japan-valpas) · Independent press · Independent check of a claim — “The three Nagano hotels installed Valpas in all rooms as prevention and say no bed bugs had been found there \(DX Magazine, in Japanese\)\. The WAYFARER and KABIN groups say Valpas runs in every room of their hotels\. To see every hotel with a stated measure, open the map and keep “Hotel safety measures”
-14. [techfundingnews\.com](https://techfundingnews.com/finnish-startup-valpas-raises-e4m-for-chemical-free-bedbug-safety-tech/) · Independent press · Funding round — “The round was led by Zenith VC \(which invested in Treyd and Freshsound \) alongside Icebreaker VC, Finnish Industry Investment, Canon Marketing Japan MIRAI Fund, Activum SG Ventures, Houghton Street Ventures, Rockaway Ventures and Morrow Ventures\.”
-15. [arctictoday\.com](https://www.arctictoday.com/%F0%9F%87%AB%F0%9F%87%AE-valpas-raised-e4m-in-seed-funding-led-by-zenith-venture-capital/) · Independent press · Funding round — “Canon as an investor in Valpas’ vision of safe, seamless and sustainable travel via Canon Marketing Japan and Global Brain Corporation \.”
-16. [valpashotels\.com](https://valpashotels.com/) · Company's own website · Integration — “Integrated with ChatGPT\.”
-17. [valpashotels\.com](https://valpashotels.com/about) · Company's own website · Product capability — “Valpas makes pest control obsolete\. With Valpas' patented smart bed legs installed, hotels are able to enjoy permanent protection from bed bug infestations and offer every guest rock\-solid digital certification that their room is bed bug\-safe\.”
-18. [valpashotels\.com](https://valpashotels.com/about) · Company's own website · Technical claim — “Valpas' patented smart bed legs installed”
-19. [crt\.sh](https://crt.sh/?q=%25.valpashotels.com&output=json) · Public technical artifact · Subdomain \(certificates\) · 2022\-08\-03 — “app\.valpashotels\.com \(first certificate 2022\-08\-03\)”
-20. [crt\.sh](https://crt.sh/?q=%25.valpashotels.com&output=json) · Public technical artifact · Subdomain \(certificates\) · 2023\-01\-09 — “dashboard\.valpashotels\.com \(first certificate 2023\-01\-09\)”
-21. [crt\.sh](https://crt.sh/?q=%25.valpashotels.com&output=json) · Public technical artifact · Subdomain \(certificates\) · 2024\-12\-10 — “api\.valpashotels\.com \(first certificate 2024\-12\-10\)”
-22. [valpashotels\.com](https://valpashotels.com/case-studies) · Company's own website · Customer — ““We want guests staying with us to feel that everything has been thought through down to the smallest detail\.””
-23. [valpashotels\.com](https://valpashotels.com/case-studies) · Company's own website · Customer — ““Attracting more customers with visible travel assurance””
-24. [valpashotels\.com](https://valpashotels.com/case-studies) · Company's own website · Customer — ““With Valpas, we safeguard long\-term property value by preventing costly incidents that lead to downtime\.””
-25. [valpashotels\.com](https://valpashotels.com/case-studies) · Company's own website · Customer — ““Cost savings and guaranteed guest promise of safety and comfort””
-26. [valpashotels\.com](https://valpashotels.com/) · Company's own website · Pricing — “Accounting\-wise, the all\-inclusive annual Valpas fee sits outside the P&amp;L – capitalised as an asset improvement, not an operational cost\.”
-27. [tech\.eu](https://tech.eu/2023/10/06/this-startup-has-the-solution-to-the-paris-bed-bug-bedlam/) · Independent press · Press article · 2023\-10\-06 — “This startup has the solution to the Paris bed bug bedlam \- Tech\.eu”
-28. [crt\.sh](https://crt.sh/?q=%25.valpashotels.com&output=json) · Public technical artifact · Subdomain \(certificates\) · 2026\-03\-12 — “docs\.valpashotels\.com \(first certificate 2026\-03\-12\)”
-29. [apps\.apple\.com](https://apps.apple.com/us/app/valpas-for-travelers/id6753011582?uo=4) · Public technical artifact · Mobile app · 2025\-10\-15 — “Valpas for Travelers”
-30. [nordic9\.com](https://nordic9.com/news/valpas-raises-500k-in-a-seed-funding-round-supported-by-maki-vc-icebreaker-vc-and-reaktor-ventures-news9430502709) · Independent press · Product capability — “Hotels just replace their existing bed legs with Valpas’ smart bed legs, and can instantly start monitoring rooms in real\-time and receive notifications of eliminated bed bug incidents caught inside the legs\.”
-31. [optimiser\.valpashotels\.com](https://optimiser.valpashotels.com/) · Company's own website · Technical claim — “Our AI queries multiple LLMs and cross\-references your online presence\.”
-32. [optimiser\.valpashotels\.com](https://optimiser.valpashotels.com/) · Company's own website · Product capability — “Three dimensions of AI visibility”
-33. [valpashotels\.com](https://valpashotels.com/) · Company's own website · Technical claim — “1\.4t CO₂e saved per room, per year\.”
-34. [valpashotels\.com](https://valpashotels.com/) · Company's own website · Technical claim — “Valpas turns unpredictable opex into capitalised, permanent infrastructure that improves GOP, NOI and asset value\.”
-35. [patents\.google\.com](https://patents.google.com/patent/EP3468360B1) · Official record · Patent publication — “EP3468360B1 · Bed bug monitoring furniture leg · Valpas Enterprises Oy”
-36. [patents\.google\.com](https://patents.google.com/patent/EM37625250001S) · Official record · Patent publication — “EM37625250001S · Destruction of pests \(Traps and articles for \-\); Furniture feet · Valpas Enterprises Oy”
+13. [valpashotels\.com](https://valpashotels.com/case-studies) · Company's own website · Independent check of a claim
+14. [nordic9\.com](https://nordic9.com/news/valpas-raises-500k-in-a-seed-funding-round-supported-by-maki-vc-icebreaker-vc-and-reaktor-ventures-news9430502709) · Independent press · Product capability — “Hotels just replace their existing bed legs with Valpas’ smart bed legs, and can instantly start monitoring rooms in real\-time and receive notifications of eliminated bed bug incidents caught inside the legs\.”
+15. [valpashotels\.com](https://valpashotels.com/) · Company's own website · Pricing — “Accounting\-wise, the all\-inclusive annual Valpas fee sits outside the P&amp;L – capitalised as an asset improvement, not an operational cost\.”
+16. [techfundingnews\.com](https://techfundingnews.com/finnish-startup-valpas-raises-e4m-for-chemical-free-bedbug-safety-tech/) · Independent press · Funding round — “The round was led by Zenith VC \(which invested in Treyd and Freshsound \) alongside Icebreaker VC, Finnish Industry Investment, Canon Marketing Japan MIRAI Fund, Activum SG Ventures, Houghton Street Ventures, Rockaway Ventures and Morrow Ventures\.”
+17. [arctictoday\.com](https://www.arctictoday.com/%F0%9F%87%AB%F0%9F%87%AE-valpas-raised-e4m-in-seed-funding-led-by-zenith-venture-capital/) · Independent press · Funding round — “Valpas raised €4m in seed funding led by Zenith Venture Capital”
+18. [arctictoday\.com](https://www.arctictoday.com/%F0%9F%87%AB%F0%9F%87%AE-valpas-raised-e4m-in-seed-funding-led-by-zenith-venture-capital/) · Independent press · Funding round — “Canon as an investor in Valpas’ vision of safe, seamless and sustainable travel via Canon Marketing Japan and Global Brain Corporation \.”
+19. [tech\.eu](https://tech.eu/2024/06/26/pest-control-startup-valpas-raised-4m-seed-for-pesticide-free-bed-bug-solution/) · Independent press · Press article · 2024\-06\-26 — “Valpas raises €4M Seed for pesticide\-free bed bug solution \- Tech\.eu”
+20. [techfundingnews\.com](https://techfundingnews.com/finnish-startup-valpas-raises-e4m-for-chemical-free-bedbug-safety-tech/) · Independent press · Press article · 2024\-06\-26 — “Finnish startup Valpas raises €4M for chemical\-free bedbug safety tech — TFN”
+21. [openalex\.org](https://openalex.org/W2324058551) · Public technical artifact · Research paper · 2004\-07\-01 — “Tension\-Free Vaginal Tape and Laparoscopic Mesh Colposuspension for Stress Urinary Incontinence · Obstetrics and Gynecology · cited 65×”
+22. [valpashotels\.com](https://valpashotels.com/) · Company's own website · Technical claim — “Valpas turns unpredictable opex into capitalised, permanent infrastructure that improves GOP, NOI and asset value\.”
+23. [valpashotels\.com](https://valpashotels.com/) · Company's own website · Integration — “Integrated with ChatGPT\.”
+24. [valpashotels\.com](https://valpashotels.com/about) · Company's own website · Product capability — “Valpas makes pest control obsolete\. With Valpas' patented smart bed legs installed, hotels are able to enjoy permanent protection from bed bug infestations and offer every guest rock\-solid digital certification that their room is bed bug\-safe\.”
+25. [valpashotels\.com](https://valpashotels.com/about) · Company's own website · Product capability — “Valpas makes pest control obsolete\. With Valpas' patented smart bed legs installed, hotels are able to enjoy permanent protection from bed bug infestations and offer every guest rock\-solid digital certification that their room is bed bug\-safe\.”
+26. [crt\.sh](https://crt.sh/?q=%25.valpashotels.com&output=json) · Public technical artifact · Subdomain \(certificates\) · 2022\-08\-03 — “app\.valpashotels\.com \(first certificate 2022\-08\-03\)”
+27. [crt\.sh](https://crt.sh/?q=%25.valpashotels.com&output=json) · Public technical artifact · Subdomain \(certificates\) · 2023\-01\-09 — “dashboard\.valpashotels\.com \(first certificate 2023\-01\-09\)”
+28. [crt\.sh](https://crt.sh/?q=%25.valpashotels.com&output=json) · Public technical artifact · Subdomain \(certificates\) · 2024\-12\-10 — “api\.valpashotels\.com \(first certificate 2024\-12\-10\)”
+29. [valpashotels\.com](https://valpashotels.com/case-studies) · Company's own website · Customer — ““Attracting more customers with visible travel assurance””
+30. [valpashotels\.com](https://valpashotels.com/case-studies) · Company's own website · Customer — ““With Valpas, we safeguard long\-term property value by preventing costly incidents that lead to downtime\.””
+31. [valpashotels\.com](https://valpashotels.com/case-studies) · Company's own website · Customer — ““Cost savings and guaranteed guest promise of safety and comfort””
+32. [tech\.eu](https://tech.eu/2023/10/06/this-startup-has-the-solution-to-the-paris-bed-bug-bedlam/) · Independent press · Press article · 2023\-10\-06 — “This startup has the solution to the Paris bed bug bedlam \- Tech\.eu”
+33. [patents\.google\.com](https://patents.google.com/patent/EP3468360B1) · Official record · Patent publication — “EP3468360B1 · Bed bug monitoring furniture leg · Valpas Enterprises Oy”
+34. [optimiser\.valpashotels\.com](https://optimiser.valpashotels.com/) · Company's own website · Product capability — “Three dimensions of AI visibility”
+35. [optimiser\.valpashotels\.com](https://optimiser.valpashotels.com/) · Company's own website · Technical claim — “Our AI queries multiple LLMs and cross\-references your online presence\.”
+36. [techfundingnews\.com](https://techfundingnews.com/finnish-startup-valpas-raises-e4m-for-chemical-free-bedbug-safety-tech/) · Independent press · Integration — “Already, the company works with over 300 hotels flagged under premium brands, including Accor Hotels, The Luxury Collection, Design Hotels, ARP\-Hansen, and Bob W in over 40 destinations amongst others across Europe, Mexico, and Japan\.”
+37. [optimiser\.valpashotels\.com](https://optimiser.valpashotels.com/) · Company's own website · Product capability — “LLM Visibility Report Grand Hotel Example V 74 Score 8 Gaps 12 Wins Enter your email to unlock What We Analyze Three dimensions of AI visibility 01 Visibility Score See how well AI assistants can understand and recommend your hotel to potential guests\.”
+38. [optimiser\.valpashotels\.com](https://optimiser.valpashotels.com/) · Company's own website · Pricing — “Free forever”
+39. [valpashotels\.com](https://valpashotels.com/case-studies) · Company's own website · Product capability — “The bed bug\-safe attribute for hotels”
+40. [valpashotels\.com](https://valpashotels.com/) · Company's own website · Technical claim — “1\.4t CO₂e saved per room, per year\.”
+41. [tech\.eu](https://tech.eu/2024/06/26/pest-control-startup-valpas-raised-4m-seed-for-pesticide-free-bed-bug-solution/) · Independent press · Customer — “Already working with over 300 hotels flagged under premium brands including Accor Hotels, The Luxury Collection, Design Hotels, ARP\-Hansen and Bob W in over 40 destinations”
+42. [siliconcanals\.com](https://siliconcanals.com/helsinki-based-valpas-raises-4m/) · Independent press · Product capability — “The solution is completely free from any chemicals\.”
+43. [apps\.apple\.com](https://apps.apple.com/us/app/valpas-for-travelers/id6753011582?uo=4) · Public technical artifact · Mobile app · 2025\-10\-15 — “Valpas for Travelers”
+44. [valpashotels\.com](https://valpashotels.com/case-studies) · Company's own website · Customer — ““Increase in customer numbers and satisfaction””
+45. [patents\.google\.com](https://patents.google.com/patent/EM37625250001S) · Official record · Patent publication — “EM37625250001S · Destruction of pests \(Traps and articles for \-\); Furniture feet · Valpas Enterprises Oy”
 
 ## How this dossier was built
 
@@ -112,7 +168,7 @@ valpashotels\.com · FI · 2026\-11\-17
 | Claim verification | company claims checked against independent sources: Google Patents \(patents\), IAB Global Vendor List \(TCF\), commercial register \(investors named in press\), security pages \(SOC 2 / ISO attestations\), news search \(customers\) | 6 | — |
 | AI extraction | an LLM reads saved pages and articles and proposes facts; a fact is kept only if its quote is found in the source text and its category passes rule checks | 53 | — |
 
-Analysis: gpt\-5\-mini (cost $0.0094); AI extraction cost $0.0075. Full fact table: CSV export.
+Analysis: gpt\-5\-mini (cost $0.0192); AI extraction cost $0.0075. Full fact table: CSV export.
 
 ## Source appendix (all collected facts)
 
@@ -223,9 +279,6 @@ Analysis: gpt\-5\-mini (cost $0.0094); AI extraction cost $0.0075. Full fact tab
 - F3812 · press\_mention · Sourced · [https://tech\.eu/2023/10/06/this\-startup\-has\-the\-solution\-to\-the\-paris\-bed\-bug\-bedlam/](https://tech.eu/2023/10/06/this-startup-has-the-solution-to-the-paris-bed-bug-bedlam/)
 - F3813 · source\_unavailable · Unavailable · [https://www\.founderstoday\.news/valpas\-secures\-4\-millions\-in\-funding/](https://www.founderstoday.news/valpas-secures-4-millions-in-funding/)
 - F3814 · press\_mention · Sourced · [https://play\.google\.com/store/apps/details?id=com\.whaith\.valpasmobilefortravelers&amp;hl=en\_US](https://play.google.com/store/apps/details?id=com.whaith.valpasmobilefortravelers&hl=en_US)
-- F5522 · source\_unavailable · Unavailable · [https://www\.hlidacstatu\.cz/hledat](https://www.hlidacstatu.cz/hledat)
-- F5523 · source\_check · Checked · no results · [https://cordis\.europa\.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27Valpas%27](https://cordis.europa.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27Valpas%27)
-- F5524 · source\_unavailable · Unavailable · [https://starfos\.tacr\.cz](https://starfos.tacr.cz)
 - F6027 · product\_capability · Medium confidence · [https://valpashotels\.com/](https://valpashotels.com/)
 - F6028 · tech\_claim · Medium confidence · [https://valpashotels\.com/](https://valpashotels.com/)
 - F6029 · tech\_claim · Medium confidence · [https://valpashotels\.com/](https://valpashotels.com/)
@@ -285,3 +338,6 @@ Analysis: gpt\-5\-mini (cost $0.0094); AI extraction cost $0.0075. Full fact tab
 - F6391 · verification · Sourced · [https://valpashotels\.com/case\-studies](https://valpashotels.com/case-studies)
 - F6392 · verification · Sourced · [https://valpashotels\.com/case\-studies](https://valpashotels.com/case-studies)
 - F6393 · verification · Sourced · [https://bedbugsjapan\.com/bed\-bug\-protection\-hotels\-japan\-valpas](https://bedbugsjapan.com/bed-bug-protection-hotels-japan-valpas)
+- F7818 · source\_unavailable · Unavailable · [https://www\.hlidacstatu\.cz/hledat](https://www.hlidacstatu.cz/hledat)
+- F7819 · source\_check · Checked · no results · [https://cordis\.europa\.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27Valpas%27](https://cordis.europa.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27Valpas%27)
+- F7820 · source\_unavailable · Unavailable · [https://starfos\.tacr\.cz](https://starfos.tacr.cz)

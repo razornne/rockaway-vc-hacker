@@ -38,7 +38,7 @@ Rockaway now has a defence fund, and defence / dual-use is where official public
 
 - Key numbers computed by code: latest round, sales to public buyers, grants (kept apart from revenue), defence evidence from official sources.
 - For the memo: the case for, the case against, and what must be true.
-- Ownership, funding rounds, public money by year, customers, technical profile, "could it be rebuilt?", competition, fit with the Rockaway thesis.
+- Ownership, funding rounds, public money (grants awarded vs actually paid, sales to public buyers), customers, technical profile, what could be rebuilt and what cannot be judged from outside, competition, fit with the Rockaway thesis.
 - Risks and questions for the founder.
 - Every statement carries an evidence label — *Verified*, *Corroborated*, *Single source*, *Partly verified*, *Company claim* or *Analyst view* — and links to its sources and quotes.
 
@@ -52,16 +52,19 @@ Rockaway now has a defence fund, and defence / dual-use is where official public
 
 More: [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md).
 
-## How I know it works
+## How it is checked, and what is not measured yet
 
-`uv run dd eval` writes [`eval/report.md`](eval/report.md) without calling a model:
+`uv run dd eval` writes [`eval/report.md`](eval/report.md) without calling a model. These are guards against specific failures, not an accuracy score:
 
-- **18 of 18** hand-checked facts reproduced (register shareholders, grants, foreign holdings).
-- **811 of 811** quotes behind model-extracted facts found in the saved sources.
-- Of 140 factual statements in the briefs, **55%** are verified or corroborated by independent sources; 16% rest on the company's word alone and are labelled so.
-- **$0.01–0.03** of model cost per brief; about $1.07 for the whole project, including development runs.
+- **18 of 18** hand-checked register, grant and infrastructure facts reproduced — a small regression set showing that official records are parsed correctly.
+- **811 of 811** quotes behind model-extracted facts found in the saved sources — this rules out invented quotes, not misread ones.
+- Of 188 factual statements, **54%** rest on an official record or two independent outlets and 19% only on the company's word; the labels describe the evidence, not whether a conclusion is right.
+- Numbers a partner compares — round size against the fund's ticket, grants awarded versus actually paid, sales versus R&D budgets — are computed in code; the model is told not to redo that arithmetic.
+- **$0.02–0.03** of model cost per brief; about $1.45 for the whole project, including development runs.
 
-Reading every extracted fact by hand found 24 systematic errors — a subsidy counted as a customer contract, one grant counted twice, a namesake company taken for the target, a failed patent search reported as "no patents", a decimal misread that inflated a total 10,000 times. Each was fixed in code and covered by a test: [`docs/AUDIT.md`](docs/AUDIT.md).
+The real quality process is reading the output by hand. That has found 26 systematic errors so far — a subsidy counted as a customer contract, the same grant added up across registers, a namesake company taken for the target, a failed patent search reported as "no patents", a decimal misread that inflated a total 10,000 times, a model claiming a CZK 15M round "exceeds" a €0.5–2m ticket. Each was fixed in code and covered by a test: [`docs/AUDIT.md`](docs/AUDIT.md).
+
+Not measured yet: how many statements are actually correct. `uv run dd label-sheet` writes the statements of chosen briefs with their quotes into a sheet for a person to label, and `dd label-score` counts the result; the first sheet ([`eval/labels/`](eval/labels/)) covers the two defence briefs. Time saved and a comparison with a plain model plus web search are next ([`docs/ROADMAP.md`](docs/ROADMAP.md)).
 
 ## What it cannot do yet
 
@@ -101,6 +104,8 @@ uv run dd analyze fly4future        # model analysis (paid, cached)
 uv run dd dossier fly4future        # HTML + Markdown + CSV
 uv run dd eval                      # evaluation report
 uv run dd site                      # rebuild the showcase in site/
+uv run dd label-sheet fly4future,dronetag --output eval/labels/sheet.csv   # statements for a person to label
+uv run dd label-score eval/labels/sheet.csv                               # accuracy per question
 uv run pytest -q -m "not network"
 ```
 

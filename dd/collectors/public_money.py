@@ -137,8 +137,9 @@ def parse_subsidies_html(html: str) -> list[dict]:
 
 
 # --- Hlídač API (token) ------------------------------------------------------------
-SUBSIDY_SUBJECT = re.compile(r"podpor|dotac|grant|účelov|investiční pobídk|poskytnutí\s+(?:účelové\s+)?podpory|"
-                             r"poskytnutí\s+příspěvku|příspěvku\s+z|antivirus", re.I)
+SUBSIDY_SUBJECT = re.compile(r"podpor|podp\.|dotac|grant|účelov|investiční pobídk|poskytnutí\s+(?:účelové\s+)?podpory|"
+                             r"poskytnutí\s+příspěvku|příspěvku\s+z|antivirus|zvýhodněn\w*\s+služ", re.I)
+# "Smlouva o posk. podp. Sigma (TQ16)" is a TA ČR support agreement written in abbreviations
 
 
 def _title_key(title: str) -> str:
@@ -155,23 +156,108 @@ def _close(a, b, tol=0.1) -> bool:
     return a > 0 and b > 0 and abs(a - b) <= tol * max(a, b)
 
 
-def dedupe_subsidies(rows: list[dict]) -> list[dict]:
-    """The same project often appears in several subsidy datasets (e.g. MPO de-minimis and MMR EU funds)."""
-    kept: list[dict] = []
+CZ_CODE = re.compile(r"CZ\.\d{2}\.\d{2}\.\d{2}/\d{2}/\d{2}_\d{3}/\d{7}")
+# Which record of a project states the amount awarded to the company: the R&D register (IS VaVaI) first, then EU
+# funds, then the payments register (IsRed), then de-minimis records (the value of the aid).
+AWARD_ORDER = ("IsVavai", "Eufondy", "IsRed", "DeMinimis")
+
+
+def _codes(r: dict) -> set[str]:
+    codes = set(CZ_CODE.findall(r.get("title") or ""))
+    if r.get("project_code"):
+        codes.add(re.sub(r"\s+", "", str(r["project_code"])).upper())
+    return codes
+
+
+def _same_project(a: dict, b: dict) -> bool:
+    if _codes(a) & _codes(b):
+        return True
+    ka, kb = _title_key(a.get("title")), _title_key(b.get("title"))
+    if not ka or not kb:
+        return False
+    same_title = ka == kb or (min(len(ka), len(kb)) >= 12 and (ka in kb or kb in ka))
+    if not same_title:
+        return False
+    # a long, specific project title is the same project ACROSS registers even when the amounts differ (awarded in
+    # IS VaVaI vs paid in IsRed). Within one register, repeated titles are separate aid (incubator support every
+    # year), and a short generic title ("Registrace ochranné známky") is never enough: both need the same amount.
+    across = bool(a.get("dataset") and b.get("dataset") and a["dataset"] != b["dataset"])
+    return (across and min(len(ka), len(kb)) >= 30) or _close(a.get("amount_czk"), b.get("amount_czk"), 0.001)
+
+
+def _rank(r: dict) -> int:
+    ds = r.get("dataset") or ""
+    return AWARD_ORDER.index(ds) if ds in AWARD_ORDER else len(AWARD_ORDER)
+
+
+def merge_projects(rows: list[dict]) -> list[dict]:
+    """One record per subsidised project. The same project appears in several Czech registers with different
+    meanings: IS VaVaI states the support awarded, IsRed the payments by year, EU funds and de-minimis records the
+    value of the aid. Summing them double-counts (Fly4Future: CZK 212M shown, about 123M awarded). Each project keeps
+    `awarded_czk` (from the most authoritative record), `paid_czk` / `paid_by_year` (only from actual payment records)
+    and the other listings in `also_listed_as`."""
+    groups: list[list[dict]] = []
     for r in rows:
-        r = dict(r)
-        dup = next((k for k in kept if _close(k["amount_czk"], r["amount_czk"], 0.001)
-                    and (_title_key(k["title"]) == _title_key(r["title"])
-                         or _title_key(k["title"]) in _title_key(r["title"])
-                         or _title_key(r["title"]) in _title_key(k["title"]))), None)
-        if dup is not None:
-            dup.setdefault("also_listed_as", []).append({"provider": r["provider"], "url": r["url"], "year": r["year"]})
-            continue
-        kept.append(r)
-    return kept
+        g = next((g for g in groups if any(_same_project(r, x) for x in g)), None)
+        if g is None:
+            groups.append([dict(r)])
+        else:
+            g.append(dict(r))
+    out = []
+    for g in groups:
+        g.sort(key=_rank)
+        main = dict(g[0])
+        awarded = next((x.get("awarded_czk") or x.get("amount_czk") for x in g if x.get("awarded_czk") or x.get("amount_czk")), None)
+        paid_years: dict[int, float] = {}
+        for x in g:
+            for p in x.get("disbursed") or []:
+                if p.get("year") and p.get("amount"):
+                    paid_years[int(p["year"])] = paid_years.get(int(p["year"]), 0.0) + float(p["amount"])
+        main["amount_czk"] = awarded
+        main["awarded_czk"] = awarded
+        main["awarded_from"] = main.get("dataset")
+        main["paid_czk"] = int(round(sum(paid_years.values()))) if paid_years else None
+        main["paid_by_year"] = [{"year": y, "amount_czk": int(round(a))} for y, a in sorted(paid_years.items())]
+        main.pop("disbursed", None)
+        others = [{"provider": x.get("provider"), "url": x.get("url"), "year": x.get("year"),
+                   "dataset": x.get("dataset"), "amount_czk": x.get("amount_czk")} for x in g[1:]]
+        if others:
+            main["also_listed_as"] = (main.get("also_listed_as") or []) + others
+        out.append(main)
+    return out
+
+
+def reconcile_award(r: dict) -> dict:
+    """The registers disagree on what was awarded: IS VaVaI can state less than the signed support agreement, and
+    payments can already exceed it (Fly4Future TQ03: IS VaVaI 3.35M, agreement 4.879M, paid 4.879M). The signed
+    agreement with the company is the award; payments made are a floor. The register's own figure is kept."""
+    agreed = max((a.get("amount_czk") or 0 for a in r.get("agreements") or []), default=0)
+    paid = r.get("paid_czk") or 0
+    base = r.get("awarded_czk") or r.get("amount_czk") or 0
+    if base:
+        r["register_award_czk"] = base
+    for amount, source in ((agreed, "support agreement (contract register)"), (paid, "payments made (IsRed)")):
+        if amount and amount > (r.get("amount_czk") or 0):
+            r["amount_czk"] = r["awarded_czk"] = amount
+            r["awarded_from"] = source
+    return r
+
+
+def dedupe_subsidies(rows: list[dict]) -> list[dict]:
+    """Kept for callers of the old name: the same project in several subsidy datasets becomes one record."""
+    return merge_projects(rows)
+
+
+PROGRAMME_IN_SUBJECT = re.compile(r"\(([A-Z]{2}\d{2})\)")
 
 
 def _matching_subsidy(contract: dict, subsidies: list[dict]) -> dict | None:
+    # "Smlouva o poskytnutí podpory Trend 10 (FW10)" belongs to the TA ČR project whose code starts with FW10
+    m = PROGRAMME_IN_SUBJECT.search(contract.get("subject") or "")
+    if m:
+        hits = [s for s in subsidies if any(c.startswith(m.group(1)) for c in _codes(s))]
+        if len(hits) == 1:
+            return hits[0]
     year = (contract.get("signed") or "")[:4]
     for s in subsidies:
         same_year = not year or not s.get("year") or abs(int(year) - int(str(s["year"])[:4])) <= 1
@@ -224,14 +310,24 @@ def parse_subsidies_api(obj: dict) -> list[dict]:
             continue
         rec = r.get("recipient") or {}
         did = str(r.get("id") or "")
-        amount = next((r.get(k) for k in ("payedAmount", "subsidyAmount", "assumedAmount") if r.get(k)), None)
+        ds = r.get("primaryDataSource") or did.split("-")[0]
+        # subsidyAmount = support awarded; payedAmount is a payment only in IsRed (with per-year `cerpani`);
+        # elsewhere (EU funds, de minimis) it restates the aid value, sometimes for a year that has not happened yet
+        awarded = next((r.get(k) for k in ("subsidyAmount", "assumedAmount", "payedAmount") if r.get(k)), None)
+        disbursed = [{"year": c.get("year"), "amount": c.get("amount")} for c in (r.get("cerpani") or [])
+                     if isinstance(c, dict)] if ds == "IsRed" else []
+        if ds == "IsRed" and not disbursed and r.get("payedAmount"):
+            disbursed = [{"year": r.get("approvedYear"), "amount": r.get("payedAmount")}]
         out.append({
             "id": did, "recipient": rec.get("name") or rec.get("displayName") or "",
             "provider": r.get("subsidyProvider") or r.get("primaryDataSource") or "",
             "provider_ico": r.get("subsidyProviderIco"),
             "title": r.get("projectName") or r.get("displayProject") or "",
             "year": str(r.get("approvedYear") or ""),
-            "amount_czk": int(round(float(amount))) if amount else None,
+            "dataset": ds, "project_code": r.get("projectCode"),
+            "amount_czk": int(round(float(awarded))) if awarded else None,
+            "awarded_czk": int(round(float(awarded))) if awarded else None,
+            "disbursed": disbursed,
             "program": r.get("programName") or r.get("programCode"),
             "duplicates": len(hints.get("duplicates") or []),
             "url": f"{HS}/Dotace/Detail/{quote(did)}",
@@ -300,18 +396,26 @@ class PublicMoneyCollector(Collector):
                 source_url=r["url"], snippet=f"{r['payer']} → {r['supplier']}: {amt} Kč; {r['subject']}"[:300],
                 extractor=self.name, confidence="high"))
         for r in subsidy_rows:
+            reconcile_award(r)
             value = {"provider": r["provider"], "title": r["title"], "year": r["year"],
-                     "amount_czk": r["amount_czk"],
+                     # amount_czk = support awarded to the company for the whole project (not paid, not revenue)
+                     "amount_czk": r["amount_czk"], "amount_kind": "awarded",
                      "amount_is_estimate": via_subsidies == "html" and not r.get("from_contract_register"),
                      "via": via_subsidies}
-            for extra in ("agreements", "also_listed_as"):
-                if r.get(extra):
+            for extra in ("dataset", "project_code", "awarded_from", "register_award_czk", "paid_czk", "paid_by_year",
+                          "agreements", "also_listed_as", "from_contract_register"):
+                if r.get(extra) not in (None, [], ""):
                     value[extra] = r[extra]
+            if r.get("from_contract_register"):
+                # an agreement total in the contract register may cover the whole research consortium
+                value["amount_kind"] = "agreement_total"
+            paid = f"; paid {r['paid_czk']} Kč" if r.get("paid_czk") else ""
             out.append(Fact(
                 company_id=c.id, type="grant_national", key=str(r["id"]),
                 value=value,
                 event_date=r["year"] or None, date_precision="year" if r["year"] else None,
-                source_url=r["url"], snippet=f"{r['provider']}: {r['title']} ({r['year']}), {r['amount_czk']} Kč"[:300],
+                source_url=r["url"],
+                snippet=f"{r['provider']}: {r['title']} ({r['year']}), awarded {r['amount_czk']} Kč{paid}"[:300],
                 extractor=self.name, confidence="high"))
         return out
 

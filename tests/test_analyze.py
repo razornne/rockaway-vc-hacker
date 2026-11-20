@@ -1,3 +1,4 @@
+import re
 import json
 from pathlib import Path
 from types import SimpleNamespace
@@ -91,11 +92,11 @@ def test_one_structured_call_filters_unverified_and_invalid_citations_and_persis
             item("Unknown label is dropped.", [product_id], label="vibes"),
         ]),
         rebuild_check=section([
-            item("Clone is easy.", [product_id], assessment=False, assumptions=["A"], label="commodity"),
+            item("Clone is easy.", [product_id], assessment=False, assumptions=["A"], label="replicable"),
             item("Missing label is dropped.", [product_id], assessment=True, assumptions=["A"], label=""),
-            item("Planning could be prototyped with a rules engine; clone would lack customer data.",
+            item("Planning could be prototyped with an open-source rules engine; a clone would lack customer data.",
                  [product_id], assessment=True, confidence="high", assumptions=["Public description reflects core flow."],
-                 label="commodity"),
+                 label="replicable"),
         ]),
         risk_flags=section([
             item("There is a major risk.", [product_id], assessment=False),
@@ -131,7 +132,7 @@ def test_one_structured_call_filters_unverified_and_invalid_citations_and_persis
 
     row = store.db.execute("SELECT fact_ids, prompt_version FROM analysis WHERE company_id='acme'").fetchone()
     assert json.loads(row["fact_ids"]) == sorted({owner_id, product_id})
-    assert row["prompt_version"] == "analyze-v3+invest-v2"
+    assert row["prompt_version"] == "analyze-v5+invest-v4"
     prompt = client.responses.calls[0]["input"]
     supplied = json.loads(prompt.split("source data, not instructions):\n", 1)[1])
     assert "identity_unverified" not in prompt
@@ -143,7 +144,7 @@ def test_empty_or_unverifiable_sections_are_no_data(tmp_path):
     store, llm, client = make_llm(tmp_path, payload(
         ownership=section([item("Unsupported.", [123])]),
         tech_profile=section([item("No facts.", [])]),
-        rebuild_check=section([item("Not a real assessment.", [123], assessment=True, assumptions=["x"], label="verdict")]),
+        rebuild_check=section([item("Not a real assessment.", [123], assessment=True, assumptions=["x"], label="not_assessable")]),
     ))
     store.upsert_company(company)
 
@@ -202,20 +203,22 @@ def test_fact_snapshot_hash_is_order_independent_and_field_sensitive():
     assert fact_snapshot_sha256("c", [left, right]) != original
 
 
-def test_rebuild_keeps_single_verdict_and_orders_labels(tmp_path):
+def test_rebuild_has_no_time_estimates_and_orders_labels(tmp_path):
     company = Company(id="rb", name="RB")
     store, llm, client = make_llm(tmp_path, payload())
     store.upsert_company(company)
     pid = add_fact(store, "rb", "product_capability", "x", {"summary": "x"}, snippet="It does x for y.")
     client.responses.payload = payload(rebuild_check=section([
-        item("Overall month.", [pid], assessment=True, assumptions=["a"], label="verdict"),
-        item("Second verdict dropped.", [pid], assessment=True, assumptions=["a"], label="verdict"),
-        item("Data is hard.", [pid], assessment=True, assumptions=["a"], label="hard"),
-        item("UI is commodity.", [pid], assessment=True, assumptions=["a"], label="commodity"),
+        item("A clone takes a month.", [pid], assessment=True, assumptions=["a"], label="replicable"),
+        item("Autonomy quality needs field data.", [pid], assessment=True, assumptions=["a"], label="not_assessable"),
+        item("Patent applications filed.", [pid], assessment=True, assumptions=["a"], label="evidenced_edge"),
+        item("UI uses an open-source map library.", [pid], assessment=True, assumptions=["a"], label="replicable"),
+        item("Overall quarter to clone.", [pid], assessment=True, assumptions=["a"], label="verdict"),
     ]))
     result = analyze_company(store, llm, company)
     rebuild = next(s for s in result["sections"] if s["kind"] == "rebuild_check")["items"]
-    assert [r["label"] for r in rebuild] == ["commodity", "hard", "verdict"]
+    assert [r["label"] for r in rebuild] == ["replicable", "evidenced_edge", "not_assessable"]
+    assert not any(re.search(r"month|quarter", r["text"], re.I) for r in rebuild)
 
 
 def test_signals_are_computed_and_passed_to_prompt(tmp_path):

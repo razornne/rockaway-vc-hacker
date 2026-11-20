@@ -82,7 +82,20 @@ Checks of the Fly4Future and Dronetag briefs found two more:
 
 Both are fixed in code and covered by tests. Later the key-number tiles were changed so that a source that was not read shows *Not checked* with the reason, not *None found*.
 
-## 7. What remains a limit
+## 7. Outside review (20 November)
+
+An outside code review of the repository and the published briefs found two more errors and one design problem.
+
+| # | Error | Example | Fix |
+|---|---|---|---|
+| 25 | The model did arithmetic on round size vs ticket, and got it wrong | Dronetag: "round size exceeds Rockaway initial ticket" for a CZK 15M round (≈ €0.6m) against a €0.5–2m ticket; it also treated the round as if it were the fund's cheque | `thesis.stage_ticket()` compares the round with the ticket in code (currency converted at stated approximate rates) and says that a round is the total from all investors; the model is told not to restate the comparison, and older model statements on it are dropped at render time. Regression test on the Dronetag case |
+| 26 | Grants added up across registers that list the same project | Fly4Future: CZK 211.6M shown. The same TA ČR project appears as an award in IS VaVaI and as payments in IsRed; signed support agreements in the contract register were added as further grants; EU-fund records carry a register year of 2027–2028 that was drawn on the chart as if money arrived then | `merge_projects()`: one record per project (by project code, CZ code in the title, or a long title across registers); `amount_czk` = awarded to the company (the signed agreement when it is larger than the register's figure, never less than what was paid); `paid_czk` / `paid_by_year` only from payment records. The chart shows payments only. Fly4Future: CZK 134.3M awarded, 32.7M paid so far |
+
+Design change from the same review: the rebuild check no longer gives a time-to-clone verdict ("a quarter to clone core autonomy" cannot be known from public pages). It now has three parts — what off-the-shelf parts could reproduce, what edge public evidence supports, and what cannot be judged from outside — and items containing a time estimate are dropped.
+
+The review also pointed out that the headline metrics are guards, not accuracy: quotes found in sources rule out invented quotes but not misreadings; evidence labels describe where evidence comes from, not whether a conclusion is right. The showcase now says so, and a hand-labelled accuracy check is the next step (see `ROADMAP.md`).
+
+## 8. What remains a limit
 
 - An ambiguous company name has to be marked by hand (`context_terms`); it is not detected automatically.
 - SOC 2 cannot be checked publicly; the report is shared under NDA. The brief says "not checkable".

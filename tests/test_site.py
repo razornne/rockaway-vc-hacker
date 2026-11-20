@@ -22,7 +22,7 @@ def test_public_money_not_checked_without_ico():
     t = _tiles({}, facts)
     assert t["Sales to public buyers"]["value"] == "Not checked"
     assert "no Czech IČO" in t["Sales to public buyers"]["sub"]
-    assert t["Grants & subsidies (not revenue)"]["value"] == "Not checked"
+    assert t["Grants & subsidies awarded (not revenue)"]["value"] == "Not checked"
     assert t["Defence evidence (official sources)"]["value"] == "Not checked"
 
 
@@ -32,13 +32,13 @@ def test_public_money_checked_and_empty_is_none_found():
     t = _tiles({}, facts)
     assert t["Sales to public buyers"]["value"] == "None found"
     assert "EU tenders not checked" in t["Sales to public buyers"]["sub"]
-    assert t["Grants & subsidies (not revenue)"]["value"] == "None found"
+    assert t["Grants & subsidies awarded (not revenue)"]["value"] == "None found"
 
 
 def test_grant_without_amount_is_not_none_found():
     sig = {"funding": {"public_money": {"grants": 1, "grants_czk": 0}}}
     t = _tiles(sig, _facts())
-    assert t["Grants & subsidies (not revenue)"]["value"] == "amount not published"
+    assert t["Grants & subsidies awarded (not revenue)"]["value"] == "amount not published"
 
 
 def test_latest_reported_round_by_stage_not_article_date():

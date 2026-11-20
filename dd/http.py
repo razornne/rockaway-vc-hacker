@@ -18,7 +18,9 @@ from urllib.parse import urlparse
 import httpx
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
-TRANSIENT = (0, 408, 425, 429)  # with 5xx: never served from cache
+# with 5xx: never served from cache. 401/403 too: the cache key ignores request headers, so an answer given
+# without (or with a wrong) token must not outlive a later request that has the right one.
+TRANSIENT = (0, 401, 403, 408, 425, 429)
 
 RECORDED_HEADERS = ("server", "x-powered-by", "x-generator", "x-vercel-id", "x-nf-request-id", "cf-ray",
                     "x-served-by", "x-wix-request-id")

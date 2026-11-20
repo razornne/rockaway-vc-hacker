@@ -1,119 +1,168 @@
 # TopK — due diligence brief
 
-topk\.io · CZ/US · 2026\-11\-17
+topk\.io · CZ/US · 2026\-11\-20
 
 **How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — combines independent evidence with the company's own statements; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
 
 ## TL;DR
 
-- **Product.** An AI\-native hybrid search engine \(semantic, dense/sparse, multi\-vector, keyword\) sold to developers and AI/recSys teams via SDKs and APIs\. *(Partly verified)* ^[1](https://docs.topk.io/),[2](https://www.topk.io/),[3](https://www.lupa.cz/aktuality/databaze-s-prichodem-ai-prochazi-zasadni-transformaci-cesko-slovensky-startup-na-to-ziskal-120-milionu/),[4](https://siliconcanals.com/?p=65960),[5](https://www.topk.io/use-cases/recsys)
-- **Stage & traction.** Seed round $5\.5M led by Earlybird/KAYA/Irregular Expressions; at least one named customer \(SalesEQ\) and public press coverage\. *(Partly verified)* ^[6](https://siliconcanals.com/?p=65960),[7](https://vestbee.com/insights/articles/top-k-secures-5-5-m),[8](https://www.topk.io/customers/saleseq),[9](https://siliconcanals.com/?p=65960)
-- **Technology & moat.** Evidence of research outputs \(three 2026 papers\) and active open\-source repos for core engine and connectors, suggesting reproducible engineering plus some research IP\. *(Verified)* ^[10](https://openalex.org/W7128615148),[11](https://openalex.org/W7214324948),[12](https://openalex.org/W7214339189),[13](https://github.com/topk-io/topk),[14](https://github.com/topk-io/dars)
-- **Key risk.** Several central performance and security claims \(p99 latency, SOC 2\) are company\-sourced and only partly verified, raising operational/compliance risk for enterprise deals\. *(Analyst view)* ^[15](https://www.topk.io/use-cases/recsys),[16](https://vestbee.com/insights/articles/top-k-secures-5-5-m),[17](https://www.topk.io/security)
-- **Diligence focus.** First obtain the Vanta/SOC2 report and reproduce the semantic\_index benchmark \(10M\-scale p99/throughput\) because these underpin enterprise sales and pricing\. *(Analyst view)* ^[17](https://www.topk.io/security),[15](https://www.topk.io/use-cases/recsys),[18](https://www.topk.io/)
+- **Product.** A cloud SaaS AI\-native hybrid search engine \(multi\-vector, dense/sparse, keyword\) sold to developer and enterprise customers via API/SDKs and console\. *(Partly verified)* ^[1](https://docs.topk.io/),[2](https://www.topk.io/),[3](https://www.lupa.cz/aktuality/databaze-s-prichodem-ai-prochazi-zasadni-transformaci-cesko-slovensky-startup-na-to-ziskal-120-milionu/),[4](https://crt.sh/?q=%25.topk.io&output=json),[5](https://crt.sh/?q=%25.topk.io&output=json)
+- **Stage & traction.** Closed $5\.5M seed led by Earlybird/KAYA/Irregular Expressions; one named reference customer \(SalesEQ\); public press coverage since 2025\. *(Partly verified)* ^[6](https://siliconcanals.com/?p=65960),[7](https://vestbee.com/insights/articles/top-k-secures-5-5-m),[8](https://earlybird.com/companies/topk),[9](https://www.topk.io/customers/saleseq),[10](https://siliconcanals.com/?p=65960)
+- **Technology & moat.** Evidence of engineering output \(8\+ public repos, active pushes, Rust core repo\) and published ML papers claiming novel sparse representations\. *(Verified)* ^[11](https://github.com/topk-io/topk),[12](https://github.com/topk-io/llama-index-vector-stores-topk),[13](https://openalex.org/W7128615148),[14](https://openalex.org/W7214324948)
+- **Key risk.** Several product performance and security claims \(benchmarks, SOC2\) are company\-published and only partly independently verified\. *(Analyst view)* ^[15](https://www.topk.io/use-cases/recsys),[16](https://vestbee.com/insights/articles/top-k-secures-5-5-m),[17](https://www.topk.io/security),[18](https://www.topk.io/customers/saleseq)
+- **Diligence focus.** Verify benchmark reproducibility, SOC2 report access, and SalesEQ reference to confirm latency, reliability, and real\-world recall\. *(Analyst view)* ^[15](https://www.topk.io/use-cases/recsys),[17](https://www.topk.io/security),[18](https://www.topk.io/customers/saleseq)
 
 ## At a glance (computed by code, no LLM)
 
 | Signal | Value | Sources |
 |---|---|---|
 | Funding \(press\) | 2025\-07\-01 · seed · $5\.5M \(nearly €4\.66M\) · Earlybird, KAYA, Irregular Expressions, angel investors, niekoľkých anjelských investorov · 5 reports | 6, 7, 19, 20, 21 |
-| AI dependency | no LLM vendor named as subprocessor or in own tech claims; integrates with customers' OpenAI \(not a dependency\); own\-model evidence: 4 papers, 0 verified HF models, 0 ML roles, 1 own\-model claims | 22, 23, 24, 10 |
-| Engineering footprint | 8 public repos \(106★, last push 2026\-11\-17\); product surfaces: api\.topk\.io, console\.topk\.io, docs\.topk\.io, login\.topk\.io, status\.topk\.io; 5 docs pages; stack: Next\.js, Vercel | 14, 25, 26, 27, 28, 29 |
-| Customers | 1 named: SalesEQ; public pricing: yes | 8, 18 |
-| Claims checked | SOC 2 / ISO: partly; Customer \(SalesEQ\): not found | 17, 30 |
-| Timeline | first press 2025\-07\-01 \(19 articles collected\) | 9 |
+| Thesis fit \(Rockaway\) | sectors: AI\-led transformative tech \(20 facts\); deep tech \(7 facts\); energy \(2 facts\) · geography: CZ/US \(core region\) · overlaps portfolio: Gjirafa \(e\-comme, search\) | 10, 22, 13, 14, 23, 24 |
+| AI dependency | no LLM vendor named as subprocessor or in own tech claims; integrates with customers' OpenAI \(not a dependency\); own\-model evidence: 4 papers, 0 verified HF models, 0 ML roles, 1 own\-model claims | 25, 26, 27, 13 |
+| Engineering footprint | 8 public repos \(106★, last push 2026\-11\-17\); product surfaces: api\.topk\.io, console\.topk\.io, docs\.topk\.io, login\.topk\.io, status\.topk\.io; 5 docs pages; stack: Next\.js, Vercel | 28, 29, 30, 31, 5, 32 |
+| Customers | 1 named: SalesEQ; public pricing: yes | 9, 33 |
+| Claims checked | SOC 2 / ISO: partly; Customer \(SalesEQ\): not found | 17, 18 |
+| Timeline | first press 2025\-07\-01 \(19 articles collected\) | 10 |
 
-# Detailed findings
+# Investment view
+
+*Inputs for the partner's memo, not a recommendation: what the evidence says about the business, the market, competitors and fit with the fund, and the case for and against\.*
+
+## Fit with the Rockaway thesis
+
+- **Sector:** AI\-led transformative tech — TopK positions itself as an AI\-native, hybrid retrieval engine combining vectors, keywords and multi\-vector models for enterprise search\. *(Analyst view)* ^[34](https://www.topk.io/),[2](https://www.topk.io/),[1](https://docs.topk.io/)
+  - Assumption: Company product pages reflect core sector positioning\.
+- **Portfolio overlap:** Gjirafa listed in fund overlap; potential thematic overlap on 'search' \(TopK builds an enterprise search engine\), which could be a strategic synergy or buyer overlap risk to check\. *(Analyst view)* ^[35](https://siliconcanals.com/?p=65960),[36](https://vestbee.com/insights/articles/top-k-secures-5-5-m),[37](https://www.lupa.cz/aktuality/databaze-s-prichodem-ai-prochazi-zasadni-transformaci-cesko-slovensky-startup-na-to-ziskal-120-milionu/)
+  - Assumption: TopK's search capability overlaps meaningfully with general\-purpose search products\.
+
+## Business model
+
+- Revenue model: usage\-based SaaS pricing \(monthly billing\) with per\-operation and per‑token charges and free credits for trials\. *(Company claim)* ^[38](https://www.topk.io/pricing),[39](https://www.topk.io/pricing),[40](https://www.topk.io/pricing),[41](https://www.topk.io/pricing)
+- Buyers/payors: sells to enterprises — at least one named customer \(SalesEQ\) who uses TopK for agentic search over meetings\. *(Company claim)* ^[9](https://www.topk.io/customers/saleseq)
+
+## Market
+
+- Demand driver \(company/press\): enterprise need for AI\-native search and retrieval in the 'ChatGPT era' is cited as TopK's market rationale by multiple press outlets\. *(Corroborated)* ^[10](https://siliconcanals.com/?p=65960),[42](https://tech.eu/2025/07/01/topk-raises-55m-to-develop-ai-native-search-engine-for-enterprises),[43](https://itkey.media/topk-raises-usd-5-5m-to-tackle-chatgpt-era-challenges-with-ai-native-hybrid-search-engine-for-enterprises/)
+- Target buyers \(company claim\): TopK targets use cases across e\-commerce, finance, healthcare, and law by enabling domain\-specific tuning\. *(Single source)* ^[26](https://cc.cz/chodili-spolu-na-stredni-ted-nabiraji-120-milionu-a-chteji-pohanet-vyhledavani-pro-top-aplikace/)
+
+## Competition
+
+- OpenAI \(mentioned in press as a target/comparator\): cited by Euro\.cz as a firm TopK 'aims at' — indicates positioning against large AI incumbents or their developer offerings\. *(Analyst view)* ^[23](https://www.euro.cz/clanky/cesko-slovensky-startup-topk-chce-zmenit-zpusob-vyhledavani-v-ere-ai-od-investoru-ziskal-120-milionu-a-miri-na-firmy-typu-openai/)
+  - Assumption: Mention in press implies perceived market/positioning overlap\.
+- Elasticsearch / Elastic compatibility: TopK documents describe Elasticsearch API compatibility and migration messaging — positions TopK as an alternative to Elastic's stack for hybrid search\. *(Analyst view)* ^[44](https://www.topk.io/learn/hybrid-search-elasticsearch-api),[45](https://www.topk.io/learn/elasticsearch-api-compatibility)
+  - Assumption: API\-compatibility docs indicate deliberate product positioning vs Elastic\.
+- Redis Top\-K / probabilistic top\-k: Redis docs appear in the fact set \(top\-k data type\); this represents a technical incumbent/approach TopK must differentiate from for specific workloads\. *(Analyst view)* ^[46](https://redis.io/docs/latest/develop/data-types/probabilistic/top-k)
+  - Assumption: Redis top\-k is a comparable technical approach for some retrieval tasks\.
+
+## Case for and against
+
+- **For:** Differentiated tech — unified hybrid retrieval \(semantic, sparse, dense, multi\-vector\) with production embedding pricing and SDKs, enabling one API for complex retrieval\. *(Analyst view)* ^[1](https://docs.topk.io/),[2](https://www.topk.io/),[3](https://www.lupa.cz/aktuality/databaze-s-prichodem-ai-prochazi-zasadni-transformaci-cesko-slovensky-startup-na-to-ziskal-120-milionu/)
+  - Assumption: Product claims translate to practical engineering differentiation\.
+- **For:** Early traction and validation — $5\.5M seed from recognized VCs \(Earlybird, KAYA\) and at least one named enterprise customer \(SalesEQ\)\. *(Analyst view)* ^[6](https://siliconcanals.com/?p=65960),[7](https://vestbee.com/insights/articles/top-k-secures-5-5-m),[9](https://www.topk.io/customers/saleseq)
+  - Assumption: Seed participation by tiered VCs signals third‑party validation\.
+- **Against:** Customer corroboration gap — SalesEQ is named on TopK site but third‑party corroboration was not found in verification facts\. *(Analyst view)* ^[9](https://www.topk.io/customers/saleseq),[18](https://www.topk.io/customers/saleseq)
+  - Assumption: Independent customer references are required for commercial validation\.
+- **Against:** Partial security attestation — TopK points to a Vanta SOC2 pointer but report access appears gated \(shared under NDA\), leaving a verification gap for enterprise security posture\. *(Analyst view)* ^[17](https://www.topk.io/security),[16](https://vestbee.com/insights/articles/top-k-secures-5-5-m)
+  - Assumption: Enterprises will require full SOC2 evidence during diligence\.
+- **Must be true:** Confirmed enterprise references and usage metrics beyond one named customer \(volume, ARR, contract terms\)\. *(Analyst view)* ^[9](https://www.topk.io/customers/saleseq),[6](https://siliconcanals.com/?p=65960)
+  - Assumption: Commercial scale is necessary to justify enterprise go\-to\-market claims\.
+- **Must be true:** Obtain verifiable security artefacts \(SOC2 report or equivalent\) and penetration\-test results to support claims of enterprise readiness\. *(Analyst view)* ^[17](https://www.topk.io/security),[16](https://vestbee.com/insights/articles/top-k-secures-5-5-m)
+  - Assumption: Security evidence materially affects enterprise sales prospects\.
+
+# Technical due diligence
 
 ## Ownership and capital
 
-- Seed funding: $5\.5M \(≈€4\.66M / 120M CZK\) raised in a seed round with Earlybird, KAYA, Irregular Expressions and angel investors reported across outlets\. *(Corroborated)* ^[6](https://siliconcanals.com/?p=65960),[7](https://vestbee.com/insights/articles/top-k-secures-5-5-m),[20](https://www.lupa.cz/aktuality/databaze-s-prichodem-ai-prochazi-zasadni-transformaci-cesko-slovensky-startup-na-to-ziskal-120-milionu/),[21](https://www.startitup.sk/web-stories/slovaci-chcu-prepisat-buducnost-vyhladavania-startup-topk-ziskal-miliony-na-ai-revoluciu/)
-  - Assumption: Press reports reflect the same round
-- No CZ business registry ID found on the site \(impressum/contacts\), suggesting cross‑jurisdictional footprint or non‑CZ entity presence\. *(Company claim)* ^[31](https://topk.io/)
-  - Assumption: No IČO shown on public site equals not listed
+- Seed round: $5\.5M \(≈120M CZK\) reported closed with investors Earlybird, KAYA, Irregular Expressions and angels\. *(Corroborated)* ^[6](https://siliconcanals.com/?p=65960),[7](https://vestbee.com/insights/articles/top-k-secures-5-5-m),[19](https://cc.cz/chodili-spolu-na-stredni-ted-nabiraji-120-milionu-a-chteji-pohanet-vyhledavani-pro-top-aplikace/),[20](https://www.lupa.cz/aktuality/databaze-s-prichodem-ai-prochazi-zasadni-transformaci-cesko-slovensky-startup-na-to-ziskal-120-milionu/),[21](https://www.startitup.sk/web-stories/slovaci-chcu-prepisat-buducnost-vyhladavania-startup-topk-ziskal-miliony-na-ai-revoluciu/)
+  - Assumption: Press round reporting equals closed funding
+- Founders and leadership named in press: Marek Galovič, Jerguš Lejko and additional founders listed in coverage\. *(Corroborated)* ^[47](https://www.startitup.sk/web-stories/slovaci-chcu-prepisat-buducnost-vyhladavania-startup-topk-ziskal-miliony-na-ai-revoluciu/),[48](https://www.lupa.cz/aktuality/databaze-s-prichodem-ai-prochazi-zasadni-transformaci-cesko-slovensky-startup-na-to-ziskal-120-milionu/)
 
 ## Technology profile
 
-- Core product: unified retrieval engine combining semantic, dense, sparse, keyword and multi\-vector search exposed via API/console and Python/Node SDKs\. *(Partly verified)* ^[1](https://docs.topk.io/),[32](https://www.topk.io/),[33](https://docs.topk.io/),[3](https://www.lupa.cz/aktuality/databaze-s-prichodem-ai-prochazi-zasadni-transformaci-cesko-slovensky-startup-na-to-ziskal-120-milionu/),[34](https://docs.topk.io/start)
-  - Assumption: Docs reflect actual production surfaces
-- Engineering footprint: active GitHub org with multiple repos \(core Rust engine, benchmarks, SDKs and connectors\) and public docs/site subdomains \(api, docs, console, status\)\. *(Verified)* ^[35](https://github.com/topk-io),[13](https://github.com/topk-io/topk),[14](https://github.com/topk-io/dars),[25](https://github.com/topk-io/topk-haystack),[36](https://crt.sh/?q=%25.topk.io&output=json)
-  - Assumption: Public repos map to product codebase
-- AI dependency: product advertises built\-in multi\-vector embedding model and lists OpenAI as an integrated LLM vendor \(integration to customer accounts\)\. *(Partly verified)* ^[37](https://www.topk.io/),[22](https://www.startitup.sk/web-stories/slovaci-chcu-prepisat-buducnost-vyhladavania-startup-topk-ziskal-miliony-na-ai-revoluciu/),[38](https://www.topk.io/pricing)
-  - Assumption: Integration implies product can call customer OpenAI accounts
+- Product surfaces: public API, console, docs, login and status subdomains exist for SaaS product access and docs\. *(Verified)* ^[4](https://crt.sh/?q=%25.topk.io&output=json),[5](https://crt.sh/?q=%25.topk.io&output=json),[31](https://crt.sh/?q=%25.topk.io&output=json),[49](https://crt.sh/?q=%25.topk.io&output=json),[32](https://crt.sh/?q=%25.topk.io&output=json)
+- Engineering footprint: at least eight public GitHub repos \(Rust core with \~98 stars\), active pushes as recent as 2026\-11\-17\. *(Verified)* ^[11](https://github.com/topk-io/topk),[12](https://github.com/topk-io/llama-index-vector-stores-topk),[50](https://github.com/topk-io/langchain-topk),[28](https://github.com/topk-io/dars),[51](https://github.com/topk-io)
+- Product capabilities claimed: unified hybrid retrieval \(semantic, dense, sparse, keyword\), multi\-vector/late\-interaction, high\-throughput online writes\. *(Company claim)* ^[1](https://docs.topk.io/),[52](https://www.topk.io/use-cases/recsys),[53](https://www.topk.io/use-cases/recsys),[54](https://www.topk.io/use-cases/recsys)
 
-## Rebuild check
+## What could be rebuilt, and what cannot be judged from outside
 
-- **Commodity:** Python SDK and basic semantic API can be rebuilt by a 2–3 person team in weeks using docs and public connectors \(SDK evidence: Python SDK and docs\)\. *(Analyst view)* ^[39](https://docs.topk.io/),[40](https://docs.topk.io/start),[3](https://www.lupa.cz/aktuality/databaze-s-prichodem-ai-prochazi-zasadni-transformaci-cesko-slovensky-startup-na-to-ziskal-120-milionu/)
-  - Assumption: OSS connectors and docs are complete enough to replicate
-- **Hard to copy:** Reproducing claimed low\-cost, large\-scale hybrid engine with MaxSim multi\-vector late interaction, published benchmarks, and academic papers is nontrivial due to research and system engineering evidence\. *(Analyst view)* ^[41](https://www.topk.io/use-cases/recsys),[15](https://www.topk.io/use-cases/recsys),[10](https://openalex.org/W7128615148),[13](https://github.com/topk-io/topk),[42](https://patents.google.com/patent/US20240254752A1)
-  - Assumption: Papers and repos contain nontrivial algorithms
-- **Verdict:** Month — a functional clone of APIs and SDKs could be built in a month, but a production\-grade engine matching latency/scale and research IP would be missing\. *(Analyst view)* ^[39](https://docs.topk.io/),[13](https://github.com/topk-io/topk),[15](https://www.topk.io/use-cases/recsys)
-  - Assumption: Benchmark reproducibility requires internal ops data
+- **Replicable with off-the-shelf parts:** API/SDK surfaces and hybrid\-search behavior can be reassembled using open libraries \(OpenSearch/Elasticsearch API compatibility, open embeddings, MaxSim concepts\)\. *(Analyst view)* ^[55](https://www.topk.io/learn/elasticsearch-api-compatibility),[1](https://docs.topk.io/),[54](https://www.topk.io/use-cases/recsys)
+  - Assumption: Public docs and standards allow reimplementation
+- **Edge supported by public evidence:** Published end\-to\-end benchmark \(124\.8 ms p99, 176\.5 QPS\) is company\-published and is verifiable by reproduction of that run\. *(Analyst view)* ^[15](https://www.topk.io/use-cases/recsys)
+  - Assumption: Benchmark dataset and config would be shared for reproduction
+- **Cannot be judged from outside:** Real\-world recall/precision on customer data and production robustness cannot be judged externally without logs, test harnesses, or SalesEQ corroboration\. *(Analyst view)* ^[18](https://www.topk.io/customers/saleseq),[9](https://www.topk.io/customers/saleseq),[15](https://www.topk.io/use-cases/recsys)
+  - Assumption: Requires internal metrics or customer audits
 
 ## Risks and caveats
 
-- Dependency risk: product lists OpenAI integration \(customer\-account connection\) which may create single\-vendor operational exposure for inference paths\. *(Analyst view)* ^[22](https://www.startitup.sk/web-stories/slovaci-chcu-prepisat-buducnost-vyhladavania-startup-topk-ziskal-miliony-na-ai-revoluciu/)
-  - Assumption: Integration used in production inference paths
-- Unverified enterprise claims: SOC 2 / uptime pointer exists but report shared under NDA only \(security attestation partly verified\)\. *(Analyst view)* ^[17](https://www.topk.io/security)
-  - Assumption: Pointer without report insufficient for enterprise sales
-- Customer validation gap: SalesEQ testimonial present on vendor site but independent corroboration was not found in checks\. *(Analyst view)* ^[8](https://www.topk.io/customers/saleseq),[30](https://www.topk.io/customers/saleseq)
-  - Assumption: No independent reference page equals uncorroborated
+- Unverified customer claim: SalesEQ testimonial exists on vendor site but independent corroboration not found\. *(Analyst view)* ^[9](https://www.topk.io/customers/saleseq),[18](https://www.topk.io/customers/saleseq)
+- Security attestation behind NDA: public pointer to Vanta exists, but the SOC2 evidence requires requester access\. *(Analyst view)* ^[17](https://www.topk.io/security),[16](https://vestbee.com/insights/articles/top-k-secures-5-5-m)
+- Benchmark and performance claims are self\-reported; reproduction and dataset/context are necessary to trust latency/recall numbers\. *(Analyst view)* ^[15](https://www.topk.io/use-cases/recsys),[54](https://www.topk.io/use-cases/recsys)
 
 ## Questions for founders
 
-- Can TopK provide the full Vanta/SOC 2 Type I report and current uptime/incident logs to validate enterprise claims \(evidence: security pointer partly verified\)? *(Analyst view)* ^[17](https://www.topk.io/security)
-  - Assumption: Full report exists and can be shared under NDA
-- Please supply raw data and configuration for the 10M\-scale semantic\_index benchmark \(p99 124\.8ms, 176\.5 QPS\) so we can reproduce latency/throughput claims\. *(Analyst view)* ^[15](https://www.topk.io/use-cases/recsys)
-  - Assumption: Benchmarks are reproducible with provided artifacts
-- Provide three independent customer references \(contacts\) beyond on‑site testimonials, and evidence of revenue or ARR from named customers\. *(Analyst view)* ^[8](https://www.topk.io/customers/saleseq),[30](https://www.topk.io/customers/saleseq),[6](https://siliconcanals.com/?p=65960)
-  - Assumption: SalesEQ alone insufficient for enterprise proof
-- Clarify the role of OpenAI in production: is TopK reliant on OpenAI for core embeddings/inference or merely integrates customers' accounts? *(Analyst view)* ^[22](https://www.startitup.sk/web-stories/slovaci-chcu-prepisat-buducnost-vyhladavania-startup-topk-ziskal-miliony-na-ai-revoluciu/),[37](https://www.topk.io/),[38](https://www.topk.io/pricing)
-  - Assumption: Answer will affect vendor concentration risk
+- Can TopK provide the raw benchmark config, dataset, and replica topology used for the 124\.8 ms p99 / 176\.5 QPS result? *(Analyst view)* ^[15](https://www.topk.io/use-cases/recsys)
+- Please provide the SOC 2 Type I report or attestation artifact currently behind NDA and confirm date/coverage\. *(Analyst view)* ^[17](https://www.topk.io/security),[16](https://vestbee.com/insights/articles/top-k-secures-5-5-m)
+- Request an independent SalesEQ reference call or telemetry demonstrating production recall and index lag under their workload\. *(Analyst view)* ^[9](https://www.topk.io/customers/saleseq),[18](https://www.topk.io/customers/saleseq),[53](https://www.topk.io/use-cases/recsys)
+- Which embedding models are offered in\-product vs\. those requiring customer OpenAI accounts, and what data leaves customer boundaries? *(Analyst view)* ^[2](https://www.topk.io/),[25](https://www.startitup.sk/web-stories/slovaci-chcu-prepisat-buducnost-vyhladavania-startup-topk-ziskal-miliony-na-ai-revoluciu/),[41](https://www.topk.io/pricing)
 
 ## Sources
 
 1. [docs\.topk\.io](https://docs.topk.io/) · Company's own website · Product capability — “Semantic, keyword, dense, sparse, and multi\-vector search with filtering and custom ranking, in one API\.”
-2. [topk\.io](https://www.topk.io/) · Company's own website · Product capability — “Enterprise search Retrieve the right context from complex documents\.”
+2. [topk\.io](https://www.topk.io/) · Company's own website · Technical claim — “Open\-source multimodal multi\-vector embedding models, with a production model offered inside TopK for $0\.05/1M tokens\.”
 3. [lupa\.cz](https://www.lupa.cz/aktuality/databaze-s-prichodem-ai-prochazi-zasadni-transformaci-cesko-slovensky-startup-na-to-ziskal-120-milionu/) · Independent press · Product capability — “Firma nabízí SDK v Pythonu a Node\.js, respektive JavaScript\.”
-4. [siliconcanals\.com](https://siliconcanals.com/?p=65960) · Independent press · Product capability — “The company is developing a unified search engine that enables developers and AI agents to manage both structured and unstructured data through a single system\.”
-5. [topk\.io](https://www.topk.io/use-cases/recsys) · Company's own website · Product capability — “TopK gives RecSys teams one serving layer for fresh writes, product\-aware filters, and dense, sparse, keyword, and multi\-vector retrieval across every surface\.”
+4. [crt\.sh](https://crt.sh/?q=%25.topk.io&output=json) · Public technical artifact · Subdomain \(certificates\) · 2026\-04\-15 — “api\.topk\.io \(first certificate 2026\-04\-15\)”
+5. [crt\.sh](https://crt.sh/?q=%25.topk.io&output=json) · Public technical artifact · Subdomain \(certificates\) · 2025\-02\-06 — “console\.topk\.io \(first certificate 2025\-02\-06\)”
 6. [siliconcanals\.com](https://siliconcanals.com/?p=65960) · Independent press · Funding round — “TopK has raised $5\.5M \(nearly €4\.66M\) in seed funding to advance its AI\-native search platform\.”
 7. [vestbee\.com](https://vestbee.com/insights/articles/top-k-secures-5-5-m) · Independent press · Funding round — “Prague\-based firm TopK, which builds an AI\-powered search engine for better data retrieval, has secured $5\.5 million in a seed funding round from Earlybird, KAYA, Irregular Expressions, and several angel investors, as Vestbee was told\.”
-8. [topk\.io](https://www.topk.io/customers/saleseq) · Company's own website · Customer — ““TopK has been one of our most important third\-party vendors\. We absolutely love the platform, and we’ve told so many people about it\.””
-9. [siliconcanals\.com](https://siliconcanals.com/?p=65960) · Independent press · Press article · 2025\-07\-01 — “Prague’s TopK raises €4\.6M to build a search engine for the AI era”
-10. [openalex\.org](https://openalex.org/W7128615148) · Public technical artifact · Research paper · 2026\-04\-09 — “Efficient Learning of Sparse Representations from Interactions · International World Wide Web Conference \(WWW\) · cited 5×”
-11. [openalex\.org](https://openalex.org/W7214324948) · Public technical artifact · Research paper · 2026\-09\-25 — “Sparse Autoencoders as Semantic Domain Adapters for Recommender Systems · ACM Conference on Recommender Systems \(RecSys\)”
-12. [openalex\.org](https://openalex.org/W7214339189) · Public technical artifact · Research paper · 2026\-09\-25 — “COMPRESSO: Espresso\-Style Sparse Representation Learning for Interpretable Recommender Systems · ACM Conference on Recommender Systems \(RecSys\)”
-13. [github\.com](https://github.com/topk-io/topk) · Public technical artifact · GitHub repository · 2026\-11\-17 — “topk\-io/topk · High\-quality search for AI\-native applications\. · Rust · last push 2026\-11\-17”
-14. [github\.com](https://github.com/topk-io/dars) · Public technical artifact · GitHub repository · 2026\-02\-09 — “topk\-io/dars · Declarative Agents in Rust · Rust · last push 2026\-02\-09”
+8. [earlybird\.com](https://earlybird.com/companies/topk) · Independent press · Press article — “Earlybird”
+9. [topk\.io](https://www.topk.io/customers/saleseq) · Company's own website · Customer — ““TopK has been one of our most important third\-party vendors\. We absolutely love the platform, and we’ve told so many people about it\.””
+10. [siliconcanals\.com](https://siliconcanals.com/?p=65960) · Independent press · Press article · 2025\-07\-01 — “Prague’s TopK raises €4\.6M to build a search engine for the AI era”
+11. [github\.com](https://github.com/topk-io/topk) · Public technical artifact · GitHub repository · 2026\-11\-17 — “topk\-io/topk · High\-quality search for AI\-native applications\. · Rust · last push 2026\-11\-17”
+12. [github\.com](https://github.com/topk-io/llama-index-vector-stores-topk) · Public technical artifact · GitHub repository · 2026\-11\-17 — “topk\-io/llama\-index\-vector\-stores\-topk · Python · last push 2026\-11\-17”
+13. [openalex\.org](https://openalex.org/W7128615148) · Public technical artifact · Research paper · 2026\-04\-09 — “Efficient Learning of Sparse Representations from Interactions · International World Wide Web Conference \(WWW\) · cited 5×”
+14. [openalex\.org](https://openalex.org/W7214324948) · Public technical artifact · Research paper · 2026\-09\-25 — “Sparse Autoencoders as Semantic Domain Adapters for Recommender Systems · ACM Conference on Recommender Systems \(RecSys\)”
 15. [topk\.io](https://www.topk.io/use-cases/recsys) · Company's own website · Technical claim — “In the production semantic\_index benchmark, TopK measured the whole path end\-to\-end: ingest, embedding inference, indexing, concurrent queries, and retrieval quality\. On a sustained 10M\-scale run, the system served multi\-vector retrieval at 124\.8 ms p99 latency while sustaining 176\.5 QPS per replica set, with 1\.2s inde…”
 16. [vestbee\.com](https://vestbee.com/insights/articles/top-k-secures-5-5-m) · Independent press · Technical claim — “security and reliability features such as SOC 2 Type I compliance and a 99\.9% uptime guarantee\.”
 17. [topk\.io](https://www.topk.io/security) · Company's own website · Independent check of a claim — “Public attestation pointer found: vanta on https://www\.topk\.io/security, subdomain trust\.topk\.io\. The report itself is shared under NDA — request it\.”
-18. [topk\.io](https://www.topk.io/) · Company's own website · Pricing — “with a production model offered inside TopK for $0\.05/1M tokens\.”
+18. [topk\.io](https://www.topk.io/customers/saleseq) · Company's own website · Independent check of a claim
 19. [cc\.cz](https://cc.cz/chodili-spolu-na-stredni-ted-nabiraji-120-milionu-a-chteji-pohanet-vyhledavani-pro-top-aplikace/) · Independent press · Funding round — “Loni rozjeli vlastní startup TopK – a teď nabírají investici ve výši necelých 120 milionů korun\.”
 20. [lupa\.cz](https://www.lupa.cz/aktuality/databaze-s-prichodem-ai-prochazi-zasadni-transformaci-cesko-slovensky-startup-na-to-ziskal-120-milionu/) · Independent press · Funding round — “TopK získal investici 120 milionů korun \(5,5 milionu dolarů\) od fondů Earlybird, Kaya, Irregular Expressions a několika andělských investorů\. Jde o prvotní kolo seed, na jehož poměry jde o vysokou sumu\.”
 21. [startitup\.sk](https://www.startitup.sk/web-stories/slovaci-chcu-prepisat-buducnost-vyhladavania-startup-topk-ziskal-miliony-na-ai-revoluciu/) · Independent press · Funding round — “Startup TopK, založený slovenskou dvojicou Marek Galovič a Jerguš Lejko, získal 5,5 milióna dolárov v rámci seed investičného kola\.”
-22. [startitup\.sk](https://www.startitup.sk/web-stories/slovaci-chcu-prepisat-buducnost-vyhladavania-startup-topk-ziskal-miliony-na-ai-revoluciu/) · Independent press · Product capability — “V čase, keď prudko rastie záujem o jazykové modely ako ChatGPT, TopK reaguje technológiou, ktorá prepája rôzne prístupy do jedného flexibilného systému\.”
-23. [cc\.cz](https://cc.cz/chodili-spolu-na-stredni-ted-nabiraji-120-milionu-a-chteji-pohanet-vyhledavani-pro-top-aplikace/) · Independent press · Product capability — “To vývojářům umožňuje doladit výsledky pro jejich konkrétní doménu a použití, například v e\-commerce, financích, zdravotnictví či právu\.”
-24. [openalex\.org](https://openalex.org/W2921738510) · Public technical artifact · Research paper · 2019\-03\-01 — “PBK/TOPK overexpression and survival in solid tumors: A PRISMA\-compliant meta\-analysis · Medicine · cited 21×”
-25. [github\.com](https://github.com/topk-io/topk-haystack) · Public technical artifact · GitHub repository · 2026\-06\-08 — “topk\-io/topk\-haystack · Python · last push 2026\-06\-08”
-26. [github\.com](https://github.com/topk-io/bench) · Public technical artifact · GitHub repository · 2026\-08\-07 — “topk\-io/bench · Reproducible benchmarking tool for evaluating vector databases under realistic workloads\. · Rust · last push 2026\-08\-07”
-27. [crt\.sh](https://crt.sh/?q=%25.topk.io&output=json) · Public technical artifact · Subdomain \(certificates\) · 2025\-01\-26 — “docs\.topk\.io \(first certificate 2025\-01\-26\)”
-28. [crt\.sh](https://crt.sh/?q=%25.topk.io&output=json) · Public technical artifact · Subdomain \(certificates\) · 2025\-02\-06 — “console\.topk\.io \(first certificate 2025\-02\-06\)”
-29. [crt\.sh](https://crt.sh/?q=%25.topk.io&output=json) · Public technical artifact · Subdomain \(certificates\) · 2025\-05\-19 — “status\.topk\.io \(first certificate 2025\-05\-19\)”
-30. [topk\.io](https://www.topk.io/customers/saleseq) · Company's own website · Independent check of a claim
-31. [topk\.io](https://topk.io/) · Company's own website · Registry: structure
-32. [topk\.io](https://www.topk.io/) · Company's own website · Product capability — “Retrieval engine, models, and inference built together\.”
-33. [docs\.topk\.io](https://docs.topk.io/) · Company's own website · Technical claim — “Search by meaning\. No embedding pipeline, vector store, or reranker to run\.”
-34. [docs\.topk\.io](https://docs.topk.io/start) · Company's own website · Product capability — “Create a movies collection with a semantic index on the plot, so it can be searched by meaning:”
-35. [github\.com](https://github.com/topk-io) · Public technical artifact · GitHub organisation · 2024\-11\-02 — “topk\-io · 19 public repos”
-36. [crt\.sh](https://crt.sh/?q=%25.topk.io&output=json) · Public technical artifact · Subdomain \(certificates\) · 2026\-04\-15 — “api\.topk\.io \(first certificate 2026\-04\-15\)”
-37. [topk\.io](https://www.topk.io/) · Company's own website · Technical claim — “Open\-source multimodal multi\-vector embedding models, with a production model offered inside TopK for $0\.05/1M tokens\.”
-38. [topk\.io](https://www.topk.io/pricing) · Company's own website · Pricing — “Text &amp; Image embedding Built\-in multi\-vector embeddings per 1M tokens $ 0\.05”
-39. [docs\.topk\.io](https://docs.topk.io/) · Company's own website · Product capability — “Search from Python\. TopK embeds your text for you\.”
-40. [docs\.topk\.io](https://docs.topk.io/start) · Company's own website · Website page — “Agent quickstart \- TopK”
-41. [topk\.io](https://www.topk.io/use-cases/recsys) · Company's own website · Product capability — “Late interaction is expressive because it does more work: MaxSim compares query vectors against item vectors and aggregates the best matches\. TopK does not brute\-force that across the corpus\. Managed semantic\_index and bring\-your\-own representations in multi\_vector\_index both use sparse multi\-vector encoding as a fast …”
-42. [patents\.google\.com](https://patents.google.com/patent/US20240254752A1) · Official record · Patent publication — “US20240254752A1 · Modular assembly including multiple modules · Topk USA LLC”
+22. [vestbee\.com](https://vestbee.com/insights/articles/top-k-secures-5-5-m) · Independent press · Press article · 2025\-07\-01 — “Prague\-based startup TopK secures $5\.5M to revolutionize AI\-native search engines \| Vestbee”
+23. [euro\.cz](https://www.euro.cz/clanky/cesko-slovensky-startup-topk-chce-zmenit-zpusob-vyhledavani-v-ere-ai-od-investoru-ziskal-120-milionu-a-miri-na-firmy-typu-openai/) · Independent press · Press article · 2025\-07\-01 — “Česko\-slovenský startup TopK chce změnit způsob vyhledávání v éře umělé inteligence\. Nabírá 120 milionů korun a míří i na firmy typu OpenAI \- Euro\.cz”
+24. [topk\.io](https://www.topk.io/use-cases/recsys) · Company's own website · Product capability — “Bring your own late\-interaction representations with multi\_vector\_index and SMVE , or use managed semantic\_index for batteries\-included retrieval over text data with managed multi\-vector inference\.”
+25. [startitup\.sk](https://www.startitup.sk/web-stories/slovaci-chcu-prepisat-buducnost-vyhladavania-startup-topk-ziskal-miliony-na-ai-revoluciu/) · Independent press · Product capability — “V čase, keď prudko rastie záujem o jazykové modely ako ChatGPT, TopK reaguje technológiou, ktorá prepája rôzne prístupy do jedného flexibilného systému\.”
+26. [cc\.cz](https://cc.cz/chodili-spolu-na-stredni-ted-nabiraji-120-milionu-a-chteji-pohanet-vyhledavani-pro-top-aplikace/) · Independent press · Product capability — “To vývojářům umožňuje doladit výsledky pro jejich konkrétní doménu a použití, například v e\-commerce, financích, zdravotnictví či právu\.”
+27. [openalex\.org](https://openalex.org/W2921738510) · Public technical artifact · Research paper · 2019\-03\-01 — “PBK/TOPK overexpression and survival in solid tumors: A PRISMA\-compliant meta\-analysis · Medicine · cited 21×”
+28. [github\.com](https://github.com/topk-io/dars) · Public technical artifact · GitHub repository · 2026\-02\-09 — “topk\-io/dars · Declarative Agents in Rust · Rust · last push 2026\-02\-09”
+29. [github\.com](https://github.com/topk-io/topk-haystack) · Public technical artifact · GitHub repository · 2026\-06\-08 — “topk\-io/topk\-haystack · Python · last push 2026\-06\-08”
+30. [github\.com](https://github.com/topk-io/bench) · Public technical artifact · GitHub repository · 2026\-08\-07 — “topk\-io/bench · Reproducible benchmarking tool for evaluating vector databases under realistic workloads\. · Rust · last push 2026\-08\-07”
+31. [crt\.sh](https://crt.sh/?q=%25.topk.io&output=json) · Public technical artifact · Subdomain \(certificates\) · 2025\-01\-26 — “docs\.topk\.io \(first certificate 2025\-01\-26\)”
+32. [crt\.sh](https://crt.sh/?q=%25.topk.io&output=json) · Public technical artifact · Subdomain \(certificates\) · 2025\-05\-19 — “status\.topk\.io \(first certificate 2025\-05\-19\)”
+33. [topk\.io](https://www.topk.io/) · Company's own website · Pricing — “with a production model offered inside TopK for $0\.05/1M tokens\.”
+34. [topk\.io](https://www.topk.io/) · Company's own website · Product capability — “Retrieval engine, models, and inference built together\.”
+35. [siliconcanals\.com](https://siliconcanals.com/?p=65960) · Independent press · Product capability — “The company is developing a unified search engine that enables developers and AI agents to manage both structured and unstructured data through a single system\.”
+36. [vestbee\.com](https://vestbee.com/insights/articles/top-k-secures-5-5-m) · Independent press · Product capability — “TopK develops a search engine that combines vector search, keyword matching, and filtering in a single query system\.”
+37. [lupa\.cz](https://www.lupa.cz/aktuality/databaze-s-prichodem-ai-prochazi-zasadni-transformaci-cesko-slovensky-startup-na-to-ziskal-120-milionu/) · Independent press · Press article · 2025\-07\-01 — “Databáze s příchodem AI prochází zásadní transformací\. Česko\-slovenský startup na to získal 120 milionů \- Lupa\.cz”
+38. [topk\.io](https://www.topk.io/pricing) · Company's own website · Pricing — “Pay only for what you use\. Transparent, usage\-based pricing, billed monthly\.”
+39. [topk\.io](https://www.topk.io/pricing) · Company's own website · Pricing — “Start with $10 free credits”
+40. [topk\.io](https://www.topk.io/pricing) · Company's own website · Pricing — “Write requests Batched upsert operations per 1K requests $ 0\.01”
+41. [topk\.io](https://www.topk.io/pricing) · Company's own website · Pricing — “Text &amp; Image embedding Built\-in multi\-vector embeddings per 1M tokens $ 0\.05”
+42. [tech\.eu](https://tech.eu/2025/07/01/topk-raises-55m-to-develop-ai-native-search-engine-for-enterprises) · Independent press · Press article · 2025\-07\-01 — “TopK raises $5\.5M to develop AI\-native search engine for enterprises \- Tech\.eu”
+43. [itkey\.media](https://itkey.media/topk-raises-usd-5-5m-to-tackle-chatgpt-era-challenges-with-ai-native-hybrid-search-engine-for-enterprises/) · Independent press · Press article · 2025\-08\-11 — “TopK Raises USD 5\.5M to Tackle ChatGPT\-Era Challenges with AI\-Native Hybrid Search Engine for Enterprises \- ITKeyMedia”
+44. [topk\.io](https://www.topk.io/learn/hybrid-search-elasticsearch-api) · Company's own website · Website page — “Can You Do Hybrid Search Through the Elasticsearch API? \| TopK”
+45. [topk\.io](https://www.topk.io/learn/elasticsearch-api-compatibility) · Company's own website · GitHub organisation — “elastic · None public repos”
+46. [redis\.io](https://redis.io/docs/latest/develop/data-types/probabilistic/top-k) · Independent press · Press article — “Top\-K \| Docs”
+47. [startitup\.sk](https://www.startitup.sk/web-stories/slovaci-chcu-prepisat-buducnost-vyhladavania-startup-topk-ziskal-miliony-na-ai-revoluciu/) · Independent press · Team claim — “Startup TopK, založený slovenskou dvojicou Marek Galovič a Jerguš Lejko, získal 5,5 milióna dolárov v rámci seed investičného kola\.”
+48. [lupa\.cz](https://www.lupa.cz/aktuality/databaze-s-prichodem-ai-prochazi-zasadni-transformaci-cesko-slovensky-startup-na-to-ziskal-120-milionu/) · Independent press · Team claim — “Zakladateli TopK jsou Marek Galovič, Jerguš Lejko, Peter Toth a Barbora Grillusová\.”
+49. [crt\.sh](https://crt.sh/?q=%25.topk.io&output=json) · Public technical artifact · Subdomain \(certificates\) · 2026\-06\-22 — “login\.topk\.io \(first certificate 2026\-06\-22\)”
+50. [github\.com](https://github.com/topk-io/langchain-topk) · Public technical artifact · GitHub repository · 2026\-11\-17 — “topk\-io/langchain\-topk · Python · last push 2026\-11\-17”
+51. [github\.com](https://github.com/topk-io) · Public technical artifact · GitHub organisation · 2024\-11\-02 — “topk\-io · 19 public repos”
+52. [topk\.io](https://www.topk.io/use-cases/recsys) · Company's own website · Product capability — “TopK gives RecSys teams one serving layer for fresh writes, product\-aware filters, and dense, sparse, keyword, and multi\-vector retrieval across every surface\.”
+53. [topk\.io](https://www.topk.io/use-cases/recsys) · Company's own website · Product capability — “Online writes without rebuilds TopK can ingest 70 MB/s per partition with writes becoming queryable without index rebuild lag\.”
+54. [topk\.io](https://www.topk.io/use-cases/recsys) · Company's own website · Product capability — “Late interaction is expressive because it does more work: MaxSim compares query vectors against item vectors and aggregates the best matches\. TopK does not brute\-force that across the corpus\. Managed semantic\_index and bring\-your\-own representations in multi\_vector\_index both use sparse multi\-vector encoding as a fast …”
+55. [topk\.io](https://www.topk.io/learn/elasticsearch-api-compatibility) · Company's own website · Website page — “Can You Replace Elasticsearch Without Rewriting Queries? \| TopK”
+56. [patents\.google\.com](https://patents.google.com/patent/US20240254752A1) · Official record · Patent publication — “US20240254752A1 · Modular assembly including multiple modules · Topk USA LLC”
 
 ## How this dossier was built
 
@@ -130,7 +179,7 @@ topk\.io · CZ/US · 2026\-11\-17
 | Claim verification | company claims checked against independent sources: Google Patents \(patents\), IAB Global Vendor List \(TCF\), commercial register \(investors named in press\), security pages \(SOC 2 / ISO attestations\), news search \(customers\) | 3 | — |
 | AI extraction | an LLM reads saved pages and articles and proposes facts; a fact is kept only if its quote is found in the source text and its category passes rule checks | 57 | — |
 
-Analysis: gpt\-5\-mini (cost $0.0090); AI extraction cost $0.0082. Full fact table: CSV export.
+Analysis: gpt\-5\-mini (cost $0.0175); AI extraction cost $0.0082. Full fact table: CSV export.
 
 ## Source appendix (all collected facts)
 
@@ -258,9 +307,6 @@ Analysis: gpt\-5\-mini (cost $0.0090); AI extraction cost $0.0082. Full fact tab
 - F4207 · press\_mention · Sourced · [https://www\.gaebler\.com/VC\-Funding\-BA995EA6\-EA64\-4C15\-B880\-8C9EB23E59A0\-TopK\-07\-01\-2025](https://www.gaebler.com/VC-Funding-BA995EA6-EA64-4C15-B880-8C9EB23E59A0-TopK-07-01-2025)
 - F4208 · press\_mention · Sourced · [https://dbdb\.io/db/topk](https://dbdb.io/db/topk)
 - F4209 · press\_mention · Sourced · [https://github\.com/topk\-io/topk](https://github.com/topk-io/topk)
-- F5535 · source\_unavailable · Unavailable · [https://www\.hlidacstatu\.cz/hledat](https://www.hlidacstatu.cz/hledat)
-- F5536 · source\_check · Checked · no results · [https://cordis\.europa\.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27TopK%27](https://cordis.europa.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27TopK%27)
-- F5537 · source\_unavailable · Unavailable · [https://starfos\.tacr\.cz](https://starfos.tacr.cz)
 - F6136 · product\_capability · Medium confidence · [https://www\.topk\.io/](https://www.topk.io/)
 - F6137 · tech\_claim · Medium confidence · [https://www\.topk\.io/](https://www.topk.io/)
 - F6138 · product\_capability · Medium confidence · [https://www\.topk\.io/](https://www.topk.io/)
@@ -321,3 +367,6 @@ Analysis: gpt\-5\-mini (cost $0.0090); AI extraction cost $0.0082. Full fact tab
 - F6395 · patent · Sourced · [https://patents\.google\.com/patent/US20240254752A1](https://patents.google.com/patent/US20240254752A1)
 - F6396 · verification · Sourced · [https://www\.topk\.io/security](https://www.topk.io/security)
 - F6397 · verification · Sourced · [https://www\.topk\.io/customers/saleseq](https://www.topk.io/customers/saleseq)
+- F7778 · source\_unavailable · Unavailable · [https://www\.hlidacstatu\.cz/hledat](https://www.hlidacstatu.cz/hledat)
+- F7779 · source\_check · Checked · no results · [https://cordis\.europa\.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27TopK%27](https://cordis.europa.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27TopK%27)
+- F7780 · source\_unavailable · Unavailable · [https://starfos\.tacr\.cz](https://starfos.tacr.cz)

@@ -1,106 +1,155 @@
 # Apaleo — due diligence brief
 
-apaleo\.com · DE · 2026\-11\-17
+apaleo\.com · DE · 2026\-11\-20
 
 **How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — combines independent evidence with the company's own statements; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
 
 ## TL;DR
 
-- **Product.** An API\-first, AI\-powered open property management platform \(PMS\) selling SaaS to hotel operators and groups\. *(Partly verified)* ^[1](https://apaleo.com/),[2](https://apaleo.com/api-terms-of-use),[3](https://www.privateequityinternational.com/psg-leads-growth-equity-funding-round-in-apaleo)
-- **Stage & traction.** Multiple rounds including Series A \(EUR 9M\) and a €20M growth equity round led by PSG; public claims of 1,700\+ properties and 85k\+ units\. *(Corroborated)* ^[4](https://www.bakertilly.de/beitrag/baker-tilly-begleitet-rockaway-ventures-und-serpentine-ventures-bei-investition-in-offene-hospitality-plattform-apaleo),[5](https://hengeler-news.com/en/articles/hengeler-mueller-advises-psg-equity-on-investment-in-apaleo),[6](https://hengeler-news.com/en/articles/hengeler-mueller-advises-psg-equity-on-investment-in-apaleo)
-- **Technology & moat.** Claims hinge on an open API ecosystem, Apaleo MCP Server for secure agent access, and marketplace/Pay integrations — supplier lock\-in and data\-scale are the most defensible elements cited\. *(Company claim)* ^[7](https://apaleo.com/about-us),[8](https://apaleo.com/ai-powered-pms-solution),[9](https://apaleo.com/about-us)
-- **Key risk.** Material reliance on third‑party LLM vendors \(Anthropic, OpenAI\) for AI features plus an unverified SOC 2/compliance attestation\. *(Analyst view)* ^[10](https://apaleo.com/dpa),[11](https://apaleo.com/dpa),[12](https://apaleo.com/)
-- **Diligence focus.** Validate SOC 2/PCI/PSD2 evidence and ask for recent penetration test and data‑flow for LLM calls to Anthropic/OpenAI \(prompt logging, retention, redaction\)\. *(Analyst view)* ^[12](https://apaleo.com/),[10](https://apaleo.com/dpa),[11](https://apaleo.com/dpa)
+- **Product.** API\-first, AI\-powered property management platform selling SaaS PMS and developer APIs to hotel and serviced\-apartment operators\. *(Company claim)* ^[1](https://apaleo.com/),[2](https://apaleo.com/about-us),[3](https://apaleo.com/api-terms-of-use)
+- **Stage & traction.** Evidence of growth\-stage traction: reported Series A and a later €20M growth equity round led by PSG; press claims \~85k units, 1,700 properties\. *(Corroborated)* ^[4](https://www.bakertilly.de/beitrag/baker-tilly-begleitet-rockaway-ventures-und-serpentine-ventures-bei-investition-in-offene-hospitality-plattform-apaleo),[5](https://finance.yahoo.com/news/apaleo-secures-21m-funding-fuel-145553468.html),[6](https://hengeler-news.com/en/articles/hengeler-mueller-advises-psg-equity-on-investment-in-apaleo)
+- **Technology & moat.** Potential moat: open API ecosystem plus claimed MCP Server \(Model Context Protocol\) that exposes live property data to agents; public repos and API docs support platform openness\. *(Partly verified)* ^[2](https://apaleo.com/about-us),[7](https://apaleo.com/ai-powered-pms-solution),[8](https://github.com/apaleo/gsheet-addon),[9](https://apaleo.com/api-terms-of-use)
+- **Key risk.** Key decision risk: AI/legal/compliance exposure — product relies on third‑party LLM vendors \(Anthropic, OpenAI\) while SOC2/compliance claims are not independently verifiable from public pages\. *(Analyst view)* ^[10](https://apaleo.com/dpa),[11](https://apaleo.com/dpa),[12](https://apaleo.com/)
+- **Diligence focus.** First diligence to run: obtain SOC 2/PCI/PSD2 evidence and data\-flow mappings showing how MCP Server limits LLM access to PII and live hotel data\. *(Analyst view)* ^[12](https://apaleo.com/),[7](https://apaleo.com/ai-powered-pms-solution),[13](https://apaleo.com/pricing)
 
 ## At a glance (computed by code, no LLM)
 
 | Signal | Value | Sources |
 |---|---|---|
-| Funding \(press\) | 2023\-04\-26 · Series A · EUR 9 million · Rockaway Ventures, Serpentine Ventures; 2024\-11\-20 · growth equity · €20m \(€21\.1m\) · PSG, Redalpine, FOMCAP IV, Rockaway Ventures · 4 reports | 4, 13, 14, 5, 15 |
-| Hiring | 11 open roles: sales gtm 4, other 3, engineering 3, forward deployed 1; Munich, Munich / Remote, Munich/ Berlin, Munich/ Berlin/ Germany remote, Paris, France | 16, 17, 18, 19, 20, 21 |
-| AI dependency | relies on \(subprocessor / own claims\): Anthropic, OpenAI; own\-model evidence: 1 papers, 0 verified HF models, 1 ML roles, 0 own\-model claims | 10, 11, 22, 23 |
-| Engineering footprint | 3 public repos \(8★, last push 2026\-11\-16\); product surfaces: portal\.apaleo\.com, status\.apaleo\.com; 1 docs pages; stack: Next\.js | 24, 25, 26, 27, 28, 29 |
-| Customers | public pricing: yes | 30 |
+| Funding \(press\) | 2023\-04\-26 · Series A · EUR 9 million · Rockaway Ventures, Serpentine Ventures; 2024\-11\-20 · growth equity · €20m \(€21\.1m\) · PSG, Redalpine, FOMCAP IV, Rockaway Ventures · 4 reports | 4, 14, 5, 15, 16 |
+| Thesis fit \(Rockaway\) | sectors: AI\-led transformative tech \(6 facts\); deep tech \(5 facts\) · geography: DE \(core region\) · overlaps portfolio: JISR Institute, a\.s\. \(distrib, third\-p\) | 17, 18, 19 |
+| Hiring | 11 open roles: sales gtm 4, other 3, engineering 3, forward deployed 1; Munich, Munich / Remote, Munich/ Berlin, Munich/ Berlin/ Germany remote, Paris, France | 20, 21, 22, 23, 24, 25 |
+| AI dependency | relies on \(subprocessor / own claims\): Anthropic, OpenAI; own\-model evidence: 1 papers, 0 verified HF models, 1 ML roles, 0 own\-model claims | 10, 11, 26, 27 |
+| Engineering footprint | 3 public repos \(8★, last push 2026\-11\-16\); product surfaces: portal\.apaleo\.com, status\.apaleo\.com; 1 docs pages; stack: Next\.js | 28, 29, 8, 30, 31, 9 |
+| Customers | public pricing: yes | 32 |
 | Claims checked | SOC 2 / ISO: not checkable | 12 |
-| Timeline | first press 2018\-05\-02 \(21 articles collected\) | 31 |
+| Timeline | first press 2018\-05\-02 \(21 articles collected\) | 33 |
 
-# Detailed findings
+# Investment view
+
+*Inputs for the partner's memo, not a recommendation: what the evidence says about the business, the market, competitors and fit with the fund, and the case for and against\.*
+
+## Fit with the Rockaway thesis
+
+- **Sector:** API\-first, AI\-powered hospitality platform aligns with 'AI\-led transformative tech' and 'industrial / manufacturing AI' thesis elements via explicit AI product claims and architecture\. *(Analyst view)* ^[1](https://apaleo.com/),[7](https://apaleo.com/ai-powered-pms-solution),[34](https://apaleo.com/ai-powered-pms-solution),[35](https://finance.yahoo.com/news/apaleo-secures-21m-funding-fuel-145553468.html)
+  - Assumption: Fund's sector labels listed in DERIVED\.thesis apply
+- **Portfolio overlap:** JISR Institute, a\.s\. appears in Rockaway's derived portfolio list; no direct product overlap shown in Apaleo facts, so likely not a conflict and could be neutral or synergistic\. *(Analyst view)* ^[6](https://hengeler-news.com/en/articles/hengeler-mueller-advises-psg-equity-on-investment-in-apaleo),[4](https://www.bakertilly.de/beitrag/baker-tilly-begleitet-rockaway-ventures-und-serpentine-ventures-bei-investition-in-offene-hospitality-plattform-apaleo)
+  - Assumption: Derived portfolio\_overlap entry is accurate
+
+## Business model
+
+- Primary customers: hotel operators; Apaleo sells a SaaS property\-management platform to operators\. *(Partly verified)* ^[3](https://apaleo.com/api-terms-of-use),[36](https://www.bakertilly.de/beitrag/baker-tilly-begleitet-rockaway-ventures-und-serpentine-ventures-bei-investition-in-offene-hospitality-plattform-apaleo)
+- Pricing: published plans include €8 per room/month, and plans starting at €400/month; API usage is declared free\. *(Company claim)* ^[37](https://apaleo.com/pricing),[38](https://apaleo.com/pricing),[39](https://apaleo.com/api-terms-of-use)
+- Other revenue lines stated: integrated payments \(Apaleo Pay\) and an app/store commerce layer \(Apaleo Store\)\. *(Company claim)* ^[40](https://apaleo.com/about-us),[41](https://apaleo.com/about-us),[2](https://apaleo.com/about-us)
+
+## Market
+
+- Company framing of demand: hospitality customers want composable, API\-first platforms and AI\-driven guest automation \(company claim\)\. *(Company claim)* ^[42](https://apaleo.com/),[34](https://apaleo.com/ai-powered-pms-solution),[43](https://apaleo.com/about-us)
+- Press cites growth equity raise specifically to 'fuel global expansion', implying TAM expansion intent \(journalist summary of funding round\)\. *(Corroborated)* ^[5](https://finance.yahoo.com/news/apaleo-secures-21m-funding-fuel-145553468.html),[19](https://hoteltechnologynews.com/2024/11/apaleo-raises-21-million-to-expand-its-hotel-property-management-platform-built-on-api-first-architecture)
+
+## Competition
+
+No sourced findings for this section.
+
+## Case for and against
+
+- **For:** Established product positioning—API\-first, MACH architecture and open\-PMS messaging give clear developer and integrator appeal\. *(Analyst view)* ^[44](https://apaleo.com/),[43](https://apaleo.com/about-us),[35](https://finance.yahoo.com/news/apaleo-secures-21m-funding-fuel-145553468.html)
+- **For:** Product roadmap includes AI agent layer \(Copilot\) and MCP Server to expose live property data to models—differentiator for AI\-enabled workflows\. *(Analyst view)* ^[7](https://apaleo.com/ai-powered-pms-solution),[34](https://apaleo.com/ai-powered-pms-solution),[45](https://apaleo.com/ai-powered-pms-solution)
+- **Against:** Security/compliance claims \(SOC 2, PCI, PSD2\) are asserted but the SOC 2 attestation is not verifiable from available pages\. *(Analyst view)* ^[46](https://apaleo.com/),[12](https://apaleo.com/)
+  - Assumption: SOC 2 report not published online
+- **Against:** Dependence on third\-party AI and infra vendors \(Anthropic, OpenAI, AWS, PostHog\) creates operational and data\-governance dependencies\. *(Analyst view)* ^[10](https://apaleo.com/dpa),[11](https://apaleo.com/dpa),[47](https://apaleo.com/dpa),[48](https://apaleo.com/dpa)
+- **Must be true:** Customer adoption / retention across &gt;1,700 properties or equivalent ARR must be validated versus the stated scale claims\. *(Analyst view)* ^[6](https://hengeler-news.com/en/articles/hengeler-mueller-advises-psg-equity-on-investment-in-apaleo),[4](https://www.bakertilly.de/beitrag/baker-tilly-begleitet-rockaway-ventures-und-serpentine-ventures-bei-investition-in-offene-hospitality-plattform-apaleo)
+  - Assumption: Press/PR scale claim reflects paying customers
+- **Must be true:** Confirmed, current SOC 2 / PCI evidence and contractual data\-handling terms for AI integrations \(OpenAI/Anthropic\) are in place and allowed by major enterprise buyers\. *(Analyst view)* ^[12](https://apaleo.com/),[10](https://apaleo.com/dpa),[11](https://apaleo.com/dpa)
+  - Assumption: Enterprise procurement requires verifiable attestations
+
+# Technical due diligence
 
 ## Ownership and capital
 
-- Series A: Apaleo GmbH received EUR 9M from Rockaway Ventures and Serpentine Ventures \(press/legal advisory note\)\. *(Single source)* ^[4](https://www.bakertilly.de/beitrag/baker-tilly-begleitet-rockaway-ventures-und-serpentine-ventures-bei-investition-in-offene-hospitality-plattform-apaleo)
-- Growth equity: reported €20M round led by PSG Equity with Redalpine, FOMCAP IV and Rockaway Ventures participating\. *(Corroborated)* ^[5](https://hengeler-news.com/en/articles/hengeler-mueller-advises-psg-equity-on-investment-in-apaleo),[14](https://finance.yahoo.com/news/apaleo-secures-21m-funding-fuel-145553468.html),[15](https://www.serpentine.vc/blog/apaleo-secures-20m-growth-equity-to-accelerate-global-expansion/)
+- Reported funding: extended Series A reported at EUR 9M \(Rockaway, Serpentine\) and a subsequent €20M growth equity round led by PSG with Redalpine, FOMCAP IV and Rockaway named\. *(Corroborated)* ^[4](https://www.bakertilly.de/beitrag/baker-tilly-begleitet-rockaway-ventures-und-serpentine-ventures-bei-investition-in-offene-hospitality-plattform-apaleo),[5](https://finance.yahoo.com/news/apaleo-secures-21m-funding-fuel-145553468.html),[14](https://www.privateequityinternational.com/psg-leads-growth-equity-funding-round-in-apaleo),[15](https://hengeler-news.com/en/articles/hengeler-mueller-advises-psg-equity-on-investment-in-apaleo),[16](https://www.serpentine.vc/blog/apaleo-secures-20m-growth-equity-to-accelerate-global-expansion/)
 
 ## Technology profile
 
-- Core product surfaces: Apaleo Open PMS, public APIs, Apaleo Pay, Apaleo Store and Copilot agentic chat layer as advertised\. *(Company claim)* ^[32](https://apaleo.com/about-us),[7](https://apaleo.com/about-us),[9](https://apaleo.com/about-us),[33](https://apaleo.com/ai-powered-pms-solution)
-- AI dependency: Apaleo states it uses Anthropic \(via AWS/Bedrock\) and OpenAI as subprocessors for current and upcoming AI features\. *(Company claim)* ^[10](https://apaleo.com/dpa),[11](https://apaleo.com/dpa),[34](https://apaleo.com/dpa)
-- Engineering footprint: public GitHub org with 3 active repos, documentation page \(API Terms\), public portal and status subdomains, and Next\.js front\-end markers\. *(Partly verified)* ^[26](https://github.com/apaleo/gsheet-addon),[25](https://github.com/apaleo/n8n-nodes-apaleo),[24](https://github.com/apaleo/docker-resx2cs),[29](https://apaleo.com/api-terms-of-use),[27](https://crt.sh/?q=%25.apaleo.com&output=json)
+- What is built: API\-first open PMS, Apaleo Pay, Apaleo Store, and an AI 'Copilot' plus MCP Server for agent access to live property data \(company claims and product pages\)\. *(Company claim)* ^[41](https://apaleo.com/about-us),[40](https://apaleo.com/about-us),[34](https://apaleo.com/ai-powered-pms-solution),[7](https://apaleo.com/ai-powered-pms-solution)
+- Engineering footprint: public GitHub org with active repos \(gsheet\-addon, n8n nodes\), a developer docs page, and public portal/status subdomains\. *(Partly verified)* ^[8](https://github.com/apaleo/gsheet-addon),[29](https://github.com/apaleo/n8n-nodes-apaleo),[28](https://github.com/apaleo/docker-resx2cs),[9](https://apaleo.com/api-terms-of-use),[31](https://crt.sh/?q=%25.apaleo.com&output=json)
+- AI dependency and ops: company lists Anthropic and OpenAI as subprocessors \(LLM vendors used\); no public evidence of in\-house LLMs beyond a paper unrelated to product\. *(Partly verified)* ^[10](https://apaleo.com/dpa),[11](https://apaleo.com/dpa),[26](https://openalex.org/W7160130889)
 
-## Rebuild check
+## What could be rebuilt, and what cannot be judged from outside
 
-- **Commodity:** Public, API‑first PMS basics \(reservations, inventory, rate planning\) appear reconstructible using standard cloud APIs and documentation\. *(Analyst view)* ^[35](https://apaleo.com/pricing),[36](https://apaleo.com/api-terms-of-use),[29](https://apaleo.com/api-terms-of-use)
-  - Assumption: Competent 2–3 devs with cloud accounts and standard SaaS APIs
-- **Hard to copy:** MCP Server \(Model Context Protocol\) for secure live data access to AI agents and the claimed global portfolio scale \(85k units/1,700 properties\) are the most defensible assets cited\. *(Analyst view)* ^[8](https://apaleo.com/ai-powered-pms-solution),[6](https://hengeler-news.com/en/articles/hengeler-mueller-advises-psg-equity-on-investment-in-apaleo)
-  - Assumption: Portfolio claims reflect real customer integrations and live data access
-- **Verdict:** Quarter — a focused team could clone basic API PMS in weeks, but reproducing secure agent integrations plus customer data scale and marketplace relationships would take a quarter; a clone would lack verified compliance and customer footprint\. *(Analyst view)* ^[8](https://apaleo.com/ai-powered-pms-solution),[36](https://apaleo.com/api-terms-of-use),[6](https://hengeler-news.com/en/articles/hengeler-mueller-advises-psg-equity-on-investment-in-apaleo)
-  - Assumption: No access to Apaleo’s customer data or MCP agreements
+- **Replicable with off-the-shelf parts:** API\-first PMS core and developer tools can be reproduced using public APIs, Next\.js frontend, AWS infra and documented API terms\. *(Analyst view)* ^[2](https://apaleo.com/about-us),[49](https://apaleo.com/),[47](https://apaleo.com/dpa),[9](https://apaleo.com/api-terms-of-use)
+  - Assumption: No proprietary datasets or closed models required
+- **Edge supported by public evidence:** Claimed MCP Server that implements a 'Model Context Protocol' to give agents secure live\-data access is public company claim and thus evidence of a unique integration approach\. *(Analyst view)* ^[7](https://apaleo.com/ai-powered-pms-solution),[45](https://apaleo.com/ai-powered-pms-solution)
+  - Assumption: MCP Server is functionally implemented as described
+- **Cannot be judged from outside:** Agentic efficacy, safety of autonomous Copilot actions, and real\-world impact on hotel operations cannot be judged without access to product logs, models, and field metrics\. *(Analyst view)* ^[34](https://apaleo.com/ai-powered-pms-solution),[12](https://apaleo.com/)
+  - Assumption: Operational telemetry and model internals are not public
 
 ## Risks and caveats
 
-- Dependency on third‑party LLM vendors: Apaleo lists Anthropic and OpenAI as subprocessors for AI features, creating operational and compliance risk\. *(Analyst view)* ^[10](https://apaleo.com/dpa),[11](https://apaleo.com/dpa)
-- Unverified compliance claims: website asserts SOC 2/PCI/PSD2/GDPR compliance but collected security pages provide no public attestations or trust portal\. *(Analyst view)* ^[37](https://apaleo.com/),[12](https://apaleo.com/)
-- Sandbox/third‑party outages: status page shows distribution/sandbox failures tied to third‑party services, signalling fragile developer experience or integration dependency\. *(Analyst view)* ^[38](https://status.apaleo.com/),[39](https://status.apaleo.com/)
+- Dependency on third‑party LLM providers \(Anthropic, OpenAI\) for AI features creates vendor, cost, and data‑flow risk\. *(Analyst view)* ^[10](https://apaleo.com/dpa),[11](https://apaleo.com/dpa)
+- Security/compliance evidence gap: SOC 2 / compliance claims are publicly stated but verification is not possible from collected pages\. *(Analyst view)* ^[46](https://apaleo.com/),[12](https://apaleo.com/)
+- API sandbox/third‑party outages have been reported affecting distribution APIs, indicating exposure of developer experience and integrations to upstream vendors\. *(Analyst view)* ^[50](https://status.apaleo.com/),[51](https://status.apaleo.com/)
 
 ## Questions for founders
 
-- Please provide the latest SOC 2/PCI/PSD2 attestations and penetration test reports referenced on the site \(claim: SOC2/PCI/PSD2\)\. *(Analyst view)* ^[37](https://apaleo.com/),[12](https://apaleo.com/)
-- Describe data flows, prompt logging, retention and redaction for Anthropic and OpenAI LLM calls and whether customers can opt out of vendor processing\. *(Analyst view)* ^[10](https://apaleo.com/dpa),[11](https://apaleo.com/dpa),[40](https://apaleo.com/privacy-policy)
-- Supply three reference customers \(contracts or contacts\) that substantiate the claimed 1,700 properties / 85,000 units and allow inspection of integration depth\. *(Analyst view)* ^[6](https://hengeler-news.com/en/articles/hengeler-mueller-advises-psg-equity-on-investment-in-apaleo)
-- Provide architecture/design docs for MCP Server, details on authentication, authorization, audit logs and example agent interactions\. *(Analyst view)* ^[8](https://apaleo.com/ai-powered-pms-solution),[29](https://apaleo.com/api-terms-of-use)
+- Please produce SOC 2/PCI/PSD2 evidence and scope; verification fact shows claims are not publicly checkable\. *(Analyst view)* ^[12](https://apaleo.com/),[13](https://apaleo.com/pricing)
+- Provide contract examples and revenue split for customers behind the claimed 85k units / 1,700 properties metric used in press coverage\. *(Analyst view)* ^[6](https://hengeler-news.com/en/articles/hengeler-mueller-advises-psg-equity-on-investment-in-apaleo),[19](https://hoteltechnologynews.com/2024/11/apaleo-raises-21-million-to-expand-its-hotel-property-management-platform-built-on-api-first-architecture)
+- Detail MCP Server data flow: which live fields are exposed to agents, and how PII is filtered before any LLM call\. *(Analyst view)* ^[7](https://apaleo.com/ai-powered-pms-solution),[10](https://apaleo.com/dpa)
+- Supply SLA and incident history for API sandbox outages and quantify customer impact from status notices\. *(Analyst view)* ^[50](https://status.apaleo.com/),[51](https://status.apaleo.com/)
 
 ## Sources
 
 1. [apaleo\.com](https://apaleo.com/) · Company's own website · Product capability — “An API\-first, AI\-powered Property Management Platform”
-2. [apaleo\.com](https://apaleo.com/api-terms-of-use) · Company's own website · Customer — “apaleo GmbH \(hereinafter referred to as "apaleo“ or "we“\) operates and provides a property management platform \(hereinafter referred to as "platform“\) over the internet to its customers, which are hotel operators, as a software as a service model\.”
-3. [privateequityinternational\.com](https://www.privateequityinternational.com/psg-leads-growth-equity-funding-round-in-apaleo) · Independent press · Product capability — “Apaleo is an API\-first open property management platform for hotel and serviced apartment groups\.”
+2. [apaleo\.com](https://apaleo.com/about-us) · Company's own website · Product capability — “Apaleo APIs”
+3. [apaleo\.com](https://apaleo.com/api-terms-of-use) · Company's own website · Customer — “apaleo GmbH \(hereinafter referred to as "apaleo“ or "we“\) operates and provides a property management platform \(hereinafter referred to as "platform“\) over the internet to its customers, which are hotel operators, as a software as a service model\.”
 4. [bakertilly\.de](https://www.bakertilly.de/beitrag/baker-tilly-begleitet-rockaway-ventures-und-serpentine-ventures-bei-investition-in-offene-hospitality-plattform-apaleo) · Independent press · Funding round — “With the legal support of Baker Tilly, Rockaway Ventures and Serpentine Ventures invested in open hospitality platform Apaleo GmbH within an extended Series A financing round, bringing the growth funding to a total volume of EUR 9 million\.”
-5. [hengeler\-news\.com](https://hengeler-news.com/en/articles/hengeler-mueller-advises-psg-equity-on-investment-in-apaleo) · Independent press · Funding round — “Apaleo, the API\-first open property management platform for the hospitality industry, has raised €20 million in a growth equity investment round led by PSG Equity\.”
+5. [finance\.yahoo\.com](https://finance.yahoo.com/news/apaleo-secures-21m-funding-fuel-145553468.html) · Independent press · Funding round — “Open property management platform Apaleo has secured €20m \(€21\.1m\) in a funding growth equity investment\.”
 6. [hengeler\-news\.com](https://hengeler-news.com/en/articles/hengeler-mueller-advises-psg-equity-on-investment-in-apaleo) · Independent press · Technical claim — “Apaleo’s portfolio spans over 30 countries worldwide, managing more than 85,000 units across diverse markets and serving over 1,700 properties\.”
-7. [apaleo\.com](https://apaleo.com/about-us) · Company's own website · Product capability — “Apaleo APIs”
-8. [apaleo\.com](https://apaleo.com/ai-powered-pms-solution) · Company's own website · Product capability — “The Apaleo MCP Server brings the Model Context Protocol to our open platform, giving AI agents a secure, direct way to access live property data and interact with Apaleo, without custom integrations\.”
-9. [apaleo\.com](https://apaleo.com/about-us) · Company's own website · Product capability — “Apaleo Pay”
+7. [apaleo\.com](https://apaleo.com/ai-powered-pms-solution) · Company's own website · Product capability — “The Apaleo MCP Server brings the Model Context Protocol to our open platform, giving AI agents a secure, direct way to access live property data and interact with Apaleo, without custom integrations\.”
+8. [github\.com](https://github.com/apaleo/gsheet-addon) · Public technical artifact · GitHub repository · 2026\-11\-16 — “apaleo/gsheet\-addon · apaleo add\-on for Google Sheets · TypeScript · last push 2026\-11\-16”
+9. [apaleo\.com](https://apaleo.com/api-terms-of-use) · Company's own website · Website page — “API Terms of Use \| Apaleo Hospitality Platform”
 10. [apaleo\.com](https://apaleo.com/dpa) · Company's own website · Subprocessor \(privacy policy\) — “Apaleo uses large language models \(including Anthropic Claude models\) hosted by AWS \(Amazon Bedrock\) in all current and upcoming AI features\.”
 11. [apaleo\.com](https://apaleo.com/dpa) · Company's own website · Subprocessor \(privacy policy\) — “OpenAI Ireland Ltd\. \(IE\) / OpenAI OpCo, LLC \(US\) – AI Subcontractor”
 12. [apaleo\.com](https://apaleo.com/) · Company's own website · Independent check of a claim — “No trust portal, auditor or compliance\-platform reference found on the collected security pages or subdomains\. SOC 2 reports are private; the claim can only be verified by requesting the report\.”
-13. [privateequityinternational\.com](https://www.privateequityinternational.com/psg-leads-growth-equity-funding-round-in-apaleo) · Independent press · Funding round — “PSG leads growth equity funding round in Apaleo”
-14. [finance\.yahoo\.com](https://finance.yahoo.com/news/apaleo-secures-21m-funding-fuel-145553468.html) · Independent press · Funding round — “Open property management platform Apaleo has secured €20m \(€21\.1m\) in a funding growth equity investment\.”
-15. [serpentine\.vc](https://www.serpentine.vc/blog/apaleo-secures-20m-growth-equity-to-accelerate-global-expansion/) · Independent press · Funding round — “Apaleo, a Serpentine Ventures portfolio company, raised €20M in growth equity led by PSG Equity\.”
-16. [boards\.greenhouse\.io](https://boards.greenhouse.io/apaleo) · Company's own website · Job posting — “Account Manager \(f/m/d\) · Munich/ Berlin/ Germany remote”
-17. [boards\.greenhouse\.io](https://boards.greenhouse.io/apaleo) · Company's own website · Job posting — “GTM Engineer, marketing \(f/m/d\) · Munich”
-18. [boards\.greenhouse\.io](https://boards.greenhouse.io/apaleo) · Company's own website · Job posting — “Sales Solutions Manager \(f/m/d\) · Munich/ Berlin”
-19. [boards\.greenhouse\.io](https://boards.greenhouse.io/apaleo) · Company's own website · Job posting — “Technical Partnerships Manager \(f/m/d\) · Munich/ Berlin”
-20. [boards\.greenhouse\.io](https://boards.greenhouse.io/apaleo) · Company's own website · Job posting — “Engineering Manager \(f/m/d\) · Munich”
-21. [boards\.greenhouse\.io](https://boards.greenhouse.io/apaleo) · Company's own website · Job posting — “Senior Bilanzbuchhalter\*in \(m/w/d\) · Munich”
-22. [openalex\.org](https://openalex.org/W7160130889) · Public technical artifact · Research paper · 2026\-02\-18 — “Body mass estimation for Neoglyptatelus uruguayensis Fernicola et al\., 2017 \(Mammalia, Cingulata, Pachyarmatheriidae\) · Revista Brasileira de Paleontologia”
-23. [boards\.greenhouse\.io](https://boards.greenhouse.io/apaleo) · Company's own website · Job posting — “Senior Product Manager, AI Products &amp; Agentic Hospitality \(f/m/d\) · Munich”
-24. [github\.com](https://github.com/apaleo/docker-resx2cs) · Public technical artifact · GitHub repository · 2022\-11\-25 — “apaleo/docker\-resx2cs · A small docker container to transfer resource files to c\# methods · JavaScript · last push 2022\-11\-25”
-25. [github\.com](https://github.com/apaleo/n8n-nodes-apaleo) · Public technical artifact · GitHub repository · 2026\-10\-30 — “apaleo/n8n\-nodes\-apaleo · Apaleo nodes for N8N community · TypeScript · last push 2026\-10\-30”
-26. [github\.com](https://github.com/apaleo/gsheet-addon) · Public technical artifact · GitHub repository · 2026\-11\-16 — “apaleo/gsheet\-addon · apaleo add\-on for Google Sheets · TypeScript · last push 2026\-11\-16”
-27. [crt\.sh](https://crt.sh/?q=%25.apaleo.com&output=json) · Public technical artifact · Subdomain \(certificates\) · 2017\-07\-11 — “status\.apaleo\.com \(first certificate 2017\-07\-11\)”
-28. [crt\.sh](https://crt.sh/?q=%25.apaleo.com&output=json) · Public technical artifact · Subdomain \(certificates\) · 2026\-06\-29 — “portal\.apaleo\.com \(first certificate 2026\-06\-29\)”
-29. [apaleo\.com](https://apaleo.com/api-terms-of-use) · Company's own website · Website page — “API Terms of Use \| Apaleo Hospitality Platform”
-30. [apaleo\.com](https://apaleo.com/) · Company's own website · Pricing — “With Apaleo, you never pay set\-up, license, maintenance, or integration fees, and you stay completely free from vendor lock\-in, enjoying full flexibility\.”
-31. [redalpine\.com](https://www.redalpine.com/post/redalpine-invests-in-apaleo-disruptor-of-hotel-management-software) · Independent press · Press article · 2018\-05\-02 — “Redalpine invests in apaleo, disruptor of hotel management software”
-32. [apaleo\.com](https://apaleo.com/about-us) · Company's own website · Product capability — “Apaleo Open PMS”
-33. [apaleo\.com](https://apaleo.com/ai-powered-pms-solution) · Company's own website · Product capability — “Meet the Apaleo Copilot\. A new agentic layer built into our platform that lets you handle complex tasks through a simple chat interface, whether checking arrivals, assigning rooms, resolving overbookings, or planning housekeeping\.”
-34. [apaleo\.com](https://apaleo.com/dpa) · Company's own website · Subprocessor \(privacy policy\) — “Amazon Web Services EMEA SARL \(DE\) app\.Apaleo\.com uses Amazon Web Services \(AWS\) as infrastructure\. Thereby, personal data is stored and processed on AWS servers\.”
-35. [apaleo\.com](https://apaleo.com/pricing) · Company's own website · Product capability — “Inventory Reservations Rate planning Accounting Payments”
-36. [apaleo\.com](https://apaleo.com/api-terms-of-use) · Company's own website · Pricing — “The object of the agreement is your free\-of\-charge use of the API for the apaleo platform as per the documentation made available by us through the internet in its current form under your registration as a developer with us”
-37. [apaleo\.com](https://apaleo.com/) · Company's own website · Technical claim — “Apaleo exceeds modern standards for data protection including GDPR, PCI, PSD2 and SOC 2 compliance\.”
-38. [status\.apaleo\.com](https://status.apaleo.com/) · Company's own website · Technical claim — “Some API request to distribution\.apaleo\.com are failing”
-39. [status\.apaleo\.com](https://status.apaleo.com/) · Company's own website · Technical claim — “We are awaiting resolution from a third\-party service sandbox environment that is down\.”
-40. [apaleo\.com](https://apaleo.com/privacy-policy) · Company's own website · Subprocessor \(privacy policy\) — “Heroku Inc\. \(Salesforce\) \(US\) https://www\.salesforce\.com/company/privacy/”
+13. [apaleo\.com](https://apaleo.com/pricing) · Company's own website · Technical claim — “PSD2 and PCI DSS certification”
+14. [privateequityinternational\.com](https://www.privateequityinternational.com/psg-leads-growth-equity-funding-round-in-apaleo) · Independent press · Funding round — “PSG leads growth equity funding round in Apaleo”
+15. [hengeler\-news\.com](https://hengeler-news.com/en/articles/hengeler-mueller-advises-psg-equity-on-investment-in-apaleo) · Independent press · Funding round — “Apaleo, the API\-first open property management platform for the hospitality industry, has raised €20 million in a growth equity investment round led by PSG Equity\.”
+16. [serpentine\.vc](https://www.serpentine.vc/blog/apaleo-secures-20m-growth-equity-to-accelerate-global-expansion/) · Independent press · Funding round — “Apaleo, a Serpentine Ventures portfolio company, raised €20M in growth equity led by PSG Equity\.”
+17. [techround\.co\.uk](https://techround.co.uk/interviews/stephan-wiesener-founder-at-apaleo/) · Independent press · Press article · 2025\-09\-08 — “Stephan Wiesener, Founder at Apaleo: Building The Industry’s Most Flexible Property Management Platform \- TechRound”
+18. [themodernhotelier\.com](https://themodernhotelier.com/episode/296) · Independent press · Press article · 2026\-06\-26 — “Giving Hoteliers Flexibility to Build Their Ideal Tech Stack \| with Philip von Ditfurth &amp; Florian Montag”
+19. [hoteltechnologynews\.com](https://hoteltechnologynews.com/2024/11/apaleo-raises-21-million-to-expand-its-hotel-property-management-platform-built-on-api-first-architecture) · Independent press · Press article · 2024\-11\-21 — “Apaleo Raises $21 Million to Expand Its Hotel Property Management Platform Built on API\-First Architecture \|”
+20. [boards\.greenhouse\.io](https://boards.greenhouse.io/apaleo) · Company's own website · Job posting — “Account Manager \(f/m/d\) · Munich/ Berlin/ Germany remote”
+21. [boards\.greenhouse\.io](https://boards.greenhouse.io/apaleo) · Company's own website · Job posting — “GTM Engineer, marketing \(f/m/d\) · Munich”
+22. [boards\.greenhouse\.io](https://boards.greenhouse.io/apaleo) · Company's own website · Job posting — “Sales Solutions Manager \(f/m/d\) · Munich/ Berlin”
+23. [boards\.greenhouse\.io](https://boards.greenhouse.io/apaleo) · Company's own website · Job posting — “Technical Partnerships Manager \(f/m/d\) · Munich/ Berlin”
+24. [boards\.greenhouse\.io](https://boards.greenhouse.io/apaleo) · Company's own website · Job posting — “Engineering Manager \(f/m/d\) · Munich”
+25. [boards\.greenhouse\.io](https://boards.greenhouse.io/apaleo) · Company's own website · Job posting — “Senior Bilanzbuchhalter\*in \(m/w/d\) · Munich”
+26. [openalex\.org](https://openalex.org/W7160130889) · Public technical artifact · Research paper · 2026\-02\-18 — “Body mass estimation for Neoglyptatelus uruguayensis Fernicola et al\., 2017 \(Mammalia, Cingulata, Pachyarmatheriidae\) · Revista Brasileira de Paleontologia”
+27. [boards\.greenhouse\.io](https://boards.greenhouse.io/apaleo) · Company's own website · Job posting — “Senior Product Manager, AI Products &amp; Agentic Hospitality \(f/m/d\) · Munich”
+28. [github\.com](https://github.com/apaleo/docker-resx2cs) · Public technical artifact · GitHub repository · 2022\-11\-25 — “apaleo/docker\-resx2cs · A small docker container to transfer resource files to c\# methods · JavaScript · last push 2022\-11\-25”
+29. [github\.com](https://github.com/apaleo/n8n-nodes-apaleo) · Public technical artifact · GitHub repository · 2026\-10\-30 — “apaleo/n8n\-nodes\-apaleo · Apaleo nodes for N8N community · TypeScript · last push 2026\-10\-30”
+30. [crt\.sh](https://crt.sh/?q=%25.apaleo.com&output=json) · Public technical artifact · Subdomain \(certificates\) · 2017\-07\-11 — “status\.apaleo\.com \(first certificate 2017\-07\-11\)”
+31. [crt\.sh](https://crt.sh/?q=%25.apaleo.com&output=json) · Public technical artifact · Subdomain \(certificates\) · 2026\-06\-29 — “portal\.apaleo\.com \(first certificate 2026\-06\-29\)”
+32. [apaleo\.com](https://apaleo.com/) · Company's own website · Pricing — “With Apaleo, you never pay set\-up, license, maintenance, or integration fees, and you stay completely free from vendor lock\-in, enjoying full flexibility\.”
+33. [redalpine\.com](https://www.redalpine.com/post/redalpine-invests-in-apaleo-disruptor-of-hotel-management-software) · Independent press · Press article · 2018\-05\-02 — “Redalpine invests in apaleo, disruptor of hotel management software”
+34. [apaleo\.com](https://apaleo.com/ai-powered-pms-solution) · Company's own website · Product capability — “Meet the Apaleo Copilot\. A new agentic layer built into our platform that lets you handle complex tasks through a simple chat interface, whether checking arrivals, assigning rooms, resolving overbookings, or planning housekeeping\.”
+35. [finance\.yahoo\.com](https://finance.yahoo.com/news/apaleo-secures-21m-funding-fuel-145553468.html) · Independent press · Technical claim — “Supported by its microservices\-based, API\-first, cloud\-native, headless \(MACH\) architecture, the company offers scalability and flexibility for businesses to customise technology solutions to their unique business models\.”
+36. [bakertilly\.de](https://www.bakertilly.de/beitrag/baker-tilly-begleitet-rockaway-ventures-und-serpentine-ventures-bei-investition-in-offene-hospitality-plattform-apaleo) · Independent press · Product capability — “Founded in 2017 out of Munich, Apaleo is the open property management platform for hotel and serviced apartment groups\.”
+37. [apaleo\.com](https://apaleo.com/pricing) · Company's own website · Pricing — “€8 per room per month”
+38. [apaleo\.com](https://apaleo.com/pricing) · Company's own website · Pricing — “Starting at €400 per month”
+39. [apaleo\.com](https://apaleo.com/api-terms-of-use) · Company's own website · Pricing — “The object of the agreement is your free\-of\-charge use of the API for the apaleo platform as per the documentation made available by us through the internet in its current form under your registration as a developer with us”
+40. [apaleo\.com](https://apaleo.com/about-us) · Company's own website · Product capability — “Apaleo Pay”
+41. [apaleo\.com](https://apaleo.com/about-us) · Company's own website · Product capability — “Apaleo Store”
+42. [apaleo\.com](https://apaleo.com/) · Company's own website · Product capability — “With Apaleo’s open and AI\-powered PMS, you design the guest journey your way, integrating best\-in\-class apps and autonomous AI agents that adapt to every stay\.”
+43. [apaleo\.com](https://apaleo.com/about-us) · Company's own website · Technical claim — “We take an API\-first approach to hotel tech”
+44. [apaleo\.com](https://apaleo.com/) · Company's own website · Technical claim — “The only API\-first hospitality platform Discerning developers prefer Apaleo because our platform is built on MACH architecture\. Experience the speed, reliability, and flexibility of a platform built for microservices, APIs, cloud, and headless\.”
+45. [apaleo\.com](https://apaleo.com/ai-powered-pms-solution) · Company's own website · Product capability — “Open architecture enabling the autonomous hotel”
+46. [apaleo\.com](https://apaleo.com/) · Company's own website · Technical claim — “Apaleo exceeds modern standards for data protection including GDPR, PCI, PSD2 and SOC 2 compliance\.”
+47. [apaleo\.com](https://apaleo.com/dpa) · Company's own website · Subprocessor \(privacy policy\) — “Amazon Web Services EMEA SARL \(DE\) app\.Apaleo\.com uses Amazon Web Services \(AWS\) as infrastructure\. Thereby, personal data is stored and processed on AWS servers\.”
+48. [apaleo\.com](https://apaleo.com/dpa) · Company's own website · Subprocessor \(privacy policy\) — “PostHog, Inc\. \(US\) – EU\-region hosting Apaleo uses PostHog for product analytics, to log prompt text and non\-personal usage data \(timing, outcome, feature interactions\) of the Fluid Dashboards feature in order to understand and improve it\.”
+49. [apaleo\.com](https://apaleo.com/) · Public technical artifact · Technology detected
+50. [status\.apaleo\.com](https://status.apaleo.com/) · Company's own website · Technical claim — “Some API request to distribution\.apaleo\.com are failing”
+51. [status\.apaleo\.com](https://status.apaleo.com/) · Company's own website · Technical claim — “We are awaiting resolution from a third\-party service sandbox environment that is down\.”
 
 ## How this dossier was built
 
@@ -117,7 +166,7 @@ apaleo\.com · DE · 2026\-11\-17
 | Claim verification | company claims checked against independent sources: Google Patents \(patents\), IAB Global Vendor List \(TCF\), commercial register \(investors named in press\), security pages \(SOC 2 / ISO attestations\), news search \(customers\) | 1 | — |
 | AI extraction | an LLM reads saved pages and articles and proposes facts; a fact is kept only if its quote is found in the source text and its category passes rule checks | 45 | — |
 
-Analysis: gpt\-5\-mini (cost $0.0082); AI extraction cost $0.0075. Full fact table: CSV export.
+Analysis: gpt\-5\-mini (cost $0.0151); AI extraction cost $0.0075. Full fact table: CSV export.
 
 ## Source appendix (all collected facts)
 
@@ -274,9 +323,6 @@ Analysis: gpt\-5\-mini (cost $0.0082); AI extraction cost $0.0075. Full fact tab
 - F4031 · source\_unavailable · Unavailable · [https://www\.hospitalityinvestor\.com/technology/hospitality\-startup\-apaleo\-extends\-series\-funding\-round\-eu9m](https://www.hospitalityinvestor.com/technology/hospitality-startup-apaleo-extends-series-funding-round-eu9m)
 - F4032 · press\_mention · Sourced · [https://psgequity\.com/news/apaleo\-secures\-20\-million\-growth\-equity\-investment\-led\-by\-psg\-to\-accelerate\-global\-expansion](https://psgequity.com/news/apaleo-secures-20-million-growth-equity-investment-led-by-psg-to-accelerate-global-expansion)
 - F4033 · press\_mention · Sourced · [https://cc\.cz/nemci\-modernizuji\-hotely\-startup\-zaujal\-i\-ceske\-rockaway\-podili\-se\-na\-investici\-pres\-200\-milionu/](https://cc.cz/nemci-modernizuji-hotely-startup-zaujal-i-ceske-rockaway-podili-se-na-investici-pres-200-milionu/)
-- F5531 · source\_unavailable · Unavailable · [https://www\.hlidacstatu\.cz/hledat](https://www.hlidacstatu.cz/hledat)
-- F5532 · source\_check · Checked · no results · [https://cordis\.europa\.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27Apaleo%27](https://cordis.europa.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27Apaleo%27)
-- F5533 · source\_unavailable · Unavailable · [https://starfos\.tacr\.cz](https://starfos.tacr.cz)
 - F6087 · product\_capability · Medium confidence · [https://apaleo\.com/](https://apaleo.com/)
 - F6088 · product\_capability · Medium confidence · [https://apaleo\.com/](https://apaleo.com/)
 - F6089 · pricing · Medium confidence · [https://apaleo\.com/](https://apaleo.com/)
@@ -323,3 +369,6 @@ Analysis: gpt\-5\-mini (cost $0.0082); AI extraction cost $0.0075. Full fact tab
 - F6132 · team\_claim · Medium confidence · [https://apaleo\.com/company\-culture/home](https://apaleo.com/company-culture/home)
 - F6133 · team\_claim · Medium confidence · [https://apaleo\.com/company\-culture/home](https://apaleo.com/company-culture/home)
 - F6394 · verification · Sourced · [https://apaleo\.com/](https://apaleo.com/)
+- F7686 · source\_unavailable · Unavailable · [https://www\.hlidacstatu\.cz/hledat](https://www.hlidacstatu.cz/hledat)
+- F7687 · source\_check · Checked · no results · [https://cordis\.europa\.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27Apaleo%27](https://cordis.europa.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27Apaleo%27)
+- F7688 · source\_unavailable · Unavailable · [https://starfos\.tacr\.cz](https://starfos.tacr.cz)

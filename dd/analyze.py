@@ -12,7 +12,7 @@ from dd import signals as signals_mod
 from dd.llm import SYSTEM_GUARD
 from dd.store import Company, Fact, Store, now
 
-PROMPT_VERSION = "analyze-v3"
+PROMPT_VERSION = "analyze-v5"
 MAX_FACTS = 90
 MAX_FACT_CHARS = 50_000
 MAX_VALUE_CHARS = 1_800
@@ -20,7 +20,10 @@ MAX_SNIPPET_CHARS = 900
 MAX_ITEMS_PER_SECTION = 3
 SECTION_LIMITS = {"summary": 5, "ownership": 3, "tech_profile": 3, "rebuild_check": 4, "risk_flags": 3, "questions": 4}
 SUMMARY_LABELS = ("product", "stage_traction", "technology_moat", "key_risk", "diligence_focus")
-REBUILD_LABELS = ("commodity", "hard", "verdict")
+# No time-to-clone verdict: from outside (website, repos, patents) the effort to rebuild a product cannot be
+# estimated honestly. Three questions instead: what is replicable, what edge is evidenced, what cannot be assessed.
+REBUILD_LABELS = ("replicable", "evidenced_edge", "not_assessable")
+TIME_ESTIMATE = re.compile(r"\b(?:weekends?|days?|weeks?|months?|quarters?|years?)\b(?![- ]old)", re.I)
 
 SECTION_KINDS = ("summary", "ownership", "tech_profile", "rebuild_check", "risk_flags", "questions")
 ANALYSIS_SYSTEM = (
@@ -30,15 +33,16 @@ ANALYSIS_SYSTEM = (
       " a collector returned no fact or a source was unavailable. Every item must cite one or more supplied"
       " fact IDs that directly support it. Do not invent facts, sources, model capability, customers, or"
       " ownership. Hugging Face facts whose value.identity_unverified is true are excluded; do not infer"
-      " company support for an HF model from a name or guessed namespace. For every rebuild estimate, set"
-      " assessment=true, list concrete assumptions, and use low or medium confidence. Risk flags and questions"
+      " company support for an HF model from a name or guessed namespace. For every rebuild_check item, set"
+      " assessment=true, list concrete assumptions, use low or medium confidence, and never estimate how long a"
+      " rebuild would take. Risk flags and questions"
       " must also have assessment=true. Keep questions specific and tied to cited evidence"
       " or a clear evidence gap. Write all item text and assumptions in English."
       " A Wayback capture dates a DOMAIN, not this company: domains may change owners. Never infer company"
       " age or continuous operations from certificate or archive dates. A web_page title/URL proves only"
       " page existence, not its contents, certifications, integrations or capabilities. Never infer integrations"
       " from vendors merely named in research. Metadata alone cannot support product capabilities."
-      " You write for an investment partner at a late-seed / Series A VC fund: be specific, concrete and"
+      " You write for an investment partner at a Seed to Series A VC fund: be specific, concrete and"
       " decision-oriented; no filler, no generic statements that would fit any startup."
       " Never write fact IDs or internal numbers into item text: cite facts only in fact_ids."
 )
@@ -182,6 +186,12 @@ def _prompt(company: Company, facts_json: list[dict], derived: dict) -> str:
         "go-to-market); technology_moat = your evidence-based view of what is hard to copy, or that little is; "
         "key_risk = the single most decision-relevant risk; diligence_focus = what the partner should verify first "
         "and why. This is the TL;DR a partner reads instead of the rest: make it specific to THIS company.\n"
+        "PUBLIC MONEY WORDING (everywhere): DERIVED.funding.public_money.contract_kinds says what each contract is. Only "
+        "'purchase' contracts are sales to public buyers; 'rd_project' agreements are research-consortium budgets (not "
+        "sales, the partners are not customers); 'subsidy' is support. Never call R&D or subsidy agreements 'government "
+        "contracts', 'public contracts' or customers, and give counts per kind rather than one total. Grants: "
+        "grants_czk is support AWARDED for whole multi-year projects, grants_paid_czk what has been paid out; never "
+        "present an award as money received or as revenue.\n"
         "ownership: funding rounds (with date, amount, lead/investors), investor entries in the registry, "
         "public money, structural facts. Do NOT present a foreign holding (Delaware Inc., Dutch B.V.) or the presence "
         "of VC shareholders as a risk by itself; it is standard for VC-backed CEE startups.\n"
@@ -191,12 +201,15 @@ def _prompt(company: Company, facts_json: list[dict], derived: dict) -> str:
         "llm_vendors_integrated means the product CONNECTS to customers' accounts at that vendor and is NOT a "
         "dependency. Weigh against own-model evidence (papers, verified models, ML hiring, technical claims). "
         "Mark website statements as company claims.\n"
-        "rebuild_check: items labelled 'commodity' (a capability a competent 2-3 person team could rebuild in a "
-        "weekend to a month with NAMED APIs/OSS — cite the capability fact), 'hard' (what evidence suggests is hard "
-        "to copy: proprietary data, research IP/papers, regulated or audited claims, hardware, deep integrations, "
-        "public-sector references, distribution) and exactly one 'verdict' (overall: weekend / month / quarter / "
-        "not assessable, and what a clone would lack). Do NOT guess an internal tech stack (e.g. React, Postgres, "
-        "Kafka) unless tech_stack facts show it. assessment=true, at least one assumption, confidence low/medium.\n"
+        "rebuild_check: three questions, each item with one label. 'replicable' = a specific component that "
+        "off-the-shelf parts could reproduce, naming them (an open-source library, a public API, a standard protocol) "
+        "and citing the capability fact. 'evidenced_edge' = an advantage that PUBLIC evidence supports (patent "
+        "applications, papers, official contracts or tenders, certifications, own hardware, named customers); say "
+        "what the evidence shows and no more. 'not_assessable' = what cannot be judged from outside without the code, "
+        "models, data, field results or the team (e.g. autonomy quality, detection accuracy, safety); exactly one or "
+        "two items. Do NOT estimate how long a rebuild would take (no weekend / month / quarter) and do not rate the "
+        "product overall. Do NOT guess an internal tech stack (e.g. React, Postgres, Kafka) unless tech_stack facts "
+        "show it. assessment=true, at least one assumption, confidence low/medium.\n"
         "VERIFICATION facts record independent checks of claims (status confirmed / partly / contradicted / "
         "not_found / not_checkable). Use them: a confirmed claim is no longer just a company claim — cite the "
         "verification fact; a contradicted claim is a diligence red flag; not_found / not_checkable means the claim "
@@ -240,7 +253,9 @@ def _validated_sections(parsed: AnalysisResponse, allowed_ids: set[int]) -> tupl
             if kind == "rebuild_check":
                 if label not in REBUILD_LABELS or not item.assessment or not assumptions:
                     continue
-                if label == "verdict" and "verdict" in seen_labels:
+                if TIME_ESTIMATE.search(text):
+                    continue  # a time-to-clone estimate is false precision from outside: dropped, not reworded
+                if label == "not_assessable" and sum(i.get("label") == "not_assessable" for i in items) >= 2:
                     continue
             if kind in ("risk_flags", "questions") and not item.assessment:
                 continue

@@ -1,6 +1,15 @@
 # Roadmap
 
-What I would build next, in order of value for an investment team. Each item says what problem it solves, how, and how to tell whether it worked. Nothing here is built yet.
+What I would build next, in order of value for an investment team. Each item says what problem it solves, how, and how to tell whether it worked.
+
+## 0. Prove that the briefs are right, and that they save time
+
+Before adding sources, the existing output has to earn trust.
+
+- **Semantic accuracy (started).** `dd label-sheet` writes every statement of chosen briefs into a CSV with the cited quotes and links; an investor marks for each one whether the quotes support it, whether numbers and names are right, whether a judgement follows, and whether it concludes something from missing data. `dd label-score` counts the answers per question and per section. First target: the two defence briefs (about 100 statements), labelled by someone other than the author.
+- **Baseline.** The same companies and questions given to one capable model with web search. Same labelling. This shows what the collectors, quote checks and code-computed numbers add, or do not.
+- **Time.** From company name to a brief usable for a founder call, including the human check, against a manual first look by an analyst.
+- **Fact selection.** The analysis sees at most 90 facts (plus those cited by code-computed signals), chosen by fact type and order. For companies with 200+ facts this should rank by relevance to each section.
 
 ## 1. Read the filed accounts (revenue, profit, cash)
 
@@ -24,7 +33,7 @@ What I would build next, in order of value for an investment team. Each item say
 
 ## 2. Registers of other CEE countries
 
-**Problem.** Outside Czechia the tool only flags a foreign holding; it does not read the register. Rockaway's deals sit across CEE and DACH.
+**Problem.** Outside Czechia the tool only flags a foreign holding; it does not read the register. Rockaway Ventures invests across CEE and DACH and in European founders building in the US, and the VC Hacker role scouts technical founders across Europe and the US.
 
 **How.** One collector per country, the same contract as the Czech one: parse structured data by code, store each fact with a URL, show *Not checked* when a source is unavailable. Candidate sources (availability and terms to verify before building):
 
@@ -33,6 +42,8 @@ What I would build next, in order of value for an investment team. Each item say
 | Slovakia | ORSR | Register of Financial Statements (RÚZ), open API with structured statements |
 | Poland | KRS, open API for extracts | Financial statements repository; filed electronically as structured XML since 2018 |
 | Estonia | e-Business Register, open data | annual reports in structured form |
+| Lithuania | Registrų centras (Register of Legal Entities); basic data as free open data | balance-sheet data from annual statements held since 2016; documents, bulk data and API are paid |
+| Latvia | Enterprise Register (UR); bulk open data (CSV, CC0) on data.gov.lv, updated daily | financial data from annual reports reported as an open dataset; confirm the exact resource |
 | Hungary | e-cegjegyzek | e-beszamolo (financial statements portal) |
 | Romania | ONRC | Ministry of Finance publishes basic balance-sheet indicators per company |
 | Slovenia | AJPES | AJPES (annual reports, basic data free) |
@@ -41,7 +52,7 @@ What I would build next, in order of value for an investment team. Each item say
 
 Next to registers, each country has its own public procurement portal, grant agencies and tech press, which matter as much as the register.
 
-**Order.** Slovakia and Poland first: structured financial statements, close to the Czech model, and many CEE deals there. Then Estonia, where data is the most open.
+**Order.** Slovakia and Poland first: structured financial statements, close to the Czech model, and many CEE deals there. Then the Baltics — Estonia, Latvia and Lithuania — which produce many startups and publish much of their register data openly; Lithuania's financial statements are mostly behind paid access.
 
 ## 3. Compare Anthropic models with the current OpenAI setup
 

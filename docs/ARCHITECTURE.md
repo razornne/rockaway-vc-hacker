@@ -4,12 +4,12 @@ How the due diligence tool is built, as of November 2026. Why it exists is in th
 
 ## 1. What it does and for whom
 
-**User:** an investment team at a late seed / Series A fund (AI, deep tech, dual-use; CEE + DACH).
+**User:** an investment team at a Seed to Series A fund. For Rockaway Ventures: AI, B2B software and industrial tech (VC Hacker posting), with deep tech, defence / dual-use and energy also named on the fund page; CEE, DACH and European founders building in the US.
 
 **Job:** from a company name, domain or Czech IČO, produce in minutes a brief that tells a partner whether to spend an hour on a meeting and what to ask. The technical part — product, code, models, defensibility — is what a "VC hacker" would otherwise do by hand.
 
 **Output per company:**
-1. **Brief** (HTML, plus a Markdown copy): what the company is, who owns it, money in (rounds, grants, public contracts), customers, technical profile, "could it be rebuilt?", risks, founder questions, and the investment view (thesis fit, business model, market, competition, case for and against).
+1. **Brief** (HTML, plus a Markdown copy): what the company is, who owns it, money in (rounds, grants awarded and paid, public contracts), customers, technical profile, what could be rebuilt and what cannot be judged from outside, risks, founder questions, and the investment view (thesis fit, business model, market, competition, case for and against).
 2. **Fact table** (CSV): every fact with its source URL, quote and retrieval date.
 
 **Not a goal:** finding companies before the fund does (tested and rejected, see `research/FINDINGS.md`), or recommending an investment. The memo stays with a human.
@@ -100,7 +100,7 @@ Computed by code from a finding's cited facts, not chosen by the model:
 | Is the product alive? | releases, new subdomains, engineering hiring, GitHub activity | web, crt.sh, Wayback, GitHub |
 | Own models or an API wrapper? | subprocessors in the privacy policy, ML job posts, Hugging Face, papers | web, ml, careers |
 | How strong is engineering? | engineering job posts, public code, talks and papers | careers, GitHub, OpenAlex |
-| Could it be rebuilt? | capabilities → off-the-shelf components → effort, and what a clone would lack | analysis over facts |
+| Could it be rebuilt? | what off-the-shelf parts could reproduce (named), what edge public evidence supports, what cannot be judged without code, models, data or field results — no time-to-clone estimate | analysis over facts |
 | What protects it? | own data, integrations, network effects, certifications, hardware, public-sector buyers | all modules |
 
 ## 7. Stack
@@ -122,7 +122,9 @@ Computed by code from a finding's cited facts, not chosen by the model:
 | Coverage | which sections and signals are filled per company |
 | Cost | LLM spend per brief |
 
-The errors found by reading every extracted fact by hand are logged in [`AUDIT.md`](AUDIT.md).
+These are guards against specific failures, not an accuracy score: a quote found in its source rules out invented quotes but not a misreading, and evidence labels describe where the evidence comes from, not whether a conclusion is right. The errors found by reading the output by hand are logged in [`AUDIT.md`](AUDIT.md); a hand-labelled accuracy check is the next step (`ROADMAP.md`).
+
+Numbers that a partner compares — round size against the fund's ticket, public money by type, grants awarded versus paid — are computed in code. The model is told not to redo that arithmetic.
 
 ## 9. Known limits
 

@@ -15,10 +15,11 @@ from pydantic import BaseModel, ConfigDict
 from dd.analyze import ANALYSIS_SYSTEM, AnalysisItem, LabeledItem
 from dd.store import Company
 
-PROMPT_VERSION = "invest-v2"
+PROMPT_VERSION = "invest-v4"
 INVEST_KINDS = ("thesis_fit", "business_model", "market", "competition", "investment_case")
-LIMITS = {"thesis_fit": 3, "business_model": 4, "market": 3, "competition": 5, "investment_case": 6}
-LABELS = {"thesis_fit": ("sector", "stage_ticket", "portfolio_overlap"),
+LIMITS = {"thesis_fit": 2, "business_model": 4, "market": 3, "competition": 5, "investment_case": 6}
+# stage and ticket are compared by code (dd.thesis.stage_ticket); the model gets the result and must not redo it
+LABELS = {"thesis_fit": ("sector", "portfolio_overlap"),
           "investment_case": ("for", "against", "must_be_true")}
 JUDGEMENT_KINDS = ("thesis_fit", "investment_case")  # always a view, whatever the model says
 
@@ -53,11 +54,14 @@ def prompt(company: Company, facts_json: list[dict], derived: dict) -> str:
         "evidence so the partner can decide. Keep it under 550 English words. Each item.text at most 45 words, at most "
         "ONE short assumption (12 words), at most FIVE fact_ids. Use only supplied fact IDs. A section without supported "
         "items: items=[] and no_data=true. Missing information is unknown, never a negative claim.\n"
-        "thesis_fit (labels sector, stage_ticket, portfolio_overlap; assessment=true): compare the company with the "
+        "ROUND SIZE AND TICKET: DERIVED.thesis.stage_ticket already compares the round with the fund's initial ticket, "
+        "computed by code. Do not compare round size with the ticket, convert currencies or restate that comparison "
+        "anywhere (thesis_fit, investment_case or elsewhere). A round is the total raised from all investors, not the "
+        "fund's cheque.\n"
+        "thesis_fit (labels sector, portfolio_overlap; assessment=true): compare the company with the "
         "FUND profile in DERIVED.thesis. sector = which thesis sectors the cited evidence supports (structured defence "
         "evidence such as a defence-ministry tender, an EDF project or NATO DIANA selection weighs more than website "
-        "wording). stage_ticket = evidenced stage and round size vs the fund's stage and initial ticket (EUR 0.5-2m): "
-        "lead, co-invest or too large/small. portfolio_overlap = name any overlapping portfolio company from "
+        "wording). portfolio_overlap = name any overlapping portfolio company from "
         "DERIVED.thesis.portfolio_overlap and say whether it looks like a conflict (same product, same buyer) or a "
         "possible synergy, citing the company's own facts that show the overlapping capability (e.g. a GPS-free "
         "navigation claim); always include this label when that list is not empty.\n"
@@ -65,7 +69,10 @@ def prompt(company: Company, facts_json: list[dict], derived: dict) -> str:
         "customer, public_tender, gov_contract and grant facts. Separate revenue from customers from public grants "
         "(grants are not revenue). Public contracts: use DERIVED.funding.public_money.contract_kinds — only 'purchase' "
         "contracts are sales to public buyers; 'rd_project' agreements are research-consortium budgets, NOT revenue; "
-        "'subsidy' is support. A public_tender with role=winner is a won public contract. Give any revenue or unit "
+        "'subsidy' is support. Grants: DERIVED.funding.public_money.grants_czk is support AWARDED for whole multi-year "
+        "projects and grants_paid_czk what has actually been paid; never present an award as cash received, and do not "
+        "argue that grants replace equity funding unless a source says so. "
+        "A public_tender with role=winner is a won public contract. Give any revenue or unit "
         "figure with its source and period. Funding asks in the press (an amount the company seeks) are not closed "
         "rounds. Mark inferences assessment=true.\n"
         "market: demand drivers and size ONLY as stated in market_claim or press facts; attribute each statement to who "

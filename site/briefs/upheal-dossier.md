@@ -1,112 +1,168 @@
 # Upheal — due diligence brief
 
-upheal\.io · Upheal s\.r\.o\. · IČO 14138018 · CZ · 2026\-11\-17
+upheal\.io · Upheal s\.r\.o\. · IČO 14138018 · CZ · 2026\-11\-20
 
 **How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — combines independent evidence with the company's own statements; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
 
 ## TL;DR
 
-- **Product.** An AI\-first EHR and practice stack that drafts clinical therapy notes, offers telehealth, scheduling, billing, and a client portal for individual clinicians and group practices\. *(Partly verified)* ^[1](https://www.upheal.io/features/ai-clinical-notes),[2](https://www.upheal.io/),[3](https://www.upheal.io/),[4](https://mentalhealthinvestors.com/startups/upheal)
-- **Stage & traction.** Multiple press\-reported seed rounds \(\~$4\.35M and 76M CZK\) and announced partnerships with several provider groups; company reports 90k sessions processed in last 12 months\. *(Corroborated)* ^[5](https://en.ain.ua/2024/02/28/upheal-secures-3-25m-kaya-vc),[6](https://cc.cz/kvuli-synove-nemoci-vyhorel-jeho-startup-pomaha-terapeutum-letos-oznamuje-jiz-druhou-investici/),[7](https://vestbee.com/insights/articles/upheal-secures-10-m),[8](https://cc.cz/ceska-umela-inteligence-pise-za-psychoterapeuty-poznamky-ze-sezeni-od-investoru-nabrala-pres-70-milionu/)
-- **Technology & moat.** Limited — core features \(AI note drafting, templates, EHR integration\) are productized via docs and browser extension, while claimed scale \(90k sessions\) and managed\-billing operations are the harder\-to\-copy elements\. *(Partly verified)* ^[9](https://www.upheal.io/features/ai-clinical-notes),[10](https://www.upheal.io/features/ai-clinical-notes),[8](https://cc.cz/ceska-umela-inteligence-pise-za-psychoterapeuty-poznamky-ze-sezeni-od-investoru-nabrala-pres-70-milionu/)
-- **Key risk.** Key decision risk: compliance and security claims \(SOC 2, HIPAA\) are presented on site but the SOC 2 attestation is only a public pointer and shared under NDA \(partly verified\)\. *(Analyst view)* ^[11](https://www.upheal.io/),[12](https://www.upheal.io/features/ai-assistant),[13](https://trust.upheal.io)
-- **Diligence focus.** First verify independent security/compliance artifacts \(full SOC2 report, HIPAA controls\), then validate monthly sessions and customer references that underpin claimed scale and billing revenue model\. *(Analyst view)* ^[13](https://trust.upheal.io),[8](https://cc.cz/ceska-umela-inteligence-pise-za-psychoterapeuty-poznamky-ze-sezeni-od-investoru-nabrala-pres-70-milionu/),[14](https://www.upheal.io/features/managed-insurance-billing)
+- **Product.** A clinician\-facing AI EHR that drafts therapy notes, offers telehealth, scheduling, billing and managed insurance billing for individual clinicians and group practices\. *(Partly verified)* ^[1](https://www.upheal.io/features/ai-assistant),[2](https://www.upheal.io/),[3](https://www.upheal.io/),[4](https://www.upheal.io/features/managed-insurance-billing),[5](https://mentalhealthinvestors.com/startups/upheal)
+- **Stage & traction.** Multiple press\-reported funding rounds \(≈$4\.35M and 76M CZK reported in Feb 2024\), named commercial partners and claimed scale of 90k sessions processed in 12 months\. *(Corroborated)* ^[6](https://en.ain.ua/2024/02/28/upheal-secures-3-25m-kaya-vc),[7](https://cc.cz/kvuli-synove-nemoci-vyhorel-jeho-startup-pomaha-terapeutum-letos-oznamuje-jiz-druhou-investici/),[8](https://vestbee.com/insights/articles/upheal-secures-10-m),[9](https://en.ain.ua/2024/02/28/upheal-secures-3-25m-kaya-vc),[10](https://cc.cz/ceska-umela-inteligence-pise-za-psychoterapeuty-poznamky-ze-sezeni-od-investoru-nabrala-pres-70-milionu/)
+- **Technology & moat.** Documented product surfaces, clinical templates and docs \+ managed\-billing workflow appear sticky; no public evidence of proprietary models or unique core ML IP\. *(Company claim)* ^[11](https://www.upheal.io/documentation/intake-form-template),[12](https://www.upheal.io/documentation/progress-note-template),[13](https://www.upheal.io/features/ai-clinical-notes),[14](https://www.upheal.io/features/managed-insurance-billing),[15](https://www.upheal.io/features/ai-clinical-notes)
+- **Key risk.** Heavy unverified claims around SOC2/HIPAA posture and AI accuracy/volume benefits — verification is partial and depends on reviewing attestation and raw metrics\. *(Analyst view)* ^[16](https://trust.upheal.io),[17](https://www.upheal.io/),[9](https://en.ain.ua/2024/02/28/upheal-secures-3-25m-kaya-vc),[10](https://cc.cz/ceska-umela-inteligence-pise-za-psychoterapeuty-poznamky-ze-sezeni-od-investoru-nabrala-pres-70-milionu/)
+- **Diligence focus.** Obtain SOC2 Type II report and the security attestation, and request raw session\-scaling and accuracy logs that back the 90k sessions / 21k hours claim\. *(Analyst view)* ^[16](https://trust.upheal.io),[9](https://en.ain.ua/2024/02/28/upheal-secures-3-25m-kaya-vc),[10](https://cc.cz/ceska-umela-inteligence-pise-za-psychoterapeuty-poznamky-ze-sezeni-od-investoru-nabrala-pres-70-milionu/)
 
 ## At a glance (computed by code, no LLM)
 
 | Signal | Value | Sources |
 |---|---|---|
-| Funding \(press\) | 2024\-02\-28 · $4\.35 million; 2024\-11\-14 · Series Seed; 2024\-11\-18 · seed · 76,000,000 CZK | 5, 15, 6 |
-| Engineering footprint | product surfaces: auth\.upheal\.io, status\.upheal\.io; 5 docs pages; stack: Cloudflare, Webflow | 16, 17, 18, 19 |
-| Customers | public pricing: yes; 1 mobile app\(s\) | 20 |
-| Claims checked | SOC 2 / ISO: partly | 13 |
-| Timeline | Czech entity registered 2022\-01\-10; first press 2022\-10\-18 \(19 articles collected\) | 21, 22 |
+| Funding \(press\) | 2024\-02\-28 · $4\.35 million; 2024\-11\-14 · Series Seed; 2024\-11\-18 · seed · 76,000,000 CZK | 6, 18, 7 |
+| Thesis fit \(Rockaway\) | sectors: AI\-led transformative tech \(19 facts\) · geography: CZ \(core region\) | 19, 20 |
+| Engineering footprint | product surfaces: auth\.upheal\.io, status\.upheal\.io; 5 docs pages; stack: Cloudflare, Webflow | 21, 22, 23, 11 |
+| Customers | public pricing: yes; 1 mobile app\(s\) | 24 |
+| Claims checked | SOC 2 / ISO: partly | 16 |
+| Timeline | Czech entity registered 2022\-01\-10; first press 2022\-10\-18 \(19 articles collected\) | 25, 26 |
 
-# Detailed findings
+# Investment view
+
+*Inputs for the partner's memo, not a recommendation: what the evidence says about the business, the market, competitors and fit with the fund, and the case for and against\.*
+
+## Fit with the Rockaway thesis
+
+- **Sector:** AI\-native clinical EHR / workflow automation for mental\-health clinicians — positioning matches the fund’s AI\-led transformative tech thesis\. *(Analyst view)* ^[2](https://www.upheal.io/),[15](https://www.upheal.io/features/ai-clinical-notes),[1](https://www.upheal.io/features/ai-assistant),[27](https://www.upheal.io/features/ai-assistant)
+  - Assumption: Company positioning remains product\-led B2B SaaS\.
+
+## Business model
+
+- Primary revenue: subscription plans selling AI Notes and Assistant Pro to individual clinicians\. *(Analyst view)* ^[24](https://www.upheal.io/),[28](https://www.upheal.io/features/ai-assistant),[5](https://mentalhealthinvestors.com/startups/upheal)
+  - Assumption: Pricing pages reflect actual customer billing\.
+- Alternate revenue: full EHR paid per completed session \(stated $1/session\) and EHR Pro monthly fees\. *(Analyst view)* ^[29](https://www.upheal.io/pricing),[30](https://www.upheal.io/pricing),[31](https://www.upheal.io/features/ehr)
+  - Assumption: Per\-session plan is commercially available\.
+- Managed\-insurance billing offered as a pay\-for\-performance service \(vendor files claims and is paid when provider is paid\)\. *(Analyst view)* ^[14](https://www.upheal.io/features/managed-insurance-billing),[4](https://www.upheal.io/features/managed-insurance-billing),[32](https://www.upheal.io/features/managed-insurance-billing)
+  - Assumption: Operational billing team exists at scale\.
+
+## Market
+
+- Customer segment: private\-practice mental\-health clinicians and group practices \(explicitly sells subscriptions to clinicians and practices\)\. *(Analyst view)* ^[33](https://mentalhealthinvestors.com/startups/upheal),[5](https://mentalhealthinvestors.com/startups/upheal)
+  - Assumption: Target buyer is clinician / practice decision\-maker\.
+- Demand signal: company reports processing 90,000 sessions last 12 months and \~25,000 sessions per month, claiming time savings\. *(Analyst view)* ^[9](https://en.ain.ua/2024/02/28/upheal-secures-3-25m-kaya-vc),[10](https://cc.cz/ceska-umela-inteligence-pise-za-psychoterapeuty-poznamky-ze-sezeni-od-investoru-nabrala-pres-70-milionu/)
+  - Assumption: Company usage claims are accurate\.
+- Geographic footprint claim: customers across US states and 23 countries, with 90% based in the United States \(company press release\)\. *(Analyst view)* ^[34](https://www.einpresswire.com/article/918347087/upheal-releases-2026-provider-experience-report-on-ai-documentation-and-therapist-burnout)
+  - Assumption: Distribution implies US product\-market fit\.
+
+## Competition
+
+No sourced findings for this section.
+
+## Case for and against
+
+- **For:** Demonstrated usage scale — company reports 90k sessions processed in 12 months and \~25k monthly sessions, implying adoption and product utility\. *(Analyst view)* ^[9](https://en.ain.ua/2024/02/28/upheal-secures-3-25m-kaya-vc),[10](https://cc.cz/ceska-umela-inteligence-pise-za-psychoterapeuty-poznamky-ze-sezeni-od-investoru-nabrala-pres-70-milionu/)
+  - Assumption: Reported sessions correspond to paying or active users\.
+- **For:** Multiple monetisation paths — per‑session EHR, subscription AI Notes, Assistant Pro, and managed billing expand ARPU levers\. *(Analyst view)* ^[24](https://www.upheal.io/),[29](https://www.upheal.io/pricing),[28](https://www.upheal.io/features/ai-assistant),[32](https://www.upheal.io/features/managed-insurance-billing)
+  - Assumption: Customers convert across multiple paid products\.
+- **For:** Compliance and security claims \(HIPAA, SOC 2 Type II\) support enterprise / payer integrations and US\-market selling\. *(Analyst view)* ^[16](https://trust.upheal.io),[35](https://www.upheal.io/pricing),[27](https://www.upheal.io/features/ai-assistant)
+  - Assumption: Claims correspond to verifiable attestation documents\.
+- **Against:** Security attestation access limited — public pointer found but SOC2 report reportedly only shared under NDA; verification risk for enterprise buyers\. *(Analyst view)* ^[16](https://trust.upheal.io)
+  - Assumption: Enterprises require direct evidence of attestation\.
+- **Against:** Funding history shows multiple rounds and conflicting public reports on amounts \(several press\-notes of large seed rounds\), complicating cap‑table and runway assumptions\. *(Analyst view)* ^[6](https://en.ain.ua/2024/02/28/upheal-secures-3-25m-kaya-vc),[7](https://cc.cz/kvuli-synove-nemoci-vyhorel-jeho-startup-pomaha-terapeutum-letos-oznamuje-jiz-druhou-investici/),[36](https://vestbee.com/insights/articles/upheal-secures-10-m)
+  - Assumption: Press reports reflect real but varying round disclosures\.
+- **Must be true:** Confirm paid‑customer conversion and revenue per session/subscription \(billing data, MRR or ARR\) to validate monetisation claims\. *(Analyst view)* ^[24](https://www.upheal.io/),[31](https://www.upheal.io/features/ehr),[28](https://www.upheal.io/features/ai-assistant),[34](https://www.einpresswire.com/article/918347087/upheal-releases-2026-provider-experience-report-on-ai-documentation-and-therapist-burnout)
+  - Assumption: Public pricing maps to real customer payments\.
+
+# Technical due diligence
 
 ## Ownership and capital
 
-- Registry: Upheal s\.r\.o\. incorporated 2022\-01\-10, capital CZK 20,000, and 100% foreign holding by Upheal, Inc\. \(US\) since 2022\-08\-29\. *(Verified)* ^[23](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/14138018),[24](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14138018),[25](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14138018)
-- Funding history \(press\-reported\): \~$4\.35M total reported; separate reports of a 76,000,000 CZK seed round and a Series Seed mention in 2024/Nov press\. *(Corroborated)* ^[5](https://en.ain.ua/2024/02/28/upheal-secures-3-25m-kaya-vc),[6](https://cc.cz/kvuli-synove-nemoci-vyhorel-jeho-startup-pomaha-terapeutum-letos-oznamuje-jiz-druhou-investici/),[15](https://vestbee.com/insights/articles/upheal-secures-10-m)
-- Recent filings: annual/accounting filings for 2022 and 2023 visible in justice registry \(filed 2023\-10\-24 and 2024\-05\-19\)\. *(Verified)* ^[26](https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=1145979),[27](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14138018),[28](https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=1145979)
+- Legal: Upheal s\.r\.o\. registered in Czech Republic on 2022\-01\-10 with 20,000 CZK capital; Upheal, Inc\. \(US\) recorded as 100% shareholder since 2022\-08\-29\. *(Verified)* ^[37](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/14138018),[38](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14138018),[39](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14138018)
+- Funding history \(press\-reported\): press records show a $4\.35M round and separate reports of a 76,000,000 CZK seed round in Feb 2024; later press mentions a Series Seed/€ figures\. *(Corroborated)* ^[6](https://en.ain.ua/2024/02/28/upheal-secures-3-25m-kaya-vc),[7](https://cc.cz/kvuli-synove-nemoci-vyhorel-jeho-startup-pomaha-terapeutum-letos-oznamuje-jiz-druhou-investici/),[18](https://vestbee.com/insights/articles/upheal-secures-10-m)
 
 ## Technology profile
 
-- Product surfaces and docs: public documentation hub and multiple detailed docs pages showing templates and note guidance\. *(Company claim)* ^[18](https://www.upheal.io/documentation),[19](https://www.upheal.io/documentation/intake-form-template),[29](https://www.upheal.io/documentation/progress-note-template),[30](https://www.upheal.io/documentation/soap-note-example-2026),[31](https://www.upheal.io/documentation/dap-note-example)
-- Core product capabilities: automated AI clinical notes \(SOAP, DAP, GIRP, etc\.\), one\-click EHR browser\-extension integration, automated treatment plans, telehealth and billing features\. *(Company claim)* ^[32](https://www.upheal.io/features/ai-clinical-notes),[9](https://www.upheal.io/features/ai-clinical-notes),[33](https://www.upheal.io/features/ai-clinical-notes),[2](https://www.upheal.io/),[34](https://www.upheal.io/pricing)
-- Engineering footprint: public subdomains \(auth\., status\.\), Webflow \+ Cloudflare front\-end hosting, and a mobile Android app package listed in Play Store\. *(Verified)* ^[16](https://crt.sh/?q=%25.upheal.io&output=json),[17](https://crt.sh/?q=%25.upheal.io&output=json),[35](https://www.upheal.io/),[36](https://www.upheal.io/),[37](https://www.upheal.io/features/session-formats)
+- Product surfaces and docs: public documentation site with multiple clinical\-template pages and a Play Store app for session capture\. *(Partly verified)* ^[23](https://www.upheal.io/documentation),[11](https://www.upheal.io/documentation/intake-form-template),[12](https://www.upheal.io/documentation/progress-note-template),[40](https://www.upheal.io/features/session-formats)
+- Capabilities claimed: AI\-generated SOAP/DAP/GIRP notes, one\-click EHR browser integration, automatic post\-session notes, AI treatment plans, compliance checker and billing automation\. *(Company claim)* ^[41](https://www.upheal.io/features/ai-clinical-notes),[15](https://www.upheal.io/features/ai-clinical-notes),[42](https://www.upheal.io/features/ai-clinical-notes),[43](https://www.upheal.io/features/ai-clinical-notes),[44](https://www.upheal.io/features/ai-clinical-notes)
+- Engineering footprint and stack: site hosted via Cloudflare and built on Webflow; AWS listed as a cloud subprocessor; a public trust subdomain references a security attestation pointer\. *(Partly verified)* ^[45](https://www.upheal.io/),[46](https://www.upheal.io/),[47](https://www.upheal.io/),[48](https://www.upheal.io/privacy-and-compliance),[16](https://trust.upheal.io)
 
-## Rebuild check
+## What could be rebuilt, and what cannot be judged from outside
 
-- **Commodity:** AI note drafting and templates — publicly documented, browser\-extension EHR fill, and configurable templates; a small team could reproduce basic drafting using standard LLM APIs and browser automation\. *(Analyst view)* ^[32](https://www.upheal.io/features/ai-clinical-notes),[9](https://www.upheal.io/features/ai-clinical-notes),[29](https://www.upheal.io/documentation/progress-note-template)
-  - Assumption: Use off\-the\-shelf LLM APIs and browser extension tooling\.
-- **Hard to copy:** Managed insurance billing operations, claims tracking and appeals, plus reported processing scale \(90k sessions\) — these require operational processes, payer relationships and claimed historical data\. *(Analyst view)* ^[14](https://www.upheal.io/features/managed-insurance-billing),[38](https://www.upheal.io/features/managed-insurance-billing),[8](https://cc.cz/ceska-umela-inteligence-pise-za-psychoterapeuty-poznamky-ze-sezeni-od-investoru-nabrala-pres-70-milionu/)
-  - Assumption: Billing requires payer contracts and operational staff\.
-- **Verdict:** Month — a functional UI and AI\-note MVP could be cloned within a month; a clone would lack Upheal's claimed session volume, payer relationships, and managed\-billing operations\. *(Analyst view)* ^[32](https://www.upheal.io/features/ai-clinical-notes),[9](https://www.upheal.io/features/ai-clinical-notes),[14](https://www.upheal.io/features/managed-insurance-billing)
-  - Assumption: Clone uses public LLM APIs and standard web hosting\.
+- **Replicable with off-the-shelf parts:** Clinical templates, note generation UI, and one\-click browser extension integration could be reproduced using open NLP libraries, a browser extension API, and standard EHR connectors\. *(Analyst view)* ^[13](https://www.upheal.io/features/ai-clinical-notes),[41](https://www.upheal.io/features/ai-clinical-notes),[15](https://www.upheal.io/features/ai-clinical-notes)
+  - Assumption: NLP quality equal to Upheal not proven; assumes basic template logic\.
+- **Edge supported by public evidence:** Claimed operational scale \(90,000 sessions processed; 25k monthly sessions\) is public evidence of usage and potential product\-market fit if logs verify it\. *(Analyst view)* ^[9](https://en.ain.ua/2024/02/28/upheal-secures-3-25m-kaya-vc),[10](https://cc.cz/ceska-umela-inteligence-pise-za-psychoterapeuty-poznamky-ze-sezeni-od-investoru-nabrala-pres-70-milionu/)
+  - Assumption: Press\-reported numbers reflect platform\-processed sessions, not third\-party counts\.
+- **Cannot be judged from outside:** AI model quality, hallucination rates, payer\-appeal success rates, and managed\-billing unit economics cannot be judged without code, raw transcripts, claims outcome data and team access\. *(Analyst view)* ^[14](https://www.upheal.io/features/managed-insurance-billing),[42](https://www.upheal.io/features/ai-clinical-notes),[9](https://en.ain.ua/2024/02/28/upheal-secures-3-25m-kaya-vc)
+  - Assumption: External artifacts are required to evaluate accuracy and economics\.
 
 ## Risks and caveats
 
-- Unverified compliance stack: site claims SOC 2 Type II / HIPAA but SOC2 attestation is only a pointer; full report shared under NDA \(partly verified\)\. *(Analyst view)* ^[11](https://www.upheal.io/),[12](https://www.upheal.io/features/ai-assistant),[13](https://trust.upheal.io)
-  - Assumption: Full attestation must be reviewed to confirm controls\.
-- Reliance on claimed scale and time\-savings: key commercial claims \(90k sessions processed; 14 minutes saved per note\) drive go\-to\-market economics but are from company/press statements needing independent validation\. *(Analyst view)* ^[8](https://cc.cz/ceska-umela-inteligence-pise-za-psychoterapeuty-poznamky-ze-sezeni-od-investoru-nabrala-pres-70-milionu/),[39](https://cc.cz/ceska-umela-inteligence-pise-za-psychoterapeuty-poznamky-ze-sezeni-od-investoru-nabrala-pres-70-milionu/)
-  - Assumption: Metrics currently reported in press, not third\-party audited\.
+- Unverified security posture: SOC2/HIPAA claims only partly corroborated by a trust subdomain pointer; full report shared only under NDA\. *(Analyst view)* ^[16](https://trust.upheal.io),[17](https://www.upheal.io/)
+  - Assumption: Full attestations must be reviewed to confirm compliance\.
+- Concentration: reported reliance on press\-reported funding announcements \(multiple overlapping articles\) for traction narrative; investor registry entries are not supplied here\. *(Analyst view)* ^[6](https://en.ain.ua/2024/02/28/upheal-secures-3-25m-kaya-vc),[36](https://vestbee.com/insights/articles/upheal-secures-10-m),[49](https://cc.cz/kvuli-synove-nemoci-vyhorel-jeho-startup-pomaha-terapeutum-letos-oznamuje-jiz-druhou-investici/)
+  - Assumption: Press coverage may overstate investor composition without registry confirmation\.
+- Tech/IP gap: no public evidence of proprietary models, patents, or verified model ownership in supplied facts — moat may be operational and contractual rather than technical\. *(Analyst view)* ^[11](https://www.upheal.io/documentation/intake-form-template),[13](https://www.upheal.io/features/ai-clinical-notes),[2](https://www.upheal.io/)
+  - Assumption: Absence of model evidence in dataset implies need to verify IP\.
 
 ## Questions for founders
 
-- Can the company produce the full SOC 2 Type II report and evidence of HIPAA controls referenced on site \(trust\.upheal\.io\) for investor review? *(Analyst view)* ^[13](https://trust.upheal.io),[11](https://www.upheal.io/)
-  - Assumption: Report is currently behind NDA per public pointer\.
-- Please provide audited customer references and billing volume that substantiate the 90,000 sessions and 25k/month figures cited in press\. *(Analyst view)* ^[8](https://cc.cz/ceska-umela-inteligence-pise-za-psychoterapeuty-poznamky-ze-sezeni-od-investoru-nabrala-pres-70-milionu/),[40](https://mentalhealthinvestors.com/startups/upheal)
-  - Assumption: Press cites company\-reported numbers without independent audit\.
-- Which LLM vendors or in\-house models power AI note drafting and where are they contractually declared as subprocessors \(we saw only AWS listed\)? *(Analyst view)* ^[41](https://www.upheal.io/privacy-and-compliance),[42](https://vestbee.com/insights/articles/upheal-secures-10-m)
-  - Assumption: AWS is listed as cloud subprocessor; LLM vendors not named\.
-- Request evidence of payer integrations and sample claims lifecycle logs to validate managed\-insurance billing capabilities and collection timing\. *(Analyst view)* ^[14](https://www.upheal.io/features/managed-insurance-billing),[38](https://www.upheal.io/features/managed-insurance-billing)
-  - Assumption: Managed billing implies payer\-level operations and records\.
+- Please provide the SOC2 Type II report and scope; verification fact shows only an attestation pointer\. *(Analyst view)* ^[16](https://trust.upheal.io)
+  - Assumption: Full report will confirm controls and data processing scope\.
+- Request raw logs or a third‑party audit substantiating the 90,000 sessions and 21,000 hours saved claim, which currently appears in press statements\. *(Analyst view)* ^[9](https://en.ain.ua/2024/02/28/upheal-secures-3-25m-kaya-vc),[10](https://cc.cz/ceska-umela-inteligence-pise-za-psychoterapeuty-poznamky-ze-sezeni-od-investoru-nabrala-pres-70-milionu/)
+  - Assumption: Logs or analytics exports will show session counts and processing timestamps\.
+- Ask for evidence on model provenance and vendor dependencies: does Upheal use third‑party LLM APIs or own models? No LLM vendor facts are provided\. *(Analyst view)* ^[2](https://www.upheal.io/),[50](https://cc.cz/kvuli-synove-nemoci-vyhorel-jeho-startup-pomaha-terapeutum-letos-oznamuje-jiz-druhou-investici/)
+  - Assumption: Vendor contracts or architecture diagrams will reveal dependencies\.
+- Obtain managed\-billing unit economics and claims success metrics that back the pay‑when‑paid business model and asserted billing workflows\. *(Analyst view)* ^[14](https://www.upheal.io/features/managed-insurance-billing),[4](https://www.upheal.io/features/managed-insurance-billing),[32](https://www.upheal.io/features/managed-insurance-billing)
+  - Assumption: Claims outcome and revenue share data are required to assess economics\.
 
 ## Sources
 
-1. [upheal\.io](https://www.upheal.io/features/ai-clinical-notes) · Company's own website · Product capability — “Progress notes and transcripts are instantly created after every session, so you can stay focused on your clients\.”
-2. [upheal\.io](https://www.upheal.io/) · Company's own website · Product capability — “Yes \. Upheal includes built\-in HIPAA\-compliant telehealth with video sessions\.”
+1. [upheal\.io](https://www.upheal.io/features/ai-assistant) · Company's own website · Product capability — “Session prep, letters, scheduling, invoices and claims\. Upheal’s AI Assistant works from your chart, calendar and billing, so it finishes the job, not just the draft\.”
+2. [upheal\.io](https://www.upheal.io/) · Company's own website · Product capability — “Your AI progress note is ready in 60 seconds”
 3. [upheal\.io](https://www.upheal.io/) · Company's own website · Product capability — “Your calendar, intake forms, telehealth, billing and client portal sit right next to your notes\.”
-4. [mentalhealthinvestors\.com](https://mentalhealthinvestors.com/startups/upheal) · Independent press · Pricing — “It sells subscriptions to individual clinicians and group practices\.”
-5. [en\.ain\.ua](https://en.ain.ua/2024/02/28/upheal-secures-3-25m-kaya-vc) · Independent press · Funding round — “In total, Upheal raised $4\.35 million of funding\.”
-6. [cc\.cz](https://cc.cz/kvuli-synove-nemoci-vyhorel-jeho-startup-pomaha-terapeutum-letos-oznamuje-jiz-druhou-investici/) · Independent press · Funding round — “seedové investiční kolo ve výši 76 milionů korun pak Upheal oznamoval letos v únoru”
-7. [vestbee\.com](https://vestbee.com/insights/articles/upheal-secures-10-m) · Independent press · Integration — “Upheal has partnered with Alma, Cartwheel Care, Author Health, Noble Health, and Insight Counseling\.”
-8. [cc\.cz](https://cc.cz/ceska-umela-inteligence-pise-za-psychoterapeuty-poznamky-ze-sezeni-od-investoru-nabrala-pres-70-milionu/) · Independent press · Technical claim — “Během posledních dvanácti měsíců zpracoval 90 tisíc sezení, čímž terapeutům ušetřil 21 tisíc hodin\. Každý měsíc zpracovává nyní 25 tisíc sezení\.”
-9. [upheal\.io](https://www.upheal.io/features/ai-clinical-notes) · Company's own website · Product capability — “Or use our browser extension to fill your notes into your EHR with one click\.”
-10. [upheal\.io](https://www.upheal.io/features/ai-clinical-notes) · Company's own website · Product capability — “Upheal creates AI\-generated notes in ten formats: SOAP, DAP, GIRP, BIRP, EMDR, PIRP, SIRP, PIE, Intake, and Mental Status Exam \(MSE\)\. You can use any of these as\-is, or build your own template from 170 clinically approved sections to match your preferred style and payer requirements\.”
-11. [upheal\.io](https://www.upheal.io/) · Company's own website · Technical claim — “SOC 2 Type II”
-12. [upheal\.io](https://www.upheal.io/features/ai-assistant) · Company's own website · Technical claim — “HIPAA Compliant PHIPA Compliant SOC 2 Type II GDPR Compliant Asks before it acts”
-13. [trust\.upheal\.io](https://trust.upheal.io) · Company's own website · Independent check of a claim — “Public attestation pointer found: subdomain trust\.upheal\.io\. The report itself is shared under NDA — request it\.”
+4. [upheal\.io](https://www.upheal.io/features/managed-insurance-billing) · Company's own website · Product capability — “We track and chase Status monitored, rejections corrected, denials worked, appeals filed, statements sent\.”
+5. [mentalhealthinvestors\.com](https://mentalhealthinvestors.com/startups/upheal) · Independent press · Pricing — “It sells subscriptions to individual clinicians and group practices\.”
+6. [en\.ain\.ua](https://en.ain.ua/2024/02/28/upheal-secures-3-25m-kaya-vc) · Independent press · Funding round — “In total, Upheal raised $4\.35 million of funding\.”
+7. [cc\.cz](https://cc.cz/kvuli-synove-nemoci-vyhorel-jeho-startup-pomaha-terapeutum-letos-oznamuje-jiz-druhou-investici/) · Independent press · Funding round — “seedové investiční kolo ve výši 76 milionů korun pak Upheal oznamoval letos v únoru”
+8. [vestbee\.com](https://vestbee.com/insights/articles/upheal-secures-10-m) · Independent press · Integration — “Upheal has partnered with Alma, Cartwheel Care, Author Health, Noble Health, and Insight Counseling\.”
+9. [en\.ain\.ua](https://en.ain.ua/2024/02/28/upheal-secures-3-25m-kaya-vc) · Independent press · Technical claim — “The company claims it has processed 90,000 sessions in the last 12 months, and saved mental health professionals 21,000 hours\.”
+10. [cc\.cz](https://cc.cz/ceska-umela-inteligence-pise-za-psychoterapeuty-poznamky-ze-sezeni-od-investoru-nabrala-pres-70-milionu/) · Independent press · Technical claim — “Během posledních dvanácti měsíců zpracoval 90 tisíc sezení, čímž terapeutům ušetřil 21 tisíc hodin\. Každý měsíc zpracovává nyní 25 tisíc sezení\.”
+11. [upheal\.io](https://www.upheal.io/documentation/intake-form-template) · Company's own website · Website page — “Intake Form Template for Mental Health \(Updates for 2026\)”
+12. [upheal\.io](https://www.upheal.io/documentation/progress-note-template) · Company's own website · Website page — “Writing great progress notes: when to use which template and why”
+13. [upheal\.io](https://www.upheal.io/features/ai-clinical-notes) · Company's own website · Product capability — “Upheal creates AI\-generated notes in ten formats: SOAP, DAP, GIRP, BIRP, EMDR, PIRP, SIRP, PIE, Intake, and Mental Status Exam \(MSE\)\. You can use any of these as\-is, or build your own template from 170 clinically approved sections to match your preferred style and payer requirements\.”
 14. [upheal\.io](https://www.upheal.io/features/managed-insurance-billing) · Company's own website · Product capability — “You sign the note\. The rest is on us\. You Finish your session Upheal drafts an insurance‑ready note from the session\. You review and sign\. Upheal We file the claim”
-15. [vestbee\.com](https://vestbee.com/insights/articles/upheal-secures-10-m) · Independent press · Funding round — “since its Series Seed funding in February 2024”
-16. [crt\.sh](https://crt.sh/?q=%25.upheal.io&output=json) · Public technical artifact · Subdomain \(certificates\) · 2023\-06\-09 — “auth\.upheal\.io \(first certificate 2023\-06\-09\)”
-17. [crt\.sh](https://crt.sh/?q=%25.upheal.io&output=json) · Public technical artifact · Subdomain \(certificates\) · 2023\-08\-21 — “status\.upheal\.io \(first certificate 2023\-08\-21\)”
-18. [upheal\.io](https://www.upheal.io/documentation) · Company's own website · Website page — “Documentation \| Upheal”
-19. [upheal\.io](https://www.upheal.io/documentation/intake-form-template) · Company's own website · Website page — “Intake Form Template for Mental Health \(Updates for 2026\)”
-20. [upheal\.io](https://www.upheal.io/) · Company's own website · Pricing — “AI Notes is $39/month for unlimited AI notes\.”
-21. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/14138018) · Official record · Registry: incorporation · 2022\-01\-10 — “registered 2022\-01\-10”
-22. [cc\.cz](https://cc.cz/dava-terapeutum-superschopnosti-umela-inteligence-z-ceska-posloucha-s-lekarem-ziskala-25-milionu/) · Independent press · Press article · 2022\-10\-18 — “Umělá inteligence poslouchající s terapeutem přilákala 25 milionů \- CzechCrunch”
-23. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/14138018) · Official record · Registry: identity · 2022\-01\-10 — “Upheal s\.r\.o\. · s\.r\.o\. · registered 2022\-01\-10”
-24. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14138018) · Official record · Registry: registered capital · 2022\-01\-10 — “20 000 CZK”
-25. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14138018) · Official record · Registry: shareholder · 2022\-08\-29 — “Upheal, Inc\. · 100\.0% · from 2022\-08\-29”
-26. [or\.justice\.cz](https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=1145979) · Official record · Registry: filed document · 2023\-10\-24
-27. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14138018) · Official record · Registry: structure
-28. [or\.justice\.cz](https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=1145979) · Official record · Registry: filed document · 2024\-05\-19
-29. [upheal\.io](https://www.upheal.io/documentation/progress-note-template) · Company's own website · Website page — “Writing great progress notes: when to use which template and why”
-30. [upheal\.io](https://www.upheal.io/documentation/soap-note-example-2026) · Company's own website · Website page — “SOAP note example: how to write one \(free template\)”
-31. [upheal\.io](https://www.upheal.io/documentation/dap-note-example) · Company's own website · Website page — “How to write a DAP note – a real\-life example”
-32. [upheal\.io](https://www.upheal.io/features/ai-clinical-notes) · Company's own website · Product capability — “Upheal generates SOAP, DAP, GIRP, and other clinical note formats automatically from your sessions\.”
-33. [upheal\.io](https://www.upheal.io/features/ai-clinical-notes) · Company's own website · Product capability — “Insurance\-compliant Treatment Plans are generated from past sessions and automatically update as your client progresses\.”
-34. [upheal\.io](https://www.upheal.io/pricing) · Company's own website · Pricing — “Invoicing, superbills, and online client payments”
-35. [upheal\.io](https://www.upheal.io/) · Public technical artifact · Technology detected
-36. [upheal\.io](https://www.upheal.io/) · Public technical artifact · Technology detected
-37. [upheal\.io](https://www.upheal.io/features/session-formats) · Public technical artifact · Mobile app
-38. [upheal\.io](https://www.upheal.io/features/managed-insurance-billing) · Company's own website · Product capability — “We track and chase Status monitored, rejections corrected, denials worked, appeals filed, statements sent\.”
-39. [cc\.cz](https://cc.cz/ceska-umela-inteligence-pise-za-psychoterapeuty-poznamky-ze-sezeni-od-investoru-nabrala-pres-70-milionu/) · Independent press · Technical claim — “Podle vyjádření firmy v průměru ušetří terapeutům 14 minut \(z průměrných 22 minut\) na jednu poznámku za sezení\.”
-40. [mentalhealthinvestors\.com](https://mentalhealthinvestors.com/startups/upheal) · Independent press · Press article — “Upheal: funding, last round &amp; investors · Mental Health Investors”
-41. [upheal\.io](https://www.upheal.io/privacy-and-compliance) · Company's own website · Subprocessor \(privacy policy\) — “In addition, we use AWS for our cloud infrastructure and storage, a highly secure and reliable vendor\.”
-42. [vestbee\.com](https://vestbee.com/insights/articles/upheal-secures-10-m) · Independent press · Technical claim — “enhance its AI\-driven tools”
+15. [upheal\.io](https://www.upheal.io/features/ai-clinical-notes) · Company's own website · Product capability — “Or use our browser extension to fill your notes into your EHR with one click\.”
+16. [trust\.upheal\.io](https://trust.upheal.io) · Company's own website · Independent check of a claim — “Public attestation pointer found: subdomain trust\.upheal\.io\. The report itself is shared under NDA — request it\.”
+17. [upheal\.io](https://www.upheal.io/) · Company's own website · Technical claim — “SOC 2 Type II”
+18. [vestbee\.com](https://vestbee.com/insights/articles/upheal-secures-10-m) · Independent press · Funding round — “since its Series Seed funding in February 2024”
+19. [cc\.cz](https://cc.cz/ceska-umela-inteligence-pise-za-psychoterapeuty-poznamky-ze-sezeni-od-investoru-nabrala-pres-70-milionu/) · Independent press · Press article · 2024\-02\-27 — “Češi díky AI dávají terapeutům superchopnosti\. Nabírají 76 milionů \- CzechCrunch”
+20. [tech\.eu](https://tech.eu/2022/10/19/upheal-raises-eur168-million-and-launches-ai-powered-notes-app-for-mental-health-care-professionals/) · Independent press · Press article · 2022\-10\-19 — “Upheal raises €1\.068 million and launches AI\-powered notes app for mental health care professionals \- Tech\.eu”
+21. [crt\.sh](https://crt.sh/?q=%25.upheal.io&output=json) · Public technical artifact · Subdomain \(certificates\) · 2023\-06\-09 — “auth\.upheal\.io \(first certificate 2023\-06\-09\)”
+22. [crt\.sh](https://crt.sh/?q=%25.upheal.io&output=json) · Public technical artifact · Subdomain \(certificates\) · 2023\-08\-21 — “status\.upheal\.io \(first certificate 2023\-08\-21\)”
+23. [upheal\.io](https://www.upheal.io/documentation) · Company's own website · Website page — “Documentation \| Upheal”
+24. [upheal\.io](https://www.upheal.io/) · Company's own website · Pricing — “AI Notes is $39/month for unlimited AI notes\.”
+25. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/14138018) · Official record · Registry: incorporation · 2022\-01\-10 — “registered 2022\-01\-10”
+26. [cc\.cz](https://cc.cz/dava-terapeutum-superschopnosti-umela-inteligence-z-ceska-posloucha-s-lekarem-ziskala-25-milionu/) · Independent press · Press article · 2022\-10\-18 — “Umělá inteligence poslouchající s terapeutem přilákala 25 milionů \- CzechCrunch”
+27. [upheal\.io](https://www.upheal.io/features/ai-assistant) · Company's own website · Technical claim — “HIPAA Compliant PHIPA Compliant SOC 2 Type II GDPR Compliant Asks before it acts”
+28. [upheal\.io](https://www.upheal.io/features/ai-assistant) · Company's own website · Pricing — “Assistant Pro, with unlimited AI Assistant and session prep, is $39 per month on any paid plan, and it is included in EHR Pro at $99 per month\.”
+29. [upheal\.io](https://www.upheal.io/pricing) · Company's own website · Pricing — “$1 / session Paid per session\.”
+30. [upheal\.io](https://www.upheal.io/pricing) · Company's own website · Pricing — “$99 / month Flat fee”
+31. [upheal\.io](https://www.upheal.io/features/ehr) · Company's own website · Pricing — “Is there an EHR for private practice under $100 per month? Yes\. Upheal's EHR is $1 per completed session, pay as you go, so a 10\-session week costs about $43 a month\. EHR Pro is $99 per month flat for unlimited sessions with Assistant Pro included”
+32. [upheal\.io](https://www.upheal.io/features/managed-insurance-billing) · Company's own website · Pricing — “Pay when you get paid Your NPI, your contracts No minimums”
+33. [mentalhealthinvestors\.com](https://mentalhealthinvestors.com/startups/upheal) · Independent press · Product capability — “AI therapy notes plus scheduling, billing and EHR features for mental health providers\.”
+34. [einpresswire\.com](https://www.einpresswire.com/article/918347087/upheal-releases-2026-provider-experience-report-on-ai-documentation-and-therapist-burnout) · Independent press · Press article · 2026\-06\-11 — “Upheal Releases 2026 Provider Experience Report on AI Documentation and Therapist Burnout”
+35. [upheal\.io](https://www.upheal.io/pricing) · Company's own website · Technical claim — “HIPAA\-compliant telehealth Upheal’s own secure, HIPAA\-compliant video calling platform\.”
+36. [vestbee\.com](https://vestbee.com/insights/articles/upheal-secures-10-m) · Independent press · Press article · 2024\-11\-14 — “Czech\-US mental health platform for clinicians Upheal secures $10M\. Headline led the round \| Vestbee”
+37. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/14138018) · Official record · Registry: identity · 2022\-01\-10 — “Upheal s\.r\.o\. · s\.r\.o\. · registered 2022\-01\-10”
+38. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14138018) · Official record · Registry: registered capital · 2022\-01\-10 — “20 000 CZK”
+39. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14138018) · Official record · Registry: shareholder · 2022\-08\-29 — “Upheal, Inc\. · 100\.0% · from 2022\-08\-29”
+40. [upheal\.io](https://www.upheal.io/features/session-formats) · Public technical artifact · Mobile app
+41. [upheal\.io](https://www.upheal.io/features/ai-clinical-notes) · Company's own website · Product capability — “Upheal generates SOAP, DAP, GIRP, and other clinical note formats automatically from your sessions\.”
+42. [upheal\.io](https://www.upheal.io/features/ai-clinical-notes) · Company's own website · Product capability — “Progress notes and transcripts are instantly created after every session, so you can stay focused on your clients\.”
+43. [upheal\.io](https://www.upheal.io/features/ai-clinical-notes) · Company's own website · Product capability — “Insurance\-compliant Treatment Plans are generated from past sessions and automatically update as your client progresses\.”
+44. [upheal\.io](https://www.upheal.io/features/ai-clinical-notes) · Company's own website · Technical claim — “Compliance Checker gives you peace of mind by flagging missing elements, aligning with payer standards, and ensuring your notes are audit\-ready\.”
+45. [upheal\.io](https://www.upheal.io/) · Public technical artifact · Technology detected
+46. [upheal\.io](https://www.upheal.io/) · Public technical artifact · Technology detected
+47. [upheal\.io](https://www.upheal.io/) · Public technical artifact · Technology detected
+48. [upheal\.io](https://www.upheal.io/privacy-and-compliance) · Company's own website · Subprocessor \(privacy policy\) — “In addition, we use AWS for our cloud infrastructure and storage, a highly secure and reliable vendor\.”
+49. [cc\.cz](https://cc.cz/kvuli-synove-nemoci-vyhorel-jeho-startup-pomaha-terapeutum-letos-oznamuje-jiz-druhou-investici/) · Independent press · Press article · 2024\-11\-18 — “Kvůli synově nemoci vyhořel\. Jeho startup teď pomáhá terapeutům \- CzechCrunch”
+50. [cc\.cz](https://cc.cz/kvuli-synove-nemoci-vyhorel-jeho-startup-pomaha-terapeutum-letos-oznamuje-jiz-druhou-investici/) · Independent press · Technical claim — “Upheal, který za ně automaticky i díky umělé inteligenci sepisuje poznámky ze sezení, třídí je a hledá v nich souvislosti”
 
 ## How this dossier was built
 
@@ -122,7 +178,7 @@ upheal\.io · Upheal s\.r\.o\. · IČO 14138018 · CZ · 2026\-11\-17
 | Claim verification | company claims checked against independent sources: Google Patents \(patents\), IAB Global Vendor List \(TCF\), commercial register \(investors named in press\), security pages \(SOC 2 / ISO attestations\), news search \(customers\) | 1 | — |
 | AI extraction | an LLM reads saved pages and articles and proposes facts; a fact is kept only if its quote is found in the source text and its category passes rule checks | 57 | — |
 
-Analysis: gpt\-5\-mini (cost $0.0088); AI extraction cost $0.0087. Full fact table: CSV export.
+Analysis: gpt\-5\-mini (cost $0.0179); AI extraction cost $0.0087. Full fact table: CSV export.
 
 ## Source appendix (all collected facts)
 
@@ -259,10 +315,6 @@ Analysis: gpt\-5\-mini (cost $0.0088); AI extraction cost $0.0087. Full fact tab
 - F4405 · press\_mention · Sourced · [https://www\.einpresswire\.com/article/918347087/upheal\-releases\-2026\-provider\-experience\-report\-on\-ai\-documentation\-and\-therapist\-burnout](https://www.einpresswire.com/article/918347087/upheal-releases-2026-provider-experience-report-on-ai-documentation-and-therapist-burnout)
 - F4406 · press\_mention · Sourced · [https://checkpointehr\.com/checkpointehr\-features/new\-partnership\-with\-upheal](https://checkpointehr.com/checkpointehr-features/new-partnership-with-upheal)
 - F4407 · press\_mention · Sourced · [https://www\.joinheard\.com/partner/upheal](https://www.joinheard.com/partner/upheal)
-- F5541 · source\_check · Checked · no results · [https://www\.hlidacstatu\.cz/hledat?Q=ico%3A14138018](https://www.hlidacstatu.cz/hledat?Q=ico%3A14138018)
-- F5542 · source\_check · Checked · no results · [https://www\.hlidacstatu\.cz/dotace/hledat?Q=ico%3A14138018](https://www.hlidacstatu.cz/dotace/hledat?Q=ico%3A14138018)
-- F5543 · source\_check · Checked · no results · [https://cordis\.europa\.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27Upheal%27](https://cordis.europa.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27Upheal%27)
-- F5544 · source\_unavailable · Unavailable · [https://starfos\.tacr\.cz](https://starfos.tacr.cz)
 - F6197 · product\_capability · Medium confidence · [https://www\.upheal\.io/](https://www.upheal.io/)
 - F6198 · product\_capability · Medium confidence · [https://www\.upheal\.io/](https://www.upheal.io/)
 - F6199 · product\_capability · Medium confidence · [https://www\.upheal\.io/](https://www.upheal.io/)
@@ -321,3 +373,7 @@ Analysis: gpt\-5\-mini (cost $0.0088); AI extraction cost $0.0087. Full fact tab
 - F6257 · pricing · Medium confidence · [https://www\.upheal\.io/features/growth\-audit](https://www.upheal.io/features/growth-audit)
 - F6258 · product\_capability · Medium confidence · [https://www\.upheal\.io/features/growth\-audit](https://www.upheal.io/features/growth-audit)
 - F6398 · verification · Sourced · [https://trust\.upheal\.io](https://trust.upheal.io)
+- F7810 · source\_check · Checked · no results · [https://www\.hlidacstatu\.cz/hledat?Q=ico%3A14138018](https://www.hlidacstatu.cz/hledat?Q=ico%3A14138018)
+- F7811 · source\_check · Checked · no results · [https://www\.hlidacstatu\.cz/dotace/hledat?Q=ico%3A14138018](https://www.hlidacstatu.cz/dotace/hledat?Q=ico%3A14138018)
+- F7812 · source\_check · Checked · no results · [https://cordis\.europa\.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27Upheal%27](https://cordis.europa.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27Upheal%27)
+- F7813 · source\_unavailable · Unavailable · [https://starfos\.tacr\.cz](https://starfos.tacr.cz)

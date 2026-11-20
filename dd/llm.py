@@ -103,15 +103,23 @@ class LLM:
 
         kwargs = dict(model=model, instructions=system, input=prompt, text_format=schema,
                       max_output_tokens=max_output_tokens)
-        if hasattr(client.responses, 'create'):
-            # Read usage before parsing: malformed/incomplete structured outputs can still be billed.
-            strict = _strict_schema(schema.model_json_schema())
-            raw_kwargs = {k: v for k, v in kwargs.items() if k != 'text_format'}
-            resp = client.responses.create(**raw_kwargs, reasoning={"effort": self.effort},
-                text={"format": {"type": "json_schema", "name": schema.__name__, "schema": strict, "strict": True}},
-                store=False)
-        else:  # lightweight injected clients used by offline tests
-            resp = client.responses.parse(**kwargs, reasoning={"effort": self.effort})
+        try:
+            if hasattr(client.responses, 'create'):
+                # Read usage before parsing: malformed/incomplete structured outputs can still be billed.
+                strict = _strict_schema(schema.model_json_schema())
+                raw_kwargs = {k: v for k, v in kwargs.items() if k != 'text_format'}
+                resp = client.responses.create(**raw_kwargs, reasoning={"effort": self.effort},
+                    text={"format": {"type": "json_schema", "name": schema.__name__, "schema": strict, "strict": True}},
+                    store=False)
+            else:  # lightweight injected clients used by offline tests
+                resp = client.responses.parse(**kwargs, reasoning={"effort": self.effort})
+        except Exception:
+            # No usage came back, so whether it was billed is unknown: the worst-case reservation stays counted
+            # (the budget errs on the safe side) but is marked as failed, so `dd spent` can say what it is.
+            self.store.db.execute("UPDATE llm_call SET purpose=? WHERE cache_key=?", (f"{purpose} (failed, no usage)",
+                                                                                      reservation))
+            self.store.db.commit()
+            raise
         u = resp.usage
         tin, tout = u.input_tokens, u.output_tokens
         c = self.cost(model, tin, tout)

@@ -43,13 +43,7 @@ def _short(x: float) -> str:
     return f"{x / 1e6:.1f}M" if x >= 1e5 else f"{x / 1e3:.0f}k"
 
 
-STAGES = ((r"pre-?seed", 1), (r"\bseed", 2), (r"series\s*a\b", 3), (r"series\s*b\b", 4), (r"series\s*c\b", 5),
-          (r"growth|series\s*[d-z]\b", 6))
-
-
-def _stage(name: Any) -> int:
-    n = str(name or "").lower()
-    return next((rank for pat, rank in STAGES if re.search(pat, n)), 0)  # first match: "pre-seed" before "seed"
+from dd.thesis import last_round, stage_rank as _stage, stage_ticket  # noqa: E402,F401  (round choice lives with the ticket logic)
 
 
 def _year(s: Any) -> int | None:
@@ -76,15 +70,10 @@ def extras(sig: dict, facts: dict[int, Fact], refs, company: Company) -> dict:
                       "sub": (f"{n} different figures reported — see funding table" if n > 1 else
                               f"{r.get('round') or 'round'} · {r.get('date') or 'undated'}"),
                       "nums": refs.add([i for x in sought for i in x["fact_ids"]][:4]), "tone": "warn" if n > 1 else ""})
-    if closed:
-        r = sorted(closed, key=lambda r: r.get("date") or "")[-1]
-        tiles.append({"label": "Last closed round", "value": r.get("amount") or "amount not stated",
-                      "sub": " · ".join(x for x in (r.get("round"), r.get("date"), ", ".join(r.get("investors") or [])[:60]) if x),
-                      "nums": refs.add(r["fact_ids"][:3])})
-    if rounds and not sought and not closed:  # older analyses: rounds without a sought/closed status
-        # latest by stage, then date: a dated article can be about an earlier round
-        r = sorted(rounds, key=lambda r: (_stage(r.get("round")), r.get("date") or ""))[-1]
-        tiles.append({"label": "Latest reported round", "value": r.get("amount") or "amount not stated",
+    r = last_round(rounds)  # stage first: a later article can restate an earlier round (see dd.thesis.last_round)
+    if r:
+        tiles.append({"label": "Last closed round" if r.get("status") == "closed" else "Latest reported round",
+                      "value": r.get("amount") or "amount not stated",
                       "sub": " · ".join(x for x in (r.get("round"), r.get("date"), ", ".join(r.get("investors") or [])[:60]) if x),
                       "nums": refs.add(r["fact_ids"][:3])})
     if not rounds:
@@ -119,10 +108,12 @@ def extras(sig: dict, facts: dict[int, Fact], refs, company: Company) -> dict:
                   "tone": "" if sales else "muted"})
     sub_czk = float((kinds.get("subsidy") or {}).get("czk") or 0)
     grants = float(pm.get("grants_czk") or 0) + sub_czk
-    tiles.append({"label": "Grants & subsidies (not revenue)",
+    paid = float(pm.get("grants_paid_czk") or 0)
+    tiles.append({"label": "Grants & subsidies awarded (not revenue)",
                   "value": _czk(grants) if grants else ("amount not published" if pm.get("grants") else
                                                         "None found" if cz_subsidies else "Not checked"),
-                  "sub": (f"{pm.get('grants', 0)} grant(s) · {(kinds.get('subsidy') or {}).get('count', 0)} subsidy agreement(s)"
+                  "sub": ((f"{pm.get('grants', 0)} project(s), multi-year · "
+                           + (f"{_czk(paid)} paid out so far per payment records" if paid else "payments by year not published"))
                           if cz_subsidies or grants else why),
                   "nums": refs.add([f.id for f in facts.values() if f.type in ("grant_national", "grant_eu")][:3]),
                   "tone": "" if grants else "muted"})
@@ -155,8 +146,12 @@ def extras(sig: dict, facts: dict[int, Fact], refs, company: Company) -> dict:
                                "czk": "budget, not revenue" if k == "rd_project" else _czk(kinds[k].get("czk")),
                                "nums": refs.add(kinds[k].get("fact_ids", [])[:3])})
     if pm.get("grants"):
-        money_rows.append({"kind": "Grants (subsidy registers, CORDIS, EU portal)", "meaning": "public funding, not revenue",
-                           "count": pm["grants"], "czk": _czk(pm.get("grants_czk")),
+        money_rows.append({"kind": "Grants (subsidy registers, CORDIS, EU portal)",
+                           "meaning": "public funding awarded to the company for whole projects, not revenue; one row per "
+                                      "project even when several registers list it",
+                           "count": pm["grants"],
+                           "czk": f"awarded {_czk(pm.get('grants_czk'))}"
+                                  + (f"; paid so far {_czk(pm.get('grants_paid_czk'))}" if pm.get("grants_paid_czk") else ""),
                            "nums": refs.add([f.id for f in facts.values() if f.type in ("grant_national", "grant_eu")][:3])})
     if tw.get("count"):
         money_rows.append({"kind": "Won EU public tenders (TED)", "meaning": "the company won a public procurement; "
@@ -168,10 +163,11 @@ def extras(sig: dict, facts: dict[int, Fact], refs, company: Company) -> dict:
     by_year: dict[int, dict[str, float]] = defaultdict(lambda: {"grants": 0.0, "sales": 0.0})
     for f in facts.values():
         v = f.value if isinstance(f.value, dict) else {}
-        if f.type in ("grant_national", "grant_eu") and v.get("amount_czk") and f.extractor == "public_money":
-            y = _year(v.get("year") or f.event_date)
-            if y:
-                by_year[y]["grants"] += float(v["amount_czk"])
+        if f.type in ("grant_national", "grant_eu") and f.extractor == "public_money":
+            # only actual payments have a year: an award's register year can be a programme year (even 2028)
+            for p in v.get("paid_by_year") or []:
+                if _year(p.get("year")) and p.get("amount_czk"):
+                    by_year[_year(p["year"])]["grants"] += float(p["amount_czk"])
         elif f.type == "gov_contract" and contract_kind(f) == "purchase" and v.get("amount_czk"):
             y = _year(v.get("signed") or f.event_date)
             if y:
@@ -197,7 +193,7 @@ def extras(sig: dict, facts: dict[int, Fact], refs, company: Company) -> dict:
 
     fund = th.get("fund") or {}
     secs = th.get("sectors") or []
-    latest = (sorted(sought, key=lambda r: r.get("date") or "")[-1:] or sorted(closed, key=lambda r: r.get("date") or "")[-1:])
+    st = stage_ticket(rounds)  # recomputed at render time, so briefs analysed earlier get the same arithmetic
     thesis_rows = []
     if fund:
         thesis_rows = [
@@ -210,17 +206,16 @@ def extras(sig: dict, facts: dict[int, Fact], refs, company: Company) -> dict:
              "company": ((th.get("geography") or {}).get("country") or "unknown")
                         + (" — core region" if (th.get("geography") or {}).get("in_core_region") else ""),
              "nums": refs.add((th.get("geography") or {}).get("fact_ids") or [])},
-            {"criterion": "Stage & ticket", "fund": f"{fund.get('stage')}; initial ticket EUR "
-                                                     f"{fund['initial_ticket_eur'][0] / 1e6:g}–{fund['initial_ticket_eur'][1] / 1e6:g}m",
-             "company": (f"{STATUS_TEXT.get(latest[0].get('status'), '')}: {latest[0].get('amount') or 'amount n/a'}"
-                         f" ({latest[0].get('round') or 'round n/a'})") if latest else "no round in sources",
-             "nums": refs.add(latest[0]["fact_ids"][:2]) if latest else []},
+            {"criterion": "Stage & ticket (computed by code)",
+             "fund": f"{fund.get('stage')}; initial ticket EUR "
+                     f"{fund['initial_ticket_eur'][0] / 1e6:g}–{fund['initial_ticket_eur'][1] / 1e6:g}m",
+             "company": st["text"], "nums": refs.add(st.get("fact_ids", [])[:2])},
             {"criterion": "Portfolio overlap", "fund": "existing Rockaway Ventures / Rockaway Defense companies",
              "company": "; ".join(f"{p['name']} (shared terms: {', '.join(p['shared_terms'][:4])})"
                                   for p in th.get("portfolio_overlap") or []) or "none found by term overlap",
              "nums": []},
         ]
-    return {"sales_checked": cz_contracts or ted, "tiles": tiles, "funding": funding_rows, "money": money_rows, "money_chart": chart, "peers": peers,
+    return {"grants_awarded": grants, "grants_paid": paid, "sales_checked": cz_contracts or ted, "tiles": tiles, "funding": funding_rows, "money": money_rows, "money_chart": chart, "peers": peers,
             "checks": checks, "thesis": thesis_rows, "fund_sources": fund.get("sources") or []}
 
 
@@ -395,10 +390,13 @@ def render(company: Company, analysis: dict, p: dict, titles: dict, label_titles
         parts.append(section("business_model"))
     if x.get("money_chart"):
         mx = max((r["grants"] + r["sales"]) for r in x["money_chart"]) or 1
-        parts.append('<h3>Public money by year</h3><p class="h2note">Grants vs. sales to public buyers, by the year '
-                     "recorded in the registers (grant years can be project years). Research-project budgets are excluded: "
-                     "they are not revenue.</p><div class=chart><div class=legend>"
-                     '<span><i style="background:var(--s1)"></i>Grants</span>'
+        unpaid = max(float(x.get("grants_awarded") or 0) - float(x.get("grants_paid") or 0), 0)
+        parts.append('<h3>Public money received by year</h3><p class="h2note">Grant payments recorded in the Czech '
+                     "subsidy payments register (IsRed), and sales to public buyers by contract year. Research-project "
+                     "budgets are excluded: they are not revenue."
+                     + (f" Awarded support without published payments ({_czk(unpaid)}) is not shown by year." if unpaid else "")
+                     + "</p><div class=chart><div class=legend>"
+                     '<span><i style="background:var(--s1)"></i>Grant payments</span>'
                      '<span><i style="background:var(--s2)"></i>Sales to public buyers</span></div><div class=bars>')
         for r in x["money_chart"]:
             g, s_ = r["grants"], r["sales"]
@@ -409,7 +407,7 @@ def render(company: Company, analysis: dict, p: dict, titles: dict, label_titles
             parts.append(f'<div class="bar">{segs}{lab}<div class="tip">{r["year"]}: grants {_czk(g)} · sales {_czk(s_)}</div></div>')
         tg_, ts_ = sum(r["grants"] for r in x["money_chart"]), sum(r["sales"] for r in x["money_chart"])
         parts.append('</div><div class=years>' + "".join(f"<span>{r['year']}</span>" for r in x["money_chart"]) + "</div>"
-                     f'<p class="h2note" style="margin-top:8px">Total over these years: grants {_czk(tg_)}'
+                     f'<p class="h2note" style="margin-top:8px">Total over these years: grant payments {_czk(tg_)}'
                      + (f"; sales to public buyers {_czk(ts_)} ({_pct(ts_ / (tg_ + ts_))} of the public money)" if ts_ else
                         ("; no sales to public buyers found" if x.get("sales_checked") else
                                                      "; sales to public buyers not checked")) + ".</p></div>")
