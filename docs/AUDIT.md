@@ -121,7 +121,18 @@ An investment analyst read the showcase. His main point: the worst error a brief
 
 Changes from the same review: the market section is no longer shown (analysts size markets themselves, and the only market statements public sources hold are the company's own); key numbers come first and risks and founder questions follow the case for and against; the site says which latest round of each non-portfolio company was checked for Rockaway, with the source and date, instead of "not in the Rockaway portfolio". Model-written statements in the existing briefs still contain absence claims ("no defence tender won, not listed in NATO DIANA"); prompts `analyze-v7` and `invest-v6` forbid them and ask for a founder question instead, and they take effect when a brief is re-analysed.
 
-## 10. What remains a limit
+## 10. OSINT checks (25 November)
+
+Building the people and claim checks (`dd/osint/`, `docs/OSINT_PLAN.md`) found three errors on their first run, all
+fixed before anything was shown.
+
+| # | Error | Example | Fix |
+|---|---|---|---|
+| 33 | The ISIR web service returns similar names, not only the person asked for | A Dronetag co-founder got 58 insolvency "proceedings", Fly4Future's founders 8–12; none had the same first name and birth date. One namesake had the same full name and a different birth date | `checks.exact_matches()`: only records with the same surname, first name and birth date count. Test in `test_osint.py` |
+| 34 | A hiring target read as the team size | Fly4Future: "the goal is a team of 60 to 100 people" compared with personnel costs and marked *contradicted* | `claims._headcount()` skips numbers after plan words (goal, should, cíl, bychom…) unless a word like "today" stands right before them, and growth targets ("from 33 today to 43"). Fly4Future's "around 40 employees" fits its personnel costs. Test in `test_osint.py` |
+| 35 | Register dumps drop leading zeros of IČO | Fly4Future (06632581) appeared as "6632581", so its own entries were listed among its founders' other companies | `people.scan()` pads IČO to eight digits. Test in `test_osint.py` |
+
+## 11. What remains a limit
 
 - An ambiguous company name has to be marked by hand (`context_terms`); it is not detected automatically.
 - SOC 2 cannot be checked publicly; the report is shared under NDA. The brief says "not checkable".

@@ -6,23 +6,22 @@ culturepulse\.ai · SK/US · 2026\-11\-20
 
 ## Scorecard (computed by code, no LLM)
 
-**6–14 of 14: Open: needs 2 more point\(s\) from round vs ticket, traction, financial position, claims checked** (bar 8; open points count 0 at the low end and 2 at the high end)
+**8–14 of 14: Passes to a first call** (bar 8; open points count 0 at the low end and 2 at the high end)
 
 | Criterion | Points | What the records show | Sources |
 |---|---|---|---|
-| Fund sector | 2 | AI\-led transformative tech: 19 facts\. | ^[9](https://openalex.org/W4407175057),[18](https://tech.eu/2023/04/20/slovakian-social-media-analytics-start-up-culturepulse-ai-raises-just-shy-of-1-million-to-pivot-to-ai-saas-model/),[36](https://fontech.startitup.sk/spravy/ai-ludske-spravanie-investicia/),[37](https://en.ain.ua/2025/03/21/culturepulse-raises-eur145m/) |
+| Fund sector | 2 | AI\-led transformative tech: 19 facts\. | ^[9](https://openalex.org/W4407175057),[18](https://tech.eu/2023/04/20/slovakian-social-media-analytics-start-up-culturepulse-ai-raises-just-shy-of-1-million-to-pivot-to-ai-saas-model/),[38](https://fontech.startitup.sk/spravy/ai-ludske-spravanie-investicia/),[39](https://en.ain.ua/2025/03/21/culturepulse-raises-eur145m/) |
 | Geography | 2 | SK \(core region\) |  |
 | Round vs ticket | 0–2 (open) | Last reported round: 1\.5M USD Series A \(2025\-02\)\. No current round is reported\. | ^[5](https://cc.cz/vidi-do-hlavy-izraelcum-i-palestincum-startup-predpovida-hrozby-ted-ziskava-dalsi-investici/),[15](https://www.rockawaycapital.com/en/news/rockaway-ventures-invests-in-culturepulse-driving-innovation-in-behavioral-analysis-and-security-risk-prediction-across-europe-and-beyond),[16](https://www.therecursive.com/rockaway-capital-invests-e1-45m-in-us-slovak-startup-culturepulse),[17](https://bird-incubator.com/news/alumni-startup-culturepulse-secures-1-5m-investment-interview-with-justin-lane/) |
 | Traction | 0–2 (open) | Revenue not published and no paid sales visible in public records\. |  |
 | Financial position | 0–2 (open) | Filed accounts not read\. |  |
 | Technology evidence | 2 | 7 public repositories; papers or published models\. | ^[10](https://github.com/culturepulse/censorshipderadsim) |
-| Claims checked | 0–2 (open) | No company claim could be checked against an independent source\. |  |
+| Claims checked | 2 | Checks: 1 confirmed\. | ^[36](https://openalex.org/W4220801307) |
 
 - **Flag:** Possible overlap with portfolio company BudgetBakers: compare product and buyer before a call\.
 - How much are you raising, on what terms, and who else is in the round?
 - What was revenue last year and this year so far, and from how many paying customers?
 - What is the cash position and monthly burn, and how many months of runway is that?
-- Which customers and partners can we call as references?
 - Team and founders: public records cannot judge them; assess them first on the call\.
 
 ## TL;DR
@@ -156,8 +155,10 @@ No sourced findings for this section.
 33. [github\.com](https://github.com/culturepulse/frontend_assignement) · Public technical artifact · GitHub repository · 2026\-04\-06 — “culturepulse/frontend\_assignement · TypeScript · last push 2026\-04\-06”
 34. [culturepulse\.ai](https://www.culturepulse.ai) · Public technical artifact · Technology detected
 35. [openalex\.org](https://openalex.org/W4381892632) · Public technical artifact · Research paper · 2023\-06\-22 — “Computation of identity and social volatility in the ritual animal · Religion Brain &amp; Behavior”
-36. [fontech\.startitup\.sk](https://fontech.startitup.sk/spravy/ai-ludske-spravanie-investicia/) · Independent press · Press article · 2025\-02\-10 — “Slovensko\-americký startup získal miliónovú investíciu”
-37. [en\.ain\.ua](https://en.ain.ua/2025/03/21/culturepulse-raises-eur145m/) · Independent press · Press article · 2025\-03\-21 — “CulturePulse raises €1\.5M to expand AI\-driven behavioral modeling platform”
+36. [openalex\.org](https://openalex.org/W4220801307) · Public technical artifact · Independent check of a claim — “Own ML work visible: 7 papers\.”
+37. [mzv\.gov\.cz](https://mzv.gov.cz/file/6248997/Vnitrostatni_sankcni_seznam_2026_07_23.csv) · Official record · sanctions check · 2026\-11\-25
+38. [fontech\.startitup\.sk](https://fontech.startitup.sk/spravy/ai-ludske-spravanie-investicia/) · Independent press · Press article · 2025\-02\-10 — “Slovensko\-americký startup získal miliónovú investíciu”
+39. [en\.ain\.ua](https://en.ain.ua/2025/03/21/culturepulse-raises-eur145m/) · Independent press · Press article · 2025\-03\-21 — “CulturePulse raises €1\.5M to expand AI\-driven behavioral modeling platform”
 
 ## How this dossier was built
 
@@ -290,3 +291,6 @@ Analysis: gpt\-5\-mini (cost $0.0180); AI extraction cost $0.0073. Full fact tab
 - F7703 · source\_unavailable · Unavailable · [https://www\.hlidacstatu\.cz/hledat](https://www.hlidacstatu.cz/hledat)
 - F7704 · source\_check · Checked · no results · [https://cordis\.europa\.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27CulturePulse%27](https://cordis.europa.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27CulturePulse%27)
 - F7705 · source\_unavailable · Unavailable · [https://starfos\.tacr\.cz](https://starfos.tacr.cz)
+- F8373 · verification · Sourced · [https://openalex\.org/W4220801307](https://openalex.org/W4220801307)
+- F9011 · source\_unavailable · Unavailable · [https://webgate\.ec\.europa\.eu/fsd/fsf/public/files/csvFullSanctionsList\_1\_1/content?token=dG9rZW4tMjAxNw](https://webgate.ec.europa.eu/fsd/fsf/public/files/csvFullSanctionsList_1_1/content?token=dG9rZW4tMjAxNw)
+- F9012 · sanctions\_check · Sourced · [https://mzv\.gov\.cz/file/6248997/Vnitrostatni\_sankcni\_seznam\_2026\_07\_23\.csv](https://mzv.gov.cz/file/6248997/Vnitrostatni_sankcni_seznam_2026_07_23.csv)

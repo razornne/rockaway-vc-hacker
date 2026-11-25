@@ -6,22 +6,30 @@ bottlecapai\.com · BottleCap SE · IČO 23012854 · CZ · 2026\-11\-20
 
 ## Scorecard (computed by code, no LLM)
 
-**6–12 of 14: Open: needs 2 more point\(s\) from traction, financial position, claims checked** (bar 8; open points count 0 at the low end and 2 at the high end)
+**8–12 of 14: Passes to a first call** (bar 8; open points count 0 at the low end and 2 at the high end)
 
 | Criterion | Points | What the records show | Sources |
 |---|---|---|---|
-| Fund sector | 2 | AI\-led transformative tech: 30 facts\. | ^[20](https://www.lupa.cz/aktuality/tomas-mikolov-a-spolutvurce-beat-saberu-rozjizdi-startup-pro-radikakni-zefektivneni-ai-modelu/),[21](https://www.lupa.cz/aktuality/cesi-vyrazne-zrychlili-trenink-umele-inteligence-uz-by-nemusel-stat-tolik-penez-a-zrat-hromadu-energie/),[52](https://cc.cz/jaroslav-beck-a-tomas-mikolov-ziskavaji-150-milionu-pro-svuj-ai-startup-investuje-do-nej-i-ivo-lukacovic/),[53](https://www.wolvessummit.com/bottlecap-ai-lands-7-5-milllion-euro-round) |
+| Fund sector | 2 | AI\-led transformative tech: 30 facts\. | ^[20](https://www.lupa.cz/aktuality/tomas-mikolov-a-spolutvurce-beat-saberu-rozjizdi-startup-pro-radikakni-zefektivneni-ai-modelu/),[21](https://www.lupa.cz/aktuality/cesi-vyrazne-zrychlili-trenink-umele-inteligence-uz-by-nemusel-stat-tolik-penez-a-zrat-hromadu-energie/),[79](https://cc.cz/jaroslav-beck-a-tomas-mikolov-ziskavaji-150-milionu-pro-svuj-ai-startup-investuje-do-nej-i-ivo-lukacovic/),[80](https://www.wolvessummit.com/bottlecap-ai-lands-7-5-milllion-euro-round) |
 | Geography | 2 | CZ \(core region\) | ^[37](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/23012854) |
 | Round vs ticket | 1 | Closed round: 7\.5M USD \(seed\) ≈ €6\.8m, converted at approximate fixed rates \(25 CZK/EUR, 1\.10 USD/EUR\)\. The round is larger than the fund's initial ticket \(€0\.5m–€2m\)\. A round is the total from all investors, so the fund would be one investor in a syndicate, as lead or participant\. | ^[4](https://www.lupa.cz/aktuality/bottlecap-uspornejsi-umela-inteligence-od-mikolova-a-becka-ziskala-investici-pres-150-milionu-korun/),[5](https://www.havelpartners.com/legal-advice-for-20vc-on-its-investment-in-bottlecap-ai/),[15](https://bottlecapai.com/),[16](https://www.wolvessummit.com/bottlecap-ai-lands-7-5-milllion-euro-round) |
 | Traction | 0–2 (open) | Revenue not published and no paid sales visible in public records\. |  |
 | Financial position | 0–2 (open) | Filed accounts not read\. |  |
 | Technology evidence | 1 | 9 patent publication\(s\)\. | ^[47](https://patents.google.com/patent/WO2014165983A1) |
-| Claims checked | 0–2 (open) | No company claim could be checked against an independent source\. |  |
+| Claims checked | 2 | Checks: 1 confirmed\. | ^[51](https://bottlecapai.com/careers/) |
 
+- **Flag:** Jaroslav Beck holds 8 other active executive roles in Czech companies: ask how much time goes to this company\.
 - What was revenue last year and this year so far, and from how many paying customers?
 - What is the cash position and monthly burn, and how many months of runway is that?
-- Which customers and partners can we call as references?
 - Team and founders: public records cannot judge them; assess them first on the call\.
+
+## People and background (Czech business register, ISIR; computed by code)
+
+| Person | Role here | Other active roles | Earlier roles and how they ended | Insolvency | Sources |
+|---|---|---|---|---|---|
+| Jaroslav Beck | Člen představenstva 2025 | Epic Music Productions s\.r\.o\. \(jednatel\); Epic Music Productions s\.r\.o\. \(shareholder\); Beck Adventures Group s\.r\.o\. \(jednatel\); Beck Adventures Group s\.r\.o\. \(shareholder\) | Beat Games s\.r\.o\. \(jednatel, 2018–2019\); Beat Games s\.r\.o\. \(shareholder, 2018–2019\); Mother of all Cans s\.r\.o\. \(shareholder, 2023–2025\) | 0 proceeding(s) | ^[53](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23012854),[54](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=04873653),[55](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=04873653),[56](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=06858325),[57](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=06858325),[58](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=08781559),[59](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=08781559),[60](https://isir.justice.cz/isir/common/index.do) |
+| Tomáš Mikolov | člen dozorčí rady 2025 | Hive Spirit Technologies CZ s\.r\.o\. \(Jednatel\); Hive Spirit Technologies CZ s\.r\.o\. \(shareholder\); Mikolov Tech Incubator s\.r\.o\. \(Jednatel\); Mikolov Tech Incubator s\.r\.o\. \(shareholder\) | Mikolov Research, s\.r\.o\. v likvidaci \(jednatel, 2023–2026\): liquidation, deleted from the register \(2026\); Mikolov Research, s\.r\.o\. v likvidaci \(shareholder, 2023–2026\): liquidation, deleted from the register \(2026\) | 0 proceeding(s) | ^[61](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23012854),[62](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=17899346),[63](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=17899346),[64](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=21956031),[65](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=21956031),[66](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=23162953),[67](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=23162953),[68](https://isir.justice.cz/isir/common/index.do) |
+| David Herel | Člen dozorčí rady 2025–2025 | Cap Hold Tech s\.r\.o\. \(Jednatel\); Cap Hold Tech s\.r\.o\. \(shareholder\) |  | 0 proceeding(s) | ^[69](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23012854),[70](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=23038187),[71](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=23038187),[72](https://isir.justice.cz/isir/common/index.do) |
 
 ## TL;DR
 
@@ -181,9 +189,36 @@ No sourced findings for this section.
 48. [patents\.google\.com](https://patents.google.com/patent/USD839100S1) · Official record · Patent publication — “USD839100S1 · Bottle · Bottlecap Holdings Ltd\.”
 49. [patents\.google\.com](https://patents.google.com/patent/USD791605S1) · Official record · Patent publication — “USD791605S1 · Bottle · Bottlecap Holdings Ltd\.”
 50. [patents\.google\.com](https://patents.google.com/patent/US20130105522A1) · Official record · Patent publication — “US20130105522A1 · Bulk material dispenser · Bottlecap Holdings Ltd\.”
-51. [patents\.google\.com](https://patents.google.com/patent/US20120308357A1) · Official record · Patent publication — “US20120308357A1 · Stackable container · Bottlecap Holdings Ltd\.”
-52. [cc\.cz](https://cc.cz/jaroslav-beck-a-tomas-mikolov-ziskavaji-150-milionu-pro-svuj-ai-startup-investuje-do-nej-i-ivo-lukacovic/) · Independent press · Press article · 2026\-01\-29 — “Beck a Mikolov mají 150 milionů pro svůj AI startup i od Lukačoviče \- CzechCrunch”
-53. [wolvessummit\.com](https://www.wolvessummit.com/bottlecap-ai-lands-7-5-milllion-euro-round) · Independent press · Press article — “BottleCap AI lands 7\.5 milllion euro round \- Wolves Summit”
+51. [bottlecapai\.com](https://bottlecapai.com/careers/) · Company's own website · Independent check of a claim — “Own ML work visible: 2 ML job posts\.”
+52. [patents\.google\.com](https://patents.google.com/patent/US20120308357A1) · Official record · Patent publication — “US20120308357A1 · Stackable container · Bottlecap Holdings Ltd\.”
+53. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23012854) · Official record · person — “Jaroslav Beck”
+54. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=04873653) · Official record · person role elsewhere · 2016\-03\-04
+55. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=04873653) · Official record · person role elsewhere · 2016\-03\-04
+56. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=06858325) · Official record · person role elsewhere · 2018\-05\-24
+57. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=06858325) · Official record · person role elsewhere · 2018\-05\-24
+58. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=08781559) · Official record · person role elsewhere · 2019\-12\-20
+59. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=08781559) · Official record · person role elsewhere · 2019\-12\-20
+60. [isir\.justice\.cz](https://isir.justice.cz/isir/common/index.do) · Official record · person insolvency · 2026\-11\-25
+61. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23012854) · Official record · person — “Tomáš Mikolov”
+62. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=17899346) · Official record · person role elsewhere · 2023\-01\-05
+63. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=17899346) · Official record · person role elsewhere · 2023\-01\-05
+64. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=21956031) · Official record · person role elsewhere · 2024\-08\-26
+65. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=21956031) · Official record · person role elsewhere · 2024\-08\-26
+66. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=23162953) · Official record · person role elsewhere · 2025\-04\-08
+67. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=23162953) · Official record · person role elsewhere · 2025\-04\-08
+68. [isir\.justice\.cz](https://isir.justice.cz/isir/common/index.do) · Official record · person insolvency · 2026\-11\-25
+69. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23012854) · Official record · person — “David Herel”
+70. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=23038187) · Official record · person role elsewhere · 2025\-03\-10
+71. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=23038187) · Official record · person role elsewhere · 2025\-03\-10
+72. [isir\.justice\.cz](https://isir.justice.cz/isir/common/index.do) · Official record · person insolvency · 2026\-11\-25
+73. [adisspr\.mfcr\.cz](https://adisspr.mfcr.cz/dpr/DphReg) · Independent press · vat status · 2026\-11\-25
+74. [adisspr\.mfcr\.cz](https://adisspr.mfcr.cz/dpr/DphReg) · Independent press · vat status · 2026\-11\-25
+75. [adisspr\.mfcr\.cz](https://adisspr.mfcr.cz/dpr/DphReg) · Independent press · vat status · 2026\-11\-25
+76. [adisspr\.mfcr\.cz](https://adisspr.mfcr.cz/dpr/DphReg) · Independent press · vat status · 2026\-11\-25
+77. [adisspr\.mfcr\.cz](https://adisspr.mfcr.cz/dpr/DphReg) · Independent press · vat status · 2026\-11\-25
+78. [mzv\.gov\.cz](https://mzv.gov.cz/file/6248997/Vnitrostatni_sankcni_seznam_2026_07_23.csv) · Official record · sanctions check · 2026\-11\-25
+79. [cc\.cz](https://cc.cz/jaroslav-beck-a-tomas-mikolov-ziskavaji-150-milionu-pro-svuj-ai-startup-investuje-do-nej-i-ivo-lukacovic/) · Independent press · Press article · 2026\-01\-29 — “Beck a Mikolov mají 150 milionů pro svůj AI startup i od Lukačoviče \- CzechCrunch”
+80. [wolvessummit\.com](https://www.wolvessummit.com/bottlecap-ai-lands-7-5-milllion-euro-round) · Independent press · Press article — “BottleCap AI lands 7\.5 milllion euro round \- Wolves Summit”
 
 ## How this dossier was built
 
@@ -371,3 +406,49 @@ Analysis: gpt\-5\-mini (cost $0.0200); AI extraction cost $0.0080. Full fact tab
 - F7690 · source\_check · Checked · no results · [https://www\.hlidacstatu\.cz/dotace/hledat?Q=ico%3A23012854](https://www.hlidacstatu.cz/dotace/hledat?Q=ico%3A23012854)
 - F7691 · source\_check · Checked · no results · [https://cordis\.europa\.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27BottleCap%20AI%27](https://cordis.europa.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27BottleCap%20AI%27)
 - F7692 · source\_unavailable · Unavailable · [https://starfos\.tacr\.cz](https://starfos.tacr.cz)
+- F8372 · verification · Sourced · [https://bottlecapai\.com/careers/](https://bottlecapai.com/careers/)
+- F8748 · person · Sourced · [https://ares\.gov\.cz/ekonomicke\-subjekty\-v\-be/rest/ekonomicke\-subjekty\-vr/23012854](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23012854)
+- F8749 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=04873653](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=04873653)
+- F8750 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=04873653](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=04873653)
+- F8751 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=08781559](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=08781559)
+- F8752 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=08781559](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=08781559)
+- F8753 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=09424261](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=09424261)
+- F8754 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=09424261](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=09424261)
+- F8755 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=09622381](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=09622381)
+- F8756 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=08703949](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=08703949)
+- F8757 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=06678815](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=06678815)
+- F8758 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=17714907](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=17714907)
+- F8759 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=21421803](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=21421803)
+- F8760 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=21421790](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=21421790)
+- F8761 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=21441821](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=21441821)
+- F8762 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=14381222](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=14381222)
+- F8763 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=14381231](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=14381231)
+- F8764 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=14381249](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=14381249)
+- F8765 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=14381257](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=14381257)
+- F8766 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=14381265](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=14381265)
+- F8767 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=06858325](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=06858325)
+- F8768 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=06858325](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=06858325)
+- F8769 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=17730104](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=17730104)
+- F8770 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=17714907](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=17714907)
+- F8771 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=21125619](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=21125619)
+- F8772 · person · Sourced · [https://ares\.gov\.cz/ekonomicke\-subjekty\-v\-be/rest/ekonomicke\-subjekty\-vr/23012854](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23012854)
+- F8773 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=21956031](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=21956031)
+- F8774 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=21956031](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=21956031)
+- F8775 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=23162953](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=23162953)
+- F8776 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=23162953](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=23162953)
+- F8777 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=17899346](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=17899346)
+- F8778 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=17899346](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=17899346)
+- F8779 · person · Sourced · [https://ares\.gov\.cz/ekonomicke\-subjekty\-v\-be/rest/ekonomicke\-subjekty\-vr/23012854](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23012854)
+- F8780 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=23038187](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=23038187)
+- F8781 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=23038187](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=23038187)
+- F8782 · source\_check · Checked · [https://dataor\.justice\.cz](https://dataor.justice.cz)
+- F8983 · person\_insolvency · Sourced · [https://isir\.justice\.cz/isir/common/index\.do](https://isir.justice.cz/isir/common/index.do)
+- F8984 · person\_insolvency · Sourced · [https://isir\.justice\.cz/isir/common/index\.do](https://isir.justice.cz/isir/common/index.do)
+- F8985 · person\_insolvency · Sourced · [https://isir\.justice\.cz/isir/common/index\.do](https://isir.justice.cz/isir/common/index.do)
+- F8986 · vat\_status · Sourced · [https://adisspr\.mfcr\.cz/dpr/DphReg](https://adisspr.mfcr.cz/dpr/DphReg)
+- F8987 · vat\_status · Sourced · [https://adisspr\.mfcr\.cz/dpr/DphReg](https://adisspr.mfcr.cz/dpr/DphReg)
+- F8988 · vat\_status · Sourced · [https://adisspr\.mfcr\.cz/dpr/DphReg](https://adisspr.mfcr.cz/dpr/DphReg)
+- F8989 · vat\_status · Sourced · [https://adisspr\.mfcr\.cz/dpr/DphReg](https://adisspr.mfcr.cz/dpr/DphReg)
+- F8990 · vat\_status · Sourced · [https://adisspr\.mfcr\.cz/dpr/DphReg](https://adisspr.mfcr.cz/dpr/DphReg)
+- F8991 · source\_unavailable · Unavailable · [https://webgate\.ec\.europa\.eu/fsd/fsf/public/files/csvFullSanctionsList\_1\_1/content?token=dG9rZW4tMjAxNw](https://webgate.ec.europa.eu/fsd/fsf/public/files/csvFullSanctionsList_1_1/content?token=dG9rZW4tMjAxNw)
+- F8992 · sanctions\_check · Sourced · [https://mzv\.gov\.cz/file/6248997/Vnitrostatni\_sankcni\_seznam\_2026\_07\_23\.csv](https://mzv.gov.cz/file/6248997/Vnitrostatni_sankcni_seznam_2026_07_23.csv)

@@ -23,6 +23,13 @@ dronetag\.com · Dronetag s\.r\.o\. · IČO 08198519 · CZ · 2026\-11\-20
 - Which customers and partners can we call as references?
 - Team and founders: public records cannot judge them; assess them first on the call\.
 
+## People and background (Czech business register, ISIR; computed by code)
+
+| Person | Role here | Other active roles | Earlier roles and how they ended | Insolvency | Sources |
+|---|---|---|---|---|---|
+| Lukáš Brchl | jednatel 2019; shareholder \(65%\) 2022 | none in s\.r\.o\. or a\.s\. |  | 0 proceeding(s) | ^[71](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/08198519),[72](https://isir.justice.cz/isir/common/index.do) |
+| Marián Hlaváč | shareholder \(35%\) 2019 | none in s\.r\.o\. or a\.s\. |  | 0 proceeding(s) | ^[73](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/08198519),[74](https://isir.justice.cz/isir/common/index.do) |
+
 ## TL;DR
 
 - **Product.** Dronetag sells Remote ID drone detection hardware, such as the RIDER receiver and Scout sensors, plus subscriptions to public\-safety and professional\-pilot buyers\. *(Company claim)* ^[1](https://www.dronetag.com/products/rider),[2](https://www.dronetag.com/products/rider),[3](https://www.dronetag.com/products/scout)
@@ -187,6 +194,13 @@ dronetag\.com · Dronetag s\.r\.o\. · IČO 08198519 · CZ · 2026\-11\-20
 68. [web\.archive\.org](https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html) · Official record · NATO DIANA cohort company — “Ca nadian Strategic Missions Corporation: Remote monitoring for Micro Modular Reactors \(MMRs\)”
 69. [web\.archive\.org](https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html) · Official record · NATO DIANA cohort company — “SolarinBlue: Fast \(re\)\-deployment of floating solar farms in remote locations”
 70. [web\.archive\.org](https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html) · Official record · NATO DIANA cohort company — “Volta Space Technologies: Persistent drone flight and emergency power in extremely cold environments”
+71. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/08198519) · Official record · person — “Lukáš Brchl”
+72. [isir\.justice\.cz](https://isir.justice.cz/isir/common/index.do) · Official record · person insolvency · 2026\-11\-25
+73. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/08198519) · Official record · person — “Marián Hlaváč”
+74. [isir\.justice\.cz](https://isir.justice.cz/isir/common/index.do) · Official record · person insolvency · 2026\-11\-25
+75. [adisspr\.mfcr\.cz](https://adisspr.mfcr.cz/dpr/DphReg) · Independent press · vat status · 2026\-11\-25
+76. [mzv\.gov\.cz](https://mzv.gov.cz/file/6248997/Vnitrostatni_sankcni_seznam_2026_07_23.csv) · Official record · sanctions check · 2026\-11\-25
+77. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=08198519) · Official record · register status
 
 ## How this dossier was built
 
@@ -474,3 +488,12 @@ Analysis: claude\-haiku\-5\-5 (cost $0.0282); AI extraction cost $0.0081. Full f
 - F7863 · filing · Sourced · [https://or\.justice\.cz/ias/ui/vypis\-sl\-firma?subjektId=1053249](https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=1053249)
 - F7864 · financial\_statement · Sourced · [https://or\.justice\.cz/ias/ui/vypis\-sl\-detail?dokument=93244930&amp;subjektId=1053249&amp;spis=1175754](https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=93244930&subjektId=1053249&spis=1175754)
 - F7865 · insolvency · Sourced · [https://isir\.justice\.cz/isir/ueu/vysledek\_lustrace\.do?ic=08198519&amp;aktualnost=AKTUALNI\_I\_UKONCENA&amp;rowsAtOnce=50](https://isir.justice.cz/isir/ueu/vysledek_lustrace.do?ic=08198519&aktualnost=AKTUALNI_I_UKONCENA&rowsAtOnce=50)
+- F8933 · person · Sourced · [https://ares\.gov\.cz/ekonomicke\-subjekty\-v\-be/rest/ekonomicke\-subjekty\-vr/08198519](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/08198519)
+- F8934 · person · Sourced · [https://ares\.gov\.cz/ekonomicke\-subjekty\-v\-be/rest/ekonomicke\-subjekty\-vr/08198519](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/08198519)
+- F8935 · register\_status · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=08198519](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=08198519)
+- F8936 · source\_check · Checked · [https://dataor\.justice\.cz](https://dataor.justice.cz)
+- F9040 · person\_insolvency · Sourced · [https://isir\.justice\.cz/isir/common/index\.do](https://isir.justice.cz/isir/common/index.do)
+- F9041 · person\_insolvency · Sourced · [https://isir\.justice\.cz/isir/common/index\.do](https://isir.justice.cz/isir/common/index.do)
+- F9042 · vat\_status · Sourced · [https://adisspr\.mfcr\.cz/dpr/DphReg](https://adisspr.mfcr.cz/dpr/DphReg)
+- F9043 · source\_unavailable · Unavailable · [https://webgate\.ec\.europa\.eu/fsd/fsf/public/files/csvFullSanctionsList\_1\_1/content?token=dG9rZW4tMjAxNw](https://webgate.ec.europa.eu/fsd/fsf/public/files/csvFullSanctionsList_1_1/content?token=dG9rZW4tMjAxNw)
+- F9044 · sanctions\_check · Sourced · [https://mzv\.gov\.cz/file/6248997/Vnitrostatni\_sankcni\_seznam\_2026\_07\_23\.csv](https://mzv.gov.cz/file/6248997/Vnitrostatni_sankcni_seznam_2026_07_23.csv)

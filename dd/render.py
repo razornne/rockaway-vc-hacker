@@ -328,16 +328,29 @@ def prepare(company: Company, analysis: dict, sections: list[dict], facts: dict[
             items.append({**it, "text": strip_fact_ids(it["text"], set(facts)), "nums": refs.add(it["fact_ids"]),
                           "strength": key, "basis": basis})
         out_sections.append({**s, "items": items})
-    from dd import page  # key numbers, tables and charts: registered here so their sources are numbered too
-    extras = page.extras(analysis.get("signals") or {}, facts, refs, company)
     from datetime import date
 
+    from dd import page  # key numbers, tables and charts: registered here so their sources are numbered too
+    from dd import signals as signals_mod
+    from dd.osint import view as osint_view
     from dd.scorecard import scorecard
+    # Claim checks are recomputed from all facts: OSINT checks run after the analysis and are not in its signals.
+    sig = {**(analysis.get("signals") or {}), "verification": signals_mod.verification(list(facts.values()))}
+    extras = page.extras(sig, facts, refs, company)
+    osint = osint_view.summary(list(facts.values()), company.ico)
+    for row in osint["people"]:
+        row["nums"] = refs.add([i for i in row["fact_ids"] if i])
+    for key in ("vat", "hiring"):
+        for row in osint[key]:
+            row["nums"] = refs.add([row["id"]] if row.get("id") else [])
+    osint["sanctions_nums"] = refs.add([osint["sanctions"]["id"]]) if osint.get("sanctions") else []
+    osint["waiver_nums"] = refs.add([w["fact_id"] for w in osint["waivers"] if w.get("fact_id")])
+    osint["status_nums"] = refs.add([osint["register_status_id"]]) if osint.get("register_status_id") else []
     try:
         as_of = date.fromisoformat(str(analysis.get("generated_at") or "")[:10])
     except ValueError:
         as_of = None
-    card = scorecard(analysis.get("signals") or {}, facts, as_of)
+    card = scorecard(sig, facts, as_of, extra_flags=osint["flags"])
     for r in card["rows"]:
         r["nums"] = refs.add(r["fact_ids"])
     sources = []
@@ -347,7 +360,7 @@ def prepare(company: Company, analysis: dict, sections: list[dict], facts: dict[
                         "host": host_of(f.source_url) or "source", "type": TYPE_LABELS.get(f.type, f.type.replace("_", " ")),
                         "date": f.event_date, "quote": _snip(f, 320), "url": f.source_url, "fact": f})
     return {"tldr": tldr, "glance": glance_rows, "sections": out_sections, "sources": sources, "refs": refs,
-            "extras": extras, "scorecard": card,
+            "extras": extras, "scorecard": card, "osint": osint,
             "identity": _identity(facts), "method": _method_rows(facts)}
 
 
@@ -393,6 +406,22 @@ def render_markdown(company: Company, analysis: dict, p: dict, titles: dict, lab
             lines.append(f"| {r['name']} | {pts} | {_md(r['finding'])} | {refs(r.get('nums') or []).strip()} |")
         lines += [""] + [f"- **Flag:** {_md(f)}" for f in sc["flags"]] + [f"- {_md(a)}" for a in sc["asks"]] \
             + [f"- {_md(sc['not_scored'])}", ""]
+    o = p.get("osint") or {}
+    if o.get("people"):
+        lines += ["## People and background (Czech business register, ISIR; computed by code)", "",
+                  "| Person | Role here | Other active roles | Earlier roles and how they ended | Insolvency | Sources |",
+                  "|---|---|---|---|---|---|"]
+        for r in o["people"]:
+            act = ("; ".join(f"{a['company']} ({a['role']})" for a in r["active"][:4]) or "none in s.r.o. or a.s."
+                   ) if o.get("scan") and r["matchable"] else "not checked"
+            past = "; ".join(f"{e['company']} ({e['role']}, {e['from']}–{e['to']})"
+                             + (f": {e['outcome']}" if e.get("outcome") else "") for e in r["ended"][:3])
+            if r.get("professional"):
+                act, past = f"{r['roles_total']} roles elsewhere: most likely a formation or nominee service", ""
+            ins = "not checked" if r["insolvency"] is None else f"{r['insolvency']} proceeding(s)"
+            lines.append(f"| {_md(r['name'])} | {_md(r['here'])} | {_md(act)} | {_md(past)} | {ins} | "
+                         f"{refs(r.get('nums') or []).strip()} |")
+        lines.append("")
     lines += ["## TL;DR", ""]
     for it in p["tldr"]:
         lines.append(f"- **{label_titles.get(it.get('label'), '')}.** {_md(it['text'])} "

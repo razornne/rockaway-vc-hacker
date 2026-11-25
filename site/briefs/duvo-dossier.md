@@ -10,17 +10,24 @@ duvo\.ai · duvo\.ai s\.r\.o\. · IČO 22646141 · CZ · 2026\-11\-20
 
 | Criterion | Points | What the records show | Sources |
 |---|---|---|---|
-| Fund sector | 2 | AI\-led transformative tech: 24 facts\. | ^[20](https://tech.eu/2025/12/02/duvo-raises-15m-to-give-retailers-ai-staff-that-cuts-manual-work-by-40/),[21](https://www.therecursive.com/rohlik-founder-tomas-cuprs-duvo-raises-eur28-7m-series-a-to-take-enterprise-ai-agents-to-the-us),[42](https://finance.yahoo.com/technology/ai/articles/duvo-raises-32-million-series-130000587.html),[60](https://tech.eu/2026/10/14/from-rohlik-to-enterprise-ai-tomas-cuprs-duvo-raises-32m-series-a/) |
+| Fund sector | 2 | AI\-led transformative tech: 24 facts\. | ^[20](https://tech.eu/2025/12/02/duvo-raises-15m-to-give-retailers-ai-staff-that-cuts-manual-work-by-40/),[21](https://www.therecursive.com/rohlik-founder-tomas-cuprs-duvo-raises-eur28-7m-series-a-to-take-enterprise-ai-agents-to-the-us),[42](https://finance.yahoo.com/technology/ai/articles/duvo-raises-32-million-series-130000587.html),[80](https://tech.eu/2026/10/14/from-rohlik-to-enterprise-ai-tomas-cuprs-duvo-raises-32m-series-a/) |
 | Geography | 2 | CZ \(core region\) | ^[47](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/22646141) |
 | Round vs ticket | 1 | Closed round: 28\.55M EUR \(Series A\)\. The round is larger than the fund's initial ticket \(€0\.5m–€2m\)\. A round is the total from all investors, so the fund would be one investor in a syndicate, as lead or participant\. | ^[5](https://www.therecursive.com/rohlik-founder-tomas-cuprs-duvo-raises-eur28-7m-series-a-to-take-enterprise-ai-agents-to-the-us),[6](https://finance.yahoo.com/technology/ai/articles/duvo-raises-32-million-series-130000587.html),[18](https://www.wired.cz/news-beat/cuprovo-duvo-ziskalo-32-milionu-dolaru-na-expanzi),[19](https://tech.eu/2026/10/14/from-rohlik-to-enterprise-ai-tomas-cuprs-duvo-raises-32m-series-a/) |
 | Traction | 1–2 (open) | Revenue not published; 2 named customer\(s\)\. |  |
 | Financial position | 0–2 (open) | Filed accounts not read\. |  |
 | Technology evidence | 1 | 10 public repositories\. | ^[13](https://github.com/duvoai/elevenlabs-agents) |
-| Claims checked | 2 | Checks: 2 confirmed\. | ^[7](https://www.therecursive.com/rohlik-founder-tomas-cuprs-duvo-raises-eur28-7m-series-a-to-take-enterprise-ai-agents-to-the-us),[39](https://www.therecursive.com/rohlik-founder-tomas-cuprs-duvo-raises-eur28-7m-series-a-to-take-enterprise-ai-agents-to-the-us) |
+| Claims checked | 2 | Checks: 3 confirmed\. | ^[60](https://www.duvo.ai/careers/ai-platform-engineer-eu-uk-based-remote),[7](https://www.therecursive.com/rohlik-founder-tomas-cuprs-duvo-raises-eur28-7m-series-a-to-take-enterprise-ai-agents-to-the-us),[39](https://www.therecursive.com/rohlik-founder-tomas-cuprs-duvo-raises-eur28-7m-series-a-to-take-enterprise-ai-agents-to-the-us) |
 
 - What was revenue last year and this year so far, and from how many paying customers?
 - What is the cash position and monthly burn, and how many months of runway is that?
 - Team and founders: public records cannot judge them; assess them first on the call\.
+
+## People and background (Czech business register, ISIR; computed by code)
+
+| Person | Role here | Other active roles | Earlier roles and how they ended | Insolvency | Sources |
+|---|---|---|---|---|---|
+| Marek Paris | Jednatel 2025 | Technická správa komunikací hl\. m\. Prahy, a\.s\. \(člen dozorčí rady\); Residual Titles s\.r\.o\. \(jednatel\); Residual Titles s\.r\.o\. \(shareholder\); Medevio s\.r\.o\. \(shareholder\) |  | 0 proceeding(s) | ^[61](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/22646141),[62](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=03447286),[63](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=09744771),[64](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=09744771),[65](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=09675400),[66](https://isir.justice.cz/isir/common/index.do) |
+| Martin Pecha | shareholder \(33%\) 2025–2025 | none in s\.r\.o\. or a\.s\. | Nexus Hub, s\.r\.o\. \(jednatel, 2018–2020\); Nexus Hub, s\.r\.o\. \(shareholder, 2018–2020\); Oblastní nemocnice Kolín, a\.s\., nemocnice Středočeského kraje \(člen dozorčí rady, 2021–2025\) | 0 proceeding(s) | ^[67](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/22646141),[68](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=07343868),[69](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=07343868),[70](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=27256391),[71](https://isir.justice.cz/isir/common/index.do) |
 
 ## TL;DR
 
@@ -190,7 +197,27 @@ No sourced findings for this section.
 57. [github\.com](https://github.com/duvoai) · Public technical artifact · GitHub organisation · 2025\-03\-05 — “duvoai · 13 public repos”
 58. [duvo\.ai](https://www.duvo.ai/privacy) · Company's own website · Subprocessor \(privacy policy\) — “PostHog processes this data on our behalf as our service provider and stores it in the European Union\.”
 59. [finance\.yahoo\.com](https://finance.yahoo.com/technology/ai/articles/duvo-raises-32-million-series-130000587.html) · Independent press · Technical claim — “Duvo is model\-agnostic, so the AI underneath can change without rebuilding the processes on top of it\.”
-60. [tech\.eu](https://tech.eu/2026/10/14/from-rohlik-to-enterprise-ai-tomas-cuprs-duvo-raises-32m-series-a/) · Independent press · Press article · 2026\-10\-14 — “From Rohlik to enterprise AI: Tomáš Čupr's Duvo raises $32M Series A \- Tech\.eu”
+60. [duvo\.ai](https://www.duvo.ai/careers/ai-platform-engineer-eu-uk-based-remote) · Company's own website · Independent check of a claim — “Own ML work visible: 2 ML job posts; 3 ML repositories\.”
+61. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/22646141) · Official record · person — “Marek Paris”
+62. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=03447286) · Official record · person role elsewhere · 2020\-10\-26
+63. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=09744771) · Official record · person role elsewhere · 2020\-12\-13
+64. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=09744771) · Official record · person role elsewhere · 2020\-12\-13
+65. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=09675400) · Official record · person role elsewhere · 2021\-08\-01
+66. [isir\.justice\.cz](https://isir.justice.cz/isir/common/index.do) · Official record · person insolvency · 2026\-11\-25
+67. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/22646141) · Official record · person — “Martin Pecha”
+68. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=07343868) · Official record · person role elsewhere · 2018\-08\-03
+69. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=07343868) · Official record · person role elsewhere · 2018\-08\-03
+70. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=27256391) · Official record · person role elsewhere · 2021\-02\-17
+71. [isir\.justice\.cz](https://isir.justice.cz/isir/common/index.do) · Official record · person insolvency · 2026\-11\-25
+72. [adisspr\.mfcr\.cz](https://adisspr.mfcr.cz/dpr/DphReg) · Independent press · vat status · 2026\-11\-25
+73. [adisspr\.mfcr\.cz](https://adisspr.mfcr.cz/dpr/DphReg) · Independent press · vat status · 2026\-11\-25
+74. [adisspr\.mfcr\.cz](https://adisspr.mfcr.cz/dpr/DphReg) · Independent press · vat status · 2026\-11\-25
+75. [adisspr\.mfcr\.cz](https://adisspr.mfcr.cz/dpr/DphReg) · Independent press · vat status · 2026\-11\-25
+76. [web\.archive\.org](https://web.archive.org/web/20251202100226/https://www.duvo.ai/careers) · Public technical artifact · hiring snapshot · 2025\-12\-02
+77. [api\.ashbyhq\.com](https://api.ashbyhq.com/posting-api/job-board/duvo) · Company's own website · hiring snapshot · 2026\-11\-25
+78. [mzv\.gov\.cz](https://mzv.gov.cz/file/6248997/Vnitrostatni_sankcni_seznam_2026_07_23.csv) · Official record · sanctions check · 2026\-11\-25
+79. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=22646141) · Official record · register status
+80. [tech\.eu](https://tech.eu/2026/10/14/from-rohlik-to-enterprise-ai-tomas-cuprs-duvo-raises-32m-series-a/) · Independent press · Press article · 2026\-10\-14 — “From Rohlik to enterprise AI: Tomáš Čupr's Duvo raises $32M Series A \- Tech\.eu”
 
 ## How this dossier was built
 
@@ -450,3 +477,25 @@ Analysis: gpt\-5\-mini (cost $0.0194); AI extraction cost $0.0080. Full fact tab
 - F7731 · source\_check · Checked · no results · [https://www\.hlidacstatu\.cz/dotace/hledat?Q=ico%3A22646141](https://www.hlidacstatu.cz/dotace/hledat?Q=ico%3A22646141)
 - F7732 · source\_check · Checked · no results · [https://cordis\.europa\.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27Duvo%27](https://cordis.europa.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27Duvo%27)
 - F7733 · source\_unavailable · Unavailable · [https://starfos\.tacr\.cz](https://starfos.tacr.cz)
+- F8370 · verification · Sourced · [https://www\.duvo\.ai/careers/ai\-platform\-engineer\-eu\-uk\-based\-remote](https://www.duvo.ai/careers/ai-platform-engineer-eu-uk-based-remote)
+- F8725 · person · Sourced · [https://ares\.gov\.cz/ekonomicke\-subjekty\-v\-be/rest/ekonomicke\-subjekty\-vr/22646141](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/22646141)
+- F8726 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=03447286](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=03447286)
+- F8727 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=09744771](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=09744771)
+- F8728 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=09744771](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=09744771)
+- F8729 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=09675400](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=09675400)
+- F8730 · person · Sourced · [https://ares\.gov\.cz/ekonomicke\-subjekty\-v\-be/rest/ekonomicke\-subjekty\-vr/22646141](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/22646141)
+- F8731 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=07343868](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=07343868)
+- F8732 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=07343868](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=07343868)
+- F8733 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=27256391](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=27256391)
+- F8734 · register\_status · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=22646141](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=22646141)
+- F8735 · source\_check · Checked · [https://dataor\.justice\.cz](https://dataor.justice.cz)
+- F8966 · person\_insolvency · Sourced · [https://isir\.justice\.cz/isir/common/index\.do](https://isir.justice.cz/isir/common/index.do)
+- F8967 · person\_insolvency · Sourced · [https://isir\.justice\.cz/isir/common/index\.do](https://isir.justice.cz/isir/common/index.do)
+- F8968 · vat\_status · Sourced · [https://adisspr\.mfcr\.cz/dpr/DphReg](https://adisspr.mfcr.cz/dpr/DphReg)
+- F8969 · vat\_status · Sourced · [https://adisspr\.mfcr\.cz/dpr/DphReg](https://adisspr.mfcr.cz/dpr/DphReg)
+- F8970 · vat\_status · Sourced · [https://adisspr\.mfcr\.cz/dpr/DphReg](https://adisspr.mfcr.cz/dpr/DphReg)
+- F8971 · vat\_status · Sourced · [https://adisspr\.mfcr\.cz/dpr/DphReg](https://adisspr.mfcr.cz/dpr/DphReg)
+- F8972 · source\_unavailable · Unavailable · [https://webgate\.ec\.europa\.eu/fsd/fsf/public/files/csvFullSanctionsList\_1\_1/content?token=dG9rZW4tMjAxNw](https://webgate.ec.europa.eu/fsd/fsf/public/files/csvFullSanctionsList_1_1/content?token=dG9rZW4tMjAxNw)
+- F8973 · sanctions\_check · Sourced · [https://mzv\.gov\.cz/file/6248997/Vnitrostatni\_sankcni\_seznam\_2026\_07\_23\.csv](https://mzv.gov.cz/file/6248997/Vnitrostatni_sankcni_seznam_2026_07_23.csv)
+- F9045 · hiring\_snapshot · Sourced · [https://api\.ashbyhq\.com/posting\-api/job\-board/duvo](https://api.ashbyhq.com/posting-api/job-board/duvo)
+- F9046 · hiring\_snapshot · Sourced · [https://web\.archive\.org/web/20251202100226/https://www\.duvo\.ai/careers](https://web.archive.org/web/20251202100226/https://www.duvo.ai/careers)

@@ -6,21 +6,31 @@ fly4future\.com · Fly4Future s\.r\.o\. · IČO 06632581 · CZ · 2026\-11\-20
 
 ## Scorecard (computed by code, no LLM)
 
-**11–13 of 14: Passes to a first call** (bar 8; open points count 0 at the low end and 2 at the high end)
+**12 of 14: Passes to a first call** (bar 8; open points count 0 at the low end and 2 at the high end)
 
 | Criterion | Points | What the records show | Sources |
 |---|---|---|---|
-| Fund sector | 2 | deep tech: 30 facts\. | ^[20](https://www.cnaip.cz/en/entity/fly4future),[21](https://fel.cvut.cz/en/what-s-on/news/36454-ctu-spinout-fly4future-wins-prestigious-ai-company-of-the-year-award-at-ai-awards-2024),[67](https://github.com/fly4future),[68](https://cc.cz/od-univerzitniho-projektu-po-milionove-trzby-ceske-drony-maji-za-ukol-dorucit-jidlo-zachranit-zivot-i-ockovat/) |
-| Geography | 2 | CZ \(core region\) | ^[66](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/06632581) |
+| Fund sector | 2 | deep tech: 30 facts\. | ^[20](https://www.cnaip.cz/en/entity/fly4future),[21](https://fel.cvut.cz/en/what-s-on/news/36454-ctu-spinout-fly4future-wins-prestigious-ai-company-of-the-year-award-at-ai-awards-2024),[98](https://github.com/fly4future),[99](https://cc.cz/od-univerzitniho-projektu-po-milionove-trzby-ceske-drony-maji-za-ukol-dorucit-jidlo-zachranit-zivot-i-ockovat/) |
+| Geography | 2 | CZ \(core region\) | ^[68](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/06632581) |
 | Round vs ticket | 1 | Round being raised: 10–16M EUR\. The round is larger than the fund's initial ticket \(€0\.5m–€2m\)\. A round is the total from all investors, so the fund would be one investor in a syndicate, as lead or participant\. | ^[7](https://cc.cz/od-univerzitniho-projektu-po-milionove-trzby-ceske-drony-maji-za-ukol-dorucit-jidlo-zachranit-zivot-i-ockovat/) |
 | Traction | 2 | Filed revenue 2025: 47\.8M CZK, \+6% on the year before\. | ^[4](https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=92247881&subjektId=995597&spis=1101858) |
 | Financial position | 2 | Profitable in 2025 \(net 8\.8M CZK\), cash 57\.1M CZK\. | ^[4](https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=92247881&subjektId=995597&spis=1101858) |
 | Technology evidence | 2 | 15 public repositories; 12 research grant\(s\); 2 patent publication\(s\)\. | ^[26](https://github.com/fly4future/spi_uwb_controller),[57](https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/how-to-participate/org-details/887136005),[8](https://patents.google.com/patent/WO2024255934A1) |
-| Claims checked | 0–2 (open) | No company claim could be checked against an independent source\. |  |
+| Claims checked | 1 | Checks: 1 confirmed, 1 not found\. | ^[66](https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=92247881&subjektId=995597&spis=1101858),[67](https://fly4future.com/) |
 
 - **Flag:** Possible overlap with portfolio company Vermeer: compare product and buyer before a call\.
-- Which customers and partners can we call as references?
+- **Flag:** Česká správa sociálního zabezpečení waived a penalty \(2023\): a sign of late payments; ask about it\.
+- Ask for evidence behind the claims that could not be confirmed\.
 - Team and founders: public records cannot judge them; assess them first on the call\.
+
+## People and background (Czech business register, ISIR; computed by code)
+
+| Person | Role here | Other active roles | Earlier roles and how they ended | Insolvency | Sources |
+|---|---|---|---|---|---|
+| Martin Saska | shareholder \(30%\) 2018 | Drone Defense Solutions s\.r\.o\. \(proxy \(prokura\)\); VerityValor Holding s\.r\.o\. \(shareholder\) | Drone Defense Solutions s\.r\.o\. \(shareholder, 2018–2019\); EAGLE\.ONE s\.r\.o\. \(proxy \(prokura\), 2019–2020\); EAGLE\.ONE s\.r\.o\. \(shareholder, 2019–2025\) | 0 proceeding(s) | ^[69](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06632581),[70](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=07287062),[71](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=07287062),[72](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=03947394),[73](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=03947394),[74](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=06417981),[75](https://isir.justice.cz/isir/common/index.do) |
+| Tomáš Báča | shareholder \(30%\) 2023 | none in s\.r\.o\. or a\.s\. | Drone Defense Solutions s\.r\.o\. \(shareholder, 2018–2019\); EAGLE\.ONE s\.r\.o\. \(shareholder, 2019–2025\) | 0 proceeding(s) | ^[76](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06632581),[77](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=07287062),[78](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=03947394),[79](https://isir.justice.cz/isir/common/index.do) |
+| Věra Sasková | jednatel 2017; shareholder \(40%\) 2018 | VerityValor Holding s\.r\.o\. \(jednatel\); VerityValor Holding s\.r\.o\. \(shareholder\); ArgentSwarm s\.r\.o\. \(Jednatel\) | PARAKALO \- centrum jazyků s\.r\.o\. \(jednatel, 2020–2024\); PARAKALO \- centrum jazyků s\.r\.o\. \(shareholder, 2020–2024\) | 0 proceeding(s) | ^[80](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06632581),[81](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=06417981),[82](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=06417981),[83](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=09274448),[84](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=09274448),[85](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=29555540),[86](https://isir.justice.cz/isir/common/index.do) |
+| Věra Cihlářová | shareholder \(40%\) 2017–2018 | none in s\.r\.o\. or a\.s\. | VerityValor Holding s\.r\.o\. \(jednatel, 2017–2018\); VerityValor Holding s\.r\.o\. \(shareholder, 2017–2018\) | 0 proceeding(s) | ^[87](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06632581),[88](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=06417981),[89](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=06417981),[90](https://isir.justice.cz/isir/common/index.do) |
 
 ## TL;DR
 
@@ -181,9 +191,40 @@ fly4future\.com · Fly4Future s\.r\.o\. · IČO 06632581 · CZ · 2026\-11\-20
 63. [web\.archive\.org](https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html) · Official record · NATO DIANA cohort company — “Mara: Simultaneous 360° protection against swarms of 48\+ EW\-resistant drones at 1/20th the cost\.”
 64. [web\.archive\.org](https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html) · Official record · NATO DIANA cohort company — “AegisX: Detecting &amp; tracking low flying fibre optic drones”
 65. [web\.archive\.org](https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html) · Official record · NATO DIANA cohort company — “OLEDCOMM: Stealth in drone flight\. Unjammable connectivity by light”
-66. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/06632581) · Official record · Registry: identity · 2017\-11\-27 — “Fly4Future s\.r\.o\. · s\.r\.o\. · registered 2017\-11\-27”
-67. [github\.com](https://github.com/fly4future) · Public technical artifact · Press article — “Fly4Future · GitHub”
-68. [cc\.cz](https://cc.cz/od-univerzitniho-projektu-po-milionove-trzby-ceske-drony-maji-za-ukol-dorucit-jidlo-zachranit-zivot-i-ockovat/) · Independent press · Press article · 2026\-10\-16 — “Drony budou nosit jídlo i očkovat krávy\. Díky české technologii \- CzechCrunch”
+66. [or\.justice\.cz](https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=92247881&subjektId=995597&spis=1101858) · Official record · Independent check of a claim — “A team of 40 fits: personnel costs 2025 of CZK 30\.4M pay for about 19–40 full\-time people at CZK 0\.75–1\.6M a year each\.”
+67. [fly4future\.com](https://fly4future.com/) · Company's own website · Independent check of a claim — “No own models, papers, ML repositories, ML job posts or named model vendors are visible in the sources read; ask who builds the AI and on which models\.”
+68. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/06632581) · Official record · Registry: identity · 2017\-11\-27 — “Fly4Future s\.r\.o\. · s\.r\.o\. · registered 2017\-11\-27”
+69. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06632581) · Official record · person — “Martin Saska”
+70. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=07287062) · Official record · person role elsewhere · 2018\-07\-13
+71. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=07287062) · Official record · person role elsewhere · 2018\-10\-03
+72. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=03947394) · Official record · person role elsewhere · 2019\-12\-13
+73. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=03947394) · Official record · person role elsewhere · 2019\-12\-13
+74. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=06417981) · Official record · person role elsewhere · 2026\-05\-13
+75. [isir\.justice\.cz](https://isir.justice.cz/isir/common/index.do) · Official record · person insolvency · 2026\-11\-25
+76. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06632581) · Official record · person — “Tomáš Báča”
+77. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=07287062) · Official record · person role elsewhere · 2018\-07\-13
+78. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=03947394) · Official record · person role elsewhere · 2019\-12\-13
+79. [isir\.justice\.cz](https://isir.justice.cz/isir/common/index.do) · Official record · person insolvency · 2026\-11\-25
+80. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06632581) · Official record · person — “Věra Sasková”
+81. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=06417981) · Official record · person role elsewhere · 2017\-09\-07
+82. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=06417981) · Official record · person role elsewhere · 2018\-05\-02
+83. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=09274448) · Official record · person role elsewhere · 2020\-06\-23
+84. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=09274448) · Official record · person role elsewhere · 2020\-06\-23
+85. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=29555540) · Official record · person role elsewhere · 2026\-05\-13
+86. [isir\.justice\.cz](https://isir.justice.cz/isir/common/index.do) · Official record · person insolvency · 2026\-11\-25
+87. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06632581) · Official record · person — “Věra Cihlářová”
+88. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=06417981) · Official record · person role elsewhere · 2017\-09\-07
+89. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=06417981) · Official record · person role elsewhere · 2017\-09\-07
+90. [isir\.justice\.cz](https://isir.justice.cz/isir/common/index.do) · Official record · person insolvency · 2026\-11\-25
+91. [adisspr\.mfcr\.cz](https://adisspr.mfcr.cz/dpr/DphReg) · Independent press · vat status · 2026\-11\-25
+92. [web\.archive\.org](https://web.archive.org/web/20230531042308/https://fly4future.com/career/) · Public technical artifact · hiring snapshot · 2023\-05\-31
+93. [web\.archive\.org](https://web.archive.org/web/20240205133704/https://fly4future.com/career/) · Public technical artifact · hiring snapshot · 2024\-02\-05
+94. [web\.archive\.org](https://web.archive.org/web/20250320220636/https://fly4future.com/career/) · Public technical artifact · hiring snapshot · 2025\-03\-20
+95. [mzv\.gov\.cz](https://mzv.gov.cz/file/6248997/Vnitrostatni_sankcni_seznam_2026_07_23.csv) · Official record · sanctions check · 2026\-11\-25
+96. [hlidacstatu\.cz](https://www.hlidacstatu.cz/Dotace/Detail/DeMinimis-626764B017A7D48762301C3BBCF51B77EF4E2FF0362556B110DCE874BA1EF74C) · Official record · National grant · 2023 — “Odstranění tvrdosti zákona prominutím penále · Česká správa sociálního zabezpečení · 1 385 CZK”
+97. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=06632581) · Official record · register status
+98. [github\.com](https://github.com/fly4future) · Public technical artifact · Press article — “Fly4Future · GitHub”
+99. [cc\.cz](https://cc.cz/od-univerzitniho-projektu-po-milionove-trzby-ceske-drony-maji-za-ukol-dorucit-jidlo-zachranit-zivot-i-ockovat/) · Independent press · Press article · 2026\-10\-16 — “Drony budou nosit jídlo i očkovat krávy\. Díky české technologii \- CzechCrunch”
 
 ## How this dossier was built
 
@@ -428,3 +469,35 @@ Analysis: claude\-haiku\-5\-5 (cost $0.0250); AI extraction cost $0.0080. Full f
 - F7886 · filing · Sourced · [https://or\.justice\.cz/ias/ui/vypis\-sl\-firma?subjektId=995597](https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=995597)
 - F7887 · financial\_statement · Sourced · [https://or\.justice\.cz/ias/ui/vypis\-sl\-detail?dokument=92247881&amp;subjektId=995597&amp;spis=1101858](https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=92247881&subjektId=995597&spis=1101858)
 - F7888 · insolvency · Sourced · [https://isir\.justice\.cz/isir/ueu/vysledek\_lustrace\.do?ic=06632581&amp;aktualnost=AKTUALNI\_I\_UKONCENA&amp;rowsAtOnce=50](https://isir.justice.cz/isir/ueu/vysledek_lustrace.do?ic=06632581&aktualnost=AKTUALNI_I_UKONCENA&rowsAtOnce=50)
+- F8379 · verification · Sourced · [https://fly4future\.com/](https://fly4future.com/)
+- F8380 · verification · Sourced · [https://or\.justice\.cz/ias/ui/vypis\-sl\-detail?dokument=92247881&amp;subjektId=995597&amp;spis=1101858](https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=92247881&subjektId=995597&spis=1101858)
+- F8913 · person · Sourced · [https://ares\.gov\.cz/ekonomicke\-subjekty\-v\-be/rest/ekonomicke\-subjekty\-vr/06632581](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06632581)
+- F8914 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=07287062](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=07287062)
+- F8915 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=06417981](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=06417981)
+- F8916 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=07287062](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=07287062)
+- F8917 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=03947394](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=03947394)
+- F8918 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=03947394](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=03947394)
+- F8919 · person · Sourced · [https://ares\.gov\.cz/ekonomicke\-subjekty\-v\-be/rest/ekonomicke\-subjekty\-vr/06632581](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06632581)
+- F8920 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=07287062](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=07287062)
+- F8921 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=03947394](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=03947394)
+- F8922 · person · Sourced · [https://ares\.gov\.cz/ekonomicke\-subjekty\-v\-be/rest/ekonomicke\-subjekty\-vr/06632581](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06632581)
+- F8923 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=06417981](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=06417981)
+- F8924 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=06417981](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=06417981)
+- F8925 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=29555540](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=29555540)
+- F8926 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=09274448](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=09274448)
+- F8927 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=09274448](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=09274448)
+- F8928 · person · Sourced · [https://ares\.gov\.cz/ekonomicke\-subjekty\-v\-be/rest/ekonomicke\-subjekty\-vr/06632581](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06632581)
+- F8929 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=06417981](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=06417981)
+- F8930 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=06417981](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=06417981)
+- F8931 · register\_status · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=06632581](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=06632581)
+- F8932 · source\_check · Checked · [https://dataor\.justice\.cz](https://dataor.justice.cz)
+- F9033 · person\_insolvency · Sourced · [https://isir\.justice\.cz/isir/common/index\.do](https://isir.justice.cz/isir/common/index.do)
+- F9034 · person\_insolvency · Sourced · [https://isir\.justice\.cz/isir/common/index\.do](https://isir.justice.cz/isir/common/index.do)
+- F9035 · person\_insolvency · Sourced · [https://isir\.justice\.cz/isir/common/index\.do](https://isir.justice.cz/isir/common/index.do)
+- F9036 · person\_insolvency · Sourced · [https://isir\.justice\.cz/isir/common/index\.do](https://isir.justice.cz/isir/common/index.do)
+- F9037 · vat\_status · Sourced · [https://adisspr\.mfcr\.cz/dpr/DphReg](https://adisspr.mfcr.cz/dpr/DphReg)
+- F9038 · source\_unavailable · Unavailable · [https://webgate\.ec\.europa\.eu/fsd/fsf/public/files/csvFullSanctionsList\_1\_1/content?token=dG9rZW4tMjAxNw](https://webgate.ec.europa.eu/fsd/fsf/public/files/csvFullSanctionsList_1_1/content?token=dG9rZW4tMjAxNw)
+- F9039 · sanctions\_check · Sourced · [https://mzv\.gov\.cz/file/6248997/Vnitrostatni\_sankcni\_seznam\_2026\_07\_23\.csv](https://mzv.gov.cz/file/6248997/Vnitrostatni_sankcni_seznam_2026_07_23.csv)
+- F9062 · hiring\_snapshot · Sourced · [https://web\.archive\.org/web/20230531042308/https://fly4future\.com/career/](https://web.archive.org/web/20230531042308/https://fly4future.com/career/)
+- F9063 · hiring\_snapshot · Sourced · [https://web\.archive\.org/web/20240205133704/https://fly4future\.com/career/](https://web.archive.org/web/20240205133704/https://fly4future.com/career/)
+- F9064 · hiring\_snapshot · Sourced · [https://web\.archive\.org/web/20250320220636/https://fly4future\.com/career/](https://web.archive.org/web/20250320220636/https://fly4future.com/career/)

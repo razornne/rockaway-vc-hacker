@@ -10,7 +10,7 @@ wultra\.com · Wultra s\.r\.o\. · IČO 03643174 · CZ · 2026\-11\-20
 
 | Criterion | Points | What the records show | Sources |
 |---|---|---|---|
-| Fund sector | 2 | deep tech: 19 facts\. | ^[17](https://www.havelpartners.cz/pravni-poradenstvi-pro-investory-pri-vstupu-do-startupu-wultra/),[18](https://quantumcomputingreport.com/wultra-secures-e6-8-million-7-7-million-usd-series-a-to-expand-post-quantum-digital-identity-infrastructure-globally/),[52](https://fintech.global/2026/06/29/post-quantum-auth-firm-wultra-raises-e6-8m/),[53](https://financialit.net/news/fundraising-news/wultra-raises-eu68-million-series-funding) |
+| Fund sector | 2 | deep tech: 19 facts\. | ^[17](https://www.havelpartners.cz/pravni-poradenstvi-pro-investory-pri-vstupu-do-startupu-wultra/),[18](https://quantumcomputingreport.com/wultra-secures-e6-8-million-7-7-million-usd-series-a-to-expand-post-quantum-digital-identity-infrastructure-globally/),[67](https://fintech.global/2026/06/29/post-quantum-auth-firm-wultra-raises-e6-8m/),[68](https://financialit.net/news/fundraising-news/wultra-raises-eu68-million-series-funding) |
 | Geography | 2 | CZ \(core region\) | ^[51](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/03643174) |
 | Round vs ticket | 1 | Reported round: 6\.8M EUR \(Series A\)\. The round is larger than the fund's initial ticket \(€0\.5m–€2m\)\. A round is the total from all investors, so the fund would be one investor in a syndicate, as lead or participant\. | ^[9](https://www.lupa.cz/aktuality/ceska-firma-wultra-vybrala-dalsich-160-milionu-na-nasazeni-postkvantoveho-sifrovani/),[5](https://finance.yahoo.com/technology/ai/articles/wultra-raises-6-8-million-140000790.html) |
 | Traction | 1–2 (open) | Revenue not published; 1 named customer\(s\)\. |  |
@@ -21,6 +21,13 @@ wultra\.com · Wultra s\.r\.o\. · IČO 03643174 · CZ · 2026\-11\-20
 - What was revenue last year and this year so far, and from how many paying customers?
 - What is the cash position and monthly burn, and how many months of runway is that?
 - Team and founders: public records cannot judge them; assess them first on the call\.
+
+## People and background (Czech business register, ISIR; computed by code)
+
+| Person | Role here | Other active roles | Earlier roles and how they ended | Insolvency | Sources |
+|---|---|---|---|---|---|
+| Petr Dvořák | jednatel 2014; shareholder \(55%\) 2014 | none in s\.r\.o\. or a\.s\. |  | 0 proceeding(s) | ^[52](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174),[53](https://isir.justice.cz/isir/common/index.do) |
+| Aleš Dynda | shareholder 2014–2016 | APT, spol\. s r\.o\. \(shareholder\); MULTIPOL, spol\. s r\.o\. \(Jednatel\); MULTIPOL, spol\. s r\.o\. \(shareholder\); APT ASSETS, s\. r\. o\. \(shareholder\) |  | 0 proceeding(s) | ^[54](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174),[55](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=00569861),[56](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=45794146),[57](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=45794146),[58](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=30185653),[59](https://isir.justice.cz/isir/common/index.do) |
 
 ## TL;DR
 
@@ -175,8 +182,23 @@ No sourced findings for this section.
 49. [wultra\.com](https://www.wultra.com/careers) · Company's own website · Job posting — “Principal QA Engineer”
 50. [wultra\.com](https://www.wultra.com/careers) · Company's own website · Job posting — “Mobile Reverse Engineer – Android”
 51. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/03643174) · Official record · Registry: identity · 2014\-12\-15 — “Wultra s\.r\.o\. · s\.r\.o\. · registered 2014\-12\-15”
-52. [fintech\.global](https://fintech.global/2026/06/29/post-quantum-auth-firm-wultra-raises-e6-8m/) · Independent press · Press article · 2026\-06\-29 — “Post\-quantum auth firm Wultra raises €6\.8m”
-53. [financialit\.net](https://financialit.net/news/fundraising-news/wultra-raises-eu68-million-series-funding) · Independent press · Press article — “Wultra Raises €6\.8 Million in Series A Funding \| Financial IT”
+52. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174) · Official record · person — “Petr Dvořák”
+53. [isir\.justice\.cz](https://isir.justice.cz/isir/common/index.do) · Official record · person insolvency · 2026\-11\-25
+54. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174) · Official record · person — “Aleš Dynda”
+55. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=00569861) · Official record · person role elsewhere · 2019\-03\-29
+56. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=45794146) · Official record · person role elsewhere · 2024\-09\-07
+57. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=45794146) · Official record · person role elsewhere · 2024\-09\-25
+58. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=30185653) · Official record · person role elsewhere · 2026\-10\-26
+59. [isir\.justice\.cz](https://isir.justice.cz/isir/common/index.do) · Official record · person insolvency · 2026\-11\-25
+60. [adisspr\.mfcr\.cz](https://adisspr.mfcr.cz/dpr/DphReg) · Independent press · vat status · 2026\-11\-25
+61. [adisspr\.mfcr\.cz](https://adisspr.mfcr.cz/dpr/DphReg) · Independent press · vat status · 2026\-11\-25
+62. [web\.archive\.org](https://web.archive.org/web/20230130201448/https://www.wultra.com/careers) · Public technical artifact · hiring snapshot · 2023\-01\-30
+63. [web\.archive\.org](https://web.archive.org/web/20240301194347/https://www.wultra.com/careers) · Public technical artifact · hiring snapshot · 2024\-03\-01
+64. [web\.archive\.org](https://web.archive.org/web/20250116013500/https://www.wultra.com/careers) · Public technical artifact · hiring snapshot · 2025\-01\-16
+65. [mzv\.gov\.cz](https://mzv.gov.cz/file/6248997/Vnitrostatni_sankcni_seznam_2026_07_23.csv) · Official record · sanctions check · 2026\-11\-25
+66. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=03643174) · Official record · register status
+67. [fintech\.global](https://fintech.global/2026/06/29/post-quantum-auth-firm-wultra-raises-e6-8m/) · Independent press · Press article · 2026\-06\-29 — “Post\-quantum auth firm Wultra raises €6\.8m”
+68. [financialit\.net](https://financialit.net/news/fundraising-news/wultra-raises-eu68-million-series-funding) · Independent press · Press article — “Wultra Raises €6\.8 Million in Series A Funding \| Financial IT”
 
 ## How this dossier was built
 
@@ -476,3 +498,20 @@ Analysis: gpt\-5\-mini (cost $0.0201); AI extraction cost $0.0086. Full fact tab
 - F7843 · grant\_national · Sourced · [https://www\.hlidacstatu\.cz/Dotace/Detail/Covid\-66F2A0C9D621A3DF40E30EB3EFC81EEB29372C85044499F21CD2EB2B0EE51FC4](https://www.hlidacstatu.cz/Dotace/Detail/Covid-66F2A0C9D621A3DF40E30EB3EFC81EEB29372C85044499F21CD2EB2B0EE51FC4)
 - F7844 · source\_check · Checked · no results · [https://cordis\.europa\.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27Wultra%27](https://cordis.europa.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27Wultra%27)
 - F7845 · source\_unavailable · Unavailable · [https://starfos\.tacr\.cz](https://starfos.tacr.cz)
+- F8905 · person · Sourced · [https://ares\.gov\.cz/ekonomicke\-subjekty\-v\-be/rest/ekonomicke\-subjekty\-vr/03643174](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174)
+- F8906 · person · Sourced · [https://ares\.gov\.cz/ekonomicke\-subjekty\-v\-be/rest/ekonomicke\-subjekty\-vr/03643174](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174)
+- F8907 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=00569861](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=00569861)
+- F8908 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=45794146](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=45794146)
+- F8909 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=45794146](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=45794146)
+- F8910 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=30185653](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=30185653)
+- F8911 · register\_status · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=03643174](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=03643174)
+- F8912 · source\_check · Checked · [https://dataor\.justice\.cz](https://dataor.justice.cz)
+- F9027 · person\_insolvency · Sourced · [https://isir\.justice\.cz/isir/common/index\.do](https://isir.justice.cz/isir/common/index.do)
+- F9028 · person\_insolvency · Sourced · [https://isir\.justice\.cz/isir/common/index\.do](https://isir.justice.cz/isir/common/index.do)
+- F9029 · vat\_status · Sourced · [https://adisspr\.mfcr\.cz/dpr/DphReg](https://adisspr.mfcr.cz/dpr/DphReg)
+- F9030 · vat\_status · Sourced · [https://adisspr\.mfcr\.cz/dpr/DphReg](https://adisspr.mfcr.cz/dpr/DphReg)
+- F9031 · source\_unavailable · Unavailable · [https://webgate\.ec\.europa\.eu/fsd/fsf/public/files/csvFullSanctionsList\_1\_1/content?token=dG9rZW4tMjAxNw](https://webgate.ec.europa.eu/fsd/fsf/public/files/csvFullSanctionsList_1_1/content?token=dG9rZW4tMjAxNw)
+- F9032 · sanctions\_check · Sourced · [https://mzv\.gov\.cz/file/6248997/Vnitrostatni\_sankcni\_seznam\_2026\_07\_23\.csv](https://mzv.gov.cz/file/6248997/Vnitrostatni_sankcni_seznam_2026_07_23.csv)
+- F9059 · hiring\_snapshot · Sourced · [https://web\.archive\.org/web/20230130201448/https://www\.wultra\.com/careers](https://web.archive.org/web/20230130201448/https://www.wultra.com/careers)
+- F9060 · hiring\_snapshot · Sourced · [https://web\.archive\.org/web/20240301194347/https://www\.wultra\.com/careers](https://web.archive.org/web/20240301194347/https://www.wultra.com/careers)
+- F9061 · hiring\_snapshot · Sourced · [https://web\.archive\.org/web/20250116013500/https://www\.wultra\.com/careers](https://web.archive.org/web/20250116013500/https://www.wultra.com/careers)

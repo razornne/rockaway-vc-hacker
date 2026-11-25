@@ -48,51 +48,50 @@
 
 | Company | Sections | Facts | Cited sources | Verified/corroborated findings | Funding (press) | Investors in registry | Public money | Defence signals | Thesis fit (Rockaway) | Hiring | AI dependency | Engineering footprint | Customers | Claims checked | Timeline | LLM cost |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| apaleo | 10/11 | 202 | 51 | 3/32 | ● | · | · | · | ● | ● | ● | ● | ● | ● | ● | $0.0226 |
-| bottlecap-ai | 10/11 | 167 | 54 | 7/34 | ● | ● | · | · | ● | ● | ● | ● | · | · | ● | $0.0280 |
-| campiri | 10/11 | 182 | 47 | 9/33 | ● | ● | · | · | ● | · | · | ● | ● | ● | ● | $0.0284 |
-| cruxo | 10/11 | 205 | 54 | 8/35 | ● | ● | ● | · | ● | · | · | ● | ● | ● | ● | $0.0313 |
-| culturepulse | 10/11 | 113 | 36 | 8/34 | ● | · | · | · | ● | · | ● | ● | ● | · | ● | $0.0253 |
-| dronetag | 11/11 | 264 | 72 | 5/35 | ● | · | ● | ● | ● | ● | · | ● | ● | · | ● | $0.0363 |
-| duvo | 10/11 | 239 | 60 | 8/33 | ● | · | · | · | ● | ● | ● | ● | ● | ● | ● | $0.0275 |
-| filuta | 10/11 | 211 | 58 | 6/33 | ● | · | ● | · | ● | · | ● | ● | ● | ● | ● | $0.0304 |
-| fly4future | 11/11 | 222 | 69 | 4/37 | ● | · | ● | · | ● | ● | · | ● | ● | · | ● | $0.0330 |
-| navigara | 10/11 | 193 | 59 | 3/31 | ● | · | · | · | ● | ● | ● | ● | ● | ● | ● | $0.0289 |
-| topk | 11/11 | 187 | 56 | 6/35 | ● | · | · | · | ● | · | ● | ● | ● | ● | ● | $0.0257 |
-| upheal | 10/11 | 195 | 50 | 3/33 | ● | · | · | · | ● | · | · | ● | ● | ● | ● | $0.0266 |
-| valkaai | 10/11 | 220 | 48 | 7/35 | ● | · | ● | · | ● | ● | ● | ● | · | ● | ● | $0.0276 |
-| valpas | 10/11 | 169 | 45 | 6/33 | ● | · | · | · | ● | · | ● | ● | ● | ● | ● | $0.0267 |
-| vermeer | 10/11 | 107 | 38 | 3/33 | ● | · | · | · | ● | · | ● | ● | · | ● | ● | $0.0275 |
-| wultra | 10/11 | 279 | 51 | 5/34 | ● | ● | ● | · | ● | ● | · | ● | ● | ● | ● | $0.0287 |
+| apaleo | 10/11 | 209 | 57 | 2/30 | ● | · | · | · | ● | ● | ● | ● | ● | ● | ● | $0.0226 |
+| bottlecap-ai | 10/11 | 213 | 80 | 5/31 | ● | ● | · | · | ● | ● | ● | ● | · | · | ● | $0.0280 |
+| campiri | 10/11 | 314 | 114 | 8/31 | ● | ● | · | · | ● | · | · | ● | ● | ● | ● | $0.0284 |
+| cruxo | 10/11 | 301 | 116 | 7/33 | ● | ● | ● | · | ● | · | · | ● | ● | ● | ● | $0.0313 |
+| culturepulse | 10/11 | 116 | 39 | 8/31 | ● | · | · | · | ● | · | ● | ● | ● | · | ● | $0.0253 |
+| dronetag | 11/11 | 273 | 77 | 5/32 | ● | · | ● | ● | ● | ● | · | ● | ● | · | ● | $0.0363 |
+| duvo | 10/11 | 261 | 80 | 7/31 | ● | · | · | · | ● | ● | ● | ● | ● | ● | ● | $0.0275 |
+| filuta | 10/11 | 488 | 81 | 6/32 | ● | · | ● | · | ● | · | ● | ● | ● | ● | ● | $0.0304 |
+| fly4future | 11/11 | 254 | 99 | 4/34 | ● | · | ● | · | ● | ● | · | ● | ● | · | ● | $0.0330 |
+| navigara | 10/11 | 196 | 61 | 2/29 | ● | · | · | · | ● | ● | ● | ● | ● | ● | ● | $0.0289 |
+| topk | 11/11 | 190 | 57 | 5/33 | ● | · | · | · | ● | · | ● | ● | ● | ● | ● | $0.0257 |
+| upheal | 10/11 | 213 | 67 | 3/30 | ● | · | · | · | ● | · | · | ● | ● | ● | ● | $0.0266 |
+| valkaai | 10/11 | 244 | 66 | 6/32 | ● | · | ● | · | ● | ● | ● | ● | · | ● | ● | $0.0276 |
+| valpas | 10/11 | 175 | 50 | 5/30 | ● | · | · | · | ● | · | ● | ● | ● | ● | ● | $0.0267 |
+| vermeer | 10/11 | 110 | 42 | 3/31 | ● | · | · | · | ● | · | ● | ● | · | ● | ● | $0.0275 |
+| wultra | 10/11 | 296 | 68 | 5/32 | ● | ● | ● | · | ● | ● | · | ● | ● | ● | ● | $0.0287 |
 
 ## 4. Evidence strength over all findings
 
 | Label | Findings | Share |
 |---|---|---|
-| Verified | 43 | 8% |
-| Corroborated | 48 | 9% |
-| Single source | 9 | 2% |
-| Partly verified | 53 | 10% |
-| Company claim | 37 | 7% |
-| Analyst view | 350 | 65% |
+| Verified | 43 | 9% |
+| Corroborated | 38 | 8% |
+| Single source | 1 | 0% |
+| Partly verified | 54 | 11% |
+| Company claim | 30 | 6% |
+| Analyst view | 336 | 67% |
 
 ### By section (views are expected in risks, rebuild verdict and questions)
 
 | Section | Verified | Corroborated | Single source | Partly verified | Company claim | Analyst view |
 |---|---|---|---|---|---|---|
-| summary (TL;DR) | 4 | 15 | 0 | 23 | 6 | 32 |
+| summary (TL;DR) | 4 | 15 | 0 | 24 | 5 | 32 |
 | thesis_fit | 0 | 0 | 0 | 0 | 0 | 25 |
 | business_model | 6 | 5 | 0 | 8 | 11 | 18 |
-| market | 0 | 10 | 8 | 1 | 5 | 14 |
 | competition | 0 | 0 | 0 | 0 | 0 | 9 |
 | investment_case | 0 | 0 | 0 | 0 | 0 | 95 |
 | ownership | 19 | 14 | 1 | 4 | 2 | 0 |
-| tech_profile | 14 | 4 | 0 | 17 | 13 | 0 |
+| tech_profile | 14 | 4 | 0 | 18 | 12 | 0 |
 | rebuild_check | 0 | 0 | 0 | 0 | 0 | 47 |
 | risk_flags | 0 | 0 | 0 | 0 | 0 | 48 |
 | questions | 0 | 0 | 0 | 0 | 0 | 62 |
 
-Factual statements (everything except analyst views): 190. Verified or corroborated: 48%; partly verified: 28%; single outlet: 5%; company claim only: 19%.
+Factual statements (everything except analyst views): 166. Verified or corroborated: 49%; partly verified: 33%; single outlet: 1%; company claim only: 18%.
 
 ## 5. Cost
 

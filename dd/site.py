@@ -44,7 +44,7 @@ TIMING = {"value": "7 min · $0.03",
           "text": "A new company from nothing to a brief (Spaceti: collection 2.7 min, extraction 2 min, analysis 1.6 min "
                   "with gpt-5-mini). The plain model with web search takes 30 s and $0.02 but misses what only official "
                   "records hold. A manual first look by an analyst was not timed: that needs a person."}
-N_ERRORS = 32  # docs/AUDIT.md, numbered
+N_ERRORS = 35  # docs/AUDIT.md, numbered
 CARD_TILES = ("Raising now (per press)", "Last closed round", "Latest reported round", "Funding rounds",
               "Sales to public buyers", "Grants & subsidies awarded (not revenue)", "Defence evidence (official sources)")
 
@@ -261,6 +261,10 @@ def _index(m: dict, cards: str, table_rows: dict[str, list[str]], n_collectors: 
         "sources.</span></li>"
         "<li><span><b>Analyse.</b> A second model call writes the findings and the investment view. It may cite only "
         "collected facts, and every statement carries a mark for how strong its evidence is.</span></li>"
+        "<li><span><b>Check people and claims.</b> Code only: what the company says (AI, team size, revenue, public "
+        "customers) against records; the people behind it, their other companies and how those ended, from the "
+        "register's open data; insolvency, unreliable VAT payer and sanctions lists; hiring over time. People are "
+        "matched on name and birth date; birth dates are never stored or shown.</span></li>"
         "<li><span><b>Brief.</b> One page with sources and quotes, a Markdown copy and a CSV of all facts. No "
         "investment recommendation.</span></li></ol>",
 
@@ -273,6 +277,8 @@ def _index(m: dict, cards: str, table_rows: dict[str, list[str]], n_collectors: 
         "<li><b>Paid databases and LinkedIn.</b> Not used by design; team size and cap table come only from the "
         "register and public pages.</li>"
         "<li><b>Registers outside Czechia.</b> Flagged (for example a Delaware or Dutch holding), not read.</li>"
+        "<li><b>People.</b> Other companies are found for s.r.o. and a.s. in the Czech register only; court cases "
+        "about individuals are anonymised in Czechia and are not read.</li>"
         "<li><b>NATO DIANA.</b> The live site blocks scripts, so cohorts are read from archived copies.</li>"
         "<li><b>Competitors.</b> Candidates come from text similarity with DIANA cohort descriptions and from what the "
         "company and press name; the model may reject all of them.</li>"
@@ -419,7 +425,11 @@ def _method(m: dict) -> str:
         "“None found”, which tells a fund that something does not exist (it now reads “Not visible in public records” "
         "and names what the register cannot show, such as defence-exempt contracts), and a possible portfolio conflict "
         "was shown as shared word stems without saying what the portfolio company does. The market section was "
-        "removed: analysts size markets themselves.</p>",
+        "removed: analysts size markets themselves.</p>"
+        "<p>The OSINT checks found three more on their first run, before anything was shown: the insolvency "
+        "register's web service returns similar names, which gave a co-founder 58 proceedings that belonged to other "
+        "people (only records with the same name and birth date count now); a hiring target (“a team of 60 to 100”) "
+        "was read as the team size; and the register dumps drop the leading zeros of company numbers.</p>",
         '<p class="foot"><a href="index.html">← Overview</a></p>',
     ]
     return _shell("Method and evaluation", "".join(body))

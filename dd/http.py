@@ -80,9 +80,12 @@ class Http:
 
     def request(self, method: str, url: str, *, params: dict | None = None, json_body: Any = None,
                 headers: dict | None = None, use_cache: bool = True, company_id: str | None = None,
-                kind: str | None = None, title: str | None = None) -> Resp:
-        """Fetch (or load from cache). If company_id and kind are given, records a SourceDoc."""
-        key = self._key(method, url, params, json_body)
+                kind: str | None = None, title: str | None = None, content: str | None = None) -> Resp:
+        """Fetch (or load from cache). If company_id and kind are given, records a SourceDoc.
+
+        content: a raw request body (a SOAP envelope); it is part of the cache key like a JSON body.
+        """
+        key = self._key(method, url, params, json_body if content is None else ["raw", content])
         raw = self.cache_dir / key[:2] / f"{key}.bin"
         meta = raw.with_suffix(".json")
         m = json.loads(meta.read_text(encoding="utf-8")) if use_cache and raw.exists() and meta.exists() else None
@@ -98,18 +101,23 @@ class Http:
             if wait > 0:
                 time.sleep(wait)
             try:
-                r = self.client.request(method, url, params=params, json=json_body, headers=headers)
+                r = (self.client.request(method, url, params=params, content=content.encode("utf-8"), headers=headers)
+                     if content is not None else
+                     self.client.request(method, url, params=params, json=json_body, headers=headers))
                 status, content, ctype, final = r.status_code, r.content, r.headers.get("content-type", ""), str(r.url)
                 recorded_headers = {name: r.headers[name] for name in RECORDED_HEADERS if name in r.headers}
             except httpx.HTTPError as e:
                 status, content, ctype, final = 0, str(e).encode(), "error", url
                 recorded_headers = {}
             self._last[host] = time.monotonic()
-            raw.parent.mkdir(parents=True, exist_ok=True)
-            raw.write_bytes(content)
-            meta.write_text(json.dumps({"url": final, "status": status, "content_type": ctype,
-                                        "headers": recorded_headers}), encoding="utf-8")
-            resp = Resp(final, status, content, ctype, False, hashlib.sha256(content).hexdigest(), str(raw))
+            body = content  # the response bytes from here on
+            if use_cache:  # a call with use_cache=False (person lookups) leaves nothing on disk
+                raw.parent.mkdir(parents=True, exist_ok=True)
+                raw.write_bytes(body)
+                meta.write_text(json.dumps({"url": final, "status": status, "content_type": ctype,
+                                            "headers": recorded_headers}), encoding="utf-8")
+            resp = Resp(final, status, body, ctype, False, hashlib.sha256(body).hexdigest(),
+                        str(raw) if use_cache else "")
             resp.headers = recorded_headers
         if self.store is not None and company_id and kind:
             source_url = str(httpx.URL(url).copy_merge_params(params)) if params else url

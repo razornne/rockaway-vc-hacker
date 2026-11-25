@@ -10,13 +10,13 @@ topk\.io · CZ/US · 2026\-11\-20
 
 | Criterion | Points | What the records show | Sources |
 |---|---|---|---|
-| Fund sector | 2 | AI\-led transformative tech: 20 facts\. | ^[10](https://siliconcanals.com/?p=65960),[22](https://vestbee.com/insights/articles/top-k-secures-5-5-m),[37](https://www.lupa.cz/aktuality/databaze-s-prichodem-ai-prochazi-zasadni-transformaci-cesko-slovensky-startup-na-to-ziskal-120-milionu/),[55](https://www.startitup.sk/web-stories/slovaci-chcu-prepisat-buducnost-vyhladavania-startup-topk-ziskal-miliony-na-ai-revoluciu/) |
+| Fund sector | 2 | AI\-led transformative tech: 20 facts\. | ^[10](https://siliconcanals.com/?p=65960),[22](https://vestbee.com/insights/articles/top-k-secures-5-5-m),[37](https://www.lupa.cz/aktuality/databaze-s-prichodem-ai-prochazi-zasadni-transformaci-cesko-slovensky-startup-na-to-ziskal-120-milionu/),[57](https://www.startitup.sk/web-stories/slovaci-chcu-prepisat-buducnost-vyhladavania-startup-topk-ziskal-miliony-na-ai-revoluciu/) |
 | Geography | 2 | CZ \(core region\) |  |
 | Round vs ticket | 1 | Closed round: 5\.5M USD \(seed\) ≈ €5m, converted at approximate fixed rates \(25 CZK/EUR, 1\.10 USD/EUR\)\. The round is larger than the fund's initial ticket \(€0\.5m–€2m\)\. A round is the total from all investors, so the fund would be one investor in a syndicate, as lead or participant\. | ^[6](https://siliconcanals.com/?p=65960),[7](https://vestbee.com/insights/articles/top-k-secures-5-5-m),[19](https://cc.cz/chodili-spolu-na-stredni-ted-nabiraji-120-milionu-a-chteji-pohanet-vyhledavani-pro-top-aplikace/),[20](https://www.lupa.cz/aktuality/databaze-s-prichodem-ai-prochazi-zasadni-transformaci-cesko-slovensky-startup-na-to-ziskal-120-milionu/) |
 | Traction | 1–2 (open) | Revenue not published; 1 named customer\(s\)\. |  |
 | Financial position | 0–2 (open) | Filed accounts not read\. |  |
-| Technology evidence | 2 | 8 public repositories; 1 patent publication\(s\); papers or published models\. | ^[28](https://github.com/topk-io/dars),[54](https://patents.google.com/patent/US20240254752A1) |
-| Claims checked | 1 | Checks: 1 partly, 1 not found\. | ^[17](https://www.topk.io/security),[18](https://www.topk.io/customers/saleseq) |
+| Technology evidence | 2 | 8 public repositories; 1 patent publication\(s\); papers or published models\. | ^[28](https://github.com/topk-io/dars),[55](https://patents.google.com/patent/US20240254752A1) |
+| Claims checked | 1 | Checks: 1 confirmed, 1 partly, 1 not found\. | ^[54](https://openalex.org/W2921738510),[17](https://www.topk.io/security),[18](https://www.topk.io/customers/saleseq) |
 
 - **Flag:** Possible overlap with portfolio company Gjirafa: compare product and buyer before a call\.
 - What was revenue last year and this year so far, and from how many paying customers?
@@ -175,8 +175,10 @@ topk\.io · CZ/US · 2026\-11\-20
 51. [topk\.io](https://www.topk.io/use-cases/recsys) · Company's own website · Product capability — “Online writes without rebuilds TopK can ingest 70 MB/s per partition with writes becoming queryable without index rebuild lag\.”
 52. [topk\.io](https://www.topk.io/use-cases/recsys) · Company's own website · Product capability — “Late interaction is expressive because it does more work: MaxSim compares query vectors against item vectors and aggregates the best matches\. TopK does not brute\-force that across the corpus\. Managed semantic\_index and bring\-your\-own representations in multi\_vector\_index both use sparse multi\-vector encoding as a fast …”
 53. [topk\.io](https://www.topk.io/learn/elasticsearch-api-compatibility) · Company's own website · Website page — “Can You Replace Elasticsearch Without Rewriting Queries? \| TopK”
-54. [patents\.google\.com](https://patents.google.com/patent/US20240254752A1) · Official record · Patent publication — “US20240254752A1 · Modular assembly including multiple modules · Topk USA LLC”
-55. [startitup\.sk](https://www.startitup.sk/web-stories/slovaci-chcu-prepisat-buducnost-vyhladavania-startup-topk-ziskal-miliony-na-ai-revoluciu/) · Independent press · Press article · 2025\-07\-01 — “Slováci chcú prepísať budúcnosť vyhľadávania: Startup TopK získal milióny na AI revolúciu \- Startitup\.sk”
+54. [openalex\.org](https://openalex.org/W2921738510) · Public technical artifact · Independent check of a claim — “Own ML work visible: 4 papers; 1 ML repositories\.”
+55. [patents\.google\.com](https://patents.google.com/patent/US20240254752A1) · Official record · Patent publication — “US20240254752A1 · Modular assembly including multiple modules · Topk USA LLC”
+56. [mzv\.gov\.cz](https://mzv.gov.cz/file/6248997/Vnitrostatni_sankcni_seznam_2026_07_23.csv) · Official record · sanctions check · 2026\-11\-25
+57. [startitup\.sk](https://www.startitup.sk/web-stories/slovaci-chcu-prepisat-buducnost-vyhladavania-startup-topk-ziskal-miliony-na-ai-revoluciu/) · Independent press · Press article · 2025\-07\-01 — “Slováci chcú prepísať budúcnosť vyhľadávania: Startup TopK získal milióny na AI revolúciu \- Startitup\.sk”
 
 ## How this dossier was built
 
@@ -384,3 +386,6 @@ Analysis: gpt\-5\-mini (cost $0.0175); AI extraction cost $0.0082. Full fact tab
 - F7778 · source\_unavailable · Unavailable · [https://www\.hlidacstatu\.cz/hledat](https://www.hlidacstatu.cz/hledat)
 - F7779 · source\_check · Checked · no results · [https://cordis\.europa\.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27TopK%27](https://cordis.europa.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27TopK%27)
 - F7780 · source\_unavailable · Unavailable · [https://starfos\.tacr\.cz](https://starfos.tacr.cz)
+- F8377 · verification · Sourced · [https://openalex\.org/W2921738510](https://openalex.org/W2921738510)
+- F9019 · source\_unavailable · Unavailable · [https://webgate\.ec\.europa\.eu/fsd/fsf/public/files/csvFullSanctionsList\_1\_1/content?token=dG9rZW4tMjAxNw](https://webgate.ec.europa.eu/fsd/fsf/public/files/csvFullSanctionsList_1_1/content?token=dG9rZW4tMjAxNw)
+- F9020 · sanctions\_check · Sourced · [https://mzv\.gov\.cz/file/6248997/Vnitrostatni\_sankcni\_seznam\_2026\_07\_23\.csv](https://mzv.gov.cz/file/6248997/Vnitrostatni_sankcni_seznam_2026_07_23.csv)

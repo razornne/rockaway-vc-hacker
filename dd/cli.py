@@ -7,6 +7,7 @@
   dd facts ID [--type T]
   dd models                     list OpenAI models available to the key
   dd spent                      LLM spend so far
+  dd osint [IDS ...] [--all] [--offline]   OSINT checks after analysis (docs/OSINT_PLAN.md)
 """
 from __future__ import annotations
 
@@ -209,6 +210,16 @@ def cmd_label_sheet(args, ctx):
     print(f"{n} statements written to {out}")
 
 
+def cmd_osint(args, ctx):
+    from dd.osint.run import run
+    if args.download_dumps:
+        from dd.osint.people import download_dumps
+        print(f"{len(download_dumps())} register dump(s) downloaded to data/dataor/")
+    ids = [c["id"] for c in json.loads((ROOT / "eval" / "companies.json").read_text(encoding="utf-8"))]         if args.all else args.ids
+    for cid, counts in run(ctx.store, ctx, ids, network=not args.offline).items():
+        print(cid, " ".join(f"{k}={v}" for k, v in counts.items()))
+
+
 def cmd_label_score(args, ctx):
     from dd.labels import score
     print(score(Path(args.path)))
@@ -242,6 +253,9 @@ def main(argv=None):
     cp.add_argument("--output", required=True)
     sub.add_parser("models")
     sub.add_parser("spent")
+    o = sub.add_parser("osint"); o.add_argument("ids", nargs="*"); o.add_argument("--all", action="store_true")
+    o.add_argument("--offline", action="store_true", help="claims against records only, no network")
+    o.add_argument("--download-dumps", action="store_true", help="fetch the register open-data dumps first (~806 MB)")
     args = p.parse_args(argv)
     logging.basicConfig(level=logging.DEBUG if args.verbose else logging.WARNING, format="%(levelname)s %(name)s: %(message)s")
     ctx = ctx_from_settings(getattr(args, "no_cache", False))
@@ -249,7 +263,8 @@ def main(argv=None):
      "collect": cmd_collect, "facts": cmd_facts,
      "extract": cmd_extract, "analyze": cmd_analyze, "verify": cmd_verify, "eval": cmd_eval, "dossier": cmd_dossier,
      "models": cmd_models, "spent": cmd_spent, "site": cmd_site,
-     "label-sheet": cmd_label_sheet, "label-score": cmd_label_score, "compare": cmd_compare}[args.cmd](args, ctx)
+     "label-sheet": cmd_label_sheet, "label-score": cmd_label_score, "compare": cmd_compare,
+     "osint": cmd_osint}[args.cmd](args, ctx)
 
 
 if __name__ == "__main__":

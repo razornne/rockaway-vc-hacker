@@ -10,13 +10,13 @@ valpashotels\.com · FI · 2026\-11\-20
 
 | Criterion | Points | What the records show | Sources |
 |---|---|---|---|
-| Fund sector | 2 | AI\-led transformative tech: 11 facts\. | ^[19](https://tech.eu/2024/06/26/pest-control-startup-valpas-raised-4m-seed-for-pesticide-free-bed-bug-solution/),[20](https://techfundingnews.com/finnish-startup-valpas-raises-e4m-for-chemical-free-bedbug-safety-tech/),[45](https://siliconcanals.com/helsinki-based-valpas-raises-4m/),[37](https://optimiser.valpashotels.com/) |
+| Fund sector | 2 | AI\-led transformative tech: 11 facts\. | ^[19](https://tech.eu/2024/06/26/pest-control-startup-valpas-raised-4m-seed-for-pesticide-free-bed-bug-solution/),[20](https://techfundingnews.com/finnish-startup-valpas-raises-e4m-for-chemical-free-bedbug-safety-tech/),[50](https://siliconcanals.com/helsinki-based-valpas-raises-4m/),[37](https://optimiser.valpashotels.com/) |
 | Geography | 1 | FI |  |
 | Round vs ticket | 0–2 (open) | Last reported round: 4M EUR Seed \(2024\-06\)\. No current round is reported\. | ^[4](https://tech.eu/2024/06/26/pest-control-startup-valpas-raised-4m-seed-for-pesticide-free-bed-bug-solution/),[16](https://techfundingnews.com/finnish-startup-valpas-raises-e4m-for-chemical-free-bedbug-safety-tech/),[17](https://www.arctictoday.com/%F0%9F%87%AB%F0%9F%87%AE-valpas-raised-e4m-in-seed-funding-led-by-zenith-venture-capital/),[18](https://www.arctictoday.com/%F0%9F%87%AB%F0%9F%87%AE-valpas-raised-e4m-in-seed-funding-led-by-zenith-venture-capital/) |
 | Traction | 1–2 (open) | Revenue not published; 10 named customer\(s\)\. |  |
 | Financial position | 0–2 (open) | Filed accounts not read\. |  |
 | Technology evidence | 2 | 2 patent publication\(s\); papers or published models\. | ^[33](https://patents.google.com/patent/EP3468360B1) |
-| Claims checked | 1 | Checks: 2 confirmed, 2 not found\. | ^[7](https://bedbugsjapan.com/bed-bug-protection-hotels-japan-valpas),[8](https://patents.google.com/?assignee=valpas),[12](https://valpashotels.com/case-studies),[13](https://valpashotels.com/case-studies) |
+| Claims checked | 1 | Checks: 3 confirmed, 2 not found\. | ^[44](https://openalex.org/W2324058551),[7](https://bedbugsjapan.com/bed-bug-protection-hotels-japan-valpas),[8](https://patents.google.com/?assignee=valpas),[12](https://valpashotels.com/case-studies) |
 
 - How much are you raising, on what terms, and who else is in the round?
 - What was revenue last year and this year so far, and from how many paying customers?
@@ -92,7 +92,7 @@ No sourced findings for this section.
 
 - Product built: smart anti‑bedbug bed legs, IoT platform, mobile/web apps and a dashboard that claim real‑time monitoring and in‑app image recognition\. *(Corroborated)* ^[1](https://siliconcanals.com/helsinki-based-valpas-raises-4m/),[2](https://siliconcanals.com/helsinki-based-valpas-raises-4m/),[14](https://nordic9.com/news/valpas-raises-500k-in-a-seed-funding-round-supported-by-maki-vc-icebreaker-vc-and-reaktor-ventures-news9430502709)
 - Public product surfaces and apps: app\.valpashotels\.com, dashboard and api subdomains plus iOS and Android app listings\. *(Verified)* ^[26](https://crt.sh/?q=%25.valpashotels.com&output=json),[27](https://crt.sh/?q=%25.valpashotels.com&output=json),[41](https://apps.apple.com/us/app/valpas-for-travelers/id6753011582?uo=4)
-- AI/LLM dependency and integrations: site claims integration with ChatGPT \(OpenAI\); separate Optimiser product queries LLMs to produce visibility reports\. *(Company claim)* ^[23](https://valpashotels.com/),[37](https://optimiser.valpashotels.com/),[35](https://optimiser.valpashotels.com/)
+- AI/LLM dependency and integrations: site claims integration with ChatGPT \(OpenAI\); separate Optimiser product queries LLMs to produce visibility reports\. *(Partly verified)* ^[23](https://valpashotels.com/),[37](https://optimiser.valpashotels.com/),[35](https://optimiser.valpashotels.com/)
 
 ## What could be rebuilt, and what cannot be judged from outside
 
@@ -161,8 +161,13 @@ No sourced findings for this section.
 41. [apps\.apple\.com](https://apps.apple.com/us/app/valpas-for-travelers/id6753011582?uo=4) · Public technical artifact · Mobile app · 2025\-10\-15 — “Valpas for Travelers”
 42. [valpashotels\.com](https://valpashotels.com/) · Company's own website · Technical claim — “1\.4t CO₂e saved per room, per year\.”
 43. [valpashotels\.com](https://valpashotels.com/case-studies) · Company's own website · Customer — ““Increase in customer numbers and satisfaction””
-44. [patents\.google\.com](https://patents.google.com/patent/EM37625250001S) · Official record · Patent publication — “EM37625250001S · Destruction of pests \(Traps and articles for \-\); Furniture feet · Valpas Enterprises Oy”
-45. [siliconcanals\.com](https://siliconcanals.com/helsinki-based-valpas-raises-4m/) · Independent press · Press article · 2024\-06\-26 — “Helsinki\-based Valpas raises €4M to help hotels safe from bed bugs: Here’s how \- Silicon Canals”
+44. [openalex\.org](https://openalex.org/W2324058551) · Public technical artifact · Independent check of a claim — “Own ML work visible: 1 papers\.”
+45. [patents\.google\.com](https://patents.google.com/patent/EM37625250001S) · Official record · Patent publication — “EM37625250001S · Destruction of pests \(Traps and articles for \-\); Furniture feet · Valpas Enterprises Oy”
+46. [web\.archive\.org](https://web.archive.org/web/20230130221944/https://www.valpashotels.com/careers) · Public technical artifact · hiring snapshot · 2023\-01\-30
+47. [web\.archive\.org](https://web.archive.org/web/20240305031410/https://www.valpashotels.com/careers) · Public technical artifact · hiring snapshot · 2024\-03\-05
+48. [web\.archive\.org](https://web.archive.org/web/20250120113320/https://valpashotels.com/careers) · Public technical artifact · hiring snapshot · 2025\-01\-20
+49. [mzv\.gov\.cz](https://mzv.gov.cz/file/6248997/Vnitrostatni_sankcni_seznam_2026_07_23.csv) · Official record · sanctions check · 2026\-11\-25
+50. [siliconcanals\.com](https://siliconcanals.com/helsinki-based-valpas-raises-4m/) · Independent press · Press article · 2024\-06\-26 — “Helsinki\-based Valpas raises €4M to help hotels safe from bed bugs: Here’s how \- Silicon Canals”
 
 ## How this dossier was built
 
@@ -352,3 +357,9 @@ Analysis: gpt\-5\-mini (cost $0.0192); AI extraction cost $0.0075. Full fact tab
 - F7818 · source\_unavailable · Unavailable · [https://www\.hlidacstatu\.cz/hledat](https://www.hlidacstatu.cz/hledat)
 - F7819 · source\_check · Checked · no results · [https://cordis\.europa\.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27Valpas%27](https://cordis.europa.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27Valpas%27)
 - F7820 · source\_unavailable · Unavailable · [https://starfos\.tacr\.cz](https://starfos.tacr.cz)
+- F8375 · verification · Sourced · [https://openalex\.org/W2324058551](https://openalex.org/W2324058551)
+- F9015 · source\_unavailable · Unavailable · [https://webgate\.ec\.europa\.eu/fsd/fsf/public/files/csvFullSanctionsList\_1\_1/content?token=dG9rZW4tMjAxNw](https://webgate.ec.europa.eu/fsd/fsf/public/files/csvFullSanctionsList_1_1/content?token=dG9rZW4tMjAxNw)
+- F9016 · sanctions\_check · Sourced · [https://mzv\.gov\.cz/file/6248997/Vnitrostatni\_sankcni\_seznam\_2026\_07\_23\.csv](https://mzv.gov.cz/file/6248997/Vnitrostatni_sankcni_seznam_2026_07_23.csv)
+- F9049 · hiring\_snapshot · Sourced · [https://web\.archive\.org/web/20230130221944/https://www\.valpashotels\.com/careers](https://web.archive.org/web/20230130221944/https://www.valpashotels.com/careers)
+- F9050 · hiring\_snapshot · Sourced · [https://web\.archive\.org/web/20240305031410/https://www\.valpashotels\.com/careers](https://web.archive.org/web/20240305031410/https://www.valpashotels.com/careers)
+- F9051 · hiring\_snapshot · Sourced · [https://web\.archive\.org/web/20250120113320/https://valpashotels\.com/careers](https://web.archive.org/web/20250120113320/https://valpashotels.com/careers)

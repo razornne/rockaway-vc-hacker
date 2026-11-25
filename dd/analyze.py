@@ -196,8 +196,14 @@ def _bounded_fact_snapshot(company: Company, facts: list[Fact], model: str | Non
 
 
 def fact_snapshot_sha256(company_id: str, facts: list[Fact]) -> str:
-    """Hash the complete ordered fact snapshot, not merely the facts sent to the model."""
+    """Hash the complete ordered fact snapshot, not merely the facts sent to the model.
+
+    OSINT facts (dd.osint) are left out: they are added after analysis, read and shown only by code, and never sent
+    to the model, so they cannot make an analysis stale.
+    """
+    from dd.osint import is_osint
     rows = []
+    facts = [f for f in facts if not is_osint(f.extractor)]
     for fact in sorted(facts, key=lambda f: (f.id is None, f.id or 0, f.type, f.key or "", f.source_url or "")):
         rows.append({
             "id": fact.id,
@@ -331,7 +337,8 @@ def _validated_sections(parsed: AnalysisResponse, allowed_ids: set[int]) -> tupl
 
 def analyze_company(store: Store, llm, company: Company, model: str | None = None, kind: str = "dossier") -> dict:
     """Generate five evidence-linked sections with one structured model call and persist the snapshot."""
-    current_facts = store.facts(company.id)
+    from dd.osint import is_osint
+    current_facts = [f for f in store.facts(company.id) if not is_osint(f.extractor)]  # code-only checks
     eligible = _eligible_facts(company, current_facts)
     derived = signals_mod.compute(eligible, company.name, company.country)
     selected_model = model or llm.s.model_analyze

@@ -182,8 +182,10 @@ def _claims(sig: dict) -> dict:
                 ask="" if pts == 2 else "Ask for evidence behind the claims that could not be confirmed.")
 
 
-def scorecard(sig: dict | None, facts: dict, as_of: date | None = None) -> dict[str, Any]:
-    """as_of: the date the brief's data was collected (a round older than STALE_ROUND_MONTHS before it is open)."""
+def scorecard(sig: dict | None, facts: dict, as_of: date | None = None,
+              extra_flags: list[str] | None = None) -> dict[str, Any]:
+    """as_of: the date the brief's data was collected (a round older than STALE_ROUND_MONTHS before it is open).
+    extra_flags: findings from the OSINT checks (dd.osint.view) to read before a call."""
     sig = sig or {}
     fu, th = sig.get("funding") or {}, sig.get("thesis") or {}
     rows = [_sector(th), _geography(th), _round(fu.get("rounds") or [], as_of or date.today()), _traction(fu, sig),
@@ -206,6 +208,7 @@ def scorecard(sig: dict | None, facts: dict, as_of: date | None = None) -> dict[
            and (f.value.get("records_found") or 0) > 0]
     if ins:
         flags.append("Insolvency register has records for the company: read them before a call.")
+    flags += [f for f in extra_flags or [] if f not in flags]
     return {"rows": rows, "min": lo, "max": hi, "total": total, "bar": BAR, "verdict": verdict, "tone": tone,
             "flags": flags, "asks": [r["ask"] for r in rows if r["ask"]],
             "fund": FUND["name"], "not_scored": "Team and founders: public records cannot judge them; assess them "

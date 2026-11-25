@@ -10,20 +10,27 @@ valka\.ai · Valka\.AI s\.r\.o\. · IČO 23132221 · CZ · 2026\-11\-20
 
 | Criterion | Points | What the records show | Sources |
 |---|---|---|---|
-| Fund sector | 2 | AI\-led transformative tech: 34 facts\. | ^[6](https://cc.cz/jeho-startup-rychle-roste-ted-zavetril-dalsi-prilezitost-vyviji-lidskeho-avatara-pro-hry-a-igaming/),[18](https://www.e15.cz/rozhovory/vybudoval-nejrychleji-rostouci-startup-ted-chce-venclik-postavit-nejlepsi-ai-video-firmu-1425083),[47](https://www.lupa.cz/clanky/dokonaly-avatar-cesi-se-zkusenostmi-z-americkych-laboratori-skladaji-v-prazskem-startupu-video-hlas-a-pohyb-v-realnem-case/),[19](https://www.czechtradeoffices.com/nl/news/czech-ai-startup-valkaai-targets-global-streaming-market-with-%E2%82%AC12-million-investment) |
+| Fund sector | 2 | AI\-led transformative tech: 34 facts\. | ^[6](https://cc.cz/jeho-startup-rychle-roste-ted-zavetril-dalsi-prilezitost-vyviji-lidskeho-avatara-pro-hry-a-igaming/),[18](https://www.e15.cz/rozhovory/vybudoval-nejrychleji-rostouci-startup-ted-chce-venclik-postavit-nejlepsi-ai-video-firmu-1425083),[66](https://www.lupa.cz/clanky/dokonaly-avatar-cesi-se-zkusenostmi-z-americkych-laboratori-skladaji-v-prazskem-startupu-video-hlas-a-pohyb-v-realnem-case/),[19](https://www.czechtradeoffices.com/nl/news/czech-ai-startup-valkaai-targets-global-streaming-market-with-%E2%82%AC12-million-investment) |
 | Geography | 2 | CZ \(core region\) | ^[38](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/23132221) |
 | Round vs ticket | 1 | Closed round: 12M EUR \(pre\-seed\)\. The round is larger than the fund's initial ticket \(€0\.5m–€2m\)\. A round is the total from all investors, so the fund would be one investor in a syndicate, as lead or participant\. | ^[4](https://www.rockawaycapital.com/en/news/e12m-investment-in-valkaai-led-by-rockaway-ventures),[12](https://valka.ai/company),[13](https://www.valka.ai/company),[14](https://valka.ai/privacy-policy) |
 | Traction | 0–2 (open) | Revenue not published and no paid sales visible in public records\. |  |
 | Financial position | 0–2 (open) | Filed accounts not read\. |  |
 | Technology evidence | 0–2 (open) | No public code, grants, patents or papers visible\. |  |
-| Claims checked | 1 | Checks: 1 not found\. | ^[8](https://patents.google.com/?assignee=valkaai) |
+| Claims checked | 1 | Checks: 1 confirmed, 1 not found\. | ^[47](https://valka.ai/careers),[8](https://patents.google.com/?assignee=valkaai) |
 
 - **Flag:** Possible overlap with portfolio company CulturePulse: compare product and buyer before a call\.
+- **Flag:** Vlastimil Venclík holds 5 other active executive roles in Czech companies: ask how much time goes to this company\.
 - What was revenue last year and this year so far, and from how many paying customers?
 - What is the cash position and monthly burn, and how many months of runway is that?
 - Can we see the product and the code, and who built the core technology?
 - Ask for evidence behind the claims that could not be confirmed\.
 - Team and founders: public records cannot judge them; assess them first on the call\.
+
+## People and background (Czech business register, ISIR; computed by code)
+
+| Person | Role here | Other active roles | Earlier roles and how they ended | Insolvency | Sources |
+|---|---|---|---|---|---|
+| Vlastimil Venclík | Jednatel 2025 | FunBerry s\.r\.o\. \(jednatel\); FunBerry s\.r\.o\. \(shareholder\); Oddin\.gg s\.r\.o\. \(Jednatel\); Runestone\.gg s\.r\.o\. \(Jednatel\) | Oddin\.gg s\.r\.o\. \(shareholder, 2020–2022\); TT Stream s\.r\.o\. \(shareholder, 2024–2024\); Runestone\.gg s\.r\.o\. \(shareholder, 2024–2026\) | 0 proceeding(s) | ^[48](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23132221),[49](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=07005555),[50](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=07005555),[51](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=07681763),[52](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=07681763),[53](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=21215073),[54](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=22068139),[55](https://isir.justice.cz/isir/common/index.do) |
 
 ## TL;DR
 
@@ -167,7 +174,26 @@ No sourced findings for this section.
 44. [valka\.ai](https://valka.ai/blog/valkaai-raises-12-million) · Company's own website · Technical claim — “Our unique three\-tiered genAI process will be able to create the technology for on\-demand content at scale and without the technical limitations we currently see with AI\-generated video”
 45. [vestbee\.com](https://vestbee.com/insights/articles/valka-ai-raises-12-m) · Independent press · Press article · 2026\-02\-24 — “Czech firm ValkaAI raises €12M to build real\-time interactive AI video platform \| Vestbee”
 46. [cc\.cz](https://cc.cz/rekordni-investici-cesky-startup-jeste-navysil-tvurci-ai-komentatora-ziskali-uz-stovky-milionu/) · Independent press · Funding round — “úvodní, tzv\. pre\-seedovou investici ve výši téměř 300 milionů korun”
-47. [lupa\.cz](https://www.lupa.cz/clanky/dokonaly-avatar-cesi-se-zkusenostmi-z-americkych-laboratori-skladaji-v-prazskem-startupu-video-hlas-a-pohyb-v-realnem-case/) · Independent press · Press article · 2026\-05\-25 — “Dokonalý avatar\. Češi se zkušenostmi z amerických laboratoří skládají v pražském startupu video, hlas a pohyb v reálném čase \- Lupa\.cz”
+47. [valka\.ai](https://valka.ai/careers) · Company's own website · Independent check of a claim — “Own ML work visible: 3 ML job posts\.”
+48. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23132221) · Official record · person — “Vlastimil Venclík”
+49. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=07005555) · Official record · person role elsewhere · 2018\-04\-12
+50. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=07005555) · Official record · person role elsewhere · 2018\-04\-13
+51. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=07681763) · Official record · person role elsewhere · 2018\-11\-28
+52. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=07681763) · Official record · person role elsewhere · 2020\-02\-13
+53. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=21215073) · Official record · person role elsewhere · 2024\-02\-05
+54. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=22068139) · Official record · person role elsewhere · 2024\-09\-21
+55. [isir\.justice\.cz](https://isir.justice.cz/isir/common/index.do) · Official record · person insolvency · 2026\-11\-25
+56. [adisspr\.mfcr\.cz](https://adisspr.mfcr.cz/dpr/DphReg) · Independent press · vat status · 2026\-11\-25
+57. [adisspr\.mfcr\.cz](https://adisspr.mfcr.cz/dpr/DphReg) · Independent press · vat status · 2026\-11\-25
+58. [adisspr\.mfcr\.cz](https://adisspr.mfcr.cz/dpr/DphReg) · Independent press · vat status · 2026\-11\-25
+59. [adisspr\.mfcr\.cz](https://adisspr.mfcr.cz/dpr/DphReg) · Independent press · vat status · 2026\-11\-25
+60. [adisspr\.mfcr\.cz](https://adisspr.mfcr.cz/dpr/DphReg) · Independent press · vat status · 2026\-11\-25
+61. [adisspr\.mfcr\.cz](https://adisspr.mfcr.cz/dpr/DphReg) · Independent press · vat status · 2026\-11\-25
+62. [web\.archive\.org](https://web.archive.org/web/20250912195949/https://valka.ai/careers) · Public technical artifact · hiring snapshot · 2025\-09\-12
+63. [api\.lever\.co](https://api.lever.co/v0/postings/oddin?mode=json) · Company's own website · hiring snapshot · 2026\-11\-25
+64. [mzv\.gov\.cz](https://mzv.gov.cz/file/6248997/Vnitrostatni_sankcni_seznam_2026_07_23.csv) · Official record · sanctions check · 2026\-11\-25
+65. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=23132221) · Official record · register status
+66. [lupa\.cz](https://www.lupa.cz/clanky/dokonaly-avatar-cesi-se-zkusenostmi-z-americkych-laboratori-skladaji-v-prazskem-startupu-video-hlas-a-pohyb-v-realnem-case/) · Independent press · Press article · 2026\-05\-25 — “Dokonalý avatar\. Češi se zkušenostmi z amerických laboratoří skládají v pražském startupu video, hlas a pohyb v reálném čase \- Lupa\.cz”
 
 ## How this dossier was built
 
@@ -406,3 +432,27 @@ Analysis: gpt\-5\-mini (cost $0.0174); AI extraction cost $0.0101. Full fact tab
 - F7815 · grant\_national · Sourced · [https://smlouvy\.gov\.cz/smlouva/39346345](https://smlouvy.gov.cz/smlouva/39346345)
 - F7816 · source\_check · Checked · no results · [https://cordis\.europa\.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27ValkaAI%27](https://cordis.europa.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27ValkaAI%27)
 - F7817 · source\_unavailable · Unavailable · [https://starfos\.tacr\.cz](https://starfos.tacr.cz)
+- F8371 · verification · Sourced · [https://valka\.ai/careers](https://valka.ai/careers)
+- F8736 · person · Sourced · [https://ares\.gov\.cz/ekonomicke\-subjekty\-v\-be/rest/ekonomicke\-subjekty\-vr/23132221](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23132221)
+- F8737 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=07005555](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=07005555)
+- F8738 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=07005555](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=07005555)
+- F8739 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=07681763](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=07681763)
+- F8740 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=22068139](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=22068139)
+- F8741 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=23054204](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=23054204)
+- F8742 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=23897953](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=23897953)
+- F8743 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=07681763](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=07681763)
+- F8744 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=21215073](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=21215073)
+- F8745 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=22068139](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=22068139)
+- F8746 · register\_status · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=23132221](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=23132221)
+- F8747 · source\_check · Checked · [https://dataor\.justice\.cz](https://dataor.justice.cz)
+- F8974 · person\_insolvency · Sourced · [https://isir\.justice\.cz/isir/common/index\.do](https://isir.justice.cz/isir/common/index.do)
+- F8975 · vat\_status · Sourced · [https://adisspr\.mfcr\.cz/dpr/DphReg](https://adisspr.mfcr.cz/dpr/DphReg)
+- F8976 · vat\_status · Sourced · [https://adisspr\.mfcr\.cz/dpr/DphReg](https://adisspr.mfcr.cz/dpr/DphReg)
+- F8977 · vat\_status · Sourced · [https://adisspr\.mfcr\.cz/dpr/DphReg](https://adisspr.mfcr.cz/dpr/DphReg)
+- F8978 · vat\_status · Sourced · [https://adisspr\.mfcr\.cz/dpr/DphReg](https://adisspr.mfcr.cz/dpr/DphReg)
+- F8979 · vat\_status · Sourced · [https://adisspr\.mfcr\.cz/dpr/DphReg](https://adisspr.mfcr.cz/dpr/DphReg)
+- F8980 · vat\_status · Sourced · [https://adisspr\.mfcr\.cz/dpr/DphReg](https://adisspr.mfcr.cz/dpr/DphReg)
+- F8981 · source\_unavailable · Unavailable · [https://webgate\.ec\.europa\.eu/fsd/fsf/public/files/csvFullSanctionsList\_1\_1/content?token=dG9rZW4tMjAxNw](https://webgate.ec.europa.eu/fsd/fsf/public/files/csvFullSanctionsList_1_1/content?token=dG9rZW4tMjAxNw)
+- F8982 · sanctions\_check · Sourced · [https://mzv\.gov\.cz/file/6248997/Vnitrostatni\_sankcni\_seznam\_2026\_07\_23\.csv](https://mzv.gov.cz/file/6248997/Vnitrostatni_sankcni_seznam_2026_07_23.csv)
+- F9047 · hiring\_snapshot · Sourced · [https://api\.lever\.co/v0/postings/oddin?mode=json](https://api.lever.co/v0/postings/oddin?mode=json)
+- F9048 · hiring\_snapshot · Sourced · [https://web\.archive\.org/web/20250912195949/https://valka\.ai/careers](https://web.archive.org/web/20250912195949/https://valka.ai/careers)

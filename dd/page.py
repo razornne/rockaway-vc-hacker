@@ -412,6 +412,8 @@ details{margin-top:1.4rem;font:13.5px var(--sans)}summary{cursor:pointer;color:v
 .pts{font-size:12.5px;color:var(--muted);margin-left:.35rem}
 ul.call{margin:.3rem 0 0;padding-left:1.1rem;max-width:43rem;font:15px/1.5 var(--sans)}ul.call li{margin:.3rem 0}
 ul.call li.flag{color:var(--brick)}
+.flagword{color:var(--brick);font-weight:600}
+table.people td{font-size:13.5px}
 details.rules{max-width:43rem}details.rules p{margin:.4rem 0;color:var(--ink2)}
 @media(max-width:900px){:root{--margin:0;--gap:0}.page{padding:0 1rem 3rem}
 .row{grid-template-columns:minmax(0,1fr)}.proof{padding-top:.3rem}.proof .src{display:inline;margin-left:.5rem}
@@ -540,6 +542,18 @@ def render(company: Company, analysis: dict, p: dict, titles: dict, label_titles
     parts.append(block("risk_flags", title="Risks"))
     parts.append(block("questions", title="Questions"))
 
+    # what the company says against what records show, then the people behind it (dd.osint)
+    if x.get("checks"):
+        parts.append('<h2>Claims against records</h2><p class="h2note">Company statements checked by code against '
+                     "independent records. <i>Not found</i> means not visible in the records read, not that the claim "
+                     "is false.</p>" + table(
+                         ["Check", "Result", "Detail", "Sources"],
+                         [[h(c["check"]), f'<span class="st st-{h(str(c["status"]))}">'
+                                          f'{h(CHECK_TEXT.get(c["status"], str(c["status"])))}</span>',
+                           h(c["detail"]), tref(c["nums"])] for c in x["checks"]]))
+    if (p.get("osint") or {}).get("ran"):
+        parts.append(osint_html(p["osint"], tref))
+
     invest = any(k in by_kind and not by_kind[k]["no_data"]
                  for k in ("thesis_fit", "business_model", "market", "competition", "investment_case"))
     if x.get("financials"):
@@ -632,11 +646,6 @@ def render(company: Company, analysis: dict, p: dict, titles: dict, label_titles
                  "sources. An outside view: it says what to ask, not whether the code is good.</p>")
     parts.append(block("tech_profile", title="What is built"))
     parts.append(block("rebuild_check", label=True))
-    if x.get("checks"):
-        parts.append("<h3>Claims checked against independent sources</h3>" + table(
-            ["Check", "Result", "Detail", "Sources"],
-            [[h(c["check"]), f'<span class="st st-{h(str(c["status"]))}">{h(CHECK_TEXT.get(c["status"], str(c["status"])))}</span>',
-              h(c["detail"]), tref(c["nums"])] for c in x["checks"]]))
 
     counts = Counter(it["strength"] for it in p["tldr"] + [it for s in p["sections"] for it in s["items"]])
     total = sum(counts.values())
@@ -713,6 +722,88 @@ def scorecard_html(sc: dict, tref) -> str:
                + f"<p>The bar ({sc['bar']} of {sc['total']}) and the rules are a starting point set by hand, not fitted "
                "to outcomes; a fund sets its own (<code>dd/scorecard.py</code>).</p></details>")
     return "".join(out)
+
+
+def osint_html(o: dict, tref) -> str:
+    """People and background (dd.osint.view.summary): every cell from a register, with its source."""
+    h = html.escape
+
+    def roles_cell(items, limit, ended=False):
+        if not items:
+            return '<span class="m">none in s.r.o. or a.s.</span>' if not ended else ""
+        out = []
+        for r in items[:limit]:
+            when = f"{r.get('from') or ''}–{r.get('to') or ''}" if ended else (f"since {r['since']}" if r.get("since") else "")
+            tag = (f' <b class="flagword">{h(r["outcome"])}</b>' if r.get("outcome") and ended else
+                   f' <b class="flagword">{h(r["outcome"])}</b>' if r.get("outcome") else "")
+            port = ' <span class="m">Rockaway portfolio</span>' if r.get("portfolio") else ""
+            out.append(f'{h(r["company"])} <span class="m">{h(r["role"])}{", " + h(when) if when else ""}</span>{tag}{port}')
+        more = f'<br><span class="m">+{len(items) - limit} more</span>' if len(items) > limit else ""
+        return "<br>".join(out) + more
+
+    scan, people = o.get("scan"), o.get("people") or []
+    note = ("Officers and shareholders from the Czech business register (ARES), their other roles from the register's "
+            "open data (s.r.o. and a.s.; other legal forms and foreign companies are not covered), insolvency from the "
+            "ISIR web service. People are matched on name and birth date; birth dates are not stored or shown.")
+    parts = [f'<h2>People and background</h2><p class="h2note">{h(note)}</p>']
+    if people:
+        rows = []
+        for r in people:
+            ins = ("not checked" if r["insolvency"] is None else
+                   f'<b class="flagword">{r["insolvency"]} proceeding(s)</b>' if r["insolvency"] else
+                   '<span class="m">none for this name and birth date</span>')
+            other = (roles_cell(r["active"], 4) if r["matchable"] and scan else '<span class="m">not checked</span>')
+            past = roles_cell([e for e in r["ended"]], 3, ended=True) if r["matchable"] and scan else ""
+            if r.get("professional"):  # hundreds of roles: a formation or nominee service, not a track record
+                other = (f'<span class="m">{r["roles_total"]} roles in other companies: most likely a company '
+                         "formation, nominee or administration service; not listed</span>")
+                past = ""
+            rows.append([f'<b>{h(r["name"])}</b>' + ("" if r["current"] else ' <span class="m">past</span>'),
+                         h(r["here"]), other, past, ins, tref(r.get("nums") or [])])
+        parts.append('<table class="t people"><tr><th>Person</th><th>Role here</th><th>Other active roles</th>'
+                     "<th>Earlier roles</th><th>Insolvency register</th><th>Sources</th></tr>"
+                     + "".join("<tr>" + "".join(f"<td>{c}</td>" for c in row) + "</tr>" for row in rows) + "</table>")
+    elif o.get("scan_unavailable"):
+        parts.append(f'<p class="empty">People not checked: {h(o["scan_unavailable"])}.</p>')
+    else:
+        parts.append('<p class="empty">No Czech company: officers and shareholders were not checked.</p>')
+    items = []
+    st = o.get("register_status") or {}
+    if st:
+        items.append("Register entries for the company: " + (h(st.get("outcome")) if st.get("outcome") else
+                     "no insolvency, liquidation, dissolution or distraint entry") + f' {tref(o.get("status_nums") or [])}')
+    for v in o.get("vat") or []:
+        word = {"ANO": '<b class="flagword">listed as an unreliable VAT payer</b>', "NE": "not an unreliable VAT payer",
+                "NENALEZEN": "not in the VAT register"}.get(v["unreliable"], h(str(v["unreliable"])))
+        items.append(f'{h(v["company"])}{"" if v["own"] else " (a person&#8217;s other company)"}: {word} '
+                     f'{tref(v.get("nums") or [])}')
+    if o.get("vat_unavailable"):
+        items.append("VAT register: not checked (the service did not answer)")
+    sc = o.get("sanctions")
+    if sc:
+        hits = sc.get("hits") or []
+        items.append((f'<b class="flagword">Sanctions list match to verify:</b> ' + "; ".join(
+            f'{h(x["subject"])} ({h(x["list"])}, {h(x["basis"])})' for x in hits) if hits else
+                      f'Not on the {h(" or the ".join(sc.get("lists") or []))} (company and people checked, '
+                      f'{h(str(sc.get("date") or ""))})') + f' {tref(o.get("sanctions_nums") or [])}')
+    for lst in o.get("sanctions_unavailable") or []:
+        items.append(f"{h(lst)}: not checked (the list could not be downloaded)")
+    for w in o.get("waivers") or []:
+        items.append(f'<b class="flagword">Penalty waived</b> by {h(w["provider"] or "an authority")}'
+                     + (f' ({h(w["year"])})' if w.get("year") else "") + f': {h(w["title"] or "")} '
+                     f'{tref(o.get("waiver_nums") or [])}')
+    if items:
+        parts.append('<h3>Company checks</h3><ul class="call">' + "".join(f"<li>{i}</li>" for i in items) + "</ul>")
+    hire = o.get("hiring") or []
+    if hire:
+        parts.append('<h3>Hiring over time</h3><p class="h2note">Roles listed on the careers page as archived by the '
+                     "Wayback Machine, and on public job boards. A page that lists roles elsewhere (an embedded board) "
+                     "shows none here.</p>" + '<table class="t"><tr><th>Date</th><th>Source</th>'
+                     '<th class="num">Roles listed</th><th>By function</th><th>Sources</th></tr>' + "".join(
+                         f'<tr><td>{h(str(r["date"] or r["year"]))}</td><td>{h(r["source"] or "")}</td>'
+                         f'<td class="num">{r["count"]}</td><td>{h(", ".join(f"{k.replace("_", " ")} {v}" for k, v in r["by_function"].items()))}</td>'
+                         f'<td>{tref(r.get("nums") or [])}</td></tr>' for r in hire) + "</table>")
+    return "".join(parts)
 
 
 TOC_SKIP = {"How this brief was built", "What this brief rests on"}

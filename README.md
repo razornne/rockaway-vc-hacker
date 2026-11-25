@@ -36,10 +36,13 @@ Rockaway now has a defence fund, and defence / dual-use is where official public
 
 ## What a brief contains
 
+- A screening scorecard computed by code: seven criteria, 0–2 points each; what records cannot settle widens the range instead of counting as zero; *passes to a first call*, *open* or *below the bar*, with what to ask on the call.
 - Key numbers computed by code: revenue, net result and cash from filed accounts, latest round, sales to public buyers, grants (kept apart from revenue), defence evidence from official sources.
 - For the memo: the case for, the case against, and what must be true.
 - Ownership, funding rounds, public money (grants awarded vs actually paid, sales to public buyers), customers, technical profile, what could be rebuilt and what cannot be judged from outside, competition, fit with the Rockaway thesis.
 - Risks and questions for the founder.
+- Claims against records: what the company says (AI, team size, revenue, public customers) checked against independent records.
+- People and background: officers and shareholders, their other companies and how those ended, insolvency of the people, unreliable VAT payer status, EU and Czech sanctions lists, penalty waivers, hiring over time.
 - Every statement carries an evidence label — *Verified*, *Corroborated*, *Single source*, *Partly verified*, *Company claim* or *Analyst view* — and links to its sources and quotes.
 
 ## How it works
@@ -48,7 +51,8 @@ Rockaway now has a defence fund, and defence / dual-use is where official public
 2. **Extract.** A small model (OpenAI `gpt-5-nano`) proposes facts from unstructured pages only. A fact is kept only if its exact quote is found in the saved source and passes category rules.
 3. **Compute and verify.** Code computes public money by type, funding rounds and thesis fit, and checks company claims against independent sources: patents, the register, the IAB vendor list, security pages, named customers, government vendor lists.
 4. **Analyse.** A second model writes findings and the investment view: Claude Haiku 5.5 since a side-by-side test against `gpt-5-mini` and Claude Sonnet 5.5 (the two showcase briefs; the others still use `gpt-5-mini`). It may cite only collected facts; evidence labels are computed from the sources, not chosen by the model.
-5. **Brief.** One HTML page with sources and quotes, a Markdown copy, and a CSV of all facts.
+5. **OSINT checks.** Code only, after the analysis ([`docs/OSINT_PLAN.md`](docs/OSINT_PLAN.md)): the register's open-data dumps for the people behind the company and their other companies, the ISIR web service, the VAT register, sanctions lists, job boards and archived careers pages.
+6. **Brief.** One HTML page with sources and quotes, a Markdown copy, and a CSV of all facts.
 
 More: [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md).
 
@@ -63,7 +67,7 @@ Two questions matter: is each statement right, and is the tool better than simpl
 
 Guards that run on every build (`uv run dd eval`, no model, [`eval/report.md`](eval/report.md)): 18 of 18 hand-checked register facts reproduced, every quote behind a model-extracted fact found in its saved source. They rule out specific failures, not wrong conclusions.
 
-Reading the output by hand remains the main quality process. It has found 30 systematic errors so far — a subsidy counted as a customer contract, the same grant added up across registers, a namesake company taken for the target, a decimal misread that inflated a total 10,000 times, "28,000,000 CZK" read as 28, a *Verified* label on a statement that rested partly on one article. Each was fixed in code and covered by a test: [`docs/AUDIT.md`](docs/AUDIT.md).
+Reading the output by hand remains the main quality process. It has found 35 systematic errors so far — a namesake founder given 58 insolvency proceedings by a fuzzy search, a hiring target read as the team size, a subsidy counted as a customer contract, the same grant added up across registers, a namesake company taken for the target, a decimal misread that inflated a total 10,000 times, "28,000,000 CZK" read as 28, a *Verified* label on a statement that rested partly on one article. Each was fixed in code and covered by a test: [`docs/AUDIT.md`](docs/AUDIT.md).
 
 ## What it cannot do yet
 
@@ -101,6 +105,7 @@ uv run dd collect fly4future        # public sources, cached in .dd/
 uv run dd extract fly4future        # model extraction (paid, cached)
 uv run dd verify fly4future         # claim checks, no model
 uv run dd analyze fly4future        # model analysis (paid, cached)
+uv run dd osint fly4future --download-dumps   # people, registers, sanctions, hiring (no model; ~806 MB of register dumps, once)
 uv run dd dossier fly4future        # HTML + Markdown + CSV
 uv run dd eval                      # evaluation report
 uv run dd site                      # rebuild the showcase in site/
@@ -115,7 +120,7 @@ Copy `.env.example` to `.env` for the API keys, model names, prices and a hard s
 ## Rules the tool follows
 
 - No LinkedIn, and no scraping of Crunchbase, Dealroom or PitchBook.
-- Personal data limited to names and roles from public sources; no birth dates or addresses from the register.
+- Personal data limited to names, roles, dates and shares from public sources; no birth dates or addresses stored. Birth dates are used in memory only, to tell namesakes apart.
 - Web content is data, never instructions to the model.
 - A source that was not read is shown as *Not checked*; one that was read and is empty, as *Not visible in public records*. Never *None found*: public records are incomplete.
 - Polite to websites: cache, timeouts, no mass crawling.

@@ -22,7 +22,7 @@ How the due diligence tool is built, as of November 2026. Why it exists is in th
 4. **A quote must exist in the saved source.** Extraction is rejected if the quote is not found in the cached page or breaks category rules.
 5. **Say what the data cannot see.** Flags such as "holding abroad", "a.s./SE — shareholders not published", "no Czech entity". A source that was not read is shown as *Not checked*; one that was read and is empty, as *Not visible in public records*, with what it cannot show. Never *None found*.
 6. **Web content is data, not instructions.** Page text goes to the model only as a document to extract from; the model has no tools that change anything.
-7. **Minimal personal data.** Founders: name and role from public sources. No birth dates or addresses from the register; no LinkedIn.
+7. **Minimal personal data.** People: name, role, dates and share from public registers. Birth dates are used in memory only to match a person across registers (never stored or shown); no addresses; no LinkedIn.
 8. **Cheap and capped.** Every LLM call is cached; a hard budget refuses a call whose worst-case cost would exceed it.
 
 ## 3. Pipeline
@@ -62,6 +62,13 @@ input: name | domain | IČO
         ▼
  analyze  (LLM, Claude Haiku 5.5) → findings and the investment view; may cite only fact ids;
            every finding gets an evidence label computed from its sources
+        │
+        ▼
+ osint    (code, after analysis; dd/osint/, docs/OSINT_PLAN.md) → claims against records (AI, team size,
+           revenue, public buyers); people from ARES VR and their other companies from the register's
+           open-data dumps; ISIR web service for people; unreliable VAT payer (ADIS); EU and Czech
+           sanctions lists; job boards and archived careers pages. Never sent to the model and left out
+           of the analysis hash, so it does not make a brief stale.
         │
         ▼
  dossier  → brief.html, brief.md, facts.csv          eval → report without LLM calls

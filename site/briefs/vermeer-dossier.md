@@ -10,13 +10,13 @@ getvermeer\.com · US · 2026\-11\-20
 
 | Criterion | Points | What the records show | Sources |
 |---|---|---|---|
-| Fund sector | 2 | AI\-led transformative tech: 11 facts\. | ^[19](https://www.draper.vc/portfolio/vermeer),[20](https://www.getvermeer.com/),[39](https://vermeer.homerun.co/),[40](https://vermeer.homerun.co/?lang=en) |
+| Fund sector | 2 | AI\-led transformative tech: 11 facts\. | ^[19](https://www.draper.vc/portfolio/vermeer),[20](https://www.getvermeer.com/),[41](https://vermeer.homerun.co/),[42](https://vermeer.homerun.co/?lang=en) |
 | Geography | 1 | US |  |
 | Round vs ticket | 1 | Closed round: 10M USD \(Series A\) ≈ €9\.1m, converted at approximate fixed rates \(25 CZK/EUR, 1\.10 USD/EUR\)\. The round is larger than the fund's initial ticket \(€0\.5m–€2m\)\. A round is the total from all investors, so the fund would be one investor in a syndicate, as lead or participant\. | ^[16](https://cc.cz/z-hollywoodskych-studii-na-ukrajinskou-frontu-pomahaji-dronum-a-nabiraji-pres-200-milionu/),[4](https://scroll.media/en/2025/10/23/vermeer-raises-10m),[17](https://vestbee.com/insights/articles/vermeer-raises-funds),[5](https://www.getvermeer.com/news) |
 | Traction | 0–2 (open) | Revenue not published and no paid sales visible in public records\. |  |
 | Financial position | 0–2 (open) | Filed accounts not read\. |  |
 | Technology evidence | 1 | papers or published models\. |  |
-| Claims checked | 1 | Checks: 1 not found\. | ^[15](https://patents.google.com/?assignee=vermeer) |
+| Claims checked | 1 | Checks: 1 confirmed, 1 not found\. | ^[39](https://openalex.org/W1975506997),[15](https://patents.google.com/?assignee=vermeer) |
 
 - **Flag:** Possible overlap with portfolio company URC Systems, spol\. s r\.o\.: compare product and buyer before a call\.
 - **Flag:** Possible overlap with portfolio company JISR Institute, a\.s\.: compare product and buyer before a call\.
@@ -161,8 +161,10 @@ No sourced findings for this section.
 36. [getvermeer\.com](https://www.getvermeer.com/) · Public technical artifact · Technology detected
 37. [github\.com](https://github.com/AeroboDrones) · Public technical artifact · GitHub organisation · 2017\-10\-02 — “AeroboDrones · 3 public repos”
 38. [getvermeer\.com](https://www.getvermeer.com/) · Company's own website · Technical claim — “Our solution enables any aerial platform to determine its absolute location in contested, spoofed, and GPS\-denied environments\.”
-39. [vermeer\.homerun\.co](https://vermeer.homerun.co/) · Independent press · Technical claim — “Vermeer, we’re developing next\-generation visual navigation systems that power autonomous flight in the world’s most challenging environments\.”
-40. [vermeer\.homerun\.co](https://vermeer.homerun.co/?lang=en) · Independent press · Technical claim — “Vermeer, we’re developing next\-generation visual navigation systems that power autonomous flight in the world’s most challenging environments\.”
+39. [openalex\.org](https://openalex.org/W1975506997) · Public technical artifact · Independent check of a claim — “Own ML work visible: 10 papers\.”
+40. [mzv\.gov\.cz](https://mzv.gov.cz/file/6248997/Vnitrostatni_sankcni_seznam_2026_07_23.csv) · Official record · sanctions check · 2026\-11\-25
+41. [vermeer\.homerun\.co](https://vermeer.homerun.co/) · Independent press · Technical claim — “Vermeer, we’re developing next\-generation visual navigation systems that power autonomous flight in the world’s most challenging environments\.”
+42. [vermeer\.homerun\.co](https://vermeer.homerun.co/?lang=en) · Independent press · Technical claim — “Vermeer, we’re developing next\-generation visual navigation systems that power autonomous flight in the world’s most challenging environments\.”
 
 ## How this dossier was built
 
@@ -290,3 +292,6 @@ Analysis: gpt\-5\-mini (cost $0.0167); AI extraction cost $0.0108. Full fact tab
 - F7821 · source\_unavailable · Unavailable · [https://www\.hlidacstatu\.cz/hledat](https://www.hlidacstatu.cz/hledat)
 - F7822 · source\_check · Checked · no results · [https://cordis\.europa\.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27Vermeer%27](https://cordis.europa.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27Vermeer%27)
 - F7823 · source\_unavailable · Unavailable · [https://starfos\.tacr\.cz](https://starfos.tacr.cz)
+- F8374 · verification · Sourced · [https://openalex\.org/W1975506997](https://openalex.org/W1975506997)
+- F9013 · source\_unavailable · Unavailable · [https://webgate\.ec\.europa\.eu/fsd/fsf/public/files/csvFullSanctionsList\_1\_1/content?token=dG9rZW4tMjAxNw](https://webgate.ec.europa.eu/fsd/fsf/public/files/csvFullSanctionsList_1_1/content?token=dG9rZW4tMjAxNw)
+- F9014 · sanctions\_check · Sourced · [https://mzv\.gov\.cz/file/6248997/Vnitrostatni\_sankcni\_seznam\_2026\_07\_23\.csv](https://mzv.gov.cz/file/6248997/Vnitrostatni_sankcni_seznam_2026_07_23.csv)

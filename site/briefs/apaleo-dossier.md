@@ -6,28 +6,27 @@ apaleo\.com · DE · 2026\-11\-20
 
 ## Scorecard (computed by code, no LLM)
 
-**4–12 of 14: Open: needs 4 more point\(s\) from round vs ticket, traction, financial position, claims checked** (bar 8; open points count 0 at the low end and 2 at the high end)
+**6–12 of 14: Open: needs 2 more point\(s\) from round vs ticket, traction, financial position** (bar 8; open points count 0 at the low end and 2 at the high end)
 
 | Criterion | Points | What the records show | Sources |
 |---|---|---|---|
-| Fund sector | 1 | AI\-led transformative tech: 6 facts\. | ^[17](https://techround.co.uk/interviews/stephan-wiesener-founder-at-apaleo/),[18](https://themodernhotelier.com/episode/296),[1](https://apaleo.com/),[51](https://apaleo.com/) |
+| Fund sector | 1 | AI\-led transformative tech: 6 facts\. | ^[17](https://techround.co.uk/interviews/stephan-wiesener-founder-at-apaleo/),[18](https://themodernhotelier.com/episode/296),[1](https://apaleo.com/),[57](https://apaleo.com/) |
 | Geography | 2 | DE \(core region\) |  |
 | Round vs ticket | 0–2 (open) | Last reported round: 20M EUR growth equity \(2024\-11\)\. No current round is reported\. | ^[14](https://www.privateequityinternational.com/psg-leads-growth-equity-funding-round-in-apaleo),[5](https://finance.yahoo.com/news/apaleo-secures-21m-funding-fuel-145553468.html),[15](https://hengeler-news.com/en/articles/hengeler-mueller-advises-psg-equity-on-investment-in-apaleo),[16](https://www.serpentine.vc/blog/apaleo-secures-20m-growth-equity-to-accelerate-global-expansion/) |
 | Traction | 0–2 (open) | Revenue not published and no paid sales visible in public records\. |  |
 | Financial position | 0–2 (open) | Filed accounts not read\. |  |
 | Technology evidence | 1 | papers or published models\. |  |
-| Claims checked | 0–2 (open) | No company claim could be checked against an independent source\. |  |
+| Claims checked | 2 | Checks: 1 confirmed\. | ^[51](https://openalex.org/W7160130889) |
 
 - **Flag:** Possible overlap with portfolio company JISR Institute, a\.s\.: compare product and buyer before a call\.
 - How much are you raising, on what terms, and who else is in the round?
 - What was revenue last year and this year so far, and from how many paying customers?
 - What is the cash position and monthly burn, and how many months of runway is that?
-- Which customers and partners can we call as references?
 - Team and founders: public records cannot judge them; assess them first on the call\.
 
 ## TL;DR
 
-- **Product.** API\-first, AI\-powered property management platform selling SaaS PMS and developer APIs to hotel and serviced\-apartment operators\. *(Company claim)* ^[1](https://apaleo.com/),[2](https://apaleo.com/about-us),[3](https://apaleo.com/api-terms-of-use)
+- **Product.** API\-first, AI\-powered property management platform selling SaaS PMS and developer APIs to hotel and serviced\-apartment operators\. *(Partly verified)* ^[1](https://apaleo.com/),[2](https://apaleo.com/about-us),[3](https://apaleo.com/api-terms-of-use)
 - **Stage & traction.** Evidence of growth\-stage traction: reported Series A and a later €20M growth equity round led by PSG; press claims \~85k units, 1,700 properties\. *(Corroborated)* ^[4](https://www.bakertilly.de/beitrag/baker-tilly-begleitet-rockaway-ventures-und-serpentine-ventures-bei-investition-in-offene-hospitality-plattform-apaleo),[5](https://finance.yahoo.com/news/apaleo-secures-21m-funding-fuel-145553468.html),[6](https://hengeler-news.com/en/articles/hengeler-mueller-advises-psg-equity-on-investment-in-apaleo)
 - **Technology & moat.** Potential moat: open API ecosystem plus claimed MCP Server \(Model Context Protocol\) that exposes live property data to agents; public repos and API docs support platform openness\. *(Partly verified)* ^[2](https://apaleo.com/about-us),[7](https://apaleo.com/ai-powered-pms-solution),[8](https://github.com/apaleo/gsheet-addon),[9](https://apaleo.com/api-terms-of-use)
 - **Key risk.** Key decision risk: AI/legal/compliance exposure — product relies on third‑party LLM vendors \(Anthropic, OpenAI\) while SOC2/compliance claims are not independently verifiable from public pages\. *(Analyst view)* ^[10](https://apaleo.com/dpa),[11](https://apaleo.com/dpa),[12](https://apaleo.com/)
@@ -165,7 +164,13 @@ No sourced findings for this section.
 48. [apaleo\.com](https://apaleo.com/) · Public technical artifact · Technology detected
 49. [status\.apaleo\.com](https://status.apaleo.com/) · Company's own website · Technical claim — “Some API request to distribution\.apaleo\.com are failing”
 50. [status\.apaleo\.com](https://status.apaleo.com/) · Company's own website · Technical claim — “We are awaiting resolution from a third\-party service sandbox environment that is down\.”
-51. [apaleo\.com](https://apaleo.com/) · Company's own website · Product capability — “With Apaleo’s open and AI\-powered PMS, you design the guest journey your way, integrating best\-in\-class apps and autonomous AI agents that adapt to every stay\.”
+51. [openalex\.org](https://openalex.org/W7160130889) · Public technical artifact · Independent check of a claim — “Own ML work visible: 1 papers; 1 ML job posts\.”
+52. [web\.archive\.org](https://web.archive.org/web/20230130232607/https://www.apaleo.com/careers) · Public technical artifact · hiring snapshot · 2023\-01\-30
+53. [web\.archive\.org](https://web.archive.org/web/20240326090838/https://www.apaleo.com/careers) · Public technical artifact · hiring snapshot · 2024\-03\-26
+54. [web\.archive\.org](https://web.archive.org/web/20250309055524/https://apaleo.com/careers) · Public technical artifact · hiring snapshot · 2025\-03\-09
+55. [boards\-api\.greenhouse\.io](https://boards-api.greenhouse.io/v1/boards/apaleo/jobs) · Company's own website · hiring snapshot · 2026\-11\-25
+56. [mzv\.gov\.cz](https://mzv.gov.cz/file/6248997/Vnitrostatni_sankcni_seznam_2026_07_23.csv) · Official record · sanctions check · 2026\-11\-25
+57. [apaleo\.com](https://apaleo.com/) · Company's own website · Product capability — “With Apaleo’s open and AI\-powered PMS, you design the guest journey your way, integrating best\-in\-class apps and autonomous AI agents that adapt to every stay\.”
 
 ## How this dossier was built
 
@@ -388,3 +393,10 @@ Analysis: gpt\-5\-mini (cost $0.0151); AI extraction cost $0.0075. Full fact tab
 - F7686 · source\_unavailable · Unavailable · [https://www\.hlidacstatu\.cz/hledat](https://www.hlidacstatu.cz/hledat)
 - F7687 · source\_check · Checked · no results · [https://cordis\.europa\.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27Apaleo%27](https://cordis.europa.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27Apaleo%27)
 - F7688 · source\_unavailable · Unavailable · [https://starfos\.tacr\.cz](https://starfos.tacr.cz)
+- F8376 · verification · Sourced · [https://openalex\.org/W7160130889](https://openalex.org/W7160130889)
+- F9017 · source\_unavailable · Unavailable · [https://webgate\.ec\.europa\.eu/fsd/fsf/public/files/csvFullSanctionsList\_1\_1/content?token=dG9rZW4tMjAxNw](https://webgate.ec.europa.eu/fsd/fsf/public/files/csvFullSanctionsList_1_1/content?token=dG9rZW4tMjAxNw)
+- F9018 · sanctions\_check · Sourced · [https://mzv\.gov\.cz/file/6248997/Vnitrostatni\_sankcni\_seznam\_2026\_07\_23\.csv](https://mzv.gov.cz/file/6248997/Vnitrostatni_sankcni_seznam_2026_07_23.csv)
+- F9052 · hiring\_snapshot · Sourced · [https://boards\-api\.greenhouse\.io/v1/boards/apaleo/jobs](https://boards-api.greenhouse.io/v1/boards/apaleo/jobs)
+- F9053 · hiring\_snapshot · Sourced · [https://web\.archive\.org/web/20230130232607/https://www\.apaleo\.com/careers](https://web.archive.org/web/20230130232607/https://www.apaleo.com/careers)
+- F9054 · hiring\_snapshot · Sourced · [https://web\.archive\.org/web/20240326090838/https://www\.apaleo\.com/careers](https://web.archive.org/web/20240326090838/https://www.apaleo.com/careers)
+- F9055 · hiring\_snapshot · Sourced · [https://web\.archive\.org/web/20250309055524/https://apaleo\.com/careers](https://web.archive.org/web/20250309055524/https://apaleo.com/careers)

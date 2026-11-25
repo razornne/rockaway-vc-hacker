@@ -20,12 +20,28 @@ cruxo\.io · CRUXO group s\.r\.o\. · IČO 14134683 · CZ · 2026\-11\-20
 
 - **Flag:** Possible overlap with portfolio company Gjirafa: compare product and buyer before a call\.
 - **Flag:** Possible overlap with portfolio company Samba\.ai: compare product and buyer before a call\.
+- **Flag:** Jan Galgonek holds 8 other active executive roles in Czech companies: ask how much time goes to this company\.
+- **Flag:** Jiří Manda holds 3 other active executive roles in Czech companies: ask how much time goes to this company\.
 - How much are you raising, on what terms, and who else is in the round?
 - What was revenue last year and this year so far, and from how many paying customers?
 - What is the cash position and monthly burn, and how many months of runway is that?
 - Can we see the product and the code, and who built the core technology?
 - Ask for evidence behind the claims that could not be confirmed\.
 - Team and founders: public records cannot judge them; assess them first on the call\.
+
+## People and background (Czech business register, ISIR; computed by code)
+
+| Person | Role here | Other active roles | Earlier roles and how they ended | Insolvency | Sources |
+|---|---|---|---|---|---|
+| Hana Pavlíková | jednatel 2024; shareholder \(17%\) 2024 | none in s\.r\.o\. or a\.s\. | CeWe Color, a\. s\. \(člen představenstva, 2022–2022\) | 0 proceeding(s) | ^[54](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683),[55](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=49241338),[56](https://isir.justice.cz/isir/common/index.do) |
+| Jakub Špryngl | shareholder \(10%\) 2024 | Walter Square Consulting s\.r\.o\. \(Jednatel\); Walter Square Consulting s\.r\.o\. \(shareholder\); TORUS Pb s\.r\.o\. \(shareholder\) | Merito Consulting s\.r\.o\. v likvidaci \(jednatel, 2015–2016\): liquidation; Merito Consulting s\.r\.o\. v likvidaci \(shareholder, 2015–2018\): liquidation; Fidesa \- osoba rizikového kapitálu, s\.r\.o\. \(Jednatel, 2024–2026\) | 0 proceeding(s) | ^[57](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683),[58](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=04490568),[59](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=04490568),[60](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=19754523),[61](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=19754523),[62](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=05601827),[63](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=05601827),[64](https://isir.justice.cz/isir/common/index.do) |
+| Jan Galgonek | shareholder \(17%\) 2023 | Availab\.io s\.r\.o\. \(jednatel\); Availab\.io s\.r\.o\. \(shareholder\); INBORN, s\.r\.o\. \(jednatel\); INBORN, s\.r\.o\. \(shareholder\) | WOODZ s\.r\.o\. \(shareholder, 2018–2022\); Intelligence Lab s\.r\.o\. \(jednatel, 2022–2022\); Intelligence Lab s\.r\.o\. \(shareholder, 2022–2022\) | 0 proceeding(s) | ^[65](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683),[66](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=24288306),[67](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=24288306),[68](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=04204751),[69](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=04204751),[70](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=24193488),[71](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=24193488),[72](https://isir.justice.cz/isir/common/index.do) |
+| Jiří Manda | shareholder \(3%\) 2026 | JobLink s\.r\.o\. \(jednatel\); JobLink s\.r\.o\. \(shareholder\); tutocode s\.r\.o\. \(jednatel\); tutocode s\.r\.o\. \(shareholder\) | LinkSoft Technologies a\.s\. \(předseda správní rady, 2017–2018\); LinkSoft Technologies a\.s\. \(sole shareholder, 2017–2018\); LinkSoft International s\.r\.o\. \(Jednatel, 2019–2021\) | 0 proceeding(s) | ^[73](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683),[74](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=27622258),[75](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=27622258),[76](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=28465822),[77](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=28465822),[78](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=06612008),[79](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=06612008),[80](https://isir.justice.cz/isir/common/index.do) |
+| Matěj Novák | shareholder \(4%\) 2026 | none in s\.r\.o\. or a\.s\. |  | 0 proceeding(s) | ^[81](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683),[82](https://isir.justice.cz/isir/common/index.do) |
+| Michal Trunkát | jednatel 2022; shareholder \(21%\) 2022 | Huxley s\.r\.o\. \(jednatel\); Huxley s\.r\.o\. \(shareholder\) | printhauz, s\.r\.o\. \(Jednatel, 2021–2021\); printhauz, s\.r\.o\. \(shareholder, 2021–2022\); WOODZ s\.r\.o\. \(jednatel, 2018–2022\) | 0 proceeding(s) | ^[83](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683),[84](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=07416059),[85](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=07416059),[86](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=09036385),[87](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=09036385),[88](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=10931848),[89](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=10931848),[90](https://isir.justice.cz/isir/common/index.do) |
+| Petr Bena | shareholder \(2%\) 2026 | Alza\.cz a\.s\. \(Místopředseda představenstva\); PB C&amp;M s\.r\.o\. \(Jednatel\); PB C&amp;M s\.r\.o\. \(shareholder\) |  | 0 proceeding(s) | ^[91](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683),[92](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=27082440),[93](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=21489378),[94](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=21489378),[95](https://isir.justice.cz/isir/common/index.do) |
+| Martin Švarc | shareholder \(12%\) 2023–2024 | The us s\.r\.o\. \(jednatel\); The us s\.r\.o\. \(shareholder\) |  | 0 proceeding(s) | ^[96](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683),[97](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=08957959),[98](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=08957959),[99](https://isir.justice.cz/isir/common/index.do) |
+| Petr Pavlík | shareholder \(20%\) 2022–2024 | OLIVE obchodní s\.r\.o\. \(jednatel\); OLIVE obchodní s\.r\.o\. \(shareholder\); BIO farma Těmice, s\.r\.o\. \(shareholder\) | Albert Česká republika, s\.r\.o\. \(Jednatel, 2025–2026\): insolvency register entries \(2012\); Procter &amp; Gamble Czech Republic s\.r\.o\. \(jednatel, 2003–2005\); STOCK Plzeň\-Božkov s\.r\.o\. \(jednatel, 2009–2014\) | 0 proceeding(s) | ^[100](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683),[101](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=27086721),[102](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=27904636),[103](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=03159841),[104](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=03159841),[105](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=03024130),[106](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=61326585),[107](https://isir.justice.cz/isir/common/index.do) |
 
 ## TL;DR
 
@@ -182,6 +198,69 @@ No sourced findings for this section.
 51. [rockawayventures\.com](https://rockawayventures.com/cruxo-revolutionizes-supplier-advertising-on-e-commerce-platforms-boosts-e-shop-profits-across-6-countries-and-secures-a-new-czk-15-million-investment/) · Independent press · Customer — “The platform has customers in 6 countries, supports multiple languages”
 52. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683) · Official record · Independent check of a claim · 2026\-08\-24 — “Press \(cc\.cz, rockawayventures\.com\) names Rockaway Ventures as an investor; the commercial register lists Rockaway Ventures Fund SCSp as a shareholder from 2026\-08\-24 \(3\.85%\)\.”
 53. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683) · Official record · Independent check of a claim · 2026\-08\-24 — “Press \(borovan\.cz, cc\.cz, mediaguru\.cz, mediar\.cz\) names Zaka as an investor; the commercial register lists ZAKA Startup 18 j\. s\. a\. as a shareholder from 2026\-08\-24 \(3\.55%\)\.”
+54. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683) · Official record · person — “Hana Pavlíková”
+55. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=49241338) · Official record · person role elsewhere · 2022\-08\-25
+56. [isir\.justice\.cz](https://isir.justice.cz/isir/common/index.do) · Official record · person insolvency · 2026\-11\-25
+57. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683) · Official record · person — “Jakub Špryngl”
+58. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=04490568) · Official record · person role elsewhere · 2015\-10\-16
+59. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=04490568) · Official record · person role elsewhere · 2015\-10\-16
+60. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=19754523) · Official record · person role elsewhere · 2023\-09\-25
+61. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=19754523) · Official record · person role elsewhere · 2023\-09\-25
+62. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=05601827) · Official record · person role elsewhere · 2024\-04\-10
+63. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=05601827) · Official record · person role elsewhere · 2024\-04\-10
+64. [isir\.justice\.cz](https://isir.justice.cz/isir/common/index.do) · Official record · person insolvency · 2026\-11\-25
+65. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683) · Official record · person — “Jan Galgonek”
+66. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=24288306) · Official record · person role elsewhere · 2012\-11\-12
+67. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=24288306) · Official record · person role elsewhere · 2013\-01\-31
+68. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=04204751) · Official record · person role elsewhere · 2015\-07\-09
+69. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=04204751) · Official record · person role elsewhere · 2015\-07\-23
+70. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=24193488) · Official record · person role elsewhere · 2016\-09\-16
+71. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=24193488) · Official record · person role elsewhere · 2016\-09\-23
+72. [isir\.justice\.cz](https://isir.justice.cz/isir/common/index.do) · Official record · person insolvency · 2026\-11\-25
+73. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683) · Official record · person — “Jiří Manda”
+74. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=27622258) · Official record · person role elsewhere · 2006\-11\-30
+75. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=27622258) · Official record · person role elsewhere · 2006\-11\-30
+76. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=28465822) · Official record · person role elsewhere · 2008\-09\-25
+77. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=28465822) · Official record · person role elsewhere · 2008\-09\-25
+78. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=06612008) · Official record · person role elsewhere · 2017\-11\-20
+79. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=06612008) · Official record · person role elsewhere · 2017\-11\-20
+80. [isir\.justice\.cz](https://isir.justice.cz/isir/common/index.do) · Official record · person insolvency · 2026\-11\-25
+81. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683) · Official record · person — “Matěj Novák”
+82. [isir\.justice\.cz](https://isir.justice.cz/isir/common/index.do) · Official record · person insolvency · 2026\-11\-25
+83. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683) · Official record · person — “Michal Trunkát”
+84. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=07416059) · Official record · person role elsewhere · 2018\-08\-30
+85. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=07416059) · Official record · person role elsewhere · 2018\-08\-30
+86. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=09036385) · Official record · person role elsewhere · 2020\-03\-11
+87. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=09036385) · Official record · person role elsewhere · 2020\-03\-11
+88. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=10931848) · Official record · person role elsewhere · 2021\-06\-08
+89. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=10931848) · Official record · person role elsewhere · 2021\-06\-08
+90. [isir\.justice\.cz](https://isir.justice.cz/isir/common/index.do) · Official record · person insolvency · 2026\-11\-25
+91. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683) · Official record · person — “Petr Bena”
+92. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=27082440) · Official record · person role elsewhere · 2020\-06\-17
+93. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=21489378) · Official record · person role elsewhere · 2024\-04\-18
+94. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=21489378) · Official record · person role elsewhere · 2024\-04\-18
+95. [isir\.justice\.cz](https://isir.justice.cz/isir/common/index.do) · Official record · person insolvency · 2026\-11\-25
+96. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683) · Official record · person — “Martin Švarc”
+97. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=08957959) · Official record · person role elsewhere · 2020\-02\-17
+98. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=08957959) · Official record · person role elsewhere · 2020\-02\-17
+99. [isir\.justice\.cz](https://isir.justice.cz/isir/common/index.do) · Official record · person insolvency · 2026\-11\-25
+100. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683) · Official record · person — “Petr Pavlík”
+101. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=27086721) · Official record · person role elsewhere · 2003\-09\-10
+102. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=27904636) · Official record · person role elsewhere · 2009\-09\-21
+103. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=03159841) · Official record · person role elsewhere · 2015\-02\-16
+104. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=03159841) · Official record · person role elsewhere · 2015\-03\-02
+105. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=03024130) · Official record · person role elsewhere · 2020\-11\-20
+106. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=61326585) · Official record · person role elsewhere · 2021\-05\-11
+107. [isir\.justice\.cz](https://isir.justice.cz/isir/common/index.do) · Official record · person insolvency · 2026\-11\-25
+108. [adisspr\.mfcr\.cz](https://adisspr.mfcr.cz/dpr/DphReg) · Independent press · vat status · 2026\-11\-25
+109. [adisspr\.mfcr\.cz](https://adisspr.mfcr.cz/dpr/DphReg) · Independent press · vat status · 2026\-11\-25
+110. [adisspr\.mfcr\.cz](https://adisspr.mfcr.cz/dpr/DphReg) · Independent press · vat status · 2026\-11\-25
+111. [adisspr\.mfcr\.cz](https://adisspr.mfcr.cz/dpr/DphReg) · Independent press · vat status · 2026\-11\-25
+112. [adisspr\.mfcr\.cz](https://adisspr.mfcr.cz/dpr/DphReg) · Independent press · vat status · 2026\-11\-25
+113. [adisspr\.mfcr\.cz](https://adisspr.mfcr.cz/dpr/DphReg) · Independent press · vat status · 2026\-11\-25
+114. [adisspr\.mfcr\.cz](https://adisspr.mfcr.cz/dpr/DphReg) · Independent press · vat status · 2026\-11\-25
+115. [mzv\.gov\.cz](https://mzv.gov.cz/file/6248997/Vnitrostatni_sankcni_seznam_2026_07_23.csv) · Official record · sanctions check · 2026\-11\-25
+116. [or\.justice\.cz](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=14134683) · Official record · register status
 
 ## How this dossier was built
 
@@ -406,3 +485,99 @@ Analysis: gpt\-5\-mini (cost $0.0208); AI extraction cost $0.0105. Full fact tab
 - F7700 · grant\_national · Sourced · [https://www\.hlidacstatu\.cz/Dotace/Detail/Eufondy\-7F57C816735C39D7FE4922DFE0CA74F10EBB49C74734EB86301501AD2B63C3BC](https://www.hlidacstatu.cz/Dotace/Detail/Eufondy-7F57C816735C39D7FE4922DFE0CA74F10EBB49C74734EB86301501AD2B63C3BC)
 - F7701 · source\_check · Checked · no results · [https://cordis\.europa\.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27Cruxo%27](https://cordis.europa.eu/search/en?q=contenttype%3D%27project%27%20AND%20%27Cruxo%27)
 - F7702 · source\_unavailable · Unavailable · [https://starfos\.tacr\.cz](https://starfos.tacr.cz)
+- F8647 · person · Sourced · [https://ares\.gov\.cz/ekonomicke\-subjekty\-v\-be/rest/ekonomicke\-subjekty\-vr/14134683](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683)
+- F8648 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=49241338](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=49241338)
+- F8649 · person · Sourced · [https://ares\.gov\.cz/ekonomicke\-subjekty\-v\-be/rest/ekonomicke\-subjekty\-vr/14134683](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683)
+- F8650 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=19754523](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=19754523)
+- F8651 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=19754523](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=19754523)
+- F8652 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=27220982](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=27220982)
+- F8653 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=04490568](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=04490568)
+- F8654 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=04490568](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=04490568)
+- F8655 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=05601827](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=05601827)
+- F8656 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=05601827](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=05601827)
+- F8657 · person · Sourced · [https://ares\.gov\.cz/ekonomicke\-subjekty\-v\-be/rest/ekonomicke\-subjekty\-vr/14134683](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683)
+- F8658 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=24288306](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=24288306)
+- F8659 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=24288306](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=24288306)
+- F8660 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=24193488](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=24193488)
+- F8661 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=24193488](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=24193488)
+- F8662 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=05214378](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=05214378)
+- F8663 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=05214378](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=05214378)
+- F8664 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=08695474](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=08695474)
+- F8665 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=11983311](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=11983311)
+- F8666 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=11983311](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=11983311)
+- F8667 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=23106085](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=23106085)
+- F8668 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=23106085](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=23106085)
+- F8669 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=23749865](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=23749865)
+- F8670 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=23749865](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=23749865)
+- F8671 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=29594456](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=29594456)
+- F8672 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=29594456](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=29594456)
+- F8673 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=29604141](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=29604141)
+- F8674 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=04204751](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=04204751)
+- F8675 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=04204751](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=04204751)
+- F8676 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=07416059](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=07416059)
+- F8677 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=08695474](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=08695474)
+- F8678 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=09858636](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=09858636)
+- F8679 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=09858636](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=09858636)
+- F8680 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=22003517](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=22003517)
+- F8681 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=22003517](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=22003517)
+- F8682 · person · Sourced · [https://ares\.gov\.cz/ekonomicke\-subjekty\-v\-be/rest/ekonomicke\-subjekty\-vr/14134683](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683)
+- F8683 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=27622258](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=27622258)
+- F8684 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=27622258](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=27622258)
+- F8685 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=28465822](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=28465822)
+- F8686 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=28465822](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=28465822)
+- F8687 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=27907571](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=27907571)
+- F8688 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=24660761](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=24660761)
+- F8689 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=06612008](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=06612008)
+- F8690 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=06612008](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=06612008)
+- F8691 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=06612008](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=06612008)
+- F8692 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=07920679](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=07920679)
+- F8693 · person · Sourced · [https://ares\.gov\.cz/ekonomicke\-subjekty\-v\-be/rest/ekonomicke\-subjekty\-vr/14134683](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683)
+- F8694 · person · Sourced · [https://ares\.gov\.cz/ekonomicke\-subjekty\-v\-be/rest/ekonomicke\-subjekty\-vr/14134683](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683)
+- F8695 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=09036385](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=09036385)
+- F8696 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=09036385](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=09036385)
+- F8697 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=07416059](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=07416059)
+- F8698 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=07416059](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=07416059)
+- F8699 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=10931848](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=10931848)
+- F8700 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=10931848](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=10931848)
+- F8701 · person · Sourced · [https://ares\.gov\.cz/ekonomicke\-subjekty\-v\-be/rest/ekonomicke\-subjekty\-vr/14134683](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683)
+- F8702 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=27082440](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=27082440)
+- F8703 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=21489378](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=21489378)
+- F8704 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=21489378](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=21489378)
+- F8705 · person · Sourced · [https://ares\.gov\.cz/ekonomicke\-subjekty\-v\-be/rest/ekonomicke\-subjekty\-vr/14134683](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683)
+- F8706 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=08957959](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=08957959)
+- F8707 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=08957959](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=08957959)
+- F8708 · person · Sourced · [https://ares\.gov\.cz/ekonomicke\-subjekty\-v\-be/rest/ekonomicke\-subjekty\-vr/14134683](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683)
+- F8709 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=11879823](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=11879823)
+- F8710 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=11879823](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=11879823)
+- F8711 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=10865454](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=10865454)
+- F8712 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=27086721](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=27086721)
+- F8713 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=27904636](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=27904636)
+- F8714 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=03159841](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=03159841)
+- F8715 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=03159841](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=03159841)
+- F8716 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=03024130](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=03024130)
+- F8717 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=61326585](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=61326585)
+- F8718 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=64511936](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=64511936)
+- F8719 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=05231311](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=05231311)
+- F8720 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=11879939](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=11879939)
+- F8721 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=44012373](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=44012373)
+- F8722 · person\_role\_elsewhere · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=26484773](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=26484773)
+- F8723 · register\_status · Sourced · [https://or\.justice\.cz/ias/ui/rejstrik\-$firma?ico=14134683](https://or.justice.cz/ias/ui/rejstrik-%24firma?ico=14134683)
+- F8724 · source\_check · Checked · [https://dataor\.justice\.cz](https://dataor.justice.cz)
+- F8948 · person\_insolvency · Sourced · [https://isir\.justice\.cz/isir/common/index\.do](https://isir.justice.cz/isir/common/index.do)
+- F8949 · person\_insolvency · Sourced · [https://isir\.justice\.cz/isir/common/index\.do](https://isir.justice.cz/isir/common/index.do)
+- F8950 · person\_insolvency · Sourced · [https://isir\.justice\.cz/isir/common/index\.do](https://isir.justice.cz/isir/common/index.do)
+- F8951 · person\_insolvency · Sourced · [https://isir\.justice\.cz/isir/common/index\.do](https://isir.justice.cz/isir/common/index.do)
+- F8952 · person\_insolvency · Sourced · [https://isir\.justice\.cz/isir/common/index\.do](https://isir.justice.cz/isir/common/index.do)
+- F8953 · person\_insolvency · Sourced · [https://isir\.justice\.cz/isir/common/index\.do](https://isir.justice.cz/isir/common/index.do)
+- F8954 · person\_insolvency · Sourced · [https://isir\.justice\.cz/isir/common/index\.do](https://isir.justice.cz/isir/common/index.do)
+- F8955 · person\_insolvency · Sourced · [https://isir\.justice\.cz/isir/common/index\.do](https://isir.justice.cz/isir/common/index.do)
+- F8956 · person\_insolvency · Sourced · [https://isir\.justice\.cz/isir/common/index\.do](https://isir.justice.cz/isir/common/index.do)
+- F8957 · vat\_status · Sourced · [https://adisspr\.mfcr\.cz/dpr/DphReg](https://adisspr.mfcr.cz/dpr/DphReg)
+- F8958 · vat\_status · Sourced · [https://adisspr\.mfcr\.cz/dpr/DphReg](https://adisspr.mfcr.cz/dpr/DphReg)
+- F8959 · vat\_status · Sourced · [https://adisspr\.mfcr\.cz/dpr/DphReg](https://adisspr.mfcr.cz/dpr/DphReg)
+- F8960 · vat\_status · Sourced · [https://adisspr\.mfcr\.cz/dpr/DphReg](https://adisspr.mfcr.cz/dpr/DphReg)
+- F8961 · vat\_status · Sourced · [https://adisspr\.mfcr\.cz/dpr/DphReg](https://adisspr.mfcr.cz/dpr/DphReg)
+- F8962 · vat\_status · Sourced · [https://adisspr\.mfcr\.cz/dpr/DphReg](https://adisspr.mfcr.cz/dpr/DphReg)
+- F8963 · vat\_status · Sourced · [https://adisspr\.mfcr\.cz/dpr/DphReg](https://adisspr.mfcr.cz/dpr/DphReg)
+- F8964 · source\_unavailable · Unavailable · [https://webgate\.ec\.europa\.eu/fsd/fsf/public/files/csvFullSanctionsList\_1\_1/content?token=dG9rZW4tMjAxNw](https://webgate.ec.europa.eu/fsd/fsf/public/files/csvFullSanctionsList_1_1/content?token=dG9rZW4tMjAxNw)
+- F8965 · sanctions\_check · Sourced · [https://mzv\.gov\.cz/file/6248997/Vnitrostatni\_sankcni\_seznam\_2026\_07\_23\.csv](https://mzv.gov.cz/file/6248997/Vnitrostatni_sankcni_seznam_2026_07_23.csv)
