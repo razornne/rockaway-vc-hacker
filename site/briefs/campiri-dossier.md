@@ -26,7 +26,7 @@ campiri\.com · Campiri s\.r\.o\. · IČO 09283447 · CZ · 2026\-11\-20
 
 # Investment view
 
-*Inputs for the partner's memo, not a recommendation: what the evidence says about the business, the market, competitors and fit with the fund, and the case for and against\.*
+*Inputs for the partner's memo, not a recommendation: what the evidence says about the business, competitors and fit with the fund, and the case for and against\.*
 
 ## Fit with the Rockaway thesis
 
@@ -39,11 +39,6 @@ campiri\.com · Campiri s\.r\.o\. · IČO 09283447 · CZ · 2026\-11\-20
 
 - Primary revenue: commissioned marketplace rental business connecting motorhome owners \(private and fleets\) with renters; company markets &gt;400 vehicles and claims platform transaction volume\. *(Corroborated)* ^[36](https://www.borovan.cz/57193/skupina-rockaway-capital-investuje-do-start-upu-campiri),[7](https://techfundingnews.com/prague-based-campiri-the-airbnb-for-campers-scores-e4-64m-fueling-expansion/),[31](https://shorttermrentalz.com/news/campiri-funding-expansion/)
 - Ancillary revenue and investor products: two investor programs \(passive secured loan and purchase/revenue\-share\), plus retail voucher sales and add‑ons \(insurance, bike rental\)\. *(Partly verified)* ^[15](https://www.euro.cz/clanky/platforma-campiri-otevira-investice-do-obytnych-vozu-v-oblasti-karavaningu-chce-pokryt-tretinu-ceskeho-trhu/),[37](https://www.euro.cz/clanky/platforma-campiri-otevira-investice-do-obytnych-vozu-v-oblasti-karavaningu-chce-pokryt-tretinu-ceskeho-trhu/),[38](https://shop.campiri.com/),[11](https://cc.cz/2021/02/svobodne-cestovani-v-obytnaku-lukas-janousek-spolu-s-mitonem-spousti-sluzbu-pro-sdileni-karavanu/)
-
-## Market
-
-- Traction and demand signals: first\-year turnover reported at 20M CZK and rapid headcount growth \(6→40\), suggesting initial product\-market fit and demand growth\. *(Single source)* ^[39](https://www.startupinsider.cz/transport/pronajem-karavanu-campiri-spousti-investicni-programy-souvisejici-s-nakupem-obytnych-vozu-529038),[40](https://www.startupinsider.cz/transport/pronajem-karavanu-campiri-spousti-investicni-programy-souvisejici-s-nakupem-obytnych-vozu-529038)
-- Geographic expansion: company states active expansion into Poland, Greece and Slovakia and aims further into Central/Eastern/Southern Europe\. *(Corroborated)* ^[35](https://cc.cz/ceske-campiri-ve-velkem-rozjizdi-pronajem-karavanu-po-evrope-115-milionu-mu-posila-rockaway-i-miton/),[41](https://techfundingnews.com/prague-based-campiri-the-airbnb-for-campers-scores-e4-64m-fueling-expansion/)
 
 ## Competition
 
@@ -70,18 +65,18 @@ No sourced findings for this section.
 
 - Press and filings report equity/debt financings: €4\.64M total reported funding round \(2022\) and a 32M CZK debt tranche for fleet purchase\. *(Corroborated)* ^[4](https://shorttermrentalz.com/news/campiri-funding-expansion/),[14](https://cc.cz/ceske-campiri-ve-velkem-rozjizdi-pronajem-karavanu-po-evrope-115-milionu-mu-posila-rockaway-i-miton/)
   - Assumption: Press summaries reflect aggregated rounds\.
-- Registry shows named shareholders and changes: MITON Happy Campers s\.r\.o\. registered 17\.04% \(from 2022\-05\-04\) and Rockaway Ventures Fund SCSp at \~11\.16% \(from 2023\-11\-09\)\. *(Verified)* ^[42](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/09283447),[23](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/09283447)
+- Registry shows named shareholders and changes: MITON Happy Campers s\.r\.o\. registered 17\.04% \(from 2022\-05\-04\) and Rockaway Ventures Fund SCSp at \~11\.16% \(from 2023\-11\-09\)\. *(Verified)* ^[40](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/09283447),[23](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/09283447)
   - Assumption: Registry snapshots reflect ownership at those dates\.
 - Later registry entries include FWC \- FreewayCamper GmbH recorded as a shareholder \(100% at 2024\-05\-14 in the dataset\)\. *(Verified)* ^[34](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/09283447)
   - Assumption: Registry filing correctly records share transfers\.
 
 ## Technology profile
 
-- Product capabilities \(company claims\): marketplace with dynamic pricing, add‑ons, vouchers, reservation guarantees, cancellation/damage insurance and investor service programs\. *(Partly verified)* ^[11](https://cc.cz/2021/02/svobodne-cestovani-v-obytnaku-lukas-janousek-spolu-s-mitonem-spousti-sluzbu-pro-sdileni-karavanu/),[38](https://shop.campiri.com/),[9](https://www.campiri.com/cs-cz),[43](https://www.campiri.com/cs-cz),[15](https://www.euro.cz/clanky/platforma-campiri-otevira-investice-do-obytnych-vozu-v-oblasti-karavaningu-chce-pokryt-tretinu-ceskeho-trhu/)
+- Product capabilities \(company claims\): marketplace with dynamic pricing, add‑ons, vouchers, reservation guarantees, cancellation/damage insurance and investor service programs\. *(Partly verified)* ^[11](https://cc.cz/2021/02/svobodne-cestovani-v-obytnaku-lukas-janousek-spolu-s-mitonem-spousti-sluzbu-pro-sdileni-karavanu/),[38](https://shop.campiri.com/),[9](https://www.campiri.com/cs-cz),[41](https://www.campiri.com/cs-cz),[15](https://www.euro.cz/clanky/platforma-campiri-otevira-investice-do-obytnych-vozu-v-oblasti-karavaningu-chce-pokryt-tretinu-ceskeho-trhu/)
   - Assumption: Site and press reflect live product features\.
 - Engineering footprint: public web surfaces and staging API subdomains \(docs\.campiri\.com, api\.staging\.campiri\.com\) and public evidence of Next\.js on the site\. *(Verified)* ^[27](https://crt.sh/?q=%25.campiri.com&output=json),[28](https://crt.sh/?q=%25.campiri.com&output=json),[12](https://www.campiri.com/cs-cz)
   - Assumption: Subdomains indicate deployed web services\.
-- Team / hiring: company claims rapid growth \(6→40 employees\) and plans to recruit senior staff to support expansion and product development\. *(Corroborated)* ^[40](https://www.startupinsider.cz/transport/pronajem-karavanu-campiri-spousti-investicni-programy-souvisejici-s-nakupem-obytnych-vozu-529038),[44](https://www.euro.cz/clanky/platforma-campiri-otevira-investice-do-obytnych-vozu-v-oblasti-karavaningu-chce-pokryt-tretinu-ceskeho-trhu/),[33](https://itkey.media/motorhome-rental-company-campiri-raises-e4-64-million-for-further-expansion)
+- Team / hiring: company claims rapid growth \(6→40 employees\) and plans to recruit senior staff to support expansion and product development\. *(Corroborated)* ^[42](https://www.startupinsider.cz/transport/pronajem-karavanu-campiri-spousti-investicni-programy-souvisejici-s-nakupem-obytnych-vozu-529038),[43](https://www.euro.cz/clanky/platforma-campiri-otevira-investice-do-obytnych-vozu-v-oblasti-karavaningu-chce-pokryt-tretinu-ceskeho-trhu/),[33](https://itkey.media/motorhome-rental-company-campiri-raises-e4-64-million-for-further-expansion)
   - Assumption: Press staff claims reflect recent hiring\.
 
 ## What could be rebuilt, and what cannot be judged from outside
@@ -99,14 +94,14 @@ No sourced findings for this section.
   - Assumption: Guarantees may be contractually binding\.
 - Fleet financing concentration: a reported 32M CZK debt tranche earmarked for fleet purchase creates leverage tied to vehicle utilization and residual values\. *(Analyst view)* ^[14](https://cc.cz/ceske-campiri-ve-velkem-rozjizdi-pronajem-karavanu-po-evrope-115-milionu-mu-posila-rockaway-i-miton/)
   - Assumption: Debt service depends on operational cashflow\.
-- Inconsistent fleet claims in public sources \(400 vs 600\+ listings and 25 owned vehicles\) require reconciliation before sizing TAM and revenue forecasts\. *(Analyst view)* ^[7](https://techfundingnews.com/prague-based-campiri-the-airbnb-for-campers-scores-e4-64m-fueling-expansion/),[45](https://www.campiri.com/cs-cz),[8](https://cc.cz/ceske-campiri-ve-velkem-rozjizdi-pronajem-karavanu-po-evrope-115-milionu-mu-posila-rockaway-i-miton/)
+- Inconsistent fleet claims in public sources \(400 vs 600\+ listings and 25 owned vehicles\) require reconciliation before sizing TAM and revenue forecasts\. *(Analyst view)* ^[7](https://techfundingnews.com/prague-based-campiri-the-airbnb-for-campers-scores-e4-64m-fueling-expansion/),[44](https://www.campiri.com/cs-cz),[8](https://cc.cz/ceske-campiri-ve-velkem-rozjizdi-pronajem-karavanu-po-evrope-115-milionu-mu-posila-rockaway-i-miton/)
   - Assumption: Public numbers mix owned and marketplace inventory\.
 
 ## Questions for founders
 
 - Please provide audited unit economics and fleet utilization metrics underpinning the 6–8% guaranteed investor return claim\. *(Analyst view)* ^[13](https://www.euro.cz/clanky/platforma-campiri-otevira-investice-do-obytnych-vozu-v-oblasti-karavaningu-chce-pokryt-tretinu-ceskeho-trhu/),[14](https://cc.cz/ceske-campiri-ve-velkem-rozjizdi-pronajem-karavanu-po-evrope-115-milionu-mu-posila-rockaway-i-miton/)
   - Assumption: Guarantee economics are material to valuation\.
-- Clarify current effective fleet: reconcile 400–600\+ marketplace listings versus the stated owned fleet of 25 and show revenue per vehicle\. *(Analyst view)* ^[7](https://techfundingnews.com/prague-based-campiri-the-airbnb-for-campers-scores-e4-64m-fueling-expansion/),[45](https://www.campiri.com/cs-cz),[8](https://cc.cz/ceske-campiri-ve-velkem-rozjizdi-pronajem-karavanu-po-evrope-115-milionu-mu-posila-rockaway-i-miton/)
+- Clarify current effective fleet: reconcile 400–600\+ marketplace listings versus the stated owned fleet of 25 and show revenue per vehicle\. *(Analyst view)* ^[7](https://techfundingnews.com/prague-based-campiri-the-airbnb-for-campers-scores-e4-64m-fueling-expansion/),[44](https://www.campiri.com/cs-cz),[8](https://cc.cz/ceske-campiri-ve-velkem-rozjizdi-pronajem-karavanu-po-evrope-115-milionu-mu-posila-rockaway-i-miton/)
   - Assumption: Accurate fleet sizing materially affects growth plan\.
 - Share debt documentation and covenants for the 32M CZK financing and any other secured obligations affecting cash runway\. *(Analyst view)* ^[14](https://cc.cz/ceske-campiri-ve-velkem-rozjizdi-pronajem-karavanu-po-evrope-115-milionu-mu-posila-rockaway-i-miton/)
   - Assumption: Debt terms could constrain strategy\.
@@ -154,14 +149,13 @@ No sourced findings for this section.
 37. [euro\.cz](https://www.euro.cz/clanky/platforma-campiri-otevira-investice-do-obytnych-vozu-v-oblasti-karavaningu-chce-pokryt-tretinu-ceskeho-trhu/) · Independent press · Product capability — “První je čistě pasivní půjčka zajištěná obytným vozem s atraktivním pevným výnosem z úroku, druhá je chytrý nákup obytného vozu \.”
 38. [shop\.campiri\.com](https://shop.campiri.com/) · Company's own website · Product capability — “Dárkový voucher na pronájem karavanu 3 000 Kč”
 39. [startupinsider\.cz](https://www.startupinsider.cz/transport/pronajem-karavanu-campiri-spousti-investicni-programy-souvisejici-s-nakupem-obytnych-vozu-529038) · Independent press · Technical claim — “Platforma Campiri dosáhla první rok od svého spuštění obratu 20 milionů korun”
-40. [startupinsider\.cz](https://www.startupinsider.cz/transport/pronajem-karavanu-campiri-spousti-investicni-programy-souvisejici-s-nakupem-obytnych-vozu-529038) · Independent press · Team claim — “rozšířila se z původních šesti zaměstnanců na současných čtyřicet”
-41. [techfundingnews\.com](https://techfundingnews.com/prague-based-campiri-the-airbnb-for-campers-scores-e4-64m-fueling-expansion/) · Independent press · Funding round — “The majority of the funding is going to support our expansion and recruitment of senior staff\. While we see great potential in Central Europe, we also see Eastern and Southern Europe as huge opportunities, and we believe it is the ideal time to enter these markets\.”
-42. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/09283447) · Official record · Registry: shareholder · 2022\-05\-04 — “MITON Happy Campers s\.r\.o\. · 17\.04% · from 2022\-05\-04 · to 2024\-05\-14”
-43. [campiri\.com](https://www.campiri.com/cs-cz) · Company's own website · Product capability — “Pojištění storna a poškození”
-44. [euro\.cz](https://www.euro.cz/clanky/platforma-campiri-otevira-investice-do-obytnych-vozu-v-oblasti-karavaningu-chce-pokryt-tretinu-ceskeho-trhu/) · Independent press · Team claim — “Ambice startupu, který za rok vyrostl z šesti členů na tým čtyřiceti lidí”
-45. [campiri\.com](https://www.campiri.com/cs-cz) · Company's own website · Product capability — “Vybírejte ze 600\+ ověřených obytných vozů s garancemi Campiri\.”
-46. [startupinsider\.cz](https://www.startupinsider.cz/transport/pronajem-karavanu-campiri-spousti-investicni-programy-souvisejici-s-nakupem-obytnych-vozu-529038) · Independent press · Funding round — “Investor startupu poskytne finance ve výši jednoho až dvou milionů korun na nákup nového obytného vozu s garantovaným ročním výnosem 6–8 %\.”
-47. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/09283447) · Official record · Registry: identity · 2020\-06\-26 — “Campiri s\.r\.o\. · s\.r\.o\. · registered 2020\-06\-26”
+40. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/09283447) · Official record · Registry: shareholder · 2022\-05\-04 — “MITON Happy Campers s\.r\.o\. · 17\.04% · from 2022\-05\-04 · to 2024\-05\-14”
+41. [campiri\.com](https://www.campiri.com/cs-cz) · Company's own website · Product capability — “Pojištění storna a poškození”
+42. [startupinsider\.cz](https://www.startupinsider.cz/transport/pronajem-karavanu-campiri-spousti-investicni-programy-souvisejici-s-nakupem-obytnych-vozu-529038) · Independent press · Team claim — “rozšířila se z původních šesti zaměstnanců na současných čtyřicet”
+43. [euro\.cz](https://www.euro.cz/clanky/platforma-campiri-otevira-investice-do-obytnych-vozu-v-oblasti-karavaningu-chce-pokryt-tretinu-ceskeho-trhu/) · Independent press · Team claim — “Ambice startupu, který za rok vyrostl z šesti členů na tým čtyřiceti lidí”
+44. [campiri\.com](https://www.campiri.com/cs-cz) · Company's own website · Product capability — “Vybírejte ze 600\+ ověřených obytných vozů s garancemi Campiri\.”
+45. [startupinsider\.cz](https://www.startupinsider.cz/transport/pronajem-karavanu-campiri-spousti-investicni-programy-souvisejici-s-nakupem-obytnych-vozu-529038) · Independent press · Funding round — “Investor startupu poskytne finance ve výši jednoho až dvou milionů korun na nákup nového obytného vozu s garantovaným ročním výnosem 6–8 %\.”
+46. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/09283447) · Official record · Registry: identity · 2020\-06\-26 — “Campiri s\.r\.o\. · s\.r\.o\. · registered 2020\-06\-26”
 
 ## How this dossier was built
 

@@ -5,7 +5,8 @@
    "hints": {"github_org": "FilutaAI", "holding": "Filuta AI Inc. (Delaware)"}},
   {"id": "cruxo", "name": "Cruxo", "domain": "cruxo.io", "ico": "14134683", "country": "CZ", "tier": "showcase",
    "hints": {"github_org": "cruxoio"}},
-  {"id": "duvo", "name": "Duvo", "domain": "duvo.ai", "ico": "22646141", "country": "CZ", "tier": "showcase-control", "hints": {}},
+  {"id": "duvo", "name": "Duvo", "domain": "duvo.ai", "ico": "22646141", "country": "CZ", "tier": "showcase-control", "hints": {},
+   "investor_check": {"checked": "2026-11-25", "latest_round": "Series A, $32M, Oct 2026", "investors": "Balderton Capital (lead), Index Ventures, Northzone, Credo Ventures", "source_url": "https://www.thesaasnews.com/news/duvo-raises-32m-series-a/"}},
 
   {"id": "valkaai", "name": "ValkaAI", "domain": "valka.ai", "ico": "23132221", "country": "CZ", "tier": "portfolio",
    "hints": {"holding": "Valka.AI B.V."}},
@@ -21,15 +22,20 @@
    "hints": {"fi_business_id": "2575159-9"}},
   {"id": "apaleo", "name": "Apaleo", "domain": "apaleo.com", "ico": null, "country": "DE", "tier": "portfolio", "hints": {}},
 
-  {"id": "topk", "name": "TopK", "domain": "topk.io", "ico": null, "country": "CZ/US", "tier": "control", "hints": {}},
+  {"id": "topk", "name": "TopK", "domain": "topk.io", "ico": null, "country": "CZ/US", "tier": "control", "hints": {},
+   "investor_check": {"checked": "2026-11-25", "latest_round": "Seed, $5.5M, Jul 2025", "investors": "Earlybird, KAYA, Irregular Expressions, unnamed angels", "source_url": "https://tech.eu/2025/07/01/topk-raises-55m-to-develop-ai-native-search-engine-for-enterprises/"}},
   {"id": "upheal", "name": "Upheal", "domain": "upheal.io", "ico": "14138018", "country": "CZ", "tier": "control",
-   "hints": {"holding": "Upheal, Inc."}},
-  {"id": "wultra", "name": "Wultra", "domain": "wultra.com", "ico": "03643174", "country": "CZ", "tier": "control", "hints": {}},
+   "hints": {"holding": "Upheal, Inc."},
+   "investor_check": {"checked": "2026-11-25", "latest_round": "Series A, $10M, Nov 2024", "investors": "Headline (lead), Credo Ventures, Kaya Ventures", "source_url": "https://www.upheal.io/blog/upheal-secures-10m-to-help-reduce-clinician-burnout-and-improve-client-outcomes-with-their-ai-powered-platform"}},
+  {"id": "wultra", "name": "Wultra", "domain": "wultra.com", "ico": "03643174", "country": "CZ", "tier": "control", "hints": {},
+   "investor_check": {"checked": "2026-11-25", "latest_round": "Series A, EUR 6.8M, Jul 2026", "investors": "Seventure Partners (lead), J&T Ventures, Elevator Ventures, two angels", "source_url": "https://thequantuminsider.com/2026/07/01/wultra-raises-6-8-million-series-a-funding-to-accelerate-global-expansion-of-post-quantum-digital-identity-solutions/"}},
 
   {"id": "fly4future", "name": "Fly4Future", "domain": "fly4future.com", "ico": "06632581", "country": "CZ", "tier": "memo",
    "hints": {"github_org": "fly4future", "sector_terms": ["drone", "swarm", "autonomous", "gps denied", "counter-drone"],
-             "_note": "investment memo target: Czech defence/dual-use, outside the Rockaway portfolio, round in progress (2026)"}},
+             "_note": "investment memo target: Czech defence/dual-use, outside the Rockaway portfolio, round in progress (2026)"},
+   "investor_check": {"checked": "2026-11-25", "latest_round": "closing a round of just under CZK 200M (Sep 2026); funded so far from own money and orders", "investors": "none named", "source_url": "https://www.lupa.cz/clanky/ceska-odpoved-na-cinske-dji-manzele-vyvinuli-drony-kteri-funguji-i-bez-signalu/"}},
   {"id": "dronetag", "name": "Dronetag", "domain": "dronetag.com", "ico": "08198519", "country": "CZ", "tier": "memo",
    "hints": {"sector_terms": ["drone", "remote id", "airspace", "detection"],
-             "_note": "second defence/dual-use candidate: Czech MoD contract (TED 436033-2026), NATO DIANA 2024"}}
+             "_note": "second defence/dual-use candidate: Czech MoD contract (TED 436033-2026), NATO DIANA 2024"},
+   "investor_check": {"checked": "2026-11-25", "latest_round": "convertible loan, CZK 15M, Jun 2022", "investors": "Y Soft Ventures", "source_url": "https://cc.cz/cesky-startup-dronetag-zajistuje-bezpecne-letani-s-drony-od-brnenskeho-fondu-ziskava-15-milionu/"}}
 ]

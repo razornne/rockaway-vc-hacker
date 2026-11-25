@@ -9,7 +9,7 @@ How the due diligence tool is built, as of November 2026. Why it exists is in th
 **Job:** from a company name, domain or Czech IČO, produce in minutes a brief that tells a partner whether to spend an hour on a meeting and what to ask. The technical part — product, code, models, defensibility — is what a "VC hacker" would otherwise do by hand.
 
 **Output per company:**
-1. **Brief** (HTML, plus a Markdown copy): what the company is, who owns it, money in (rounds, grants awarded and paid, public contracts), customers, technical profile, what could be rebuilt and what cannot be judged from outside, risks, founder questions, and the investment view (thesis fit, business model, market, competition, case for and against).
+1. **Brief** (HTML, plus a Markdown copy): what the company is, who owns it, money in (rounds, grants awarded and paid, public contracts), customers, technical profile, what could be rebuilt and what cannot be judged from outside, risks, founder questions, and the investment view (thesis fit, business model, competition, case for and against; market statements are collected but not shown).
 2. **Fact table** (CSV): every fact with its source URL, quote and retrieval date.
 
 **Not a goal:** finding companies before the fund does (tested and rejected, see `research/FINDINGS.md`), or recommending an investment. The memo stays with a human.
@@ -20,7 +20,7 @@ How the due diligence tool is built, as of November 2026. Why it exists is in th
 2. **Structured sources are parsed by code.** Registers, procurement, grants, GitHub, certificate logs and app stores are read by deterministic parsers. In the portfolio research, agents that "read" the register confused founders with investors.
 3. **The language model does two narrow jobs:** (a) proposes facts from unstructured text, each with an exact quote; (b) writes findings that may cite only collected facts.
 4. **A quote must exist in the saved source.** Extraction is rejected if the quote is not found in the cached page or breaks category rules.
-5. **Say what the data cannot see.** Flags such as "holding abroad", "a.s./SE — shareholders not published", "no Czech entity". A source that was not read is shown as *Not checked*, never as *None found*.
+5. **Say what the data cannot see.** Flags such as "holding abroad", "a.s./SE — shareholders not published", "no Czech entity". A source that was not read is shown as *Not checked*; one that was read and is empty, as *Not visible in public records*, with what it cannot show. Never *None found*.
 6. **Web content is data, not instructions.** Page text goes to the model only as a document to extract from; the model has no tools that change anything.
 7. **Minimal personal data.** Founders: name and role from public sources. No birth dates or addresses from the register; no LinkedIn.
 8. **Cheap and capped.** Every LLM call is cached; a hard budget refuses a call whose worst-case cost would exceed it.

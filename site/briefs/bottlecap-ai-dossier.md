@@ -26,7 +26,7 @@ bottlecapai\.com · BottleCap SE · IČO 23012854 · CZ · 2026\-11\-20
 
 # Investment view
 
-*Inputs for the partner's memo, not a recommendation: what the evidence says about the business, the market, competitors and fit with the fund, and the case for and against\.*
+*Inputs for the partner's memo, not a recommendation: what the evidence says about the business, competitors and fit with the fund, and the case for and against\.*
 
 ## Fit with the Rockaway thesis
 
@@ -42,28 +42,19 @@ bottlecapai\.com · BottleCap SE · IČO 23012854 · CZ · 2026\-11\-20
 - Funding \(non\-revenue\): seed financing closed at $7\.5M provides runway; investors include 20VC, Rockaway and founders/managers from other tech firms\. *(Partly verified)* ^[4](https://www.lupa.cz/aktuality/bottlecap-uspornejsi-umela-inteligence-od-mikolova-a-becka-ziskala-investici-pres-150-milionu-korun/),[17](https://bottlecapai.com/blog/),[16](https://www.wolvessummit.com/bottlecap-ai-lands-7-5-milllion-euro-round)
   - Assumption: Seed proceeds are being used to develop product and GTM\.
 
-## Market
-
-- Demand drivers cited by the company and press: need for LLM efficiency, lower compute cost and sustainable models \(company claims and press coverage\)\. *(Corroborated)* ^[29](https://www.wolvessummit.com/bottlecap-ai-lands-7-5-milllion-euro-round),[7](https://www.lupa.cz/aktuality/bottlecap-uspornejsi-umela-inteligence-od-mikolova-a-becka-ziskala-investici-pres-150-milionu-korun/),[33](https://cc.cz/jaroslav-beck-a-tomas-mikolov-ziskavaji-150-milionu-pro-svuj-ai-startup-investuje-do-nej-i-ivo-lukacovic/)
-  - Assumption: Press and company claims reflect genuine buyer demand signals\.
-- Media traction: multiple press pieces document investor interest and product announcements, which may help GTM visibility\. *(Corroborated)* ^[6](https://czechbusinessreview.com/startups/bottlecap-ai-jaroslav-beck-tomas-mikolov-david-herel-prague),[22](https://www.lupa.cz/aktuality/bottlecap-uspornejsi-umela-inteligence-od-mikolova-a-becka-ziskala-investici-pres-150-milionu-korun/),[34](https://www.hrot24.cz/clanek/bottlecapai-jaroslav-beck-tomas-mikolov-ivo-lukacovic-investice-ai-startup-HnRwb)
-  - Assumption: Press coverage translates to improved market awareness\.
-- Market size: no sourced third‑party TAM or quantified market\-size figure is present in the supplied facts\. *(Single source)* ^[35](https://startupintros.com/news/2026-01-29-bottlecap-ai-seed)
-  - Assumption: Absence in press facts implies no published market\-size claim in supplied data\.
-
 ## Competition
 
 No sourced findings for this section.
 
 ## Case for and against
 
-- **For:** Founding team with recognisable AI and product credentials \(Tomáš Mikolov, Jaroslav Beck, David Herel\) enhances credibility for deep\-tech execution\. *(Analyst view)* ^[36](https://www.wolvessummit.com/bottlecap-ai-lands-7-5-milllion-euro-round),[37](https://bottlecapai.com/),[38](https://bottlecapai.com/)
+- **For:** Founding team with recognisable AI and product credentials \(Tomáš Mikolov, Jaroslav Beck, David Herel\) enhances credibility for deep\-tech execution\. *(Analyst view)* ^[33](https://www.wolvessummit.com/bottlecap-ai-lands-7-5-milllion-euro-round),[34](https://bottlecapai.com/),[35](https://bottlecapai.com/)
   - Assumption: Founders will remain actively involved through scale\.
 - **For:** High\-profile seed syndicate \(20VC lead, Rockaway, founders from Hugging Face/ElevenLabs/Canva\) signals external validation and network effects for hiring and partnerships\. *(Analyst view)* ^[4](https://www.lupa.cz/aktuality/bottlecap-uspornejsi-umela-inteligence-od-mikolova-a-becka-ziskala-investici-pres-150-milionu-korun/),[25](https://www.wolvessummit.com/bottlecap-ai-lands-7-5-milllion-euro-round),[5](https://www.havelpartners.com/legal-advice-for-20vc-on-its-investment-in-bottlecap-ai/)
   - Assumption: Syndicate participation will materially support go\-to\-market and hiring\.
 - **Against:** Core technical efficiency claims are described but detailed, third\-party\-verified benchmarks or reproducible technical disclosures are not provided in the facts\. *(Analyst view)* ^[12](https://www.lupa.cz/aktuality/bottlecap-uspornejsi-umela-inteligence-od-mikolova-a-becka-ziskala-investici-pres-150-milionu-korun/),[10](https://bottlecapai.com/)
   - Assumption: Public technical disclosure or reproducible benchmarks are needed to validate claims\.
-- **Against:** No named enterprise customers, public purchase contracts, or revenue figures are present in supplied facts; product monetisation evidence is limited\. *(Analyst view)* ^[2](https://scan.bottlecapai.com/),[30](https://scan.bottlecapai.com/),[39](https://www.lupa.cz/aktuality/bottlecap-uspornejsi-umela-inteligence-od-mikolova-a-becka-ziskala-investici-pres-150-milionu-korun/)
+- **Against:** No named enterprise customers, public purchase contracts, or revenue figures are present in supplied facts; product monetisation evidence is limited\. *(Analyst view)* ^[2](https://scan.bottlecapai.com/),[30](https://scan.bottlecapai.com/),[36](https://www.lupa.cz/aktuality/bottlecap-uspornejsi-umela-inteligence-od-mikolova-a-becka-ziskala-investici-pres-150-milionu-korun/)
   - Assumption: Customer traction must be established before claiming scalable revenue\.
 - **Must be true:** Diligence must confirm reproducible, benchmarked efficiency gains across standard LLM tests and independent validation of token/compute savings\. *(Analyst view)* ^[10](https://bottlecapai.com/),[13](https://bottlecapai.com/blog/)
   - Assumption: Benchmarks will be provided under NDA if not public\.
@@ -74,27 +65,27 @@ No sourced findings for this section.
 
 ## Ownership and capital
 
-- Incorporated and registered in CZ on 2025\-03\-03 as BottleCap SE; filings \(statutory documents, statements\) are present in the public registry\. *(Verified)* ^[40](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/23012854),[41](https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=1268674),[42](https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=1268674)
+- Incorporated and registered in CZ on 2025\-03\-03 as BottleCap SE; filings \(statutory documents, statements\) are present in the public registry\. *(Verified)* ^[37](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/23012854),[38](https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=1268674),[39](https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=1268674)
   - Assumption: Registry filings reflect legal formation
 - Seed financing reported as \~$7\.5M with lead 20VC and a syndicate including Rockaway and founders/managers from notable tech firms\. *(Corroborated)* ^[4](https://www.lupa.cz/aktuality/bottlecap-uspornejsi-umela-inteligence-od-mikolova-a-becka-ziskala-investici-pres-150-milionu-korun/),[5](https://www.havelpartners.com/legal-advice-for-20vc-on-its-investment-in-bottlecap-ai/),[18](https://www.wolvessummit.com/bottlecap-ai-lands-7-5-milllion-euro-round)
   - Assumption: Media and filings accurately report round participants
-- Registry shows interim shareholders entries \(The Godfather SE; Beck Adventures Incubator\) and increases in registered capital between 2025 and 2026\. *(Verified)* ^[43](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23012854),[19](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23012854),[44](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23012854)
+- Registry shows interim shareholders entries \(The Godfather SE; Beck Adventures Incubator\) and increases in registered capital between 2025 and 2026\. *(Verified)* ^[40](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23012854),[19](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23012854),[41](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23012854)
   - Assumption: Registry shareholder rows reflect ownership changes
 
 ## Technology profile
 
 - Product surfaces: AI Scan \(model behaviour scans, audit\-ready evidence\) and Pulse iOS app built on CAP1 are public product claims\. *(Company claim)* ^[2](https://scan.bottlecapai.com/),[30](https://scan.bottlecapai.com/),[3](https://bottlecapai.com/post/bottlecap-ai-announcement/)
   - Assumption: Website product pages accurately describe features
-- Engineering footprint: public GitHub org with at least two public repos \(Apache\-2\.0/MIT\), modest stars; company\-run repos exist\. *(Verified)* ^[45](https://github.com/BottleCapAI),[9](https://github.com/BottleCapAI/ThinkingCap-Test),[46](https://github.com/BottleCapAI/NoCap-Test)
+- Engineering footprint: public GitHub org with at least two public repos \(Apache\-2\.0/MIT\), modest stars; company\-run repos exist\. *(Verified)* ^[42](https://github.com/BottleCapAI),[9](https://github.com/BottleCapAI/ThinkingCap-Test),[43](https://github.com/BottleCapAI/NoCap-Test)
   - Assumption: Public repos reflect some engineering output
-- AI dependency and infra: company states use of Google Cloud for AI Scan and lists Cloudflare and PostHog as subprocessors; Hugging Face appears in investor/backer context\. *(Company claim)* ^[47](https://bottlecapai.com/cookies-policy/),[48](https://bottlecapai.com/policy/),[49](https://bottlecapai.com/policy/)
+- AI dependency and infra: company states use of Google Cloud for AI Scan and lists Cloudflare and PostHog as subprocessors; Hugging Face appears in investor/backer context\. *(Company claim)* ^[44](https://bottlecapai.com/cookies-policy/),[45](https://bottlecapai.com/policy/),[46](https://bottlecapai.com/policy/)
   - Assumption: Privacy/policy pages reflect actual processing vendors
 
 ## What could be rebuilt, and what cannot be judged from outside
 
-- **Replicable with off-the-shelf parts:** Public GitHub repositories \(Apache\-2\.0/MIT\) contain code components that an external team could reuse to reproduce test harnesses and examples\. *(Analyst view)* ^[9](https://github.com/BottleCapAI/ThinkingCap-Test),[46](https://github.com/BottleCapAI/NoCap-Test)
+- **Replicable with off-the-shelf parts:** Public GitHub repositories \(Apache\-2\.0/MIT\) contain code components that an external team could reuse to reproduce test harnesses and examples\. *(Analyst view)* ^[9](https://github.com/BottleCapAI/ThinkingCap-Test),[43](https://github.com/BottleCapAI/NoCap-Test)
   - Assumption: Repos include runnable artifacts and test harnesses
-- **Edge supported by public evidence:** Patent publications and several granted design patents assigned to 'Bottlecap Holdings Ltd\.' show prior IP activity; this is public evidence but not necessarily product coverage\. *(Analyst view)* ^[50](https://patents.google.com/patent/WO2014165983A1),[51](https://patents.google.com/patent/USD839100S1),[52](https://patents.google.com/patent/USD791605S1)
+- **Edge supported by public evidence:** Patent publications and several granted design patents assigned to 'Bottlecap Holdings Ltd\.' show prior IP activity; this is public evidence but not necessarily product coverage\. *(Analyst view)* ^[47](https://patents.google.com/patent/WO2014165983A1),[48](https://patents.google.com/patent/USD839100S1),[49](https://patents.google.com/patent/USD791605S1)
   - Assumption: Patent assignees relate to current company strategy
 - **Cannot be judged from outside:** The core efficiency claims for ThinkingCap/CAP1 \(token\-savings, architecture changes, training speedups\) cannot be externally validated without models, training logs, or raw benchmark suites\. *(Analyst view)* ^[10](https://bottlecapai.com/),[28](https://bottlecapai.com/),[13](https://bottlecapai.com/blog/)
   - Assumption: Internal artifacts are required for replication
@@ -103,7 +94,7 @@ No sourced findings for this section.
 
 - Unverified core claims: multiple public efficiency and token\-savings assertions \(ThinkingCap/CAP1\) lack independent benchmarks in supplied facts\. *(Analyst view)* ^[10](https://bottlecapai.com/),[11](https://bottlecapai.com/),[28](https://bottlecapai.com/)
   - Assumption: Independent benchmarks are not present in the evidence
-- Operational dependency: AI Scan is stated to run on Google Cloud US region for model processing, exposing data residency and vendor\-concentration considerations\. *(Analyst view)* ^[47](https://bottlecapai.com/cookies-policy/),[48](https://bottlecapai.com/policy/)
+- Operational dependency: AI Scan is stated to run on Google Cloud US region for model processing, exposing data residency and vendor\-concentration considerations\. *(Analyst view)* ^[44](https://bottlecapai.com/cookies-policy/),[45](https://bottlecapai.com/policy/)
   - Assumption: Processing location matters for EU enterprise customers
 - Limited public commercial traction: no named enterprise customers or public purchase contracts cited in the supplied facts despite enterprise product claims\. *(Analyst view)* ^[1](https://bottlecapai.com/),[6](https://czechbusinessreview.com/startups/bottlecap-ai-jaroslav-beck-tomas-mikolov-david-herel-prague)
   - Assumption: Named customers would appear in press or registry facts
@@ -114,9 +105,9 @@ No sourced findings for this section.
   - Assumption: Benchmarks exist and can be shared
 - Share customer references, signed purchase orders, or SaaS contracts for AI Scan to substantiate enterprise revenue and pricing economics\. *(Analyst view)* ^[2](https://scan.bottlecapai.com/),[1](https://bottlecapai.com/)
   - Assumption: Enterprise customers would hold contracts
-- Clarify data residency and processing architecture for AI Scan \(US Google Cloud use\) and options for EU\-only deployment for regulated customers\. *(Analyst view)* ^[47](https://bottlecapai.com/cookies-policy/),[48](https://bottlecapai.com/policy/)
+- Clarify data residency and processing architecture for AI Scan \(US Google Cloud use\) and options for EU\-only deployment for regulated customers\. *(Analyst view)* ^[44](https://bottlecapai.com/cookies-policy/),[45](https://bottlecapai.com/policy/)
   - Assumption: Contractual options may exist
-- Request documentation linking patent publications to the CAP1/ThinkingCap technologies and any assignments or freedom\-to\-operate analysis\. *(Analyst view)* ^[50](https://patents.google.com/patent/WO2014165983A1),[51](https://patents.google.com/patent/USD839100S1),[53](https://patents.google.com/patent/US20130105522A1)
+- Request documentation linking patent publications to the CAP1/ThinkingCap technologies and any assignments or freedom\-to\-operate analysis\. *(Analyst view)* ^[47](https://patents.google.com/patent/WO2014165983A1),[48](https://patents.google.com/patent/USD839100S1),[50](https://patents.google.com/patent/US20130105522A1)
   - Assumption: Patent family may be related to product
 
 ## Sources
@@ -153,28 +144,25 @@ No sourced findings for this section.
 30. [scan\.bottlecapai\.com](https://scan.bottlecapai.com/) · Company's own website · Product capability — “Get a custom scan tailored to your business and generate audit\-ready evidence automatically\.”
 31. [scan\.bottlecapai\.com](https://scan.bottlecapai.com/) · Company's own website · Technical claim — “We test thousands of prompts across multiple risk dimensions and measure where a model's answers diverge from its baseline behavior\.”
 32. [cc\.cz](https://cc.cz/jaroslav-beck-a-tomas-mikolov-ziskavaji-150-milionu-pro-svuj-ai-startup-investuje-do-nej-i-ivo-lukacovic/) · Independent press · Technical claim — “Tento efektivní základní jazykový model bude pohánět širokou škálu našich budoucích aplikací,”
-33. [cc\.cz](https://cc.cz/jaroslav-beck-a-tomas-mikolov-ziskavaji-150-milionu-pro-svuj-ai-startup-investuje-do-nej-i-ivo-lukacovic/) · Independent press · Press article · 2026\-01\-29 — “Beck a Mikolov mají 150 milionů pro svůj AI startup i od Lukačoviče \- CzechCrunch”
-34. [hrot24\.cz](https://www.hrot24.cz/clanek/bottlecapai-jaroslav-beck-tomas-mikolov-ivo-lukacovic-investice-ai-startup-HnRwb) · Independent press · Press article · 2026\-01\-30 — “Rockaway, 20VC a majitel Seznamu investují do české AI\. Startup Becka a Mikolova roste \| Hrot24\.cz”
-35. [startupintros\.com](https://startupintros.com/news/2026-01-29-bottlecap-ai-seed) · Independent press · Press article · 2026\-01\-29 — “BottleCap AI \- $7\.5M Seed \| Startup Intros”
-36. [wolvessummit\.com](https://www.wolvessummit.com/bottlecap-ai-lands-7-5-milllion-euro-round) · Independent press · Team claim — “BottleCap AI , a European AI company founded by Jaroslav Beck , Tomas Mikolov and David Herel”
-37. [bottlecapai\.com](https://bottlecapai.com/) · Company's own website · Team claim — “Jaroslav is an entrepreneur, Co\-founder of Beat Games, studio behind the biggest VR game to date \- Beat Saber \(10M\+ copies sold\), Jaroslav initiated acquisition by Meta in 2019 and continued steering the studio post\-exit\. After leaving Meta in 2023, he invested in projects driving global positive impact in tech and mul…”
-38. [bottlecapai\.com](https://bottlecapai.com/) · Company's own website · Team claim — “David Herel is Co\-founder and AI Researcher at BottleCap AI, where he works on making large language models significantly faster and more efficient\. His research focuses on LLM reasoning and model architecture, with publications at leading AI conferences including ICLR and ECAI\.”
-39. [lupa\.cz](https://www.lupa.cz/aktuality/bottlecap-uspornejsi-umela-inteligence-od-mikolova-a-becka-ziskala-investici-pres-150-milionu-korun/) · Independent press · Product capability — “Na vlastní technologii už BottleCap AI staví i první konkrétní produkt, o němž zveřejnil informace současně s investicí\.”
-40. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/23012854) · Official record · Registry: identity · 2025\-03\-03 — “BottleCap SE · SE · registered 2025\-03\-03”
-41. [or\.justice\.cz](https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=1268674) · Official record · Registry: filed document · 2026\-01\-05
-42. [or\.justice\.cz](https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=1268674) · Official record · Registry: filed document · 2025\-03\-03
-43. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23012854) · Official record · Registry: shareholder · 2025\-03\-03 — “The Godfather SE · from 2025\-03\-03 · to 2025\-04\-10”
-44. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23012854) · Official record · Registry: registered capital · 2026\-01\-05
-45. [github\.com](https://github.com/BottleCapAI) · Public technical artifact · GitHub organisation · 2025\-03\-30 — “BottleCapAI · 2 public repos”
-46. [github\.com](https://github.com/BottleCapAI/NoCap-Test) · Public technical artifact · GitHub repository · 2026\-02\-03 — “BottleCapAI/NoCap\-Test · Open Test for BottleCapAI · Python · last push 2026\-02\-03”
-47. [bottlecapai\.com](https://bottlecapai.com/cookies-policy/) · Company's own website · Subprocessor \(privacy policy\) — “AI Scan runs on Google Cloud infrastructure located in the United States \(region us\-east4\), while product\-analytics data collected via PostHog is processed in the European Union\. Some cookies are also set by third parties \(e\.g\.”
-48. [bottlecapai\.com](https://bottlecapai.com/policy/) · Company's own website · Subprocessor \(privacy policy\) — “Google Cloud \(Google LLC\) — AI Scan runs on Google Cloud Run, Cloud SQL and Cloud Storage;”
-49. [bottlecapai\.com](https://bottlecapai.com/policy/) · Company's own website · Subprocessor \(privacy policy\) — “Analytics, session replay \(PostHog\) and marketing cookies and similar technologies”
-50. [patents\.google\.com](https://patents.google.com/patent/WO2014165983A1) · Official record · Patent publication — “WO2014165983A1 · Dispenser having pierceable membrane · Bottlecap Holdings Ltd\.”
-51. [patents\.google\.com](https://patents.google.com/patent/USD839100S1) · Official record · Patent publication — “USD839100S1 · Bottle · Bottlecap Holdings Ltd\.”
-52. [patents\.google\.com](https://patents.google.com/patent/USD791605S1) · Official record · Patent publication — “USD791605S1 · Bottle · Bottlecap Holdings Ltd\.”
-53. [patents\.google\.com](https://patents.google.com/patent/US20130105522A1) · Official record · Patent publication — “US20130105522A1 · Bulk material dispenser · Bottlecap Holdings Ltd\.”
-54. [patents\.google\.com](https://patents.google.com/patent/US20120308357A1) · Official record · Patent publication — “US20120308357A1 · Stackable container · Bottlecap Holdings Ltd\.”
+33. [wolvessummit\.com](https://www.wolvessummit.com/bottlecap-ai-lands-7-5-milllion-euro-round) · Independent press · Team claim — “BottleCap AI , a European AI company founded by Jaroslav Beck , Tomas Mikolov and David Herel”
+34. [bottlecapai\.com](https://bottlecapai.com/) · Company's own website · Team claim — “Jaroslav is an entrepreneur, Co\-founder of Beat Games, studio behind the biggest VR game to date \- Beat Saber \(10M\+ copies sold\), Jaroslav initiated acquisition by Meta in 2019 and continued steering the studio post\-exit\. After leaving Meta in 2023, he invested in projects driving global positive impact in tech and mul…”
+35. [bottlecapai\.com](https://bottlecapai.com/) · Company's own website · Team claim — “David Herel is Co\-founder and AI Researcher at BottleCap AI, where he works on making large language models significantly faster and more efficient\. His research focuses on LLM reasoning and model architecture, with publications at leading AI conferences including ICLR and ECAI\.”
+36. [lupa\.cz](https://www.lupa.cz/aktuality/bottlecap-uspornejsi-umela-inteligence-od-mikolova-a-becka-ziskala-investici-pres-150-milionu-korun/) · Independent press · Product capability — “Na vlastní technologii už BottleCap AI staví i první konkrétní produkt, o němž zveřejnil informace současně s investicí\.”
+37. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/23012854) · Official record · Registry: identity · 2025\-03\-03 — “BottleCap SE · SE · registered 2025\-03\-03”
+38. [or\.justice\.cz](https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=1268674) · Official record · Registry: filed document · 2026\-01\-05
+39. [or\.justice\.cz](https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=1268674) · Official record · Registry: filed document · 2025\-03\-03
+40. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23012854) · Official record · Registry: shareholder · 2025\-03\-03 — “The Godfather SE · from 2025\-03\-03 · to 2025\-04\-10”
+41. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23012854) · Official record · Registry: registered capital · 2026\-01\-05
+42. [github\.com](https://github.com/BottleCapAI) · Public technical artifact · GitHub organisation · 2025\-03\-30 — “BottleCapAI · 2 public repos”
+43. [github\.com](https://github.com/BottleCapAI/NoCap-Test) · Public technical artifact · GitHub repository · 2026\-02\-03 — “BottleCapAI/NoCap\-Test · Open Test for BottleCapAI · Python · last push 2026\-02\-03”
+44. [bottlecapai\.com](https://bottlecapai.com/cookies-policy/) · Company's own website · Subprocessor \(privacy policy\) — “AI Scan runs on Google Cloud infrastructure located in the United States \(region us\-east4\), while product\-analytics data collected via PostHog is processed in the European Union\. Some cookies are also set by third parties \(e\.g\.”
+45. [bottlecapai\.com](https://bottlecapai.com/policy/) · Company's own website · Subprocessor \(privacy policy\) — “Google Cloud \(Google LLC\) — AI Scan runs on Google Cloud Run, Cloud SQL and Cloud Storage;”
+46. [bottlecapai\.com](https://bottlecapai.com/policy/) · Company's own website · Subprocessor \(privacy policy\) — “Analytics, session replay \(PostHog\) and marketing cookies and similar technologies”
+47. [patents\.google\.com](https://patents.google.com/patent/WO2014165983A1) · Official record · Patent publication — “WO2014165983A1 · Dispenser having pierceable membrane · Bottlecap Holdings Ltd\.”
+48. [patents\.google\.com](https://patents.google.com/patent/USD839100S1) · Official record · Patent publication — “USD839100S1 · Bottle · Bottlecap Holdings Ltd\.”
+49. [patents\.google\.com](https://patents.google.com/patent/USD791605S1) · Official record · Patent publication — “USD791605S1 · Bottle · Bottlecap Holdings Ltd\.”
+50. [patents\.google\.com](https://patents.google.com/patent/US20130105522A1) · Official record · Patent publication — “US20130105522A1 · Bulk material dispenser · Bottlecap Holdings Ltd\.”
+51. [patents\.google\.com](https://patents.google.com/patent/US20120308357A1) · Official record · Patent publication — “US20120308357A1 · Stackable container · Bottlecap Holdings Ltd\.”
 
 ## How this dossier was built
 

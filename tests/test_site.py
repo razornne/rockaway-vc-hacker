@@ -26,13 +26,36 @@ def test_public_money_not_checked_without_ico():
     assert t["Defence evidence (official sources)"]["value"] == "Not checked"
 
 
-def test_public_money_checked_and_empty_is_none_found():
+def test_public_money_checked_and_empty_is_not_visible_never_none():
+    # an empty register is "not visible", with what the register cannot show: never "None found"
     facts = _facts(Fact(company_id="x", type="source_check", key="hlidac_contracts_empty", source_url="https://hlidacstatu.cz",
                         value={"status": "empty"}, extractor="public_money"))
     t = _tiles({}, facts)
-    assert t["Sales to public buyers"]["value"] == "None found"
+    assert t["Sales to public buyers"]["value"] == page.NOT_VISIBLE
     assert "EU tenders not checked" in t["Sales to public buyers"]["sub"]
-    assert t["Grants & subsidies awarded (not revenue)"]["value"] == "None found"
+    assert "not published" in t["Sales to public buyers"]["sub"]
+    assert t["Grants & subsidies awarded (not revenue)"]["value"] == page.NOT_VISIBLE
+    assert t["Funding rounds"]["value"] == "None reported"
+    assert all(x["value"] != "None found" for x in t.values())
+
+
+def test_defence_tile_empty_says_where_read_and_what_it_cannot_show():
+    facts = _facts(Fact(company_id="x", type="source_check", key="ted", source_url="https://ted.europa.eu",
+                        value={"status": "empty"}, extractor="procurement"))
+    d = _tiles({}, facts)["Defence evidence (official sources)"]
+    assert d["value"] == page.NOT_VISIBLE
+    assert "TED" in d["sub"] and "ask the company" in d["sub"]
+
+
+def test_portfolio_overlap_shows_what_the_portfolio_company_does():
+    sig = {"thesis": {"fund": {"sectors": ["defence"], "geography": "CEE", "stage": "seed",
+                               "initial_ticket_eur": [500_000, 2_000_000]},
+                      "portfolio_overlap": [{"name": "Vermeer (VENTURES deal, not Defense fund)",
+                                             "description": "GPS-free navigation for drones",
+                                             "shared_terms": ["drone", "navigat"]}]}}
+    row = next(r for r in page.extras(sig, _facts(), Refs(_facts()), CO)["thesis"] if r["criterion"] == "Portfolio overlap")
+    assert row["company"].startswith("Vermeer: GPS-free navigation for drones")
+    assert "not a confirmed conflict" in row["company"] and "navigat," not in row["company"]
 
 
 def test_grant_without_amount_is_not_none_found():

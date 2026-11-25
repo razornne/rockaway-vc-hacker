@@ -17,16 +17,26 @@ from dd.store import Store
 h = html.escape
 
 GROUPS = {  # tier in eval/companies.json -> group on the site
-    "memo": "Defence and dual-use, outside the Rockaway portfolio",
+    "memo": "Defence and dual-use candidates",
     "showcase": "Rockaway Ventures portfolio",
     "portfolio": "Rockaway Ventures portfolio",
-    "showcase-control": "Comparison companies (not in the Rockaway portfolio)",
-    "control": "Comparison companies (not in the Rockaway portfolio)",
+    "showcase-control": "Comparison companies: rounds led by other funds",
+    "control": "Comparison companies: rounds led by other funds",
+}
+# Saying "not in your portfolio" to the fund is a negative claim: the page states only what was checked, when, and
+# where (investor_check in eval/companies.json), never more.
+GROUP_NOTES = {
+    "Defence and dual-use candidates": "Rockaway is not named among the investors in the latest round each company "
+                                       "has announced, as checked on the date shown.",
+    "Comparison companies: rounds led by other funds": "Used to test the research findings. Rockaway is not named "
+                                                       "among the investors in the latest round each company has "
+                                                       "announced, as checked on the date shown.",
 }
 GROUP_ORDER = list(dict.fromkeys(GROUPS.values()))
 FEATURED = ("fly4future", "dronetag")
 REPO = "https://github.com/razornne/rockaway-vc-hacker"
 LABELS = ROOT / "eval" / "labels" / "showcase-2026-11-20.csv"  # semantic accuracy sheet (dd label-sheet / label-score)
+REMOVED_SECTIONS = ("Market",)  # labelled on 20 November, no longer shown in briefs (dd.render.HIDDEN_SECTIONS)
 # eval/baseline/README.md: facts settled by official records, tool vs gpt-5-mini with web search (judged by hand)
 BASELINE = {"n": 14, "tool": 14, "plain": 2, "partly": 3, "wrong": 2, "missed": 7}
 # a fresh company end to end (dd add spaceti; collect, extract, verify, analyze, dossier), 20 November 2026
@@ -34,7 +44,7 @@ TIMING = {"value": "7 min · $0.03",
           "text": "A new company from nothing to a brief (Spaceti: collection 2.7 min, extraction 2 min, analysis 1.6 min "
                   "with gpt-5-mini). The plain model with web search takes 30 s and $0.02 but misses what only official "
                   "records hold. A manual first look by an analyst was not timed: that needs a person."}
-N_ERRORS = 30  # docs/AUDIT.md, numbered
+N_ERRORS = 32  # docs/AUDIT.md, numbered
 CARD_TILES = ("Raising now (per press)", "Last closed round", "Latest reported round", "Funding rounds",
               "Sales to public buyers", "Grants & subsidies awarded (not revenue)", "Defence evidence (official sources)")
 
@@ -111,6 +121,17 @@ def _logo(cid: str, prefix: str = "") -> str:
     return (f'<img class="logo" src="{prefix}logos/{h(cid)}.png" alt="">' if (LOGOS / f"{cid}.png").exists() else "")
 
 
+def _investor_cell(check: dict | None) -> str:
+    """The latest round a company announced and who it names, with the source and the date it was checked."""
+    if not check:
+        return "<td>not checked</td>"
+    url = check.get("source_url") or ""
+    src = (f' <a class="site" href="{h(url, quote=True)}" rel="noopener noreferrer" target="_blank">source</a>'
+           if url.startswith("https://") else "")
+    return (f'<td>{h(check.get("latest_round") or "")}; {h(check.get("investors") or "")}.'
+            f'{src}<br><span class="m">checked {h(check.get("checked") or "")}</span></td>')
+
+
 def _card(cid: str, d: dict, meta: dict) -> str:
     tiles = [t for t in d["tiles"] if t["label"] in CARD_TILES][:4]
     mini = "".join(f'<div>{h(t["label"])}<b>{h(str(t["value"]).replace(" · ", ", "))}</b></div>' for t in tiles)
@@ -129,7 +150,7 @@ def _index(m: dict, cards: str, table_rows: dict[str, list[str]], n_collectors: 
     costs = [r["cost"] for _, r, _ in m["rows"] if r]
     n_briefs = len(costs)
     from dd.labels import summary
-    lab = summary(LABELS)
+    lab = summary(LABELS, REMOVED_SECTIONS)
 
     def measure(value, text):
         return f'<div class="row"><div class="txt">{text}</div><div class="val">{value}</div></div>'
@@ -151,26 +172,19 @@ def _index(m: dict, cards: str, table_rows: dict[str, list[str]], n_collectors: 
         "evaluation</a></div></header>",
 
         '<h2 id="briefs">Two Czech dual-use drone companies</h2>',
-        '<p class="h2note">Neither is in the Rockaway portfolio. The numbers next to each are computed by code from '
-        "official records and press.</p>",
+        '<p class="h2note">Neither has announced Rockaway as an investor (checked 25 November 2026; sources in the '
+        '<a href="#all">table below</a>). The numbers next to each are computed by code from official records and '
+        "press.</p>",
         cards,
 
-        '<h2 id="why">Why a diligence tool, not a sourcing radar</h2>',
-        '<div class="prose"><p>I first tested the obvious idea: could public data have found Rockaway Ventures deals '
-        "earlier than the fund did? I traced 14 Rockaway Ventures deals from 2022–2026 and 10 comparison rounds back "
-        "through register records and press.</p></div>",
-        '<ul class="plain">'
-        "<li>In 9 of the 14 deals, outside funding was publicly visible before Rockaway invested; in all 9 the first "
-        "public trace was press coverage of an earlier round, not the business register.</li>"
-        "<li>The register did not announce Rockaway's own rounds early: Campiri appeared 7 days before the "
-        "announcement, Cruxo 21 months after it, and Filuta and ValkaAI are held through foreign companies, so their "
-        "rounds are not visible in the Czech register at all.</li>"
-        "<li>The 2026 AI deals (ValkaAI, BottleCap AI, Navigara) had no earlier rounds; where there was a visible "
-        "signal, it was the founder.</li></ul>",
-        '<div class="prose"><p style="margin-top:1rem">A radar built on public registers would not have found these '
-        "deals sooner. That tests one idea, public registers as an early signal, on deals the fund made; it says nothing "
-        "about deals the fund passed on or never saw. The same public data clearly helps after a company is on the "
-        "table: checking it quickly, with every claim traceable to its source.</p></div>",
+        '<h2 id="why">Why a checking tool</h2>',
+        '<div class="prose"><p>My first idea was to spot startups in public registers before funds find them. On 14 '
+        "Rockaway Ventures deals it would not have worked: the register showed the fund's own round a week before the "
+        "announcement at best, and in other cases months later or not at all; the earlier signal was press about a previous round "
+        "or the founder.</p>"
+        "<p>The same records are useful one step later, once a company is on the table: they quickly confirm or "
+        "contradict what the company says, with every claim linked to its source. "
+        f'<a href="{REPO}/blob/main/research/FINDINGS.md">The research</a>.</p></div>',
 
         '<h2 id="trust">How far to trust it</h2>',
         '<p class="h2note">Is each statement right, and does the tool beat simply asking a model with web search? '
@@ -203,9 +217,14 @@ def _index(m: dict, cards: str, table_rows: dict[str, list[str]], n_collectors: 
     for g in GROUP_ORDER:
         if table_rows.get(g):
             body.append(f"<h3>{h(g)}</h3>")
+            if g in GROUP_NOTES:
+                body.append(f'<p class="h2note">{h(GROUP_NOTES[g])}</p>')
+            checked = g in GROUP_NOTES
             body.append('<table class="t"><tr><th>Company</th><th>What it does, from the brief</th>'
-                        '<th class="num">Facts</th><th class="num">Sources</th></tr>'
-                        + "".join(table_rows[g]) + "</table>")
+                        + ("<th>Latest round announced, investors named</th>" if checked else "")
+                        + '<th class="num">Facts</th><th class="num">Sources</th></tr>'
+                        + "".join(table_rows[g])
+                        + "</table>")
     body += [
         '<h2 id="how">How a brief is made</h2>',
         '<ol class="steps">'
@@ -246,13 +265,14 @@ def _index(m: dict, cards: str, table_rows: dict[str, list[str]], n_collectors: 
 def _accuracy_sections() -> list[str]:
     """Semantic accuracy, the baseline and timing: the measures that say whether the briefs are right and useful."""
     from dd.labels import summary
-    lab = summary(LABELS)
+    lab = summary(LABELS, REMOVED_SECTIONS)
     out = ['<h2 id="accuracy">Is each statement right?</h2>']
     if lab:
         out.append(
             f'<p>Every one of the {lab["n"]} statements in the two showcase briefs was put in a sheet with the quotes and '
             "links it cites (<code>dd label-sheet</code>) and judged against those sources on six questions "
-            f'(<a href="{REPO}/blob/main/eval/labels/showcase-2026-11-20.csv">the labelled sheet</a>). The reviewer was '
+            f'(<a href="{REPO}/blob/main/eval/labels/showcase-2026-11-20.csv">the labelled sheet</a>; it also holds six '
+            "market statements, since removed from the briefs and left out of the counts here). The reviewer was "
             "an AI model, Claude Opus 5.5, not the model that wrote the briefs and not a person; a human pass is still "
             "to do, and the sheet is built for it.</p>"
             '<table class="t"><tr><th>Question</th><th class="num">Result</th></tr>'
@@ -371,7 +391,12 @@ def _method(m: dict) -> str:
         "every cited source to be official or technical); amounts were shown in the source’s words (“15 milionů”) or "
         "without a currency (one format now: “15M CZK”, the original wording kept beside it); “28,000,000 CZK” was read "
         "as 28 and shown as “0k CZK” (grouped thousands now parsed); and Czech news pages served in windows-1250 were "
-        "decoded as UTF-8, garbling investor names (the declared charset is now used).</p>",
+        "decoded as UTF-8, garbling investor names (the declared charset is now used).</p>"
+        "<p>An investment analyst's review on 25 November found two more, both fixed: an empty register was shown as "
+        "“None found”, which tells a fund that something does not exist (it now reads “Not visible in public records” "
+        "and names what the register cannot show, such as defence-exempt contracts), and a possible portfolio conflict "
+        "was shown as shared word stems without saying what the portfolio company does. The market section was "
+        "removed: analysts size markets themselves.</p>",
         '<p class="foot"><a href="index.html">← Overview</a></p>',
     ]
     return _shell("Method and evaluation", "".join(body))
@@ -415,7 +440,8 @@ def build_site(store: Store, out: Path) -> list[Path]:
             + (f'<br><a class="site" href="https://{h(comp.domain, quote=True)}" rel="noopener noreferrer" '
                f'target="_blank">{h(comp.domain)}</a>' if comp.domain else "") + '</td>'
             f'<td>{h(_one_line((d or {}).get("product", "")))}</td>'
-            f'<td class="num">{r["facts"]}</td><td class="num">{r["sources"]}</td></tr>')
+            + (_investor_cell(meta.get(cid, {}).get("investor_check")) if group in GROUP_NOTES else "")
+            + f'<td class="num">{r["facts"]}</td><td class="num">{r["sources"]}</td></tr>')
     for cid in FEATURED:
         d = _brief_data(store, cid)
         if d:

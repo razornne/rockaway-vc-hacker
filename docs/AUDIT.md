@@ -110,7 +110,18 @@ A second outside review asked whether the evidence labels overstate compound sta
 
 **Filed accounts.** The new reader rejects a filing unless total assets equal total equity and liabilities and the net result agrees between the two statements. Building it surfaced three form layouts (row-number column or not, thousands spaces or not, "Kč" or "CZK"); each is handled and tested. Scanned filings are shown as *Not read*.
 
-## 9. What remains a limit
+## 9. Analyst review (25 November)
+
+An investment analyst read the showcase. His main point: the worst error a brief can make is telling the fund that something does not exist when it does. Two errors of that kind were found in code.
+
+| # | Error | Example | Fix |
+|---|---|---|---|
+| 31 | An empty register shown as *None found* | Fly4Future: "Defence evidence: None found" after reading TED, the EU funding portal and NATO DIANA, although defence purchases are often exempt from publication and the company holds a grant for a drone that catches unauthorised drones | `page.NOT_VISIBLE`: an empty result reads *Not visible in public records* and names what the register cannot show (contracts under CZK 50,000, defence-exempt contracts, unannounced rounds); the defence tile says to ask the company. Every brief's header says that *not found* means not visible in the sources read. Tests in `test_site.py` |
+| 32 | Portfolio overlap shown as shared word stems | Fly4Future: "Vermeer (shared terms: defence, drone, navigat)", which read as a conflict without saying what Vermeer does | The row shows the portfolio company's description and says it is a match by wording to be checked against product and buyer. Test in `test_site.py` |
+
+Changes from the same review: the market section is no longer shown (analysts size markets themselves, and the only market statements public sources hold are the company's own); key numbers come first and risks and founder questions follow the case for and against; the site says which latest round of each non-portfolio company was checked for Rockaway, with the source and date, instead of "not in the Rockaway portfolio". Model-written statements in the existing briefs still contain absence claims ("no defence tender won, not listed in NATO DIANA"); prompts `analyze-v7` and `invest-v6` forbid them and ask for a founder question instead, and they take effect when a brief is re-analysed.
+
+## 10. What remains a limit
 
 - An ambiguous company name has to be marked by hand (`context_terms`); it is not detected automatically.
 - SOC 2 cannot be checked publicly; the report is shared under NDA. The brief says "not checkable".

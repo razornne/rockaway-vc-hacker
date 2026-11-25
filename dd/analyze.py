@@ -12,7 +12,14 @@ from dd import signals as signals_mod
 from dd.llm import SYSTEM_GUARD
 from dd.store import Company, Fact, Store, now
 
-PROMPT_VERSION = "analyze-v6"
+PROMPT_VERSION = "analyze-v7"
+# Telling a fund that something does not exist when it does is the worst error a brief can make (an analyst's review,
+# November 2026). Public records are incomplete: defence buyers often publish nothing, rounds go unannounced,
+# accelerator lists are partial. Shared with the investment view (dd.invest).
+ABSENCE_RULE = ("NOTHING FOUND IS NOT A FINDING: never write that something does not exist or did not happen ('no "
+                "defence tender', 'not listed in NATO DIANA', 'no customers', 'no product surfaces'). If it matters, "
+                "name the sources that were read and make it a question for the founders, e.g. 'No defence contract is "
+                "visible in TED or the Czech contracts register; ask which defence buyers they supply.'\n")
 MAX_FACTS = 90
 MAX_FACT_CHARS = 50_000
 MAX_VALUE_CHARS = 1_800
@@ -219,7 +226,7 @@ def _prompt(company: Company, facts_json: list[dict], derived: dict) -> str:
         "Return all six sections. Keep the whole brief under 650 English words. Each item.text at most 45 words; "
         "at most ONE short assumption (12 words) and at most FIVE directly relevant fact_ids per item. "
         "Use only supplied fact IDs. If a section has no supported items, return items=[] and no_data=true. "
-        "Missing or unavailable information is unknown, never a negative claim.\n"
+        "Missing or unavailable information is unknown, never a negative claim.\n" + ABSENCE_RULE +
         "summary: up to 5 items, each with a distinct label from "
         f"{list(SUMMARY_LABELS)}. product = what it sells and to whom, in one plain sentence; stage_traction = "
         "evidenced stage: funding history, named customers, public money, hiring mix (e.g. first sales hires = early "

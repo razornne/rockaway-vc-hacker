@@ -26,7 +26,7 @@ topk\.io · CZ/US · 2026\-11\-20
 
 # Investment view
 
-*Inputs for the partner's memo, not a recommendation: what the evidence says about the business, the market, competitors and fit with the fund, and the case for and against\.*
+*Inputs for the partner's memo, not a recommendation: what the evidence says about the business, competitors and fit with the fund, and the case for and against\.*
 
 ## Fit with the Rockaway thesis
 
@@ -40,18 +40,13 @@ topk\.io · CZ/US · 2026\-11\-20
 - Revenue model: usage\-based SaaS pricing \(monthly billing\) with per\-operation and per‑token charges and free credits for trials\. *(Company claim)* ^[38](https://www.topk.io/pricing),[39](https://www.topk.io/pricing),[40](https://www.topk.io/pricing),[41](https://www.topk.io/pricing)
 - Buyers/payors: sells to enterprises — at least one named customer \(SalesEQ\) who uses TopK for agentic search over meetings\. *(Company claim)* ^[9](https://www.topk.io/customers/saleseq)
 
-## Market
-
-- Demand driver \(company/press\): enterprise need for AI\-native search and retrieval in the 'ChatGPT era' is cited as TopK's market rationale by multiple press outlets\. *(Corroborated)* ^[10](https://siliconcanals.com/?p=65960),[42](https://tech.eu/2025/07/01/topk-raises-55m-to-develop-ai-native-search-engine-for-enterprises),[43](https://itkey.media/topk-raises-usd-5-5m-to-tackle-chatgpt-era-challenges-with-ai-native-hybrid-search-engine-for-enterprises/)
-- Target buyers \(company claim\): TopK targets use cases across e\-commerce, finance, healthcare, and law by enabling domain\-specific tuning\. *(Single source)* ^[26](https://cc.cz/chodili-spolu-na-stredni-ted-nabiraji-120-milionu-a-chteji-pohanet-vyhledavani-pro-top-aplikace/)
-
 ## Competition
 
 - OpenAI \(mentioned in press as a target/comparator\): cited by Euro\.cz as a firm TopK 'aims at' — indicates positioning against large AI incumbents or their developer offerings\. *(Analyst view)* ^[23](https://www.euro.cz/clanky/cesko-slovensky-startup-topk-chce-zmenit-zpusob-vyhledavani-v-ere-ai-od-investoru-ziskal-120-milionu-a-miri-na-firmy-typu-openai/)
   - Assumption: Mention in press implies perceived market/positioning overlap\.
-- Elasticsearch / Elastic compatibility: TopK documents describe Elasticsearch API compatibility and migration messaging — positions TopK as an alternative to Elastic's stack for hybrid search\. *(Analyst view)* ^[44](https://www.topk.io/learn/hybrid-search-elasticsearch-api),[45](https://www.topk.io/learn/elasticsearch-api-compatibility)
+- Elasticsearch / Elastic compatibility: TopK documents describe Elasticsearch API compatibility and migration messaging — positions TopK as an alternative to Elastic's stack for hybrid search\. *(Analyst view)* ^[42](https://www.topk.io/learn/hybrid-search-elasticsearch-api),[43](https://www.topk.io/learn/elasticsearch-api-compatibility)
   - Assumption: API\-compatibility docs indicate deliberate product positioning vs Elastic\.
-- Redis Top\-K / probabilistic top\-k: Redis docs appear in the fact set \(top\-k data type\); this represents a technical incumbent/approach TopK must differentiate from for specific workloads\. *(Analyst view)* ^[46](https://redis.io/docs/latest/develop/data-types/probabilistic/top-k)
+- Redis Top\-K / probabilistic top\-k: Redis docs appear in the fact set \(top\-k data type\); this represents a technical incumbent/approach TopK must differentiate from for specific workloads\. *(Analyst view)* ^[44](https://redis.io/docs/latest/develop/data-types/probabilistic/top-k)
   - Assumption: Redis top\-k is a comparable technical approach for some retrieval tasks\.
 
 ## Case for and against
@@ -75,17 +70,17 @@ topk\.io · CZ/US · 2026\-11\-20
 
 - Seed round: $5\.5M \(≈120M CZK\) reported closed with investors Earlybird, KAYA, Irregular Expressions and angels\. *(Corroborated)* ^[6](https://siliconcanals.com/?p=65960),[7](https://vestbee.com/insights/articles/top-k-secures-5-5-m),[19](https://cc.cz/chodili-spolu-na-stredni-ted-nabiraji-120-milionu-a-chteji-pohanet-vyhledavani-pro-top-aplikace/),[20](https://www.lupa.cz/aktuality/databaze-s-prichodem-ai-prochazi-zasadni-transformaci-cesko-slovensky-startup-na-to-ziskal-120-milionu/),[21](https://www.startitup.sk/web-stories/slovaci-chcu-prepisat-buducnost-vyhladavania-startup-topk-ziskal-miliony-na-ai-revoluciu/)
   - Assumption: Press round reporting equals closed funding
-- Founders and leadership named in press: Marek Galovič, Jerguš Lejko and additional founders listed in coverage\. *(Corroborated)* ^[47](https://www.startitup.sk/web-stories/slovaci-chcu-prepisat-buducnost-vyhladavania-startup-topk-ziskal-miliony-na-ai-revoluciu/),[48](https://www.lupa.cz/aktuality/databaze-s-prichodem-ai-prochazi-zasadni-transformaci-cesko-slovensky-startup-na-to-ziskal-120-milionu/)
+- Founders and leadership named in press: Marek Galovič, Jerguš Lejko and additional founders listed in coverage\. *(Corroborated)* ^[45](https://www.startitup.sk/web-stories/slovaci-chcu-prepisat-buducnost-vyhladavania-startup-topk-ziskal-miliony-na-ai-revoluciu/),[46](https://www.lupa.cz/aktuality/databaze-s-prichodem-ai-prochazi-zasadni-transformaci-cesko-slovensky-startup-na-to-ziskal-120-milionu/)
 
 ## Technology profile
 
-- Product surfaces: public API, console, docs, login and status subdomains exist for SaaS product access and docs\. *(Verified)* ^[4](https://crt.sh/?q=%25.topk.io&output=json),[5](https://crt.sh/?q=%25.topk.io&output=json),[31](https://crt.sh/?q=%25.topk.io&output=json),[49](https://crt.sh/?q=%25.topk.io&output=json),[32](https://crt.sh/?q=%25.topk.io&output=json)
-- Engineering footprint: at least eight public GitHub repos \(Rust core with \~98 stars\), active pushes as recent as 2026\-11\-17\. *(Verified)* ^[11](https://github.com/topk-io/topk),[12](https://github.com/topk-io/llama-index-vector-stores-topk),[50](https://github.com/topk-io/langchain-topk),[28](https://github.com/topk-io/dars),[51](https://github.com/topk-io)
-- Product capabilities claimed: unified hybrid retrieval \(semantic, dense, sparse, keyword\), multi\-vector/late\-interaction, high\-throughput online writes\. *(Company claim)* ^[1](https://docs.topk.io/),[52](https://www.topk.io/use-cases/recsys),[53](https://www.topk.io/use-cases/recsys),[54](https://www.topk.io/use-cases/recsys)
+- Product surfaces: public API, console, docs, login and status subdomains exist for SaaS product access and docs\. *(Verified)* ^[4](https://crt.sh/?q=%25.topk.io&output=json),[5](https://crt.sh/?q=%25.topk.io&output=json),[31](https://crt.sh/?q=%25.topk.io&output=json),[47](https://crt.sh/?q=%25.topk.io&output=json),[32](https://crt.sh/?q=%25.topk.io&output=json)
+- Engineering footprint: at least eight public GitHub repos \(Rust core with \~98 stars\), active pushes as recent as 2026\-11\-17\. *(Verified)* ^[11](https://github.com/topk-io/topk),[12](https://github.com/topk-io/llama-index-vector-stores-topk),[48](https://github.com/topk-io/langchain-topk),[28](https://github.com/topk-io/dars),[49](https://github.com/topk-io)
+- Product capabilities claimed: unified hybrid retrieval \(semantic, dense, sparse, keyword\), multi\-vector/late\-interaction, high\-throughput online writes\. *(Company claim)* ^[1](https://docs.topk.io/),[50](https://www.topk.io/use-cases/recsys),[51](https://www.topk.io/use-cases/recsys),[52](https://www.topk.io/use-cases/recsys)
 
 ## What could be rebuilt, and what cannot be judged from outside
 
-- **Replicable with off-the-shelf parts:** API/SDK surfaces and hybrid\-search behavior can be reassembled using open libraries \(OpenSearch/Elasticsearch API compatibility, open embeddings, MaxSim concepts\)\. *(Analyst view)* ^[55](https://www.topk.io/learn/elasticsearch-api-compatibility),[1](https://docs.topk.io/),[54](https://www.topk.io/use-cases/recsys)
+- **Replicable with off-the-shelf parts:** API/SDK surfaces and hybrid\-search behavior can be reassembled using open libraries \(OpenSearch/Elasticsearch API compatibility, open embeddings, MaxSim concepts\)\. *(Analyst view)* ^[53](https://www.topk.io/learn/elasticsearch-api-compatibility),[1](https://docs.topk.io/),[52](https://www.topk.io/use-cases/recsys)
   - Assumption: Public docs and standards allow reimplementation
 - **Edge supported by public evidence:** Published end\-to\-end benchmark \(124\.8 ms p99, 176\.5 QPS\) is company\-published and is verifiable by reproduction of that run\. *(Analyst view)* ^[15](https://www.topk.io/use-cases/recsys)
   - Assumption: Benchmark dataset and config would be shared for reproduction
@@ -96,13 +91,13 @@ topk\.io · CZ/US · 2026\-11\-20
 
 - Unverified customer claim: SalesEQ testimonial exists on vendor site but independent corroboration not found\. *(Analyst view)* ^[9](https://www.topk.io/customers/saleseq),[18](https://www.topk.io/customers/saleseq)
 - Security attestation behind NDA: public pointer to Vanta exists, but the SOC2 evidence requires requester access\. *(Analyst view)* ^[17](https://www.topk.io/security),[16](https://vestbee.com/insights/articles/top-k-secures-5-5-m)
-- Benchmark and performance claims are self\-reported; reproduction and dataset/context are necessary to trust latency/recall numbers\. *(Analyst view)* ^[15](https://www.topk.io/use-cases/recsys),[54](https://www.topk.io/use-cases/recsys)
+- Benchmark and performance claims are self\-reported; reproduction and dataset/context are necessary to trust latency/recall numbers\. *(Analyst view)* ^[15](https://www.topk.io/use-cases/recsys),[52](https://www.topk.io/use-cases/recsys)
 
 ## Questions for founders
 
 - Can TopK provide the raw benchmark config, dataset, and replica topology used for the 124\.8 ms p99 / 176\.5 QPS result? *(Analyst view)* ^[15](https://www.topk.io/use-cases/recsys)
 - Please provide the SOC 2 Type I report or attestation artifact currently behind NDA and confirm date/coverage\. *(Analyst view)* ^[17](https://www.topk.io/security),[16](https://vestbee.com/insights/articles/top-k-secures-5-5-m)
-- Request an independent SalesEQ reference call or telemetry demonstrating production recall and index lag under their workload\. *(Analyst view)* ^[9](https://www.topk.io/customers/saleseq),[18](https://www.topk.io/customers/saleseq),[53](https://www.topk.io/use-cases/recsys)
+- Request an independent SalesEQ reference call or telemetry demonstrating production recall and index lag under their workload\. *(Analyst view)* ^[9](https://www.topk.io/customers/saleseq),[18](https://www.topk.io/customers/saleseq),[51](https://www.topk.io/use-cases/recsys)
 - Which embedding models are offered in\-product vs\. those requiring customer OpenAI accounts, and what data leaves customer boundaries? *(Analyst view)* ^[2](https://www.topk.io/),[25](https://www.startitup.sk/web-stories/slovaci-chcu-prepisat-buducnost-vyhladavania-startup-topk-ziskal-miliony-na-ai-revoluciu/),[41](https://www.topk.io/pricing)
 
 ## Sources
@@ -148,21 +143,19 @@ topk\.io · CZ/US · 2026\-11\-20
 39. [topk\.io](https://www.topk.io/pricing) · Company's own website · Pricing — “Start with $10 free credits”
 40. [topk\.io](https://www.topk.io/pricing) · Company's own website · Pricing — “Write requests Batched upsert operations per 1K requests $ 0\.01”
 41. [topk\.io](https://www.topk.io/pricing) · Company's own website · Pricing — “Text &amp; Image embedding Built\-in multi\-vector embeddings per 1M tokens $ 0\.05”
-42. [tech\.eu](https://tech.eu/2025/07/01/topk-raises-55m-to-develop-ai-native-search-engine-for-enterprises) · Independent press · Press article · 2025\-07\-01 — “TopK raises $5\.5M to develop AI\-native search engine for enterprises \- Tech\.eu”
-43. [itkey\.media](https://itkey.media/topk-raises-usd-5-5m-to-tackle-chatgpt-era-challenges-with-ai-native-hybrid-search-engine-for-enterprises/) · Independent press · Press article · 2025\-08\-11 — “TopK Raises USD 5\.5M to Tackle ChatGPT\-Era Challenges with AI\-Native Hybrid Search Engine for Enterprises \- ITKeyMedia”
-44. [topk\.io](https://www.topk.io/learn/hybrid-search-elasticsearch-api) · Company's own website · Website page — “Can You Do Hybrid Search Through the Elasticsearch API? \| TopK”
-45. [topk\.io](https://www.topk.io/learn/elasticsearch-api-compatibility) · Company's own website · GitHub organisation — “elastic · None public repos”
-46. [redis\.io](https://redis.io/docs/latest/develop/data-types/probabilistic/top-k) · Independent press · Press article — “Top\-K \| Docs”
-47. [startitup\.sk](https://www.startitup.sk/web-stories/slovaci-chcu-prepisat-buducnost-vyhladavania-startup-topk-ziskal-miliony-na-ai-revoluciu/) · Independent press · Team claim — “Startup TopK, založený slovenskou dvojicou Marek Galovič a Jerguš Lejko, získal 5,5 milióna dolárov v rámci seed investičného kola\.”
-48. [lupa\.cz](https://www.lupa.cz/aktuality/databaze-s-prichodem-ai-prochazi-zasadni-transformaci-cesko-slovensky-startup-na-to-ziskal-120-milionu/) · Independent press · Team claim — “Zakladateli TopK jsou Marek Galovič, Jerguš Lejko, Peter Toth a Barbora Grillusová\.”
-49. [crt\.sh](https://crt.sh/?q=%25.topk.io&output=json) · Public technical artifact · Subdomain \(certificates\) · 2026\-06\-22 — “login\.topk\.io \(first certificate 2026\-06\-22\)”
-50. [github\.com](https://github.com/topk-io/langchain-topk) · Public technical artifact · GitHub repository · 2026\-11\-17 — “topk\-io/langchain\-topk · Python · last push 2026\-11\-17”
-51. [github\.com](https://github.com/topk-io) · Public technical artifact · GitHub organisation · 2024\-11\-02 — “topk\-io · 19 public repos”
-52. [topk\.io](https://www.topk.io/use-cases/recsys) · Company's own website · Product capability — “TopK gives RecSys teams one serving layer for fresh writes, product\-aware filters, and dense, sparse, keyword, and multi\-vector retrieval across every surface\.”
-53. [topk\.io](https://www.topk.io/use-cases/recsys) · Company's own website · Product capability — “Online writes without rebuilds TopK can ingest 70 MB/s per partition with writes becoming queryable without index rebuild lag\.”
-54. [topk\.io](https://www.topk.io/use-cases/recsys) · Company's own website · Product capability — “Late interaction is expressive because it does more work: MaxSim compares query vectors against item vectors and aggregates the best matches\. TopK does not brute\-force that across the corpus\. Managed semantic\_index and bring\-your\-own representations in multi\_vector\_index both use sparse multi\-vector encoding as a fast …”
-55. [topk\.io](https://www.topk.io/learn/elasticsearch-api-compatibility) · Company's own website · Website page — “Can You Replace Elasticsearch Without Rewriting Queries? \| TopK”
-56. [patents\.google\.com](https://patents.google.com/patent/US20240254752A1) · Official record · Patent publication — “US20240254752A1 · Modular assembly including multiple modules · Topk USA LLC”
+42. [topk\.io](https://www.topk.io/learn/hybrid-search-elasticsearch-api) · Company's own website · Website page — “Can You Do Hybrid Search Through the Elasticsearch API? \| TopK”
+43. [topk\.io](https://www.topk.io/learn/elasticsearch-api-compatibility) · Company's own website · GitHub organisation — “elastic · None public repos”
+44. [redis\.io](https://redis.io/docs/latest/develop/data-types/probabilistic/top-k) · Independent press · Press article — “Top\-K \| Docs”
+45. [startitup\.sk](https://www.startitup.sk/web-stories/slovaci-chcu-prepisat-buducnost-vyhladavania-startup-topk-ziskal-miliony-na-ai-revoluciu/) · Independent press · Team claim — “Startup TopK, založený slovenskou dvojicou Marek Galovič a Jerguš Lejko, získal 5,5 milióna dolárov v rámci seed investičného kola\.”
+46. [lupa\.cz](https://www.lupa.cz/aktuality/databaze-s-prichodem-ai-prochazi-zasadni-transformaci-cesko-slovensky-startup-na-to-ziskal-120-milionu/) · Independent press · Team claim — “Zakladateli TopK jsou Marek Galovič, Jerguš Lejko, Peter Toth a Barbora Grillusová\.”
+47. [crt\.sh](https://crt.sh/?q=%25.topk.io&output=json) · Public technical artifact · Subdomain \(certificates\) · 2026\-06\-22 — “login\.topk\.io \(first certificate 2026\-06\-22\)”
+48. [github\.com](https://github.com/topk-io/langchain-topk) · Public technical artifact · GitHub repository · 2026\-11\-17 — “topk\-io/langchain\-topk · Python · last push 2026\-11\-17”
+49. [github\.com](https://github.com/topk-io) · Public technical artifact · GitHub organisation · 2024\-11\-02 — “topk\-io · 19 public repos”
+50. [topk\.io](https://www.topk.io/use-cases/recsys) · Company's own website · Product capability — “TopK gives RecSys teams one serving layer for fresh writes, product\-aware filters, and dense, sparse, keyword, and multi\-vector retrieval across every surface\.”
+51. [topk\.io](https://www.topk.io/use-cases/recsys) · Company's own website · Product capability — “Online writes without rebuilds TopK can ingest 70 MB/s per partition with writes becoming queryable without index rebuild lag\.”
+52. [topk\.io](https://www.topk.io/use-cases/recsys) · Company's own website · Product capability — “Late interaction is expressive because it does more work: MaxSim compares query vectors against item vectors and aggregates the best matches\. TopK does not brute\-force that across the corpus\. Managed semantic\_index and bring\-your\-own representations in multi\_vector\_index both use sparse multi\-vector encoding as a fast …”
+53. [topk\.io](https://www.topk.io/learn/elasticsearch-api-compatibility) · Company's own website · Website page — “Can You Replace Elasticsearch Without Rewriting Queries? \| TopK”
+54. [patents\.google\.com](https://patents.google.com/patent/US20240254752A1) · Official record · Patent publication — “US20240254752A1 · Modular assembly including multiple modules · Topk USA LLC”
 
 ## How this dossier was built
 

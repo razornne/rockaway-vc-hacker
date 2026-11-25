@@ -27,7 +27,7 @@ cruxo\.io · CRUXO group s\.r\.o\. · IČO 14134683 · CZ · 2026\-11\-20
 
 # Investment view
 
-*Inputs for the partner's memo, not a recommendation: what the evidence says about the business, the market, competitors and fit with the fund, and the case for and against\.*
+*Inputs for the partner's memo, not a recommendation: what the evidence says about the business, competitors and fit with the fund, and the case for and against\.*
 
 ## Fit with the Rockaway thesis
 
@@ -47,13 +47,6 @@ cruxo\.io · CRUXO group s\.r\.o\. · IČO 14134683 · CZ · 2026\-11\-20
 - Non\-dilutive support: Cruxo has three awarded public grants totalling \~5\.79M CZK \(awarded amounts listed\)\. *(Verified)* ^[21](https://www.hlidacstatu.cz/Dotace/Detail/DeMinimis-E0C57E408EB523AB5DEC3D175F5C14B60687EF2281EE7E88E0D96A7EEF14E43A),[22](https://www.hlidacstatu.cz/Dotace/Detail/DeMinimis-ECFB6E6BF304AB059D9781E53253A46317597279C47B6458E4E9B547CEC19336),[23](https://www.hlidacstatu.cz/Dotace/Detail/Eufondy-7F57C816735C39D7FE4922DFE0CA74F10EBB49C74734EB86301501AD2B63C3BC)
   - Assumption: Awards are relevant to product development/expansion\.
 
-## Market
-
-- Demand driver: press and company position retail media networks as a growing revenue stream for retailers, framing Cruxo as enabling e\-shop ad monetisation \(company/press claim\)\. *(Corroborated)* ^[37](https://www.mediaguru.cz/cruxo-ziskalo-na-svou-expanzi-investici-20-milionu-kc),[42](https://cc.cz/v-e-commerce-bezi-tuhy-boj-o-marzi-i-zakaznika-cruxo-chce-pomoct-s-lepsi-reklamou-a-hlasi-investici/)
-  - Assumption: Press reflects market narrative, not formal market study\.
-- Company claim: active customers in six countries and multi\-country/multi\-currency support, supporting cross\-border RMN adoption\. *(Partly verified)* ^[43](https://rockawayventures.com/cruxo-revolutionizes-supplier-advertising-on-e-commerce-platforms-boosts-e-shop-profits-across-6-countries-and-secures-a-new-czk-15-million-investment/),[44](https://cruxo.io/retailers/)
-  - Assumption: Country count corresponds to paying customers\.
-
 ## Competition
 
 No sourced findings for this section.
@@ -62,7 +55,7 @@ No sourced findings for this section.
 
 - **For:** Early commercial traction — named enterprise customers and claimed multi\-country operations with unit\-millions CZK monthly turnover\. *(Analyst view)* ^[7](https://launchbox.cz/p/cruxo),[8](https://www.mediaguru.cz/lekarna-cz-prevadi-online-inzerci-pod-cruxo),[13](https://cc.cz/v-e-commerce-bezi-tuhy-boj-o-marzi-i-zakaznika-cruxo-chce-pomoct-s-lepsi-reklamou-a-hlasi-investici/)
   - Assumption: Reported turnover is recurring and verifiable\.
-- **For:** Product \+ tech positioning — proprietary data\-insights and data\-driven optimisation aimed at maximising e\-shop ad\-space effectiveness\. *(Analyst view)* ^[9](https://cruxo.io/about/),[36](https://rockawayventures.com/cruxo-revolutionizes-supplier-advertising-on-e-commerce-platforms-boosts-e-shop-profits-across-6-countries-and-secures-a-new-czk-15-million-investment/),[45](https://cruxo.io/)
+- **For:** Product \+ tech positioning — proprietary data\-insights and data\-driven optimisation aimed at maximising e\-shop ad\-space effectiveness\. *(Analyst view)* ^[9](https://cruxo.io/about/),[36](https://rockawayventures.com/cruxo-revolutionizes-supplier-advertising-on-e-commerce-platforms-boosts-e-shop-profits-across-6-countries-and-secures-a-new-czk-15-million-investment/),[42](https://cruxo.io/)
   - Assumption: Proprietary framework delivers measurable ROI uplift\.
 - **Against:** Privacy/compliance ambiguity — site claims TCF compliance but 'cruxo' not found on IAB GVL, posing legal/partner\-integration risk\. *(Analyst view)* ^[11](https://cruxo.io/retailers/),[12](https://vendor-list.consensu.org/v3/vendor-list.json)
   - Assumption: GVL absence indicates a GDPR/TCPA integration gap needing remediation\.
@@ -77,22 +70,22 @@ No sourced findings for this section.
 
 ## Ownership and capital
 
-- Registry: CRUXO group s\.r\.o\. incorporated 2022‑01‑10 \(CZ ICO 14134683\)\. *(Verified)* ^[46](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/14134683),[34](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/14134683)
-- Shareholders in commercial register: Czech Founders \(10\.77%\), Presto Ventures II \(7\.69%\), Rockaway Ventures Fund \(3\.85%\), ZAKA Startup 18 \(3\.55%\)\. *(Verified)* ^[18](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683),[19](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683),[20](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683),[47](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683)
+- Registry: CRUXO group s\.r\.o\. incorporated 2022‑01‑10 \(CZ ICO 14134683\)\. *(Verified)* ^[43](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/14134683),[34](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/14134683)
+- Shareholders in commercial register: Czech Founders \(10\.77%\), Presto Ventures II \(7\.69%\), Rockaway Ventures Fund \(3\.85%\), ZAKA Startup 18 \(3\.55%\)\. *(Verified)* ^[18](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683),[19](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683),[20](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683),[44](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683)
 - Fundraising: press reports of a \~20M CZK round \(2023\) and a subsequent \~15M CZK round; registry verifications confirm named investors\. *(Verified)* ^[4](https://www.mediaguru.cz/clanky/2023/05/cruxo-ziskalo-na-svou-expanzi-investici-20-milionu-kc/),[17](https://cc.cz/v-e-commerce-bezi-tuhy-boj-o-marzi-i-zakaznika-cruxo-chce-pomoct-s-lepsi-reklamou-a-hlasi-investici/),[5](https://rockawayventures.com/cruxo-revolutionizes-supplier-advertising-on-e-commerce-platforms-boosts-e-shop-profits-across-6-countries-and-secures-a-new-czk-15-million-investment/)
 
 ## Technology profile
 
-- Product capabilities \(company statements\): self‑serve campaign management, real‑time analytics, budget dashboards, multi‑country support, and ad formats \(banners, sponsored products, brand pages\)\. *(Company claim)* ^[38](https://cruxo.io/retailers/),[48](https://cruxo.io/retailers/),[49](https://cruxo.io/),[2](https://cruxo.io/),[44](https://cruxo.io/retailers/)
-- Engineering footprint: a single public GitHub org with one repo \(archived, last push 2025‑01‑16\) and public staging/dev subdomains and a docs subdomain\. *(Verified)* ^[50](https://github.com/cruxoio),[26](https://github.com/cruxoio/status),[29](https://crt.sh/?q=%25.cruxo.io&output=json),[51](https://crt.sh/?q=%25.cruxo.io&output=json),[27](https://crt.sh/?q=%25.cruxo.io&output=json)
-- AI dependency / models: no verified evidence of own models or third‑party LLM dependencies in supplied facts; technical claims about data optimization exist as company statements\. *(Partly verified)* ^[36](https://rockawayventures.com/cruxo-revolutionizes-supplier-advertising-on-e-commerce-platforms-boosts-e-shop-profits-across-6-countries-and-secures-a-new-czk-15-million-investment/),[9](https://cruxo.io/about/),[52](https://www.cnaip.cz/en/entity/cruxo)
+- Product capabilities \(company statements\): self‑serve campaign management, real‑time analytics, budget dashboards, multi‑country support, and ad formats \(banners, sponsored products, brand pages\)\. *(Company claim)* ^[38](https://cruxo.io/retailers/),[45](https://cruxo.io/retailers/),[46](https://cruxo.io/),[2](https://cruxo.io/),[47](https://cruxo.io/retailers/)
+- Engineering footprint: a single public GitHub org with one repo \(archived, last push 2025‑01‑16\) and public staging/dev subdomains and a docs subdomain\. *(Verified)* ^[48](https://github.com/cruxoio),[26](https://github.com/cruxoio/status),[29](https://crt.sh/?q=%25.cruxo.io&output=json),[49](https://crt.sh/?q=%25.cruxo.io&output=json),[27](https://crt.sh/?q=%25.cruxo.io&output=json)
+- AI dependency / models: no verified evidence of own models or third‑party LLM dependencies in supplied facts; technical claims about data optimization exist as company statements\. *(Partly verified)* ^[36](https://rockawayventures.com/cruxo-revolutionizes-supplier-advertising-on-e-commerce-platforms-boosts-e-shop-profits-across-6-countries-and-secures-a-new-czk-15-million-investment/),[9](https://cruxo.io/about/),[50](https://www.cnaip.cz/en/entity/cruxo)
   - Assumption: Absence of explicit LLM vendor facts implies no disclosed dependency\.
 
 ## What could be rebuilt, and what cannot be judged from outside
 
 - **Replicable with off-the-shelf parts:** Ad‑serving \+ dashboards component — product claims standard ad formats, campaign management and dashboards that can be reimplemented with off‑the‑shelf ad servers and BI tools\. *(Analyst view)* ^[1](https://cruxo.io/),[2](https://cruxo.io/),[3](https://cruxo.io/),[26](https://github.com/cruxoio/status)
   - Assumption: Company uses standard ad serving and analytics primitives\.
-- **Edge supported by public evidence:** Commercial traction with named enterprise customers \(Dr\.Max, Lékárna\.cz\) and operations in six countries—public press and independent corroboration support market validation\. *(Analyst view)* ^[7](https://launchbox.cz/p/cruxo),[8](https://www.mediaguru.cz/lekarna-cz-prevadi-online-inzerci-pod-cruxo),[43](https://rockawayventures.com/cruxo-revolutionizes-supplier-advertising-on-e-commerce-platforms-boosts-e-shop-profits-across-6-countries-and-secures-a-new-czk-15-million-investment/),[13](https://cc.cz/v-e-commerce-bezi-tuhy-boj-o-marzi-i-zakaznika-cruxo-chce-pomoct-s-lepsi-reklamou-a-hlasi-investici/)
+- **Edge supported by public evidence:** Commercial traction with named enterprise customers \(Dr\.Max, Lékárna\.cz\) and operations in six countries—public press and independent corroboration support market validation\. *(Analyst view)* ^[7](https://launchbox.cz/p/cruxo),[8](https://www.mediaguru.cz/lekarna-cz-prevadi-online-inzerci-pod-cruxo),[51](https://rockawayventures.com/cruxo-revolutionizes-supplier-advertising-on-e-commerce-platforms-boosts-e-shop-profits-across-6-countries-and-secures-a-new-czk-15-million-investment/),[13](https://cc.cz/v-e-commerce-bezi-tuhy-boj-o-marzi-i-zakaznika-cruxo-chce-pomoct-s-lepsi-reklamou-a-hlasi-investici/)
   - Assumption: Customer mentions reflect active commercial relationships\.
 - **Cannot be judged from outside:** The proprietary data‑insights framework and claimed ad‑serving scalability cannot be judged externally without access to code, models, datasets, or performance logs\. *(Analyst view)* ^[9](https://cruxo.io/about/),[10](https://cruxo.io/retailers/)
   - Assumption: Internal artifacts and metrics are required for assessment\.
@@ -100,7 +93,7 @@ No sourced findings for this section.
 ## Risks and caveats
 
 - Material reliance on grants/support: three awarded national grants totalling \~5\.79M CZK; this is subsidy support but not sales — check cashflow impact\. *(Analyst view)* ^[21](https://www.hlidacstatu.cz/Dotace/Detail/DeMinimis-E0C57E408EB523AB5DEC3D175F5C14B60687EF2281EE7E88E0D96A7EEF14E43A),[22](https://www.hlidacstatu.cz/Dotace/Detail/DeMinimis-ECFB6E6BF304AB059D9781E53253A46317597279C47B6458E4E9B547CEC19336),[23](https://www.hlidacstatu.cz/Dotace/Detail/Eufondy-7F57C816735C39D7FE4922DFE0CA74F10EBB49C74734EB86301501AD2B63C3BC)
-- Thin public engineering evidence: one archived public repo and limited public docs pages suggest limited observable engineering surface for external audit\. *(Analyst view)* ^[26](https://github.com/cruxoio/status),[50](https://github.com/cruxoio),[27](https://crt.sh/?q=%25.cruxo.io&output=json)
+- Thin public engineering evidence: one archived public repo and limited public docs pages suggest limited observable engineering surface for external audit\. *(Analyst view)* ^[26](https://github.com/cruxoio/status),[48](https://github.com/cruxoio),[27](https://crt.sh/?q=%25.cruxo.io&output=json)
 - Compliance claim unresolved: IAB TCF vendor registration not found despite site claiming TCF implementation — potential compliance or integration gap\. *(Analyst view)* ^[11](https://cruxo.io/retailers/),[12](https://vendor-list.consensu.org/v3/vendor-list.json)
 
 ## Questions for founders
@@ -154,19 +147,18 @@ No sourced findings for this section.
 39. [cruxo\.io](https://cruxo.io/retailers/) · Company's own website · Product capability — “Customizable ad tools for each retailer”
 40. [cruxo\.io](https://cruxo.io/advertisers/) · Company's own website · Product capability — “We plan and manage your retail media campaigns\.”
 41. [cruxo\.io](https://cruxo.io/advertisers/) · Company's own website · Product capability — “We help your teams master retail media through training, playbooks, and best practices\.”
-42. [cc\.cz](https://cc.cz/v-e-commerce-bezi-tuhy-boj-o-marzi-i-zakaznika-cruxo-chce-pomoct-s-lepsi-reklamou-a-hlasi-investici/) · Independent press · Press article · 2024\-11\-11 — “Cruxo chce pomoct s lepší reklamou, teď hlásí investici \- CzechCrunch”
-43. [rockawayventures\.com](https://rockawayventures.com/cruxo-revolutionizes-supplier-advertising-on-e-commerce-platforms-boosts-e-shop-profits-across-6-countries-and-secures-a-new-czk-15-million-investment/) · Independent press · Customer — “The platform has customers in 6 countries, supports multiple languages”
-44. [cruxo\.io](https://cruxo.io/retailers/) · Company's own website · Technical claim — “Multi country scalability Manage multiple countries and currencies in one platform —”
-45. [cruxo\.io](https://cruxo.io/) · Company's own website · Product capability — “Get real\-time data &amp; insights to improve campaign results\.”
-46. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/14134683) · Official record · Registry: identity · 2022\-01\-10 — “CRUXO group s\.r\.o\. · s\.r\.o\. · registered 2022\-01\-10”
-47. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683) · Official record · Registry: shareholder · 2026\-08\-24 — “ZAKA Startup 18 j\. s\. a\. · 3\.55% · from 2026\-08\-24”
-48. [cruxo\.io](https://cruxo.io/retailers/) · Company's own website · Product capability — “Turn real\-time analytics into increased sales”
-49. [cruxo\.io](https://cruxo.io/) · Company's own website · Product capability — “Discover new ways to monetize your ad space &amp; stay ahead with budget dashboards, smart calendar and digital shelf performance analyzer\.”
-50. [github\.com](https://github.com/cruxoio) · Public technical artifact · GitHub organisation · 2023\-09\-05 — “cruxoio · 1 public repos”
-51. [crt\.sh](https://crt.sh/?q=%25.cruxo.io&output=json) · Public technical artifact · Subdomain \(certificates\) · 2024\-01\-04 — “app\.stage\.cruxo\.io \(first certificate 2024\-01\-04\)”
-52. [cnaip\.cz](https://www.cnaip.cz/en/entity/cruxo) · Independent press · Press article — “Cruxo — CNAIP”
-53. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683) · Official record · Independent check of a claim · 2026\-08\-24 — “Press \(cc\.cz, rockawayventures\.com\) names Rockaway Ventures as an investor; the commercial register lists Rockaway Ventures Fund SCSp as a shareholder from 2026\-08\-24 \(3\.85%\)\.”
-54. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683) · Official record · Independent check of a claim · 2026\-08\-24 — “Press \(borovan\.cz, cc\.cz, mediaguru\.cz, mediar\.cz\) names Zaka as an investor; the commercial register lists ZAKA Startup 18 j\. s\. a\. as a shareholder from 2026\-08\-24 \(3\.55%\)\.”
+42. [cruxo\.io](https://cruxo.io/) · Company's own website · Product capability — “Get real\-time data &amp; insights to improve campaign results\.”
+43. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/14134683) · Official record · Registry: identity · 2022\-01\-10 — “CRUXO group s\.r\.o\. · s\.r\.o\. · registered 2022\-01\-10”
+44. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683) · Official record · Registry: shareholder · 2026\-08\-24 — “ZAKA Startup 18 j\. s\. a\. · 3\.55% · from 2026\-08\-24”
+45. [cruxo\.io](https://cruxo.io/retailers/) · Company's own website · Product capability — “Turn real\-time analytics into increased sales”
+46. [cruxo\.io](https://cruxo.io/) · Company's own website · Product capability — “Discover new ways to monetize your ad space &amp; stay ahead with budget dashboards, smart calendar and digital shelf performance analyzer\.”
+47. [cruxo\.io](https://cruxo.io/retailers/) · Company's own website · Technical claim — “Multi country scalability Manage multiple countries and currencies in one platform —”
+48. [github\.com](https://github.com/cruxoio) · Public technical artifact · GitHub organisation · 2023\-09\-05 — “cruxoio · 1 public repos”
+49. [crt\.sh](https://crt.sh/?q=%25.cruxo.io&output=json) · Public technical artifact · Subdomain \(certificates\) · 2024\-01\-04 — “app\.stage\.cruxo\.io \(first certificate 2024\-01\-04\)”
+50. [cnaip\.cz](https://www.cnaip.cz/en/entity/cruxo) · Independent press · Press article — “Cruxo — CNAIP”
+51. [rockawayventures\.com](https://rockawayventures.com/cruxo-revolutionizes-supplier-advertising-on-e-commerce-platforms-boosts-e-shop-profits-across-6-countries-and-secures-a-new-czk-15-million-investment/) · Independent press · Customer — “The platform has customers in 6 countries, supports multiple languages”
+52. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683) · Official record · Independent check of a claim · 2026\-08\-24 — “Press \(cc\.cz, rockawayventures\.com\) names Rockaway Ventures as an investor; the commercial register lists Rockaway Ventures Fund SCSp as a shareholder from 2026\-08\-24 \(3\.85%\)\.”
+53. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683) · Official record · Independent check of a claim · 2026\-08\-24 — “Press \(borovan\.cz, cc\.cz, mediaguru\.cz, mediar\.cz\) names Zaka as an investor; the commercial register lists ZAKA Startup 18 j\. s\. a\. as a shareholder from 2026\-08\-24 \(3\.55%\)\.”
 
 ## How this dossier was built
 

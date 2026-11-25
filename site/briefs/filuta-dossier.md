@@ -27,7 +27,7 @@ filuta\.ai · Filuta AI CZ s\.r\.o\. · IČO 09745424 · CZ · 2026\-11\-20
 
 # Investment view
 
-*Inputs for the partner's memo, not a recommendation: what the evidence says about the business, the market, competitors and fit with the fund, and the case for and against\.*
+*Inputs for the partner's memo, not a recommendation: what the evidence says about the business, competitors and fit with the fund, and the case for and against\.*
 
 ## Fit with the Rockaway thesis
 
@@ -45,11 +45,6 @@ filuta\.ai · Filuta AI CZ s\.r\.o\. · IČO 09745424 · CZ · 2026\-11\-20
 - Material non\-equity support from public grants: multiple awarded national and EU grants totalling \~44\.1M CZK across IDs provided \(grants are awarded support, not necessarily received/payments\)\. *(Analyst view)* ^[23](https://www.hlidacstatu.cz/Dotace/Detail/DeMinimis-C8BA33B8412EA7002E07855E4ECA1F13263945F6C836AD28D9FBEA85FA85F1D0),[24](https://www.hlidacstatu.cz/Dotace/Detail/DeMinimis-4D6C0E515DB6A36794427267495D3E563288718003989E1A7E9203A334A4F31B),[9](https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-977DD2CC67E299D573718EC1C9228BB34E4FC92089EF8F2FC763FD0E69BE5D82),[25](https://filuta.ai/)
   - Assumption: Award amounts reflect public support size\.
 
-## Market
-
-- Demand drivers cited by the company and press: need to reduce manual QA/test maintenance and speed regression testing across vehicle infotainment, open\-world games, and procurement compliance\. *(Analyst view)* ^[48](https://filuta.ai/case-studies/autonomous-hmi-testing-european-automotive-oem),[49](https://filuta.ai/case-studies/scaling-qa-open-world-rpg),[4](https://filuta.ai/case-studies/how-hisd-s-procurement-team-scaled-compliance-without-scaling-headcount)
-  - Assumption: Case studies indicate the primary pain points targeted\.
-
 ## Competition
 
 No sourced findings for this section.
@@ -58,7 +53,7 @@ No sourced findings for this section.
 
 - **For:** Strong IP and research signal—six published patent applications and multiple peer\-reviewed papers and conference submissions tied to Filuta's composite\-AI approach\. *(Analyst view)* ^[11](https://patents.google.com/?assignee=filuta),[15](https://patents.google.com/patent/US20250005318A1),[12](https://openalex.org/W4403792769)
   - Assumption: Patent applications and papers indicate defensible tech\.
-- **For:** Demonstrable product traction via multiple case studies showing large cycle\-time reductions, reproducible defect traces, and integration into OEM CI pipelines\. *(Analyst view)* ^[48](https://filuta.ai/case-studies/autonomous-hmi-testing-european-automotive-oem),[50](https://filuta.ai/case-studies/autonomous-hmi-testing-european-automotive-oem),[51](https://filuta.ai/case-studies/scaling-qa-open-world-rpg)
+- **For:** Demonstrable product traction via multiple case studies showing large cycle\-time reductions, reproducible defect traces, and integration into OEM CI pipelines\. *(Analyst view)* ^[48](https://filuta.ai/case-studies/autonomous-hmi-testing-european-automotive-oem),[49](https://filuta.ai/case-studies/autonomous-hmi-testing-european-automotive-oem),[50](https://filuta.ai/case-studies/scaling-qa-open-world-rpg)
   - Assumption: Case studies reflect real deployments or pilots\.
 - **Against:** IP risk—company language asserts owned patents but public records show published applications only \(no granted patents yet\), weakening immediate enforceability\. *(Analyst view)* ^[29](https://cc.cz/budeme-jeden-z-nejsilnejsich-tymu-pro-vyvoj-umele-inteligence-v-cesku-veri-ziskal-na-to-sto-milionu/),[11](https://patents.google.com/?assignee=filuta),[16](https://patents.google.com/?assignee=filuta)
   - Assumption: Grant status matters for IP defensibility\.
@@ -66,20 +61,20 @@ No sourced findings for this section.
   - Assumption: Pilots may not equal recurring revenue\.
 - **Must be true:** Diligence must confirm paying, repeatable contracts with at least two enterprise customers and visible MRR or contracted purchase orders\. *(Analyst view)* ^[41](https://www.focuson.cz/jen-co-vznikl-uz-ma-56-milionu-cesky-startup-prepisuje-rekordy),[42](https://www.focuson.cz/jen-co-vznikl-uz-ma-56-milionu-cesky-startup-prepisuje-rekordy),[8](https://dir.texas.gov/contracts/vendors/filuta-ai-inc)
   - Assumption: Enterprise contracts required to scale revenue\.
-- **Must be true:** IP position must be validated—scope of published patent applications, ownership, prosecution status, and freedom\-to\-operate must be confirmed\. *(Analyst view)* ^[11](https://patents.google.com/?assignee=filuta),[15](https://patents.google.com/patent/US20250005318A1),[52](https://patents.google.com/patent/AU2024310242A1)
+- **Must be true:** IP position must be validated—scope of published patent applications, ownership, prosecution status, and freedom\-to\-operate must be confirmed\. *(Analyst view)* ^[11](https://patents.google.com/?assignee=filuta),[15](https://patents.google.com/patent/US20250005318A1),[51](https://patents.google.com/patent/AU2024310242A1)
   - Assumption: Patent prosecution outcome materially affects defensibility\.
 
 # Technical due diligence
 
 ## Ownership and capital
 
-- Corporate: Czech operating company Filuta AI CZ s\.r\.o\. \(ICO 09745424\) with a US corporate shareholder Filuta AI Inc\. holding 100% reported in registry\. *(Verified)* ^[53](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/09745424),[54](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/09745424)
+- Corporate: Czech operating company Filuta AI CZ s\.r\.o\. \(ICO 09745424\) with a US corporate shareholder Filuta AI Inc\. holding 100% reported in registry\. *(Verified)* ^[52](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/09745424),[53](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/09745424)
 - Funding history: reported pre\-seed\(s\) including a Czech ≈56 million CZK pre\-seed and a reported $4\.2M seed led by Rockaway Ventures\. *(Corroborated)* ^[20](https://www.lupa.cz/aktuality/filuta-ai-startup-cechu-z-microsoftu-ci-googlu-ziskal-nejvetsi-tuzemskou-pre-seed-investici/),[22](https://czechstartups.gov.cz/en/novinky/investors-believe-in-ai-investment-seed-round-brings-filuta-ai-startup-4-2-million),[10](https://cc.cz/budeme-jeden-z-nejsilnejsich-tymu-pro-vyvoj-umele-inteligence-v-cesku-veri-ziskal-na-to-sto-milionu/)
 - Public money: several awarded grants/support entries documented \(Czech national and EU programmes including an industry grant titled 'Samoobslužní AI plánovací agenti'\)\. *(Partly verified)* ^[23](https://www.hlidacstatu.cz/Dotace/Detail/DeMinimis-C8BA33B8412EA7002E07855E4ECA1F13263945F6C836AD28D9FBEA85FA85F1D0),[24](https://www.hlidacstatu.cz/Dotace/Detail/DeMinimis-4D6C0E515DB6A36794427267495D3E563288718003989E1A7E9203A334A4F31B),[9](https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-977DD2CC67E299D573718EC1C9228BB34E4FC92089EF8F2FC763FD0E69BE5D82),[25](https://filuta.ai/)
 
 ## Technology profile
 
-- Product capabilities \(company statements and case studies\): autonomous agents for exhaustive interaction exploration, coverage metrics, reproducible traces and audit\-ready evidence for compliance and QA\. *(Company claim)* ^[55](https://filuta.ai/),[19](https://filuta.ai/),[4](https://filuta.ai/case-studies/how-hisd-s-procurement-team-scaled-compliance-without-scaling-headcount),[49](https://filuta.ai/case-studies/scaling-qa-open-world-rpg),[51](https://filuta.ai/case-studies/scaling-qa-open-world-rpg)
+- Product capabilities \(company statements and case studies\): autonomous agents for exhaustive interaction exploration, coverage metrics, reproducible traces and audit\-ready evidence for compliance and QA\. *(Company claim)* ^[54](https://filuta.ai/),[19](https://filuta.ai/),[4](https://filuta.ai/case-studies/how-hisd-s-procurement-team-scaled-compliance-without-scaling-headcount),[55](https://filuta.ai/case-studies/scaling-qa-open-world-rpg),[50](https://filuta.ai/case-studies/scaling-qa-open-world-rpg)
 - Engineering footprint: public GitHub repos \(KeyFramer, synthesis\-benchmarks, painter\-challenge\) and multiple product subdomains including docs and demo APIs\. *(Verified)* ^[36](https://github.com/FilutaAI/KeyFramer),[35](https://github.com/FilutaAI/synthesis-benchmarks),[34](https://github.com/FilutaAI/painter-challenge),[56](https://crt.sh/?q=%25.filuta.ai&output=json),[37](https://crt.sh/?q=%25.filuta.ai&output=json)
 - AI dependency and research: company publishes multiple papers on planning\-based domain model acquisition and composite AI; patent applications filed for domain\-model synthesis\. *(Verified)* ^[12](https://openalex.org/W4403792769),[13](https://openalex.org/W4392019524),[14](https://openalex.org/W4391947855),[11](https://patents.google.com/?assignee=filuta)
 
@@ -155,13 +150,13 @@ No sourced findings for this section.
 46. [filuta\.ai](https://filuta.ai/case-studies/autonomous-hmi-testing-european-automotive-oem) · Company's own website · Technical claim — “Filuta AI deployed autonomous testing agents directly on the OEM's infotainment hardware\. Rather than executing predefined test scripts, the agents used Composite AI — combining symbolic planning with machine learning — to autonomously explore the system\.”
 47. [filuta\.ai](https://filuta.ai/case-studies/scaling-qa-open-world-rpg) · Company's own website · Technical claim — “Composite AI's symbolic planning layer ensured systematic coverage of quest trees and world states, while the machine learning layer handled real\-time visual interpretation and adaptive gameplay\.”
 48. [filuta\.ai](https://filuta.ai/case-studies/autonomous-hmi-testing-european-automotive-oem) · Company's own website · Product capability — “90%\+ reduction in test cycle time — from weeks of manual testing and script maintenance to days of autonomous validation”
-49. [filuta\.ai](https://filuta.ai/case-studies/scaling-qa-open-world-rpg) · Company's own website · Product capability — “Automated regression coverage for every content patch — results available within hours of each build”
-50. [filuta\.ai](https://filuta.ai/case-studies/autonomous-hmi-testing-european-automotive-oem) · Company's own website · Integration — “The OEM integrated Filuta's autonomous agents into their continuous integration pipeline\. Every build is now validated automatically, with results available within hours rather than weeks\.”
-51. [filuta\.ai](https://filuta.ai/case-studies/scaling-qa-open-world-rpg) · Company's own website · Technical claim — “Full reproduction steps for every defect — exact input sequences, world state, and video captures, eliminating the "works on my machine" problem”
-52. [patents\.google\.com](https://patents.google.com/patent/AU2024310242A1) · Official record · Patent publication — “AU2024310242A1 · Automated data\-driven domain model synthesis · Filuta Ai Inc\.”
-53. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/09745424) · Official record · Registry: identity · 2020\-12\-11 — “Filuta AI CZ s\.r\.o\. · s\.r\.o\. · registered 2020\-12\-11”
-54. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/09745424) · Official record · Registry: shareholder · 2022\-10\-20 — “Filuta AI Inc\. · 100\.0% · from 2022\-10\-20”
-55. [filuta\.ai](https://filuta.ai/) · Company's own website · Product capability — “The engine learns a model of the system and explores every state and path inside that scope — then reports what share of it was reached, not how many tests were run\.”
+49. [filuta\.ai](https://filuta.ai/case-studies/autonomous-hmi-testing-european-automotive-oem) · Company's own website · Integration — “The OEM integrated Filuta's autonomous agents into their continuous integration pipeline\. Every build is now validated automatically, with results available within hours rather than weeks\.”
+50. [filuta\.ai](https://filuta.ai/case-studies/scaling-qa-open-world-rpg) · Company's own website · Technical claim — “Full reproduction steps for every defect — exact input sequences, world state, and video captures, eliminating the "works on my machine" problem”
+51. [patents\.google\.com](https://patents.google.com/patent/AU2024310242A1) · Official record · Patent publication — “AU2024310242A1 · Automated data\-driven domain model synthesis · Filuta Ai Inc\.”
+52. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/09745424) · Official record · Registry: identity · 2020\-12\-11 — “Filuta AI CZ s\.r\.o\. · s\.r\.o\. · registered 2020\-12\-11”
+53. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/09745424) · Official record · Registry: shareholder · 2022\-10\-20 — “Filuta AI Inc\. · 100\.0% · from 2022\-10\-20”
+54. [filuta\.ai](https://filuta.ai/) · Company's own website · Product capability — “The engine learns a model of the system and explores every state and path inside that scope — then reports what share of it was reached, not how many tests were run\.”
+55. [filuta\.ai](https://filuta.ai/case-studies/scaling-qa-open-world-rpg) · Company's own website · Product capability — “Automated regression coverage for every content patch — results available within hours of each build”
 56. [crt\.sh](https://crt.sh/?q=%25.filuta.ai&output=json) · Public technical artifact · Subdomain \(certificates\) · 2025\-11\-18 — “docs\.filuta\.ai \(first certificate 2025\-11\-18\)”
 57. [filuta\.ai](https://filuta.ai/case-studies/how-hisd-s-procurement-team-scaled-compliance-without-scaling-headcount) · Company's own website · Technical claim — “Reliability, not probability\. We prove interactive systems behave — exhaustively, with evidence a regulator will accept\.”
 58. [patents\.google\.com](https://patents.google.com/patent/US20250005328A1) · Official record · Patent publication — “US20250005328A1 · System and method for specification, codification, and deployment of composite … · Filuta Ai Inc\.”

@@ -117,5 +117,5 @@ Copy `.env.example` to `.env` for the API keys, model names, prices and a hard s
 - No LinkedIn, and no scraping of Crunchbase, Dealroom or PitchBook.
 - Personal data limited to names and roles from public sources; no birth dates or addresses from the register.
 - Web content is data, never instructions to the model.
-- A source that was not read is shown as *Not checked*, never as *None found*.
+- A source that was not read is shown as *Not checked*; one that was read and is empty, as *Not visible in public records*. Never *None found*: public records are incomplete.
 - Polite to websites: cache, timeouts, no mass crawling.

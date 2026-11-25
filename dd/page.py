@@ -22,6 +22,9 @@ KIND_TEXT = {
     "other": ("Other contracts", "purpose not clear from the subject line"),
 }
 STATUS_TEXT = {"sought": "Sought", "closed": "Closed", "reported": "Reported"}
+# An empty result from a register that was read. Never "None found": public records are incomplete, and telling a
+# fund that something does not exist when it does is the worst error a brief can make.
+NOT_VISIBLE = "Not visible in public records"
 CHECK_TEXT = {"confirmed": "Confirmed", "partly": "Partly confirmed", "contradicted": "Contradicted",
               "not_found": "Not found", "not_checkable": "Not checkable", "info": "Info"}
 
@@ -57,6 +60,10 @@ from dd.thesis import format_money, last_round, stage_rank as _stage, stage_tick
 def _amount(text: Any) -> str:
     """Round amounts in one format (15M CZK); the source's own wording when it cannot be read."""
     return format_money(text) or (str(text) if text else "amount not stated")
+
+
+def _base_name(name: str) -> str:  # "Vermeer (VENTURES deal, not Defense fund)" -> "Vermeer"
+    return re.sub(r"\s*\(.*$", "", name or "").strip()
 
 
 def _year(s: Any) -> int | None:
@@ -129,7 +136,8 @@ def extras(sig: dict, facts: dict[int, Fact], refs, company: Company) -> dict:
                       "sub": " · ".join(x for x in (r.get("round"), r.get("date"), ", ".join(r.get("investors") or [])[:60]) if x),
                       "nums": refs.add(r["fact_ids"][:3])})
     if not rounds:
-        tiles.append({"label": "Funding rounds", "value": "None found", "sub": "no round reported in collected sources",
+        tiles.append({"label": "Funding rounds", "value": "None reported",
+                      "sub": "no round in the press read for this brief; private rounds are often not announced",
                       "nums": [], "tone": "muted"})
 
     tw = de.get("tenders_won") or {}
@@ -153,8 +161,10 @@ def extras(sig: dict, facts: dict[int, Fact], refs, company: Company) -> dict:
     sales = float(pur.get("czk") or 0) + float((tw.get("value_by_currency") or {}).get("CZK") or 0)
     sub = [f"{pur.get('count', 0)} purchase contract(s)" if cz_contracts else "Czech contracts not checked",
            f"{tw.get('count', 0)} won EU tender(s)" if ted else "EU tenders not checked"]
+    if not sales and (cz_contracts or ted):  # an empty result names what the registers cannot show
+        sub.append("contracts under CZK 50,000 and defence-exempt contracts are not published")
     tiles.append({"label": "Sales to public buyers",
-                  "value": _czk(sales) if sales else ("None found" if cz_contracts or ted else "Not checked"),
+                  "value": _czk(sales) if sales else (NOT_VISIBLE if cz_contracts or ted else "Not checked"),
                   "sub": " · ".join(sub) if cz_contracts or ted else why,
                   "nums": refs.add((pur.get("fact_ids") or [])[:3] + (tw.get("fact_ids") or [])[:2]),
                   "tone": "" if sales else "muted"})
@@ -163,7 +173,7 @@ def extras(sig: dict, facts: dict[int, Fact], refs, company: Company) -> dict:
     paid = float(pm.get("grants_paid_czk") or 0)
     tiles.append({"label": "Grants & subsidies awarded (not revenue)",
                   "value": _czk(grants) if grants else ("amount not published" if pm.get("grants") else
-                                                        "None found" if cz_subsidies else "Not checked"),
+                                                        NOT_VISIBLE if cz_subsidies else "Not checked"),
                   "sub": ((f"{pm.get('grants', 0)} project(s), multi-year · "
                            + (f"{_czk(paid)} paid out so far per payment records" if paid else "payments by year not published"))
                           if cz_subsidies or grants else why),
@@ -171,9 +181,13 @@ def extras(sig: dict, facts: dict[int, Fact], refs, company: Company) -> dict:
                   "tone": "" if grants else "muted"})
 
     bits = ([f"{tw['defence_buyer']} defence-ministry contract(s)"] if tw.get("defence_buyer") else [])         + [f"{a.get('programme')} {a.get('year')}" for a in acc] + ([f"{edf['count']} EDF project(s)"] if edf.get("count") else [])
+    # Defence buyers often publish nothing (security exemptions, classified contracts), so an empty result here is
+    # never "no defence business": it says where we looked and what those sources cannot show.
     tiles.append({"label": "Defence evidence (official sources)",
-                  "value": " · ".join(bits) if bits else ("None found" if checked else "Not checked"),
-                  "sub": "checked: " + ", ".join(checked) if checked else "TED, EU funding portal and NATO DIANA not run for this brief",
+                  "value": " · ".join(bits) if bits else (NOT_VISIBLE if checked else "Not checked"),
+                  "sub": ("read: " + ", ".join(checked)
+                          + ("" if bits else " · defence purchases are often exempt from publication; ask the company")
+                          if checked else "TED, EU funding portal and NATO DIANA not run for this brief"),
                   "nums": refs.add((tw.get("fact_ids") or [])[:2] + [i for a in acc for i in a.get("fact_ids", [])]
                                    + (edf.get("fact_ids") or [])[:2]), "tone": "" if bits else "muted"})
     if tg.get("open_roles"):
@@ -264,9 +278,12 @@ def extras(sig: dict, facts: dict[int, Fact], refs, company: Company) -> dict:
              "fund": f"{fund.get('stage')}; initial ticket EUR "
                      f"{fund['initial_ticket_eur'][0] / 1e6:g}–{fund['initial_ticket_eur'][1] / 1e6:g}m",
              "company": st["text"], "nums": refs.add(st.get("fact_ids", [])[:2])},
+            # matched by shared words in two descriptions: a candidate to check, so show what the portfolio company does
             {"criterion": "Portfolio overlap", "fund": "existing Rockaway Ventures / Rockaway Defense companies",
-             "company": "; ".join(f"{p['name']} (shared terms: {', '.join(p['shared_terms'][:4])})"
-                                  for p in th.get("portfolio_overlap") or []) or "none found by term overlap",
+             "company": "; ".join(f"{_base_name(p['name'])}: {p.get('description') or 'no description'}"
+                                  for p in th.get("portfolio_overlap") or [])
+                        + (". Matched by similar wording, not a confirmed conflict: compare product and buyer."
+                           if th.get("portfolio_overlap") else "no similar description in the public portfolio list"),
              "nums": []},
         ]
     return {"financials": fin_rows, "financials_period": (fin or {}).get("period"), "grants_awarded": grants, "grants_paid": paid, "sales_checked": cz_contracts or ted, "tiles": tiles, "funding": funding_rows, "money": money_rows, "money_chart": chart, "peers": peers,
@@ -470,10 +487,22 @@ def render(company: Company, analysis: dict, p: dict, titles: dict, label_titles
     parts.append('<dl class="facts">' + "".join(f"<div><dt>{h(k)}</dt><dd>{v}</dd></div>"
                                                 for k, v in facts_row if v) + "</dl>")
     parts.append('<div class="key">' + "".join(f'<span class="k">{mark(k)}{h(STRENGTH[k][0])}</span>' for k in STRENGTH)
-                 + "<p>Each statement shows on its right how strong its evidence is and which sources it rests on; hover "
-                 "for the quote. Numbers, tables and charts are computed by code from official records and sources. "
-                 "The written findings come from a language model that may only cite collected facts. This brief "
-                 "prepares a memo; it does not recommend an investment.</p></div></header>")
+                 + "<p>Numbers and tables are computed by code; written findings come from a language model that may "
+                 "only cite collected facts. The mark beside each statement shows its evidence; hover for the quote. "
+                 "<b>Not found</b> means not visible in the sources read for this brief (listed at the end), not that "
+                 "it does not exist.</p></div></header>")
+
+    # Order: numbers computed by code first, then the short take, the case, risks and questions; evidence after.
+    if x.get("tiles"):
+        parts.append('<h2>Key numbers</h2><p class="h2note">Computed by code from registers, procurement records and '
+                     "press. Amounts from the press are quoted as written.</p><div class=ledger>")
+        for t in x["tiles"]:
+            tone = {"muted": " muted", "warn": " warn"}.get(t.get("tone", ""), "")
+            parts.append(f'<div class="row{tone}"><div class="lgrid"><div class="lab">{h(t["label"])}</div>'
+                         f'<div><div class="val">{h(str(t["value"]))}</div>'
+                         f'<div class="note">{h(str(t["sub"]).replace(" · ", "; "))}</div></div>'
+                         f'</div><div class="proof">{refs(t["nums"])}</div></div>')
+        parts.append("</div>")
 
     rest = [it for it in p["tldr"] if it.get("label") != "product"]
     if rest:
@@ -489,16 +518,10 @@ def render(company: Company, analysis: dict, p: dict, titles: dict, label_titles
             if its:
                 parts.append(f'<h3 class="{cls}">{title}</h3>' + "".join(claim(it) for it in its))
 
-    if x.get("tiles"):
-        parts.append('<h2>Key numbers</h2><p class="h2note">Computed by code from registers, procurement records and '
-                     "press. Amounts from the press are quoted as written.</p><div class=ledger>")
-        for t in x["tiles"]:
-            tone = {"muted": " muted", "warn": " warn"}.get(t.get("tone", ""), "")
-            parts.append(f'<div class="row{tone}"><div class="lgrid"><div class="lab">{h(t["label"])}</div>'
-                         f'<div><div class="val">{h(str(t["value"]))}</div>'
-                         f'<div class="note">{h(str(t["sub"]).replace(" · ", "; "))}</div></div>'
-                         f'</div><div class="proof">{refs(t["nums"])}</div></div>')
-        parts.append("</div>")
+    # the decision layer ends here: what to ask comes right after the case, before the evidence sections
+    parts.append("<h2>Risks and questions for the founders</h2>")
+    parts.append(block("risk_flags", title="Risks"))
+    parts.append(block("questions", title="Questions"))
 
     invest = any(k in by_kind and not by_kind[k]["no_data"]
                  for k in ("thesis_fit", "business_model", "market", "competition", "investment_case"))
@@ -564,11 +587,10 @@ def render(company: Company, analysis: dict, p: dict, titles: dict, label_titles
         parts.append(block("ownership", title="What the register and press show"))
 
     if invest or x.get("peers"):
-        parts.append("<h2>Market and competition</h2>")
+        parts.append("<h2>Competition</h2>")
     if invest:
-        parts.append(block("market", title="Market", note="Only statements found in sources, attributed to who makes "
-                                                           "them. No market size is estimated here."))
-        parts.append(block("competition", title="Competitors named or found"))
+        parts.append(block("competition", title="Competitors named or found",
+                           note="Who the company and the press compare it with. Candidates to judge, not a verdict."))
     if x.get("peers"):
         parts.append('<h3>Candidates from NATO DIANA cohorts</h3><p class="h2note">Companies selected by NATO DIANA whose '
                      "one-line description overlaps this company's website, matched by code. Candidates to check, not "
@@ -598,10 +620,6 @@ def render(company: Company, analysis: dict, p: dict, titles: dict, label_titles
             ["Check", "Result", "Detail", "Sources"],
             [[h(c["check"]), f'<span class="st st-{h(str(c["status"]))}">{h(CHECK_TEXT.get(c["status"], str(c["status"])))}</span>',
               h(c["detail"]), tref(c["nums"])] for c in x["checks"]]))
-
-    parts.append("<h2>Risks and questions for the founders</h2>")
-    parts.append(block("risk_flags", title="Risks"))
-    parts.append(block("questions", title="Questions"))
 
     counts = Counter(it["strength"] for it in p["tldr"] + [it for s in p["sections"] for it in s["items"]])
     total = sum(counts.values())

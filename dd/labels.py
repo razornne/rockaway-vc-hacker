@@ -66,12 +66,16 @@ def write_sheet(store: Store, company_ids: list[str], path: Path) -> int:
     return len(rows)
 
 
-def summary(path: Path) -> dict | None:
-    """The headline counts of a labelled sheet (for the showcase), or None when nothing is labelled yet."""
+def summary(path: Path, skip_sections: tuple[str, ...] = ()) -> dict | None:
+    """The headline counts of a labelled sheet (for the showcase), or None when nothing is labelled yet.
+
+    skip_sections leaves out rows of sections the briefs no longer show, so the counts describe what a reader sees.
+    """
     if not path.exists():
         return None
     with path.open(encoding="utf-8-sig", newline="") as f:
-        done = [r for r in csv.DictReader(f) if any((r.get(q) or "").strip() for q, _, _ in QUESTIONS)]
+        done = [r for r in csv.DictReader(f) if any((r.get(q) or "").strip() for q, _, _ in QUESTIONS)
+                and r.get("section") not in skip_sections]
     if not done:
         return None
     c = {q: Counter((r.get(q) or "").strip().lower() for r in done) for q, _, _ in QUESTIONS}

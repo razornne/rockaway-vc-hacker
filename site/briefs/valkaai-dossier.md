@@ -27,7 +27,7 @@ valka\.ai · Valka\.AI s\.r\.o\. · IČO 23132221 · CZ · 2026\-11\-20
 
 # Investment view
 
-*Inputs for the partner's memo, not a recommendation: what the evidence says about the business, the market, competitors and fit with the fund, and the case for and against\.*
+*Inputs for the partner's memo, not a recommendation: what the evidence says about the business, competitors and fit with the fund, and the case for and against\.*
 
 ## Fit with the Rockaway thesis
 
@@ -43,12 +43,6 @@ valka\.ai · Valka\.AI s\.r\.o\. · IČO 23132221 · CZ · 2026\-11\-20
   - Assumption: Pricing and contract form \(SaaS/license\) unreported
 - Public support: awarded a Czech governmental targeted support agreement worth 20,563,542 Kč \(grant record exists; payment status unspecified\)\. *(Verified)* ^[17](https://smlouvy.gov.cz/smlouva/39346345)
 
-## Market
-
-- Target market: global streaming and live entertainment \(sports and esports\) — stated by company and trade coverage as primary go\-to market\. *(Corroborated)* ^[19](https://www.czechtradeoffices.com/nl/news/czech-ai-startup-valkaai-targets-global-streaming-market-with-%E2%82%AC12-million-investment),[33](https://www.czechtradeoffices.com/nl/news/czech-ai-startup-valkaai-targets-global-streaming-market-with-%E2%82%AC12-million-investment),[36](https://lookai.vc/portfolio/valkaai)
-- Demand driver cited: need for scalable, personalised live commentary and interactive digital personas to increase engagement for viewers and platforms \(company and press claim\)\. *(Single source)* ^[9](https://vestbee.com/insights/articles/valka-ai-raises-12-m),[10](https://vestbee.com/insights/articles/valka-ai-raises-12-m),[37](https://vestbee.com/insights/articles/valka-ai-raises-12-m)
-- No sourced numerical market size or TAM estimate found in the supplied facts\. *(Single source)* ^[38](https://vestbee.com/insights/articles/valka-ai-raises-12-m)
-
 ## Competition
 
 No sourced findings for this section.
@@ -57,7 +51,7 @@ No sourced findings for this section.
 
 - **For:** Differentiated real\-time stack — company claims proprietary 'language of motion' and efficient real\-time synthesis across voice, motion and cognition, supporting interactive avatars at scale\. *(Analyst view)* ^[7](https://www.rockawaycapital.com/en/news/e12m-investment-in-valkaai-led-by-rockaway-ventures),[11](https://valka.ai/blog/valkaai-raises-12-million)
   - Assumption: Proprietary claims translate into technical differentiation
-- **For:** Experienced founding / research team and international presence \(founder with Oddin\.gg exit history; \~45 employees including researchers from Meta/DeepMind claimed\)\. *(Analyst view)* ^[39](https://www.czechtradeoffices.com/nl/news/czech-ai-startup-valkaai-targets-global-streaming-market-with-%E2%82%AC12-million-investment),[40](https://vestbee.com/insights/articles/valka-ai-raises-12-m)
+- **For:** Experienced founding / research team and international presence \(founder with Oddin\.gg exit history; \~45 employees including researchers from Meta/DeepMind claimed\)\. *(Analyst view)* ^[36](https://www.czechtradeoffices.com/nl/news/czech-ai-startup-valkaai-targets-global-streaming-market-with-%E2%82%AC12-million-investment),[37](https://vestbee.com/insights/articles/valka-ai-raises-12-m)
   - Assumption: Team claims map to execution capability
 - **For:** Strong capital signal — a large pre\-seed raise led by Rockaway \(reported €12M–€13M\) provides runway and investor validation for rapid product development\. *(Analyst view)* ^[4](https://www.rockawaycapital.com/en/news/e12m-investment-in-valkaai-led-by-rockaway-ventures),[5](https://lookai.vc/look-ai-ventures-joins-valkaai-13m-pre-seed-round/)
   - Assumption: Reported round amounts reflect actual closed funding
@@ -72,15 +66,15 @@ No sourced findings for this section.
 
 ## Ownership and capital
 
-- Incorporated in Czech Republic 2025\-04\-01 as Valka\.AI s\.r\.o\.; 100% foreign holding recorded \(Valka\.AI B\.V\., NL\)\. *(Verified)* ^[41](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/23132221),[42](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23132221)
-- Reported pre\-seed funding: €12M \(Rockaway lead, J&amp;T, Tensor, BD Partners, Fond Naše Česko, individual investor\), later reported €13M extension including Look AI and ffVC\. *(Partly verified)* ^[4](https://www.rockawaycapital.com/en/news/e12m-investment-in-valkaai-led-by-rockaway-ventures),[5](https://lookai.vc/look-ai-ventures-joins-valkaai-13m-pre-seed-round/),[43](https://valka.ai/blog/valkaai-raises-12-million)
+- Incorporated in Czech Republic 2025\-04\-01 as Valka\.AI s\.r\.o\.; 100% foreign holding recorded \(Valka\.AI B\.V\., NL\)\. *(Verified)* ^[38](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/23132221),[39](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23132221)
+- Reported pre\-seed funding: €12M \(Rockaway lead, J&amp;T, Tensor, BD Partners, Fond Naše Česko, individual investor\), later reported €13M extension including Look AI and ffVC\. *(Partly verified)* ^[4](https://www.rockawaycapital.com/en/news/e12m-investment-in-valkaai-led-by-rockaway-ventures),[5](https://lookai.vc/look-ai-ventures-joins-valkaai-13m-pre-seed-round/),[40](https://valka.ai/blog/valkaai-raises-12-million)
 - Company received national targeted support recorded as CZK 20,563,542 \(Ministerstvo průmyslu a obchodu agreement in 2026\)\. *(Verified)* ^[17](https://smlouvy.gov.cz/smlouva/39346345)
 
 ## Technology profile
 
 - Built product claims: real\-time AI avatars, live commentators, and a platform for interactive synthetic video and audio\. *(Partly verified)* ^[9](https://vestbee.com/insights/articles/valka-ai-raises-12-m),[2](https://valka.ai/),[34](https://lookai.vc/look-ai-ventures-joins-valkaai-13m-pre-seed-round/)
-- Engineering footprint: public subdomains exposing API surfaces \(api\.bots\.\*, api\.matchvision\.\*, auth\.bots\.dev\) and Next\.js\-driven website\. *(Verified)* ^[26](https://crt.sh/?q=%25.valka.ai&output=json),[27](https://crt.sh/?q=%25.valka.ai&output=json),[28](https://crt.sh/?q=%25.valka.ai&output=json),[44](https://crt.sh/?q=%25.valka.ai&output=json),[45](https://crt.sh/?q=%25.valka.ai&output=json),[46](https://valka.ai/)
-- AI dependency / models: company claims developing own models across video, audio and event understanding; no verified external\-model dependencies listed\. *(Partly verified)* ^[30](https://lookai.vc/look-ai-ventures-joins-valkaai-13m-pre-seed-round/),[47](https://valka.ai/blog/valkaai-raises-12-million),[25](https://www.valka.ai/company)
+- Engineering footprint: public subdomains exposing API surfaces \(api\.bots\.\*, api\.matchvision\.\*, auth\.bots\.dev\) and Next\.js\-driven website\. *(Verified)* ^[26](https://crt.sh/?q=%25.valka.ai&output=json),[27](https://crt.sh/?q=%25.valka.ai&output=json),[28](https://crt.sh/?q=%25.valka.ai&output=json),[41](https://crt.sh/?q=%25.valka.ai&output=json),[42](https://crt.sh/?q=%25.valka.ai&output=json),[43](https://valka.ai/)
+- AI dependency / models: company claims developing own models across video, audio and event understanding; no verified external\-model dependencies listed\. *(Partly verified)* ^[30](https://lookai.vc/look-ai-ventures-joins-valkaai-13m-pre-seed-round/),[44](https://valka.ai/blog/valkaai-raises-12-million),[25](https://www.valka.ai/company)
 
 ## What could be rebuilt, and what cannot be judged from outside
 
@@ -94,7 +88,7 @@ No sourced findings for this section.
 ## Risks and caveats
 
 - Unverified IP: company leadership claims patents/research but patent search returned no ValkaAI assignee publications\. *(Analyst view)* ^[25](https://www.valka.ai/company),[8](https://patents.google.com/?assignee=valkaai)
-- Revenue concentration unknown: sizable pre\-seed funding and press launches exist, but no named paying customers or published pricing found\. *(Analyst view)* ^[4](https://www.rockawaycapital.com/en/news/e12m-investment-in-valkaai-led-by-rockaway-ventures),[38](https://vestbee.com/insights/articles/valka-ai-raises-12-m),[26](https://crt.sh/?q=%25.valka.ai&output=json)
+- Revenue concentration unknown: sizable pre\-seed funding and press launches exist, but no named paying customers or published pricing found\. *(Analyst view)* ^[4](https://www.rockawaycapital.com/en/news/e12m-investment-in-valkaai-led-by-rockaway-ventures),[45](https://vestbee.com/insights/articles/valka-ai-raises-12-m),[26](https://crt.sh/?q=%25.valka.ai&output=json)
 - Execution scaling risk: ambitious real\-time multi\-modal synchronization claims require substantial ML and infra hiring; current public jobs show early\-stage ML hiring\. *(Analyst view)* ^[11](https://valka.ai/blog/valkaai-raises-12-million),[23](https://valka.ai/careers),[24](https://valka.ai/careers)
 
 ## Questions for founders
@@ -141,19 +135,17 @@ No sourced findings for this section.
 33. [czechtradeoffices\.com](https://www.czechtradeoffices.com/nl/news/czech-ai-startup-valkaai-targets-global-streaming-market-with-%E2%82%AC12-million-investment) · Independent press · Product capability — “The startup’s technology aims to enable digital avatars to react to content in real time, including sports matches and other entertainment formats\.”
 34. [lookai\.vc](https://lookai.vc/look-ai-ventures-joins-valkaai-13m-pre-seed-round/) · Independent press · Product capability — “ValkaAI Commentator , launched this year, generates live sports and esports commentary directly from event data\.”
 35. [valka\.ai](https://valka.ai/blog/valkaai-raises-12-million) · Company's own website · Product capability — “In e\-sports, this technology could take the form of an AI commentator that reacts to in\-game action in real time, speaks the viewer’s language, and adapts to their viewing style\.”
-36. [lookai\.vc](https://lookai.vc/portfolio/valkaai) · Independent press · Press article · 2026\-10\-21 — “ValkaAI — Real\-Time AI Sports Commentary \| Look AI Ventures”
-37. [vestbee\.com](https://vestbee.com/insights/articles/valka-ai-raises-12-m) · Independent press · Funding round — “With the fresh €12 million investment, ValkaAI aims to accelerate the development of its core technologies, including fully controllable digital avatars and AI commentators that react in real time\.”
-38. [vestbee\.com](https://vestbee.com/insights/articles/valka-ai-raises-12-m) · Independent press · Press article · 2026\-02\-24 — “Czech firm ValkaAI raises €12M to build real\-time interactive AI video platform \| Vestbee”
-39. [czechtradeoffices\.com](https://www.czechtradeoffices.com/nl/news/czech-ai-startup-valkaai-targets-global-streaming-market-with-%E2%82%AC12-million-investment) · Independent press · Team claim — “ValkaAI was founded by entrepreneurs with experience from the Czech technology scale\-up Oddin\.gg, which focuses on esports betting and data solutions\.”
-40. [vestbee\.com](https://vestbee.com/insights/articles/valka-ai-raises-12-m) · Independent press · Team claim — “ValkaAI operates teams in San Francisco, Prague, and Dubai and employs around 45 people, including researchers from Meta and DeepMind\.”
-41. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/23132221) · Official record · Registry: identity · 2025\-04\-01 — “Valka\.AI s\.r\.o\. · s\.r\.o\. · registered 2025\-04\-01”
-42. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23132221) · Official record · Registry: shareholder · 2025\-04\-01 — “Valka\.AI B\.V\. · 100\.0% · from 2025\-04\-01”
-43. [valka\.ai](https://valka.ai/blog/valkaai-raises-12-million) · Company's own website · Funding round — “we’re thrilled about our first external capital—€12M pre\-seed funding, led by Rockaway Ventures, with participation from J&amp;T Ventures, Tensor Ventures, BD Partners, Fond Naše Česko and Petr Zámečník\.”
-44. [crt\.sh](https://crt.sh/?q=%25.valka.ai&output=json) · Public technical artifact · Subdomain \(certificates\) · 2026\-09\-25 — “api\.matchvision\.dev\.valka\.ai \(first certificate 2026\-09\-25\)”
-45. [crt\.sh](https://crt.sh/?q=%25.valka.ai&output=json) · Public technical artifact · Subdomain \(certificates\) · 2026\-09\-25 — “api\.matchvision\.valka\.ai \(first certificate 2026\-09\-25\)”
-46. [valka\.ai](https://valka.ai/) · Public technical artifact · Technology detected
-47. [valka\.ai](https://valka.ai/blog/valkaai-raises-12-million) · Company's own website · Technical claim — “Our unique three\-tiered genAI process will be able to create the technology for on\-demand content at scale and without the technical limitations we currently see with AI\-generated video”
-48. [cc\.cz](https://cc.cz/rekordni-investici-cesky-startup-jeste-navysil-tvurci-ai-komentatora-ziskali-uz-stovky-milionu/) · Independent press · Funding round — “úvodní, tzv\. pre\-seedovou investici ve výši téměř 300 milionů korun”
+36. [czechtradeoffices\.com](https://www.czechtradeoffices.com/nl/news/czech-ai-startup-valkaai-targets-global-streaming-market-with-%E2%82%AC12-million-investment) · Independent press · Team claim — “ValkaAI was founded by entrepreneurs with experience from the Czech technology scale\-up Oddin\.gg, which focuses on esports betting and data solutions\.”
+37. [vestbee\.com](https://vestbee.com/insights/articles/valka-ai-raises-12-m) · Independent press · Team claim — “ValkaAI operates teams in San Francisco, Prague, and Dubai and employs around 45 people, including researchers from Meta and DeepMind\.”
+38. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/23132221) · Official record · Registry: identity · 2025\-04\-01 — “Valka\.AI s\.r\.o\. · s\.r\.o\. · registered 2025\-04\-01”
+39. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23132221) · Official record · Registry: shareholder · 2025\-04\-01 — “Valka\.AI B\.V\. · 100\.0% · from 2025\-04\-01”
+40. [valka\.ai](https://valka.ai/blog/valkaai-raises-12-million) · Company's own website · Funding round — “we’re thrilled about our first external capital—€12M pre\-seed funding, led by Rockaway Ventures, with participation from J&amp;T Ventures, Tensor Ventures, BD Partners, Fond Naše Česko and Petr Zámečník\.”
+41. [crt\.sh](https://crt.sh/?q=%25.valka.ai&output=json) · Public technical artifact · Subdomain \(certificates\) · 2026\-09\-25 — “api\.matchvision\.dev\.valka\.ai \(first certificate 2026\-09\-25\)”
+42. [crt\.sh](https://crt.sh/?q=%25.valka.ai&output=json) · Public technical artifact · Subdomain \(certificates\) · 2026\-09\-25 — “api\.matchvision\.valka\.ai \(first certificate 2026\-09\-25\)”
+43. [valka\.ai](https://valka.ai/) · Public technical artifact · Technology detected
+44. [valka\.ai](https://valka.ai/blog/valkaai-raises-12-million) · Company's own website · Technical claim — “Our unique three\-tiered genAI process will be able to create the technology for on\-demand content at scale and without the technical limitations we currently see with AI\-generated video”
+45. [vestbee\.com](https://vestbee.com/insights/articles/valka-ai-raises-12-m) · Independent press · Press article · 2026\-02\-24 — “Czech firm ValkaAI raises €12M to build real\-time interactive AI video platform \| Vestbee”
+46. [cc\.cz](https://cc.cz/rekordni-investici-cesky-startup-jeste-navysil-tvurci-ai-komentatora-ziskali-uz-stovky-milionu/) · Independent press · Funding round — “úvodní, tzv\. pre\-seedovou investici ve výši téměř 300 milionů korun”
 
 ## How this dossier was built
 

@@ -25,7 +25,7 @@ culturepulse\.ai · SK/US · 2026\-11\-20
 
 # Investment view
 
-*Inputs for the partner's memo, not a recommendation: what the evidence says about the business, the market, competitors and fit with the fund, and the case for and against\.*
+*Inputs for the partner's memo, not a recommendation: what the evidence says about the business, competitors and fit with the fund, and the case for and against\.*
 
 ## Fit with the Rockaway thesis
 
@@ -42,15 +42,6 @@ culturepulse\.ai · SK/US · 2026\-11\-20
   - Assumption: AWS Marketplace listing implies commercial availability\.
 - Current cash runway effects: company completed seed and Series A equity financings \(2023 seed; 2025 Series A\), not grants — these are investor capital, not operational revenue\. *(Analyst view)* ^[4](https://tech.eu/2023/04/20/slovakian-social-media-analytics-start-up-culturepulse-ai-raises-just-shy-of-1-million-to-pivot-to-ai-saas-model/),[5](https://cc.cz/vidi-do-hlavy-izraelcum-i-palestincum-startup-predpovida-hrozby-ted-ziskava-dalsi-investici/)
   - Assumption: Fundraises were used for product and team expansion\.
-
-## Market
-
-- Stated demand drivers: governments and organisations seeking security‑risk prediction and social\-dynamics insights \(Rockaway press release frames security/business risk use cases\)\. *(Analyst view)* ^[28](https://www.rockawaycapital.com/en/news/rockaway-ventures-invests-in-culturepulse-driving-innovation-in-behavioral-analysis-and-security-risk-prediction-across-europe-and-beyond),[6](https://www.rockawaycapital.com/en/news/rockaway-ventures-invests-in-culturepulse-driving-innovation-in-behavioral-analysis-and-security-risk-prediction-across-europe-and-beyond)
-  - Assumption: Investor messaging reflects intended buyers\.
-- Stated demand drivers: commercial applications include marketing strategy and urban planning, per company statements about broad industry applications\. *(Analyst view)* ^[29](https://en.ain.ua/2025/03/21/culturepulse-raises-eur145m/)
-  - Assumption: Press relays company market targets\.
-- Defence interest signal: participation in a NATO DIANA Estonian accelerator suggests explicit defence/dual\-use market pathways\. *(Analyst view)* ^[19](https://www.tehnopol.ee/en/startup-story-culturepulse-x-nato-diana-estonian-accelerator/)
-  - Assumption: Accelerator involvement implies defence engagement\.
 
 ## Competition
 
@@ -75,15 +66,15 @@ No sourced findings for this section.
 
 ## Ownership and capital
 
-- Reported financing: Seed 'just south of $1M' led by Zero Gravity \(2023\) and a 2025 round reported at $1\.5M / €1\.45M led/backed by Rockaway Ventures with B Ventures and Simpact noted\. *(Corroborated)* ^[4](https://tech.eu/2023/04/20/slovakian-social-media-analytics-start-up-culturepulse-ai-raises-just-shy-of-1-million-to-pivot-to-ai-saas-model/),[5](https://cc.cz/vidi-do-hlavy-izraelcum-i-palestincum-startup-predpovida-hrozby-ted-ziskava-dalsi-investici/),[30](https://en.ain.ua/2025/03/21/culturepulse-raises-eur145m/),[31](https://en.ain.ua/2025/03/21/culturepulse-raises-eur145m/)
-- Company states it will use proceeds to expand headcount and accelerate product development and go‑to‑market\. *(Corroborated)* ^[29](https://en.ain.ua/2025/03/21/culturepulse-raises-eur145m/),[32](https://www.teraz.sk/ekonomika/slovensko-americky-startup-ziskal-inve/855582-clanok.html)
+- Reported financing: Seed 'just south of $1M' led by Zero Gravity \(2023\) and a 2025 round reported at $1\.5M / €1\.45M led/backed by Rockaway Ventures with B Ventures and Simpact noted\. *(Corroborated)* ^[4](https://tech.eu/2023/04/20/slovakian-social-media-analytics-start-up-culturepulse-ai-raises-just-shy-of-1-million-to-pivot-to-ai-saas-model/),[5](https://cc.cz/vidi-do-hlavy-izraelcum-i-palestincum-startup-predpovida-hrozby-ted-ziskava-dalsi-investici/),[28](https://en.ain.ua/2025/03/21/culturepulse-raises-eur145m/),[29](https://en.ain.ua/2025/03/21/culturepulse-raises-eur145m/)
+- Company states it will use proceeds to expand headcount and accelerate product development and go‑to‑market\. *(Corroborated)* ^[30](https://en.ain.ua/2025/03/21/culturepulse-raises-eur145m/),[31](https://www.teraz.sk/ekonomika/slovensko-americky-startup-ziskal-inve/855582-clanok.html)
 
 ## Technology profile
 
 - Product capabilities \(company claims\): multilingual text analysis, 93‑dimension psychological profiling, behavioral digital twins for testing messaging and risk prediction \(ARES branding cited\)\. *(Corroborated)* ^[27](https://tech.eu/2023/04/20/slovakian-social-media-analytics-start-up-culturepulse-ai-raises-just-shy-of-1-million-to-pivot-to-ai-saas-model/),[12](https://tech.eu/2023/04/20/slovakian-social-media-analytics-start-up-culturepulse-ai-raises-just-shy-of-1-million-to-pivot-to-ai-saas-model/),[3](https://en.ain.ua/2025/03/21/culturepulse-raises-eur145m/)
   - Assumption: These are company/press claims, not independent verifications\.
-- Engineering footprint: public GitHub org with multiple repos \(research and tooling\), several active pushes including a 2026 frontend repo; cloud usage indicated \(Amazon S3\)\. *(Verified)* ^[33](https://github.com/culturepulse),[34](https://github.com/culturepulse/frontend_assignement),[10](https://github.com/culturepulse/censorshipderadsim),[35](https://www.culturepulse.ai)
-- AI dependency: no supplied facts name third‑party LLM vendors as required subprocessors or integrations; evidence primarily shows academic papers and in‑house modeling claims\. *(Verified)* ^[8](https://openalex.org/W4220801307),[9](https://openalex.org/W4407175057),[36](https://openalex.org/W4381892632)
+- Engineering footprint: public GitHub org with multiple repos \(research and tooling\), several active pushes including a 2026 frontend repo; cloud usage indicated \(Amazon S3\)\. *(Verified)* ^[32](https://github.com/culturepulse),[33](https://github.com/culturepulse/frontend_assignement),[10](https://github.com/culturepulse/censorshipderadsim),[34](https://www.culturepulse.ai)
+- AI dependency: no supplied facts name third‑party LLM vendors as required subprocessors or integrations; evidence primarily shows academic papers and in‑house modeling claims\. *(Verified)* ^[8](https://openalex.org/W4220801307),[9](https://openalex.org/W4407175057),[35](https://openalex.org/W4381892632)
 
 ## What could be rebuilt, and what cannot be judged from outside
 
@@ -91,13 +82,13 @@ No sourced findings for this section.
   - Assumption: Access to the same training/labelled datasets is required\.
 - **Edge supported by public evidence:** Peer‑reviewed papers and published simulation code indicate academic credibility and domain expertise, supporting a research edge rather than a proven production moat\. *(Analyst view)* ^[8](https://openalex.org/W4220801307),[9](https://openalex.org/W4407175057),[10](https://github.com/culturepulse/censorshipderadsim)
   - Assumption: Papers represent affiliated research but not deployed model weights\.
-- **Cannot be judged from outside:** True production accuracy, multilingual generalization, data pipelines, and model robustness cannot be judged from public papers and repos alone without held‑out evaluations and code/models\. *(Analyst view)* ^[11](https://en.ain.ua/2023/04/21/culturepulse-secures-1m/),[34](https://github.com/culturepulse/frontend_assignement)
+- **Cannot be judged from outside:** True production accuracy, multilingual generalization, data pipelines, and model robustness cannot be judged from public papers and repos alone without held‑out evaluations and code/models\. *(Analyst view)* ^[11](https://en.ain.ua/2023/04/21/culturepulse-secures-1m/),[33](https://github.com/culturepulse/frontend_assignement)
   - Assumption: External test datasets and internal evaluations are unavailable publicly\.
 
 ## Risks and caveats
 
 - Unverified performance claim: the '≈95% clinical accuracy correlation' figure is asserted in press coverage but lacks independent verification in supplied facts\. *(Analyst view)* ^[11](https://en.ain.ua/2023/04/21/culturepulse-secures-1m/),[18](https://tech.eu/2023/04/20/slovakian-social-media-analytics-start-up-culturepulse-ai-raises-just-shy-of-1-million-to-pivot-to-ai-saas-model/)
-- Concentration risk in investor base for recent round: reported reliance on a small number of lead VCs for the 2025 round\. *(Analyst view)* ^[5](https://cc.cz/vidi-do-hlavy-izraelcum-i-palestincum-startup-predpovida-hrozby-ted-ziskava-dalsi-investici/),[30](https://en.ain.ua/2025/03/21/culturepulse-raises-eur145m/),[31](https://en.ain.ua/2025/03/21/culturepulse-raises-eur145m/)
+- Concentration risk in investor base for recent round: reported reliance on a small number of lead VCs for the 2025 round\. *(Analyst view)* ^[5](https://cc.cz/vidi-do-hlavy-izraelcum-i-palestincum-startup-predpovida-hrozby-ted-ziskava-dalsi-investici/),[28](https://en.ain.ua/2025/03/21/culturepulse-raises-eur145m/),[29](https://en.ain.ua/2025/03/21/culturepulse-raises-eur145m/)
 - Commercial validation gap: no named paying customers were found in the supplied facts despite an AWS Marketplace seller profile and repeated press coverage\. *(Analyst view)* ^[7](https://aws.amazon.com/marketplace/seller-profile?id=seller-zsdzmjc7npmiq),[6](https://www.rockawaycapital.com/en/news/rockaway-ventures-invests-in-culturepulse-driving-innovation-in-behavioral-analysis-and-security-risk-prediction-across-europe-and-beyond)
 
 ## Questions for founders
@@ -105,7 +96,7 @@ No sourced findings for this section.
 - Request: provide held‑out evaluation datasets, evaluation protocol and confusion matrices underpinning the '95% correlation' claim referenced in press\. *(Analyst view)* ^[11](https://en.ain.ua/2023/04/21/culturepulse-secures-1m/)
 - Request: list paying customers or signed purchase contracts and provide redacted references for enterprise pilots versus R&amp;D collaborations\. *(Analyst view)* ^[7](https://aws.amazon.com/marketplace/seller-profile?id=seller-zsdzmjc7npmiq),[6](https://www.rockawaycapital.com/en/news/rockaway-ventures-invests-in-culturepulse-driving-innovation-in-behavioral-analysis-and-security-risk-prediction-across-europe-and-beyond)
 - Request: supply details on multilingual training—corpora, annotation methodology, and out‑of‑language evaluations supporting 80–200\+ language claims\. *(Analyst view)* ^[12](https://tech.eu/2023/04/20/slovakian-social-media-analytics-start-up-culturepulse-ai-raises-just-shy-of-1-million-to-pivot-to-ai-saas-model/),[13](https://fontech.startitup.sk/spravy/ai-ludske-spravanie-investicia/)
-- Request: codebase maturity and deployment architecture evidence \(CI, model serving, data retention/compliance\) beyond public GitHub repos\. *(Analyst view)* ^[34](https://github.com/culturepulse/frontend_assignement),[10](https://github.com/culturepulse/censorshipderadsim),[35](https://www.culturepulse.ai)
+- Request: codebase maturity and deployment architecture evidence \(CI, model serving, data retention/compliance\) beyond public GitHub repos\. *(Analyst view)* ^[33](https://github.com/culturepulse/frontend_assignement),[10](https://github.com/culturepulse/censorshipderadsim),[34](https://www.culturepulse.ai)
 
 ## Sources
 
@@ -136,15 +127,14 @@ No sourced findings for this section.
 25. [teraz\.sk](https://www.teraz.sk/ekonomika/slovensko-americky-startup-ziskal-inve/855582-clanok.html) · Independent press · Pricing — “Investícia umožní spoločnosti ďalší globálny rozvoj a nábor špičkových talentov\.”
 26. [fontech\.startitup\.sk](https://fontech.startitup.sk/spravy/ai-ludske-spravanie-investicia/) · Independent press · Technical claim — “Tento nástroj dokáže modelovať tzv\. digitálne dvojičky populácií a krajín, čo poskytuje detailný pohľad na spoločenské dynamiky\.”
 27. [tech\.eu](https://tech.eu/2023/04/20/slovakian-social-media-analytics-start-up-culturepulse-ai-raises-just-shy-of-1-million-to-pivot-to-ai-saas-model/) · Independent press · Product capability — “quantifies anger, anxiety, personality, morality, family, friends, finances, inclusivity, racism, hate speech, and 80\+ cultural categories\.”
-28. [rockawaycapital\.com](https://www.rockawaycapital.com/en/news/rockaway-ventures-invests-in-culturepulse-driving-innovation-in-behavioral-analysis-and-security-risk-prediction-across-europe-and-beyond) · Independent press · Product capability — “CulturePulse’s platform allows clients to better understand the complexities of social dynamics and predict both security and business risks on a global scale\.”
-29. [en\.ain\.ua](https://en.ain.ua/2025/03/21/culturepulse-raises-eur145m/) · Independent press · Funding round — “CulturePulse will use new funding to expand the team and accelerate product development to broaden applications across industries such as marketing strategies and urban planning\.”
-30. [en\.ain\.ua](https://en.ain.ua/2025/03/21/culturepulse-raises-eur145m/) · Independent press · Funding round — “CulturePulse, a US\-Slovak startup specializing in advanced behavioral modeling, has raised €1\.5 million in Series A funding\. The round was backed by Czech\-founded Rockaway Ventures, and remains open to additional investors\.”
-31. [en\.ain\.ua](https://en.ain.ua/2025/03/21/culturepulse-raises-eur145m/) · Independent press · Funding round — “UPD 21\.03\.25: It became known that B Ventures Group and Simpact Ventures are also among the investors in CulturePulse during its €1\.5 million Series A funding round\.”
-32. [teraz\.sk](https://www.teraz.sk/ekonomika/slovensko-americky-startup-ziskal-inve/855582-clanok.html) · Independent press · Funding round — “Investíciu 1,5 milióna USD poskytli podľa neho tri medzinárodné investičné fondy, každý s výškou 500\.000 USD\.”
-33. [github\.com](https://github.com/culturepulse) · Public technical artifact · GitHub organisation · 2021\-12\-27 — “culturepulse · 8 public repos”
-34. [github\.com](https://github.com/culturepulse/frontend_assignement) · Public technical artifact · GitHub repository · 2026\-04\-06 — “culturepulse/frontend\_assignement · TypeScript · last push 2026\-04\-06”
-35. [culturepulse\.ai](https://www.culturepulse.ai) · Public technical artifact · Technology detected
-36. [openalex\.org](https://openalex.org/W4381892632) · Public technical artifact · Research paper · 2023\-06\-22 — “Computation of identity and social volatility in the ritual animal · Religion Brain &amp; Behavior”
+28. [en\.ain\.ua](https://en.ain.ua/2025/03/21/culturepulse-raises-eur145m/) · Independent press · Funding round — “CulturePulse, a US\-Slovak startup specializing in advanced behavioral modeling, has raised €1\.5 million in Series A funding\. The round was backed by Czech\-founded Rockaway Ventures, and remains open to additional investors\.”
+29. [en\.ain\.ua](https://en.ain.ua/2025/03/21/culturepulse-raises-eur145m/) · Independent press · Funding round — “UPD 21\.03\.25: It became known that B Ventures Group and Simpact Ventures are also among the investors in CulturePulse during its €1\.5 million Series A funding round\.”
+30. [en\.ain\.ua](https://en.ain.ua/2025/03/21/culturepulse-raises-eur145m/) · Independent press · Funding round — “CulturePulse will use new funding to expand the team and accelerate product development to broaden applications across industries such as marketing strategies and urban planning\.”
+31. [teraz\.sk](https://www.teraz.sk/ekonomika/slovensko-americky-startup-ziskal-inve/855582-clanok.html) · Independent press · Funding round — “Investíciu 1,5 milióna USD poskytli podľa neho tri medzinárodné investičné fondy, každý s výškou 500\.000 USD\.”
+32. [github\.com](https://github.com/culturepulse) · Public technical artifact · GitHub organisation · 2021\-12\-27 — “culturepulse · 8 public repos”
+33. [github\.com](https://github.com/culturepulse/frontend_assignement) · Public technical artifact · GitHub repository · 2026\-04\-06 — “culturepulse/frontend\_assignement · TypeScript · last push 2026\-04\-06”
+34. [culturepulse\.ai](https://www.culturepulse.ai) · Public technical artifact · Technology detected
+35. [openalex\.org](https://openalex.org/W4381892632) · Public technical artifact · Research paper · 2023\-06\-22 — “Computation of identity and social volatility in the ritual animal · Religion Brain &amp; Behavior”
 
 ## How this dossier was built
 

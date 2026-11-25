@@ -284,8 +284,11 @@ INTERNAL_WORDS = (
 
 INVEST_KINDS = ("thesis_fit", "business_model", "market", "competition", "investment_case")
 LABELLED_SECTIONS = ("rebuild_check", "thesis_fit", "investment_case")
-INVEST_NOTE = ("Inputs for the partner's memo, not a recommendation: what the evidence says about the business, the "
-               "market, competitors and fit with the fund, and the case for and against.")
+INVEST_NOTE = ("Inputs for the partner's memo, not a recommendation: what the evidence says about the business, "
+               "competitors and fit with the fund, and the case for and against.")
+# Not shown in briefs. Market: analysts size markets themselves, and the only market statements public sources hold
+# are the company's own (an analyst's review, November 2026). Older analyses still contain the section.
+HIDDEN_SECTIONS = ("market",)
 
 
 def _groups(sections: list[dict]) -> list[tuple[str, str | None, list[dict]]]:
@@ -313,7 +316,7 @@ def prepare(company: Company, analysis: dict, sections: list[dict], facts: dict[
                          "strength": key, "basis": basis})
     glance_rows = [(lab, text, refs.add(ids[:6])) for lab, text, ids in glance]
     for s in sections:
-        if s["kind"] == "summary":
+        if s["kind"] == "summary" or s["kind"] in HIDDEN_SECTIONS:
             continue
         items = []
         for it in s["items"]:

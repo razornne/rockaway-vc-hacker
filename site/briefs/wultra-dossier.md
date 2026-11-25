@@ -28,7 +28,7 @@ wultra\.com · Wultra s\.r\.o\. · IČO 03643174 · CZ · 2026\-11\-20
 
 # Investment view
 
-*Inputs for the partner's memo, not a recommendation: what the evidence says about the business, the market, competitors and fit with the fund, and the case for and against\.*
+*Inputs for the partner's memo, not a recommendation: what the evidence says about the business, competitors and fit with the fund, and the case for and against\.*
 
 ## Fit with the Rockaway thesis
 
@@ -45,13 +45,6 @@ wultra\.com · Wultra s\.r\.o\. · IČO 03643174 · CZ · 2026\-11\-20
   - Assumption: Contract listing indicates engagement, not revenue
 - Received a national 'Antivirus' support award entry recorded as a grant dataset item \(no cash amount disclosed in source\)\. *(Analyst view)* ^[16](https://www.hlidacstatu.cz/Dotace/Detail/Covid-66F2A0C9D621A3DF40E30EB3EFC81EEB29372C85044499F21CD2EB2B0EE51FC4)
   - Assumption: Grant entry is administrative record, not revenue
-
-## Market
-
-- Management/press claim: Wultra now supports more than 70 clients across 25 countries; this is presented in multiple press releases\. *(Analyst view)* ^[20](https://finance.yahoo.com/technology/ai/articles/wultra-raises-6-8-million-140000790.html),[8](https://finance.yahoo.com/technology/ai/articles/wultra-raises-6-8-million-130000062.html)
-  - Assumption: Press quotes company\-provided metrics
-- Market demand framing in PR and guides emphasises imminent need for post\-quantum authentication among financial institutions \(company/press claim\)\. *(Analyst view)* ^[19](https://tech.eu/2025/01/15/wultra-secures-eur3m-to-protect-financial-institutions-from-quantum-threats/),[41](https://www.wultra.com/downloads/ignition-guide-for-post-quantum-authentication)
-  - Assumption: PR reflects perceived customer pain
 
 ## Competition
 

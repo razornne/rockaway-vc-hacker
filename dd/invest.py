@@ -12,10 +12,10 @@ import re
 
 from pydantic import BaseModel, ConfigDict
 
-from dd.analyze import ANALYSIS_SYSTEM, AnalysisItem, LabeledItem, out_limit
+from dd.analyze import ABSENCE_RULE, ANALYSIS_SYSTEM, AnalysisItem, LabeledItem, out_limit
 from dd.store import Company
 
-PROMPT_VERSION = "invest-v5"
+PROMPT_VERSION = "invest-v6"
 INVEST_KINDS = ("thesis_fit", "business_model", "market", "competition", "investment_case")
 LIMITS = {"thesis_fit": 2, "business_model": 4, "market": 3, "competition": 5, "investment_case": 6}
 # stage and ticket are compared by code (dd.thesis.stage_ticket); the model gets the result and must not redo it
@@ -53,7 +53,7 @@ def prompt(company: Company, facts_json: list[dict], derived: dict) -> str:
         "investment memo themself. Do NOT recommend investing or passing and do not score the company: lay out the "
         "evidence so the partner can decide. Keep it under 550 English words. Each item.text at most 45 words, at most "
         "ONE short assumption (12 words), at most FIVE fact_ids. Use only supplied fact IDs. A section without supported "
-        "items: items=[] and no_data=true. Missing information is unknown, never a negative claim.\n"
+        "items: items=[] and no_data=true. Missing information is unknown, never a negative claim.\n" + ABSENCE_RULE +
         "ROUND SIZE AND TICKET: DERIVED.thesis.stage_ticket already compares the round with the fund's initial ticket, "
         "computed by code. Do not compare round size with the ticket, convert currencies or restate that comparison "
         "anywhere (thesis_fit, investment_case or elsewhere). A round is the total raised from all investors, not the "

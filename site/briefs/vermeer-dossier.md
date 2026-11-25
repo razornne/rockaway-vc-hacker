@@ -25,7 +25,7 @@ getvermeer\.com · US · 2026\-11\-20
 
 # Investment view
 
-*Inputs for the partner's memo, not a recommendation: what the evidence says about the business, the market, competitors and fit with the fund, and the case for and against\.*
+*Inputs for the partner's memo, not a recommendation: what the evidence says about the business, competitors and fit with the fund, and the case for and against\.*
 
 ## Fit with the Rockaway thesis
 
@@ -42,13 +42,6 @@ getvermeer\.com · US · 2026\-11\-20
   - Assumption: Customer count implies recurring or one\-time sales\.
 - Funding: recently closed a $10M Series A led by Draper Associates with Rockaway participating, providing growth capital\. *(Analyst view)* ^[4](https://scroll.media/en/2025/10/23/vermeer-raises-10m),[17](https://vestbee.com/insights/articles/vermeer-raises-funds),[5](https://www.getvermeer.com/news)
   - Assumption: Proceeds will be allocated to product scaling and ops\.
-
-## Market
-
-- Demand driver: resilience against jamming/spoofing — defence and contested\-environment operations highlighted by press and company\. *(Analyst view)* ^[1](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation),[27](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation),[26](https://www.getvermeer.com/team)
-  - Assumption: Defence procurement prioritizes GPS\-denial resilience\.
-- Commercial use\-cases cited: autonomous vehicles, remote delivery and industrial aerial applications\. *(Analyst view)* ^[11](https://cc.cz/z-hollywoodskych-studii-na-ukrajinskou-frontu-pomahaji-dronum-a-nabiraji-pres-200-milionu/),[2](https://scroll.media/en/2025/10/23/vermeer-raises-10m)
-  - Assumption: Company statements reflect intended TAM segments\.
 
 ## Competition
 

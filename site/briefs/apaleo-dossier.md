@@ -27,7 +27,7 @@ apaleo\.com · DE · 2026\-11\-20
 
 # Investment view
 
-*Inputs for the partner's memo, not a recommendation: what the evidence says about the business, the market, competitors and fit with the fund, and the case for and against\.*
+*Inputs for the partner's memo, not a recommendation: what the evidence says about the business, competitors and fit with the fund, and the case for and against\.*
 
 ## Fit with the Rockaway thesis
 
@@ -42,22 +42,17 @@ apaleo\.com · DE · 2026\-11\-20
 - Pricing: published plans include €8 per room/month, and plans starting at €400/month; API usage is declared free\. *(Company claim)* ^[37](https://apaleo.com/pricing),[38](https://apaleo.com/pricing),[39](https://apaleo.com/api-terms-of-use)
 - Other revenue lines stated: integrated payments \(Apaleo Pay\) and an app/store commerce layer \(Apaleo Store\)\. *(Company claim)* ^[40](https://apaleo.com/about-us),[41](https://apaleo.com/about-us),[2](https://apaleo.com/about-us)
 
-## Market
-
-- Company framing of demand: hospitality customers want composable, API\-first platforms and AI\-driven guest automation \(company claim\)\. *(Company claim)* ^[42](https://apaleo.com/),[34](https://apaleo.com/ai-powered-pms-solution),[43](https://apaleo.com/about-us)
-- Press cites growth equity raise specifically to 'fuel global expansion', implying TAM expansion intent \(journalist summary of funding round\)\. *(Corroborated)* ^[5](https://finance.yahoo.com/news/apaleo-secures-21m-funding-fuel-145553468.html),[19](https://hoteltechnologynews.com/2024/11/apaleo-raises-21-million-to-expand-its-hotel-property-management-platform-built-on-api-first-architecture)
-
 ## Competition
 
 No sourced findings for this section.
 
 ## Case for and against
 
-- **For:** Established product positioning—API\-first, MACH architecture and open\-PMS messaging give clear developer and integrator appeal\. *(Analyst view)* ^[44](https://apaleo.com/),[43](https://apaleo.com/about-us),[35](https://finance.yahoo.com/news/apaleo-secures-21m-funding-fuel-145553468.html)
-- **For:** Product roadmap includes AI agent layer \(Copilot\) and MCP Server to expose live property data to models—differentiator for AI\-enabled workflows\. *(Analyst view)* ^[7](https://apaleo.com/ai-powered-pms-solution),[34](https://apaleo.com/ai-powered-pms-solution),[45](https://apaleo.com/ai-powered-pms-solution)
-- **Against:** Security/compliance claims \(SOC 2, PCI, PSD2\) are asserted but the SOC 2 attestation is not verifiable from available pages\. *(Analyst view)* ^[46](https://apaleo.com/),[12](https://apaleo.com/)
+- **For:** Established product positioning—API\-first, MACH architecture and open\-PMS messaging give clear developer and integrator appeal\. *(Analyst view)* ^[42](https://apaleo.com/),[43](https://apaleo.com/about-us),[35](https://finance.yahoo.com/news/apaleo-secures-21m-funding-fuel-145553468.html)
+- **For:** Product roadmap includes AI agent layer \(Copilot\) and MCP Server to expose live property data to models—differentiator for AI\-enabled workflows\. *(Analyst view)* ^[7](https://apaleo.com/ai-powered-pms-solution),[34](https://apaleo.com/ai-powered-pms-solution),[44](https://apaleo.com/ai-powered-pms-solution)
+- **Against:** Security/compliance claims \(SOC 2, PCI, PSD2\) are asserted but the SOC 2 attestation is not verifiable from available pages\. *(Analyst view)* ^[45](https://apaleo.com/),[12](https://apaleo.com/)
   - Assumption: SOC 2 report not published online
-- **Against:** Dependence on third\-party AI and infra vendors \(Anthropic, OpenAI, AWS, PostHog\) creates operational and data\-governance dependencies\. *(Analyst view)* ^[10](https://apaleo.com/dpa),[11](https://apaleo.com/dpa),[47](https://apaleo.com/dpa),[48](https://apaleo.com/dpa)
+- **Against:** Dependence on third\-party AI and infra vendors \(Anthropic, OpenAI, AWS, PostHog\) creates operational and data\-governance dependencies\. *(Analyst view)* ^[10](https://apaleo.com/dpa),[11](https://apaleo.com/dpa),[46](https://apaleo.com/dpa),[47](https://apaleo.com/dpa)
 - **Must be true:** Customer adoption / retention across &gt;1,700 properties or equivalent ARR must be validated versus the stated scale claims\. *(Analyst view)* ^[6](https://hengeler-news.com/en/articles/hengeler-mueller-advises-psg-equity-on-investment-in-apaleo),[4](https://www.bakertilly.de/beitrag/baker-tilly-begleitet-rockaway-ventures-und-serpentine-ventures-bei-investition-in-offene-hospitality-plattform-apaleo)
   - Assumption: Press/PR scale claim reflects paying customers
 - **Must be true:** Confirmed, current SOC 2 / PCI evidence and contractual data\-handling terms for AI integrations \(OpenAI/Anthropic\) are in place and allowed by major enterprise buyers\. *(Analyst view)* ^[12](https://apaleo.com/),[10](https://apaleo.com/dpa),[11](https://apaleo.com/dpa)
@@ -77,9 +72,9 @@ No sourced findings for this section.
 
 ## What could be rebuilt, and what cannot be judged from outside
 
-- **Replicable with off-the-shelf parts:** API\-first PMS core and developer tools can be reproduced using public APIs, Next\.js frontend, AWS infra and documented API terms\. *(Analyst view)* ^[2](https://apaleo.com/about-us),[49](https://apaleo.com/),[47](https://apaleo.com/dpa),[9](https://apaleo.com/api-terms-of-use)
+- **Replicable with off-the-shelf parts:** API\-first PMS core and developer tools can be reproduced using public APIs, Next\.js frontend, AWS infra and documented API terms\. *(Analyst view)* ^[2](https://apaleo.com/about-us),[48](https://apaleo.com/),[46](https://apaleo.com/dpa),[9](https://apaleo.com/api-terms-of-use)
   - Assumption: No proprietary datasets or closed models required
-- **Edge supported by public evidence:** Claimed MCP Server that implements a 'Model Context Protocol' to give agents secure live\-data access is public company claim and thus evidence of a unique integration approach\. *(Analyst view)* ^[7](https://apaleo.com/ai-powered-pms-solution),[45](https://apaleo.com/ai-powered-pms-solution)
+- **Edge supported by public evidence:** Claimed MCP Server that implements a 'Model Context Protocol' to give agents secure live\-data access is public company claim and thus evidence of a unique integration approach\. *(Analyst view)* ^[7](https://apaleo.com/ai-powered-pms-solution),[44](https://apaleo.com/ai-powered-pms-solution)
   - Assumption: MCP Server is functionally implemented as described
 - **Cannot be judged from outside:** Agentic efficacy, safety of autonomous Copilot actions, and real\-world impact on hotel operations cannot be judged without access to product logs, models, and field metrics\. *(Analyst view)* ^[34](https://apaleo.com/ai-powered-pms-solution),[12](https://apaleo.com/)
   - Assumption: Operational telemetry and model internals are not public
@@ -87,15 +82,15 @@ No sourced findings for this section.
 ## Risks and caveats
 
 - Dependency on third‑party LLM providers \(Anthropic, OpenAI\) for AI features creates vendor, cost, and data‑flow risk\. *(Analyst view)* ^[10](https://apaleo.com/dpa),[11](https://apaleo.com/dpa)
-- Security/compliance evidence gap: SOC 2 / compliance claims are publicly stated but verification is not possible from collected pages\. *(Analyst view)* ^[46](https://apaleo.com/),[12](https://apaleo.com/)
-- API sandbox/third‑party outages have been reported affecting distribution APIs, indicating exposure of developer experience and integrations to upstream vendors\. *(Analyst view)* ^[50](https://status.apaleo.com/),[51](https://status.apaleo.com/)
+- Security/compliance evidence gap: SOC 2 / compliance claims are publicly stated but verification is not possible from collected pages\. *(Analyst view)* ^[45](https://apaleo.com/),[12](https://apaleo.com/)
+- API sandbox/third‑party outages have been reported affecting distribution APIs, indicating exposure of developer experience and integrations to upstream vendors\. *(Analyst view)* ^[49](https://status.apaleo.com/),[50](https://status.apaleo.com/)
 
 ## Questions for founders
 
 - Please produce SOC 2/PCI/PSD2 evidence and scope; verification fact shows claims are not publicly checkable\. *(Analyst view)* ^[12](https://apaleo.com/),[13](https://apaleo.com/pricing)
 - Provide contract examples and revenue split for customers behind the claimed 85k units / 1,700 properties metric used in press coverage\. *(Analyst view)* ^[6](https://hengeler-news.com/en/articles/hengeler-mueller-advises-psg-equity-on-investment-in-apaleo),[19](https://hoteltechnologynews.com/2024/11/apaleo-raises-21-million-to-expand-its-hotel-property-management-platform-built-on-api-first-architecture)
 - Detail MCP Server data flow: which live fields are exposed to agents, and how PII is filtered before any LLM call\. *(Analyst view)* ^[7](https://apaleo.com/ai-powered-pms-solution),[10](https://apaleo.com/dpa)
-- Supply SLA and incident history for API sandbox outages and quantify customer impact from status notices\. *(Analyst view)* ^[50](https://status.apaleo.com/),[51](https://status.apaleo.com/)
+- Supply SLA and incident history for API sandbox outages and quantify customer impact from status notices\. *(Analyst view)* ^[49](https://status.apaleo.com/),[50](https://status.apaleo.com/)
 
 ## Sources
 
@@ -140,16 +135,15 @@ No sourced findings for this section.
 39. [apaleo\.com](https://apaleo.com/api-terms-of-use) · Company's own website · Pricing — “The object of the agreement is your free\-of\-charge use of the API for the apaleo platform as per the documentation made available by us through the internet in its current form under your registration as a developer with us”
 40. [apaleo\.com](https://apaleo.com/about-us) · Company's own website · Product capability — “Apaleo Pay”
 41. [apaleo\.com](https://apaleo.com/about-us) · Company's own website · Product capability — “Apaleo Store”
-42. [apaleo\.com](https://apaleo.com/) · Company's own website · Product capability — “With Apaleo’s open and AI\-powered PMS, you design the guest journey your way, integrating best\-in\-class apps and autonomous AI agents that adapt to every stay\.”
+42. [apaleo\.com](https://apaleo.com/) · Company's own website · Technical claim — “The only API\-first hospitality platform Discerning developers prefer Apaleo because our platform is built on MACH architecture\. Experience the speed, reliability, and flexibility of a platform built for microservices, APIs, cloud, and headless\.”
 43. [apaleo\.com](https://apaleo.com/about-us) · Company's own website · Technical claim — “We take an API\-first approach to hotel tech”
-44. [apaleo\.com](https://apaleo.com/) · Company's own website · Technical claim — “The only API\-first hospitality platform Discerning developers prefer Apaleo because our platform is built on MACH architecture\. Experience the speed, reliability, and flexibility of a platform built for microservices, APIs, cloud, and headless\.”
-45. [apaleo\.com](https://apaleo.com/ai-powered-pms-solution) · Company's own website · Product capability — “Open architecture enabling the autonomous hotel”
-46. [apaleo\.com](https://apaleo.com/) · Company's own website · Technical claim — “Apaleo exceeds modern standards for data protection including GDPR, PCI, PSD2 and SOC 2 compliance\.”
-47. [apaleo\.com](https://apaleo.com/dpa) · Company's own website · Subprocessor \(privacy policy\) — “Amazon Web Services EMEA SARL \(DE\) app\.Apaleo\.com uses Amazon Web Services \(AWS\) as infrastructure\. Thereby, personal data is stored and processed on AWS servers\.”
-48. [apaleo\.com](https://apaleo.com/dpa) · Company's own website · Subprocessor \(privacy policy\) — “PostHog, Inc\. \(US\) – EU\-region hosting Apaleo uses PostHog for product analytics, to log prompt text and non\-personal usage data \(timing, outcome, feature interactions\) of the Fluid Dashboards feature in order to understand and improve it\.”
-49. [apaleo\.com](https://apaleo.com/) · Public technical artifact · Technology detected
-50. [status\.apaleo\.com](https://status.apaleo.com/) · Company's own website · Technical claim — “Some API request to distribution\.apaleo\.com are failing”
-51. [status\.apaleo\.com](https://status.apaleo.com/) · Company's own website · Technical claim — “We are awaiting resolution from a third\-party service sandbox environment that is down\.”
+44. [apaleo\.com](https://apaleo.com/ai-powered-pms-solution) · Company's own website · Product capability — “Open architecture enabling the autonomous hotel”
+45. [apaleo\.com](https://apaleo.com/) · Company's own website · Technical claim — “Apaleo exceeds modern standards for data protection including GDPR, PCI, PSD2 and SOC 2 compliance\.”
+46. [apaleo\.com](https://apaleo.com/dpa) · Company's own website · Subprocessor \(privacy policy\) — “Amazon Web Services EMEA SARL \(DE\) app\.Apaleo\.com uses Amazon Web Services \(AWS\) as infrastructure\. Thereby, personal data is stored and processed on AWS servers\.”
+47. [apaleo\.com](https://apaleo.com/dpa) · Company's own website · Subprocessor \(privacy policy\) — “PostHog, Inc\. \(US\) – EU\-region hosting Apaleo uses PostHog for product analytics, to log prompt text and non\-personal usage data \(timing, outcome, feature interactions\) of the Fluid Dashboards feature in order to understand and improve it\.”
+48. [apaleo\.com](https://apaleo.com/) · Public technical artifact · Technology detected
+49. [status\.apaleo\.com](https://status.apaleo.com/) · Company's own website · Technical claim — “Some API request to distribution\.apaleo\.com are failing”
+50. [status\.apaleo\.com](https://status.apaleo.com/) · Company's own website · Technical claim — “We are awaiting resolution from a third\-party service sandbox environment that is down\.”
 
 ## How this dossier was built
 

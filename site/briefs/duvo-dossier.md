@@ -27,7 +27,7 @@ duvo\.ai · duvo\.ai s\.r\.o\. · IČO 22646141 · CZ · 2026\-11\-20
 
 # Investment view
 
-*Inputs for the partner's memo, not a recommendation: what the evidence says about the business, the market, competitors and fit with the fund, and the case for and against\.*
+*Inputs for the partner's memo, not a recommendation: what the evidence says about the business, competitors and fit with the fund, and the case for and against\.*
 
 ## Fit with the Rockaway thesis
 
@@ -43,13 +43,6 @@ duvo\.ai · duvo\.ai s\.r\.o\. · IČO 22646141 · CZ · 2026\-11\-20
 - Customers pay: named enterprise customers include Notino, Morrisons, Holland &amp; Barrett, Boden, Allegro and Rohlik — these are paying\-reference evidence\. *(Partly verified)* ^[3](https://www.therecursive.com/rohlik-founder-tomas-cuprs-duvo-raises-eur28-7m-series-a-to-take-enterprise-ai-agents-to-the-us),[36](https://finance.yahoo.com/technology/ai/articles/duvo-raises-32-million-series-130000587.html),[37](https://tech.eu/2026/10/14/from-rohlik-to-enterprise-ai-tomas-cuprs-duvo-raises-32m-series-a/)
   - Assumption: Named customers are commercial users\.
 
-## Market
-
-- Target buyers: large retail and consumer brands \(explicitly named by press\) — Duvo positions at retailers’ finance, operations and store networks\. *(Corroborated)* ^[3](https://www.therecursive.com/rohlik-founder-tomas-cuprs-duvo-raises-eur28-7m-series-a-to-take-enterprise-ai-agents-to-the-us),[36](https://finance.yahoo.com/technology/ai/articles/duvo-raises-32-million-series-130000587.html),[45](https://tech.eu/2026/10/14/from-rohlik-to-enterprise-ai-tomas-cuprs-duvo-raises-32m-series-a/)
-  - Assumption: Press accurately lists reference customers\.
-- Claimed demand/impact: press cites platform value generated for large brands exceeding $100M annually \(company/press claim\)\. *(Single source)* ^[46](https://www.wired.cz/news-beat/cuprovo-duvo-ziskalo-32-milionu-dolaru-na-expanzi)
-  - Assumption: Figure is a company\-sourced claim reported by press\.
-
 ## Competition
 
 No sourced findings for this section.
@@ -58,7 +51,7 @@ No sourced findings for this section.
 
 - **For:** Demonstrated enterprise traction — multiple large retail customers named across press coverage and an ROI example at Notino\. *(Analyst view)* ^[3](https://www.therecursive.com/rohlik-founder-tomas-cuprs-duvo-raises-eur28-7m-series-a-to-take-enterprise-ai-agents-to-the-us),[36](https://finance.yahoo.com/technology/ai/articles/duvo-raises-32-million-series-130000587.html),[7](https://www.therecursive.com/rohlik-founder-tomas-cuprs-duvo-raises-eur28-7m-series-a-to-take-enterprise-ai-agents-to-the-us)
   - Assumption: Named customers are active commercial deployments\.
-- **For:** Architecture and compliance positioning — model\-agnostic platform and stated SOC2/ISO certifications support enterprise\-sales claims and data\-sovereignty options\. *(Analyst view)* ^[41](https://tech.eu/2026/10/14/from-rohlik-to-enterprise-ai-tomas-cuprs-duvo-raises-32m-series-a/),[47](https://www.therecursive.com/rohlik-founder-tomas-cuprs-duvo-raises-eur28-7m-series-a-to-take-enterprise-ai-agents-to-the-us),[15](https://finance.yahoo.com/technology/ai/articles/duvo-raises-32-million-series-130000587.html)
+- **For:** Architecture and compliance positioning — model\-agnostic platform and stated SOC2/ISO certifications support enterprise\-sales claims and data\-sovereignty options\. *(Analyst view)* ^[41](https://tech.eu/2026/10/14/from-rohlik-to-enterprise-ai-tomas-cuprs-duvo-raises-32m-series-a/),[45](https://www.therecursive.com/rohlik-founder-tomas-cuprs-duvo-raises-eur28-7m-series-a-to-take-enterprise-ai-agents-to-the-us),[15](https://finance.yahoo.com/technology/ai/articles/duvo-raises-32-million-series-130000587.html)
   - Assumption: Certs and model\-agnostic design aid enterprise adoption\.
 - **Against:** Core problem complexity — independent analysis highlights ‘hidden work’ as a hard technical and organisational problem that could limit scale\. *(Analyst view)* ^[23](https://www.remio.ai/post/duvo-series-a-raises-32m-but-the-hard-problem-is-hidden-work)
   - Assumption: Hidden work materially impacts automation ROI\.
@@ -73,20 +66,20 @@ No sourced findings for this section.
 
 ## Ownership and capital
 
-- Incorporation: duvo\.ai s\.r\.o\. registered in Czech Republic on 2025\-02\-24 with CZ company record\. *(Verified)* ^[48](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/22646141),[40](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/22646141)
+- Incorporation: duvo\.ai s\.r\.o\. registered in Czech Republic on 2025\-02\-24 with CZ company record\. *(Verified)* ^[47](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/22646141),[40](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/22646141)
   - Assumption: Registry entry accurately reflects incorporation\.
-- Shareholders / capital: initial capital CZK 12,000; early shareholder Bizthusiasm a\.s\. held 33\.33% until 2025\-08\-01; Taskcrew Inc\. holds 100% from 2025\-08\-01 per registry\. *(Verified)* ^[49](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/22646141),[50](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/22646141),[51](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/22646141)
+- Shareholders / capital: initial capital CZK 12,000; early shareholder Bizthusiasm a\.s\. held 33\.33% until 2025\-08\-01; Taskcrew Inc\. holds 100% from 2025\-08\-01 per registry\. *(Verified)* ^[48](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/22646141),[49](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/22646141),[50](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/22646141)
   - Assumption: Registry filings are up to date\.
 - Funding history: Seed \~$15M \(Index lead\) and Series A \~$32M \(Balderton lead\) reported across press articles\. *(Corroborated)* ^[4](https://tech.eu/2025/12/02/duvo-raises-15m-to-give-retailers-ai-staff-that-cuts-manual-work-by-40/),[5](https://www.therecursive.com/rohlik-founder-tomas-cuprs-duvo-raises-eur28-7m-series-a-to-take-enterprise-ai-agents-to-the-us),[6](https://finance.yahoo.com/technology/ai/articles/duvo-raises-32-million-series-130000587.html),[19](https://tech.eu/2026/10/14/from-rohlik-to-enterprise-ai-tomas-cuprs-duvo-raises-32m-series-a/)
   - Assumption: Press reports correctly summarise round amounts and investors\.
 
 ## Technology profile
 
-- Product surfaces: developer docs, API reference, and authentication pages indicate an exposed developer platform and runtime for agents \(docs and API URLs present\)\. *(Partly verified)* ^[10](https://www.duvo.ai/developers),[52](https://www.duvo.ai/developers/api-reference),[53](https://www.duvo.ai/developers/authentication),[35](https://crt.sh/?q=%25.duvo.ai&output=json),[34](https://crt.sh/?q=%25.duvo.ai&output=json)
+- Product surfaces: developer docs, API reference, and authentication pages indicate an exposed developer platform and runtime for agents \(docs and API URLs present\)\. *(Partly verified)* ^[10](https://www.duvo.ai/developers),[51](https://www.duvo.ai/developers/api-reference),[52](https://www.duvo.ai/developers/authentication),[35](https://crt.sh/?q=%25.duvo.ai&output=json),[34](https://crt.sh/?q=%25.duvo.ai&output=json)
   - Assumption: Docs reflect current production APIs\.
-- Capabilities: platform maps processes \(Clarity interviews\), proposes improvements, exports BPMN/Visio, and runs agents across ERPs, portals and inboxes with write\-back\. *(Partly verified)* ^[54](https://www.duvo.ai/),[55](https://www.duvo.ai/platform),[56](https://www.duvo.ai/platform),[9](https://tech.eu/2025/12/02/duvo-raises-15m-to-give-retailers-ai-staff-that-cuts-manual-work-by-40/),[57](https://www.duvo.ai/solutions/purchase-order-compliance)
+- Capabilities: platform maps processes \(Clarity interviews\), proposes improvements, exports BPMN/Visio, and runs agents across ERPs, portals and inboxes with write\-back\. *(Partly verified)* ^[53](https://www.duvo.ai/),[54](https://www.duvo.ai/platform),[55](https://www.duvo.ai/platform),[9](https://tech.eu/2025/12/02/duvo-raises-15m-to-give-retailers-ai-staff-that-cuts-manual-work-by-40/),[56](https://www.duvo.ai/solutions/purchase-order-compliance)
   - Assumption: Product pages describe implemented capabilities rather than roadmap items\.
-- Engineering footprint: active GitHub org with \~10 public repos including 'skills', MCP servers and PII guardrails plugins\. *(Verified)* ^[58](https://github.com/duvoai),[11](https://github.com/duvoai/skills),[31](https://github.com/duvoai/cua-mcp-server),[32](https://github.com/duvoai/pii-guardrails-plugin)
+- Engineering footprint: active GitHub org with \~10 public repos including 'skills', MCP servers and PII guardrails plugins\. *(Verified)* ^[57](https://github.com/duvoai),[11](https://github.com/duvoai/skills),[31](https://github.com/duvoai/cua-mcp-server),[32](https://github.com/duvoai/pii-guardrails-plugin)
   - Assumption: Repos map to company work and are not only marketing samples\.
 
 ## What could be rebuilt, and what cannot be judged from outside
@@ -95,7 +88,7 @@ No sourced findings for this section.
   - Assumption: Public repos contain runnable code and sufficient docs\.
 - **Edge supported by public evidence:** Enterprise customers \(Notino, Rohlik\) are independently corroborated, supporting enterprise deployment evidence\. *(Analyst view)* ^[7](https://www.therecursive.com/rohlik-founder-tomas-cuprs-duvo-raises-eur28-7m-series-a-to-take-enterprise-ai-agents-to-the-us),[39](https://www.therecursive.com/rohlik-founder-tomas-cuprs-duvo-raises-eur28-7m-series-a-to-take-enterprise-ai-agents-to-the-us),[3](https://www.therecursive.com/rohlik-founder-tomas-cuprs-duvo-raises-eur28-7m-series-a-to-take-enterprise-ai-agents-to-the-us)
   - Assumption: Press corroboration implies live deployments at scale\.
-- **Cannot be judged from outside:** Actual model performance, decision accuracy, and production security posture cannot be judged without access to code, models, logs and SOC/ISO reports\. *(Analyst view)* ^[16](https://www.duvo.ai/),[47](https://www.therecursive.com/rohlik-founder-tomas-cuprs-duvo-raises-eur28-7m-series-a-to-take-enterprise-ai-agents-to-the-us),[30](https://www.duvo.ai/)
+- **Cannot be judged from outside:** Actual model performance, decision accuracy, and production security posture cannot be judged without access to code, models, logs and SOC/ISO reports\. *(Analyst view)* ^[16](https://www.duvo.ai/),[45](https://www.therecursive.com/rohlik-founder-tomas-cuprs-duvo-raises-eur28-7m-series-a-to-take-enterprise-ai-agents-to-the-us),[30](https://www.duvo.ai/)
   - Assumption: Internal artefacts and reports are required for assessment\.
 
 ## Risks and caveats
@@ -113,9 +106,9 @@ No sourced findings for this section.
   - Assumption: Certificates exist and can be shared under NDA\.
 - Supply customer references and anonymised SOWs for Notino and Rohlik to validate scope, ARR contribution and deployment maturity\. *(Analyst view)* ^[7](https://www.therecursive.com/rohlik-founder-tomas-cuprs-duvo-raises-eur28-7m-series-a-to-take-enterprise-ai-agents-to-the-us),[39](https://www.therecursive.com/rohlik-founder-tomas-cuprs-duvo-raises-eur28-7m-series-a-to-take-enterprise-ai-agents-to-the-us),[3](https://www.therecursive.com/rohlik-founder-tomas-cuprs-duvo-raises-eur28-7m-series-a-to-take-enterprise-ai-agents-to-the-us)
   - Assumption: References exist and can disclose engagement details\.
-- Share Anthropic integration terms \(endpoints used, retention, regional hosting\) and a complete subprocessor list to assess vendor lock and data\-flow risk\. *(Analyst view)* ^[17](https://www.duvo.ai/trust-center),[59](https://www.duvo.ai/privacy)
+- Share Anthropic integration terms \(endpoints used, retention, regional hosting\) and a complete subprocessor list to assess vendor lock and data\-flow risk\. *(Analyst view)* ^[17](https://www.duvo.ai/trust-center),[58](https://www.duvo.ai/privacy)
   - Assumption: Duvo can disclose subprocessor agreements under NDA\.
-- Demonstrate the model\-agnostic claim: examples where workflow persisted while underlying model changed, or details of on\-prem/open\-weight deployments\. *(Analyst view)* ^[47](https://www.therecursive.com/rohlik-founder-tomas-cuprs-duvo-raises-eur28-7m-series-a-to-take-enterprise-ai-agents-to-the-us),[41](https://tech.eu/2026/10/14/from-rohlik-to-enterprise-ai-tomas-cuprs-duvo-raises-32m-series-a/),[60](https://finance.yahoo.com/technology/ai/articles/duvo-raises-32-million-series-130000587.html)
+- Demonstrate the model\-agnostic claim: examples where workflow persisted while underlying model changed, or details of on\-prem/open\-weight deployments\. *(Analyst view)* ^[45](https://www.therecursive.com/rohlik-founder-tomas-cuprs-duvo-raises-eur28-7m-series-a-to-take-enterprise-ai-agents-to-the-us),[41](https://tech.eu/2026/10/14/from-rohlik-to-enterprise-ai-tomas-cuprs-duvo-raises-32m-series-a/),[59](https://finance.yahoo.com/technology/ai/articles/duvo-raises-32-million-series-130000587.html)
   - Assumption: Technical migration cases exist and can be documented\.
 
 ## Sources
@@ -164,22 +157,21 @@ No sourced findings for this section.
 42. [finance\.yahoo\.com](https://finance.yahoo.com/technology/ai/articles/duvo-raises-32-million-series-130000587.html) · Independent press · Press article · 2026\-10\-14 — “Duvo Raises $32 Million Series A to Become the One Platform Enterprises Run Their Operations On”
 43. [duvo\.ai](https://www.duvo.ai/) · Company's own website · Pricing — “Or start on your own: the Free plan at app\.duvo\.ai includes 2 Clarity interviews and 100 agent runs\. Start free”
 44. [duvo\.ai](https://www.duvo.ai/) · Company's own website · Pricing — “Map one process, free”
-45. [tech\.eu](https://tech.eu/2026/10/14/from-rohlik-to-enterprise-ai-tomas-cuprs-duvo-raises-32m-series-a/) · Independent press · Product capability — “Duvo is an enterprise operating system that brings a company's processes together on one platform\.”
+45. [therecursive\.com](https://www.therecursive.com/rohlik-founder-tomas-cuprs-duvo-raises-eur28-7m-series-a-to-take-enterprise-ai-agents-to-the-us) · Independent press · Technical claim — “The platform is model\-agnostic and can run open\-weight models on dedicated GPUs or models hosted by the customer\.”
 46. [wired\.cz](https://www.wired.cz/news-beat/cuprovo-duvo-ziskalo-32-milionu-dolaru-na-expanzi) · Independent press · Technical claim — “Platformu už využívají velké značky, kterým ročně generuje hodnotu přesahující 100 milionů dolarů\.”
-47. [therecursive\.com](https://www.therecursive.com/rohlik-founder-tomas-cuprs-duvo-raises-eur28-7m-series-a-to-take-enterprise-ai-agents-to-the-us) · Independent press · Technical claim — “The platform is model\-agnostic and can run open\-weight models on dedicated GPUs or models hosted by the customer\.”
-48. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/22646141) · Official record · Registry: identity · 2025\-02\-24 — “duvo\.ai s\.r\.o\. · s\.r\.o\. · registered 2025\-02\-24”
-49. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/22646141) · Official record · Registry: registered capital · 2025\-02\-24 — “12 000 CZK”
-50. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/22646141) · Official record · Registry: shareholder · 2025\-02\-24 — “Bizthusiasm, a\.s\. · 33\.33% · from 2025\-02\-24 · to 2025\-08\-01”
-51. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/22646141) · Official record · Registry: shareholder · 2025\-08\-01 — “Taskcrew Inc\. · 100\.0% · from 2025\-08\-01”
-52. [duvo\.ai](https://www.duvo.ai/developers/api-reference) · Company's own website · Website page — “Duvo API Reference \- Duvo Developer Platform”
-53. [duvo\.ai](https://www.duvo.ai/developers/authentication) · Company's own website · Website page — “Duvo Authentication \- Duvo Developer Platform”
-54. [duvo\.ai](https://www.duvo.ai/) · Company's own website · Product capability — “Duvo Clarity maps a process from 10\-minute AI interviews with the people who do the work, in 177\+ languages, while they share their screens\.”
-55. [duvo\.ai](https://www.duvo.ai/platform) · Company's own website · Product capability — “Duvo maps how a process runs, proposes improvements, then executes the version you approve\.”
-56. [duvo\.ai](https://www.duvo.ai/platform) · Company's own website · Product capability — “Process maps export as BPMN 2\.0 XML or native Visio drawings\.”
-57. [duvo\.ai](https://www.duvo.ai/solutions/purchase-order-compliance) · Company's own website · Product capability — “The corrected fields and approval status are written back to the purchasing system before the PO proceeds\.”
-58. [github\.com](https://github.com/duvoai) · Public technical artifact · GitHub organisation · 2025\-03\-05 — “duvoai · 13 public repos”
-59. [duvo\.ai](https://www.duvo.ai/privacy) · Company's own website · Subprocessor \(privacy policy\) — “PostHog processes this data on our behalf as our service provider and stores it in the European Union\.”
-60. [finance\.yahoo\.com](https://finance.yahoo.com/technology/ai/articles/duvo-raises-32-million-series-130000587.html) · Independent press · Technical claim — “Duvo is model\-agnostic, so the AI underneath can change without rebuilding the processes on top of it\.”
+47. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/22646141) · Official record · Registry: identity · 2025\-02\-24 — “duvo\.ai s\.r\.o\. · s\.r\.o\. · registered 2025\-02\-24”
+48. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/22646141) · Official record · Registry: registered capital · 2025\-02\-24 — “12 000 CZK”
+49. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/22646141) · Official record · Registry: shareholder · 2025\-02\-24 — “Bizthusiasm, a\.s\. · 33\.33% · from 2025\-02\-24 · to 2025\-08\-01”
+50. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/22646141) · Official record · Registry: shareholder · 2025\-08\-01 — “Taskcrew Inc\. · 100\.0% · from 2025\-08\-01”
+51. [duvo\.ai](https://www.duvo.ai/developers/api-reference) · Company's own website · Website page — “Duvo API Reference \- Duvo Developer Platform”
+52. [duvo\.ai](https://www.duvo.ai/developers/authentication) · Company's own website · Website page — “Duvo Authentication \- Duvo Developer Platform”
+53. [duvo\.ai](https://www.duvo.ai/) · Company's own website · Product capability — “Duvo Clarity maps a process from 10\-minute AI interviews with the people who do the work, in 177\+ languages, while they share their screens\.”
+54. [duvo\.ai](https://www.duvo.ai/platform) · Company's own website · Product capability — “Duvo maps how a process runs, proposes improvements, then executes the version you approve\.”
+55. [duvo\.ai](https://www.duvo.ai/platform) · Company's own website · Product capability — “Process maps export as BPMN 2\.0 XML or native Visio drawings\.”
+56. [duvo\.ai](https://www.duvo.ai/solutions/purchase-order-compliance) · Company's own website · Product capability — “The corrected fields and approval status are written back to the purchasing system before the PO proceeds\.”
+57. [github\.com](https://github.com/duvoai) · Public technical artifact · GitHub organisation · 2025\-03\-05 — “duvoai · 13 public repos”
+58. [duvo\.ai](https://www.duvo.ai/privacy) · Company's own website · Subprocessor \(privacy policy\) — “PostHog processes this data on our behalf as our service provider and stores it in the European Union\.”
+59. [finance\.yahoo\.com](https://finance.yahoo.com/technology/ai/articles/duvo-raises-32-million-series-130000587.html) · Independent press · Technical claim — “Duvo is model\-agnostic, so the AI underneath can change without rebuilding the processes on top of it\.”
 
 ## How this dossier was built
 

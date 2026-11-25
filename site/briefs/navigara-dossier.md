@@ -27,7 +27,7 @@ navigara\.com · CZ/US · 2026\-11\-20
 
 # Investment view
 
-*Inputs for the partner's memo, not a recommendation: what the evidence says about the business, the market, competitors and fit with the fund, and the case for and against\.*
+*Inputs for the partner's memo, not a recommendation: what the evidence says about the business, competitors and fit with the fund, and the case for and against\.*
 
 ## Fit with the Rockaway thesis
 
@@ -41,30 +41,23 @@ navigara\.com · CZ/US · 2026\-11\-20
 - Enterprise sales: custom quotes for on‑prem/air‑gapped deployments and enterprise controls \(SSO/SCIM, audit logs\); implies higher‑margin services/contracts\. *(Partly verified)* ^[41](https://navigara.com/pricing),[42](https://navigara.com/product/performance),[3](https://www.prnewswire.com/news-releases/navigara-launches-the-performance-layer-for-enterprise-engineering-teams-and-ai-tools-backed-by-2-5m-302700136.html)
   - Assumption: Enterprise quotes translate to commercial contracts\.
 
-## Market
-
-- Demand driver \(company/press\): rising corporate spend on AI and executives’ difficulty measuring ROI creates demand for AI ROI/engineering\-performance tooling\. *(Corroborated)* ^[43](https://www.e15.cz/byznys/technologie-a-media/miliardy-ktere-prichazeji-vnivec-cesky-startup-nabizi-reseni-jak-merit-navratnost-investic-do-ai-1430910),[9](https://www.euro.cz/clanky/prezil-leteckou-nehodou-pak-zalozil-startup-pomahajici-firmam-prokazovat-navratnost-investic-do-ai-na-dalsi-rozvoj-ted-cech-ziskal-pres-50-milionu/)
-  - Assumption: Press reflects market sentiment rather than isolated anecdotes\.
-- No sourced total market size found in the collected facts; no third‑party market\-size figure cited by company or press here\. *(Single source)* ^[43](https://www.e15.cz/byznys/technologie-a-media/miliardy-ktere-prichazeji-vnivec-cesky-startup-nabizi-reseni-jak-merit-navratnost-investic-do-ai-1430910)
-  - Assumption: Search of collected facts captured main press and product pages\.
-
 ## Competition
 
 No sourced findings for this section.
 
 ## Case for and against
 
-- **For:** Differentiated measurement approach—agentic analysis plus an explicit ETV metric and AI ROI product that ties AI spend to delivered engineering output\. *(Analyst view)* ^[44](https://parsers.vc/news/260308-navigara-secures-2-5-million-to-measure-ai/),[39](https://navigara.com/product/performance),[38](https://navigara.com/product/ai-roi)
+- **For:** Differentiated measurement approach—agentic analysis plus an explicit ETV metric and AI ROI product that ties AI spend to delivered engineering output\. *(Analyst view)* ^[43](https://parsers.vc/news/260308-navigara-secures-2-5-million-to-measure-ai/),[39](https://navigara.com/product/performance),[38](https://navigara.com/product/ai-roi)
   - Assumption: Metric is robust and defensible in customer deployments\.
-- **For:** Enterprise suitability—product claims private‑cloud/on‑prem or air‑gapped deployment, read‑only transient analysis and controls aimed at regulated customers\. *(Analyst view)* ^[3](https://www.prnewswire.com/news-releases/navigara-launches-the-performance-layer-for-enterprise-engineering-teams-and-ai-tools-backed-by-2-5m-302700136.html),[42](https://navigara.com/product/performance),[45](https://vestbee.com/insights/articles/navigara-raises-2-5-m)
+- **For:** Enterprise suitability—product claims private‑cloud/on‑prem or air‑gapped deployment, read‑only transient analysis and controls aimed at regulated customers\. *(Analyst view)* ^[3](https://www.prnewswire.com/news-releases/navigara-launches-the-performance-layer-for-enterprise-engineering-teams-and-ai-tools-backed-by-2-5m-302700136.html),[42](https://navigara.com/product/performance),[44](https://vestbee.com/insights/articles/navigara-raises-2-5-m)
   - Assumption: Deploy options are production\-ready, not roadmap promises\.
 - **Against:** Security/compliance claims \(SOC 2 Type II\) are asserted on the site but the SOC2 report and auditor references were not locatable in the collected evidence\. *(Analyst view)* ^[13](https://navigara.com/),[12](https://navigara.com/)
   - Assumption: Public verification is material for enterprise sales\.
-- **Against:** No named reference customers or public case studies in the collected facts to validate enterprise traction or retention\. *(Analyst view)* ^[16](https://vestbee.com/insights/articles/navigara-raises-2-5-m),[46](https://www.moneymakers.com/companies/navigara)
+- **Against:** No named reference customers or public case studies in the collected facts to validate enterprise traction or retention\. *(Analyst view)* ^[16](https://vestbee.com/insights/articles/navigara-raises-2-5-m),[45](https://www.moneymakers.com/companies/navigara)
   - Assumption: Reference customers are required to prove commercial scalability\.
-- **Must be true:** Diligence must confirm an enterprise reference \(live private‑cloud deployment\) showing ETV/AI ROI delivered and willingness to pay\. *(Analyst view)* ^[47](https://pulse2.com/navigara-2-5-million-raised-for-engineering-performance-measurement-platform),[16](https://vestbee.com/insights/articles/navigara-raises-2-5-m)
+- **Must be true:** Diligence must confirm an enterprise reference \(live private‑cloud deployment\) showing ETV/AI ROI delivered and willingness to pay\. *(Analyst view)* ^[46](https://pulse2.com/navigara-2-5-million-raised-for-engineering-performance-measurement-platform),[16](https://vestbee.com/insights/articles/navigara-raises-2-5-m)
   - Assumption: Reference demonstrates both technical and commercial validation\.
-- **Must be true:** Diligence must obtain verifiable SOC 2 evidence \(report/auditor\) and proof that deployment modes meet regulated\-compliance needs\. *(Analyst view)* ^[12](https://navigara.com/),[48](https://navigara.com/pricing)
+- **Must be true:** Diligence must obtain verifiable SOC 2 evidence \(report/auditor\) and proof that deployment modes meet regulated\-compliance needs\. *(Analyst view)* ^[12](https://navigara.com/),[47](https://navigara.com/pricing)
   - Assumption: Security attestation is required for target enterprise buyers\.
 
 # Technical due diligence
@@ -72,36 +65,36 @@ No sourced findings for this section.
 ## Ownership and capital
 
 - Seed round: $2\.5M announced and reported across multiple outlets; named investors include Inovo\.vc, Rockaway Ventures, QQ Capital\. *(Corroborated)* ^[5](https://vestbee.com/insights/articles/navigara-raises-2-5-m),[20](https://parsers.vc/news/260308-navigara-secures-2-5-million-to-measure-ai/),[19](https://pulse2.com/navigara-2-5-million-raised-for-engineering-performance-measurement-platform),[7](https://www.prnewswire.com/news-releases/navigara-launches-the-performance-layer-for-enterprise-engineering-teams-and-ai-tools-backed-by-2-5m-302700136.html),[18](https://finance.yahoo.com/news/navigara-launches-performance-layer-enterprise-055000779.html)
-- Registry flag: no Czech IČO found on website or impressum; public entity registration not evidenced\. *(Company claim)* ^[49](https://navigara.com/)
+- Registry flag: no Czech IČO found on website or impressum; public entity registration not evidenced\. *(Company claim)* ^[48](https://navigara.com/)
 
 ## Technology profile
 
-- Core product capabilities public: ETV metric per commit/PR, AI ROI, token\-spend optimization, adaptive team budgeting and dashboards\. *(Partly verified)* ^[11](https://500.navigara.com/),[50](https://navigara.com/pricing),[51](https://navigara.com/pricing),[52](https://navigara.com/pricing),[16](https://vestbee.com/insights/articles/navigara-raises-2-5-m)
-- Engineering footprint: documentation site with quickstart and integrations pages; two public GitHub repos \(CLI and plugin\) and a small org presence\. *(Partly verified)* ^[35](https://docs.navigara.com/),[53](https://docs.navigara.com/quickstart),[54](https://docs.navigara.com/integrations/overview),[31](https://github.com/navigaracom/navigara-cli),[30](https://github.com/navigaracom/flamingo),[55](https://github.com/navigaracom)
-- Integrations and AI dependency: product advertises integrations with GitHub, GitLab, Jira, Linear and connects to OpenAI and Anthropic \(integrations, not proven vendor\-only dependency\)\. *(Company claim)* ^[14](https://navigara.com/product/ai-roi),[29](https://navigara.com/pricing),[56](https://navigara.com/product/alignment),[15](https://navigara.com/)
+- Core product capabilities public: ETV metric per commit/PR, AI ROI, token\-spend optimization, adaptive team budgeting and dashboards\. *(Partly verified)* ^[11](https://500.navigara.com/),[49](https://navigara.com/pricing),[50](https://navigara.com/pricing),[51](https://navigara.com/pricing),[16](https://vestbee.com/insights/articles/navigara-raises-2-5-m)
+- Engineering footprint: documentation site with quickstart and integrations pages; two public GitHub repos \(CLI and plugin\) and a small org presence\. *(Partly verified)* ^[35](https://docs.navigara.com/),[52](https://docs.navigara.com/quickstart),[53](https://docs.navigara.com/integrations/overview),[31](https://github.com/navigaracom/navigara-cli),[30](https://github.com/navigaracom/flamingo),[54](https://github.com/navigaracom)
+- Integrations and AI dependency: product advertises integrations with GitHub, GitLab, Jira, Linear and connects to OpenAI and Anthropic \(integrations, not proven vendor\-only dependency\)\. *(Company claim)* ^[14](https://navigara.com/product/ai-roi),[29](https://navigara.com/pricing),[55](https://navigara.com/product/alignment),[15](https://navigara.com/)
 
 ## What could be rebuilt, and what cannot be judged from outside
 
-- **Replicable with off-the-shelf parts:** On\-prem collector and repository\-level metrics could be rebuilt from public APIs \(GitHub/GitLab\), docs, and an open\-source CLI backfiller\. *(Analyst view)* ^[4](https://docs.navigara.com/deployment/on-prem-collector),[31](https://github.com/navigaracom/navigara-cli),[54](https://docs.navigara.com/integrations/overview),[30](https://github.com/navigaracom/flamingo)
+- **Replicable with off-the-shelf parts:** On\-prem collector and repository\-level metrics could be rebuilt from public APIs \(GitHub/GitLab\), docs, and an open\-source CLI backfiller\. *(Analyst view)* ^[4](https://docs.navigara.com/deployment/on-prem-collector),[31](https://github.com/navigaracom/navigara-cli),[53](https://docs.navigara.com/integrations/overview),[30](https://github.com/navigaracom/flamingo)
   - Assumption: Access to customers' repo event streams is available
-- **Edge supported by public evidence:** Public evidence supports a claimed proprietary ETV metric and a 500 OSS benchmark site, but not independent validation of metric accuracy\. *(Analyst view)* ^[11](https://500.navigara.com/),[57](https://500.navigara.com/),[58](https://navigara.com/product/performance)
+- **Edge supported by public evidence:** Public evidence supports a claimed proprietary ETV metric and a 500 OSS benchmark site, but not independent validation of metric accuracy\. *(Analyst view)* ^[11](https://500.navigara.com/),[56](https://500.navigara.com/),[57](https://navigara.com/product/performance)
   - Assumption: Public pages truthfully reflect product features
 - **Cannot be judged from outside:** Model quality, agentic analysis internals, data\-labeling, and actual AI\-ROI causal attribution cannot be judged without code, models, and customer results\. *(Analyst view)* ^[10](https://finance.yahoo.com/news/navigara-launches-performance-layer-enterprise-055000779.html),[38](https://navigara.com/product/ai-roi),[17](https://vestbee.com/insights/articles/navigara-raises-2-5-m)
   - Assumption: Internal artifacts and customer datasets are required
 
 ## Risks and caveats
 
-- Unverified SOC 2/compliance claims: verification check flagged as not\_checkable; SOC 2 report not publicly available\. *(Analyst view)* ^[12](https://navigara.com/),[48](https://navigara.com/pricing),[13](https://navigara.com/)
+- Unverified SOC 2/compliance claims: verification check flagged as not\_checkable; SOC 2 report not publicly available\. *(Analyst view)* ^[12](https://navigara.com/),[47](https://navigara.com/pricing),[13](https://navigara.com/)
   - Assumption: SOC 2 report is the primary compliance evidence
 - Customer evidence gap: press and pricing exist but no named paying customers or published case studies in collected facts\. *(Analyst view)* ^[8](https://vestbee.com/insights/articles/navigara-raises-2-5-m),[36](https://navigara.com/pricing),[16](https://vestbee.com/insights/articles/navigara-raises-2-5-m)
-- Dependence on external LLM ecosystems: product advertises integrations with OpenAI and Anthropic; service reliance and vendor risk not documented\. *(Analyst view)* ^[14](https://navigara.com/product/ai-roi),[56](https://navigara.com/product/alignment),[15](https://navigara.com/)
+- Dependence on external LLM ecosystems: product advertises integrations with OpenAI and Anthropic; service reliance and vendor risk not documented\. *(Analyst view)* ^[14](https://navigara.com/product/ai-roi),[55](https://navigara.com/product/alignment),[15](https://navigara.com/)
 
 ## Questions for founders
 
-- Can the company provide SOC 2 Type II report and auditor contact to validate compliance claims? *(Analyst view)* ^[12](https://navigara.com/),[48](https://navigara.com/pricing)
+- Can the company provide SOC 2 Type II report and auditor contact to validate compliance claims? *(Analyst view)* ^[12](https://navigara.com/),[47](https://navigara.com/pricing)
 - Please share anonymized customer pilot results or signed purchase orders proving AI ROI claims and retention beyond press mentions\. *(Analyst view)* ^[16](https://vestbee.com/insights/articles/navigara-raises-2-5-m),[17](https://vestbee.com/insights/articles/navigara-raises-2-5-m),[22](https://www.prnewswire.com/news-releases/navigara-launches-the-performance-layer-for-enterprise-engineering-teams-and-ai-tools-backed-by-2-5m-302700136.html)
-- What parts of agentic analysis are implemented in\-house versus relying on integrated LLM providers \(OpenAI/Anthropic\)? *(Analyst view)* ^[10](https://finance.yahoo.com/news/navigara-launches-performance-layer-enterprise-055000779.html),[14](https://navigara.com/product/ai-roi),[56](https://navigara.com/product/alignment)
-- Request architecture and data\-flow docs for the on\-prem collector to confirm zero\-code retention and read\-only analysis claim\. *(Analyst view)* ^[4](https://docs.navigara.com/deployment/on-prem-collector),[3](https://www.prnewswire.com/news-releases/navigara-launches-the-performance-layer-for-enterprise-engineering-teams-and-ai-tools-backed-by-2-5m-302700136.html),[59](https://finance.yahoo.com/news/navigara-launches-performance-layer-enterprise-055000779.html)
+- What parts of agentic analysis are implemented in\-house versus relying on integrated LLM providers \(OpenAI/Anthropic\)? *(Analyst view)* ^[10](https://finance.yahoo.com/news/navigara-launches-performance-layer-enterprise-055000779.html),[14](https://navigara.com/product/ai-roi),[55](https://navigara.com/product/alignment)
+- Request architecture and data\-flow docs for the on\-prem collector to confirm zero\-code retention and read\-only analysis claim\. *(Analyst view)* ^[4](https://docs.navigara.com/deployment/on-prem-collector),[3](https://www.prnewswire.com/news-releases/navigara-launches-the-performance-layer-for-enterprise-engineering-teams-and-ai-tools-backed-by-2-5m-302700136.html),[58](https://finance.yahoo.com/news/navigara-launches-performance-layer-enterprise-055000779.html)
 
 ## Sources
 
@@ -147,23 +140,22 @@ No sourced findings for this section.
 40. [navigara\.com](https://navigara.com/pricing) · Company's own website · Pricing — “AI ROI report $4,500 one\-off”
 41. [navigara\.com](https://navigara.com/pricing) · Company's own website · Technical claim — “Enterprise includes an on\-prem collector, full on\-premises, or air\-gapped deployment\.”
 42. [navigara\.com](https://navigara.com/product/performance) · Company's own website · Technical claim — “Regulated &amp; enterprise On\-premises or air\-gapped, with SSO, SCIM and audit logs in every mode\.”
-43. [e15\.cz](https://www.e15.cz/byznys/technologie-a-media/miliardy-ktere-prichazeji-vnivec-cesky-startup-nabizi-reseni-jak-merit-navratnost-investic-do-ai-1430910) · Independent press · Press article · 2026\-02\-18 — “Miliardy, které přicházejí vniveč\. Český startup nabízí řešení, jak měřit návratnost investic do AI \| e15\.cz”
-44. [parsers\.vc](https://parsers.vc/news/260308-navigara-secures-2-5-million-to-measure-ai/) · Independent press · Technical claim — “A core technology is agentic analysis\. This system evaluates engineering workflows\. It examines each code commit in detail\. It assesses intent, ownership, and impact\.”
-45. [vestbee\.com](https://vestbee.com/insights/articles/navigara-raises-2-5-m) · Independent press · Product capability — “The software is deployed inside a customer’s private cloud environment, where code is analyzed transiently in memory and not retained\.”
-46. [moneymakers\.com](https://www.moneymakers.com/companies/navigara) · Independent press · Press article · 2026\-11\-06 — “Navigara \| Engineering Measurement and AI Cost Software \- MoneyMakers”
-47. [pulse2\.com](https://pulse2.com/navigara-2-5-million-raised-for-engineering-performance-measurement-platform) · Independent press · Technical claim — “Navigara deploys within customers’ private cloud environments, ensuring data sovereignty and compliance requirements\.”
-48. [navigara\.com](https://navigara.com/pricing) · Company's own website · Technical claim — “SOC 2 Type II report, data processing agreement, deployment controls”
-49. [navigara\.com](https://navigara.com/) · Company's own website · Registry: structure
-50. [navigara\.com](https://navigara.com/pricing) · Company's own website · Product capability — “AI ROI: what AI added vs\. what it cost, per unit of work”
-51. [navigara\.com](https://navigara.com/pricing) · Company's own website · Product capability — “Token Spend Intelligence Route each task to the cheapest model that can do it, and price the rest\.”
-52. [navigara\.com](https://navigara.com/pricing) · Company's own website · Product capability — “Adaptive Token Limits Move each team's AI budget with what it delivers, inside a total you fix\.”
-53. [docs\.navigara\.com](https://docs.navigara.com/quickstart) · Company's own website · Website page — “Quickstart \- Navigara Documentation”
-54. [docs\.navigara\.com](https://docs.navigara.com/integrations/overview) · Company's own website · Website page — “Supported Integrations \- Navigara Documentation”
-55. [github\.com](https://github.com/navigaracom) · Public technical artifact · GitHub organisation · 2025\-11\-21 — “navigaracom · 2 public repos”
-56. [navigara\.com](https://navigara.com/product/alignment) · Company's own website · Integration — “Connects to · Nothing to instrument GitHub GitLab Jira Linear Anthropic OpenAI \+ 6 more”
-57. [500\.navigara\.com](https://500.navigara.com/) · Company's own website · Product capability — “A live index of the industry's leading engineering orgs\.”
-58. [navigara\.com](https://navigara.com/product/performance) · Company's own website · Technical claim — “500 OSS Performance Index Benchmark across the top 500 open source projects\.”
-59. [finance\.yahoo\.com](https://finance.yahoo.com/news/navigara-launches-performance-layer-enterprise-055000779.html) · Independent press · Technical claim — “Navigara deploys in customers' private cloud environments with read\-only access and zero code retention\.”
+43. [parsers\.vc](https://parsers.vc/news/260308-navigara-secures-2-5-million-to-measure-ai/) · Independent press · Technical claim — “A core technology is agentic analysis\. This system evaluates engineering workflows\. It examines each code commit in detail\. It assesses intent, ownership, and impact\.”
+44. [vestbee\.com](https://vestbee.com/insights/articles/navigara-raises-2-5-m) · Independent press · Product capability — “The software is deployed inside a customer’s private cloud environment, where code is analyzed transiently in memory and not retained\.”
+45. [moneymakers\.com](https://www.moneymakers.com/companies/navigara) · Independent press · Press article · 2026\-11\-06 — “Navigara \| Engineering Measurement and AI Cost Software \- MoneyMakers”
+46. [pulse2\.com](https://pulse2.com/navigara-2-5-million-raised-for-engineering-performance-measurement-platform) · Independent press · Technical claim — “Navigara deploys within customers’ private cloud environments, ensuring data sovereignty and compliance requirements\.”
+47. [navigara\.com](https://navigara.com/pricing) · Company's own website · Technical claim — “SOC 2 Type II report, data processing agreement, deployment controls”
+48. [navigara\.com](https://navigara.com/) · Company's own website · Registry: structure
+49. [navigara\.com](https://navigara.com/pricing) · Company's own website · Product capability — “AI ROI: what AI added vs\. what it cost, per unit of work”
+50. [navigara\.com](https://navigara.com/pricing) · Company's own website · Product capability — “Token Spend Intelligence Route each task to the cheapest model that can do it, and price the rest\.”
+51. [navigara\.com](https://navigara.com/pricing) · Company's own website · Product capability — “Adaptive Token Limits Move each team's AI budget with what it delivers, inside a total you fix\.”
+52. [docs\.navigara\.com](https://docs.navigara.com/quickstart) · Company's own website · Website page — “Quickstart \- Navigara Documentation”
+53. [docs\.navigara\.com](https://docs.navigara.com/integrations/overview) · Company's own website · Website page — “Supported Integrations \- Navigara Documentation”
+54. [github\.com](https://github.com/navigaracom) · Public technical artifact · GitHub organisation · 2025\-11\-21 — “navigaracom · 2 public repos”
+55. [navigara\.com](https://navigara.com/product/alignment) · Company's own website · Integration — “Connects to · Nothing to instrument GitHub GitLab Jira Linear Anthropic OpenAI \+ 6 more”
+56. [500\.navigara\.com](https://500.navigara.com/) · Company's own website · Product capability — “A live index of the industry's leading engineering orgs\.”
+57. [navigara\.com](https://navigara.com/product/performance) · Company's own website · Technical claim — “500 OSS Performance Index Benchmark across the top 500 open source projects\.”
+58. [finance\.yahoo\.com](https://finance.yahoo.com/news/navigara-launches-performance-layer-enterprise-055000779.html) · Independent press · Technical claim — “Navigara deploys in customers' private cloud environments with read\-only access and zero code retention\.”
 
 ## How this dossier was built
 
