@@ -4,6 +4,26 @@ navigara\.com · CZ/US · 2026\-11\-20
 
 **How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — part of it rests on an official or independent source, part on one outlet or the company's own words; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
 
+## Scorecard (computed by code, no LLM)
+
+**5–13 of 14: Open: needs 3 more point\(s\) from traction, financial position, technology evidence, claims checked** (bar 8; open points count 0 at the low end and 2 at the high end)
+
+| Criterion | Points | What the records show | Sources |
+|---|---|---|---|
+| Fund sector | 2 | AI\-led transformative tech: 28 facts\. | ^[21](https://parsers.vc/news/260308-navigara-secures-2-5-million-to-measure-ai/),[22](https://www.prnewswire.com/news-releases/navigara-launches-the-performance-layer-for-enterprise-engineering-teams-and-ai-tools-backed-by-2-5m-302700136.html),[59](https://finance.yahoo.com/news/navigara-launches-performance-layer-enterprise-055000779.html),[45](https://www.moneymakers.com/companies/navigara) |
+| Geography | 2 | CZ \(core region\) |  |
+| Round vs ticket | 1 | Closed round: 2\.5M USD \(seed\) ≈ €2\.3m, converted at approximate fixed rates \(25 CZK/EUR, 1\.10 USD/EUR\)\. The round is larger than the fund's initial ticket \(€0\.5m–€2m\)\. A round is the total from all investors, so the fund would be one investor in a syndicate, as lead or participant\. | ^[5](https://vestbee.com/insights/articles/navigara-raises-2-5-m),[7](https://www.prnewswire.com/news-releases/navigara-launches-the-performance-layer-for-enterprise-engineering-teams-and-ai-tools-backed-by-2-5m-302700136.html),[18](https://finance.yahoo.com/news/navigara-launches-performance-layer-enterprise-055000779.html),[19](https://pulse2.com/navigara-2-5-million-raised-for-engineering-performance-measurement-platform) |
+| Traction | 0–2 (open) | Revenue not published and no paid sales visible in public records\. |  |
+| Financial position | 0–2 (open) | Filed accounts not read\. |  |
+| Technology evidence | 0–2 (open) | No public code, grants, patents or papers visible\. |  |
+| Claims checked | 0–2 (open) | No company claim could be checked against an independent source\. |  |
+
+- What was revenue last year and this year so far, and from how many paying customers?
+- What is the cash position and monthly burn, and how many months of runway is that?
+- Can we see the product and the code, and who built the core technology?
+- Which customers and partners can we call as references?
+- Team and founders: public records cannot judge them; assess them first on the call\.
+
 ## TL;DR
 
 - **Product.** SaaS 'performance layer' that measures engineering output and AI ROI for engineering teams, deployed into customers' clouds or on\-prem collectors\. *(Partly verified)* ^[1](https://500.navigara.com/),[2](https://vestbee.com/insights/articles/navigara-raises-2-5-m),[3](https://www.prnewswire.com/news-releases/navigara-launches-the-performance-layer-for-enterprise-engineering-teams-and-ai-tools-backed-by-2-5m-302700136.html),[4](https://docs.navigara.com/deployment/on-prem-collector)
@@ -156,6 +176,7 @@ No sourced findings for this section.
 56. [500\.navigara\.com](https://500.navigara.com/) · Company's own website · Product capability — “A live index of the industry's leading engineering orgs\.”
 57. [navigara\.com](https://navigara.com/product/performance) · Company's own website · Technical claim — “500 OSS Performance Index Benchmark across the top 500 open source projects\.”
 58. [finance\.yahoo\.com](https://finance.yahoo.com/news/navigara-launches-performance-layer-enterprise-055000779.html) · Independent press · Technical claim — “Navigara deploys in customers' private cloud environments with read\-only access and zero code retention\.”
+59. [finance\.yahoo\.com](https://finance.yahoo.com/news/navigara-launches-performance-layer-enterprise-055000779.html) · Independent press · Press article · 2026\-02\-28 — “Navigara Launches the Performance Layer for Enterprise Engineering Teams and AI Tools Backed by $2\.5M”
 
 ## How this dossier was built
 

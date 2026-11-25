@@ -4,6 +4,27 @@ upheal\.io · Upheal s\.r\.o\. · IČO 14138018 · CZ · 2026\-11\-20
 
 **How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — part of it rests on an official or independent source, part on one outlet or the company's own words; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
 
+## Scorecard (computed by code, no LLM)
+
+**5–13 of 14: Open: needs 3 more point\(s\) from round vs ticket, traction, financial position, technology evidence** (bar 8; open points count 0 at the low end and 2 at the high end)
+
+| Criterion | Points | What the records show | Sources |
+|---|---|---|---|
+| Fund sector | 2 | AI\-led transformative tech: 19 facts\. | ^[19](https://cc.cz/ceska-umela-inteligence-pise-za-psychoterapeuty-poznamky-ze-sezeni-od-investoru-nabrala-pres-70-milionu/),[20](https://tech.eu/2022/10/19/upheal-raises-eur168-million-and-launches-ai-powered-notes-app-for-mental-health-care-professionals/),[50](https://www.gaebler.com/VC-Funding-721BA236-FC2C-4180-A4A1-ADE6911E834E-Upheal-10-19-2022),[51](https://www.calmstorm.vc/portfolio/upheal) |
+| Geography | 2 | CZ \(core region\) | ^[36](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/14138018) |
+| Round vs ticket | 0–2 (open) | Last reported round: 76M CZK seed \(2024\-11\)\. No current round is reported\. | ^[7](https://cc.cz/kvuli-synove-nemoci-vyhorel-jeho-startup-pomaha-terapeutum-letos-oznamuje-jiz-druhou-investici/) |
+| Traction | 0–2 (open) | Revenue not published and no paid sales visible in public records\. |  |
+| Financial position | 0–2 (open) | Filed accounts not read\. |  |
+| Technology evidence | 0–2 (open) | No public code, grants, patents or papers visible\. |  |
+| Claims checked | 1 | Checks: 1 partly\. | ^[16](https://trust.upheal.io) |
+
+- How much are you raising, on what terms, and who else is in the round?
+- What was revenue last year and this year so far, and from how many paying customers?
+- What is the cash position and monthly burn, and how many months of runway is that?
+- Can we see the product and the code, and who built the core technology?
+- Ask for evidence behind the claims that could not be confirmed\.
+- Team and founders: public records cannot judge them; assess them first on the call\.
+
 ## TL;DR
 
 - **Product.** A clinician\-facing AI EHR that drafts therapy notes, offers telehealth, scheduling, billing and managed insurance billing for individual clinicians and group practices\. *(Partly verified)* ^[1](https://www.upheal.io/features/ai-assistant),[2](https://www.upheal.io/),[3](https://www.upheal.io/),[4](https://www.upheal.io/features/managed-insurance-billing),[5](https://mentalhealthinvestors.com/startups/upheal)
@@ -153,6 +174,8 @@ No sourced findings for this section.
 47. [upheal\.io](https://www.upheal.io/privacy-and-compliance) · Company's own website · Subprocessor \(privacy policy\) — “In addition, we use AWS for our cloud infrastructure and storage, a highly secure and reliable vendor\.”
 48. [cc\.cz](https://cc.cz/kvuli-synove-nemoci-vyhorel-jeho-startup-pomaha-terapeutum-letos-oznamuje-jiz-druhou-investici/) · Independent press · Press article · 2024\-11\-18 — “Kvůli synově nemoci vyhořel\. Jeho startup teď pomáhá terapeutům \- CzechCrunch”
 49. [cc\.cz](https://cc.cz/kvuli-synove-nemoci-vyhorel-jeho-startup-pomaha-terapeutum-letos-oznamuje-jiz-druhou-investici/) · Independent press · Technical claim — “Upheal, který za ně automaticky i díky umělé inteligenci sepisuje poznámky ze sezení, třídí je a hledá v nich souvislosti”
+50. [gaebler\.com](https://www.gaebler.com/VC-Funding-721BA236-FC2C-4180-A4A1-ADE6911E834E-Upheal-10-19-2022) · Independent press · Press article — “Upheal 10/19/2022 Capital Raise \- Gaebler\.com Venture Capital Database”
+51. [calmstorm\.vc](https://www.calmstorm.vc/portfolio/upheal) · Independent press · Press article — “Upheal · Portfolio · Calm/Storm Ventures”
 
 ## How this dossier was built
 

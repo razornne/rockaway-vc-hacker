@@ -72,6 +72,8 @@ ul.plain{margin:.4rem 0 0;padding-left:1.2rem;max-width:43rem}ul.plain li{margin
 .measure .txt{font-size:16px}
 .nav{font:500 14px var(--sans);display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;margin-top:1.4rem}.nav a{text-decoration:none}
 .nav a:hover{text-decoration:underline}
+.tone-pass{color:var(--accent)}.tone-open{color:var(--ochre)}.tone-below{color:var(--brick)}
+.mini span{display:block;font-size:12.5px}td.nowrap{white-space:nowrap}
 @media(max-width:900px){.feature{grid-template-columns:minmax(0,1fr)}.mini{display:flex;flex-wrap:wrap;gap:.4rem 1.4rem}
 .mini div{border-top:0;padding:0}}
 """
@@ -110,7 +112,8 @@ def _brief_data(store: Store, cid: str) -> dict | None:
         return None
     p = render.prepare(comp, analysis, sections, facts, glance_rows(analysis.get("signals")))
     product = next((it for it in p["tldr"] if it.get("label") == "product"), None)
-    return {"company": comp, "product": product["text"] if product else "", "tiles": p["extras"]["tiles"]}
+    return {"company": comp, "product": product["text"] if product else "", "tiles": p["extras"]["tiles"],
+            "scorecard": p.get("scorecard")}
 
 
 LOGOS = ROOT / "assets" / "logos"  # company logos supplied by hand, made transparent: <company id>.png
@@ -119,6 +122,25 @@ AUTHOR_URL = os.getenv("DD_AUTHOR_URL", "")  # the author's public profile, link
 
 def _logo(cid: str, prefix: str = "") -> str:
     return (f'<img class="logo" src="{prefix}logos/{h(cid)}.png" alt="">' if (LOGOS / f"{cid}.png").exists() else "")
+
+
+def _score_mini(sc: dict | None) -> str:
+    if not sc:
+        return ""
+    from dd.page import score_text
+    return (f'<div>Scorecard<b>{h(score_text(sc))}</b><span class="tone-{h(sc["tone"])}">'
+            f'{h(SHORT_VERDICT[sc["tone"]])}</span></div>')
+
+
+def _score_cell(sc: dict | None) -> str:
+    if not sc:
+        return "<td>—</td>"
+    from dd.page import score_text
+    return (f'<td class="nowrap">{h(score_text(sc))}<br><span class="tone-{h(sc["tone"])}">'
+            f'{h(SHORT_VERDICT[sc["tone"]])}</span></td>')
+
+
+SHORT_VERDICT = {"pass": "passes to a call", "open": "open: depends on missing data", "below": "below the bar"}
 
 
 def _investor_cell(check: dict | None) -> str:
@@ -134,7 +156,8 @@ def _investor_cell(check: dict | None) -> str:
 
 def _card(cid: str, d: dict, meta: dict) -> str:
     tiles = [t for t in d["tiles"] if t["label"] in CARD_TILES][:4]
-    mini = "".join(f'<div>{h(t["label"])}<b>{h(str(t["value"]).replace(" · ", ", "))}</b></div>' for t in tiles)
+    mini = _score_mini(d.get("scorecard")) + "".join(
+        f'<div>{h(t["label"])}<b>{h(str(t["value"]).replace(" · ", ", "))}</b></div>' for t in tiles[:3])
     c = d["company"]
     site = (f' <a class="site" href="https://{h(c.domain, quote=True)}" rel="noopener noreferrer" target="_blank">'
             f"{h(c.domain)}</a>" if c.domain else "")
@@ -222,7 +245,7 @@ def _index(m: dict, cards: str, table_rows: dict[str, list[str]], n_collectors: 
             checked = g in GROUP_NOTES
             body.append('<table class="t"><tr><th>Company</th><th>What it does, from the brief</th>'
                         + ("<th>Latest round announced, investors named</th>" if checked else "")
-                        + '<th class="num">Facts</th><th class="num">Sources</th></tr>'
+                        + '<th>Scorecard</th><th class="num">Sources</th></tr>'
                         + "".join(table_rows[g])
                         + "</table>")
     body += [
@@ -441,7 +464,8 @@ def build_site(store: Store, out: Path) -> list[Path]:
                f'target="_blank">{h(comp.domain)}</a>' if comp.domain else "") + '</td>'
             f'<td>{h(_one_line((d or {}).get("product", "")))}</td>'
             + (_investor_cell(meta.get(cid, {}).get("investor_check")) if group in GROUP_NOTES else "")
-            + f'<td class="num">{r["facts"]}</td><td class="num">{r["sources"]}</td></tr>')
+            + _score_cell((d or {}).get("scorecard"))
+            + f'<td class="num">{r["sources"]}</td></tr>')
     for cid in FEATURED:
         d = _brief_data(store, cid)
         if d:

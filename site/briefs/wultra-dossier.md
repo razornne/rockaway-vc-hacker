@@ -4,6 +4,24 @@ wultra\.com · Wultra s\.r\.o\. · IČO 03643174 · CZ · 2026\-11\-20
 
 **How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — part of it rests on an official or independent source, part on one outlet or the company's own words; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
 
+## Scorecard (computed by code, no LLM)
+
+**10–13 of 14: Passes to a first call** (bar 8; open points count 0 at the low end and 2 at the high end)
+
+| Criterion | Points | What the records show | Sources |
+|---|---|---|---|
+| Fund sector | 2 | deep tech: 19 facts\. | ^[17](https://www.havelpartners.cz/pravni-poradenstvi-pro-investory-pri-vstupu-do-startupu-wultra/),[18](https://quantumcomputingreport.com/wultra-secures-e6-8-million-7-7-million-usd-series-a-to-expand-post-quantum-digital-identity-infrastructure-globally/),[52](https://fintech.global/2026/06/29/post-quantum-auth-firm-wultra-raises-e6-8m/),[53](https://financialit.net/news/fundraising-news/wultra-raises-eu68-million-series-funding) |
+| Geography | 2 | CZ \(core region\) | ^[51](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/03643174) |
+| Round vs ticket | 1 | Reported round: 6\.8M EUR \(Series A\)\. The round is larger than the fund's initial ticket \(€0\.5m–€2m\)\. A round is the total from all investors, so the fund would be one investor in a syndicate, as lead or participant\. | ^[9](https://www.lupa.cz/aktuality/ceska-firma-wultra-vybrala-dalsich-160-milionu-na-nasazeni-postkvantoveho-sifrovani/),[5](https://finance.yahoo.com/technology/ai/articles/wultra-raises-6-8-million-140000790.html) |
+| Traction | 1–2 (open) | Revenue not published; 1 named customer\(s\)\. |  |
+| Financial position | 0–2 (open) | Filed accounts not read\. |  |
+| Technology evidence | 2 | 15 public repositories; 1 patent publication\(s\)\. | ^[29](https://github.com/wultra/mtoken-sdk-js),[7](https://patents.google.com/patent/EM150508630001S) |
+| Claims checked | 2 | Checks: 4 confirmed\. | ^[6](https://cdn.prod.website-files.com/64fcce0d2e203c1c077a8c04/65c3aad8f10872792c8a7013_Wultra_CaseStudy_OTP_Bank.pdf),[37](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174),[38](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174),[44](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/03643174) |
+
+- What was revenue last year and this year so far, and from how many paying customers?
+- What is the cash position and monthly burn, and how many months of runway is that?
+- Team and founders: public records cannot judge them; assess them first on the call\.
+
 ## TL;DR
 
 - **Product.** Wultra sells post‑quantum and mobile authentication products \(PowerAuth, Talisman hardware tokens\) to banks and fintechs\. *(Partly verified)* ^[1](https://github.com/wultra/powerauth-mobile-sdk),[2](https://github.com/wultra/powerauth-crypto),[3](https://www.wultra.com/)
@@ -157,6 +175,8 @@ No sourced findings for this section.
 49. [wultra\.com](https://www.wultra.com/careers) · Company's own website · Job posting — “Principal QA Engineer”
 50. [wultra\.com](https://www.wultra.com/careers) · Company's own website · Job posting — “Mobile Reverse Engineer – Android”
 51. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/03643174) · Official record · Registry: identity · 2014\-12\-15 — “Wultra s\.r\.o\. · s\.r\.o\. · registered 2014\-12\-15”
+52. [fintech\.global](https://fintech.global/2026/06/29/post-quantum-auth-firm-wultra-raises-e6-8m/) · Independent press · Press article · 2026\-06\-29 — “Post\-quantum auth firm Wultra raises €6\.8m”
+53. [financialit\.net](https://financialit.net/news/fundraising-news/wultra-raises-eu68-million-series-funding) · Independent press · Press article — “Wultra Raises €6\.8 Million in Series A Funding \| Financial IT”
 
 ## How this dossier was built
 

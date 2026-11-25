@@ -330,6 +330,16 @@ def prepare(company: Company, analysis: dict, sections: list[dict], facts: dict[
         out_sections.append({**s, "items": items})
     from dd import page  # key numbers, tables and charts: registered here so their sources are numbered too
     extras = page.extras(analysis.get("signals") or {}, facts, refs, company)
+    from datetime import date
+
+    from dd.scorecard import scorecard
+    try:
+        as_of = date.fromisoformat(str(analysis.get("generated_at") or "")[:10])
+    except ValueError:
+        as_of = None
+    card = scorecard(analysis.get("signals") or {}, facts, as_of)
+    for r in card["rows"]:
+        r["nums"] = refs.add(r["fact_ids"])
     sources = []
     for fid in refs.order:
         f = facts[fid]
@@ -337,7 +347,7 @@ def prepare(company: Company, analysis: dict, sections: list[dict], facts: dict[
                         "host": host_of(f.source_url) or "source", "type": TYPE_LABELS.get(f.type, f.type.replace("_", " ")),
                         "date": f.event_date, "quote": _snip(f, 320), "url": f.source_url, "fact": f})
     return {"tldr": tldr, "glance": glance_rows, "sections": out_sections, "sources": sources, "refs": refs,
-            "extras": extras,
+            "extras": extras, "scorecard": card,
             "identity": _identity(facts), "method": _method_rows(facts)}
 
 
@@ -371,6 +381,18 @@ def render_markdown(company: Company, analysis: dict, p: dict, titles: dict, lab
     lines += [" · ".join(_md(m) for m in meta), ""]
     lines += ["**How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: "
               + "; ".join(f"*{v[0]}* — {v[1]}" for v in STRENGTH.values()) + ".", ""]
+    sc = p.get("scorecard")
+    if sc:
+        from dd.page import score_text
+        lines += ["## Scorecard (computed by code, no LLM)", "",
+                  f"**{score_text(sc)}: {_md(sc['verdict'])}** (bar {sc['bar']}; open points count 0 at the low end "
+                  "and 2 at the high end)", "", "| Criterion | Points | What the records show | Sources |",
+                  "|---|---|---|---|"]
+        for r in sc["rows"]:
+            pts = str(r["min"]) if not r["open"] else f"{r['min']}–{r['max']} (open)"
+            lines.append(f"| {r['name']} | {pts} | {_md(r['finding'])} | {refs(r.get('nums') or []).strip()} |")
+        lines += [""] + [f"- **Flag:** {_md(f)}" for f in sc["flags"]] + [f"- {_md(a)}" for a in sc["asks"]] \
+            + [f"- {_md(sc['not_scored'])}", ""]
     lines += ["## TL;DR", ""]
     for it in p["tldr"]:
         lines.append(f"- **{label_titles.get(it.get('label'), '')}.** {_md(it['text'])} "

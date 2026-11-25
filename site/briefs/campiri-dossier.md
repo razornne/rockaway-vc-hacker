@@ -4,6 +4,29 @@ campiri\.com · Campiri s\.r\.o\. · IČO 09283447 · CZ · 2026\-11\-20
 
 **How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — part of it rests on an official or independent source, part on one outlet or the company's own words; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
 
+## Scorecard (computed by code, no LLM)
+
+**5–13 of 14: Open: needs 3 more point\(s\) from round vs ticket, traction, financial position, technology evidence** (bar 8; open points count 0 at the low end and 2 at the high end)
+
+| Criterion | Points | What the records show | Sources |
+|---|---|---|---|
+| Fund sector | 1 | AI\-led transformative tech: 3 facts\. | ^[25](https://www.miton.cz/en/blog/campiri-is-set-to-digitalise-recreational-vehicle-rental-and-were-in-for-the-ride/),[26](https://www.miton.cz/blog/campiri-zdigitalizuje-pronajem-obytnych-vozu-a-my-ho-v-tom-podporime/),[47](https://techfundingnews.com/prague-based-campiri-the-airbnb-for-campers-scores-e4-64m-fueling-expansion/) |
+| Geography | 2 | CZ \(core region\) | ^[46](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/09283447) |
+| Round vs ticket | 0–2 (open) | Last reported round: 4\.64M EUR \(2022\-05\)\. No current round is reported\. | ^[4](https://shorttermrentalz.com/news/campiri-funding-expansion/) |
+| Traction | 0–2 (open) | Revenue not published and no paid sales visible in public records\. |  |
+| Financial position | 0–2 (open) | Filed accounts not read\. |  |
+| Technology evidence | 0–2 (open) | No public code, grants, patents or papers visible\. |  |
+| Claims checked | 2 | Checks: 2 confirmed\. | ^[6](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/09283447),[5](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/09283447) |
+
+- **Flag:** Possible overlap with portfolio company Spotawheel: compare product and buyer before a call\.
+- **Flag:** Possible overlap with portfolio company FreewayCamper: compare product and buyer before a call\.
+- **Flag:** Possible overlap with portfolio company Creditas: compare product and buyer before a call\.
+- How much are you raising, on what terms, and who else is in the round?
+- What was revenue last year and this year so far, and from how many paying customers?
+- What is the cash position and monthly burn, and how many months of runway is that?
+- Can we see the product and the code, and who built the core technology?
+- Team and founders: public records cannot judge them; assess them first on the call\.
+
 ## TL;DR
 
 - **Product.** A digital RV/caravan rental marketplace connecting private owners and rental fleets to consumers, plus investor\-facing programs and full\-service handling\. *(Corroborated)* ^[1](https://www.borovan.cz/57193/skupina-rockaway-capital-investuje-do-start-upu-campiri),[2](https://itkey.media/motorhome-rental-company-campiri-raises-e4-64-million-for-further-expansion),[3](https://www.startupinsider.cz/transport/pronajem-karavanu-campiri-spousti-investicni-programy-souvisejici-s-nakupem-obytnych-vozu-529038)
@@ -156,6 +179,7 @@ No sourced findings for this section.
 44. [campiri\.com](https://www.campiri.com/cs-cz) · Company's own website · Product capability — “Vybírejte ze 600\+ ověřených obytných vozů s garancemi Campiri\.”
 45. [startupinsider\.cz](https://www.startupinsider.cz/transport/pronajem-karavanu-campiri-spousti-investicni-programy-souvisejici-s-nakupem-obytnych-vozu-529038) · Independent press · Funding round — “Investor startupu poskytne finance ve výši jednoho až dvou milionů korun na nákup nového obytného vozu s garantovaným ročním výnosem 6–8 %\.”
 46. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/09283447) · Official record · Registry: identity · 2020\-06\-26 — “Campiri s\.r\.o\. · s\.r\.o\. · registered 2020\-06\-26”
+47. [techfundingnews\.com](https://techfundingnews.com/prague-based-campiri-the-airbnb-for-campers-scores-e4-64m-fueling-expansion/) · Independent press · Press article · 2022\-05\-11 — “Prague\-based Campiri, the ‘Airbnb for campers’ scores €4\.64M fueling expansion — TFN”
 
 ## How this dossier was built
 

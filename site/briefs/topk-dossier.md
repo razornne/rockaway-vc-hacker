@@ -4,6 +4,26 @@ topk\.io · CZ/US · 2026\-11\-20
 
 **How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — part of it rests on an official or independent source, part on one outlet or the company's own words; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
 
+## Scorecard (computed by code, no LLM)
+
+**9–12 of 14: Passes to a first call** (bar 8; open points count 0 at the low end and 2 at the high end)
+
+| Criterion | Points | What the records show | Sources |
+|---|---|---|---|
+| Fund sector | 2 | AI\-led transformative tech: 20 facts\. | ^[10](https://siliconcanals.com/?p=65960),[22](https://vestbee.com/insights/articles/top-k-secures-5-5-m),[37](https://www.lupa.cz/aktuality/databaze-s-prichodem-ai-prochazi-zasadni-transformaci-cesko-slovensky-startup-na-to-ziskal-120-milionu/),[55](https://www.startitup.sk/web-stories/slovaci-chcu-prepisat-buducnost-vyhladavania-startup-topk-ziskal-miliony-na-ai-revoluciu/) |
+| Geography | 2 | CZ \(core region\) |  |
+| Round vs ticket | 1 | Closed round: 5\.5M USD \(seed\) ≈ €5m, converted at approximate fixed rates \(25 CZK/EUR, 1\.10 USD/EUR\)\. The round is larger than the fund's initial ticket \(€0\.5m–€2m\)\. A round is the total from all investors, so the fund would be one investor in a syndicate, as lead or participant\. | ^[6](https://siliconcanals.com/?p=65960),[7](https://vestbee.com/insights/articles/top-k-secures-5-5-m),[19](https://cc.cz/chodili-spolu-na-stredni-ted-nabiraji-120-milionu-a-chteji-pohanet-vyhledavani-pro-top-aplikace/),[20](https://www.lupa.cz/aktuality/databaze-s-prichodem-ai-prochazi-zasadni-transformaci-cesko-slovensky-startup-na-to-ziskal-120-milionu/) |
+| Traction | 1–2 (open) | Revenue not published; 1 named customer\(s\)\. |  |
+| Financial position | 0–2 (open) | Filed accounts not read\. |  |
+| Technology evidence | 2 | 8 public repositories; 1 patent publication\(s\); papers or published models\. | ^[28](https://github.com/topk-io/dars),[54](https://patents.google.com/patent/US20240254752A1) |
+| Claims checked | 1 | Checks: 1 partly, 1 not found\. | ^[17](https://www.topk.io/security),[18](https://www.topk.io/customers/saleseq) |
+
+- **Flag:** Possible overlap with portfolio company Gjirafa: compare product and buyer before a call\.
+- What was revenue last year and this year so far, and from how many paying customers?
+- What is the cash position and monthly burn, and how many months of runway is that?
+- Ask for evidence behind the claims that could not be confirmed\.
+- Team and founders: public records cannot judge them; assess them first on the call\.
+
 ## TL;DR
 
 - **Product.** A cloud SaaS AI\-native hybrid search engine \(multi\-vector, dense/sparse, keyword\) sold to developer and enterprise customers via API/SDKs and console\. *(Partly verified)* ^[1](https://docs.topk.io/),[2](https://www.topk.io/),[3](https://www.lupa.cz/aktuality/databaze-s-prichodem-ai-prochazi-zasadni-transformaci-cesko-slovensky-startup-na-to-ziskal-120-milionu/),[4](https://crt.sh/?q=%25.topk.io&output=json),[5](https://crt.sh/?q=%25.topk.io&output=json)
@@ -156,6 +176,7 @@ topk\.io · CZ/US · 2026\-11\-20
 52. [topk\.io](https://www.topk.io/use-cases/recsys) · Company's own website · Product capability — “Late interaction is expressive because it does more work: MaxSim compares query vectors against item vectors and aggregates the best matches\. TopK does not brute\-force that across the corpus\. Managed semantic\_index and bring\-your\-own representations in multi\_vector\_index both use sparse multi\-vector encoding as a fast …”
 53. [topk\.io](https://www.topk.io/learn/elasticsearch-api-compatibility) · Company's own website · Website page — “Can You Replace Elasticsearch Without Rewriting Queries? \| TopK”
 54. [patents\.google\.com](https://patents.google.com/patent/US20240254752A1) · Official record · Patent publication — “US20240254752A1 · Modular assembly including multiple modules · Topk USA LLC”
+55. [startitup\.sk](https://www.startitup.sk/web-stories/slovaci-chcu-prepisat-buducnost-vyhladavania-startup-topk-ziskal-miliony-na-ai-revoluciu/) · Independent press · Press article · 2025\-07\-01 — “Slováci chcú prepísať budúcnosť vyhľadávania: Startup TopK získal milióny na AI revolúciu \- Startitup\.sk”
 
 ## How this dossier was built
 

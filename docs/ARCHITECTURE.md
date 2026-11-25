@@ -9,7 +9,7 @@ How the due diligence tool is built, as of November 2026. Why it exists is in th
 **Job:** from a company name, domain or Czech IČO, produce in minutes a brief that tells a partner whether to spend an hour on a meeting and what to ask. The technical part — product, code, models, defensibility — is what a "VC hacker" would otherwise do by hand.
 
 **Output per company:**
-1. **Brief** (HTML, plus a Markdown copy): what the company is, who owns it, money in (rounds, grants awarded and paid, public contracts), customers, technical profile, what could be rebuilt and what cannot be judged from outside, risks, founder questions, and the investment view (thesis fit, business model, competition, case for and against; market statements are collected but not shown).
+1. **Brief** (HTML, plus a Markdown copy): a screening scorecard computed by code (`dd/scorecard.py`: seven criteria, 0–2 points each; what the records cannot settle is open and widens the range instead of scoring 0; the verdict is *passes to a first call*, *open* or *below the bar*), then what the company is, who owns it, money in (rounds, grants awarded and paid, public contracts), customers, technical profile, what could be rebuilt and what cannot be judged from outside, risks, founder questions, and the investment view (thesis fit, business model, competition, case for and against; market statements are collected but not shown).
 2. **Fact table** (CSV): every fact with its source URL, quote and retrieval date.
 
 **Not a goal:** finding companies before the fund does (tested and rejected, see `research/FINDINGS.md`), or recommending an investment. The memo stays with a human.

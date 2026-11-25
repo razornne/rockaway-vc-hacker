@@ -4,6 +4,27 @@ filuta\.ai · Filuta AI CZ s\.r\.o\. · IČO 09745424 · CZ · 2026\-11\-20
 
 **How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — part of it rests on an official or independent source, part on one outlet or the company's own words; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
 
+## Scorecard (computed by code, no LLM)
+
+**8–11 of 14: Passes to a first call** (bar 8; open points count 0 at the low end and 2 at the high end)
+
+| Criterion | Points | What the records show | Sources |
+|---|---|---|---|
+| Fund sector | 2 | AI\-led transformative tech: 58 facts\. | ^[12](https://openalex.org/W4403792769),[26](https://openalex.org/W4414360803),[45](https://openalex.org/W4414359881),[59](https://openalex.org/W7222012453) |
+| Geography | 2 | CZ \(core region\) | ^[52](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/09745424) |
+| Round vs ticket | 1 | Reported round: 4\.2M USD \(seed\) ≈ €3\.8m, converted at approximate fixed rates \(25 CZK/EUR, 1\.10 USD/EUR\)\. The round is larger than the fund's initial ticket \(€0\.5m–€2m\)\. A round is the total from all investors, so the fund would be one investor in a syndicate, as lead or participant\. | ^[10](https://cc.cz/budeme-jeden-z-nejsilnejsich-tymu-pro-vyvoj-umele-inteligence-v-cesku-veri-ziskal-na-to-sto-milionu/) |
+| Traction | 1–2 (open) | Revenue not published; 3 named customer\(s\)\. |  |
+| Financial position | 0–2 (open) | Filed accounts not read\. |  |
+| Technology evidence | 2 | 2 research grant\(s\); 5 patent publication\(s\); papers or published models\. | ^[25](https://filuta.ai/),[15](https://patents.google.com/patent/US20250005318A1) |
+| Claims checked | 0 | Checks: 4 confirmed, 1 not found, 1 contradicted\. | ^[16](https://patents.google.com/?assignee=filuta),[6](https://czechfounders.vc/our-portfolio/filuta-ai),[7](https://czechfounders.vc/our-portfolio/filuta-ai),[11](https://patents.google.com/?assignee=filuta) |
+
+- **Flag:** Possible overlap with portfolio company Vermeer: compare product and buyer before a call\.
+- **Flag:** Possible overlap with portfolio company ValkaAI: compare product and buyer before a call\.
+- What was revenue last year and this year so far, and from how many paying customers?
+- What is the cash position and monthly burn, and how many months of runway is that?
+- Ask about each contradicted claim\.
+- Team and founders: public records cannot judge them; assess them first on the call\.
+
 ## TL;DR
 
 - **Product.** A neurosymbolic 'Composite AI' platform that builds autonomous agents for system testing, compliance monitoring and automation, sold to enterprises and OEMs \(games, automotive, procurement SaaS\)\. *(Partly verified)* ^[1](https://filuta.ai/company),[2](https://filuta.ai/case-studies),[3](https://filuta.ai/case-studies/autonomous-hmi-testing-european-automotive-oem),[4](https://filuta.ai/case-studies/how-hisd-s-procurement-team-scaled-compliance-without-scaling-headcount),[5](https://www.focuson.cz/jen-co-vznikl-uz-ma-56-milionu-cesky-startup-prepisuje-rekordy)
@@ -160,6 +181,7 @@ No sourced findings for this section.
 56. [crt\.sh](https://crt.sh/?q=%25.filuta.ai&output=json) · Public technical artifact · Subdomain \(certificates\) · 2025\-11\-18 — “docs\.filuta\.ai \(first certificate 2025\-11\-18\)”
 57. [filuta\.ai](https://filuta.ai/case-studies/how-hisd-s-procurement-team-scaled-compliance-without-scaling-headcount) · Company's own website · Technical claim — “Reliability, not probability\. We prove interactive systems behave — exhaustively, with evidence a regulator will accept\.”
 58. [patents\.google\.com](https://patents.google.com/patent/US20250005328A1) · Official record · Patent publication — “US20250005328A1 · System and method for specification, codification, and deployment of composite … · Filuta Ai Inc\.”
+59. [openalex\.org](https://openalex.org/W7222012453) · Public technical artifact · Research paper · 2026\-10\-13 — “Graph\-Based Orchestration of Heterogeneous AI Models: A Control Node Approach to Composite Intelligence · arXiv \(Cornell University\)”
 
 ## How this dossier was built
 

@@ -4,6 +4,25 @@ dronetag\.com · Dronetag s\.r\.o\. · IČO 08198519 · CZ · 2026\-11\-20
 
 **How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — part of it rests on an official or independent source, part on one outlet or the company's own words; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
 
+## Scorecard (computed by code, no LLM)
+
+**9–14 of 14: Passes to a first call** (bar 8; open points count 0 at the low end and 2 at the high end)
+
+| Criterion | Points | What the records show | Sources |
+|---|---|---|---|
+| Fund sector | 2 | defence / dual\-use: backed by official records\. | ^[6](https://ted.europa.eu/en/notice/-/detail/436033-2026),[18](https://web.archive.org/web/20250811133329id_/https://www.diana.nato.int/about-diana/2024-cohort-of-companies.html) |
+| Geography | 2 | CZ \(core region\) | ^[49](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/08198519) |
+| Round vs ticket | 0–2 (open) | Last reported round: 15M CZK convertible loan \(2022\-06\)\. No current round is reported\. | ^[5](https://cc.cz/cesky-startup-dronetag-zajistuje-bezpecne-letani-s-drony-od-brnenskeho-fondu-ziskava-15-milionu/),[13](https://www.monitoruji.cz/domaci/1916288/ceske-krabicky-zajistuji-viditelnost-dronu-dronetag-nyni-ziskal-investici-od-y-softu) |
+| Traction | 1–2 (open) | Revenue not published; 8 paid sale\(s\) to public buyers\. | ^[4](https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=93244930&subjektId=1053249&spis=1175754),[10](https://smlouvy.gov.cz/smlouva/14335472),[15](https://smlouvy.gov.cz/smlouva/21293531),[6](https://ted.europa.eu/en/notice/-/detail/436033-2026) |
+| Financial position | 2 | Profitable in 2025 \(net 4\.2M CZK\), cash 19\.6M CZK\. | ^[4](https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=93244930&subjektId=1053249&spis=1175754) |
+| Technology evidence | 2 | 13 public repositories; 3 research grant\(s\)\. | ^[28](https://github.com/dronetag/pre-commit-hooks),[45](https://www.hlidacstatu.cz/Dotace/Detail/IsVavai-CB620BAAB8F876B73CB37E46F22B3EA45A7011A6D4B0075BEC74064FA6A5BC56) |
+| Claims checked | 0–2 (open) | No company claim could be checked against an independent source\. |  |
+
+- How much are you raising, on what terms, and who else is in the round?
+- What was revenue last year and this year so far, and from how many paying customers?
+- Which customers and partners can we call as references?
+- Team and founders: public records cannot judge them; assess them first on the call\.
+
 ## TL;DR
 
 - **Product.** Dronetag sells Remote ID drone detection hardware, such as the RIDER receiver and Scout sensors, plus subscriptions to public\-safety and professional\-pilot buyers\. *(Company claim)* ^[1](https://www.dronetag.com/products/rider),[2](https://www.dronetag.com/products/rider),[3](https://www.dronetag.com/products/scout)

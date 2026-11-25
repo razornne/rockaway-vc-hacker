@@ -4,6 +4,24 @@ duvo\.ai · duvo\.ai s\.r\.o\. · IČO 22646141 · CZ · 2026\-11\-20
 
 **How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — part of it rests on an official or independent source, part on one outlet or the company's own words; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
 
+## Scorecard (computed by code, no LLM)
+
+**9–12 of 14: Passes to a first call** (bar 8; open points count 0 at the low end and 2 at the high end)
+
+| Criterion | Points | What the records show | Sources |
+|---|---|---|---|
+| Fund sector | 2 | AI\-led transformative tech: 24 facts\. | ^[20](https://tech.eu/2025/12/02/duvo-raises-15m-to-give-retailers-ai-staff-that-cuts-manual-work-by-40/),[21](https://www.therecursive.com/rohlik-founder-tomas-cuprs-duvo-raises-eur28-7m-series-a-to-take-enterprise-ai-agents-to-the-us),[42](https://finance.yahoo.com/technology/ai/articles/duvo-raises-32-million-series-130000587.html),[60](https://tech.eu/2026/10/14/from-rohlik-to-enterprise-ai-tomas-cuprs-duvo-raises-32m-series-a/) |
+| Geography | 2 | CZ \(core region\) | ^[47](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/22646141) |
+| Round vs ticket | 1 | Closed round: 28\.55M EUR \(Series A\)\. The round is larger than the fund's initial ticket \(€0\.5m–€2m\)\. A round is the total from all investors, so the fund would be one investor in a syndicate, as lead or participant\. | ^[5](https://www.therecursive.com/rohlik-founder-tomas-cuprs-duvo-raises-eur28-7m-series-a-to-take-enterprise-ai-agents-to-the-us),[6](https://finance.yahoo.com/technology/ai/articles/duvo-raises-32-million-series-130000587.html),[18](https://www.wired.cz/news-beat/cuprovo-duvo-ziskalo-32-milionu-dolaru-na-expanzi),[19](https://tech.eu/2026/10/14/from-rohlik-to-enterprise-ai-tomas-cuprs-duvo-raises-32m-series-a/) |
+| Traction | 1–2 (open) | Revenue not published; 2 named customer\(s\)\. |  |
+| Financial position | 0–2 (open) | Filed accounts not read\. |  |
+| Technology evidence | 1 | 10 public repositories\. | ^[13](https://github.com/duvoai/elevenlabs-agents) |
+| Claims checked | 2 | Checks: 2 confirmed\. | ^[7](https://www.therecursive.com/rohlik-founder-tomas-cuprs-duvo-raises-eur28-7m-series-a-to-take-enterprise-ai-agents-to-the-us),[39](https://www.therecursive.com/rohlik-founder-tomas-cuprs-duvo-raises-eur28-7m-series-a-to-take-enterprise-ai-agents-to-the-us) |
+
+- What was revenue last year and this year so far, and from how many paying customers?
+- What is the cash position and monthly burn, and how many months of runway is that?
+- Team and founders: public records cannot judge them; assess them first on the call\.
+
 ## TL;DR
 
 - **Product.** A retail\-focused 'Enterprise Execution OS' selling prebuilt AI agents and process automation to large retailers and enterprise operations teams\. *(Corroborated)* ^[1](https://finance.yahoo.com/technology/ai/articles/duvo-raises-32-million-series-130000587.html),[2](https://tech.eu/2025/12/02/duvo-raises-15m-to-give-retailers-ai-staff-that-cuts-manual-work-by-40/),[3](https://www.therecursive.com/rohlik-founder-tomas-cuprs-duvo-raises-eur28-7m-series-a-to-take-enterprise-ai-agents-to-the-us)
@@ -172,6 +190,7 @@ No sourced findings for this section.
 57. [github\.com](https://github.com/duvoai) · Public technical artifact · GitHub organisation · 2025\-03\-05 — “duvoai · 13 public repos”
 58. [duvo\.ai](https://www.duvo.ai/privacy) · Company's own website · Subprocessor \(privacy policy\) — “PostHog processes this data on our behalf as our service provider and stores it in the European Union\.”
 59. [finance\.yahoo\.com](https://finance.yahoo.com/technology/ai/articles/duvo-raises-32-million-series-130000587.html) · Independent press · Technical claim — “Duvo is model\-agnostic, so the AI underneath can change without rebuilding the processes on top of it\.”
+60. [tech\.eu](https://tech.eu/2026/10/14/from-rohlik-to-enterprise-ai-tomas-cuprs-duvo-raises-32m-series-a/) · Independent press · Press article · 2026\-10\-14 — “From Rohlik to enterprise AI: Tomáš Čupr's Duvo raises $32M Series A \- Tech\.eu”
 
 ## How this dossier was built
 

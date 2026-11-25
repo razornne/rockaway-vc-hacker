@@ -4,6 +4,27 @@ apaleo\.com · DE · 2026\-11\-20
 
 **How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — part of it rests on an official or independent source, part on one outlet or the company's own words; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
 
+## Scorecard (computed by code, no LLM)
+
+**4–12 of 14: Open: needs 4 more point\(s\) from round vs ticket, traction, financial position, claims checked** (bar 8; open points count 0 at the low end and 2 at the high end)
+
+| Criterion | Points | What the records show | Sources |
+|---|---|---|---|
+| Fund sector | 1 | AI\-led transformative tech: 6 facts\. | ^[17](https://techround.co.uk/interviews/stephan-wiesener-founder-at-apaleo/),[18](https://themodernhotelier.com/episode/296),[1](https://apaleo.com/),[51](https://apaleo.com/) |
+| Geography | 2 | DE \(core region\) |  |
+| Round vs ticket | 0–2 (open) | Last reported round: 20M EUR growth equity \(2024\-11\)\. No current round is reported\. | ^[14](https://www.privateequityinternational.com/psg-leads-growth-equity-funding-round-in-apaleo),[5](https://finance.yahoo.com/news/apaleo-secures-21m-funding-fuel-145553468.html),[15](https://hengeler-news.com/en/articles/hengeler-mueller-advises-psg-equity-on-investment-in-apaleo),[16](https://www.serpentine.vc/blog/apaleo-secures-20m-growth-equity-to-accelerate-global-expansion/) |
+| Traction | 0–2 (open) | Revenue not published and no paid sales visible in public records\. |  |
+| Financial position | 0–2 (open) | Filed accounts not read\. |  |
+| Technology evidence | 1 | papers or published models\. |  |
+| Claims checked | 0–2 (open) | No company claim could be checked against an independent source\. |  |
+
+- **Flag:** Possible overlap with portfolio company JISR Institute, a\.s\.: compare product and buyer before a call\.
+- How much are you raising, on what terms, and who else is in the round?
+- What was revenue last year and this year so far, and from how many paying customers?
+- What is the cash position and monthly burn, and how many months of runway is that?
+- Which customers and partners can we call as references?
+- Team and founders: public records cannot judge them; assess them first on the call\.
+
 ## TL;DR
 
 - **Product.** API\-first, AI\-powered property management platform selling SaaS PMS and developer APIs to hotel and serviced\-apartment operators\. *(Company claim)* ^[1](https://apaleo.com/),[2](https://apaleo.com/about-us),[3](https://apaleo.com/api-terms-of-use)
@@ -144,6 +165,7 @@ No sourced findings for this section.
 48. [apaleo\.com](https://apaleo.com/) · Public technical artifact · Technology detected
 49. [status\.apaleo\.com](https://status.apaleo.com/) · Company's own website · Technical claim — “Some API request to distribution\.apaleo\.com are failing”
 50. [status\.apaleo\.com](https://status.apaleo.com/) · Company's own website · Technical claim — “We are awaiting resolution from a third\-party service sandbox environment that is down\.”
+51. [apaleo\.com](https://apaleo.com/) · Company's own website · Product capability — “With Apaleo’s open and AI\-powered PMS, you design the guest journey your way, integrating best\-in\-class apps and autonomous AI agents that adapt to every stay\.”
 
 ## How this dossier was built
 

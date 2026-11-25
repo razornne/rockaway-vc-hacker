@@ -4,6 +4,27 @@ getvermeer\.com · US · 2026\-11\-20
 
 **How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — part of it rests on an official or independent source, part on one outlet or the company's own words; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
 
+## Scorecard (computed by code, no LLM)
+
+**6–10 of 14: Open: needs 2 more point\(s\) from traction, financial position** (bar 8; open points count 0 at the low end and 2 at the high end)
+
+| Criterion | Points | What the records show | Sources |
+|---|---|---|---|
+| Fund sector | 2 | AI\-led transformative tech: 11 facts\. | ^[19](https://www.draper.vc/portfolio/vermeer),[20](https://www.getvermeer.com/),[39](https://vermeer.homerun.co/),[40](https://vermeer.homerun.co/?lang=en) |
+| Geography | 1 | US |  |
+| Round vs ticket | 1 | Closed round: 10M USD \(Series A\) ≈ €9\.1m, converted at approximate fixed rates \(25 CZK/EUR, 1\.10 USD/EUR\)\. The round is larger than the fund's initial ticket \(€0\.5m–€2m\)\. A round is the total from all investors, so the fund would be one investor in a syndicate, as lead or participant\. | ^[16](https://cc.cz/z-hollywoodskych-studii-na-ukrajinskou-frontu-pomahaji-dronum-a-nabiraji-pres-200-milionu/),[4](https://scroll.media/en/2025/10/23/vermeer-raises-10m),[17](https://vestbee.com/insights/articles/vermeer-raises-funds),[5](https://www.getvermeer.com/news) |
+| Traction | 0–2 (open) | Revenue not published and no paid sales visible in public records\. |  |
+| Financial position | 0–2 (open) | Filed accounts not read\. |  |
+| Technology evidence | 1 | papers or published models\. |  |
+| Claims checked | 1 | Checks: 1 not found\. | ^[15](https://patents.google.com/?assignee=vermeer) |
+
+- **Flag:** Possible overlap with portfolio company URC Systems, spol\. s r\.o\.: compare product and buyer before a call\.
+- **Flag:** Possible overlap with portfolio company JISR Institute, a\.s\.: compare product and buyer before a call\.
+- What was revenue last year and this year so far, and from how many paying customers?
+- What is the cash position and monthly burn, and how many months of runway is that?
+- Ask for evidence behind the claims that could not be confirmed\.
+- Team and founders: public records cannot judge them; assess them first on the call\.
+
 ## TL;DR
 
 - **Product.** An optical Visual Positioning System \(VPS\) that enables drones and aerial platforms to determine absolute location in GPS\-denied environments, sold for defense and commercial aerial autonomy\. *(Partly verified)* ^[1](https://optics.org/news/vermeer-raises-10m-for-optical-drone-navigation),[2](https://scroll.media/en/2025/10/23/vermeer-raises-10m),[3](https://www.getvermeer.com/)
@@ -140,6 +161,8 @@ No sourced findings for this section.
 36. [getvermeer\.com](https://www.getvermeer.com/) · Public technical artifact · Technology detected
 37. [github\.com](https://github.com/AeroboDrones) · Public technical artifact · GitHub organisation · 2017\-10\-02 — “AeroboDrones · 3 public repos”
 38. [getvermeer\.com](https://www.getvermeer.com/) · Company's own website · Technical claim — “Our solution enables any aerial platform to determine its absolute location in contested, spoofed, and GPS\-denied environments\.”
+39. [vermeer\.homerun\.co](https://vermeer.homerun.co/) · Independent press · Technical claim — “Vermeer, we’re developing next\-generation visual navigation systems that power autonomous flight in the world’s most challenging environments\.”
+40. [vermeer\.homerun\.co](https://vermeer.homerun.co/?lang=en) · Independent press · Technical claim — “Vermeer, we’re developing next\-generation visual navigation systems that power autonomous flight in the world’s most challenging environments\.”
 
 ## How this dossier was built
 

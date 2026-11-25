@@ -401,6 +401,18 @@ ol.sources li:target{background:var(--wash)}
 details{margin-top:1.4rem;font:13.5px var(--sans)}summary{cursor:pointer;color:var(--accent)}
 .fact{padding:.4rem 0;border-top:1px solid var(--rule);font-size:12px;overflow-wrap:anywhere}.fact code{font-size:11px}
 .foot{font:13px/1.55 var(--sans);color:var(--muted);margin-top:2.4rem;border-top:1px solid var(--rule);padding-top:1rem;max-width:43rem}
+.score{display:flex;align-items:baseline;flex-wrap:wrap;gap:.3rem 1.4rem;margin:.6rem 0 1rem;font-family:var(--sans)}
+.score .big{font:600 2.4rem/1 var(--sans);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.score .big span{font-size:1rem;font-weight:500;color:var(--muted);margin-left:.3rem}
+.score .verdict{font:600 1.05rem/1.3 var(--sans)}
+.score-pass .verdict{color:var(--accent)}.score-open .verdict{color:var(--ochre)}.score-below .verdict{color:var(--brick)}
+.pips{white-space:nowrap;letter-spacing:.1rem}
+.pip{display:inline-block;width:.72rem;height:.72rem;border-radius:50%;border:1.5px solid var(--ink);vertical-align:-1px}
+.pip.on{background:var(--ink)}.pip.open{border-style:dashed;border-color:var(--ochre)}
+.pts{font-size:12.5px;color:var(--muted);margin-left:.35rem}
+ul.call{margin:.3rem 0 0;padding-left:1.1rem;max-width:43rem;font:15px/1.5 var(--sans)}ul.call li{margin:.3rem 0}
+ul.call li.flag{color:var(--brick)}
+details.rules{max-width:43rem}details.rules p{margin:.4rem 0;color:var(--ink2)}
 @media(max-width:900px){:root{--margin:0;--gap:0}.page{padding:0 1rem 3rem}
 .row{grid-template-columns:minmax(0,1fr)}.proof{padding-top:.3rem}.proof .src{display:inline;margin-left:.5rem}
 h1{font-size:2.3rem}.oneliner{font-size:1.15rem}h2{font-size:1.45rem;margin-top:2.6rem}
@@ -492,7 +504,12 @@ def render(company: Company, analysis: dict, p: dict, titles: dict, label_titles
                  "<b>Not found</b> means not visible in the sources read for this brief (listed at the end), not that "
                  "it does not exist.</p></div></header>")
 
-    # Order: numbers computed by code first, then the short take, the case, risks and questions; evidence after.
+    # Order: the scorecard and numbers computed by code first, then the short take, the case, risks and questions;
+    # evidence after.
+    sc = p.get("scorecard")
+    if sc:
+        parts.append(scorecard_html(sc, tref))
+
     if x.get("tiles"):
         parts.append('<h2>Key numbers</h2><p class="h2note">Computed by code from registers, procurement records and '
                      "press. Amounts from the press are quoted as written.</p><div class=ledger>")
@@ -659,6 +676,43 @@ def render(company: Company, analysis: dict, p: dict, titles: dict, label_titles
                      f"<br><code>{h(value_json(f.value))}</code></div>")
     parts.append("</details></div></body></html>")
     return _with_contents("\n".join(parts))
+
+
+def score_text(sc: dict) -> str:
+    """'11–13 of 14' or '12 of 14'."""
+    pts = str(sc["min"]) if sc["min"] == sc["max"] else f"{sc['min']}–{sc['max']}"
+    return f"{pts} of {sc['total']}"
+
+
+def scorecard_html(sc: dict, tref) -> str:
+    h = html.escape
+
+    def pips(r):
+        return "".join('<i class="pip on"></i>' if i < r["min"] else '<i class="pip open"></i>' if i < r["max"]
+                       else '<i class="pip"></i>' for i in range(2))
+
+    def pts(r):
+        return str(r["min"]) if not r["open"] else f"{r['min']}–{r['max']}, open"
+
+    out = ['<h2>Scorecard</h2><p class="h2note">Does it pass to a first call? Seven criteria, 0–2 points each, computed '
+           "by code from the records below. What the records cannot settle is open: it counts 0 at the low end and 2 "
+           "at the high end, so missing data never sinks a company.</p>",
+           f'<div class="score score-{h(sc["tone"])}"><div class="big">{h(score_text(sc))}</div>'
+           f'<div class="verdict">{h(sc["verdict"])}</div><div class="m">bar: {sc["bar"]} of {sc["total"]}</div></div>',
+           '<table class="t"><tr><th>Criterion</th><th>Points</th><th>What the records show</th><th>Sources</th></tr>']
+    for r in sc["rows"]:
+        out.append(f'<tr><td><b>{h(r["name"])}</b></td><td class="pips" title="{h(r["rule"], quote=True)}">{pips(r)}'
+                   f'<span class="pts">{h(pts(r))}</span></td><td>{h(r["finding"])}</td>'
+                   f'<td>{tref(r.get("nums") or [])}</td></tr>')
+    out.append("</table>")
+    items = [f'<li class="flag">{h(f)}</li>' for f in sc["flags"]] + [f"<li>{h(a)}</li>" for a in sc["asks"]]
+    items.append(f'<li>{h(sc["not_scored"])}</li>')
+    out.append("<h3>Before or on the call</h3><ul class=call>" + "".join(items) + "</ul>")
+    out.append('<details class="rules"><summary>How points are given</summary>'
+               + "".join(f"<p><b>{h(r['name'])}.</b> {h(r['rule'])}</p>" for r in sc["rows"])
+               + f"<p>The bar ({sc['bar']} of {sc['total']}) and the rules are a starting point set by hand, not fitted "
+               "to outcomes; a fund sets its own (<code>dd/scorecard.py</code>).</p></details>")
+    return "".join(out)
 
 
 TOC_SKIP = {"How this brief was built", "What this brief rests on"}

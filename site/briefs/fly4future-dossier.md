@@ -4,6 +4,24 @@ fly4future\.com · Fly4Future s\.r\.o\. · IČO 06632581 · CZ · 2026\-11\-20
 
 **How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — part of it rests on an official or independent source, part on one outlet or the company's own words; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
 
+## Scorecard (computed by code, no LLM)
+
+**11–13 of 14: Passes to a first call** (bar 8; open points count 0 at the low end and 2 at the high end)
+
+| Criterion | Points | What the records show | Sources |
+|---|---|---|---|
+| Fund sector | 2 | deep tech: 30 facts\. | ^[20](https://www.cnaip.cz/en/entity/fly4future),[21](https://fel.cvut.cz/en/what-s-on/news/36454-ctu-spinout-fly4future-wins-prestigious-ai-company-of-the-year-award-at-ai-awards-2024),[67](https://github.com/fly4future),[68](https://cc.cz/od-univerzitniho-projektu-po-milionove-trzby-ceske-drony-maji-za-ukol-dorucit-jidlo-zachranit-zivot-i-ockovat/) |
+| Geography | 2 | CZ \(core region\) | ^[66](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/06632581) |
+| Round vs ticket | 1 | Round being raised: 10–16M EUR\. The round is larger than the fund's initial ticket \(€0\.5m–€2m\)\. A round is the total from all investors, so the fund would be one investor in a syndicate, as lead or participant\. | ^[7](https://cc.cz/od-univerzitniho-projektu-po-milionove-trzby-ceske-drony-maji-za-ukol-dorucit-jidlo-zachranit-zivot-i-ockovat/) |
+| Traction | 2 | Filed revenue 2025: 47\.8M CZK, \+6% on the year before\. | ^[4](https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=92247881&subjektId=995597&spis=1101858) |
+| Financial position | 2 | Profitable in 2025 \(net 8\.8M CZK\), cash 57\.1M CZK\. | ^[4](https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=92247881&subjektId=995597&spis=1101858) |
+| Technology evidence | 2 | 15 public repositories; 12 research grant\(s\); 2 patent publication\(s\)\. | ^[26](https://github.com/fly4future/spi_uwb_controller),[57](https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/how-to-participate/org-details/887136005),[8](https://patents.google.com/patent/WO2024255934A1) |
+| Claims checked | 0–2 (open) | No company claim could be checked against an independent source\. |  |
+
+- **Flag:** Possible overlap with portfolio company Vermeer: compare product and buyer before a call\.
+- Which customers and partners can we call as references?
+- Team and founders: public records cannot judge them; assess them first on the call\.
+
 ## TL;DR
 
 - **Product.** Sells custom autonomous drones and a DroneBuilder configurator to industrial and academic clients; company says most units ship abroad\. *(Partly verified)* ^[1](https://fly4future.com/about-us/),[2](https://fly4future.com/about-us/),[3](https://aktualne.cvut.cz/zpravy-z-medii/20260414-cesti-vedci-vytvorili-letajici-roj-autonomnich-dronu-ted-shani-investory-pro)
@@ -164,6 +182,8 @@ fly4future\.com · Fly4Future s\.r\.o\. · IČO 06632581 · CZ · 2026\-11\-20
 64. [web\.archive\.org](https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html) · Official record · NATO DIANA cohort company — “AegisX: Detecting &amp; tracking low flying fibre optic drones”
 65. [web\.archive\.org](https://web.archive.org/web/20261029165007id_/https://www.diana.nato.int/about-diana/2026-cohort-of-companies.html) · Official record · NATO DIANA cohort company — “OLEDCOMM: Stealth in drone flight\. Unjammable connectivity by light”
 66. [ares\.gov\.cz](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/06632581) · Official record · Registry: identity · 2017\-11\-27 — “Fly4Future s\.r\.o\. · s\.r\.o\. · registered 2017\-11\-27”
+67. [github\.com](https://github.com/fly4future) · Public technical artifact · Press article — “Fly4Future · GitHub”
+68. [cc\.cz](https://cc.cz/od-univerzitniho-projektu-po-milionove-trzby-ceske-drony-maji-za-ukol-dorucit-jidlo-zachranit-zivot-i-ockovat/) · Independent press · Press article · 2026\-10\-16 — “Drony budou nosit jídlo i očkovat krávy\. Díky české technologii \- CzechCrunch”
 
 ## How this dossier was built
 

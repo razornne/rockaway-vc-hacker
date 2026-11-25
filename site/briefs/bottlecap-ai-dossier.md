@@ -4,6 +4,25 @@ bottlecapai\.com · BottleCap SE · IČO 23012854 · CZ · 2026\-11\-20
 
 **How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — part of it rests on an official or independent source, part on one outlet or the company's own words; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
 
+## Scorecard (computed by code, no LLM)
+
+**6–12 of 14: Open: needs 2 more point\(s\) from traction, financial position, claims checked** (bar 8; open points count 0 at the low end and 2 at the high end)
+
+| Criterion | Points | What the records show | Sources |
+|---|---|---|---|
+| Fund sector | 2 | AI\-led transformative tech: 30 facts\. | ^[20](https://www.lupa.cz/aktuality/tomas-mikolov-a-spolutvurce-beat-saberu-rozjizdi-startup-pro-radikakni-zefektivneni-ai-modelu/),[21](https://www.lupa.cz/aktuality/cesi-vyrazne-zrychlili-trenink-umele-inteligence-uz-by-nemusel-stat-tolik-penez-a-zrat-hromadu-energie/),[52](https://cc.cz/jaroslav-beck-a-tomas-mikolov-ziskavaji-150-milionu-pro-svuj-ai-startup-investuje-do-nej-i-ivo-lukacovic/),[53](https://www.wolvessummit.com/bottlecap-ai-lands-7-5-milllion-euro-round) |
+| Geography | 2 | CZ \(core region\) | ^[37](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/23012854) |
+| Round vs ticket | 1 | Closed round: 7\.5M USD \(seed\) ≈ €6\.8m, converted at approximate fixed rates \(25 CZK/EUR, 1\.10 USD/EUR\)\. The round is larger than the fund's initial ticket \(€0\.5m–€2m\)\. A round is the total from all investors, so the fund would be one investor in a syndicate, as lead or participant\. | ^[4](https://www.lupa.cz/aktuality/bottlecap-uspornejsi-umela-inteligence-od-mikolova-a-becka-ziskala-investici-pres-150-milionu-korun/),[5](https://www.havelpartners.com/legal-advice-for-20vc-on-its-investment-in-bottlecap-ai/),[15](https://bottlecapai.com/),[16](https://www.wolvessummit.com/bottlecap-ai-lands-7-5-milllion-euro-round) |
+| Traction | 0–2 (open) | Revenue not published and no paid sales visible in public records\. |  |
+| Financial position | 0–2 (open) | Filed accounts not read\. |  |
+| Technology evidence | 1 | 9 patent publication\(s\)\. | ^[47](https://patents.google.com/patent/WO2014165983A1) |
+| Claims checked | 0–2 (open) | No company claim could be checked against an independent source\. |  |
+
+- What was revenue last year and this year so far, and from how many paying customers?
+- What is the cash position and monthly burn, and how many months of runway is that?
+- Which customers and partners can we call as references?
+- Team and founders: public records cannot judge them; assess them first on the call\.
+
 ## TL;DR
 
 - **Product.** Enterprise\-facing model\-evaluation and risk\-management services \(AI Scan\) plus an iOS consumer app \(Pulse\) built on the company’s CAP1 model\. *(Company claim)* ^[1](https://bottlecapai.com/),[2](https://scan.bottlecapai.com/),[3](https://bottlecapai.com/post/bottlecap-ai-announcement/)
@@ -163,6 +182,8 @@ No sourced findings for this section.
 49. [patents\.google\.com](https://patents.google.com/patent/USD791605S1) · Official record · Patent publication — “USD791605S1 · Bottle · Bottlecap Holdings Ltd\.”
 50. [patents\.google\.com](https://patents.google.com/patent/US20130105522A1) · Official record · Patent publication — “US20130105522A1 · Bulk material dispenser · Bottlecap Holdings Ltd\.”
 51. [patents\.google\.com](https://patents.google.com/patent/US20120308357A1) · Official record · Patent publication — “US20120308357A1 · Stackable container · Bottlecap Holdings Ltd\.”
+52. [cc\.cz](https://cc.cz/jaroslav-beck-a-tomas-mikolov-ziskavaji-150-milionu-pro-svuj-ai-startup-investuje-do-nej-i-ivo-lukacovic/) · Independent press · Press article · 2026\-01\-29 — “Beck a Mikolov mají 150 milionů pro svůj AI startup i od Lukačoviče \- CzechCrunch”
+53. [wolvessummit\.com](https://www.wolvessummit.com/bottlecap-ai-lands-7-5-milllion-euro-round) · Independent press · Press article — “BottleCap AI lands 7\.5 milllion euro round \- Wolves Summit”
 
 ## How this dossier was built
 

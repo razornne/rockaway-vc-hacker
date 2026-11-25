@@ -4,6 +4,26 @@ valpashotels\.com · FI · 2026\-11\-20
 
 **How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — part of it rests on an official or independent source, part on one outlet or the company's own words; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
 
+## Scorecard (computed by code, no LLM)
+
+**7–12 of 14: Open: needs 1 more point\(s\) from round vs ticket, traction, financial position** (bar 8; open points count 0 at the low end and 2 at the high end)
+
+| Criterion | Points | What the records show | Sources |
+|---|---|---|---|
+| Fund sector | 2 | AI\-led transformative tech: 11 facts\. | ^[19](https://tech.eu/2024/06/26/pest-control-startup-valpas-raised-4m-seed-for-pesticide-free-bed-bug-solution/),[20](https://techfundingnews.com/finnish-startup-valpas-raises-e4m-for-chemical-free-bedbug-safety-tech/),[45](https://siliconcanals.com/helsinki-based-valpas-raises-4m/),[37](https://optimiser.valpashotels.com/) |
+| Geography | 1 | FI |  |
+| Round vs ticket | 0–2 (open) | Last reported round: 4M EUR Seed \(2024\-06\)\. No current round is reported\. | ^[4](https://tech.eu/2024/06/26/pest-control-startup-valpas-raised-4m-seed-for-pesticide-free-bed-bug-solution/),[16](https://techfundingnews.com/finnish-startup-valpas-raises-e4m-for-chemical-free-bedbug-safety-tech/),[17](https://www.arctictoday.com/%F0%9F%87%AB%F0%9F%87%AE-valpas-raised-e4m-in-seed-funding-led-by-zenith-venture-capital/),[18](https://www.arctictoday.com/%F0%9F%87%AB%F0%9F%87%AE-valpas-raised-e4m-in-seed-funding-led-by-zenith-venture-capital/) |
+| Traction | 1–2 (open) | Revenue not published; 10 named customer\(s\)\. |  |
+| Financial position | 0–2 (open) | Filed accounts not read\. |  |
+| Technology evidence | 2 | 2 patent publication\(s\); papers or published models\. | ^[33](https://patents.google.com/patent/EP3468360B1) |
+| Claims checked | 1 | Checks: 2 confirmed, 2 not found\. | ^[7](https://bedbugsjapan.com/bed-bug-protection-hotels-japan-valpas),[8](https://patents.google.com/?assignee=valpas),[12](https://valpashotels.com/case-studies),[13](https://valpashotels.com/case-studies) |
+
+- How much are you raising, on what terms, and who else is in the round?
+- What was revenue last year and this year so far, and from how many paying customers?
+- What is the cash position and monthly burn, and how many months of runway is that?
+- Ask for evidence behind the claims that could not be confirmed\.
+- Team and founders: public records cannot judge them; assess them first on the call\.
+
 ## TL;DR
 
 - **Product.** Pesticide\-free smart bed legs plus IoT/AI mobile/web apps that provide real\-time room monitoring and a bookable “bed bug\-safe” attribute to hotels and hotel groups\. *(Partly verified)* ^[1](https://siliconcanals.com/helsinki-based-valpas-raises-4m/),[2](https://siliconcanals.com/helsinki-based-valpas-raises-4m/),[3](https://valpashotels.com/)
@@ -142,6 +162,7 @@ No sourced findings for this section.
 42. [valpashotels\.com](https://valpashotels.com/) · Company's own website · Technical claim — “1\.4t CO₂e saved per room, per year\.”
 43. [valpashotels\.com](https://valpashotels.com/case-studies) · Company's own website · Customer — ““Increase in customer numbers and satisfaction””
 44. [patents\.google\.com](https://patents.google.com/patent/EM37625250001S) · Official record · Patent publication — “EM37625250001S · Destruction of pests \(Traps and articles for \-\); Furniture feet · Valpas Enterprises Oy”
+45. [siliconcanals\.com](https://siliconcanals.com/helsinki-based-valpas-raises-4m/) · Independent press · Press article · 2024\-06\-26 — “Helsinki\-based Valpas raises €4M to help hotels safe from bed bugs: Here’s how \- Silicon Canals”
 
 ## How this dossier was built
 

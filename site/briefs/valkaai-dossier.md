@@ -4,6 +4,27 @@ valka\.ai · Valka\.AI s\.r\.o\. · IČO 23132221 · CZ · 2026\-11\-20
 
 **How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — part of it rests on an official or independent source, part on one outlet or the company's own words; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
 
+## Scorecard (computed by code, no LLM)
+
+**6–12 of 14: Open: needs 2 more point\(s\) from traction, financial position, technology evidence** (bar 8; open points count 0 at the low end and 2 at the high end)
+
+| Criterion | Points | What the records show | Sources |
+|---|---|---|---|
+| Fund sector | 2 | AI\-led transformative tech: 34 facts\. | ^[6](https://cc.cz/jeho-startup-rychle-roste-ted-zavetril-dalsi-prilezitost-vyviji-lidskeho-avatara-pro-hry-a-igaming/),[18](https://www.e15.cz/rozhovory/vybudoval-nejrychleji-rostouci-startup-ted-chce-venclik-postavit-nejlepsi-ai-video-firmu-1425083),[47](https://www.lupa.cz/clanky/dokonaly-avatar-cesi-se-zkusenostmi-z-americkych-laboratori-skladaji-v-prazskem-startupu-video-hlas-a-pohyb-v-realnem-case/),[19](https://www.czechtradeoffices.com/nl/news/czech-ai-startup-valkaai-targets-global-streaming-market-with-%E2%82%AC12-million-investment) |
+| Geography | 2 | CZ \(core region\) | ^[38](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/23132221) |
+| Round vs ticket | 1 | Closed round: 12M EUR \(pre\-seed\)\. The round is larger than the fund's initial ticket \(€0\.5m–€2m\)\. A round is the total from all investors, so the fund would be one investor in a syndicate, as lead or participant\. | ^[4](https://www.rockawaycapital.com/en/news/e12m-investment-in-valkaai-led-by-rockaway-ventures),[12](https://valka.ai/company),[13](https://www.valka.ai/company),[14](https://valka.ai/privacy-policy) |
+| Traction | 0–2 (open) | Revenue not published and no paid sales visible in public records\. |  |
+| Financial position | 0–2 (open) | Filed accounts not read\. |  |
+| Technology evidence | 0–2 (open) | No public code, grants, patents or papers visible\. |  |
+| Claims checked | 1 | Checks: 1 not found\. | ^[8](https://patents.google.com/?assignee=valkaai) |
+
+- **Flag:** Possible overlap with portfolio company CulturePulse: compare product and buyer before a call\.
+- What was revenue last year and this year so far, and from how many paying customers?
+- What is the cash position and monthly burn, and how many months of runway is that?
+- Can we see the product and the code, and who built the core technology?
+- Ask for evidence behind the claims that could not be confirmed\.
+- Team and founders: public records cannot judge them; assess them first on the call\.
+
 ## TL;DR
 
 - **Product.** A real\-time interactive AI\-video platform selling lifelike AI personas and live commentators to sports, esports and media/entertainment customers\. *(Partly verified)* ^[1](https://valka.ai/),[2](https://valka.ai/),[3](https://www.rockawaycapital.com/en/news/e12m-investment-in-valkaai-led-by-rockaway-ventures)
@@ -146,6 +167,7 @@ No sourced findings for this section.
 44. [valka\.ai](https://valka.ai/blog/valkaai-raises-12-million) · Company's own website · Technical claim — “Our unique three\-tiered genAI process will be able to create the technology for on\-demand content at scale and without the technical limitations we currently see with AI\-generated video”
 45. [vestbee\.com](https://vestbee.com/insights/articles/valka-ai-raises-12-m) · Independent press · Press article · 2026\-02\-24 — “Czech firm ValkaAI raises €12M to build real\-time interactive AI video platform \| Vestbee”
 46. [cc\.cz](https://cc.cz/rekordni-investici-cesky-startup-jeste-navysil-tvurci-ai-komentatora-ziskali-uz-stovky-milionu/) · Independent press · Funding round — “úvodní, tzv\. pre\-seedovou investici ve výši téměř 300 milionů korun”
+47. [lupa\.cz](https://www.lupa.cz/clanky/dokonaly-avatar-cesi-se-zkusenostmi-z-americkych-laboratori-skladaji-v-prazskem-startupu-video-hlas-a-pohyb-v-realnem-case/) · Independent press · Press article · 2026\-05\-25 — “Dokonalý avatar\. Češi se zkušenostmi z amerických laboratoří skládají v pražském startupu video, hlas a pohyb v reálném čase \- Lupa\.cz”
 
 ## How this dossier was built
 

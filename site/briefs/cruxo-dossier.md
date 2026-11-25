@@ -4,6 +4,29 @@ cruxo\.io · CRUXO group s\.r\.o\. · IČO 14134683 · CZ · 2026\-11\-20
 
 **How to read:** numbers ^1,2 are sources listed at the end. Labels show how strong the evidence is: *Verified* — backed by an official record or a public technical artifact; *Corroborated* — reported by two or more independent outlets; *Single source* — one independent outlet; not yet corroborated; *Partly verified* — part of it rests on an official or independent source, part on one outlet or the company's own words; *Company claim* — only the company's own website says so — verify in diligence; *Analyst view* — a judgement drawn from the cited evidence, not a fact.
 
+## Scorecard (computed by code, no LLM)
+
+**5–12 of 14: Open: needs 3 more point\(s\) from round vs ticket, traction, financial position, technology evidence** (bar 8; open points count 0 at the low end and 2 at the high end)
+
+| Criterion | Points | What the records show | Sources |
+|---|---|---|---|
+| Fund sector | 1 | AI\-led transformative tech: 3 facts\. | ^[24](https://www.trysignalbase.com/news/funding/cruxo-raises-602k-seed),[25](https://technologickainkubace.org/en/startupy/cruxo),[50](https://www.cnaip.cz/en/entity/cruxo) |
+| Geography | 2 | CZ \(core region\) | ^[43](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/14134683) |
+| Round vs ticket | 0–2 (open) | Last reported round: 15M CZK \(2025\-01\)\. No current round is reported\. | ^[5](https://rockawayventures.com/cruxo-revolutionizes-supplier-advertising-on-e-commerce-platforms-boosts-e-shop-profits-across-6-countries-and-secures-a-new-czk-15-million-investment/) |
+| Traction | 1–2 (open) | Revenue not published; 2 named customer\(s\)\. |  |
+| Financial position | 0–2 (open) | Filed accounts not read\. |  |
+| Technology evidence | 0–2 (open) | No public code, grants, patents or papers visible\. |  |
+| Claims checked | 1 | Checks: 6 confirmed, 1 not found\. | ^[7](https://launchbox.cz/p/cruxo),[8](https://www.mediaguru.cz/lekarna-cz-prevadi-online-inzerci-pod-cruxo),[6](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683),[33](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14134683) |
+
+- **Flag:** Possible overlap with portfolio company Gjirafa: compare product and buyer before a call\.
+- **Flag:** Possible overlap with portfolio company Samba\.ai: compare product and buyer before a call\.
+- How much are you raising, on what terms, and who else is in the round?
+- What was revenue last year and this year so far, and from how many paying customers?
+- What is the cash position and monthly burn, and how many months of runway is that?
+- Can we see the product and the code, and who built the core technology?
+- Ask for evidence behind the claims that could not be confirmed\.
+- Team and founders: public records cannot judge them; assess them first on the call\.
+
 ## TL;DR
 
 - **Product.** A retail‑media SaaS for e‑shops to sell on‑site banners, sponsored products and dashboards to brands and retailers\. *(Company claim)* ^[1](https://cruxo.io/),[2](https://cruxo.io/),[3](https://cruxo.io/)
